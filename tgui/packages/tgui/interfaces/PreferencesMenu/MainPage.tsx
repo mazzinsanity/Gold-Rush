@@ -40,6 +40,7 @@ const CLOTHING_SELECTION_MULTIPLIER = 5.2;
 
 const CharacterControls = (props: {
   handleRotate: () => void;
+  handleOpenSpecies: () => void;
   gender: Gender;
   setGender: (gender: Gender) => void;
   showGender: boolean;
@@ -52,6 +53,15 @@ const CharacterControls = (props: {
           fontSize="22px"
           icon="undo"
           tooltip="Rotate"
+          tooltipPosition="top"
+        />
+      </Stack.Item>
+      <Stack.Item>
+        <Button
+          onClick={props.handleOpenSpecies}
+          fontSize="22px"
+          icon="paw"
+          tooltip="Species"
           tooltipPosition="top"
         />
       </Stack.Item>
@@ -448,7 +458,11 @@ export const getRandomization = (
   );
 };
 
-export const MainPage = () => {
+type MainPageProps = {
+  openSpecies: () => void;
+};
+
+export const MainPage = (props: MainPageProps) => {
   const { act, data } = useBackend<PreferencesMenuData>();
   const [currentClothingMenu, setCurrentClothingMenu] = useState<string | null>(
     null,
@@ -530,7 +544,7 @@ export const MainPage = () => {
                   <Stack.Item>
                     <CharacterControls
                       gender={data.character_preferences.misc.gender}
-                      // handleOpenSpecies={props.openSpecies} MOJAVE SUN EDIT
+                      handleOpenSpecies={props.openSpecies}
                       handleRotate={() => {
                         act('rotate');
                       }}
