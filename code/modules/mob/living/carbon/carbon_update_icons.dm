@@ -120,9 +120,6 @@
 			if(iter_part.burnstate)
 				damage_overlay.add_overlay("[iter_part.dmg_overlay_type]_[iter_part.body_zone]_0[iter_part.burnstate]")
 
-	// MOJAVE EDIT BEGIN - Fatties
-	damage_overlay = apply_fatness_filter(damage_overlay, TRUE)
-	// MOJAVE EDIT END - Fatties
 	apply_overlay(DAMAGE_LAYER)
 
 /mob/living/carbon/update_wound_overlays()
@@ -283,22 +280,10 @@
 	var/draw_features = !HAS_TRAIT(src, TRAIT_INVISIBLE_MAN)
 	for(var/X in bodyparts)
 		var/obj/item/bodypart/BP = X
-		var/list/bp_icons = BP.get_limb_icon(draw_external_organs = draw_features)
-		if(!LAZYLEN(bp_icons))
-			continue
-		new_limbs += bp_icons
+		new_limbs += BP.get_limb_icon(draw_external_organs = draw_features)
 	if(new_limbs.len)
-		// MOJAVE EDIT BEGIN - Fatties
-		// i know this kind of fucks with the entire concept of the limb cache but its the only way this could work afaik
+		overlays_standing[BODYPARTS_LAYER] = new_limbs
 		limb_icon_cache[icon_render_key] = new_limbs
-		var/list/final_limbs = list()
-		var/image/copy
-		for(var/image/limb as anything in new_limbs)
-			copy = new(limb)
-			copy = apply_fatness_filter(copy, FALSE)
-			final_limbs += copy
-		overlays_standing[BODYPARTS_LAYER] = final_limbs
-		// MOJAVE EDIT END - Fatties
 
 	apply_overlay(BODYPARTS_LAYER)
 	update_damage_overlays()
@@ -343,16 +328,7 @@
 /mob/living/carbon/proc/load_limb_from_cache()
 	if(limb_icon_cache[icon_render_key])
 		remove_overlay(BODYPARTS_LAYER)
-		// MOJAVE EDIT BEGIN - Fatties
-		// i know this kind of fucks with the entire concept of the limb cache but its the only way this could work afaik
-		var/list/final_limbs = list()
-		var/image/copy
-		for(var/image/limb as anything in limb_icon_cache[icon_render_key])
-			copy = new(limb)
-			copy = apply_fatness_filter(copy, FALSE)
-			final_limbs += copy
-		overlays_standing[BODYPARTS_LAYER] = final_limbs
-		// MOJAVE EDIT END - Fatties
+		overlays_standing[BODYPARTS_LAYER] = limb_icon_cache[icon_render_key]
 		apply_overlay(BODYPARTS_LAYER)
 	update_damage_overlays()
 

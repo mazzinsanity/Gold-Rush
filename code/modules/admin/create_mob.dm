@@ -26,7 +26,6 @@
 	H.dna.blood_type = random_blood_type()
 	H.voice_type = random_voice_type(H.gender) // MOJAVE SUN EDIT - Voice!!
 	H.generic_adjective = pick(GLOB.preference_adjectives) // MOJAVE SUN EDIT - Bobnames!!
-	H.fatness_adjective = pick(GLOB.fatness_adjectives) // MOJAVE SUN EDIT - Bobnames!!
 
 	// Mutant randomizing, doesn't affect the mob appearance unless it's the specific mutant.
 	H.dna.features["mcolor"] = "#[random_color()]"

@@ -201,14 +201,6 @@ GLOBAL_LIST_INIT(skin_tone_names, list(
 	"african2" = "Dark Brown",
 ))
 //MOJAVE SUN EDIT END - Skin Colours
-
-// MOJAVE SUN EDIT BEGIN - Fatties
-GLOBAL_LIST_INIT(fatness_types, sort_list(list(
-	FATNESS_AVERAGE,
-	FATNESS_OBESE,
-	)))
-// MOJAVE SUN EDIT END - Fatties
-
 /// An assoc list of species IDs to type paths
 GLOBAL_LIST_EMPTY(species_list)
 
