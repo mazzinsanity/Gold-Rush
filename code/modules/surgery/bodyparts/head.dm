@@ -31,11 +31,11 @@
 	//Limb appearance info:
 	var/real_name = "" //Replacement name
 	//Hair colour and style
-	var/hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/hair_color = COLOR_BLACK
 	var/hairstyle = "Bald"
 	var/hair_alpha = 255
 	//Facial hair colour and style
-	var/facial_hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/facial_hair_color = COLOR_BLACK
 	var/facial_hairstyle = "Shaved"
 	//Eye Colouring
 

@@ -7,7 +7,7 @@ import {
 
 export const eye_color: Feature<string> = {
   name: 'Eye color',
-  component: FeatureDropdownInput, // MOJAVE SUN EDIT - Prefs
+  component: FeatureColorInput,
 };
 
 export const facial_hair_color: Feature<string> = {
@@ -27,7 +27,7 @@ export const facial_hair_gradient_color: Feature<string> = {
 
 export const hair_color: Feature<string> = {
   name: 'Hair color',
-  component: FeatureDropdownInput, // MOJAVE SUN EDIT - Prefs
+  component: FeatureColorInput,
 };
 
 export const hair_gradient: FeatureChoiced = {
@@ -72,7 +72,7 @@ export const feature_mcolor: Feature<string> = {
 
 export const underwear_color: Feature<string> = {
   name: 'Underwear color',
-  component: FeatureDropdownInput, // MOJAVE SUN EDIT - Prefs
+  component: FeatureColorInput,
 };
 
 export const feature_vampire_status: Feature<string> = {

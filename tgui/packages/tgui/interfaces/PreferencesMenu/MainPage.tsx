@@ -210,7 +210,7 @@ const GenderButton = (props: {
       placement="right-end"
       content={
         <Stack backgroundColor="white" ml={0.5} p={0.3}>
-          {[Gender.Male, Gender.Female].map((gender) => {
+          {[Gender.Male, Gender.Female, Gender.Other].map((gender) => {
             return (
               <Stack.Item key={gender}>
                 <Button

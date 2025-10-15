@@ -2,54 +2,6 @@
 	//ie shit that goes directly on the right of the player//
 //Put its in its own file so it can be re-arranged #weh8TGUI2013//
 
-//Hairstyle
-
-/datum/preference/choiced/hairstyle
-	savefile_key = "hairstyle_name"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_CLOTHING
-	main_feature_name = "Hairstyle"
-	should_generate_icons = TRUE
-
-/datum/preference/choiced/hairstyle/init_possible_values()
-	return generate_possible_values_for_sprite_accessories_on_head(GLOB.hairstyles_list)
-
-/datum/preference/choiced/hairstyle/apply_to_human(mob/living/carbon/human/target, value)
-	target.hairstyle = value
-
-/datum/preference/choiced/hairstyle/compile_constant_data()
-	var/list/data = ..()
-
-	return data
-
-//Facial Hairstyle
-
-/datum/preference/choiced/facial_hairstyle
-	savefile_key = "facial_style_name"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_CLOTHING
-	main_feature_name = "Facial hair"
-	should_generate_icons = TRUE
-
-/datum/preference/choiced/facial_hairstyle/init_possible_values()
-	return generate_possible_values_for_sprite_accessories_on_head(GLOB.facial_hairstyles_list)
-
-/datum/preference/choiced/facial_hairstyle/apply_to_human(mob/living/carbon/human/target, value)
-	target.facial_hairstyle = value
-
-/datum/preference/choiced/facial_hairstyle/compile_constant_data()
-	var/list/data = ..()
-
-	return data
-
-/datum/preference/choiced/facial_hairstyle/is_accessible(datum/preferences/preferences)
-	. = ..()
-	var/gender = preferences.read_preference(/datum/preference/choiced/gender)
-	if(gender == FEMALE)
-		return FALSE
-	else
-		return TRUE
-
 //Undershirt
 
 /datum/preference/choiced/undershirt

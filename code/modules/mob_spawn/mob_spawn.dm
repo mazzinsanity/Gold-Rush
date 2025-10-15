@@ -52,21 +52,21 @@
 		if(mob_species)
 			spawned_human.set_species(mob_species)
 		spawned_human.underwear = "Nude"
-		spawned_human.underwear_color = sanitize_hexcolor(undiestone2hex(random_underwear_color())) //MOJAVE SUN EDIT - Hair/Gendered/Colours
+		spawned_human.underwear_color = "#[random_color()]"
 		spawned_human.undershirt = "Nude"
 		spawned_human.socks = "Nude"
 		if(hairstyle)
 			spawned_human.hairstyle = hairstyle
 		else
-			spawned_human.hairstyle = random_hairstyle(spawned_human.gender)
+			spawned_human.hairstyle = random_hairstyle()
 		if(facial_hairstyle)
 			spawned_human.facial_hairstyle = facial_hairstyle
 		else
-			spawned_human.facial_hairstyle = random_facial_hairstyle(spawned_human.gender)
+			spawned_human.facial_hairstyle = random_facial_hairstyle()
 		if(haircolor)
 			spawned_human.hair_color = haircolor
 		else
-			spawned_human.hair_color = sanitize_hexcolor(hairtone2hex(random_hair_color())) //MOJAVE SUN EDIT - Hair/Gendered/Colours
+			spawned_human.hair_color = "#[random_color()]"
 		if(facial_haircolor)
 			spawned_human.facial_hair_color = facial_haircolor
 		else
@@ -75,7 +75,7 @@
 			spawned_human.skin_tone = skin_tone
 		else
 			spawned_human.skin_tone = random_skin_tone()
-		spawned_human.eye_color = sanitize_hexcolor(eyetone2hex(random_eye_color())) //MOJAVE SUN EDIT - Hair/Gendered/Colours
+		spawned_human.eye_color = "#[random_color()]"
 		spawned_human.update_hair()
 		spawned_human.update_body()
 

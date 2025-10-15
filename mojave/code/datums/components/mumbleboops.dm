@@ -32,7 +32,7 @@
 	INVOKE_ASYNC(src, PROC_REF(handle_booping), mumblebooper, speech_args, speech_spans, speech_mods)
 
 /datum/component/mumbleboop/proc/handle_booping(mob/living/mumblebooper, list/speech_args, list/speech_spans, list/speech_mods)
-	chosen_boop = mumblebooper?.voice_type || random_voice_type(mumblebooper?.gender) // Uses the boop chosen by the player. If it's null for whatever unholy reason, it should chose a completely random voice for every single phonetic which should be funny.
+	chosen_boop = mumblebooper?.voice_type || random_voice_type() // Uses the boop chosen by the player. If it's null for whatever unholy reason, it should chose a completely random voice for every single phonetic which should be funny.
 	var/message = speech_args[SPEECH_MESSAGE]
 	var/initial_mumbleboop_time = last_mumbleboop
 	var/initial_volume = volume
