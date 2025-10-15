@@ -6,7 +6,7 @@
 /datum/preference/color/underwear_color/apply_to_human(mob/living/carbon/human/target, value)
 	target.underwear_color = value
 
-/datum/preference/choiced/underwear_color/is_accessible(datum/preferences/preferences)
+/datum/preference/color/underwear_color/is_accessible(datum/preferences/preferences)
 	if (!..(preferences))
 		return FALSE
 
