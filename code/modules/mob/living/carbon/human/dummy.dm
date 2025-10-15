@@ -92,19 +92,17 @@ MOJAVE SUN EDIT END */
 /mob/living/carbon/human/dummy/consistent/setup_human_dna()
 	create_dna(src)
 	dna.initialize_dna(skip_index = TRUE)
-	dna.features["body_markings"] = "None"
+	dna.features["markings"] = "None"
 	dna.features["ears"] = "None"
 	dna.features["ethcolor"] = COLOR_WHITE
 	dna.features["frills"] = "None"
 	dna.features["horns"] = "None"
 	dna.features["mcolor"] = COLOR_VIBRANT_LIME
-	dna.features["moth_antennae"] = "Plain"
-	dna.features["moth_markings"] = "None"
+	dna.features["antennae"] = "Plain"
 	dna.features["moth_wings"] = "Plain"
 	dna.features["snout"] = "Round"
 	dna.features["spines"] = "None"
-	dna.features["tail_human"] = "None"
-	dna.features["tail_lizard"] = "Smooth"
+	dna.features["tail"] = "Smooth"
 
 //Inefficient pooling/caching way.
 GLOBAL_LIST_EMPTY(human_dummy_list)

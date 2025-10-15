@@ -143,14 +143,13 @@
 
 	set_sprite(feature_list[deconstruct_block(get_uni_feature_block(features, dna_block), feature_list.len)])
 
-///The horns of a lizard!
 /obj/item/organ/external/horns
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_HORNS
 	layers = EXTERNAL_ADJACENT
 
 	feature_key = "horns"
-	preference = "feature_lizard_horns"
+	preference = "feature_horns"
 
 	dna_block = DNA_HORNS_BLOCK
 
@@ -162,14 +161,13 @@
 /obj/item/organ/external/horns/get_global_feature_list()
 	return GLOB.horns_list
 
-///The frills of a lizard (like weird fin ears)
 /obj/item/organ/external/frills
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_FRILLS
 	layers = EXTERNAL_ADJACENT
 
 	feature_key = "frills"
-	preference = "feature_lizard_frills"
+	preference = "feature_frills"
 
 	dna_block = DNA_FRILLS_BLOCK
 
@@ -182,14 +180,13 @@
 /obj/item/organ/external/frills/get_global_feature_list()
 	return GLOB.frills_list
 
-///Guess what part of the lizard this is?
 /obj/item/organ/external/snout
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_SNOUT
 	layers = EXTERNAL_ADJACENT
 
 	feature_key = "snout"
-	preference = "feature_lizard_snout"
+	preference = "feature_snout"
 
 	dna_block = DNA_SNOUT_BLOCK
 
@@ -201,16 +198,15 @@
 /obj/item/organ/external/snout/get_global_feature_list()
 	return GLOB.snouts_list
 
-///A moth's antennae
 /obj/item/organ/external/antennae
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_ANTENNAE
 	layers = EXTERNAL_FRONT | EXTERNAL_BEHIND
 
-	feature_key = "moth_antennae"
-	preference = "feature_moth_antennae"
+	feature_key = "antennae"
+	preference = "feature_antennae"
 
-	dna_block = DNA_MOTH_ANTENNAE_BLOCK
+	dna_block = DNA_ANTENNAE_BLOCK
 
 	///Are we burned?
 	var/burnt = FALSE
@@ -229,7 +225,7 @@
 	UnregisterSignal(organ_owner, list(COMSIG_HUMAN_BURNING, COMSIG_LIVING_POST_FULLY_HEAL))
 
 /obj/item/organ/external/antennae/get_global_feature_list()
-	return GLOB.moth_antennae_list
+	return GLOB.antennae_list
 
 /obj/item/organ/external/antennae/can_draw_on_bodypart(mob/living/carbon/human/human)
 	return TRUE

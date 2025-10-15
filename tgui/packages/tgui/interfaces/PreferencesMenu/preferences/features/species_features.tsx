@@ -40,28 +40,8 @@ export const hair_gradient_color: Feature<string> = {
   component: FeatureColorInput,
 };
 
-export const feature_human_ears: FeatureChoiced = {
-  name: 'Ears',
-  component: FeatureDropdownInput,
-};
-
-export const feature_human_tail: FeatureChoiced = {
-  name: 'Tail',
-  component: FeatureDropdownInput,
-};
-
-export const feature_lizard_legs: FeatureChoiced = {
+export const feature_legs: FeatureChoiced = {
   name: 'Legs',
-  component: FeatureDropdownInput,
-};
-
-export const feature_lizard_spines: FeatureChoiced = {
-  name: 'Spines',
-  component: FeatureDropdownInput,
-};
-
-export const feature_lizard_tail: FeatureChoiced = {
-  name: 'Tail',
   component: FeatureDropdownInput,
 };
 

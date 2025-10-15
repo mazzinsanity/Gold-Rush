@@ -35,22 +35,20 @@
 #define DNA_SKIN_TONE_BLOCK 3
 #define DNA_UNI_IDENTITY_BLOCKS 7
 
-#define DNA_FEATURE_BLOCKS 15
+#define DNA_FEATURE_BLOCKS 13
 #define DNA_MUTANT_COLOR_BLOCK 1
 #define DNA_ETHEREAL_COLOR_BLOCK 2
-#define DNA_LIZARD_MARKINGS_BLOCK 3
-#define DNA_LIZARD_TAIL_BLOCK 4
+#define DNA_MARKINGS_BLOCK 3
+#define DNA_TAIL_BLOCK 4
 #define DNA_SNOUT_BLOCK 5
 #define DNA_HORNS_BLOCK 6
 #define DNA_FRILLS_BLOCK 7
-#define DNA_SPINES_BLOCK 8
-#define DNA_HUMAN_TAIL_BLOCK 9
-#define DNA_EARS_BLOCK 10
+#define DNA_EARS_BLOCK 8
+#define DNA_SPINES_BLOCK 9
+#define DNA_WINGS_BLOCK 10
 #define DNA_MOTH_WINGS_BLOCK 11
-#define DNA_MOTH_ANTENNAE_BLOCK 12
-#define DNA_MOTH_MARKINGS_BLOCK 13
-#define DNA_MUSHROOM_CAPS_BLOCK 14
-#define DNA_MONKEY_TAIL_BLOCK 15
+#define DNA_ANTENNAE_BLOCK 12
+#define DNA_MUSHROOM_CAPS_BLOCK 13
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8
@@ -81,14 +79,12 @@
 #define HAS_FLESH 17
 /// if we have bones (can suffer bone wounds)
 #define HAS_BONE 18
-///If we have a limb-specific overlay sprite
-#define HAS_MARKINGS 19
 /// Do not draw blood overlay
-#define NOBLOODOVERLAY 20
+#define NOBLOODOVERLAY 19
 ///No augments, for monkeys in specific because they will turn into fucking freakazoids https://cdn.discordapp.com/attachments/326831214667235328/791313258912153640/102707682-fa7cad80-4294-11eb-8f13-8c689468aeb0.png
-#define NOAUGMENTS 21
+#define NOAUGMENTS 20
 ///will be assigned a universal vampire themed last name shared by their department. this is preferenced!
-#define BLOOD_CLANS 22
+#define BLOOD_CLANS 21
 
 //organ slots
 #define ORGAN_SLOT_ADAMANTINE_RESONATOR "adamantine_resonator"
@@ -124,7 +120,7 @@
 #define ORGAN_SLOT_EXTERNAL_HORNS "horns"
 #define ORGAN_SLOT_EXTERNAL_WINGS "wings"
 #define ORGAN_SLOT_EXTERNAL_ANTENNAE "antennae"
-#define ORGAN_SLOT_EXTERNAL_BODYMARKINGS "bodymarkings"
+#define ORGAN_SLOT_EXTERNAL_MARKINGS "markings"
 
 /// Xenomorph organ slots
 #define ORGAN_SLOT_XENO_ACIDGLAND "acid_gland"

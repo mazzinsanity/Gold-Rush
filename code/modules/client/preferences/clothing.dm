@@ -13,7 +13,6 @@
 			var/datum/sprite_accessory/accessory = accessory_list[accessory_name]
 
 			var/icon/accessory_icon = icon('mojave/icons/mob/clothing/underwear.dmi', accessory.icon_state) //MOJAVE SUN EDIT - Prefs
-			lower_half.Blend("#ffe0d1", ICON_MULTIPLY) //MOJAVE SUN EDIT END - Prefs
 			if (color && !accessory.use_static)
 				accessory_icon.Blend(color, ICON_MULTIPLY)
 			icon_with_socks.Blend(accessory_icon, ICON_OVERLAY)

@@ -2,7 +2,6 @@
 	var/list/values = possible_values_for_sprite_accessory_list(accessories)
 
 	var/icon/head_icon = icon('icons/mob/human_parts_greyscale.dmi', "human_head_m")
-	head_icon.Blend(skintone2hex("caucasian1"), ICON_MULTIPLY)
 
 	for (var/name in values)
 		var/datum/sprite_accessory/accessory = accessories[name]
@@ -11,9 +10,9 @@
 
 		var/icon/final_icon = new(head_icon)
 
-		var/icon/beard_icon = values[name]
-		beard_icon.Blend(COLOR_DARK_BROWN, ICON_MULTIPLY)
-		final_icon.Blend(beard_icon, ICON_OVERLAY)
+		var/icon/accessory_icon = values[name]
+		accessory_icon.Blend(COLOR_ALMOST_BLACK, ICON_MULTIPLY)
+		final_icon.Blend(accessory_icon, ICON_OVERLAY)
 
 		final_icon.Crop(10, 19, 22, 31)
 		final_icon.Scale(32, 32)

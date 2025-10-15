@@ -778,13 +778,13 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				standing += eye_overlay
 
 	// organic body markings
-	if(HAS_MARKINGS in species_traits)
+	if(mutant_bodyparts["markings"])
 		var/obj/item/bodypart/chest/chest = species_human.get_bodypart(BODY_ZONE_CHEST)
 		var/obj/item/bodypart/r_arm/right_arm = species_human.get_bodypart(BODY_ZONE_R_ARM)
 		var/obj/item/bodypart/l_arm/left_arm = species_human.get_bodypart(BODY_ZONE_L_ARM)
 		var/obj/item/bodypart/r_leg/right_leg = species_human.get_bodypart(BODY_ZONE_R_LEG)
 		var/obj/item/bodypart/l_leg/left_leg = species_human.get_bodypart(BODY_ZONE_L_LEG)
-		var/datum/sprite_accessory/markings = GLOB.moth_markings_list[species_human.dna.features["moth_markings"]]
+		var/datum/sprite_accessory/markings = GLOB.markings_list[species_human.dna.features["markings"]]
 
 		if(!HAS_TRAIT(species_human, TRAIT_HUSK))
 			if(noggin && (noggin.status != BODYPART_ROBOTIC))
@@ -864,29 +864,15 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	var/obj/item/bodypart/head/noggin = source.get_bodypart(BODY_ZONE_HEAD)
 
-	if(mutant_bodyparts["tail_lizard"])
+	if(mutant_bodyparts["tail"])
 		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "tail_lizard"
+			bodyparts_to_add -= "tail"
 
-	if(mutant_bodyparts["waggingtail_lizard"])
+	if(mutant_bodyparts["waggingtail"])
 		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "waggingtail_lizard"
-		else if (mutant_bodyparts["tail_lizard"])
-			bodyparts_to_add -= "waggingtail_lizard"
-
-	if(mutant_bodyparts["tail_human"])
-		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "tail_human"
-
-	if("tail_monkey" in mutant_bodyparts)
-		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "tail_monkey"
-
-	if(mutant_bodyparts["waggingtail_human"])
-		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "waggingtail_human"
-		else if (mutant_bodyparts["tail_human"])
-			bodyparts_to_add -= "waggingtail_human"
+			bodyparts_to_add -= "waggingtail"
+		else if (mutant_bodyparts["tail"])
+			bodyparts_to_add -= "waggingtail"
 
 	if(mutant_bodyparts["spines"])
 		if(!source.dna.features["spines"] || source.dna.features["spines"] == "None" || source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
@@ -936,38 +922,26 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		for(var/bodypart in bodyparts_to_add)
 			var/datum/sprite_accessory/accessory
 			switch(bodypart)
-				if("tail_lizard")
-					accessory = GLOB.tails_list_lizard[source.dna.features["tail_lizard"]]
-				if("waggingtail_lizard")
-					accessory = GLOB.animated_tails_list_lizard[source.dna.features["tail_lizard"]]
-				if("tail_human")
-					accessory = GLOB.tails_list_human[source.dna.features["tail_human"]]
-				if("waggingtail_human")
-					accessory = GLOB.animated_tails_list_human[source.dna.features["tail_human"]]
+				if("tail")
+					accessory = GLOB.tails_list[source.dna.features["tail"]]
+				if("waggingtail")
+					accessory = GLOB.animated_tails_list[source.dna.features["tail"]]
 				if("spines")
 					accessory = GLOB.spines_list[source.dna.features["spines"]]
 				if("waggingspines")
 					accessory = GLOB.animated_spines_list[source.dna.features["spines"]]
 				if("ears")
 					accessory = GLOB.ears_list[source.dna.features["ears"]]
-				if("body_markings")
-					accessory = GLOB.body_markings_list[source.dna.features["body_markings"]]
+				if("markings")
+					accessory = GLOB.markings_list[source.dna.features["markings"]]
 				if("legs")
 					accessory = GLOB.legs_list[source.dna.features["legs"]]
 				if("caps")
 					accessory = GLOB.caps_list[source.dna.features["caps"]]
-				if("tail_monkey")
-					accessory = GLOB.tails_list_monkey[source.dna.features["tail_monkey"]]
 			if(!accessory || accessory.icon_state == "none")
 				continue
 
 			var/mutable_appearance/accessory_overlay = mutable_appearance(accessory.icon, layer = -layer)
-
-			//A little rename so we don't have to use tail_lizard or tail_human when naming the sprites.
-			if(bodypart == "tail_lizard" || bodypart == "tail_human" || bodypart == "tail_monkey")
-				bodypart = "tail"
-			else if(bodypart == "waggingtail_lizard" || bodypart == "waggingtail_human")
-				bodypart = "waggingtail"
 
 			if(accessory.gender_specific)
 				accessory_overlay.icon_state = "[g]_[bodypart]_[accessory.icon_state]_[layertext]"
