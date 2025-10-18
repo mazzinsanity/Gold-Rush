@@ -24,6 +24,8 @@
 
 	///Sprite datum we use to draw on the bodypart
 	var/datum/sprite_accessory/sprite_datum
+	///List of colors cached in the [cache_key] to ensure that the organ gets redrawn when the color is changed
+	var/list/cached_color_list = list(COLOR_RED, COLOR_VIBRANT_LIME, COLOR_BLUE)
 	///Key of the icon states of all the sprite_datums for easy caching
 	var/cache_key = ""
 
@@ -75,11 +77,12 @@
 
 ///Add the overlays we need to draw on a person. Called from _bodyparts.dm
 /obj/item/organ/external/proc/get_overlays(list/overlay_list, image_dir, image_layer, list/color_list)
-	if(!sprite_datum || sprite_datum.icon_state == "none" || !color_list)
+	if(!sprite_datum || sprite_datum.icon_state == "none")
 		return
 
-//To do: Fix the bug with coloring horns, frills and other external organs
-	var/list/appearance_list = list()
+	update_cached_colors(color_list)
+
+	var/list/mutable_appearance/appearance_list = list()
 	var/mutable_appearance/appearance = mutable_appearance(sprite_datum.icon, "[feature_key]_[sprite_datum.icon_state][mutant_bodyparts_layertext(image_layer)]", -image_layer)
 	appearance.dir = image_dir
 	appearance_list += appearance
@@ -106,9 +109,13 @@
 	sprite_datum = get_sprite_datum(sprite_name)
 	cache_key = generate_icon_cache()
 
+/obj/item/organ/external/proc/update_cached_colors(list/color_list)
+	cached_color_list = color_list
+	cache_key = generate_icon_cache()
+
 ///Generate a unique key based on our sprites. So that if we've aleady drawn these sprites, they can be found in the cache and wont have to be drawn again (blessing and curse)
 /obj/item/organ/external/proc/generate_icon_cache()
-	return "[sprite_datum.icon_state]_[feature_key]"
+	return "[feature_key]_[sprite_datum.icon_state]_[cached_color_list[1]]_[cached_color_list[2]]_[cached_color_list[3]]"
 
 /**This exists so sprite accessories can still be per-layer without having to include that layer's
 *  number in their sprite name, which causes issues when those numbers change.
