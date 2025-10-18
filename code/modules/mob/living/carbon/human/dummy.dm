@@ -92,13 +92,14 @@ MOJAVE SUN EDIT END */
 /mob/living/carbon/human/dummy/consistent/setup_human_dna()
 	create_dna(src)
 	dna.initialize_dna(skip_index = TRUE)
-	dna.features["markings"] = "None"
 	dna.features["ears"] = "None"
 	dna.features["ethcolor"] = COLOR_WHITE
 	dna.features["frills"] = "None"
+	dna.features["spines"] = "None"
 	dna.features["horns"] = "None"
 	dna.features["mcolor"] = COLOR_VIBRANT_LIME
 	dna.features["antennae"] = "Plain"
+	dna.features["wings"] = "None"
 	dna.features["moth_wings"] = "Plain"
 	dna.features["snout"] = "Round"
 	dna.features["spines"] = "None"

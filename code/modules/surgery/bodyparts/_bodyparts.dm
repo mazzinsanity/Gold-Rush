@@ -983,7 +983,29 @@
 		//Some externals have multiple layers for background, foreground and between
 		for(var/external_layer in external_organ.all_layers)
 			if(external_organ.layers & external_layer)
-				external_organ.get_overlays(., image_dir, external_organ.bitflag_to_layer(external_layer), icon_gender, draw_color)
+				var/organ_color_list
+				var/mob/living/carbon/human/human_owner = owner
+				switch(external_organ.feature_key)
+					if("snout")
+						if(human_owner.dna.features["snout_color_list"])
+							organ_color_list = human_owner.dna.features["snout_color_list"]
+					if("horns")
+						if(human_owner.dna.features["horns_color_list"])
+							organ_color_list = human_owner.dna.features["horns_color_list"]
+					if("frills")
+						if(human_owner.dna.features["frills_color_list"])
+							organ_color_list = human_owner.dna.features["frills_color_list"]
+					if("wings")
+						if(human_owner.dna.features["wings_color_list"])
+							organ_color_list = human_owner.dna.features["wings_color_list"]
+					if("moth_wings")
+						if(human_owner.dna.features["moth_wings_color_list"])
+							organ_color_list = human_owner.dna.features["moth_wings_color_list"]
+					if("antennae")
+						if(human_owner.dna.features["antennae_color_list"])
+							organ_color_list = human_owner.dna.features["antennae_color_list"]
+
+				external_organ.get_overlays(., image_dir, external_organ.bitflag_to_layer(external_layer), organ_color_list)
 
 /obj/item/bodypart/deconstruct(disassembled = TRUE)
 	drop_organs()

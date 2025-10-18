@@ -74,22 +74,33 @@
 	bodypart.contents.Add(src)
 
 ///Add the overlays we need to draw on a person. Called from _bodyparts.dm
-/obj/item/organ/external/proc/get_overlays(list/overlay_list, image_dir, image_layer, body_type, image_color)
-	if(!sprite_datum)
+/obj/item/organ/external/proc/get_overlays(list/overlay_list, image_dir, image_layer, list/color_list)
+	if(!sprite_datum || sprite_datum.icon_state == "none" || !color_list)
 		return
 
-	var/gender = (body_type == FEMALE) ? "f" : "m"
-	var/finished_icon_state = (sprite_datum.gender_specific ? gender : "m") + "_" + feature_key + "_" + sprite_datum.icon_state + mutant_bodyparts_layertext(image_layer)
-	var/mutable_appearance/appearance = mutable_appearance(sprite_datum.icon, finished_icon_state, layer = -image_layer)
+//To do: Fix the bug with coloring horns, frills and other external organs
+	var/list/appearance_list = list()
+	var/mutable_appearance/appearance = mutable_appearance(sprite_datum.icon, "[feature_key]_[sprite_datum.icon_state][mutant_bodyparts_layertext(image_layer)]", -image_layer)
 	appearance.dir = image_dir
+	appearance_list += appearance
 
-	if(sprite_datum.color_src) //There are multiple flags, but only one is ever used so meh :/
-		appearance.color = image_color
+	if(sprite_datum.icon_state_2)
+		appearance = mutable_appearance(sprite_datum.icon, "[feature_key]_[sprite_datum.icon_state_2][mutant_bodyparts_layertext(image_layer)]", -image_layer)
+		appearance.dir = image_dir
+		appearance_list += appearance
+	
+	if(sprite_datum.icon_state_3)
+		appearance = mutable_appearance(sprite_datum.icon, "[feature_key]_[sprite_datum.icon_state_3][mutant_bodyparts_layertext(image_layer)]", -image_layer)
+		appearance.dir = image_dir
+		appearance_list += appearance
 
 	if(sprite_datum.center)
-		center_image(appearance, sprite_datum.dimension_x, sprite_datum.dimension_y)
+		for(var/mutable_appearance/mut_appearance in appearance_list)
+			center_image(mut_appearance, sprite_datum.dimension_x, sprite_datum.dimension_y)
 
-	overlay_list += appearance
+	for(var/i in 1 to appearance_list.len)
+		appearance_list[i].color = color_list[i]
+		overlay_list += appearance_list[i]
 
 /obj/item/organ/external/proc/set_sprite(sprite_name)
 	sprite_datum = get_sprite_datum(sprite_name)

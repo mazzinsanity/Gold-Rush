@@ -35,20 +35,19 @@
 #define DNA_SKIN_TONE_BLOCK 3
 #define DNA_UNI_IDENTITY_BLOCKS 7
 
-#define DNA_FEATURE_BLOCKS 13
+#define DNA_FEATURE_BLOCKS 12
 #define DNA_MUTANT_COLOR_BLOCK 1
 #define DNA_ETHEREAL_COLOR_BLOCK 2
-#define DNA_MARKINGS_BLOCK 3
-#define DNA_TAIL_BLOCK 4
-#define DNA_SNOUT_BLOCK 5
-#define DNA_HORNS_BLOCK 6
-#define DNA_FRILLS_BLOCK 7
-#define DNA_EARS_BLOCK 8
-#define DNA_SPINES_BLOCK 9
-#define DNA_WINGS_BLOCK 10
-#define DNA_MOTH_WINGS_BLOCK 11
-#define DNA_ANTENNAE_BLOCK 12
-#define DNA_MUSHROOM_CAPS_BLOCK 13
+#define DNA_TAIL_BLOCK 3
+#define DNA_SNOUT_BLOCK 4
+#define DNA_HORNS_BLOCK 5
+#define DNA_FRILLS_BLOCK 6
+#define DNA_EARS_BLOCK 7
+#define DNA_SPINES_BLOCK 8
+#define DNA_WINGS_BLOCK 9
+#define DNA_MOTH_WINGS_BLOCK 10
+#define DNA_ANTENNAE_BLOCK 11
+#define DNA_MUSHROOM_CAP_BLOCK 12
 
 #define DNA_SEQUENCE_LENGTH 4
 #define DNA_MUTATION_BLOCKS 8
@@ -60,31 +59,32 @@
 #define FACEHAIR 3
 #define EYECOLOR 4
 #define LIPS 5
-#define NOBLOOD 6
-#define NOTRANSSTING 7
-#define NOZOMBIE 8
+#define MARKINGS 6
+#define NOBLOOD 7
+#define NOTRANSSTING 8
+#define NOZOMBIE 9
 /// Uses weird leg sprites. Optional for Lizards, required for ashwalkers. Don't give it to other races unless you make sprites for this (see human_parts_greyscale.dmi)
-#define DIGITIGRADE 9
-#define NO_UNDERWEAR 10
-#define NOSTOMACH 11
-#define NO_DNA_COPY 12
-#define DRINKSBLOOD 13
+#define DIGITIGRADE 10
+#define NO_UNDERWEAR 11
+#define NOSTOMACH 12
+#define NO_DNA_COPY 13
+#define DRINKSBLOOD 14
 /// Use this if you want to change the race's color without the player being able to pick their own color. AKA special color shifting
-#define DYNCOLORS 14
-#define AGENDER 15
+#define DYNCOLORS 15
+#define AGENDER 16
 /// Do not draw eyes or eyeless overlay
-#define NOEYESPRITES 16
+#define NOEYESPRITES 17
 /// Used for determining which wounds are applicable to this species.
 /// if we have flesh (can suffer slash/piercing/burn wounds, requires they don't have NOBLOOD)
-#define HAS_FLESH 17
+#define HAS_FLESH 18
 /// if we have bones (can suffer bone wounds)
-#define HAS_BONE 18
+#define HAS_BONE 19
 /// Do not draw blood overlay
-#define NOBLOODOVERLAY 19
+#define NOBLOODOVERLAY 20
 ///No augments, for monkeys in specific because they will turn into fucking freakazoids https://cdn.discordapp.com/attachments/326831214667235328/791313258912153640/102707682-fa7cad80-4294-11eb-8f13-8c689468aeb0.png
-#define NOAUGMENTS 20
+#define NOAUGMENTS 21
 ///will be assigned a universal vampire themed last name shared by their department. this is preferenced!
-#define BLOOD_CLANS 21
+#define BLOOD_CLANS 22
 
 //organ slots
 #define ORGAN_SLOT_ADAMANTINE_RESONATOR "adamantine_resonator"
@@ -120,7 +120,6 @@
 #define ORGAN_SLOT_EXTERNAL_HORNS "horns"
 #define ORGAN_SLOT_EXTERNAL_WINGS "wings"
 #define ORGAN_SLOT_EXTERNAL_ANTENNAE "antennae"
-#define ORGAN_SLOT_EXTERNAL_MARKINGS "markings"
 
 /// Xenomorph organ slots
 #define ORGAN_SLOT_XENO_ACIDGLAND "acid_gland"

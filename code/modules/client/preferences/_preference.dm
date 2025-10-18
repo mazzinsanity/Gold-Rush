@@ -444,6 +444,23 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 /datum/preference/color/is_valid(value)
 	return findtext(value, GLOB.is_color)
 
+/datum/preference/tri_color
+	abstract_type = /datum/preference/tri_color
+
+/datum/preference/tri_color/deserialize(input, datum/preferences/preferences)
+	var/list/input_list = input
+	return list(sanitize_hexcolor(input_list[1]), sanitize_hexcolor(input_list[2]), sanitize_hexcolor(input_list[3]))
+
+/datum/preference/tri_color/create_default_value()
+	return list(COLOR_RED, COLOR_GREEN, COLOR_BLUE)
+
+/datum/preference/tri_color/serialize(input)
+	var/list/input_list = input
+	return list(sanitize_hexcolor(input_list[1]), sanitize_hexcolor(input_list[2]), sanitize_hexcolor(input_list[3]))
+
+/datum/preference/tri_color/is_valid(list/value)
+	return value.len == 3 && (findtext(value[1], GLOB.is_color) && findtext(value[2], GLOB.is_color) && findtext(value[3], GLOB.is_color))
+
 /// Takes an assoc list of names to /datum/sprite_accessory and returns a value
 /// fit for `/datum/preference/init_possible_values()`
 /proc/possible_values_for_sprite_accessory_list(list/datum/sprite_accessory/sprite_accessories)

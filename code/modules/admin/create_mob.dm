@@ -30,11 +30,12 @@
 	H.dna.features["mcolor"] = "#[random_color()]"
 	H.dna.features["ethcolor"] = GLOB.color_list_ethereal[pick(GLOB.color_list_ethereal)]
 	H.dna.features["tail"] = pick(GLOB.tails_list)
+	H.dna.features["spines"] = pick(GLOB.spines_list)
 	H.dna.features["snout"] = pick(GLOB.snouts_list)
 	H.dna.features["horns"] = pick(GLOB.horns_list)
 	H.dna.features["frills"] = pick(GLOB.frills_list)
-	H.dna.features["spines"] = pick(GLOB.spines_list)
-	H.dna.features["markings"] = pick(GLOB.markings_list)
+	H.dna.features["ears"] = pick(GLOB.ears_list)
+	H.dna.features["wings"] = pick(GLOB.moth_wings_list)
 	H.dna.features["moth_wings"] = pick(GLOB.moth_wings_list)
 	H.dna.features["antennae"] = pick(GLOB.antennae_list)
 

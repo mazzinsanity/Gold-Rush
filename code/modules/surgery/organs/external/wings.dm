@@ -6,6 +6,8 @@
 
 	feature_key = "wings"
 
+	dna_block = DNA_WINGS_BLOCK
+
 /obj/item/organ/external/wings/can_draw_on_bodypart(mob/living/carbon/human/human)
 	if(!human.wear_suit)
 		return TRUE

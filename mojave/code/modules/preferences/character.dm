@@ -64,6 +64,8 @@
 /datum/preference/choiced/underwear/compile_constant_data()
 	var/list/data = ..()
 
+	data[SUPPLEMENTAL_FEATURE_KEY] = "underwear_color"
+
 	return data
 
 //Socks

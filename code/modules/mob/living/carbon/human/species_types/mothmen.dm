@@ -11,7 +11,6 @@
 		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
-	mutant_bodyparts = list("markings" = "None")
 	external_organs = list(/obj/item/organ/external/wings/moth = "Plain", /obj/item/organ/external/antennae = "Plain")
 	attack_verb = "slash"
 	attack_effect = ATTACK_EFFECT_CLAW

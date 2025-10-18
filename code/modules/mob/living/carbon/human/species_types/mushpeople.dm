@@ -2,7 +2,7 @@
 	name = "Mushroomperson"
 	plural_form = "Mushroompeople"
 	id = SPECIES_MUSHROOM
-	mutant_bodyparts = list("caps" = "Round")
+	mutant_bodyparts = list("mushcap" = "Round")
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | ERT_SPAWN
 
 	fixed_mut_color = "#DBBF92"
@@ -41,8 +41,8 @@
 	. = ..()
 	if(ishuman(C))
 		var/mob/living/carbon/human/H = C
-		if(!H.dna.features["caps"])
-			H.dna.features["caps"] = "Round"
+		if(!H.dna.features["mushcap"])
+			H.dna.features["mushcap"] = "Round"
 			handle_mutant_bodyparts(H)
 		mush = new(null)
 		mush.teach(H)

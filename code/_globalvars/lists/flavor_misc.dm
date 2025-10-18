@@ -16,7 +16,16 @@ GLOBAL_LIST_EMPTY(undershirt_list) //stores /datum/sprite_accessory/undershirt i
 	//Socks
 GLOBAL_LIST_EMPTY(socks_list) //stores /datum/sprite_accessory/socks indexed by name
 	//Lizard Bits (all datum lists indexed by name)
-GLOBAL_LIST_EMPTY(markings_list)
+GLOBAL_LIST_EMPTY(head_markings_list)
+GLOBAL_LIST_EMPTY(chest_markings_list)
+GLOBAL_LIST_EMPTY(left_arm_markings_list)
+GLOBAL_LIST_EMPTY(left_hand_markings_list)
+GLOBAL_LIST_EMPTY(right_arm_markings_list)
+GLOBAL_LIST_EMPTY(right_hand_markings_list)
+GLOBAL_LIST_EMPTY(left_leg_markings_list)
+GLOBAL_LIST_EMPTY(left_foot_markings_list)
+GLOBAL_LIST_EMPTY(right_leg_markings_list)
+GLOBAL_LIST_EMPTY(right_foot_markings_list)
 GLOBAL_LIST_EMPTY(tails_list)
 GLOBAL_LIST_EMPTY(animated_tails_list)
 GLOBAL_LIST_EMPTY(snouts_list)
@@ -33,7 +42,7 @@ GLOBAL_LIST_EMPTY(wings_list)
 GLOBAL_LIST_EMPTY(wings_open_list)
 GLOBAL_LIST_EMPTY(moth_wings_list)
 GLOBAL_LIST_EMPTY(antennae_list)
-GLOBAL_LIST_EMPTY(caps_list)
+GLOBAL_LIST_EMPTY(mushcaps_list)
 
 GLOBAL_LIST_INIT(color_list_ethereal, list(
 	"Blue" = "#3399ff",

@@ -1,5 +1,5 @@
 /datum/preference/color/underwear_color
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "underwear_color"
 

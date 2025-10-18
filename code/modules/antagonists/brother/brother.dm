@@ -41,7 +41,6 @@
 	brother1.set_species(/datum/species/ethereal)
 
 	brother2.dna.features["antennae"] = "Plain"
-	brother2.dna.features["markings"] = "None"
 	brother2.dna.features["wings"] = "Plain"
 	brother2.set_species(/datum/species/moth)
 

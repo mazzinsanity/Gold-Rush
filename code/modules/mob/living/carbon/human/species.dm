@@ -778,38 +778,207 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				standing += eye_overlay
 
 	// organic body markings
-	if(mutant_bodyparts["markings"])
+	if(MARKINGS in species_human.dna.species.species_traits)
 		var/obj/item/bodypart/chest/chest = species_human.get_bodypart(BODY_ZONE_CHEST)
-		var/obj/item/bodypart/r_arm/right_arm = species_human.get_bodypart(BODY_ZONE_R_ARM)
 		var/obj/item/bodypart/l_arm/left_arm = species_human.get_bodypart(BODY_ZONE_L_ARM)
-		var/obj/item/bodypart/r_leg/right_leg = species_human.get_bodypart(BODY_ZONE_R_LEG)
+		var/obj/item/bodypart/r_arm/right_arm = species_human.get_bodypart(BODY_ZONE_R_ARM)
 		var/obj/item/bodypart/l_leg/left_leg = species_human.get_bodypart(BODY_ZONE_L_LEG)
-		var/datum/sprite_accessory/markings = GLOB.markings_list[species_human.dna.features["markings"]]
+		var/obj/item/bodypart/r_leg/right_leg = species_human.get_bodypart(BODY_ZONE_R_LEG)
 
 		if(!HAS_TRAIT(species_human, TRAIT_HUSK))
-			if(noggin && (noggin.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_head_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_head", -BODY_LAYER)
-				standing += markings_head_overlay
+			if(noggin && (noggin.status != BODYPART_ROBOTIC) && species_human.dna.features["head_markings_list"])
+				for(var/i in 1 to species_human.dna.features["head_markings_list"].len)
+					var/datum/sprite_accessory/marking = GLOB.head_markings_list[species_human.dna.features["head_markings_list"][i]]
+					var/list/appearance_list = list()
+					var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_head", -BODY_LAYER)
+					appearance_list += appearance
 
-			if(chest && (chest.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_chest_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_chest", -BODY_LAYER)
-				standing += markings_chest_overlay
+					if(marking.icon_state_2)
+						appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_head", -BODY_LAYER)
+						appearance_list += appearance
+					
+					if(marking.icon_state_3)
+						appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_head", -BODY_LAYER)
+						appearance_list += appearance
 
-			if(right_arm && (right_arm.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_r_arm_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_r_arm", -BODY_LAYER)
-				standing += markings_r_arm_overlay
+					for(var/j in 1 to appearance_list.len)
+						appearance_list[j].color = species_human.dna.features["head_markings_[i]_color_list"][j]
+						standing += appearance_list[j]
+
+			if(chest && (chest.status != BODYPART_ROBOTIC) && species_human.dna.features["chest_markings_list"])
+				for(var/i in 1 to species_human.dna.features["chest_markings_list"].len)
+					var/datum/sprite_accessory/marking = GLOB.chest_markings_list[species_human.dna.features["chest_markings_list"][i]]
+					var/list/appearance_list = list()
+					var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_chest", -BODY_LAYER)
+					appearance_list += appearance
+
+					if(marking.icon_state_2)
+						appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_chest", -BODY_LAYER)
+						appearance_list += appearance
+					
+					if(marking.icon_state_3)
+						appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_chest", -BODY_LAYER)
+						appearance_list += appearance
+
+					for(var/j in 1 to appearance_list.len)
+						appearance_list[j].color = species_human.dna.features["chest_markings_[i]_color_list"][j]
+						standing += appearance_list[j]
 
 			if(left_arm && (left_arm.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_l_arm_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_l_arm", -BODY_LAYER)
-				standing += markings_l_arm_overlay
+				if(species_human.dna.features["left_arm_markings_list"])
+					for(var/i in 1 to species_human.dna.features["left_arm_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.left_arm_markings_list[species_human.dna.features["left_arm_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_arm", -BODY_LAYER)
+						appearance_list += appearance
 
-			if(right_leg && (right_leg.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_r_leg_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_r_leg", -BODY_LAYER)
-				standing += markings_r_leg_overlay
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_arm", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_arm", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["left_arm_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+						
+				if(species_human.dna.features["left_hand_markings_list"])
+					for(var/i in 1 to species_human.dna.features["left_hand_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.left_hand_markings_list[species_human.dna.features["left_hand_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_hand", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_hand", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_hand", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["left_hand_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+
+			if(right_arm && (right_arm.status != BODYPART_ROBOTIC))
+				if(species_human.dna.features["right_arm_markings_list"])
+					for(var/i in 1 to species_human.dna.features["right_arm_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.right_arm_markings_list[species_human.dna.features["right_arm_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_arm", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_arm", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_arm", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["right_arm_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+						
+				if(species_human.dna.features["right_hand_markings_list"])
+					for(var/i in 1 to species_human.dna.features["right_hand_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.right_hand_markings_list[species_human.dna.features["right_hand_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_hand", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_hand", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_hand", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["right_hand_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
 
 			if(left_leg && (left_leg.status != BODYPART_ROBOTIC))
-				var/mutable_appearance/markings_l_leg_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_l_leg", -BODY_LAYER)
-				standing += markings_l_leg_overlay
+				if(species_human.dna.features["left_leg_markings_list"])
+					for(var/i in 1 to species_human.dna.features["left_leg_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.left_leg_markings_list[species_human.dna.features["left_leg_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_leg", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_leg", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_leg", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["left_leg_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+						
+				if(species_human.dna.features["left_foot_markings_list"])
+					for(var/i in 1 to species_human.dna.features["left_foot_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.left_foot_markings_list[species_human.dna.features["left_foot_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_foot", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_foot", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_foot", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["left_foot_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+
+			if(right_leg && (right_leg.status != BODYPART_ROBOTIC))
+				if(species_human.dna.features["right_leg_markings_list"])
+					for(var/i in 1 to species_human.dna.features["right_leg_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.right_leg_markings_list[species_human.dna.features["right_leg_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_leg", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_leg", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_leg", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["right_leg_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
+						
+				if(species_human.dna.features["right_foot_markings_list"])
+					for(var/i in 1 to species_human.dna.features["right_foot_markings_list"].len)
+						var/datum/sprite_accessory/marking = GLOB.right_foot_markings_list[species_human.dna.features["right_foot_markings_list"][i]]
+						var/list/appearance_list = list()
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_foot", -BODY_LAYER)
+						appearance_list += appearance
+
+						if(marking.icon_state_2)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_foot", -BODY_LAYER)
+							appearance_list += appearance
+						
+						if(marking.icon_state_3)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_foot", -BODY_LAYER)
+							appearance_list += appearance
+
+						for(var/j in 1 to appearance_list.len)
+							appearance_list[j].color = species_human.dna.features["right_foot_markings_[i]_color_list"][j]
+							standing += appearance_list[j]
 
 	//Underwear, Undershirts & Socks
 	if(!(NO_UNDERWEAR in species_traits))
@@ -914,80 +1083,66 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	if(!bodyparts_to_add)
 		return
 
-	var/g = (source.body_type == FEMALE) ? "f" : "m"
-
 	for(var/layer in relevent_layers)
 		var/layertext = mutant_bodyparts_layertext(layer)
 
 		for(var/bodypart in bodyparts_to_add)
 			var/datum/sprite_accessory/accessory
+			var/accessory_color_list
 			switch(bodypart)
 				if("tail")
 					accessory = GLOB.tails_list[source.dna.features["tail"]]
+					accessory_color_list = source.dna.features["tail_color_list"]
 				if("waggingtail")
 					accessory = GLOB.animated_tails_list[source.dna.features["tail"]]
+					accessory_color_list = source.dna.features["tail_color_list"]
 				if("spines")
 					accessory = GLOB.spines_list[source.dna.features["spines"]]
+					accessory_color_list = source.dna.features["spines_color_list"]
 				if("waggingspines")
 					accessory = GLOB.animated_spines_list[source.dna.features["spines"]]
+					accessory_color_list = source.dna.features["spines_color_list"]
 				if("ears")
 					accessory = GLOB.ears_list[source.dna.features["ears"]]
-				if("markings")
-					accessory = GLOB.markings_list[source.dna.features["markings"]]
+					accessory_color_list = source.dna.features["ears_color_list"]
 				if("legs")
 					accessory = GLOB.legs_list[source.dna.features["legs"]]
-				if("caps")
-					accessory = GLOB.caps_list[source.dna.features["caps"]]
-			if(!accessory || accessory.icon_state == "none")
+					accessory_color_list = list(source.dna.features["mcolor"])
+				if("mushcap")
+					accessory = GLOB.mushcaps_list[source.dna.features["mushcap"]]
+					accessory_color_list = source.dna.features["mushcap_color_list"]
+			if(!accessory || accessory.icon_state == "none" || !accessory_color_list)
 				continue
+				
+			var/list/appearance_list = list()
+			var/mutable_appearance/appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state]_[layertext]", -layer)
+			appearance_list += appearance
 
-			var/mutable_appearance/accessory_overlay = mutable_appearance(accessory.icon, layer = -layer)
-
-			if(accessory.gender_specific)
-				accessory_overlay.icon_state = "[g]_[bodypart]_[accessory.icon_state]_[layertext]"
-			else
-				accessory_overlay.icon_state = "m_[bodypart]_[accessory.icon_state]_[layertext]"
+			if(accessory.icon_state_2)
+				appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_2]_[layertext]", -layer)
+				appearance_list += appearance
+	
+			if(accessory.icon_state_3)
+				appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_3]_[layertext]", -layer)
+				appearance_list += appearance
 
 			if(accessory.em_block)
-				accessory_overlay.overlays += emissive_blocker(accessory_overlay.icon, accessory_overlay.icon_state, accessory_overlay.alpha)
+				for(var/mutable_appearance/mut_appearance in appearance_list)
+					mut_appearance.overlays += emissive_blocker(mut_appearance.icon, mut_appearance.icon_state, mut_appearance.alpha)
 
 			if(accessory.center)
-				accessory_overlay = center_image(accessory_overlay, accessory.dimension_x, accessory.dimension_y)
+				for(var/mutable_appearance/mut_appearance in appearance_list)
+					mut_appearance = center_image(mut_appearance, accessory.dimension_x, accessory.dimension_y)
 
 			if(!(HAS_TRAIT(source, TRAIT_HUSK)))
-				if(!forced_colour)
-					switch(accessory.color_src)
-						if(MUTCOLORS)
-							if(fixed_mut_color)
-								accessory_overlay.color = fixed_mut_color
-							else
-								accessory_overlay.color = source.dna.features["mcolor"]
-						if(HAIR)
-							if(hair_color == "mutcolor")
-								accessory_overlay.color = source.dna.features["mcolor"]
-							else if(hair_color == "fixedmutcolor")
-								accessory_overlay.color = fixed_mut_color
-							else
-								accessory_overlay.color = source.hair_color
-						if(FACEHAIR)
-							accessory_overlay.color = source.facial_hair_color
-						if(EYECOLOR)
-							accessory_overlay.color = source.eye_color
-				else
-					accessory_overlay.color = forced_colour
-			standing += accessory_overlay
+				for(var/i in 1 to appearance_list.len)
+					if(!forced_colour)
+						appearance_list[i].color = accessory_color_list[i]
+					else
+						appearance_list[i].color = forced_colour
 
-			if(accessory.hasinner)
-				var/mutable_appearance/inner_accessory_overlay = mutable_appearance(accessory.icon, layer = -layer)
-				if(accessory.gender_specific)
-					inner_accessory_overlay.icon_state = "[g]_[bodypart]inner_[accessory.icon_state]_[layertext]"
-				else
-					inner_accessory_overlay.icon_state = "m_[bodypart]inner_[accessory.icon_state]_[layertext]"
-
-				if(accessory.center)
-					inner_accessory_overlay = center_image(inner_accessory_overlay, accessory.dimension_x, accessory.dimension_y)
-
-				standing += inner_accessory_overlay
+			for(var/mutable_appearance/mut_appearance in appearance_list)
+				standing += mut_appearance
 
 		source.overlays_standing[layer] = standing.Copy()
 		standing = list()
