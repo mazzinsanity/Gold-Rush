@@ -54,7 +54,7 @@
 	if(!GLOB.horns_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/horns, GLOB.horns_list)
 	if(!GLOB.ears_list.len)
-		init_sprite_accessory_subtypes(/datum/sprite_accessory/ears, GLOB.horns_list)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/ears, GLOB.ears_list)
 	if(!GLOB.frills_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/frills, GLOB.frills_list)
 	if(!GLOB.spines_list.len)
@@ -67,7 +67,7 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_wings, GLOB.moth_wings_list)
 	if(!GLOB.antennae_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/antennae, GLOB.antennae_list)
-	//For now we will always return none for ears.
+
 	return(list("mcolor" = "#[pick("7F","FF")][pick("7F","FF")][pick("7F","FF")]","ethcolor" = GLOB.color_list_ethereal[pick(GLOB.color_list_ethereal)], "tail" = pick(GLOB.tails_list), "wings" = pick(GLOB.wings_list), "snout" = pick(GLOB.snouts_list), "horns" = pick(GLOB.horns_list), "ears" = pick(GLOB.ears_list), "frills" = pick(GLOB.frills_list), "spines" = pick(GLOB.spines_list), "legs" = "Normal Legs", "mushcap" = pick(GLOB.mushcaps_list), "moth_wings" = pick(GLOB.moth_wings_list), "antennae" = pick(GLOB.antennae_list)))
 
 /proc/random_hairstyle()

@@ -1032,6 +1032,10 @@
 	name = "Reddish"
 	icon_state = "reddish"
 
+/datum/sprite_accessory/markings/head/fox
+	name = "Fox"
+	icon_state = "fox"
+
 ////////////////////////////////
 // Chest Markings Definitions //
 ////////////////////////////////
@@ -1056,6 +1060,10 @@
 	name = "Light Belly"
 	icon_state = "lbelly"
 
+/datum/sprite_accessory/markings/chest/floofer_f
+	name = "Floofer (Female)"
+	icon_state = "floofer_f"
+
 ///////////////////////////////////
 // Left Arm Markings Definitions //
 ///////////////////////////////////
@@ -1068,6 +1076,10 @@
 	name = "Reddish"
 	icon_state = "reddish"
 
+/datum/sprite_accessory/markings/left_arm/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
 ////////////////////////////////////
 // Left Hand Markings Definitions //
 ////////////////////////////////////
@@ -1075,6 +1087,14 @@
 /datum/sprite_accessory/markings/left_hand/none
 	name = "None"
 	icon_state = "none"
+
+/datum/sprite_accessory/markings/left_hand/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/left_hand/claws
+	name = "Claws"
+	icon_state = "claws"
 
 ////////////////////////////////////
 // Right Arm Markings Definitions //
@@ -1088,6 +1108,10 @@
 	name = "Reddish"
 	icon_state = "reddish"
 
+/datum/sprite_accessory/markings/right_arm/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
 /////////////////////////////////////
 // Right Hand Markings Definitions //
 /////////////////////////////////////
@@ -1095,6 +1119,14 @@
 /datum/sprite_accessory/markings/right_hand/none
 	name = "None"
 	icon_state = "none"
+
+/datum/sprite_accessory/markings/right_hand/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/right_hand/claws
+	name = "Claws"
+	icon_state = "claws"
 
 ///////////////////////////////////
 // Left Leg Markings Definitions //
@@ -1108,6 +1140,10 @@
 	name = "Reddish"
 	icon_state = "reddish"
 
+/datum/sprite_accessory/markings/left_leg/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
 ////////////////////////////////////
 // Left Foot Markings Definitions //
 ////////////////////////////////////
@@ -1115,6 +1151,10 @@
 /datum/sprite_accessory/markings/left_foot/none
 	name = "None"
 	icon_state = "none"
+
+/datum/sprite_accessory/markings/left_foot/claws
+	name = "Claws"
+	icon_state = "claws"
 
 ///////////////////////////////////
 // Right Leg Markings Definitions //
@@ -1124,9 +1164,13 @@
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/left_leg/reddish
+/datum/sprite_accessory/markings/right_leg/reddish
 	name = "Reddish"
 	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/right_leg/floofer
+	name = "Floofer"
+	icon_state = "floofer"
 
 /////////////////////////////////////
 // Right Foot Markings Definitions //
@@ -1135,6 +1179,10 @@
 /datum/sprite_accessory/markings/right_foot/none
 	name = "None"
 	icon_state = "none"
+
+/datum/sprite_accessory/markings/right_foot/claws
+	name = "Claws"
+	icon_state = "claws"
 
 ///////////////////////
 // Tails Definitions //
@@ -1199,6 +1247,16 @@
 /datum/sprite_accessory/tails/monkey
 	name = "Monkey"
 	icon_state = "monkey"
+
+/datum/sprite_accessory/tails/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
+
+/datum/sprite_accessory/tails_animated/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
 
 ////////////////////////
 // Spines Definitions //
@@ -1288,6 +1346,11 @@
 	name = "Round + Light"
 	icon_state = "roundlight"
 
+/datum/sprite_accessory/snouts/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
+
 ////////////////////////
 // Frills Definitions //
 ////////////////////////
@@ -1358,6 +1421,11 @@
 /datum/sprite_accessory/ears/cat
 	name = "Cat"
 	icon_state = "cat"
+
+/datum/sprite_accessory/ears/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
 
 //////////////////////////
 // Antennae Definitions //

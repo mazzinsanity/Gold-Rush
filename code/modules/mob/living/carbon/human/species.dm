@@ -852,15 +852,15 @@ GLOBAL_LIST_EMPTY(features_by_species)
 					for(var/i in 1 to features_markings_list.len)
 						var/datum/sprite_accessory/marking = GLOB.left_hand_markings_list[features_markings_list[i]]
 						var/list/mutable_appearance/appearance_list = list()
-						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_hand", -BODY_LAYER)
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_l_hand", -HANDS_LAYER)
 						appearance_list += appearance
 
 						if(marking.icon_state_2)
-							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_hand", -BODY_LAYER)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_l_hand", -HANDS_LAYER)
 							appearance_list += appearance
 						
 						if(marking.icon_state_3)
-							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_hand", -BODY_LAYER)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_l_hand", -HANDS_LAYER)
 							appearance_list += appearance
 
 						for(var/j in 1 to appearance_list.len)
@@ -893,15 +893,15 @@ GLOBAL_LIST_EMPTY(features_by_species)
 					for(var/i in 1 to features_markings_list.len)
 						var/datum/sprite_accessory/marking = GLOB.right_hand_markings_list[features_markings_list[i]]
 						var/list/mutable_appearance/appearance_list = list()
-						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_hand", -BODY_LAYER)
+						var/mutable_appearance/appearance = mutable_appearance(marking.icon, "[marking.icon_state]_r_hand", -HANDS_LAYER)
 						appearance_list += appearance
 
 						if(marking.icon_state_2)
-							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_hand", -BODY_LAYER)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_2]_r_hand", -HANDS_LAYER)
 							appearance_list += appearance
 						
 						if(marking.icon_state_3)
-							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_hand", -BODY_LAYER)
+							appearance = mutable_appearance(marking.icon, "[marking.icon_state_3]_r_hand", -HANDS_LAYER)
 							appearance_list += appearance
 
 						for(var/j in 1 to appearance_list.len)

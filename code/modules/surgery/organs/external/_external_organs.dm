@@ -77,7 +77,7 @@
 
 ///Add the overlays we need to draw on a person. Called from _bodyparts.dm
 /obj/item/organ/external/proc/get_overlays(list/overlay_list, image_dir, image_layer, list/color_list)
-	if(!sprite_datum || sprite_datum.icon_state == "none")
+	if(!sprite_datum || sprite_datum.icon_state == "none" || !color_list)
 		return
 
 	update_cached_colors(color_list)
@@ -99,7 +99,7 @@
 
 	if(sprite_datum.center)
 		for(var/mutable_appearance/mut_appearance in appearance_list)
-			center_image(mut_appearance, sprite_datum.dimension_x, sprite_datum.dimension_y)
+			mut_appearance = center_image(mut_appearance, sprite_datum.dimension_x, sprite_datum.dimension_y)
 
 	for(var/i in 1 to appearance_list.len)
 		appearance_list[i].color = color_list[i]
@@ -201,7 +201,7 @@
 /obj/item/organ/external/snout
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EXTERNAL_SNOUT
-	layers = EXTERNAL_ADJACENT
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT
 
 	feature_key = "snout"
 	preference = "feature_snout"
