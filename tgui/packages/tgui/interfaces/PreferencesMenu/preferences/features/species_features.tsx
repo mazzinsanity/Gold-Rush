@@ -106,11 +106,6 @@ export const feature_wings_color_list: Feature<string[]> = {
   component: FeatureTriColorInput,
 };
 
-export const feature_moth_wings_color_list: Feature<string[]> = {
-  name: 'Moth wings colors',
-  component: FeatureTriColorInput,
-};
-
 export const feature_tail_color_list: Feature<string[]> = {
   name: 'Tail colors',
   component: FeatureTriColorInput,

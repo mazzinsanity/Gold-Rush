@@ -10,8 +10,11 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
+	mutant_bodyparts = list(
+		"wings" = "Plain", 
+		"antennae" = "Plain"
+	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
-	external_organs = list(/obj/item/organ/external/wings/moth = "Plain", /obj/item/organ/external/antennae = "Plain")
 	attack_verb = "slash"
 	attack_effect = ATTACK_EFFECT_CLAW
 	attack_sound = 'sound/weapons/slash.ogg'
@@ -57,11 +60,9 @@
 	return 1
 
 /datum/species/moth/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/wings = pick(GLOB.moth_wings_list)
+	var/wings = pick(GLOB.wings_list)
 	mutant_bodyparts["wings"] = wings
-	mutant_bodyparts["moth_wings"] = wings
 	human_mob.dna.features["wings"] = wings
-	human_mob.dna.features["moth_wings"] = wings
 	human_mob.update_body()
 
 /datum/species/moth/get_scream_sound(mob/living/carbon/human/human)

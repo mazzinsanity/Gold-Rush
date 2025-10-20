@@ -195,10 +195,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		L[DNA_EARS_BLOCK] = construct_block(GLOB.ears_list.Find(features["ears"]), GLOB.ears_list.len)
 	if(features["wings"])
 		L[DNA_WINGS_BLOCK] = construct_block(GLOB.wings_list.Find(features["wings"]), GLOB.wings_list.len)
-	if(features["antennae"] != "Burnt Off")
+	if(features["antennae"])
 		L[DNA_ANTENNAE_BLOCK] = construct_block(GLOB.antennae_list.Find(features["antennae"]), GLOB.antennae_list.len)
-	if(features["moth_wings"] != "Burnt Off")
-		L[DNA_MOTH_WINGS_BLOCK] = construct_block(GLOB.moth_wings_list.Find(features["moth_wings"]), GLOB.moth_wings_list.len)
 	if(features["mushcap"])
 		L[DNA_MUSHROOM_CAP_BLOCK] = construct_block(GLOB.mushcaps_list.Find(features["mushcap"]), GLOB.mushcaps_list.len)
 
@@ -321,8 +319,6 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 			set_uni_feature_block(blocknumber, construct_block(GLOB.ears_list.Find(features["ears"]), GLOB.ears_list.len))
 		if(DNA_WINGS_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(GLOB.wings_list.Find(features["wings"]), GLOB.wings_list.len))
-		if(DNA_MOTH_WINGS_BLOCK)
-			set_uni_feature_block(blocknumber, construct_block(GLOB.moth_wings_list.Find(features["moth_wings"]), GLOB.moth_wings_list.len))
 		if(DNA_ANTENNAE_BLOCK)
 			set_uni_feature_block(blocknumber, construct_block(GLOB.antennae_list.Find(features["antennae"]), GLOB.antennae_list.len))
 		if(DNA_MUSHROOM_CAP_BLOCK)
@@ -565,19 +561,10 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		dna.features["ears"] = GLOB.ears_list[deconstruct_block(get_uni_feature_block(features, DNA_EARS_BLOCK), GLOB.ears_list.len)]
 	if(dna.features["wings"])
 		dna.features["wings"] = GLOB.wings_list[deconstruct_block(get_uni_feature_block(features, DNA_WINGS_BLOCK), GLOB.wings_list.len)]
-	if(dna.features["moth_wings"])
-		var/genetic_value = GLOB.moth_wings_list[deconstruct_block(get_uni_feature_block(features, DNA_MOTH_WINGS_BLOCK), GLOB.moth_wings_list.len)]
-		dna.features["original_moth_wings"] = genetic_value
-		dna.features["moth_wings"] = genetic_value
 	if(dna.features["antennae"])
-		var/genetic_value = GLOB.antennae_list[deconstruct_block(get_uni_feature_block(features, DNA_ANTENNAE_BLOCK), GLOB.antennae_list.len)]
-		dna.features["original_antennae"] = genetic_value
-		dna.features["antennae"] = genetic_value
+		dna.features["antennae"] = GLOB.antennae_list[deconstruct_block(get_uni_feature_block(features, DNA_ANTENNAE_BLOCK), GLOB.antennae_list.len)]
 	if(dna.features["mushcap"])
 		dna.features["mushcap"] = GLOB.mushcaps_list[deconstruct_block(get_uni_feature_block(features, DNA_MUSHROOM_CAP_BLOCK), GLOB.mushcaps_list.len)]
-
-	for(var/obj/item/organ/external/external_organ in internal_organs)
-		external_organ.mutate_feature(features, src)
 
 	if(icon_update)
 		dna.species.handle_body(src) // We want 'update_body_parts()' to be called only if mutcolor_update is TRUE, so no 'update_body()' here.

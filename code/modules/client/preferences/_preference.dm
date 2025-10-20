@@ -452,7 +452,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 	return list(sanitize_hexcolor(input_list[1]), sanitize_hexcolor(input_list[2]), sanitize_hexcolor(input_list[3]))
 
 /datum/preference/tri_color/create_default_value()
-	return list(COLOR_RED, COLOR_GREEN, COLOR_BLUE)
+	return list(COLOR_RED, COLOR_VIBRANT_LIME, COLOR_BLUE)
 
 /datum/preference/tri_color/serialize(input)
 	var/list/input_list = input
@@ -478,7 +478,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 /// fit for `/datum/preference/init_possible_values()`
 /// Different from `possible_values_for_sprite_accessory_list` in that it takes a list of layers
 /// such as BEHIND, FRONT, and ADJ.
-/// It also takes a "body part name", such as body_markings, moth_wings, etc
+/// It also takes a "body part name", such as body_markings, wings, etc
 /// They are expected to be in order from lowest to top.
 /proc/possible_values_for_sprite_accessory_list_for_body_part(
 	list/datum/sprite_accessory/sprite_accessories,
@@ -493,7 +493,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 		var/icon/final_icon
 
 		for (var/layer in layers)
-			var/icon/icon = icon(sprite_accessory.icon, "m_[body_part]_[sprite_accessory.icon_state]_[layer]")
+			var/icon/icon = icon(sprite_accessory.icon, "[body_part]_[sprite_accessory.icon_state]_[layer]")
 
 			if (isnull(final_icon))
 				final_icon = icon

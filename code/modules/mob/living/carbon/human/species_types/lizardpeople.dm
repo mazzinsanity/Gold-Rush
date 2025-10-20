@@ -5,17 +5,25 @@
 	id = SPECIES_LIZARD
 	say_mod = "hisses"
 	default_color = COLOR_VIBRANT_LIME
-	species_traits = list(MUTCOLORS, EYECOLOR, LIPS, HAS_FLESH, HAS_BONE, MARKINGS)
+	species_traits = list(MUTCOLORS, EYECOLOR, LIPS, HAS_FLESH, HAS_BONE, MARKINGS, HAIR)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_REPTILE
-	mutant_bodyparts = list("tail" = "Smooth", "spines" = "None", "legs" = "Normal Legs", "ears" = "None")
-	external_organs = list(/obj/item/organ/external/horns = "None",
-		/obj/item/organ/external/frills = "None",
-		/obj/item/organ/external/snout = "Round")
+	mutant_bodyparts = list(
+		"tail" = "Smooth", 
+		"spines" = "None", 
+		"legs" = "Normal Legs", 
+		"ears" = "None",
+		"horns" = "None",
+		"frills" = "None",
+		"snout" = "Round",
+		"wings" = "None",
+		"antennae" = "None",
+		"mushcap" = "None",
+	)
 	mutanttongue = /obj/item/organ/tongue/lizard
 	mutant_organs = list(/obj/item/organ/tail/lizard)
 	coldmod = 1.5

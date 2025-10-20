@@ -1434,6 +1434,10 @@
 /datum/sprite_accessory/antennae
 	icon = 'icons/mob/antennae.dmi'
 
+/datum/sprite_accessory/antennae/none
+	name = "None"
+	icon_state = "none"
+
 /datum/sprite_accessory/antennae/plain
 	name = "Plain"
 	icon_state = "plain"
@@ -1466,9 +1470,9 @@
 	name = "Firewatch"
 	icon_state = "firewatch"
 
-/datum/sprite_accessory/antennae/deathhead
+/datum/sprite_accessory/antennae/deathshead
 	name = "Deathshead"
-	icon_state = "deathhead"
+	icon_state = "deathshead"
 
 /datum/sprite_accessory/antennae/poison
 	name = "Poison"
@@ -1502,27 +1506,17 @@
 // Wings Definitions //
 ///////////////////////
 
+/datum/sprite_accessory/wings
+	icon = 'icons/mob/wings.dmi'
+	em_block = TRUE
+
 /datum/sprite_accessory/wings/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/wings
-	icon = 'icons/mob/clothing/wings.dmi'
-	em_block = TRUE
-
-/datum/sprite_accessory/wings_open
-	icon = 'icons/mob/clothing/wings.dmi'
-	em_block = TRUE
+/* To do: Fix big wings' broken sprites
 
 /datum/sprite_accessory/wings/angel
-	name = "Angel"
-	icon_state = "angel"
-	dimension_x = 46
-	center = TRUE
-	dimension_y = 34
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/angel
 	name = "Angel"
 	icon_state = "angel"
 	dimension_x = 46
@@ -1535,24 +1529,8 @@
 	dimension_x = 96
 	center = TRUE
 	dimension_y = 32
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/dragon
-	name = "Dragon"
-	icon_state = "dragon"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
 
 /datum/sprite_accessory/wings/megamoth
-	name = "Megamoth"
-	icon_state = "megamoth"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/megamoth
 	name = "Megamoth"
 	icon_state = "megamoth"
 	dimension_x = 96
@@ -1565,44 +1543,6 @@
 	dimension_x = 96
 	center = TRUE
 	dimension_y = 32
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/mothra
-	name = "Mothra"
-	icon_state = "mothra"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-
-/datum/sprite_accessory/wings/skeleton
-	name = "Skeleton"
-	icon_state = "skele"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/skeleton
-	name = "Skeleton"
-	icon_state = "skele"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-
-/datum/sprite_accessory/wings/robotic
-	name = "Robotic"
-	icon_state = "robotic"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
-
-/datum/sprite_accessory/wings_open/robotic
-	name = "Robotic"
-	icon_state = "robotic"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
 
 /datum/sprite_accessory/wings/fly
 	name = "Fly"
@@ -1610,97 +1550,82 @@
 	dimension_x = 96
 	center = TRUE
 	dimension_y = 32
-	locked = TRUE
 
-/datum/sprite_accessory/wings_open/fly
-	name = "Fly"
-	icon_state = "fly"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+*/
 
-////////////////////////////
-// Moth Wings Definitions //
-////////////////////////////
-
-/datum/sprite_accessory/moth_wings
-	icon = 'icons/mob/moth_wings.dmi'
-	em_block = TRUE
-
-/datum/sprite_accessory/moth_wings/plain
+/datum/sprite_accessory/wings/plain
 	name = "Plain"
 	icon_state = "plain"
 
-/datum/sprite_accessory/moth_wings/monarch
+/datum/sprite_accessory/wings/monarch
 	name = "Monarch"
 	icon_state = "monarch"
 
-/datum/sprite_accessory/moth_wings/luna
+/datum/sprite_accessory/wings/luna
 	name = "Luna"
 	icon_state = "luna"
 
-/datum/sprite_accessory/moth_wings/atlas
+/datum/sprite_accessory/wings/atlas
 	name = "Atlas"
 	icon_state = "atlas"
 
-/datum/sprite_accessory/moth_wings/reddish
+/datum/sprite_accessory/wings/reddish
 	name = "Reddish"
 	icon_state = "redish"
 
-/datum/sprite_accessory/moth_wings/royal
+/datum/sprite_accessory/wings/royal
 	name = "Royal"
 	icon_state = "royal"
 
-/datum/sprite_accessory/moth_wings/gothic
+/datum/sprite_accessory/wings/gothic
 	name = "Gothic"
 	icon_state = "gothic"
 
-/datum/sprite_accessory/moth_wings/lovers
+/datum/sprite_accessory/wings/lovers
 	name = "Lovers"
 	icon_state = "lovers"
 
-/datum/sprite_accessory/moth_wings/whitefly
+/datum/sprite_accessory/wings/whitefly
 	name = "White Fly"
 	icon_state = "whitefly"
 
-/datum/sprite_accessory/moth_wings/burnt_off
+/datum/sprite_accessory/wings/burnt_off
 	name = "Burnt Off"
 	icon_state = "burnt_off"
-	locked = TRUE
 
-/datum/sprite_accessory/moth_wings/firewatch
+/datum/sprite_accessory/wings/firewatch
 	name = "Firewatch"
 	icon_state = "firewatch"
 
-/datum/sprite_accessory/moth_wings/deathhead
+/datum/sprite_accessory/wings/deathshead
 	name = "Deathshead"
-	icon_state = "deathhead"
+	icon_state = "deathshead"
 
-/datum/sprite_accessory/moth_wings/poison
+/datum/sprite_accessory/wings/poison
 	name = "Poison"
 	icon_state = "poison"
 
-/datum/sprite_accessory/moth_wings/ragged
+/datum/sprite_accessory/wings/ragged
 	name = "Ragged"
 	icon_state = "ragged"
 
-/datum/sprite_accessory/moth_wings/moonfly
+/datum/sprite_accessory/wings/moonfly
 	name = "Moon Fly"
 	icon_state = "moonfly"
 
-/datum/sprite_accessory/moth_wings/snow
+/datum/sprite_accessory/wings/snow
 	name = "Snow"
 	icon_state = "snow"
 
-/datum/sprite_accessory/moth_wings/oakworm
+/datum/sprite_accessory/wings/oakworm
 	name = "Oak Worm"
 	icon_state = "oakworm"
 
-/datum/sprite_accessory/moth_wings/jungle
+/datum/sprite_accessory/wings/jungle
 	name = "Jungle"
 	icon_state = "jungle"
 
-/datum/sprite_accessory/moth_wings/witchwing
+/datum/sprite_accessory/wings/witchwing
 	name = "Witch Wing"
 	icon_state = "witchwing"
 
@@ -1725,6 +1650,10 @@
 /datum/sprite_accessory/mushcap
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 	em_block = TRUE
+
+/datum/sprite_accessory/mushcap/none
+	name = "None"
+	icon_state = "none"
 
 /datum/sprite_accessory/mushcap/round
 	name = "Round"

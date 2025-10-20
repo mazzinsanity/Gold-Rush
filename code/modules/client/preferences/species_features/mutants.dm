@@ -1,34 +1,43 @@
-/proc/generate_directional_shots(accessories, key, layer, direction)
+/proc/generate_directional_shots(accessories, key, layer, direction, include_body = FALSE)
 	var/list/values = possible_values_for_sprite_accessory_list(accessories)
 
-	var/icon/head_icon = icon('icons/mob/human_parts_greyscale.dmi', "human_head_m", direction)
+	var/icon/body = icon('icons/mob/human_parts_greyscale.dmi', "human_head_m", direction)
+
+	if(include_body)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_chest_m", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_arm", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_hand", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_r_arm", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_r_hand", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_leg", direction), ICON_OVERLAY)
+		body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_r_leg", direction), ICON_OVERLAY)
 
 	var/icon/eyes = icon('icons/mob/human_face.dmi', "eyes", direction)
 	eyes.Blend(COLOR_GRAY, ICON_MULTIPLY)
-	head_icon.Blend(eyes, ICON_OVERLAY)
+	body.Blend(eyes, ICON_OVERLAY)
 
 	for (var/name in values)
 		var/datum/sprite_accessory/accessory = accessories[name]
-		if (accessory == null || accessory.icon_state == null)
-			continue
+		var/icon/final_icon = icon(body)
 
-		var/icon/final_icon = icon(head_icon)
-
-		var/icon/accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state]_[layer]", direction)
-		accessory_icon.Blend(COLOR_RED, ICON_MULTIPLY)
-		final_icon.Blend(accessory_icon, ICON_OVERLAY)
-
-		if(accessory.icon_state_2)
-			accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state_2]_[layer]", direction)
-			accessory_icon.Blend(COLOR_GREEN, ICON_MULTIPLY)
+		if(accessory && accessory.icon_state != "none")
+			var/icon/accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state]_[layer]", direction)
+			accessory_icon.Blend(COLOR_RED, ICON_MULTIPLY)
 			final_icon.Blend(accessory_icon, ICON_OVERLAY)
 
-		if(accessory.icon_state_3)
-			accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state_3]_[layer]", direction)
-			accessory_icon.Blend(COLOR_BLUE, ICON_MULTIPLY)
-			final_icon.Blend(accessory_icon, ICON_OVERLAY)
+			if(accessory.icon_state_2)
+				accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state_2]_[layer]", direction)
+				accessory_icon.Blend(COLOR_VIBRANT_LIME, ICON_MULTIPLY)
+				final_icon.Blend(accessory_icon, ICON_OVERLAY)
 
-		final_icon.Crop(10, 20, 22, 32)
+			if(accessory.icon_state_3)
+				accessory_icon = icon(accessory.icon, "[key]_[accessory.icon_state_3]_[layer]", direction)
+				accessory_icon.Blend(COLOR_BLUE, ICON_MULTIPLY)
+				final_icon.Blend(accessory_icon, ICON_OVERLAY)
+
+		if(!include_body)
+			final_icon.Crop(10, 20, 22, 32)
+
 		final_icon.Scale(32, 32)
 
 		values[name] = final_icon
@@ -62,12 +71,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Frills"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "frills"
 
 /datum/preference/choiced/frills/init_possible_values()
-	return generate_directional_shots(GLOB.frills_list, "frills", "ADJ",  WEST)
+	return generate_directional_shots(GLOB.frills_list, relevant_mutant_bodypart, "ADJ",  WEST)
 
 /datum/preference/choiced/frills/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["frills"] = value
+
+/datum/preference/choiced/frills/create_default_value()
+	return "None"
 
 /datum/preference/choiced/frills/compile_constant_data()
 	var/list/data = ..()
@@ -83,7 +96,6 @@
 
 /datum/preference/tri_color/frills/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["frills_color_list"] = value
-	target.update_body()
 
 /datum/preference/choiced/horns
 	savefile_key = "feature_horns"
@@ -91,12 +103,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Horns"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "horns"
 
 /datum/preference/choiced/horns/init_possible_values()
-	return generate_directional_shots(GLOB.horns_list, "horns", "ADJ", WEST)
+	return generate_directional_shots(GLOB.horns_list, relevant_mutant_bodypart, "ADJ", WEST)
 
 /datum/preference/choiced/horns/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["horns"] = value
+
+/datum/preference/choiced/horns/create_default_value()
+	return "None"
 
 /datum/preference/choiced/horns/compile_constant_data()
 	var/list/data = ..()
@@ -131,12 +147,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Snout"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "snout"
 
 /datum/preference/choiced/snout/init_possible_values()
-	return generate_directional_shots(GLOB.snouts_list, "snout", "ADJ", WEST)
+	return generate_directional_shots(GLOB.snouts_list, relevant_mutant_bodypart, "ADJ", WEST)
 
 /datum/preference/choiced/snout/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["snout"] = value
+
+/datum/preference/choiced/snout/create_default_value()
+	return "None"
 
 /datum/preference/choiced/snout/compile_constant_data()
 	var/list/data = ..()
@@ -190,32 +210,13 @@
 	relevant_mutant_bodypart = "tail"
 
 /datum/preference/choiced/tail/init_possible_values()
-	var/icon/body = icon('icons/mob/human_parts_greyscale.dmi', "human_r_leg", NORTH)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_leg", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_r_arm", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_arm", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_r_hand", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_l_hand", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_chest_m", NORTH), ICON_OVERLAY)
-	body.Blend(icon('icons/mob/human_parts_greyscale.dmi', "human_head_m", NORTH), ICON_OVERLAY)
-
-	var/list/values = list()
-
-	for (var/tail_name in GLOB.tails_list)
-		var/datum/sprite_accessory/tail_accessory = GLOB.tails_list[tail_name]
-		var/icon/icon_with_tail = new(body)
-
-		if (tail_accessory.icon_state != "none")
-			var/icon/tail_icon = icon(tail_accessory.icon, "tail_[tail_accessory.icon_state]_FRONT", NORTH)
-			icon_with_tail.Blend(tail_icon, ICON_OVERLAY)
-
-		icon_with_tail.Scale(32, 32)
-		values[tail_name] = icon_with_tail
-
-	return values
+	return generate_directional_shots(GLOB.tails_list, relevant_mutant_bodypart, "FRONT", NORTH, include_body = TRUE)
 
 /datum/preference/choiced/tail/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["tail"] = value
+
+/datum/preference/choiced/tail/create_default_value()
+	return "None"
 
 /datum/preference/choiced/tail/compile_constant_data()
 	var/list/data = ..()
@@ -241,10 +242,13 @@
 	relevant_mutant_bodypart = "ears"
 
 /datum/preference/choiced/ears/init_possible_values()
-	return generate_directional_shots(GLOB.ears_list, "ears", "FRONT", SOUTH)
+	return generate_directional_shots(GLOB.ears_list, relevant_mutant_bodypart, "FRONT", SOUTH)
 
 /datum/preference/choiced/ears/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["ears"] = value
+
+/datum/preference/choiced/ears/create_default_value()
+	return "None"
 
 /datum/preference/choiced/ears/compile_constant_data()
 	var/list/data = ..()
@@ -267,12 +271,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Antennae"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "antennae"
 
 /datum/preference/choiced/antennae/init_possible_values()
-	return generate_directional_shots(GLOB.antennae_list, "antennae", "FRONT", SOUTH)
+	return generate_directional_shots(GLOB.antennae_list, relevant_mutant_bodypart, "FRONT", SOUTH)
 
 /datum/preference/choiced/antennae/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["antennae"] = value
+
+/datum/preference/choiced/antennae/create_default_value()
+	return "None"
 
 /datum/preference/choiced/antennae/compile_constant_data()
 	var/list/data = ..()
@@ -295,14 +303,18 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Mushroom cap"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "mushcap"
 
 /datum/preference/choiced/mushcap/init_possible_values()
-	return generate_directional_shots(GLOB.mushcaps_list, "mushcap", "ADJ", SOUTH)
+	return generate_directional_shots(GLOB.mushcaps_list, relevant_mutant_bodypart, "ADJ", SOUTH)
 
 /datum/preference/choiced/mushcap/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["mushcap"] = value
 
-/datum/preference/choiced/antennae/compile_constant_data()
+/datum/preference/choiced/mushcap/create_default_value()
+	return "None"
+
+/datum/preference/choiced/mushcap/compile_constant_data()
 	var/list/data = ..()
 
 	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_mushcap_color_list"
@@ -323,18 +335,16 @@
 	category = PREFERENCE_CATEGORY_FEATURES
 	main_feature_name = "Wings"
 	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "wings"
 
 /datum/preference/choiced/wings/init_possible_values()
-	var/list/icon/values = possible_values_for_sprite_accessory_list_for_body_part(
-		GLOB.wings_list,
-		"wings",
-		list("BEHIND", "FRONT"),
-	)
-
-	return values
+	return generate_directional_shots(GLOB.wings_list, relevant_mutant_bodypart, "FRONT", NORTH, include_body = TRUE)
 
 /datum/preference/choiced/wings/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["wings"] = value
+
+/datum/preference/choiced/wings/create_default_value()
+	return "None"
 
 /datum/preference/choiced/wings/compile_constant_data()
 	var/list/data = ..()
@@ -349,42 +359,4 @@
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
 
 /datum/preference/tri_color/wings/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["wings_color_list"] = value
-
-/datum/preference/choiced/moth_wings
-	savefile_key = "feature_moth_wings"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_FEATURES
-	main_feature_name = "Moth wings"
-	should_generate_icons = TRUE
-
-/datum/preference/choiced/moth_wings/init_possible_values()
-	var/list/icon/values = possible_values_for_sprite_accessory_list_for_body_part(
-		GLOB.moth_wings_list,
-		"moth_wings",
-		list("BEHIND", "FRONT"),
-	)
-
-	// Moth wings are in a stupid dimension
-	for (var/name in values)
-		values[name].Crop(1, 1, 32, 32)
-
-	return values
-
-/datum/preference/choiced/moth_wings/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["moth_wings"] = value
-
-/datum/preference/choiced/moth_wings/compile_constant_data()
-	var/list/data = ..()
-
-	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_moth_wings_color_list"
-
-	return data
-
-/datum/preference/tri_color/moth_wings
-	savefile_key = "feature_moth_wings_color_list"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
-
-/datum/preference/tri_color/moth_wings/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["wings_color_list"] = value

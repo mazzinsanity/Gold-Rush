@@ -39,8 +39,6 @@ GLOBAL_LIST_EMPTY(voices_male_list) //stores only voice names
 GLOBAL_LIST_EMPTY(voices_female_list) //stores only voice names
 GLOBAL_LIST_EMPTY(ears_list)
 GLOBAL_LIST_EMPTY(wings_list)
-GLOBAL_LIST_EMPTY(wings_open_list)
-GLOBAL_LIST_EMPTY(moth_wings_list)
 GLOBAL_LIST_EMPTY(antennae_list)
 GLOBAL_LIST_EMPTY(mushcaps_list)
 

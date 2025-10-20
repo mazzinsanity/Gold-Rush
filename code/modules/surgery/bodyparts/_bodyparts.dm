@@ -114,9 +114,6 @@
 	/// If something is currently grasping this bodypart and trying to staunch bleeding (see [/obj/item/self_grasp])
 	var/obj/item/self_grasp/grasped_by
 
-	///A list of all the external organs we've got stored to draw horns, wings and stuff with (special because we are actually in the limbs unlike normal organs :/ )
-	var/list/obj/item/organ/external/external_organs = list()
-
 
 /obj/item/bodypart/Initialize(mapload)
 	. = ..()
@@ -876,7 +873,7 @@
 	add_overlay(standing)
 
 //Gives you a proper icon appearance for the dismembered limb
-/obj/item/bodypart/proc/get_limb_icon(dropped, draw_external_organs)
+/obj/item/bodypart/proc/get_limb_icon(dropped)
 	icon_state = "" //to erase the default sprite, we're building the visual aspects of the bodypart through overlays alone.
 
 	. = list()
@@ -972,40 +969,6 @@
 				var/mutable_appearance/aux_em_block = emissive_blocker(aux.icon, aux.icon_state, alpha = aux.alpha)
 				aux_em_block.dir = image_dir
 				aux.overlays += aux_em_block
-
-	if(!draw_external_organs)
-		return
-
-	//Draw external organs like horns and frills
-	for(var/obj/item/organ/external/external_organ in external_organs)
-		if(!dropped && !external_organ.can_draw_on_bodypart(owner))
-			continue
-		//Some externals have multiple layers for background, foreground and between
-		for(var/external_layer in external_organ.all_layers)
-			if(external_organ.layers & external_layer)
-				var/organ_color_list
-				var/mob/living/carbon/human/human_owner = owner
-				switch(external_organ.feature_key)
-					if("snout")
-						if(human_owner.dna.features["snout_color_list"])
-							organ_color_list = human_owner.dna.features["snout_color_list"]
-					if("horns")
-						if(human_owner.dna.features["horns_color_list"])
-							organ_color_list = human_owner.dna.features["horns_color_list"]
-					if("frills")
-						if(human_owner.dna.features["frills_color_list"])
-							organ_color_list = human_owner.dna.features["frills_color_list"]
-					if("wings")
-						if(human_owner.dna.features["wings_color_list"])
-							organ_color_list = human_owner.dna.features["wings_color_list"]
-					if("moth_wings")
-						if(human_owner.dna.features["moth_wings_color_list"])
-							organ_color_list = human_owner.dna.features["moth_wings_color_list"]
-					if("antennae")
-						if(human_owner.dna.features["antennae_color_list"])
-							organ_color_list = human_owner.dna.features["antennae_color_list"]
-
-				external_organ.get_overlays(., image_dir, external_organ.bitflag_to_layer(external_layer), organ_color_list)
 
 /obj/item/bodypart/deconstruct(disassembled = TRUE)
 	drop_organs()

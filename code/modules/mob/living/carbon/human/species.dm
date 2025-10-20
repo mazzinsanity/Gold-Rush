@@ -81,9 +81,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		BODY_ZONE_R_LEG = /obj/item/bodypart/r_leg,\
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest)
 
-	///List of external organs to generate like horns, frills, wings, etc. list(typepath of organ = "Round Beautiful BDSM Snout"). Still WIP
-	var/list/external_organs = list()
-
 	///Multiplier for the race's speed. Positive numbers make it move slower, negative numbers make it move faster.
 	var/speedmod = 0
 	///Percentage modifier for overall defense of the race, or less defense, if it's negative.
@@ -128,8 +125,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	///Is this species a flying species? Used as an easy check for some things
 	var/flying_species = FALSE
-	///The actual flying ability given to flying species
-	var/datum/action/innate/flight/fly
 	//Dictates which wing icons are allowed for a given species. If count is >1 a radial menu is used to choose between all icons in list
 	var/list/wings_icons = list("Angel")
 	///Used to determine what description to give when using a potion of flight, if false it will describe them as growing new wings
@@ -443,16 +438,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			else //Entries in the list should only ever be items or null, so if it's not an item, we can assume it's an empty hand
 				INVOKE_ASYNC(C, /mob/proc/put_in_hands, new mutanthands)
 
-	if(ishuman(C))
-		var/mob/living/carbon/human/human = C
-		for(var/obj/item/organ/external/organ_path as anything in external_organs)
-			//Load a persons preferences from DNA
-			var/feature_key_name = human.dna.features[initial(organ_path.feature_key)]
-
-			var/obj/item/organ/external/new_organ = SSwardrobe.provide_type(organ_path)
-			new_organ.set_sprite(feature_key_name)
-			new_organ.Insert(human)
-
 	for(var/X in inherent_traits)
 		ADD_TRAIT(C, X, SPECIES_TRAIT)
 
@@ -472,10 +457,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	if(inherent_factions)
 		for(var/i in inherent_factions)
 			C.faction += i //Using +=/-= for this in case you also gain the faction from a different source.
-
-	if(flying_species && isnull(fly))
-		fly = new
-		fly.Grant(C)
 
 	C.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/species, multiplicative_slowdown=speedmod)
 
@@ -499,10 +480,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		C.Digitigrade_Leg_Swap(TRUE)
 	for(var/X in inherent_traits)
 		REMOVE_TRAIT(C, X, SPECIES_TRAIT)
-	for(var/obj/item/organ/external/organ in C.internal_organs)
-		if(organ.type in external_organs)
-			organ.Remove(C)
-			qdel(organ)
 
 	//If their inert mutation is not the same, swap it out
 	if((inert_mutation != new_species.inert_mutation) && LAZYLEN(C.dna.mutation_index) && (inert_mutation in C.dna.mutation_index))
@@ -1044,28 +1021,52 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/obj/item/bodypart/head/noggin = source.get_bodypart(BODY_ZONE_HEAD)
 
 	if(mutant_bodyparts["tail"])
-		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(source.wear_suit?.flags_inv & HIDEJUMPSUIT)
 			bodyparts_to_add -= "tail"
 
 	if(mutant_bodyparts["waggingtail"])
-		if(source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(source.wear_suit?.flags_inv & HIDEJUMPSUIT)
 			bodyparts_to_add -= "waggingtail"
 		else if (mutant_bodyparts["tail"])
 			bodyparts_to_add -= "waggingtail"
 
 	if(mutant_bodyparts["spines"])
-		if(!source.dna.features["spines"] || source.dna.features["spines"] == "None" || source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(!source.dna.features["spines"] || source.dna.features["spines"] == "None" || source.wear_suit?.flags_inv & HIDEJUMPSUIT)
 			bodyparts_to_add -= "spines"
 
 	if(mutant_bodyparts["waggingspines"])
-		if(!source.dna.features["spines"] || source.dna.features["spines"] == "None" || source.wear_suit && (source.wear_suit.flags_inv & HIDEJUMPSUIT))
+		if(!source.dna.features["spines"] || source.dna.features["spines"] == "None" || source.wear_suit?.flags_inv & HIDEJUMPSUIT)
 			bodyparts_to_add -= "waggingspines"
 		else if (mutant_bodyparts["tail"])
 			bodyparts_to_add -= "waggingspines"
 
 	if(mutant_bodyparts["ears"])
-		if(!source.dna.features["ears"] || source.dna.features["ears"] == "None" || source.head && (source.head.flags_inv & HIDEHAIR) || (source.wear_mask && (source.wear_mask.flags_inv & HIDEHAIR)) || !noggin || noggin.status == BODYPART_ROBOTIC)
+		if(!noggin || noggin.status == BODYPART_ROBOTIC || !source.dna.features["ears"] || source.dna.features["ears"] == "None" || source.head?.flags_inv & HIDEHAIR || source.wear_mask?.flags_inv & HIDEHAIR)
 			bodyparts_to_add -= "ears"
+
+	if(mutant_bodyparts["horns"])
+		if(!noggin || noggin.status == BODYPART_ROBOTIC || !source.dna.features["horns"] || source.dna.features["horns"] == "None" || source.head?.flags_inv & HIDEHAIR || source.wear_mask?.flags_inv & HIDEHAIR)
+			bodyparts_to_add -= "horns"
+
+	if(mutant_bodyparts["frills"])
+		if(!noggin || noggin.status == BODYPART_ROBOTIC || !source.dna.features["frills"] || source.dna.features["frills"] == "None" || source.head?.flags_inv & HIDEEARS || source.wear_mask?.flags_inv & HIDEEARS)
+			bodyparts_to_add -= "frills"
+	
+	if(mutant_bodyparts["snout"])
+		if(!noggin || noggin.status == BODYPART_ROBOTIC || !source.dna.features["snout"] || source.dna.features["snout"] == "None" || source.head?.flags_inv & HIDESNOUT || source.wear_mask?.flags_inv & HIDESNOUT)
+			bodyparts_to_add -= "snout"
+
+	if(mutant_bodyparts["antennae"])
+		if(!noggin || noggin.status == BODYPART_ROBOTIC || !source.dna.features["antennae"] || source.dna.features["antennae"] == "None" || source.head?.flags_inv & HIDEHAIR || source.wear_mask?.flags_inv & HIDEHAIR)
+			bodyparts_to_add -= "antennae"
+
+	if(mutant_bodyparts["wings"])
+		if(!source.dna.features["wings"] || source.dna.features["wings"] == "None" || source.wear_suit?.flags_inv & HIDEJUMPSUIT || source.wear_suit?.flags_inv & HIDEMUTWINGS)
+			bodyparts_to_add -= "wings"
+
+	if(mutant_bodyparts["mushcap"])
+		if(!source.dna.features["mushcap"] || source.dna.features["mushcap"] == "None" || source.head?.flags_inv & HIDEHAIR || source.wear_mask?.flags_inv & HIDEHAIR)
+			bodyparts_to_add -= "mushcap"
 
 	//Digitigrade legs are stuck in the phantom zone between true limbs and mutant bodyparts. Mainly it just needs more aggressive updating than most limbs.
 	var/update_needed = FALSE
@@ -1077,7 +1078,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(!(DIGITIGRADE in species_traits)) //Someone cut off a digitigrade leg and tacked it on
 			species_traits += DIGITIGRADE
 		var/should_be_squished = FALSE
-		if(source.wear_suit && ((source.wear_suit.flags_inv & HIDEJUMPSUIT) || (source.wear_suit.body_parts_covered & LEGS)) || (source.w_uniform && (source.w_uniform.body_parts_covered & LEGS)))
+		if(((source.wear_suit?.flags_inv & HIDEJUMPSUIT) || (source.wear_suit?.body_parts_covered & LEGS)) || source.w_uniform?.body_parts_covered & LEGS)
 			should_be_squished = TRUE
 		if(bodypart.use_digitigrade == FULL_DIGITIGRADE && should_be_squished)
 			bodypart.use_digitigrade = SQUISHED_DIGITIGRADE
@@ -1095,7 +1096,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	for(var/layer in relevent_layers)
 		var/layertext = mutant_bodyparts_layertext(layer)
-
 		for(var/bodypart in bodyparts_to_add)
 			var/datum/sprite_accessory/accessory
 			var/accessory_color_list
@@ -1121,38 +1121,52 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				if("mushcap")
 					accessory = GLOB.mushcaps_list[source.dna.features["mushcap"]]
 					accessory_color_list = source.dna.features["mushcap_color_list"]
-			if(!accessory || accessory.icon_state == "none" || !accessory_color_list)
-				continue
-				
-			var/list/mutable_appearance/appearance_list = list()
-			var/mutable_appearance/appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state]_[layertext]", -layer)
-			appearance_list += appearance
+				if("horns")
+					accessory = GLOB.horns_list[source.dna.features["horns"]]
+					accessory_color_list = source.dna.features["horns_color_list"]
+				if("frills")
+					accessory = GLOB.frills_list[source.dna.features["frills"]]
+					accessory_color_list = source.dna.features["frills_color_list"]
+				if("snout")
+					accessory = GLOB.snouts_list[source.dna.features["snout"]]
+					accessory_color_list = source.dna.features["snout_color_list"]
+				if("antennae")
+					accessory = GLOB.antennae_list[source.dna.features["antennae"]]
+					accessory_color_list = source.dna.features["antennae_color_list"]
+				if("wings")
+					accessory = GLOB.wings_list[source.dna.features["wings"]]
+					accessory_color_list = source.dna.features["wings_color_list"]
 
-			if(accessory.icon_state_2)
-				appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_2]_[layertext]", -layer)
+			if(accessory && accessory.icon_state != "none" && accessory_color_list)
+				var/list/mutable_appearance/appearance_list = list()
+				var/mutable_appearance/appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state]_[layertext]", -layer)
 				appearance_list += appearance
-	
-			if(accessory.icon_state_3)
-				appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_3]_[layertext]", -layer)
-				appearance_list += appearance
 
-			if(accessory.em_block)
+				if(accessory.icon_state_2)
+					appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_2]_[layertext]", -layer)
+					appearance_list += appearance
+
+				if(accessory.icon_state_3)
+					appearance = mutable_appearance(accessory.icon, "[bodypart]_[accessory.icon_state_3]_[layertext]", -layer)
+					appearance_list += appearance
+
+				if(accessory.em_block)
+					for(var/mutable_appearance/mut_appearance in appearance_list)
+						mut_appearance.overlays += emissive_blocker(mut_appearance.icon, mut_appearance.icon_state, mut_appearance.alpha)
+
+				if(accessory.center)
+					for(var/mutable_appearance/mut_appearance in appearance_list)
+						mut_appearance = center_image(mut_appearance, accessory.dimension_x, accessory.dimension_y)
+
+				if(!(HAS_TRAIT(source, TRAIT_HUSK)))
+					for(var/i in 1 to appearance_list.len)
+						if(!forced_colour)
+							appearance_list[i].color = accessory_color_list[i]
+						else
+							appearance_list[i].color = forced_colour
+
 				for(var/mutable_appearance/mut_appearance in appearance_list)
-					mut_appearance.overlays += emissive_blocker(mut_appearance.icon, mut_appearance.icon_state, mut_appearance.alpha)
-
-			if(accessory.center)
-				for(var/mutable_appearance/mut_appearance in appearance_list)
-					mut_appearance = center_image(mut_appearance, accessory.dimension_x, accessory.dimension_y)
-
-			if(!(HAS_TRAIT(source, TRAIT_HUSK)))
-				for(var/i in 1 to appearance_list.len)
-					if(!forced_colour)
-						appearance_list[i].color = accessory_color_list[i]
-					else
-						appearance_list[i].color = forced_colour
-
-			for(var/mutable_appearance/mut_appearance in appearance_list)
-				standing += mut_appearance
+					standing += mut_appearance
 
 		source.overlays_standing[layer] = standing.Copy()
 		standing = list()
@@ -2171,11 +2185,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 ////////////
 
 /datum/species/proc/spec_stun(mob/living/carbon/human/H,amount)
-	if(H.movement_type & FLYING)
-		var/obj/item/organ/external/wings/functional/wings = H.getorganslot(ORGAN_SLOT_EXTERNAL_WINGS)
-		if(wings)
-			wings.toggle_flight(H)
-			wings.fly_slip(H)
 	. = stunmod * H.physiology.stun_mod * amount
 
 /datum/species/proc/negates_gravity(mob/living/carbon/human/H)
@@ -2259,32 +2268,11 @@ GLOBAL_LIST_EMPTY(features_by_species)
 ///////////////
 
 /datum/species/proc/GiveSpeciesFlight(mob/living/carbon/human/H)
-	if(flying_species) //species that already have flying traits should not work with this proc
+	if(flying_species || H.dna.features["wings"]) //species that already have flying traits should not work with this proc
 		return
-	flying_species = TRUE
-	var/wings_icon
-	if(wings_icons.len > 1)
-		if(!H.client)
-			wings_icon = pick(wings_icons)
-		else
-			var/list/wings = list()
-			for(var/W in wings_icons)
-				var/datum/sprite_accessory/S = GLOB.wings_list[W] //Gets the datum for every wing this species has, then prompts user with a radial menu
-				var/image/img = image(icon = 'icons/mob/clothing/wings.dmi', icon_state = "m_wingsopen_[S.icon_state]_BEHIND") //Process the HUD elements
-				img.transform *= 0.5
-				img.pixel_x = -32
-				if(wings[S.name])
-					stack_trace("Different wing types with repeated names. Please fix as this may cause issues.")
-				else
-					wings[S.name] = img
-			wings_icon = show_radial_menu(H, H, wings, tooltips = TRUE)
-			if(!wings_icon)
-				wings_icon = pick(wings_icons)
-	else
-		wings_icon = wings_icons[1]
 
-	var/obj/item/organ/external/wings/functional/wings = new(null, wings_icon, H.body_type)
-	wings.Insert(H)
+	flying_species = TRUE
+	H.dna.features["wings"] = pick(GLOB.wings_list)
 	handle_mutant_bodyparts(H)
 
 /**
@@ -2331,11 +2319,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		)
 			features += preference.savefile_key
 
-	for (var/obj/item/organ/external/organ_type as anything in external_organs)
-		var/preference = initial(organ_type.preference)
-		if (!isnull(preference))
-			features += preference
-
 	GLOB.features_by_species[type] = features
 
 	return features
@@ -2352,8 +2335,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 /datum/species/proc/get_types_to_preload()
 	var/list/to_store = list()
 	to_store += mutant_organs
-	for(var/obj/item/organ/external/horny as anything in external_organs)
-		to_store += horny //Haha get it?
 
 	//Don't preload brains, cause reuse becomes a horrible headache
 	to_store += mutantheart

@@ -126,6 +126,8 @@
 	if(H.dna.species.is_wagging_tail())
 		. = null
 
+/* Commented out until moth wings have an icon state for being open
+
 /datum/emote/living/carbon/human/wing
 	key = "wing"
 	key_third_person = "wings"
@@ -135,26 +137,28 @@
 	. = ..()
 	if(.)
 		var/mob/living/carbon/human/H = user
-		var/obj/item/organ/external/wings/functional/wings = H.getorganslot(ORGAN_SLOT_EXTERNAL_WINGS)
-		if(wings && findtext(select_message_type(user,intentional), "open"))
-			wings.open_wings()
+		var/wings_key = H.dna.species.mutant_bodyparts["wings"]
+		if(wings_key && wings_key != "None" && findtext(select_message_type(user,intentional), "opens"))
+			H.dna.species.mutant_bodyparts["wings"] = "[wings_key]_open"
 		else
-			wings.close_wings()
+			H.dna.species.mutant_bodyparts["wings"] = "[wings_key]"
 
 /datum/emote/living/carbon/human/wing/select_message_type(mob/user, intentional)
 	. = ..()
 	var/mob/living/carbon/human/H = user
-	if(H.dna.species.mutant_bodyparts["wings"])
-		. = "opens " + message
-	else
+	if(findtext(H.dna.species.mutant_bodyparts["wings"], "_open"))
 		. = "closes " + message
+	else
+		. = "opens " + message
 
 /datum/emote/living/carbon/human/wing/can_run_emote(mob/user, status_check = TRUE, intentional)
 	if(!..())
 		return FALSE
 	var/mob/living/carbon/human/H = user
-	if(H.dna && H.dna.species && (H.dna.features["wings"] != "None"))
+	if(H.dna.features["wings"] != "None")
 		return TRUE
+
+*/
 
 ///Snowflake emotes only for le epic chimp
 /datum/emote/living/carbon/human/monkey
