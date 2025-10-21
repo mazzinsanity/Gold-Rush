@@ -40,11 +40,6 @@ MOJAVE SUN EDIT END */
 			current_organ.Remove(src, special = TRUE) //Please don't somehow kill our dummy
 			SSwardrobe.stash_object(current_organ)
 
-	for(var/obj/item/organ/external/organ in internal_organs)
-		if(organ.type in current_species.external_organs)
-			organ.Remove(src)
-			SSwardrobe.stash_object(organ)
-
 //Instead of just deleting our equipment, we save what we can and reinsert it into SSwardrobe's store
 //Hopefully this makes preference reloading not the worst thing ever
 /mob/living/carbon/human/dummy/delete_equipment()
@@ -92,19 +87,17 @@ MOJAVE SUN EDIT END */
 /mob/living/carbon/human/dummy/consistent/setup_human_dna()
 	create_dna(src)
 	dna.initialize_dna(skip_index = TRUE)
-	dna.features["body_markings"] = "None"
 	dna.features["ears"] = "None"
 	dna.features["ethcolor"] = COLOR_WHITE
 	dna.features["frills"] = "None"
+	dna.features["spines"] = "None"
 	dna.features["horns"] = "None"
 	dna.features["mcolor"] = COLOR_VIBRANT_LIME
-	dna.features["moth_antennae"] = "Plain"
-	dna.features["moth_markings"] = "None"
-	dna.features["moth_wings"] = "Plain"
+	dna.features["antennae"] = "Plain"
+	dna.features["wings"] = "None"
 	dna.features["snout"] = "Round"
 	dna.features["spines"] = "None"
-	dna.features["tail_human"] = "None"
-	dna.features["tail_lizard"] = "Smooth"
+	dna.features["tail"] = "Smooth"
 
 //Inefficient pooling/caching way.
 GLOBAL_LIST_EMPTY(human_dummy_list)

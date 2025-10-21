@@ -50,8 +50,7 @@
 /mob/living/carbon/human/ZImpactDamage(turf/T, levels)
 	if(stat != CONSCIOUS || levels > 1) // you're not The One
 		return ..()
-	var/obj/item/organ/external/wings/gliders = getorgan(/obj/item/organ/external/wings)
-	if(HAS_TRAIT(src, TRAIT_FREERUNNING) || gliders?.can_soften_fall()) // the power of parkour or wings allows falling short distances unscathed
+	if(HAS_TRAIT(src, TRAIT_FREERUNNING)) // the power of parkour or wings allows falling short distances unscathed
 		visible_message(span_danger("[src] makes a hard landing on [T] but remains unharmed from the fall."), \
 						span_userdanger("You brace for the fall. You make a hard landing on [T] but remain unharmed."))
 		Knockdown(levels * 40)

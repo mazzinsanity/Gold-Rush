@@ -31,11 +31,11 @@
 	//Limb appearance info:
 	var/real_name = "" //Replacement name
 	//Hair colour and style
-	var/hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/hair_color = COLOR_BLACK
 	var/hairstyle = "Bald"
 	var/hair_alpha = 255
 	//Facial hair colour and style
-	var/facial_hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/facial_hair_color = COLOR_BLACK
 	var/facial_hairstyle = "Shaved"
 	//Eye Colouring
 
@@ -209,7 +209,7 @@
 		img.pixel_y = px_y
 	add_overlay(standing)
 
-/obj/item/bodypart/head/get_limb_icon(dropped, draw_external_organs)
+/obj/item/bodypart/head/get_limb_icon(dropped)
 	cut_overlays()
 	. = ..()
 	if(dropped) //certain overlays only appear when the limb is being detached from its owner.

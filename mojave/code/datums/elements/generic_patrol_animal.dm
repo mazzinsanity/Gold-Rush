@@ -46,6 +46,7 @@ The simple animal this is attached to should also be able to destroy obstacles s
 	RegisterSignal(animal, COMSIG_AI_SET_GOAL_NODE, PROC_REF(set_goal_node))
 
 /datum/element/generic_patrol_animal/Detach(mob/living/simple_animal/animal)
+	..()
 	attached_animals -= animal
 	animal_node_weights -= animal
 	animal_current_node -= animal

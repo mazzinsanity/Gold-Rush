@@ -118,28 +118,12 @@
 	key_third_person = "flaps"
 	message = "flaps their wings."
 	hands_use_check = TRUE
-	var/wing_time = 20
-
-/datum/emote/living/flap/run_emote(mob/user, params, type_override, intentional)
-	. = ..()
-	if(. && ishuman(user))
-		var/mob/living/carbon/human/H = user
-		var/open = FALSE
-		var/obj/item/organ/external/wings/functional/wings = H.getorganslot(ORGAN_SLOT_EXTERNAL_WINGS)
-		if(istype(wings))
-			if(wings.wings_open)
-				open = TRUE
-				wings.close_wings()
-			else
-				wings.open_wings()
-			addtimer(CALLBACK(wings, open ? TYPE_PROC_REF(/obj/item/organ/external/wings/functional, open_wings) : TYPE_PROC_REF(/obj/item/organ/external/wings/functional, close_wings)), wing_time)
 
 /datum/emote/living/flap/aflap
 	key = "aflap"
 	key_third_person = "aflaps"
 	message = "flaps their wings ANGRILY!"
 	hands_use_check = TRUE
-	wing_time = 10
 
 /datum/emote/living/frown
 	key = "frown"
@@ -195,7 +179,6 @@
 	message = "jumps!"
 	hands_use_check = TRUE
 
-/* MOJAVE SUN EDIT - Removes Stupid non-RP Emotes
 /datum/emote/living/kiss
 	key = "kiss"
 	key_third_person = "kisses"
@@ -216,7 +199,6 @@
 	else
 		qdel(kiss_blower)
 		to_chat(user, span_warning("You're incapable of blowing a kiss in your current state."))
-*///MOJAVE SUN EDIT END - Remove stupid non-RP emotes
 
 /datum/emote/living/laugh
 	key = "laugh"

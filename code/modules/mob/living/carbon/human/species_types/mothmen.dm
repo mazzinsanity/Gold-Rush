@@ -4,15 +4,17 @@
 	id = SPECIES_MOTH
 	say_mod = "flutters"
 	default_color = "00FF00"
-	species_traits = list(LIPS, HAS_FLESH, HAS_BONE, HAS_MARKINGS, TRAIT_ANTENNAE)
+	species_traits = list(LIPS, HAS_FLESH, HAS_BONE, TRAIT_ANTENNAE)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
+	mutant_bodyparts = list(
+		"wings" = "Plain", 
+		"antennae" = "Plain"
+	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
-	mutant_bodyparts = list("moth_markings" = "None")
-	external_organs = list(/obj/item/organ/external/wings/moth = "Plain", /obj/item/organ/external/antennae = "Plain")
 	attack_verb = "slash"
 	attack_effect = ATTACK_EFFECT_CLAW
 	attack_sound = 'sound/weapons/slash.ogg'
@@ -58,11 +60,9 @@
 	return 1
 
 /datum/species/moth/randomize_main_appearance_element(mob/living/carbon/human/human_mob)
-	var/wings = pick(GLOB.moth_wings_list)
+	var/wings = pick(GLOB.wings_list)
 	mutant_bodyparts["wings"] = wings
-	mutant_bodyparts["moth_wings"] = wings
 	human_mob.dna.features["wings"] = wings
-	human_mob.dna.features["moth_wings"] = wings
 	human_mob.update_body()
 
 /datum/species/moth/get_scream_sound(mob/living/carbon/human/human)

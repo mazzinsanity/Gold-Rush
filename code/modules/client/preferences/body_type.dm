@@ -1,7 +1,7 @@
 #define USE_GENDER "Use gender"
 
 /datum/preference/choiced/body_type
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	priority = PREFERENCE_PRIORITY_BODY_TYPE
 	savefile_key = "body_type"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -19,7 +19,10 @@
 		target.body_type = value
 
 /datum/preference/choiced/body_type/is_accessible(datum/preferences/preferences)
-	. = ..()
-	return FALSE //MOJAVE SUN EDIT - Prefs
+	if (!..(preferences))
+		return FALSE
+
+	var/datum/species/species = preferences.read_preference(/datum/preference/choiced/species)
+	return initial(species.sexes)
 
 #undef USE_GENDER
