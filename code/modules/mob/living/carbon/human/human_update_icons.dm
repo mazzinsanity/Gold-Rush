@@ -291,6 +291,7 @@ There are several things that need to be remembered:
 		overlays_standing[SHOES_LAYER] = shoes_overlay
 
 	apply_overlay(SHOES_LAYER)
+	update_mutant_bodyparts()
 
 
 /mob/living/carbon/human/update_inv_s_store()

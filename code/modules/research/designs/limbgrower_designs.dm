@@ -8,7 +8,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/l_arm
-	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
+	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_ANTHROPOMORPH,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
 
 /datum/design/rightarm
 	name = "Right Arm"
@@ -16,7 +16,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/r_arm
-	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
+	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_ANTHROPOMORPH,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
 
 /datum/design/leftleg
 	name = "Left Leg"
@@ -24,7 +24,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/l_leg
-	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
+	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_ANTHROPOMORPH,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
 
 /datum/design/rightleg
 	name = "Right Leg"
@@ -32,7 +32,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 25)
 	build_path = /obj/item/bodypart/r_leg
-	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
+	category = list("initial",SPECIES_HUMAN,SPECIES_LIZARD,SPECIES_ANTHROPOMORPH,SPECIES_MOTH,SPECIES_PLASMAMAN,SPECIES_ETHEREAL)
 
 /datum/design/digi_leftleg
 	name = "Digitigrade Left Leg"
@@ -40,7 +40,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 30)
 	build_path = /obj/item/bodypart/l_leg/digitigrade
-	category = list(SPECIES_LIZARD)
+	category = list(SPECIES_LIZARD, SPECIES_ANTHROPOMORPH)
 
 /datum/design/digi_rightleg
 	name = "Digitigrade Right Leg"
@@ -48,7 +48,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 30)
 	build_path = /obj/item/bodypart/r_leg/digitigrade
-	category = list(SPECIES_LIZARD)
+	category = list(SPECIES_LIZARD, SPECIES_ANTHROPOMORPH)
 
 //Non-limb limb designs
 
@@ -123,7 +123,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 20)
 	build_path = /obj/item/organ/tail/lizard/fake
-	category = list(SPECIES_LIZARD)
+	category = list(SPECIES_LIZARD, SPECIES_ANTHROPOMORPH)
 
 /datum/design/lizard_tongue
 	name = "Forked Tongue"
@@ -131,7 +131,7 @@
 	build_type = LIMBGROWER
 	reagents_list = list(/datum/reagent/medicine/c2/synthflesh = 20)
 	build_path = /obj/item/organ/tongue/lizard
-	category = list(SPECIES_LIZARD)
+	category = list(SPECIES_LIZARD, SPECIES_ANTHROPOMORPH)
 
 /datum/design/monkey_tail
 	name = "Monkey Tail"

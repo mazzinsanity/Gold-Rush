@@ -986,7 +986,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				standing += mutable_appearance(undershirt.icon, undershirt.icon_state, -BODY_LAYER)
 				//MOJAVE SUN EDIT END - Gender Prefs
 
-		if(species_human.socks && species_human.num_legs >= 2 && !(DIGITIGRADE in species_traits))
+		if(species_human.socks && species_human.num_legs >= 2)
 			var/datum/sprite_accessory/socks/socks = GLOB.socks_list[species_human.socks]
 			if(socks)
 				standing += mutable_appearance(socks.icon, socks.icon_state, -BODY_LAYER)
@@ -1078,7 +1078,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(!(DIGITIGRADE in species_traits)) //Someone cut off a digitigrade leg and tacked it on
 			species_traits += DIGITIGRADE
 		var/should_be_squished = FALSE
-		if(((source.wear_suit?.flags_inv & HIDEJUMPSUIT) || (source.wear_suit?.body_parts_covered & LEGS)) || source.w_uniform?.body_parts_covered & LEGS)
+		if(((source.wear_suit?.flags_inv & HIDEJUMPSUIT) || (source.wear_suit?.body_parts_covered & LEGS)) || source.w_uniform?.body_parts_covered & LEGS || source.shoes?.body_parts_covered & FEET)
 			should_be_squished = TRUE
 		if(bodypart.use_digitigrade == FULL_DIGITIGRADE && should_be_squished)
 			bodypart.use_digitigrade = SQUISHED_DIGITIGRADE
@@ -1252,10 +1252,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_FEET)
 			if(H.num_legs < 2)
-				return FALSE
-			if((DIGITIGRADE in species_traits) && !(I.item_flags & IGNORE_DIGITIGRADE))
-				if(!disable_warning)
-					to_chat(H, span_warning("The footwear around here isn't compatible with your feet!"))
 				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_BELT)

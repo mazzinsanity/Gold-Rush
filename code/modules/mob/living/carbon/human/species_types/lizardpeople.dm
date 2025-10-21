@@ -21,8 +21,6 @@
 		"frills" = "None",
 		"snout" = "Round",
 		"wings" = "None",
-		"antennae" = "None",
-		"mushcap" = "None",
 	)
 	mutanttongue = /obj/item/organ/tongue/lizard
 	mutant_organs = list(/obj/item/organ/tail/lizard)
