@@ -65,70 +65,6 @@
 
 	return TRUE
 
-/datum/preference/choiced/frills
-	savefile_key = "feature_frills"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_FEATURES
-	main_feature_name = "Frills"
-	should_generate_icons = TRUE
-	relevant_mutant_bodypart = "frills"
-
-/datum/preference/choiced/frills/init_possible_values()
-	return generate_directional_shots(GLOB.frills_list, relevant_mutant_bodypart, "ADJ",  WEST)
-
-/datum/preference/choiced/frills/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["frills"] = value
-
-/datum/preference/choiced/frills/create_default_value()
-	return "None"
-
-/datum/preference/choiced/frills/compile_constant_data()
-	var/list/data = ..()
-
-	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_frills_color_list"
-
-	return data
-
-/datum/preference/tri_color/frills
-	savefile_key = "feature_frills_color_list"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
-
-/datum/preference/tri_color/frills/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["frills_color_list"] = value
-
-/datum/preference/choiced/horns
-	savefile_key = "feature_horns"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_FEATURES
-	main_feature_name = "Horns"
-	should_generate_icons = TRUE
-	relevant_mutant_bodypart = "horns"
-
-/datum/preference/choiced/horns/init_possible_values()
-	return generate_directional_shots(GLOB.horns_list, relevant_mutant_bodypart, "ADJ", WEST)
-
-/datum/preference/choiced/horns/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["horns"] = value
-
-/datum/preference/choiced/horns/create_default_value()
-	return "None"
-
-/datum/preference/choiced/horns/compile_constant_data()
-	var/list/data = ..()
-
-	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_horns_color_list"
-
-	return data
-
-/datum/preference/tri_color/horns
-	savefile_key = "feature_horns_color_list"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
-
-/datum/preference/tri_color/horns/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["horns_color_list"] = value
-
 /datum/preference/choiced/legs
 	savefile_key = "feature_legs"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -173,65 +109,69 @@
 /datum/preference/tri_color/snout/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["snout_color_list"] = value
 
-/datum/preference/choiced/spines
-	savefile_key = "feature_spines"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
-	main_feature_name = "Spines"
-	relevant_mutant_bodypart = "spines"
-
-/datum/preference/choiced/spines/init_possible_values()
-	return assoc_to_keys(GLOB.spines_list)
-
-/datum/preference/choiced/spines/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["spines"] = value
-
-/datum/preference/choiced/spines/create_default_value()
-	return "None"
-
-/datum/preference/tri_color/spines
-	savefile_key = "feature_spines_color_list"
-	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
-
-/datum/preference/tri_color/spines/is_accessible(datum/preferences/preferences)
-	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/spines) != "None"
-
-/datum/preference/tri_color/spines/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["spines_color_list"] = value
-
-/datum/preference/choiced/tail
-	savefile_key = "feature_tail"
+/datum/preference/choiced/horns
+	savefile_key = "feature_horns"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
-	main_feature_name = "Tail"
+	main_feature_name = "Horns"
 	should_generate_icons = TRUE
-	relevant_mutant_bodypart = "tail"
+	relevant_mutant_bodypart = "horns"
 
-/datum/preference/choiced/tail/init_possible_values()
-	return generate_directional_shots(GLOB.tails_list, relevant_mutant_bodypart, "FRONT", NORTH, include_body = TRUE)
+/datum/preference/choiced/horns/init_possible_values()
+	return generate_directional_shots(GLOB.horns_list, relevant_mutant_bodypart, "ADJ", WEST)
 
-/datum/preference/choiced/tail/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["tail"] = value
+/datum/preference/choiced/horns/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["horns"] = value
 
-/datum/preference/choiced/tail/create_default_value()
+/datum/preference/choiced/horns/create_default_value()
 	return "None"
 
-/datum/preference/choiced/tail/compile_constant_data()
+/datum/preference/choiced/horns/compile_constant_data()
 	var/list/data = ..()
 
-	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_tail_color_list"
+	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_horns_color_list"
 
 	return data
 
-/datum/preference/tri_color/tail
-	savefile_key = "feature_tail_color_list"
+/datum/preference/tri_color/horns
+	savefile_key = "feature_horns_color_list"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
 
-/datum/preference/tri_color/tail/apply_to_human(mob/living/carbon/human/target, value)
-	target.dna.features["tail_color_list"] = value
+/datum/preference/tri_color/horns/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["horns_color_list"] = value
+
+/datum/preference/choiced/frills
+	savefile_key = "feature_frills"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_FEATURES
+	main_feature_name = "Frills"
+	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "frills"
+
+/datum/preference/choiced/frills/init_possible_values()
+	return generate_directional_shots(GLOB.frills_list, relevant_mutant_bodypart, "ADJ",  WEST)
+
+/datum/preference/choiced/frills/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["frills"] = value
+
+/datum/preference/choiced/frills/create_default_value()
+	return "None"
+
+/datum/preference/choiced/frills/compile_constant_data()
+	var/list/data = ..()
+
+	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_frills_color_list"
+
+	return data
+
+/datum/preference/tri_color/frills
+	savefile_key = "feature_frills_color_list"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+
+/datum/preference/tri_color/frills/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["frills_color_list"] = value
 
 /datum/preference/choiced/ears
 	savefile_key = "feature_ears"
@@ -328,6 +268,66 @@
 
 /datum/preference/tri_color/mushcap/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["mushcap_color_list"] = value
+
+/datum/preference/choiced/spines
+	savefile_key = "feature_spines"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	main_feature_name = "Spines"
+	relevant_mutant_bodypart = "spines"
+
+/datum/preference/choiced/spines/init_possible_values()
+	return assoc_to_keys(GLOB.spines_list)
+
+/datum/preference/choiced/spines/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["spines"] = value
+
+/datum/preference/choiced/spines/create_default_value()
+	return "None"
+
+/datum/preference/tri_color/spines
+	savefile_key = "feature_spines_color_list"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+
+/datum/preference/tri_color/spines/is_accessible(datum/preferences/preferences)
+	if(..(preferences))
+		return preferences.read_preference(/datum/preference/choiced/spines) != "None"
+
+/datum/preference/tri_color/spines/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["spines_color_list"] = value
+
+/datum/preference/choiced/tail
+	savefile_key = "feature_tail"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_FEATURES
+	main_feature_name = "Tail"
+	should_generate_icons = TRUE
+	relevant_mutant_bodypart = "tail"
+
+/datum/preference/choiced/tail/init_possible_values()
+	return generate_directional_shots(GLOB.tails_list, relevant_mutant_bodypart, "FRONT", NORTH, include_body = TRUE)
+
+/datum/preference/choiced/tail/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["tail"] = value
+
+/datum/preference/choiced/tail/create_default_value()
+	return "None"
+
+/datum/preference/choiced/tail/compile_constant_data()
+	var/list/data = ..()
+
+	data[SUPPLEMENTAL_FEATURE_KEY] = "feature_tail_color_list"
+
+	return data
+
+/datum/preference/tri_color/tail
+	savefile_key = "feature_tail_color_list"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+
+/datum/preference/tri_color/tail/apply_to_human(mob/living/carbon/human/target, value)
+	target.dna.features["tail_color_list"] = value
 
 /datum/preference/choiced/wings
 	savefile_key = "feature_wings"

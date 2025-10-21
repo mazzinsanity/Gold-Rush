@@ -2,7 +2,7 @@
 	savefile_key = "voice_type"
 	savefile_identifier = PREFERENCE_CHARACTER
 	main_feature_name = "Voice type"
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	priority = PREFERENCE_PRIORITY_NAME_MODIFICATIONS
 
 /datum/preference/choiced/voice_type/init_possible_values()

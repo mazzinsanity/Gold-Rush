@@ -1,5 +1,5 @@
 /datum/preference/choiced/generic_adjective
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	priority = PREFERENCE_PRIORITY_NAME_MODIFICATIONS
 	savefile_key = "generic_adjective"

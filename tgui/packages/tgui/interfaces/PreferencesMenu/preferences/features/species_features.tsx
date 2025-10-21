@@ -112,301 +112,301 @@ export const feature_tail_color_list: Feature<string[]> = {
 };
 
 export const feature_head_markings_1: FeatureChoiced = {
-  name: 'Head markings',
+  name: 'a. Head Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_head_markings_1_color_list: Feature<string[]> = {
-  name: 'Head markings colors',
+  name: 'a. Head Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_head_markings_2: FeatureChoiced = {
-  name: 'Head markings 2',
+  name: 'aa. Head Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_head_markings_2_color_list: Feature<string[]> = {
-  name: 'Head markings 2 colors',
+  name: 'aa. Head Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_head_markings_3: FeatureChoiced = {
-  name: 'Head markings 3',
+  name: 'aaa. Head Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_head_markings_3_color_list: Feature<string[]> = {
-  name: 'Head markings 3 colors',
+  name: 'aaa. Head Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_chest_markings_1: FeatureChoiced = {
-  name: 'Chest markings',
+  name: 'b. Chest Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_chest_markings_1_color_list: Feature<string[]> = {
-  name: 'Chest markings colors',
+  name: 'b. Chest Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_chest_markings_2: FeatureChoiced = {
-  name: 'Chest markings 2',
+  name: 'bb. Chest Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_chest_markings_2_color_list: Feature<string[]> = {
-  name: 'Chest markings 2 colors',
+  name: 'bb. Chest Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_chest_markings_3: FeatureChoiced = {
-  name: 'Chest markings 3',
+  name: 'bbb. Chest Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_chest_markings_3_color_list: Feature<string[]> = {
-  name: 'Chest markings 3 colors',
+  name: 'bbb. Chest Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_arm_markings_1: FeatureChoiced = {
-  name: 'Left arm markings',
+  name: 'c. Left Arm Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_arm_markings_1_color_list: Feature<string[]> = {
-  name: 'Left arm markings colors',
+  name: 'c. Left Arm Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_arm_markings_2: FeatureChoiced = {
-  name: 'Left arm markings 2',
+  name: 'cc. Left Arm Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_arm_markings_2_color_list: Feature<string[]> = {
-  name: 'Left arm markings 2 colors',
+  name: 'cc. Left Arm Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_arm_markings_3: FeatureChoiced = {
-  name: 'Left arm markings 3',
+  name: 'ccc. Left Arm Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_arm_markings_3_color_list: Feature<string[]> = {
-  name: 'Left arm markings 3 colors',
+  name: 'ccc. Left Arm Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_hand_markings_1: FeatureChoiced = {
-  name: 'Left hand markings',
+  name: 'd. Left Hand Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_hand_markings_1_color_list: Feature<string[]> = {
-  name: 'Left hand markings colors',
+  name: 'd. Left Hand Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_hand_markings_2: FeatureChoiced = {
-  name: 'Left hand markings 2',
+  name: 'dd. Left Hand Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_hand_markings_2_color_list: Feature<string[]> = {
-  name: 'Left hand markings 2 colors',
+  name: 'dd. Left Hand Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_hand_markings_3: FeatureChoiced = {
-  name: 'Left hand markings 3',
+  name: 'ddd. Left Hand Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_hand_markings_3_color_list: Feature<string[]> = {
-  name: 'Left hand markings 3 colors',
+  name: 'ddd. Left Hand Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_arm_markings_1: FeatureChoiced = {
-  name: 'Right arm markings',
+  name: 'e. Right Arm Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_arm_markings_1_color_list: Feature<string[]> = {
-  name: 'Right arm markings colors',
+  name: 'e. Right Arm Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_arm_markings_2: FeatureChoiced = {
-  name: 'Right arm markings 2',
+  name: 'ee. Right Arm Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_arm_markings_2_color_list: Feature<string[]> = {
-  name: 'Right arm markings 2 colors',
+  name: 'ee. Right Arm Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_arm_markings_3: FeatureChoiced = {
-  name: 'Right arm markings 3',
+  name: 'eee. Right Arm Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_arm_markings_3_color_list: Feature<string[]> = {
-  name: 'Right arm markings 3 colors',
+  name: 'eee. Right Arm Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_hand_markings_1: FeatureChoiced = {
-  name: 'Right hand markings',
+  name: 'f. Right Hand Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_hand_markings_1_color_list: Feature<string[]> = {
-  name: 'Right hand markings colors',
+  name: 'f. Right Hand Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_hand_markings_2: FeatureChoiced = {
-  name: 'Right hand markings 2',
+  name: 'ff. Right Hand Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_hand_markings_2_color_list: Feature<string[]> = {
-  name: 'Right hand markings 2 colors',
+  name: 'ff. Right Hand Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_hand_markings_3: FeatureChoiced = {
-  name: 'Right hand markings 3',
+  name: 'fff. Right Hand Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_hand_markings_3_color_list: Feature<string[]> = {
-  name: 'Right hand markings 3 colors',
+  name: 'fff. Right Hand Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_leg_markings_1: FeatureChoiced = {
-  name: 'Left leg markings',
+  name: 'g. Left Leg Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_leg_markings_1_color_list: Feature<string[]> = {
-  name: 'Left leg markings colors',
+  name: 'g. Left Leg Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_leg_markings_2: FeatureChoiced = {
-  name: 'Left leg markings 2',
+  name: 'gg. Left Leg Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_leg_markings_2_color_list: Feature<string[]> = {
-  name: 'Left leg markings 2 colors',
+  name: 'gg. Left Leg Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_leg_markings_3: FeatureChoiced = {
-  name: 'Left leg markings 3',
+  name: 'ggg. Left Leg Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_leg_markings_3_color_list: Feature<string[]> = {
-  name: 'Left leg markings 3 colors',
+  name: 'ggg. Left Leg Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_foot_markings_1: FeatureChoiced = {
-  name: 'Left foot markings',
+  name: 'h. Left Foot Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_foot_markings_1_color_list: Feature<string[]> = {
-  name: 'Left foot markings colors',
+  name: 'h. Left Foot Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_foot_markings_2: FeatureChoiced = {
-  name: 'Left foot markings 2',
+  name: 'hh. Left Foot Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_foot_markings_2_color_list: Feature<string[]> = {
-  name: 'Left foot markings 2 colors',
+  name: 'hh. Left Foot Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_left_foot_markings_3: FeatureChoiced = {
-  name: 'Left foot markings 3',
+  name: 'hhh. Left Foot Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_left_foot_markings_3_color_list: Feature<string[]> = {
-  name: 'Left foot markings 3 colors',
+  name: 'hhh. Left Foot Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_leg_markings_1: FeatureChoiced = {
-  name: 'Right leg markings',
+  name: 'i. Right Leg Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_leg_markings_1_color_list: Feature<string[]> = {
-  name: 'Right leg markings colors',
+  name: 'i. Right Leg Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_leg_markings_2: FeatureChoiced = {
-  name: 'Right leg markings 2',
+  name: 'ii. Right Leg Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_leg_markings_2_color_list: Feature<string[]> = {
-  name: 'Right leg markings 2 colors',
+  name: 'ii. Right Leg Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_leg_markings_3: FeatureChoiced = {
-  name: 'Right leg markings 3',
+  name: 'iii. Right Leg Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_leg_markings_3_color_list: Feature<string[]> = {
-  name: 'Right leg markings 3 colors',
+  name: 'iii. Right Leg Markings 3 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_foot_markings_1: FeatureChoiced = {
-  name: 'Right foot markings',
+  name: 'j. Right Foot Markings',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_foot_markings_1_color_list: Feature<string[]> = {
-  name: 'Right foot markings colors',
+  name: 'j. Right Foot Markings Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_foot_markings_2: FeatureChoiced = {
-  name: 'Right foot markings 2',
+  name: 'jj. Right Foot Markings 2',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_foot_markings_2_color_list: Feature<string[]> = {
-  name: 'Right foot markings 2 colors',
+  name: 'jj. Right Foot Markings 2 Colors',
   component: FeatureTriColorInput,
 };
 
 export const feature_right_foot_markings_3: FeatureChoiced = {
-  name: 'Right foot markings 3',
+  name: 'jjj. Right Foot Markings 3',
   component: FeatureDropdownInput,
 };
 
 export const feature_right_foot_markings_3_color_list: Feature<string[]> = {
-  name: 'Right foot markings 3 colors',
+  name: 'jjj. Right Foot Markings 3 Colors',
   component: FeatureTriColorInput,
 };

@@ -28,7 +28,7 @@
 /datum/preference/color/eye_color
 	savefile_key = "eye_color"
 	savefile_identifier = PREFERENCE_CHARACTER
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	relevant_species_trait = EYECOLOR
 
 /datum/preference/color/eye_color/apply_to_human(mob/living/carbon/human/target, value)
@@ -74,7 +74,7 @@
 	target.facial_hair_color = value
 
 /datum/preference/choiced/facial_hair_gradient
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_gradient"
 	relevant_species_trait = FACEHAIR
@@ -137,7 +137,7 @@
 	return data
 
 /datum/preference/choiced/hair_gradient
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "hair_gradient"
 	relevant_species_trait = HAIR
