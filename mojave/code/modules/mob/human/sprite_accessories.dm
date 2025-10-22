@@ -1189,11 +1189,11 @@
 ///////////////////////
 
 /datum/sprite_accessory/tails
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/tails.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/tails_animated
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/tails.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/tails/none
@@ -1263,11 +1263,11 @@
 ////////////////////////
 
 /datum/sprite_accessory/spines
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/spines.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/spines_animated
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/spines.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/spines/none
@@ -1323,7 +1323,7 @@
 ////////////////////////
 
 /datum/sprite_accessory/snouts
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/snouts.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/snouts/none
@@ -1356,7 +1356,7 @@
 ////////////////////////
 
 /datum/sprite_accessory/frills
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/frills.dmi'
 
 /datum/sprite_accessory/frills/none
 	name = "None"
@@ -1379,7 +1379,7 @@
 ///////////////////////
 
 /datum/sprite_accessory/horns
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/horns.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/horns/none
@@ -1411,7 +1411,7 @@
 //////////////////////
 
 /datum/sprite_accessory/ears
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/ears.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/ears/none
@@ -1432,7 +1432,7 @@
 //////////////////////////
 
 /datum/sprite_accessory/antennae
-	icon = 'icons/mob/antennae.dmi'
+	icon = 'icons/mob/mutant_bodyparts/antennae.dmi'
 
 /datum/sprite_accessory/antennae/none
 	name = "None"
@@ -1507,7 +1507,7 @@
 ///////////////////////
 
 /datum/sprite_accessory/wings
-	icon = 'icons/mob/wings.dmi'
+	icon = 'icons/mob/mutant_bodyparts/wings.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/wings/none
@@ -1629,6 +1629,22 @@
 	name = "Witch Wing"
 	icon_state = "witchwing"
 
+/datum/sprite_accessory/wings/rosy
+	name = "Rosy"
+	icon_state = "rosy"
+
+/datum/sprite_accessory/wings/feathery
+	name = "Feathery"
+	icon_state = "feathery"
+
+/datum/sprite_accessory/wings/brown
+	name = "Brown"
+	icon_state = "brown"
+
+/datum/sprite_accessory/wings/plasmafire
+	name = "Plasmafire"
+	icon_state = "plasmafire"
+
 //////////////////////
 // Legs Definitions //
 //////////////////////
@@ -1643,12 +1659,12 @@
 /datum/sprite_accessory/legs/digitigrade_lizard
 	name = "Digitigrade Legs"
 
-//////////////////////////////
-// Mushroom Cap Definitions //
-//////////////////////////////
+/////////////////////
+// Cap Definitions //
+/////////////////////
 
 /datum/sprite_accessory/mushcap
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/cap.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/mushcap/none
