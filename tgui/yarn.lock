@@ -1623,11 +1623,20 @@ __metadata:
   linkType: hard
 
 "@types/react-dom@npm:^18.2.17":
-  version: 18.2.17
-  resolution: "@types/react-dom@npm:18.2.17"
+  version: 18.3.7
+  resolution: "@types/react-dom@npm:18.3.7"
+  peerDependencies:
+    "@types/react": ^18.0.0
+  checksum: c8b63ec944d2a68992b4dba474003fe55ee1d949c4b9c8fe97eecb2290de23f76acfb670b2f7ceb46a5fc8e46808d1745369b03edda48a7a0cf730eff4c5d315
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18.2.24":
+  version: 18.2.24
+  resolution: "@types/react-dom@npm:18.2.24"
   dependencies:
-    "@types/react": "*"
-  checksum: 7a4e704ed4be6e0c3ccd8a22ff69386fe548304bf4db090513f42e059ff4c65f7a427790320051524d6578a2e4c9667bb7a80a4c989b72361c019fbe851d9385
+    "@types/react": "npm:*"
+  checksum: 7fb0dd0c88c5219bcc27f1f9bf14d9e1b1593014ee7938dd46ee9782c77c39d1ccc79d2b8364a6113019d7f65c94e4dc3c37425c3972910bb2674cce98d3f3ca
   languageName: node
   linkType: hard
 
@@ -1650,6 +1659,16 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: d2019afdf48303a3a598a97cc9dd2284e3c04b369e791f6ba3c33232b7f8645daff97b093a19f8b3ce75ac8a261b47552cb4513226ab16d843eb9443b0f91844
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.2.74":
+  version: 18.3.26
+  resolution: "@types/react@npm:18.3.26"
+  dependencies:
+    "@types/prop-types": "*"
+    csstype: ^3.0.2
+  checksum: ecff0da9f9a1d1663152ffd1283a6e3f20e1255dedc99259d535f01ac0916535f7bcd0fd1783f6cec1729fe5cfe4a79e78eb9a4b1447af81ae86561a1bc66f6d
   languageName: node
   linkType: hard
 
@@ -9110,9 +9129,11 @@ resolve@^1.20.0:
   version: 0.0.0-use.local
   resolution: "tgui-say@workspace:packages/tgui-say"
   dependencies:
-    "@types/react": ^18.2.39
+    "@types/react": ^18.2.74
+    "@types/react-dom": ^18.2.24
     common: "workspace:*"
     react: ^18.2.0
+    react-dom: ^18.2.0
     tgui: "workspace:*"
     tgui-polyfill: "workspace:*"
   languageName: unknown
