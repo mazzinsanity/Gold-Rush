@@ -1,5 +1,6 @@
 import { multiline } from "common/string";
-import { FeatureColorInput, Feature, FeatureChoiced, FeatureDropdownInput } from "../base";
+
+import { Feature, FeatureChoiced, FeatureColorInput, FeatureDropdownInput } from "../base";
 
 export const screentip_color: Feature<string> = {
   name: "Screentips color",

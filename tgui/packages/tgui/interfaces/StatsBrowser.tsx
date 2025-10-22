@@ -1,7 +1,8 @@
-import { useBackend, useSharedState, useLocalState } from '../backend';
 import { classes } from 'common/react';
-import { Window } from '../layouts';
+
+import { useBackend, useLocalState, useSharedState } from '../backend';
 import { Button, Tabs } from '../components';
+import { Window } from '../layouts';
 
 type PerksInfo = {
   name: string,

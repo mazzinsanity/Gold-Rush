@@ -1,4 +1,5 @@
 import { multiline } from "common/string";
+
 import { Antagonist, Category } from "../base";
 import { THIEF_MECHANICAL_DESCRIPTION } from "./thief";
 
