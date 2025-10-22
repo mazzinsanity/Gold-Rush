@@ -300,7 +300,7 @@
 	tile_covered = should_hide
 	AM.update_appearance()
 
-/datum/component/plumbing/proc/change_ducting_layer(obj/caller, obj/O, new_layer = DUCT_LAYER_DEFAULT)
+/datum/component/plumbing/proc/change_ducting_layer(obj/plumber, obj/O, new_layer = DUCT_LAYER_DEFAULT)
 	SIGNAL_HANDLER
 	ducting_layer = new_layer
 
@@ -348,7 +348,7 @@
 	demand_connects = NORTH
 	supply_connects = SOUTH
 
-/datum/component/plumbing/manifold/change_ducting_layer(obj/caller, obj/O, new_layer)
+/datum/component/plumbing/manifold/change_ducting_layer(obj/plumber, obj/O, new_layer)
 	return
 
 #define READY 2
