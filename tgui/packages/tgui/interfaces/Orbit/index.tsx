@@ -1,5 +1,4 @@
 import { filter, sortBy } from 'common/collections';
-import { capitalizeFirst } from 'common/string';
 import { useBackend, useLocalState } from 'tgui/backend';
 import {
   Button,
@@ -248,7 +247,7 @@ const ObservableItem = (props: { color?: string; item: Observable }) => {
       tooltip={(!!health || !!extra) && <ObservableTooltip item={item} />}
       tooltipPosition="bottom-start"
     >
-      {capitalizeFirst(getDisplayName(full_name, name))}
+      {getDisplayName(full_name, name)}
       {!!orbiters && (
         <>
           {' '}
