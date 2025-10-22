@@ -6,7 +6,7 @@
  */
 
 import { KEY } from 'common/keys';
-import { classes } from 'common/react';
+import { classes } from 'tgui-core/react';
 import {
   forwardRef,
   RefObject,

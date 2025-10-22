@@ -1,5 +1,5 @@
 import { sortBy } from 'common/collections';
-import { classes } from 'common/react';
+import { classes } from 'tgui-core/react';
 import { PropsWithChildren, ReactNode } from 'react';
 import { useLocalState } from 'tgui/backend';
 

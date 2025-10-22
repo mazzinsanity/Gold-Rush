@@ -1,6 +1,6 @@
 import { filter, map, sortBy } from 'common/collections';
-import { classes } from 'common/react';
-import { createSearch } from 'common/string';
+import { classes } from 'tgui-core/react';
+import { createSearch } from 'tgui-core/string';
 import { useState } from 'react';
 
 import { sendAct, useBackend } from '../../backend';

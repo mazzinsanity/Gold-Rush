@@ -1,4 +1,4 @@
-import { classes } from 'common/react';
+import { classes } from 'tgui-core/react';
 
 import { useBackend, useLocalState, useSharedState } from '../backend';
 import { Button, Tabs } from '../components';

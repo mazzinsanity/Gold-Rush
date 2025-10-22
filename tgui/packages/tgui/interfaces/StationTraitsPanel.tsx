@@ -1,6 +1,6 @@
 import { filter, map } from 'common/collections';
 import { exhaustiveCheck } from 'common/exhaustive';
-import { BooleanLike } from 'common/react';
+import { BooleanLike } from 'tgui-core/react';
 import { useState } from 'react';
 
 import { useBackend } from '../backend';

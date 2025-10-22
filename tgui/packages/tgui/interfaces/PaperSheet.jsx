@@ -9,8 +9,8 @@
  * @license MIT
  */
 
-import { clamp } from 'common/math';
-import { classes } from 'common/react';
+import { clamp } from 'tgui-core/math';
+import { classes } from 'tgui-core/react';
 import { marked } from 'marked';
 import { Component } from 'react';
 
