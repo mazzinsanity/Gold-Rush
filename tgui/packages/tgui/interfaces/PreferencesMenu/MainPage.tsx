@@ -378,7 +378,6 @@ export const PreferenceList = (props: {
       overflowX="hidden"
       overflowY="auto"
       minHeight="33%"
-      maxWidth="530px"
     >
       <LabeledList>
         {sortPreferences(Object.entries(props.preferences)).map(
@@ -620,7 +619,7 @@ export const MainPage = (props: MainPageProps) => {
                 </Stack>
               </Stack.Item>
 
-              <Stack.Item height="780px">
+              <Stack.Item grow maxHeight="770px">
                 <Stack vertical fill>
                   <PreferenceList
                     act={act}
