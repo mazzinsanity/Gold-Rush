@@ -206,6 +206,8 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	GLOB.clients += src
 	GLOB.directory[ckey] = src
 
+	winset(src, null, list("browser-options" = "find,refresh,byondstorage"))
+
 	// Instantiate stat panel
 	stat_panel = new(src, "statbrowser")
 	stat_panel.subscribe(src, .proc/on_stat_panel_message)
