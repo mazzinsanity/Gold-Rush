@@ -1,11 +1,11 @@
 import { sortBy } from 'common/collections';
-import { classes } from 'tgui-core/react';
 import { PropsWithChildren, ReactNode } from 'react';
 import { useLocalState } from 'tgui/backend';
+import { classes } from 'tgui-core/react';
 
 import { resolveAsset } from '../../assets';
 import { useBackend } from '../../backend';
-import { Box, Button, Dropdown, Flex, Stack, Tooltip } from '../../components';
+import { Box, Button, Dropdown, Image, Stack, Tooltip } from '../../components';
 import { logger } from '../../logging';
 import {
   createSetPreference,
@@ -286,63 +286,59 @@ const Department = (
         );
 
         return (
-          <Box>
-            <Box textAlign="center" bold fontSize="25px">
-              {department.full_name}
-            </Box>
+          <Stack vertical>
+            <Stack.Item>
+              <Box textAlign="center" bold fontSize="25px">
+                {department.full_name}
+              </Box>
+            </Stack.Item>
 
-            <Gap amount={25} />
-            <Flex px="10%">
-              <Flex.Item grow={5}>
-                <Button
-                  fluid
-                  icon="chevron-left"
-                  content="Previous"
-                  onClick={previousFaction}
+            <Stack.Item>
+              <Stack>
+                <Stack.Item grow>
+                  <Button fluid icon="chevron-left" onClick={previousFaction}>
+                    Previous
+                  </Button>
+                </Stack.Item>
+                <Stack.Item grow>
+                  <Button fluid icon="chevron-right" onClick={nextFaction}>
+                    Next
+                  </Button>
+                </Stack.Item>
+              </Stack>
+            </Stack.Item>
+
+            <Stack.Item align="center">
+              <Tooltip content={name} position="bottom">
+                <Image
+                  className="faction-icon-parent"
+                  width="150px"
+                  src={resolveAsset(`${name}_flag.png`)}
                 />
-              </Flex.Item>
-              <Flex.Item grow={1} />
-              <Flex.Item grow={5}>
-                <Button
-                  fluid
-                  icon="chevron-right"
-                  content="Next"
-                  onClick={nextFaction}
-                />
-              </Flex.Item>
-            </Flex>
+              </Tooltip>
+            </Stack.Item>
 
-            <Gap amount={25} />
-            <Tooltip content={name} position="bottom">
-              <Box
-                px="30%"
-                width="100%"
-                inline
-                className={'faction-icon-parent'}
-                as="img"
-                src={resolveAsset(`${name}_flag.png`)}
-              />
-            </Tooltip>
+            <Stack.Item>
+              <PriorityHeaders />
+              <Stack vertical fill>
+                {jobsForDepartment.map(([name, job]) => {
+                  return (
+                    <JobRow
+                      className={classes([
+                        className,
+                        name === department.head && 'head',
+                      ])}
+                      key={name}
+                      job={job}
+                      name={name}
+                    />
+                  );
+                })}
+              </Stack>
+            </Stack.Item>
 
-            <Gap amount={36} />
-            <PriorityHeaders />
-            <Stack vertical fill>
-              {jobsForDepartment.map(([name, job]) => {
-                return (
-                  <JobRow
-                    className={classes([
-                      className,
-                      name === department.head && 'head',
-                    ])}
-                    key={name}
-                    job={job}
-                    name={name}
-                  />
-                );
-              })}
-            </Stack>
             {children}
-          </Box>
+          </Stack>
         );
       }}
     />
@@ -433,12 +429,13 @@ export const JobsPage = (props) => {
               return (
                 <Button
                   key={`faction_button_${key}`}
-                  content={key}
                   color={currentFaction === index ? 'green' : null}
                   onClick={() => {
                     setCurrentFaction(index);
                   }}
-                />
+                >
+                  {key}
+                </Button>
               );
             })}
             <JoblessRoleDropdown />
