@@ -5,7 +5,7 @@
  */
 
 import { KEY } from 'common/keys';
-import { classes } from 'common/react';
+import { classes } from 'tgui-core/react';
 import { debounce } from 'common/timer';
 import { KeyboardEvent, SyntheticEvent, useEffect, useRef } from 'react';
 

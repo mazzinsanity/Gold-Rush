@@ -77,7 +77,7 @@
 	else
 		add_ranged_ability(user, span_notice("You prepare [(IS_WEAKREF_OF(user, owner)) ? "your" : "their"] pimp-tentacle. <B>Left-click to slap a target!</B>"), TRUE)
 
-/obj/effect/proc_holder/tentacle_slap/InterceptClickOn(mob/living/caller, params, atom/target)
+/obj/effect/proc_holder/tentacle_slap/InterceptClickOn(mob/living/clicker, params, atom/target)
 	. = ..()
 	if(.)
 		return
@@ -101,7 +101,7 @@
 
 	if(!action.IsAvailable()) //extra check for safety since the ability is shared
 		remove_ranged_ability()
-		to_chat(caller, span_notice("This ability is still on cooldown."))
+		to_chat(clicker, span_notice("This ability is still on cooldown."))
 		return
 
 	beast_owner.visible_message("<span class='warning'>[beast_owner] slaps [living_target] with its tentacle!</span>", span_notice("You slap [living_target] with your tentacle."))

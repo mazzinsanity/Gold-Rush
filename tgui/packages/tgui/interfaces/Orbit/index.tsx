@@ -1,5 +1,4 @@
 import { filter, sortBy } from 'common/collections';
-import { capitalizeFirst, multiline } from 'common/string';
 import { useBackend, useLocalState } from 'tgui/backend';
 import {
   Button,
@@ -108,7 +107,7 @@ const ObservableSearch = (props) => {
             color="transparent"
             icon={!heatMap ? 'heart' : 'ghost'}
             onClick={() => setHeatMap(!heatMap)}
-            tooltip={multiline`Toggles between highlighting health or
+            tooltip={`Toggles between highlighting health or
             orbiters.`}
             tooltipPosition="bottom-start"
           />
@@ -118,7 +117,7 @@ const ObservableSearch = (props) => {
             color={autoObserve ? 'good' : 'transparent'}
             icon={autoObserve ? 'toggle-on' : 'toggle-off'}
             onClick={() => setAutoObserve(!autoObserve)}
-            tooltip={multiline`Toggle Auto-Observe. When active, you'll
+            tooltip={`Toggle Auto-Observe. When active, you'll
             see the UI / full inventory of whoever you're orbiting. Neat!`}
             tooltipPosition="bottom-start"
           />
@@ -248,7 +247,7 @@ const ObservableItem = (props: { color?: string; item: Observable }) => {
       tooltip={(!!health || !!extra) && <ObservableTooltip item={item} />}
       tooltipPosition="bottom-start"
     >
-      {capitalizeFirst(getDisplayName(full_name, name))}
+      {getDisplayName(full_name, name)}
       {!!orbiters && (
         <>
           {' '}

@@ -1,4 +1,4 @@
-import { classes } from 'common/react';
+import { classes } from 'tgui-core/react';
 import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 
 import { BoxProps, unit } from './Box';

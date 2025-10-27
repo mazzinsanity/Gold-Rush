@@ -62,18 +62,18 @@
 		return FALSE
 	return TRUE
 
-/obj/structure/plasticflaps/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller)
-	if(isliving(caller))
-		if(isbot(caller))
+/obj/structure/plasticflaps/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/passer)
+	if(isliving(passer))
+		if(isbot(passer))
 			return TRUE
 
-		var/mob/living/living_caller = caller
+		var/mob/living/living_caller = passer
 		var/ventcrawler = HAS_TRAIT(living_caller, TRAIT_VENTCRAWLER_ALWAYS) || HAS_TRAIT(living_caller, TRAIT_VENTCRAWLER_NUDE)
 		if(!ventcrawler && living_caller.mob_size != MOB_SIZE_TINY)
 			return FALSE
 
-	if(caller?.pulling)
-		return CanAStarPass(ID, to_dir, caller.pulling)
+	if(passer?.pulling)
+		return CanAStarPass(ID, to_dir, passer.pulling)
 	return TRUE //diseases, stings, etc can pass
 
 

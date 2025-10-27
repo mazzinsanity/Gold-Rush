@@ -1,6 +1,7 @@
-import { classes } from "common/react";
-import { FeatureChoiced, FeatureChoicedServerData, FeatureValueProps, sortChoices } from "../base";
+import { classes } from "tgui-core/react";
+
 import { Box, Dropdown, Stack } from "../../../../../components";
+import { FeatureChoiced, FeatureChoicedServerData, FeatureValueProps, sortChoices } from "../base";
 
 const UIStyleInput = (
   props: FeatureValueProps<string, string, FeatureChoicedServerData>

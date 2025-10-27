@@ -23,13 +23,13 @@
 		stack_trace("[name] ([type]) was instantiated on a non-mind_linker target, this doesn't work.")
 		qdel(src)
 
-/datum/action/cooldown/manse_link/InterceptClickOn(mob/living/caller, params, atom/clicked_on)
+/datum/action/cooldown/manse_link/InterceptClickOn(mob/living/clicker, params, atom/clicked_on)
 	if(!isliving(clicked_on))
 		return FALSE
-	if(clicked_on == caller)
+	if(clicked_on == clicker)
 		return FALSE
-	if(get_dist(caller, clicked_on) > range)
-		to_chat(caller, span_warning("[clicked_on] is too far to establish a link.")) // Not a balloon alert due being so zoomed out.
+	if(get_dist(clicker, clicked_on) > range)
+		to_chat(clicker, span_warning("[clicked_on] is too far to establish a link.")) // Not a balloon alert due being so zoomed out.
 		return FALSE
 
 	return ..()
