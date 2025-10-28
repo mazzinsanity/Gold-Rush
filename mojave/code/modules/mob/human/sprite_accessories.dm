@@ -1470,6 +1470,12 @@
 	icon_state = "deer"
 	icon_state_2 = "deer_2"
 
+/datum/sprite_accessory/ears/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+	icon_state_3 = "rabbit_3"
+
 //////////////////////////
 // Antennae Definitions //
 //////////////////////////
