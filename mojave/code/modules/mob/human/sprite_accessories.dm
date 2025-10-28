@@ -1258,6 +1258,148 @@
 	icon_state = "fox"
 	icon_state_2 = "fox_2"
 
+/datum/sprite_accessory/tails/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/tails_animated/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/tails/shark
+	name = "Shark"
+	icon_state = "shark"
+
+/datum/sprite_accessory/tails_animated/shark
+	name = "Shark"
+	icon_state = "shark"
+
+/datum/sprite_accessory/tails/murid
+	name = "Murid"
+	icon_state = "murid"
+
+/datum/sprite_accessory/tails/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+	icon_state_2 = "hawk"
+
+/datum/sprite_accessory/tails/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
+
+/datum/sprite_accessory/tails_animated/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
+
+/datum/sprite_accessory/tails/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+
+/datum/sprite_accessory/tails_animated/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+
+/datum/sprite_accessory/tails/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
+
+/datum/sprite_accessory/tails/cow
+	name = "Cow"
+	icon_state = "cow"
+
+/datum/sprite_accessory/tails/bee
+	name = "Bee"
+	icon_state = "bee"
+	icon_state_2 = "bee_2"
+
+/datum/sprite_accessory/tails/queenbee
+	name = "Queen Bee"
+	icon_state = "queenbee"
+	icon_state_2 = "queenbee_2"
+
+/datum/sprite_accessory/tails/insectunder
+	name = "Insect (Under)"
+	icon_state = "insectunder"
+	icon_state_2 = "insectunder_2"
+
+/datum/sprite_accessory/tails/husky
+	name = "Husky"
+	icon_state = "husky"
+	icon_state_2 = "husky_2"
+
+/datum/sprite_accessory/tails/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
+
+/datum/sprite_accessory/tails_animated/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
+
+/datum/sprite_accessory/tails/spade
+	name = "Spade"
+	icon_state = "spade"
+
+/datum/sprite_accessory/tails_animated/spade
+	name = "Spade"
+	icon_state = "spade"
+
+/datum/sprite_accessory/tails/snake
+	name = "Snake"
+	icon_state = "snake"
+
+/datum/sprite_accessory/tails/snakestriped
+	name = "Snake (Striped)"
+	icon_state = "snakestriped"
+	icon_state_2 = "snakestriped"
+
+/datum/sprite_accessory/tails/snakeunder
+	name = "Snake (Under)"
+	icon_state = "snakeunder"
+	icon_state_2 = "snakeunder"
+
+/datum/sprite_accessory/tails/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake"
+
+/datum/sprite_accessory/tails_animated/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake"
+
+/datum/sprite_accessory/tails/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
+
+/datum/sprite_accessory/tails_animated/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
+
+/datum/sprite_accessory/tails/blackjackal
+	name = "Black Jackal"
+	icon_state = "blackjackal"
+	icon_state_2 = "blackjackal_2"
+	icon_state_3 = "blackjackal_3"
+
+/datum/sprite_accessory/tails/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	icon_state_2 = "gecko_2"
+	icon_state_3 = "gecko_3"
+
 ////////////////////////
 // Spines Definitions //
 ////////////////////////
@@ -1476,6 +1618,12 @@
 	icon_state_2 = "rabbit_2"
 	icon_state_3 = "rabbit_3"
 
+/datum/sprite_accessory/ears/floppy
+	name = "Floppy"
+	icon_state = "floppy"
+	icon_state_2 = "floppy_2"
+	icon_state_3 = "floppy_3"
+
 //////////////////////////
 // Antennae Definitions //
 //////////////////////////
@@ -1601,6 +1749,28 @@
 	dimension_y = 32
 
 */
+
+/datum/sprite_accessory/wings/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+	icon_state_2 = "dragon_2"
+
+/datum/sprite_accessory/wings/top/harpy
+	name = "Harpy (Top)"
+	icon_state = "harpy_top"
+
+/datum/sprite_accessory/wings/spider
+	name = "Spider"
+	icon_state = "spider"
+
+/datum/sprite_accessory/wings/insect
+	name = "Insect"
+	icon_state = "insect"
+
+/datum/sprite_accessory/wings/top/mantis
+	name = "Mantis"
+	icon_state = "mantis"
+	icon_state_2 = "mantis_2"
 
 /datum/sprite_accessory/wings/plain
 	name = "Plain"
