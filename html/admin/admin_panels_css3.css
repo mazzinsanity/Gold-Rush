@@ -1,7 +1,7 @@
 .inputlabel {
     position: relative;
     display: inline;
-    cursor: url("drag_mousepointer.ico"), pointer;
+    cursor: pointer;
     padding-left: 20px;
 }
 

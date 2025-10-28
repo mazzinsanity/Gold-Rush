@@ -332,7 +332,7 @@
 		message = span_notice("You prepare to launch a mending globule. <B>Left-click to fire at a target!</B>")
 		add_ranged_ability(user, message, TRUE)
 
-/obj/effect/proc_holder/globules/InterceptClickOn(mob/living/caller, params, atom/target)
+/obj/effect/proc_holder/globules/InterceptClickOn(mob/living/clicker, params, atom/target)
 	. = ..()
 	if(.)
 		return

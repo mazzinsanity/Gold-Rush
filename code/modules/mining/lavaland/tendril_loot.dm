@@ -757,7 +757,7 @@
 	else
 		add_ranged_ability(user, span_notice("Your eye starts spinning fast. <B>Left-click a creature to scan it!</B>"), TRUE)
 
-/obj/effect/proc_holder/scan/InterceptClickOn(mob/living/caller, params, atom/target)
+/obj/effect/proc_holder/scan/InterceptClickOn(mob/living/clicker, params, atom/target)
 	. = ..()
 	if(.)
 		return

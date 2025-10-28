@@ -1,5 +1,5 @@
 import { sortBy } from 'common/collections';
-import { createSearch } from 'common/string';
+import { createSearch } from 'tgui-core/string';
 
 import { useBackend, useLocalState } from '../backend';
 import {

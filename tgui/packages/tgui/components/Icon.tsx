@@ -6,7 +6,7 @@
  * @license MIT
  */
 
-import { BooleanLike, classes } from 'common/react';
+import { BooleanLike, classes } from 'tgui-core/react';
 import { ReactNode } from 'react';
 
 import { BoxProps, computeBoxClassName, computeBoxProps } from './Box';

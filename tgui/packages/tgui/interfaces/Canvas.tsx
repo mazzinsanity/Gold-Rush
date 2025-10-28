@@ -1,5 +1,5 @@
 import { Color } from 'common/color';
-import { decodeHtmlEntities } from 'common/string';
+import { decodeHtmlEntities } from 'tgui-core/string';
 import { Component, createRef, RefObject } from 'react';
 
 import { useBackend } from '../backend';

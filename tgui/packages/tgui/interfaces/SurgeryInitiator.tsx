@@ -1,6 +1,6 @@
 import { sortBy } from 'common/collections';
 import { KEY_DOWN, KEY_ENTER, KEY_UP } from 'common/keycodes';
-import { BooleanLike } from 'common/react';
+import { BooleanLike } from 'tgui-core/react';
 import { Component } from 'react';
 
 import { useBackend } from '../backend';

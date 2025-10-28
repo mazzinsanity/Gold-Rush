@@ -1,5 +1,5 @@
 import { filter, map, sortBy, uniq } from 'common/collections';
-import { createSearch } from 'common/string';
+import { createSearch } from 'tgui-core/string';
 
 import { useBackend, useLocalState } from '../backend';
 import { Box, Button, Icon, Input, Section, Stack, Tabs } from '../components';
