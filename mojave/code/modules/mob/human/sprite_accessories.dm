@@ -1427,6 +1427,49 @@
 	icon_state = "fox"
 	icon_state_2 = "fox_2"
 
+/datum/sprite_accessory/ears/wolf
+	name = "Wolf"
+	icon_state = "wolf"
+	icon_state_2 = "wolf_2"
+
+/datum/sprite_accessory/ears/bigwolf
+	name = "Big Wolf"
+	icon_state = "bigwolf"
+	icon_state_2 = "bigwolf_2"
+
+/datum/sprite_accessory/ears/mouse
+	name = "Mouse"
+	icon_state = "mouse"
+	icon_state_2 = "mouse_2"
+
+/datum/sprite_accessory/ears/sergal
+	name = "Sergal"
+	icon_state = "sergal"
+	icon_state_2 = "sergal_2"
+
+/datum/sprite_accessory/ears/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/ears/elf
+	name = "Elf"
+	icon_state = "elf"
+
+/datum/sprite_accessory/ears/cobrahood
+	name = "Cobra (Hood)"
+	icon_state = "cobrahood"
+	icon_state_2 = "cobrahood_2"
+
+/datum/sprite_accessory/ears/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+
+/datum/sprite_accessory/ears/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
+
 //////////////////////////
 // Antennae Definitions //
 //////////////////////////
