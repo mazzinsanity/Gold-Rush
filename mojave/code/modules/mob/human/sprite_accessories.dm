@@ -1283,7 +1283,7 @@
 /datum/sprite_accessory/tails/hawk
 	name = "Hawk"
 	icon_state = "hawk"
-	icon_state_2 = "hawk"
+	icon_state_2 = "hawk_2"
 
 /datum/sprite_accessory/tails/australianshepherd
 	name = "Australian Shepherd"
@@ -1359,22 +1359,22 @@
 /datum/sprite_accessory/tails/snakestriped
 	name = "Snake (Striped)"
 	icon_state = "snakestriped"
-	icon_state_2 = "snakestriped"
+	icon_state_2 = "snakestriped_2"
 
 /datum/sprite_accessory/tails/snakeunder
 	name = "Snake (Under)"
 	icon_state = "snakeunder"
-	icon_state_2 = "snakeunder"
+	icon_state_2 = "snakeunder_2"
 
 /datum/sprite_accessory/tails/rattlesnake
 	name = "Rattlesnake"
 	icon_state = "rattlesnake"
-	icon_state_2 = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
 
 /datum/sprite_accessory/tails_animated/rattlesnake
 	name = "Rattlesnake"
 	icon_state = "rattlesnake"
-	icon_state_2 = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
 
 /datum/sprite_accessory/tails/peacock
 	name = "Peacock"
