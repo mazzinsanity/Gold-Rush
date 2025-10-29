@@ -757,6 +757,11 @@
 
 // please make sure they're sorted alphabetically and categorized
 
+/datum/sprite_accessory/facial_hair/shaved
+	name = "Shaved"
+	icon_state = null
+	gender = NEUTER
+
 /datum/sprite_accessory/facial_hair/abe
 	name = "Beard (Abraham Lincoln)"
 	icon_state = "facial_abe"
@@ -892,11 +897,6 @@
 /datum/sprite_accessory/facial_hair/sideburn
 	name = "Sideburns"
 	icon_state = "facial_sideburn"
-
-/datum/sprite_accessory/facial_hair/shaved
-	name = "Shaved"
-	icon_state = null
-	gender = NEUTER
 
 ///////////////////////////
 // Underwear Definitions //
@@ -1258,6 +1258,152 @@
 	icon_state = "fox"
 	icon_state_2 = "fox_2"
 
+/datum/sprite_accessory/tails/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/tails_animated/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/tails/shark
+	name = "Shark"
+	icon_state = "shark"
+
+/datum/sprite_accessory/tails_animated/shark
+	name = "Shark"
+	icon_state = "shark"
+
+/datum/sprite_accessory/tails/murid
+	name = "Murid"
+	icon_state = "murid"
+
+/datum/sprite_accessory/tails/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+	icon_state_2 = "hawk_2"
+
+/datum/sprite_accessory/tails/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
+
+/datum/sprite_accessory/tails_animated/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
+
+/datum/sprite_accessory/tails/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+
+/datum/sprite_accessory/tails_animated/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+
+/datum/sprite_accessory/tails/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
+
+/datum/sprite_accessory/tails/cow
+	name = "Cow"
+	icon_state = "cow"
+
+/datum/sprite_accessory/tails/bee
+	name = "Bee"
+	icon_state = "bee"
+	icon_state_2 = "bee_2"
+
+/datum/sprite_accessory/tails/queenbee
+	name = "Queen Bee"
+	icon_state = "queenbee"
+	icon_state_2 = "queenbee_2"
+
+/datum/sprite_accessory/tails/insectunder
+	name = "Insect (Under)"
+	icon_state = "insectunder"
+	icon_state_2 = "insectunder_2"
+
+/datum/sprite_accessory/tails/husky
+	name = "Husky"
+	icon_state = "husky"
+	icon_state_2 = "husky_2"
+
+/datum/sprite_accessory/tails/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
+
+/datum/sprite_accessory/tails_animated/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
+
+/datum/sprite_accessory/tails/spade
+	name = "Spade"
+	icon_state = "spade"
+
+/datum/sprite_accessory/tails_animated/spade
+	name = "Spade"
+	icon_state = "spade"
+
+/datum/sprite_accessory/tails/snake
+	name = "Snake"
+	icon_state = "snake"
+
+/datum/sprite_accessory/tails/snakestripe
+	name = "Snake (Striped)"
+	icon_state = "snakestripe"
+	icon_state_2 = "snakestripe_2"
+
+/datum/sprite_accessory/tails/snakeunder
+	name = "Snake (Under)"
+	icon_state = "snakeunder"
+	icon_state_2 = "snakeunder_2"
+
+/datum/sprite_accessory/tails/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
+
+/datum/sprite_accessory/tails_animated/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
+
+/datum/sprite_accessory/tails/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
+
+/datum/sprite_accessory/tails_animated/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
+
+/datum/sprite_accessory/tails/blackjackal
+	name = "Black Jackal"
+	icon_state = "blackjackal"
+	icon_state_2 = "blackjackal_2"
+	icon_state_3 = "blackjackal_3"
+
+/datum/sprite_accessory/tails/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	icon_state_2 = "gecko_2"
+	icon_state_3 = "gecko_3"
+
+/datum/sprite_accessory/tails/tuft
+	name = "Tuft"
+	icon_state = "tuft"
+
 ////////////////////////
 // Spines Definitions //
 ////////////////////////
@@ -1351,6 +1497,94 @@
 	icon_state = "fox"
 	icon_state_2 = "fox_2"
 
+/datum/sprite_accessory/snouts/cat
+	name = "Cat"
+	icon_state = "catsnout"
+	icon_state_2 = "catsnout_2"
+
+/datum/sprite_accessory/snouts/cervine
+	name = "Cervine"
+	icon_state = "cervine"
+	icon_state_2 = "cervine_2"
+	icon_state_3 = "cervine_3"
+
+/datum/sprite_accessory/snouts/husky
+	name = "Husky"
+	icon_state = "husky"
+	icon_state_2 = "husky_2"
+
+/datum/sprite_accessory/snouts/mandibles
+	name = "Mandibles"
+	icon_state = "mandibles"
+
+/datum/sprite_accessory/snouts/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+	icon_state_2 = "elephant_2"
+
+/datum/sprite_accessory/snouts/rodent
+	name = "Rodent"
+	icon_state = "rodent"
+
+/datum/sprite_accessory/snouts/lcanid
+	name = "Mammal, Long"
+	icon_state = "lcanid"
+	icon_state_2 = "lcanid_2"
+
+/datum/sprite_accessory/snouts/lcanidstriped
+	name = "Mammal, Long, Striped"
+	icon_state = "lcanidstripe"
+	icon_state_2 = "lcanidstripe_2"
+
+/datum/sprite_accessory/snouts/scanid
+	name = "Mammal, Short"
+	icon_state = "scanid"
+	icon_state_2 = "scanid_2"
+	icon_state_3 = "scanid_3"
+
+/datum/sprite_accessory/snouts/scanidalt
+	name = "Mammal, Short ALT"
+	icon_state = "scanidalt"
+	icon_state_2 = "scanidalt_2"
+	icon_state_3 = "scanidalt_3"
+
+/datum/sprite_accessory/snouts/scanidalt2
+	name = "Mammal, Short ALT 2"
+	icon_state = "scanidalt2"
+	icon_state_2 = "scanidalt2_2"
+
+/datum/sprite_accessory/snouts/scanidalt3
+	name = "Mammal, Short ALT 3"
+	icon_state = "scanidalt3"
+	icon_state_2 = "scanidalt3_2"
+	icon_state_3 = "scanidalt3_3"
+
+/datum/sprite_accessory/snouts/bird
+	name = "Bird"
+	icon_state = "bird"
+	icon_state_2 = "bird_2"
+	icon_state_3 = "bird_3"
+
+/datum/sprite_accessory/snouts/toucan
+	name = "Toucan"
+	icon_state = "toucan"
+	icon_state_2 = "toucan_2"
+
+/datum/sprite_accessory/snouts/leporid
+	name = "Leporid"
+	icon_state = "leporid"
+	icon_state_2 = "leporid_2"
+
+/datum/sprite_accessory/snouts/stubby
+	name = "Stubby"
+	icon_state = "stubby"
+	icon_state_2 = "stubby_2"
+
+/datum/sprite_accessory/snouts/tajaran
+	name = "Tajaran"
+	icon_state = "tajaran"
+	icon_state_2 = "tajaran_2"
+
 ////////////////////////
 // Frills Definitions //
 ////////////////////////
@@ -1365,14 +1599,41 @@
 /datum/sprite_accessory/frills/simple
 	name = "Simple"
 	icon_state = "simple"
+	icon_state_2 = "simple_2"
 
 /datum/sprite_accessory/frills/short
 	name = "Short"
 	icon_state = "short"
+	icon_state_2 = "short_2"
 
 /datum/sprite_accessory/frills/aquatic
 	name = "Aquatic"
 	icon_state = "aqua"
+	icon_state_2 = "aqua_2"
+
+/datum/sprite_accessory/frills/droopy
+	name = "Droopy"
+	icon_state = "droopy"
+	icon_state_2 = "droopy_2"
+
+/datum/sprite_accessory/frills/neck
+	name = "Neck"
+	icon_state = "neck"
+	icon_state_2 = "neck_2"
+
+/datum/sprite_accessory/frills/neckbig
+	name = "Neck (Alt)"
+	icon_state = "neckbig"
+	icon_state_2 = "neckbig_2"
+
+/datum/sprite_accessory/frills/frillhawk
+	name = "Frillhawk"
+	icon_state = "frillhawk"
+	icon_state_2 = "frillhawk_2"
+
+/datum/sprite_accessory/frills/split
+	name = "Split"
+	icon_state = "split"
 
 ///////////////////////
 // Horns Definitions //
@@ -1390,9 +1651,17 @@
 	name = "Simple"
 	icon_state = "simple"
 
+/datum/sprite_accessory/horns/newsimple
+	name = "Simple (Alt)"
+	icon_state = "newsimple"
+
 /datum/sprite_accessory/horns/short
 	name = "Short"
 	icon_state = "short"
+
+/datum/sprite_accessory/horns/broken
+	name = "Broken"
+	icon_state = "newbroken"
 
 /datum/sprite_accessory/horns/curled
 	name = "Curled"
@@ -1402,9 +1671,74 @@
 	name = "Ram"
 	icon_state = "ram"
 
+/datum/sprite_accessory/horns/newram
+	name = "Ram (Alt)"
+	icon_state = "newram"
+
 /datum/sprite_accessory/horns/angler
 	name = "Angeler"
 	icon_state = "angler"
+	icon_state_2 = "angler_2"
+
+/datum/sprite_accessory/horns/lightning
+	name = "Lightning"
+	icon_state = "lightning"
+
+/datum/sprite_accessory/horns/drake
+	name = "Drake"
+	icon_state = "drake"
+
+/datum/sprite_accessory/horns/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+
+/datum/sprite_accessory/horns/brimstone
+	name = "Brimstone"
+	icon_state = "brimstone"
+
+/datum/sprite_accessory/horns/crippledbull
+	name = "Crippled Bull"
+	icon_state = "crippledbull"
+
+/datum/sprite_accessory/horns/hollowpoint
+	name = "Hollow Point"
+	icon_state = "hollowpoint"
+
+/datum/sprite_accessory/horns/ticketrack
+	name = "Ticket Rack"
+	icon_state = "ticketrack"
+
+/datum/sprite_accessory/horns/hopefulhorns
+	name = "Hopeful Horns"
+	icon_state = "hopefulhorns"
+
+/datum/sprite_accessory/horns/analyticalantlers
+	name = "Analytical Antlers"
+	icon_state = "analyticalantlers"
+
+/datum/sprite_accessory/horns/lifted
+	name = "Lifted"
+	icon_state = "lifted"
+
+/datum/sprite_accessory/horns/antlers
+	name = "Antlers"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlers"
+
+/datum/sprite_accessory/horns/antlersmore
+	name = "Antlers (More)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersmore"
+
+/datum/sprite_accessory/horns/antlersshort
+	name = "Antlers (Short)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersshort"
+
+/datum/sprite_accessory/horns/antlersregal
+	name = "Antlers (Regal)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersregal"
 
 //////////////////////
 // Ears Definitions //
@@ -1426,6 +1760,61 @@
 	name = "Fox"
 	icon_state = "fox"
 	icon_state_2 = "fox_2"
+
+/datum/sprite_accessory/ears/wolf
+	name = "Wolf"
+	icon_state = "wolf"
+	icon_state_2 = "wolf_2"
+
+/datum/sprite_accessory/ears/bigwolf
+	name = "Big Wolf"
+	icon_state = "bigwolf"
+	icon_state_2 = "bigwolf_2"
+
+/datum/sprite_accessory/ears/mouse
+	name = "Mouse"
+	icon_state = "mouse"
+	icon_state_2 = "mouse_2"
+
+/datum/sprite_accessory/ears/sergal
+	name = "Sergal"
+	icon_state = "sergal"
+	icon_state_2 = "sergal_2"
+
+/datum/sprite_accessory/ears/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/ears/elf
+	name = "Elf"
+	icon_state = "elf"
+
+/datum/sprite_accessory/ears/cobrahood
+	name = "Cobra (Hood)"
+	icon_state = "cobrahood"
+	icon_state_2 = "cobrahood_2"
+
+/datum/sprite_accessory/ears/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+
+/datum/sprite_accessory/ears/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
+
+/datum/sprite_accessory/ears/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+	icon_state_3 = "rabbit_3"
+
+/datum/sprite_accessory/ears/floppy
+	name = "Floppy"
+	icon_state = "floppy"
+	icon_state_2 = "floppy_2"
+	icon_state_3 = "floppy_3"
 
 //////////////////////////
 // Antennae Definitions //
@@ -1552,6 +1941,28 @@
 	dimension_y = 32
 
 */
+
+/datum/sprite_accessory/wings/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+	icon_state_2 = "dragon_2"
+
+/datum/sprite_accessory/wings/harpy
+	name = "Harpy (Top)"
+	icon_state = "harpy_top"
+
+/datum/sprite_accessory/wings/spider
+	name = "Spider"
+	icon_state = "spider"
+
+/datum/sprite_accessory/wings/insect
+	name = "Insect"
+	icon_state = "insect"
+
+/datum/sprite_accessory/wings/mantis
+	name = "Mantis"
+	icon_state = "mantis"
+	icon_state_2 = "mantis_2"
 
 /datum/sprite_accessory/wings/plain
 	name = "Plain"
