@@ -44,6 +44,15 @@
 	var/backpack = DBACKPACK //Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
 
+	// Flavor features
+	var/flavor_text
+	var/flavor_text_nsfw
+	var/custom_species_name
+	var/custom_species_lore
+	var/ooc_notes
+	var/ooc_notes_nsfw
+	var/headshot_url
+
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null
 	var/obj/item/clothing/w_uniform = null

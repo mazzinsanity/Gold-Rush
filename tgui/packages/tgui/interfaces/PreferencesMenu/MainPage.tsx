@@ -1,7 +1,7 @@
 import { filter, map, sortBy } from 'common/collections';
+import { useState } from 'react';
 import { classes } from 'tgui-core/react';
 import { createSearch } from 'tgui-core/string';
-import { useState } from 'react';
 
 import { sendAct, useBackend } from '../../backend';
 import {
@@ -366,6 +366,59 @@ const sortPreferences = (array: [string, unknown][]) =>
 export const PreferenceList = (props: {
   act: typeof sendAct;
   preferences: Record<string, unknown>;
+}) => {
+  return (
+    <Stack.Item
+      grow
+      style={{
+        background: 'rgba(0, 0, 0, 0.5)',
+        padding: '4px',
+      }}
+      overflowX="hidden"
+      overflowY="auto"
+    >
+      <LabeledList>
+        {sortPreferences(Object.entries(props.preferences)).map(
+          ([featureId, value]) => {
+            const feature = features[featureId];
+
+            if (feature === undefined) {
+              return (
+                <Stack.Item key={featureId}>
+                  <b>Feature {featureId} is not recognized.</b>
+                </Stack.Item>
+              );
+            }
+
+            return (
+              <LabeledList.Item
+                key={featureId}
+                label={feature.name}
+                tooltip={feature.description}
+                verticalAlign="middle"
+              >
+                <Stack fill>
+                  <Stack.Item grow>
+                    <FeatureValueInput
+                      act={props.act}
+                      feature={feature}
+                      featureId={featureId}
+                      value={value}
+                    />
+                  </Stack.Item>
+                </Stack>
+              </LabeledList.Item>
+            );
+          },
+        )}
+      </LabeledList>
+    </Stack.Item>
+  );
+};
+
+export const PreferenceListRand = (props: {
+  act: typeof sendAct;
+  preferences: Record<string, unknown>;
   randomizations: Record<string, RandomSetting>;
 }) => {
   return (
@@ -377,7 +430,6 @@ export const PreferenceList = (props: {
       }}
       overflowX="hidden"
       overflowY="auto"
-      minHeight="33%"
     >
       <LabeledList>
         {sortPreferences(Object.entries(props.preferences)).map(
@@ -477,6 +529,9 @@ export const MainPage = (props: MainPageProps) => {
 
         const contextualPreferences =
           data.character_preferences.secondary_features || [];
+
+        const flavorPreferences =
+          data.character_preferences.flavor_features || [];
 
         const mainFeatures = [
           ...Object.entries(data.character_preferences.clothing),
@@ -619,9 +674,9 @@ export const MainPage = (props: MainPageProps) => {
                 </Stack>
               </Stack.Item>
 
-              <Stack.Item grow maxHeight="770px">
+              <Stack.Item grow height="780px">
                 <Stack vertical fill>
-                  <PreferenceList
+                  <PreferenceListRand
                     act={act}
                     randomizations={getRandomization(
                       contextualPreferences,
@@ -631,7 +686,7 @@ export const MainPage = (props: MainPageProps) => {
                     preferences={contextualPreferences}
                   />
 
-                  <PreferenceList
+                  <PreferenceListRand
                     act={act}
                     randomizations={getRandomization(
                       nonContextualPreferences,
@@ -640,6 +695,8 @@ export const MainPage = (props: MainPageProps) => {
                     )}
                     preferences={nonContextualPreferences}
                   />
+
+                  <PreferenceList act={act} preferences={flavorPreferences} />
                 </Stack>
               </Stack.Item>
             </Stack>

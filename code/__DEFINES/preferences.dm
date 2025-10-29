@@ -86,7 +86,6 @@
 
 #define DEFAULT_CYBORG_NAME "Default Cyborg Name"
 
-
 //Job preferences levels
 #define JP_LOW 1
 #define JP_MEDIUM 2
@@ -103,6 +102,9 @@
 // randomise_appearance_prefs() and randomize_human_appearance() proc flags
 #define RANDOMIZE_SPECIES (1<<0)
 #define RANDOMIZE_NAME (1<<1)
+
+// Maximum flavor text length
+#define MAX_FLAVOR_LEN 4096
 
 // Values for /datum/preference/savefile_identifier
 /// This preference is character specific.
@@ -134,6 +136,9 @@
 
 /// These will show in the list to the right of the character preview.
 #define PREFERENCE_CATEGORY_SECONDARY_FEATURES "secondary_features"
+
+/// These will show in the list to the bottom right of the character preview, for flavor texts, OOC notes, etc.
+#define PREFERENCE_CATEGORY_FLAVOR_FEATURES "flavor_features"
 
 /// These are preferences that are supplementary for main features,
 /// such as hair color being affixed to hair.

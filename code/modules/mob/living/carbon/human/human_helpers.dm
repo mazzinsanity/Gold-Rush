@@ -282,13 +282,15 @@
 	if(visible_age)
 		visible_age = "[visible_age] "
 	var/visible_skin
-	//i am not quite sure how to implement a check for skin tone/species visibility so uhh, get fucked i guess?
 	if(dna.species.use_skintones)
 		visible_skin = GLOB.skin_tone_names[skin_tone] ? "[GLOB.skin_tone_names[skin_tone]] " : null
+	var/visible_species
+	if(custom_species_name)
+		visible_species = "[custom_species_name] "
 	else
-		visible_skin = "[dna.species.name] "
+		visible_species = "[dna.species.name] "
 	var/visible_gender = get_gender()
-	var/final_string = "[visible_adjective][visible_age][visible_skin][visible_gender]"
+	var/final_string = "[visible_adjective][visible_age][visible_skin][visible_species][visible_gender]"
 	if(prefixed)
 		final_string = "\A [final_string]"
 	return lowercase ? lowertext(final_string) : final_string

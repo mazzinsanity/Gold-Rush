@@ -9,7 +9,7 @@
 	var/t_es = p_es()
 	var/obscured = check_obscured_slots()
 	var/obscure_name
-	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
+	var/skipface = (!isobserver(user) && (wear_mask?.flags_inv & HIDEFACE || head?.flags_inv & HIDEFACE))
 
 	if(isliving(user))
 		var/mob/living/L = user
@@ -445,6 +445,9 @@
 					"<a href='byond://?src=[REF(src)];hud=s;add_comment=1'>\[Add comment\]</a>"), "")
 	else if(isobserver(user))
 		. += span_info("<b>Traits:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]")
+
+	. += "<a href='byond://?src=[REF(src)];examine_details=1'>Examine details</a>"
+
 	. += "*---------*</span>"
 
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
