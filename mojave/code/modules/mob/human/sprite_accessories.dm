@@ -1947,7 +1947,7 @@
 	icon_state = "dragon"
 	icon_state_2 = "dragon_2"
 
-/datum/sprite_accessory/wings/top/harpy
+/datum/sprite_accessory/wings/harpy
 	name = "Harpy (Top)"
 	icon_state = "harpy_top"
 
@@ -1959,7 +1959,7 @@
 	name = "Insect"
 	icon_state = "insect"
 
-/datum/sprite_accessory/wings/top/mantis
+/datum/sprite_accessory/wings/mantis
 	name = "Mantis"
 	icon_state = "mantis"
 	icon_state_2 = "mantis_2"
