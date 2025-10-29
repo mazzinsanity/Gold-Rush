@@ -1356,10 +1356,10 @@
 	name = "Snake"
 	icon_state = "snake"
 
-/datum/sprite_accessory/tails/snakestriped
+/datum/sprite_accessory/tails/snakestripe
 	name = "Snake (Striped)"
-	icon_state = "snakestriped"
-	icon_state_2 = "snakestriped_2"
+	icon_state = "snakestripe"
+	icon_state_2 = "snakestripe_2"
 
 /datum/sprite_accessory/tails/snakeunder
 	name = "Snake (Under)"
@@ -1698,7 +1698,7 @@
 
 /datum/sprite_accessory/horns/crippledbull
 	name = "Crippled Bull"
-	icon_state = "crippledbill"
+	icon_state = "crippledbull"
 
 /datum/sprite_accessory/horns/hollowpoint
 	name = "Hollow Point"
