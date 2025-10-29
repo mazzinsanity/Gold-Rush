@@ -1,5 +1,4 @@
 import { sort, sortBy } from 'common/collections';
-import { BooleanLike, classes } from 'tgui-core/react';
 import {
   ComponentType,
   createElement,
@@ -7,6 +6,7 @@ import {
   useEffect,
   useState,
 } from 'react';
+import { BooleanLike, classes } from 'tgui-core/react';
 
 import { sendAct, useBackend } from '../../../../backend';
 import {
@@ -17,6 +17,7 @@ import {
   NumberInput,
   Slider,
   Stack,
+  TextArea,
 } from '../../../../components';
 import { createSetPreference, PreferencesMenuData } from '../../data';
 import { ServerPreferencesFetcher } from '../../ServerPreferencesFetcher';
@@ -438,6 +439,25 @@ export const FeatureShortTextInput = (
   return (
     <Input
       width="100%"
+      value={props.value}
+      maxLength={props.serverData.maximum_length}
+      onChange={(_, value) => props.handleSetValue(value)}
+    />
+  );
+};
+
+export const FeatureTextInput = (
+  props: FeatureValueProps<string, string, FeatureShortTextData>,
+) => {
+  if (!props.serverData) {
+    return <Box>Loading...</Box>;
+  }
+
+  return (
+    <TextArea
+      height="100px"
+      width="100%"
+      scrollbar
       value={props.value}
       maxLength={props.serverData.maximum_length}
       onChange={(_, value) => props.handleSetValue(value)}

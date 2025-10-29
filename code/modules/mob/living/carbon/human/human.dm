@@ -364,6 +364,11 @@
 				to_chat(usr, span_notice("Successfully added comment."))
 				return
 
+	if(href_list["examine_details"])
+		var/datum/examine_panel/examine_panel = new(src)
+		examine_panel.ui_interact(usr)
+		return
+
 	..() //end of this massive fucking chain. TODO: make the hud chain not spooky. - Yeah, great job doing that.
 
 
