@@ -50,15 +50,16 @@
 
 	var/null_value = json_savefile.get_entry("null_value")
 	var/default_value = json_savefile.get_entry("this_key_doesnt_exist", "defval")
-	TEST_ASSERT_NULL(null_value, "read an invalid value for what should be null")
+	if(null_value)
+		Fail("read an invalid value for what should be null")
 	TEST_ASSERT_EQUAL(default_value, "defval", "didn't grab the default value for a non existant key")
 
 	var/empty_list = json_savefile.get_entry("empty_list")
 	if(!istype(empty_list, /list))
-		TEST_FAIL("empty_list was not a list")
+		Fail("empty_list was not a list")
 	else
 		if(length(empty_list))
-			TEST_FAIL("empty_list was not empty")
+			Fail("empty_list was not empty")
 
 	var/empty_list_check_default = json_savefile.get_entry("empty_list", "123")
 	TEST_ASSERT_NOTEQUAL(empty_list_check_default, "123", "grabbed the default value for a key when key exists in tree")
@@ -77,7 +78,8 @@
 	TEST_ASSERT_EQUAL(runtime_check_string, runtime_read, "wrote and read the same key but got different values")
 	json_savefile.wipe()
 	runtime_read = json_savefile.get_entry("runtime_saving")
-	TEST_ASSERT_NULL(runtime_read, "wiped the tree but data remained")
+	if(runtime_read)
+		Fail("wiped the tree but data remained")
 	json_savefile.load()
 	runtime_read = json_savefile.get_entry("runtime_saving")
 	TEST_ASSERT_EQUAL(runtime_check_string, runtime_read, "saved and read the same key but got different values, auto save didn't work as expected")
