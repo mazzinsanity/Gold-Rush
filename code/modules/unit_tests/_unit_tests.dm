@@ -75,6 +75,7 @@
 #include "holidays.dm"
 #include "hydroponics_harvest.dm"
 #include "hydroponics_self_mutations.dm"
+#include "json_savefile_importing.dm"
 #include "keybinding_init.dm"
 #include "load_map_security.dm"
 #include "machine_disassembly.dm"
