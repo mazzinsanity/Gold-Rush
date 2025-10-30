@@ -1314,6 +1314,11 @@
 	name = "Cow"
 	icon_state = "cow"
 
+/datum/sprite_accessory/tails/bat
+	name = "Bat"
+	icon_state = "bat"
+	icon_state_2 = "bat_2"
+
 /datum/sprite_accessory/tails/bee
 	name = "Bee"
 	icon_state = "bee"
@@ -1343,14 +1348,6 @@
 	name = "Leopard"
 	icon_state = "leopard"
 	icon_state_2 = "leopard_2"
-
-/datum/sprite_accessory/tails/spade
-	name = "Spade"
-	icon_state = "spade"
-
-/datum/sprite_accessory/tails_animated/spade
-	name = "Spade"
-	icon_state = "spade"
 
 /datum/sprite_accessory/tails/snake
 	name = "Snake"
