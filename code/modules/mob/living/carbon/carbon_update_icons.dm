@@ -314,7 +314,7 @@
 			. += "-digitigrade[BP.use_digitigrade]"
 		if(BP.animal_origin)
 			. += "-[BP.animal_origin]"
-		if(BP.status == BODYPART_ORGANIC)
+		if(BP.biological_state & BIO_STANDARD)
 			. += "-organic"
 		else
 			. += "-robotic"

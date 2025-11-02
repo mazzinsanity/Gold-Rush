@@ -243,7 +243,7 @@
 
 /obj/item/pen/edagger/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/butchering, _speed = 6 SECONDS, _butcher_sound = 'sound/weapons/blade1.ogg')
+	AddComponent(/datum/component/butchering, speed = 6 SECONDS, butcher_sound = 'sound/weapons/blade1.ogg')
 	AddComponent(/datum/component/transforming, \
 		force_on = 18, \
 		throwforce_on = 35, \

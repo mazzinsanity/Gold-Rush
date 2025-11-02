@@ -19,7 +19,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_l_arm"
-	status = BODYPART_ROBOTIC
 	disable_threshold = 1
 
 	brute_reduction = 5
@@ -32,6 +31,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = (BIO_ROBOTIC|BIO_JOINTED)
 
 /obj/item/bodypart/r_arm/robot
 	name = "cyborg right arm"
@@ -42,7 +42,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_r_arm"
-	status = BODYPART_ROBOTIC
 	disable_threshold = 1
 
 	brute_reduction = 5
@@ -55,6 +54,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = (BIO_ROBOTIC|BIO_JOINTED)
 
 /obj/item/bodypart/l_leg/robot
 	name = "cyborg left leg"
@@ -65,7 +65,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_l_leg"
-	status = BODYPART_ROBOTIC
 	disable_threshold = 1
 
 	brute_reduction = 5
@@ -78,6 +77,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = (BIO_ROBOTIC|BIO_JOINTED)
 
 /obj/item/bodypart/r_leg/robot
 	name = "cyborg right leg"
@@ -88,7 +88,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_r_leg"
-	status = BODYPART_ROBOTIC
 	disable_threshold = 1
 
 	brute_reduction = 5
@@ -101,6 +100,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = (BIO_ROBOTIC|BIO_JOINTED)
 
 /obj/item/bodypart/chest/robot
 	name = "cyborg torso"
@@ -109,7 +109,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_chest"
-	status = BODYPART_ROBOTIC
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -121,6 +120,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = BIO_ROBOTIC
 
 	var/wired = FALSE
 	var/obj/item/stock_parts/cell/cell = null
@@ -212,7 +212,6 @@
 	icon = 'icons/mob/augmentation/augments.dmi'
 	flags_1 = CONDUCT_1
 	icon_state = "borg_head"
-	status = BODYPART_ROBOTIC
 
 	brute_reduction = 5
 	burn_reduction = 4
@@ -224,6 +223,7 @@
 	light_burn_msg = ROBOTIC_LIGHT_BURN_MSG
 	medium_burn_msg = ROBOTIC_MEDIUM_BURN_MSG
 	heavy_burn_msg = ROBOTIC_HEAVY_BURN_MSG
+	biological_state = BIO_ROBOTIC
 
 	var/obj/item/assembly/flash/handheld/flash1 = null
 	var/obj/item/assembly/flash/handheld/flash2 = null
@@ -310,6 +310,7 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 20
+	biological_state = (BIO_METAL|BIO_JOINTED)
 
 /obj/item/bodypart/r_arm/robot/surplus
 	name = "surplus prosthetic right arm"
@@ -318,6 +319,7 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 20
+	biological_state = (BIO_METAL|BIO_JOINTED)
 
 /obj/item/bodypart/l_leg/robot/surplus
 	name = "surplus prosthetic left leg"
@@ -326,6 +328,7 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 20
+	biological_state = (BIO_METAL|BIO_JOINTED)
 
 /obj/item/bodypart/r_leg/robot/surplus
 	name = "surplus prosthetic right leg"
@@ -334,6 +337,7 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 20
+	biological_state = (BIO_METAL|BIO_JOINTED)
 
 
 #undef ROBOTIC_LIGHT_BRUTE_MSG
