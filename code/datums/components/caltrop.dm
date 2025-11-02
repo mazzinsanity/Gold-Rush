@@ -89,7 +89,7 @@
 	if(!istype(O))
 		return
 
-	if(O.status == BODYPART_ROBOTIC)
+	if(O.biological_state & BIO_ROBOTIC)
 		return
 
 	if (!(flags & CALTROP_BYPASS_SHOES))

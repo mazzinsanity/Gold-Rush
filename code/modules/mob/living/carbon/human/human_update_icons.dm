@@ -592,7 +592,7 @@ generate/load female uniform sprites matching all previously decided variables
 		var/obj/item/bodypart/BP = X
 		. += "-[BP.body_zone]"
 
-		if(BP.status == BODYPART_ORGANIC)
+		if(BP.biological_state & BIO_STANDARD)
 			. += "-organic"
 		else
 			. += "-robotic"

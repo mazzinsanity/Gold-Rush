@@ -85,7 +85,7 @@
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/human_yeetus = src
 		var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-		var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/severe))
+		var/type_wound = pick(list(/datum/wound/blunt/bone/severe, /datum/wound/blunt/bone/severe))
 		limb.force_wound_upwards(type_wound)
 		playsound(src, 'mojave/sound/ms13effects/body_fall.ogg', 75, TRUE)
 	Knockdown(levels * 50)
@@ -100,7 +100,7 @@
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/human_yeetus = src
 		var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-		var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/severe))
+		var/type_wound = pick(list(/datum/wound/blunt/bone/severe, /datum/wound/blunt/bone/severe))
 		limb.force_wound_upwards(type_wound)
 	Knockdown(levels * 50)*/
 	// MOJAVE SUN EDIT END

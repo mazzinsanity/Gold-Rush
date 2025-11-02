@@ -29,7 +29,7 @@
 		var/list/arm_zones = shuffle(list(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
 		var/obj/item/bodypart/chosen_limb = attached.get_bodypart(arm_zones[1]) || attached.get_bodypart(arm_zones[2]) || attached.get_bodypart(BODY_ZONE_CHEST)
 		chosen_limb.receive_damage(3)
-		chosen_limb.force_wound_upwards(/datum/wound/pierce/moderate)
+		chosen_limb.force_wound_upwards(/datum/wound/pierce/bleed/moderate)
 		attached = null
 		icon_state = "iv_empty"
 		update_appearance()
@@ -42,7 +42,7 @@
 		var/list/arm_zones = shuffle(list(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
 		var/obj/item/bodypart/chosen_limb = attached.get_bodypart(arm_zones[1]) || attached.get_bodypart(arm_zones[2]) || attached.get_bodypart(BODY_ZONE_CHEST)
 		chosen_limb.receive_damage(3)
-		chosen_limb.force_wound_upwards(/datum/wound/pierce/moderate)
+		chosen_limb.force_wound_upwards(/datum/wound/pierce/bleed/moderate)
 		attached = null
 		icon_state = "iv_empty"
 		update_appearance()
@@ -70,7 +70,7 @@
 		var/list/arm_zones = shuffle(list(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
 		var/obj/item/bodypart/chosen_limb = attached.get_bodypart(arm_zones[1]) || attached.get_bodypart(arm_zones[2]) || attached.get_bodypart(BODY_ZONE_CHEST)
 		chosen_limb.receive_damage(3)
-		chosen_limb.force_wound_upwards(/datum/wound/pierce/moderate)
+		chosen_limb.force_wound_upwards(/datum/wound/pierce/bleed/moderate)
 		attached = null
 		icon_state = "iv_empty"
 		update_appearance()

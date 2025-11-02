@@ -75,7 +75,7 @@
 	if(istype(weapon, /obj/item/bodypart))
 
 		var/obj/item/bodypart/consumed = weapon
-		if(consumed.status != BODYPART_ORGANIC)
+		if(!(consumed.biological_state & BIO_STANDARD))
 			balloon_alert(user, "not organic!")
 			return
 

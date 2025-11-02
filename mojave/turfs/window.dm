@@ -37,7 +37,7 @@
 			if(istype(mover, /mob/living/carbon/human))
 				var/mob/living/carbon/human/human_yeetus = mover
 				var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-				var/type_wound = pick(list(/datum/wound/slash/moderate, /datum/wound/slash/severe))
+				var/type_wound = pick(list(/datum/wound/slash/flesh/moderate, /datum/wound/slash/flesh/severe))
 				limb.force_wound_upwards(type_wound)
 				human_yeetus.adjustBruteLoss(rand(10,20))
 				human_yeetus.Knockdown(10)
