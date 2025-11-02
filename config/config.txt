@@ -215,7 +215,7 @@ VOTE_PERIOD 600
 # NORESPAWN
 
 ## respawn time in deciseconds
-RESPAWN_TIME 6000
+RESPAWN_TIME 0
 
 ## set a hosted by name for unix platforms
 HOSTEDBY Mojave Sun
