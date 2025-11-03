@@ -295,6 +295,7 @@
 			)
 	category = CAT_MEDICAL
 	crafting_interface = CRAFTING_BENCH_CHEM
+	
 /datum/crafting_recipe/stimpak
     name = "stimpak"
     result = /obj/item/reagent_containers/hypospray/medipen/ms13/stimpak
@@ -302,7 +303,7 @@
     tool_paths = list()
     reqs = list(
         /obj/item/stack/sheet/ms13/glass = 1,
-        /obj/item/seeds/ms13/brocflower = 4,
+        /obj/item/food/grown/ms13/brocflower = 4,
         /obj/item/food/grown/ms13/xander = 4,
         /obj/item/stack/sheet/ms13/scrap = 1
             )
