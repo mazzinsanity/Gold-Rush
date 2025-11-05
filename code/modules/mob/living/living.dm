@@ -434,11 +434,13 @@
 			if(M.lying_angle == 90)
 				M.set_lying_angle(270)
 			animate(M, pixel_x = M.base_pixel_x - offset, pixel_y = M.base_pixel_y, 3)
+	SEND_SIGNAL(M, COMSIG_LIVING_SET_PULL_OFFSET)
 
 /mob/living/proc/reset_pull_offsets(mob/living/M, override)
 	if(!override && M.buckled)
 		return
 	animate(M, pixel_x = M.base_pixel_x, pixel_y = M.base_pixel_y, 1)
+	SEND_SIGNAL(M, COMSIG_LIVING_RESET_PULL_OFFSETS)
 
 //mob verbs are a lot faster than object verbs
 //for more info on why this is not atom/pull, see examinate() in mob.dm
@@ -2277,3 +2279,10 @@
 	if(SEND_SIGNAL(src, COMSIG_LIVING_WRITE_MEMORY, dead, gibbed) & COMPONENT_DONT_WRITE_MEMORY)
 		return FALSE
 	return TRUE
+
+/// Adds pixel_shift component on call. Default proc does nothing.
+/mob/proc/add_pixel_shift_component()
+	return
+
+/mob/living/add_pixel_shift_component()
+	AddComponent(/datum/component/pixel_shift)
