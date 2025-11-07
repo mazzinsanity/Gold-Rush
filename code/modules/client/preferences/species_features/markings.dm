@@ -12,22 +12,22 @@
             return assoc_to_keys(GLOB.head_markings_list)
         if("chest")
             return assoc_to_keys(GLOB.chest_markings_list)
-        if("left_arm")
-            return assoc_to_keys(GLOB.left_arm_markings_list)
-        if("left_hand")
-            return assoc_to_keys(GLOB.left_hand_markings_list)
-        if("right_arm")
-            return assoc_to_keys(GLOB.right_arm_markings_list)
-        if("right_hand")
-            return assoc_to_keys(GLOB.right_hand_markings_list)
-        if("left_leg")
-            return assoc_to_keys(GLOB.left_leg_markings_list)
-        if("left_foot")
-            return assoc_to_keys(GLOB.left_foot_markings_list)
-        if("right_leg")
-            return assoc_to_keys(GLOB.right_leg_markings_list)
-        if("right_foot")
-            return assoc_to_keys(GLOB.right_foot_markings_list)
+        if("l_arm")
+            return assoc_to_keys(GLOB.l_arm_markings_list)
+        if("l_hand")
+            return assoc_to_keys(GLOB.l_hand_markings_list)
+        if("r_arm")
+            return assoc_to_keys(GLOB.r_arm_markings_list)
+        if("r_hand")
+            return assoc_to_keys(GLOB.r_hand_markings_list)
+        if("l_leg")
+            return assoc_to_keys(GLOB.l_leg_markings_list)
+        if("l_foot")
+            return assoc_to_keys(GLOB.l_foot_markings_list)
+        if("r_leg")
+            return assoc_to_keys(GLOB.r_leg_markings_list)
+        if("r_foot")
+            return assoc_to_keys(GLOB.r_foot_markings_list)
 
 /datum/preference/choiced/markings/create_default_value()
 	return "None"
@@ -153,402 +153,402 @@
 	if(..(preferences))
 		return preferences.read_preference(/datum/preference/choiced/markings/chest_markings_3) != "None"
 
-/datum/preference/choiced/markings/left_arm_markings_1
-	savefile_key = "feature_left_arm_markings_1"
-	markings_type = "left_arm"
+/datum/preference/choiced/markings/l_arm_markings_1
+	savefile_key = "feature_l_arm_markings_1"
+	markings_type = "l_arm"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_arm_markings_1
-	savefile_key = "feature_left_arm_markings_1_color_list"
-	markings_type = "left_arm"
+/datum/preference/tri_color/markings/l_arm_markings_1
+	savefile_key = "feature_l_arm_markings_1_color_list"
+	markings_type = "l_arm"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_arm_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_arm_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_1) != "None"
 
-/datum/preference/choiced/markings/left_arm_markings_2
-	savefile_key = "feature_left_arm_markings_2"
-	markings_type = "left_arm"
+/datum/preference/choiced/markings/l_arm_markings_2
+	savefile_key = "feature_l_arm_markings_2"
+	markings_type = "l_arm"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/left_arm_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_arm_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_arm_markings_2
-	savefile_key = "feature_left_arm_markings_2_color_list"
-	markings_type = "left_arm"
+/datum/preference/tri_color/markings/l_arm_markings_2
+	savefile_key = "feature_l_arm_markings_2_color_list"
+	markings_type = "l_arm"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/left_arm_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_arm_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_2) != "None"
 
-/datum/preference/choiced/markings/left_arm_markings_3
-	savefile_key = "feature_left_arm_markings_3"
-	markings_type = "left_arm"
+/datum/preference/choiced/markings/l_arm_markings_3
+	savefile_key = "feature_l_arm_markings_3"
+	markings_type = "l_arm"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/left_arm_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_arm_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_arm_markings_3
-	savefile_key = "feature_left_arm_markings_3_color_list"
-	markings_type = "left_arm"
+/datum/preference/tri_color/markings/l_arm_markings_3
+	savefile_key = "feature_l_arm_markings_3_color_list"
+	markings_type = "l_arm"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/left_arm_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_arm_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_arm_markings_3) != "None"
 
-/datum/preference/choiced/markings/left_hand_markings_1
-	savefile_key = "feature_left_hand_markings_1"
-	markings_type = "left_hand"
+/datum/preference/choiced/markings/l_hand_markings_1
+	savefile_key = "feature_l_hand_markings_1"
+	markings_type = "l_hand"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_hand_markings_1
-	savefile_key = "feature_left_hand_markings_1_color_list"
-	markings_type = "left_hand"
+/datum/preference/tri_color/markings/l_hand_markings_1
+	savefile_key = "feature_l_hand_markings_1_color_list"
+	markings_type = "l_hand"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_hand_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_hand_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_1) != "None"
 
-/datum/preference/choiced/markings/left_hand_markings_2
-	savefile_key = "feature_left_hand_markings_2"
-	markings_type = "left_hand"
+/datum/preference/choiced/markings/l_hand_markings_2
+	savefile_key = "feature_l_hand_markings_2"
+	markings_type = "l_hand"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/left_hand_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_hand_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_hand_markings_2
-	savefile_key = "feature_left_hand_markings_2_color_list"
-	markings_type = "left_hand"
+/datum/preference/tri_color/markings/l_hand_markings_2
+	savefile_key = "feature_l_hand_markings_2_color_list"
+	markings_type = "l_hand"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/left_hand_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_hand_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_2) != "None"
 
-/datum/preference/choiced/markings/left_hand_markings_3
-	savefile_key = "feature_left_hand_markings_3"
-	markings_type = "left_hand"
+/datum/preference/choiced/markings/l_hand_markings_3
+	savefile_key = "feature_l_hand_markings_3"
+	markings_type = "l_hand"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/left_hand_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_hand_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_hand_markings_3
-	savefile_key = "feature_left_hand_markings_3_color_list"
-	markings_type = "left_hand"
+/datum/preference/tri_color/markings/l_hand_markings_3
+	savefile_key = "feature_l_hand_markings_3_color_list"
+	markings_type = "l_hand"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/left_hand_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_hand_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_hand_markings_3) != "None"
 
-/datum/preference/choiced/markings/right_arm_markings_1
-	savefile_key = "feature_right_arm_markings_1"
-	markings_type = "right_arm"
+/datum/preference/choiced/markings/r_arm_markings_1
+	savefile_key = "feature_r_arm_markings_1"
+	markings_type = "r_arm"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_arm_markings_1
-	savefile_key = "feature_right_arm_markings_1_color_list"
-	markings_type = "right_arm"
+/datum/preference/tri_color/markings/r_arm_markings_1
+	savefile_key = "feature_r_arm_markings_1_color_list"
+	markings_type = "r_arm"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_arm_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_arm_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_1) != "None"
 
-/datum/preference/choiced/markings/right_arm_markings_2
-	savefile_key = "feature_right_arm_markings_2"
-	markings_type = "right_arm"
+/datum/preference/choiced/markings/r_arm_markings_2
+	savefile_key = "feature_r_arm_markings_2"
+	markings_type = "r_arm"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/right_arm_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_arm_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_arm_markings_2
-	savefile_key = "feature_right_arm_markings_2_color_list"
-	markings_type = "right_arm"
+/datum/preference/tri_color/markings/r_arm_markings_2
+	savefile_key = "feature_r_arm_markings_2_color_list"
+	markings_type = "r_arm"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/right_arm_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_arm_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_2) != "None"
 
-/datum/preference/choiced/markings/right_arm_markings_3
-	savefile_key = "feature_right_arm_markings_3"
-	markings_type = "right_arm"
+/datum/preference/choiced/markings/r_arm_markings_3
+	savefile_key = "feature_r_arm_markings_3"
+	markings_type = "r_arm"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/right_arm_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_arm_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_arm_markings_3
-	savefile_key = "feature_right_arm_markings_3_color_list"
-	markings_type = "right_arm"
+/datum/preference/tri_color/markings/r_arm_markings_3
+	savefile_key = "feature_r_arm_markings_3_color_list"
+	markings_type = "r_arm"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/right_arm_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_arm_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_arm_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_arm_markings_3) != "None"
 
-/datum/preference/choiced/markings/right_hand_markings_1
-	savefile_key = "feature_right_hand_markings_1"
-	markings_type = "right_hand"
+/datum/preference/choiced/markings/r_hand_markings_1
+	savefile_key = "feature_r_hand_markings_1"
+	markings_type = "r_hand"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_hand_markings_1
-	savefile_key = "feature_right_hand_markings_1_color_list"
-	markings_type = "right_hand"
+/datum/preference/tri_color/markings/r_hand_markings_1
+	savefile_key = "feature_r_hand_markings_1_color_list"
+	markings_type = "r_hand"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_hand_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_hand_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_1) != "None"
 
-/datum/preference/choiced/markings/right_hand_markings_2
-	savefile_key = "feature_right_hand_markings_2"
-	markings_type = "right_hand"
+/datum/preference/choiced/markings/r_hand_markings_2
+	savefile_key = "feature_r_hand_markings_2"
+	markings_type = "r_hand"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/right_hand_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_hand_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_hand_markings_2
-	savefile_key = "feature_right_hand_markings_2_color_list"
-	markings_type = "right_hand"
+/datum/preference/tri_color/markings/r_hand_markings_2
+	savefile_key = "feature_r_hand_markings_2_color_list"
+	markings_type = "r_hand"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/right_hand_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_hand_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_2) != "None"
 
-/datum/preference/choiced/markings/right_hand_markings_3
-	savefile_key = "feature_right_hand_markings_3"
-	markings_type = "right_hand"
+/datum/preference/choiced/markings/r_hand_markings_3
+	savefile_key = "feature_r_hand_markings_3"
+	markings_type = "r_hand"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/right_hand_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_hand_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_hand_markings_3
-	savefile_key = "feature_right_hand_markings_3_color_list"
-	markings_type = "right_hand"
+/datum/preference/tri_color/markings/r_hand_markings_3
+	savefile_key = "feature_r_hand_markings_3_color_list"
+	markings_type = "r_hand"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/right_hand_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_hand_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_hand_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_hand_markings_3) != "None"
 
-/datum/preference/choiced/markings/left_leg_markings_1
-	savefile_key = "feature_left_leg_markings_1"
-	markings_type = "left_leg"
+/datum/preference/choiced/markings/l_leg_markings_1
+	savefile_key = "feature_l_leg_markings_1"
+	markings_type = "l_leg"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_leg_markings_1
-	savefile_key = "feature_left_leg_markings_1_color_list"
-	markings_type = "left_leg"
+/datum/preference/tri_color/markings/l_leg_markings_1
+	savefile_key = "feature_l_leg_markings_1_color_list"
+	markings_type = "l_leg"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_leg_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_leg_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_1) != "None"
 
-/datum/preference/choiced/markings/left_leg_markings_2
-	savefile_key = "feature_left_leg_markings_2"
-	markings_type = "left_leg"
+/datum/preference/choiced/markings/l_leg_markings_2
+	savefile_key = "feature_l_leg_markings_2"
+	markings_type = "l_leg"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/left_leg_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_leg_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_leg_markings_2
-	savefile_key = "feature_left_leg_markings_2_color_list"
-	markings_type = "left_leg"
+/datum/preference/tri_color/markings/l_leg_markings_2
+	savefile_key = "feature_l_leg_markings_2_color_list"
+	markings_type = "l_leg"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/left_leg_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_leg_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_2) != "None"
 
-/datum/preference/choiced/markings/left_leg_markings_3
-	savefile_key = "feature_left_leg_markings_3"
-	markings_type = "left_leg"
+/datum/preference/choiced/markings/l_leg_markings_3
+	savefile_key = "feature_l_leg_markings_3"
+	markings_type = "l_leg"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/left_leg_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_leg_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_leg_markings_3
-	savefile_key = "feature_left_leg_markings_3_color_list"
-	markings_type = "left_leg"
+/datum/preference/tri_color/markings/l_leg_markings_3
+	savefile_key = "feature_l_leg_markings_3_color_list"
+	markings_type = "l_leg"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/left_leg_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_leg_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_leg_markings_3) != "None"
 
-/datum/preference/choiced/markings/left_foot_markings_1
-	savefile_key = "feature_left_foot_markings_1"
-	markings_type = "left_foot"
+/datum/preference/choiced/markings/l_foot_markings_1
+	savefile_key = "feature_l_foot_markings_1"
+	markings_type = "l_foot"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_foot_markings_1
-	savefile_key = "feature_left_foot_markings_1_color_list"
-	markings_type = "left_foot"
+/datum/preference/tri_color/markings/l_foot_markings_1
+	savefile_key = "feature_l_foot_markings_1_color_list"
+	markings_type = "l_foot"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/left_foot_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_foot_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_1) != "None"
 
-/datum/preference/choiced/markings/left_foot_markings_2
-	savefile_key = "feature_left_foot_markings_2"
-	markings_type = "left_foot"
+/datum/preference/choiced/markings/l_foot_markings_2
+	savefile_key = "feature_l_foot_markings_2"
+	markings_type = "l_foot"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/left_foot_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_foot_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_foot_markings_2
-	savefile_key = "feature_left_foot_markings_2_color_list"
-	markings_type = "left_foot"
+/datum/preference/tri_color/markings/l_foot_markings_2
+	savefile_key = "feature_l_foot_markings_2_color_list"
+	markings_type = "l_foot"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/left_foot_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_foot_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_2) != "None"
 
-/datum/preference/choiced/markings/left_foot_markings_3
-	savefile_key = "feature_left_foot_markings_3"
-	markings_type = "left_foot"
+/datum/preference/choiced/markings/l_foot_markings_3
+	savefile_key = "feature_l_foot_markings_3"
+	markings_type = "l_foot"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/left_foot_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/l_foot_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_3) != "None"
 
-/datum/preference/tri_color/markings/left_foot_markings_3
-	savefile_key = "feature_left_foot_markings_3_color_list"
-	markings_type = "left_foot"
+/datum/preference/tri_color/markings/l_foot_markings_3
+	savefile_key = "feature_l_foot_markings_3_color_list"
+	markings_type = "l_foot"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/left_foot_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/l_foot_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/left_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/l_foot_markings_3) != "None"
 
-/datum/preference/choiced/markings/right_leg_markings_1
-	savefile_key = "feature_right_leg_markings_1"
-	markings_type = "right_leg"
+/datum/preference/choiced/markings/r_leg_markings_1
+	savefile_key = "feature_r_leg_markings_1"
+	markings_type = "r_leg"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_leg_markings_1
-	savefile_key = "feature_right_leg_markings_1_color_list"
-	markings_type = "right_leg"
+/datum/preference/tri_color/markings/r_leg_markings_1
+	savefile_key = "feature_r_leg_markings_1_color_list"
+	markings_type = "r_leg"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_leg_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_leg_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_1) != "None"
 
-/datum/preference/choiced/markings/right_leg_markings_2
-	savefile_key = "feature_right_leg_markings_2"
-	markings_type = "right_leg"
+/datum/preference/choiced/markings/r_leg_markings_2
+	savefile_key = "feature_r_leg_markings_2"
+	markings_type = "r_leg"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/right_leg_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_leg_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_leg_markings_2
-	savefile_key = "feature_right_leg_markings_2_color_list"
-	markings_type = "right_leg"
+/datum/preference/tri_color/markings/r_leg_markings_2
+	savefile_key = "feature_r_leg_markings_2_color_list"
+	markings_type = "r_leg"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/right_leg_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_leg_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_2) != "None"
 
-/datum/preference/choiced/markings/right_leg_markings_3
-	savefile_key = "feature_right_leg_markings_3"
-	markings_type = "right_leg"
+/datum/preference/choiced/markings/r_leg_markings_3
+	savefile_key = "feature_r_leg_markings_3"
+	markings_type = "r_leg"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/right_leg_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_leg_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_leg_markings_3
-	savefile_key = "feature_right_leg_markings_3_color_list"
-	markings_type = "right_leg"
+/datum/preference/tri_color/markings/r_leg_markings_3
+	savefile_key = "feature_r_leg_markings_3_color_list"
+	markings_type = "r_leg"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/right_leg_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_leg_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_leg_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_leg_markings_3) != "None"
 
-/datum/preference/choiced/markings/right_foot_markings_1
-	savefile_key = "feature_right_foot_markings_1"
-	markings_type = "right_foot"
+/datum/preference/choiced/markings/r_foot_markings_1
+	savefile_key = "feature_r_foot_markings_1"
+	markings_type = "r_foot"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_foot_markings_1
-	savefile_key = "feature_right_foot_markings_1_color_list"
-	markings_type = "right_foot"
+/datum/preference/tri_color/markings/r_foot_markings_1
+	savefile_key = "feature_r_foot_markings_1_color_list"
+	markings_type = "r_foot"
 	markings_slot = 1
 
-/datum/preference/tri_color/markings/right_foot_markings_1/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_foot_markings_1/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_1) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_1) != "None"
 
-/datum/preference/choiced/markings/right_foot_markings_2
-	savefile_key = "feature_right_foot_markings_2"
-	markings_type = "right_foot"
+/datum/preference/choiced/markings/r_foot_markings_2
+	savefile_key = "feature_r_foot_markings_2"
+	markings_type = "r_foot"
 	markings_slot = 2
 
-/datum/preference/choiced/markings/right_foot_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_foot_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_1) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_foot_markings_2
-	savefile_key = "feature_right_foot_markings_2_color_list"
-	markings_type = "right_foot"
+/datum/preference/tri_color/markings/r_foot_markings_2
+	savefile_key = "feature_r_foot_markings_2_color_list"
+	markings_type = "r_foot"
 	markings_slot = 2
 
-/datum/preference/tri_color/markings/right_foot_markings_2/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_foot_markings_2/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_2) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_2) != "None"
 
-/datum/preference/choiced/markings/right_foot_markings_3
-	savefile_key = "feature_right_foot_markings_3"
-	markings_type = "right_foot"
+/datum/preference/choiced/markings/r_foot_markings_3
+	savefile_key = "feature_r_foot_markings_3"
+	markings_type = "r_foot"
 	markings_slot = 3
 
-/datum/preference/choiced/markings/right_foot_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/choiced/markings/r_foot_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_2) != "None" || preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_3) != "None"
 
-/datum/preference/tri_color/markings/right_foot_markings_3
-	savefile_key = "feature_right_foot_markings_3_color_list"
-	markings_type = "right_foot"
+/datum/preference/tri_color/markings/r_foot_markings_3
+	savefile_key = "feature_r_foot_markings_3_color_list"
+	markings_type = "r_foot"
 	markings_slot = 3
 
-/datum/preference/tri_color/markings/right_foot_markings_3/is_accessible(datum/preferences/preferences)
+/datum/preference/tri_color/markings/r_foot_markings_3/is_accessible(datum/preferences/preferences)
 	if(..(preferences))
-		return preferences.read_preference(/datum/preference/choiced/markings/right_foot_markings_3) != "None"
+		return preferences.read_preference(/datum/preference/choiced/markings/r_foot_markings_3) != "None"

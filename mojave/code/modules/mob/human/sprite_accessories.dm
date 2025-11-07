@@ -1068,15 +1068,15 @@
 // Left Arm Markings Definitions //
 ///////////////////////////////////
 
-/datum/sprite_accessory/markings/left_arm/none
+/datum/sprite_accessory/markings/l_arm/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/left_arm/reddish
+/datum/sprite_accessory/markings/l_arm/reddish
 	name = "Reddish"
 	icon_state = "reddish"
 
-/datum/sprite_accessory/markings/left_arm/floofer
+/datum/sprite_accessory/markings/l_arm/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
@@ -1084,15 +1084,15 @@
 // Left Hand Markings Definitions //
 ////////////////////////////////////
 
-/datum/sprite_accessory/markings/left_hand/none
+/datum/sprite_accessory/markings/l_hand/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/left_hand/floofer
+/datum/sprite_accessory/markings/l_hand/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
-/datum/sprite_accessory/markings/left_hand/claws
+/datum/sprite_accessory/markings/l_hand/claws
 	name = "Claws"
 	icon_state = "claws"
 
@@ -1100,15 +1100,15 @@
 // Right Arm Markings Definitions //
 ////////////////////////////////////
 
-/datum/sprite_accessory/markings/right_arm/none
+/datum/sprite_accessory/markings/r_arm/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/right_arm/reddish
+/datum/sprite_accessory/markings/r_arm/reddish
 	name = "Reddish"
 	icon_state = "reddish"
 
-/datum/sprite_accessory/markings/right_arm/floofer
+/datum/sprite_accessory/markings/r_arm/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
@@ -1116,15 +1116,15 @@
 // Right Hand Markings Definitions //
 /////////////////////////////////////
 
-/datum/sprite_accessory/markings/right_hand/none
+/datum/sprite_accessory/markings/r_hand/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/right_hand/floofer
+/datum/sprite_accessory/markings/r_hand/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
-/datum/sprite_accessory/markings/right_hand/claws
+/datum/sprite_accessory/markings/r_hand/claws
 	name = "Claws"
 	icon_state = "claws"
 
@@ -1132,15 +1132,15 @@
 // Left Leg Markings Definitions //
 ///////////////////////////////////
 
-/datum/sprite_accessory/markings/left_leg/none
+/datum/sprite_accessory/markings/l_leg/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/left_leg/reddish
+/datum/sprite_accessory/markings/l_leg/reddish
 	name = "Reddish"
 	icon_state = "reddish"
 
-/datum/sprite_accessory/markings/left_leg/floofer
+/datum/sprite_accessory/markings/l_leg/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
@@ -1148,11 +1148,11 @@
 // Left Foot Markings Definitions //
 ////////////////////////////////////
 
-/datum/sprite_accessory/markings/left_foot/none
+/datum/sprite_accessory/markings/l_foot/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/left_foot/claws
+/datum/sprite_accessory/markings/l_foot/claws
 	name = "Claws"
 	icon_state = "claws"
 
@@ -1160,15 +1160,15 @@
 // Right Leg Markings Definitions //
 ///////////////////////////////////
 
-/datum/sprite_accessory/markings/right_leg/none
+/datum/sprite_accessory/markings/r_leg/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/right_leg/reddish
+/datum/sprite_accessory/markings/r_leg/reddish
 	name = "Reddish"
 	icon_state = "reddish"
 
-/datum/sprite_accessory/markings/right_leg/floofer
+/datum/sprite_accessory/markings/r_leg/floofer
 	name = "Floofer"
 	icon_state = "floofer"
 
@@ -1176,11 +1176,11 @@
 // Right Foot Markings Definitions //
 /////////////////////////////////////
 
-/datum/sprite_accessory/markings/right_foot/none
+/datum/sprite_accessory/markings/r_foot/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/markings/right_foot/claws
+/datum/sprite_accessory/markings/r_foot/claws
 	name = "Claws"
 	icon_state = "claws"
 
