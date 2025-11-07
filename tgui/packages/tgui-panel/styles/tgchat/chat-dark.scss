@@ -234,6 +234,7 @@ a.popt {
 .prefix,
 .ooc,
 .looc,
+.rlooc,
 .adminooc,
 .admin,
 .medal,
@@ -276,7 +277,14 @@ em {
 
 .ooc {
   color: hsl(47.9, 100%, 40%);
-  font-weight: bold;
+}
+
+.looc {
+  color: hsl(265, 98%, 67%);
+}
+
+.rlooc {
+  color: hsl(265, 50%, 50%);
 }
 
 .adminobserverooc {

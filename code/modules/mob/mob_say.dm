@@ -45,6 +45,16 @@
 
 	SSspeech_controller.queue_say_for_mob(src, message, SPEECH_CONTROLLER_QUEUE_EMOTE_VERB)
 
+/mob/verb/do_verb(message as text)
+	set name = "Do"
+	set category = "IC"
+
+	if(GLOB.say_disabled) //This is here to try to identify lag problems
+		to_chat(usr, span_danger("Speech is currently admin-disabled."))
+		return
+
+	SSspeech_controller.queue_say_for_mob(src, message, SPEECH_CONTROLLER_QUEUE_DO_VERB)
+
 ///Speak as a dead person (ghost etc)
 /mob/proc/say_dead(message)
 	var/name = real_name
@@ -172,3 +182,9 @@
 		if(!message)
 			return
 	return message
+
+/mob/proc/get_top_level_mob()
+	if(ismob(loc) && (loc != src))
+		var/mob/M = loc
+		return M.get_top_level_mob()
+	return src

@@ -111,6 +111,9 @@ LOG_WHISPER
 ## log emotes
 LOG_EMOTE
 
+## log emotes
+LOG_SUBTLE
+
 ## log attack messages
 LOG_ATTACK
 

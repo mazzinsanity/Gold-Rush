@@ -60,6 +60,39 @@
 	message += "."
 	message = message.Join("")
 	to_chat(user, message)
+
+/mob/proc/Do(message)
+	var/name_stub = " (<b>[src]</b>)"
+	if(length(message) > (MAX_MESSAGE_LEN - length(name_stub)))
+		to_chat(src, span_warning(message))
+		to_chat(src, span_warning("^^^----- The preceding message has been DISCARDED for being over the maximum length of [MAX_MESSAGE_LEN]. It has NOT been sent! -----^^^"))
+		return
+
+	switch(src.stat)
+		if(SOFT_CRIT)
+			return to_chat(src, span_warning("You cannot send a Do while in a critical condition!"))
+		if(UNCONSCIOUS, HARD_CRIT)
+			return to_chat(src, span_warning("You cannot send a Do while unconscious!"))
+		if(DEAD)
+			return to_chat(src, span_warning("You cannot send a Do while dead!"))
+	
+	message = src.say_emphasis(message)
+	message = trim(copytext_char(message, 1, (MAX_MESSAGE_LEN - length(name_stub))))
+	var/message_with_name = message + name_stub
+
+	src.log_message(message, LOG_EMOTE)
+
+	var/list/viewers = get_hearers_in_view(DEFAULT_MESSAGE_RANGE, src)
+
+	for(var/mob/ghost as anything in GLOB.dead_mob_list)
+		if((ghost.client?.prefs.chat_toggles & CHAT_GHOSTSIGHT) && !(ghost in viewers))
+			ghost.show_message(span_emote(message_with_name))
+
+	for(var/mob/receiver in viewers)
+		receiver.show_message(span_emote(message_with_name), alt_msg = span_emote(message_with_name))
+		if (receiver.client?.prefs.read_preference(/datum/preference/toggle/enable_runechat))
+			create_chat_message(src, null, message, null, EMOTE_MESSAGE)
+
 /* MOJAVE SUN EDIT - Removes Stupid non-RP Emotes
 /datum/emote/flip
 	key = "flip"

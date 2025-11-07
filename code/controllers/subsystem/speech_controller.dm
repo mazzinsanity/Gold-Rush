@@ -51,3 +51,6 @@ SUBSYSTEM_DEF(speech_controller)
 
 		if(SPEECH_CONTROLLER_QUEUE_EMOTE_VERB)
 			mob_to_speak.emote("me",1,message,TRUE)
+
+		if(SPEECH_CONTROLLER_QUEUE_DO_VERB)
+			mob_to_speak.Do(message)
