@@ -484,6 +484,8 @@
 			colored_message = "(ASAY) [colored_message]"
 		if(LOG_EMOTE)
 			colored_message = "(EMOTE) [colored_message]"
+		if(LOG_SUBTLE)
+			colored_message = "(EMOTE) (SUBTLE) [colored_message]"
 		if(LOG_RADIO_EMOTE)
 			colored_message = "(RADIOEMOTE) [colored_message]"
 

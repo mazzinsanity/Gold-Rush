@@ -115,6 +115,9 @@
 /// log emotes
 /datum/config_entry/flag/log_emote
 
+/// log emotes
+/datum/config_entry/flag/log_subtle
+
 /// log economy actions
 /datum/config_entry/flag/log_econ
 

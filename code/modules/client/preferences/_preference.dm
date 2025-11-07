@@ -545,6 +545,15 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 /datum/preference/toggle/is_valid(value)
 	return value == TRUE || value == FALSE
 
+/datum/preference/toggle/admin
+	abstract_type = /datum/preference/toggle/admin
+
+/datum/preference/toggle/admin/is_accessible(datum/preferences/preferences)
+	if (!..(preferences))
+		return FALSE
+
+	return is_admin(preferences.parent)
+
 /// A string-based preference accepting arbitrary string values entered by the user, with a maximum length.
 /datum/preference/text
 	abstract_type = /datum/preference/text

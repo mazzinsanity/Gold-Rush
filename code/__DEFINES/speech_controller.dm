@@ -5,6 +5,8 @@
 
 #define SPEECH_CONTROLLER_QUEUE_EMOTE_VERB "emote_verb"
 
+#define SPEECH_CONTROLLER_QUEUE_DO_VERB "do_verb"
+
 #define MOB_INDEX 1
 
 #define MESSAGE_INDEX 2
