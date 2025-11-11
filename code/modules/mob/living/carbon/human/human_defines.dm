@@ -53,6 +53,17 @@
 	var/ooc_notes_nsfw
 	var/headshot_url
 
+	// Fallout Special Stats
+	var/list/special_stats = list(
+		SPECIAL_STRENGTH = 5,
+		SPECIAL_PERCEPTION = 5,
+		SPECIAL_ENDURANCE = 5,
+		SPECIAL_CHARISMA = 5,
+		SPECIAL_INTELLIGENCE = 5,
+		SPECIAL_AGILITY = 5,
+		SPECIAL_LUCK = 5
+	)
+
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null
 	var/obj/item/clothing/w_uniform = null
