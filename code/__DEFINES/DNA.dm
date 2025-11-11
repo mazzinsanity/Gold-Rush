@@ -253,3 +253,12 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 #define SPECIES_POSITIVE_PERK "positive"
 #define SPECIES_NEGATIVE_PERK "negative"
 #define SPECIES_NEUTRAL_PERK "neutral"
+
+//Fallout Special Stats
+#define SPECIAL_STRENGTH "strength"
+#define SPECIAL_PERCEPTION "perception"
+#define SPECIAL_ENDURANCE "endurance"
+#define SPECIAL_CHARISMA "charisma"
+#define SPECIAL_INTELLIGENCE "intelligence"
+#define SPECIAL_AGILITY "agility"
+#define SPECIAL_LUCK "luck"

@@ -445,6 +445,8 @@
 					"<a href='byond://?src=[REF(src)];hud=s;add_comment=1'>\[Add comment\]</a>"), "")
 	else if(isobserver(user))
 		. += span_info("<b>Traits:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]")
+	
+	. += span_notice("S: [src.special_stats[SPECIAL_STRENGTH]], P: [src.special_stats[SPECIAL_PERCEPTION]], E: [src.special_stats[SPECIAL_ENDURANCE]], C: [src.special_stats[SPECIAL_CHARISMA]], I: [src.special_stats[SPECIAL_INTELLIGENCE]], A: [src.special_stats[SPECIAL_AGILITY]], L: [src.special_stats[SPECIAL_LUCK]]\n")
 
 	. += "<a href='byond://?src=[REF(src)];examine_details=1'>Examine details</a>"
 

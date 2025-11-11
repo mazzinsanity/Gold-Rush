@@ -200,3 +200,190 @@
 	key_third_person = "signs"
 	message_param = "signs the number %t."
 	hands_use_check = TRUE
+
+/datum/emote/living/carbon/human/special_check
+	cooldown = 3 SECONDS
+	var/delay = 2.5 SECONDS
+	var/list/attempt_message_list
+	var/list/success_message_list
+	var/list/failure_message_list
+
+/datum/emote/living/carbon/human/special_check/run_emote(mob/user, params, type_override, intentional = FALSE)
+	. = ..()
+	if(.)
+		sleep(delay)
+
+		var/mob/living/carbon/human/human = user
+		var/chance = 0
+
+		switch(key)
+			if("strength")
+				chance = human.special_stats[SPECIAL_STRENGTH] * 10
+			if("perception")
+				chance = human.special_stats[SPECIAL_PERCEPTION] * 10
+			if("endurance")
+				chance = human.special_stats[SPECIAL_ENDURANCE] * 10
+			if("charisma")
+				chance = human.special_stats[SPECIAL_CHARISMA] * 10
+			if("intelligence")
+				chance = human.special_stats[SPECIAL_INTELLIGENCE] * 10
+			if("agility")
+				chance = human.special_stats[SPECIAL_AGILITY] * 10
+			if("luck")
+				chance = human.special_stats[SPECIAL_LUCK] * 10
+
+		var/msg = prob(chance) ? span_green("[pick(success_message_list)] ([chance]%)") : span_red("[pick(failure_message_list)] ([chance]%)")
+		
+		msg = replace_pronoun(user, msg)
+
+		user.visible_message(msg, blind_message = span_emote("You notice how <b>[user]</b> [msg]"), visible_message_flags = EMOTE_MESSAGE, separation = " ")
+
+/datum/emote/living/carbon/human/special_check/select_message_type(mob/user, msg, intentional)
+	return pick(attempt_message_list)
+
+/datum/emote/living/carbon/human/special_check/strength
+	key = "strength"
+	key_third_person = "str"
+	attempt_message_list = list(
+		"tests their strength...",
+		"puts their back into it...",
+		"begins to flex...",
+	)
+
+	success_message_list = list(
+		"has some real guns!",
+		"is truly beefy!",
+		"shows off their muscle!",
+	)
+
+	failure_message_list = list(
+		"is a little wet noodle.",
+		"would lose in an arm wrestling match against a mouse.",
+		"should eat more protein.",
+	)
+
+/datum/emote/living/carbon/human/special_check/perception
+	key = "perception"
+	key_third_person = "per"
+	attempt_message_list = list(
+		"takes a good, long look...",
+		"focuses in...",
+		"squints...",
+	)
+
+	success_message_list = list(
+		"has eyes like a hawk!",
+		"sees what others don't!",
+		"has perfect 20/20 vision!",
+	)
+
+	failure_message_list = list(
+		"is totally oblivious.",
+		"forgot their glasses.",
+		"is blind.",
+	)
+
+/datum/emote/living/carbon/human/special_check/endurance
+	key = "endurance"
+	key_third_person = "end"
+	attempt_message_list = list(
+		"tests their toughness...",
+		"braces themselves...",
+		"prepares to endure...",
+	)
+
+	success_message_list = list(
+		"doesn't even flinch!",
+		"is solid as an oak!",
+		"is one tough nut to crack!",
+	)
+
+	failure_message_list = list(
+		"has paper skin.",
+		"would be torn to shreds by a light breeze.",
+		"has a glass jaw.",
+	)
+
+/datum/emote/living/carbon/human/special_check/charisma
+	key = "charisma"
+	key_third_person = "chr"
+	attempt_message_list = list(
+		"puts on the charm...",
+		"clears their throat...",
+		"smirks...",
+	)
+
+	success_message_list = list(
+		"proves the pen is mightier than the sword!",
+		"captures everyone's hearts!",
+		"is a master with words!",
+	)
+
+	failure_message_list = list(
+		"isn't fooling anyone.",
+		"has their charms fall flat.",
+		"is awkward.",
+	)
+
+/datum/emote/living/carbon/human/special_check/intelligence
+	key = "intelligence"
+	key_third_person = "int"
+	attempt_message_list = list(
+		"thinks hard...",
+		"furrows their brows...",
+		"rubs their chin...",
+	)
+
+	success_message_list = list(
+		"is a genius!",
+		"has a mind sharp as a whip!",
+		"knows what they're doing!",
+	)
+
+	failure_message_list = list(
+		"is as dumb as a rock.",
+		"is missing their brain.",
+		"couldn't put 2 and 2 together.",
+	)
+
+/datum/emote/living/carbon/human/special_check/agility
+	key = "agility"
+	key_third_person = "agi"
+	attempt_message_list = list(
+		"prepares their moves...",
+		"starts to get limber...",
+		"tries to get agile...",
+	)
+
+	success_message_list = list(
+		"is in perfect control!",
+		"is as agile as a cat!",
+		"is very flexible!",
+	)
+
+	failure_message_list = list(
+		"has two left feet.",
+		"trips over themselves.",
+		"is slower than a snail.",
+	)
+
+/datum/emote/living/carbon/human/special_check/luck
+	key = "luck"
+	key_third_person = "lck"
+	attempt_message_list = list(
+		"tries their luck...",
+		"takes a chance...",
+		"goes all in...",
+	)
+
+	success_message_list = list(
+		"could make a bullet turn around and climb back into the gun!",
+		"has a rabbit's paw in their pocket!",
+		"succeeds through pure luck!",
+	)
+
+	failure_message_list = list(
+		"realizes the game was rigged from the start.",
+		"gets dealt a bad hand.",
+		"has the odds stacked against them.",
+	)

@@ -341,6 +341,10 @@
 #define POCKET_STRIP_DELAY (4 SECONDS) //time taken to search somebody's pockets
 #define DOOR_CRUSH_DAMAGE 15 //the amount of damage that airlocks deal when they crush you
 
+//Fallout Special Stats
+#define SPECIAL_STAT_MIN 1
+#define SPECIAL_STAT_MAX 8
+
 #define HUNGER_FACTOR 0.05 //factor at which mob nutrition decreases
 #define ETHEREAL_CHARGE_FACTOR 0.8 //factor at which ethereal's charge decreases per second
 #define REAGENTS_METABOLISM 0.2 //How many units of reagent are consumed per second, by default.
