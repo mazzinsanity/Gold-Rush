@@ -77,8 +77,6 @@
 			uniform = /obj/item/clothing/under/plasmaman
 			head = /obj/item/clothing/head/helmet/space/plasmaman
 			belt = /obj/item/tank/internals/plasmaman/belt
-		if(new_species_type == /datum/species/lizard)
-			shoes = null //digitigrade says no
 	if(regular_uniform)
 		uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 		if(prob(4))

@@ -119,9 +119,6 @@ There are several things that need to be remembered:
 		var/target_overlay = U.icon_state
 		if(U.adjusted == ALT_STYLE)
 			target_overlay = "[target_overlay]_d"
-		else if(U.adjusted == DIGITIGRADE_STYLE)
-			target_overlay = "[target_overlay]_l"
-
 
 		var/mutable_appearance/uniform_overlay
 		/* MOJAVE SUN EDIT - Gender Prefs
@@ -138,8 +135,6 @@ There are several things that need to be remembered:
 		overlays_standing[UNIFORM_LAYER] = uniform_overlay
 
 	apply_overlay(UNIFORM_LAYER)
-	update_mutant_bodyparts()
-
 
 /mob/living/carbon/human/update_inv_wear_id()
 	remove_overlay(ID_LAYER)
@@ -291,8 +286,6 @@ There are several things that need to be remembered:
 		overlays_standing[SHOES_LAYER] = shoes_overlay
 
 	apply_overlay(SHOES_LAYER)
-	update_mutant_bodyparts()
-
 
 /mob/living/carbon/human/update_inv_s_store()
 	remove_overlay(SUIT_STORE_LAYER)
@@ -597,7 +590,7 @@ generate/load female uniform sprites matching all previously decided variables
 		else
 			. += "-robotic"
 		if(BP.use_digitigrade)
-			. += "-digitigrade[BP.use_digitigrade]"
+			. += "-digitigrade"
 		if(BP.dmg_overlay_type)
 			. += "-[BP.dmg_overlay_type]"
 		if(HAS_TRAIT(BP, TRAIT_PLASMABURNT))

@@ -221,7 +221,6 @@
 	//MOJAVE SUN EDIT END - Skin Colours
 
 /mob/living/carbon/proc/Digitigrade_Leg_Swap(swap_back)
-	var/body_plan_changed = FALSE
 	for(var/obj/item/bodypart/existing_bodypart as anything in bodyparts)
 		var/obj/item/bodypart/new_bodypart
 		if((!existing_bodypart.use_digitigrade && swap_back == FALSE) || (existing_bodypart.use_digitigrade && swap_back == TRUE))
@@ -237,19 +236,6 @@
 					new_bodypart = new /obj/item/bodypart/r_leg/digitigrade
 		if(!new_bodypart)
 			continue
-		body_plan_changed = TRUE
 		existing_bodypart.drop_limb(1)
 		qdel(existing_bodypart)
 		new_bodypart.attach_limb(src) //no sanity for if this fails here because we just dropped out a limb of the same zone, SHOULD be okay
-	if(body_plan_changed && ishuman(src))
-		var/mob/living/carbon/human/leg_owner = src
-		if(leg_owner.w_uniform)
-			var/obj/item/clothing/under/uniform = leg_owner.w_uniform
-			if(uniform.mutantrace_variation)
-				if(swap_back)
-					uniform.adjusted = NORMAL_STYLE
-				else
-					uniform.adjusted = DIGITIGRADE_STYLE
-				leg_owner.update_inv_w_uniform()
-		if(leg_owner.shoes && !(leg_owner.shoes.item_flags & IGNORE_DIGITIGRADE) && !swap_back)
-			leg_owner.dropItemToGround(leg_owner.shoes)
