@@ -1,24 +1,24 @@
-## /tg/station codebase
+## Gold Rush
 
-[![Build Status](https://github.com/tgstation/tgstation/workflows/CI%20Suite/badge.svg)](https://github.com/Mojave-Sun/mojave-sun-13/actions?query=workflow%3A%22CI+Suite%22)
-[![Percentage of issues still open](https://isitmaintained.com/badge/open/tgstation/tgstation.svg)](https://isitmaintained.com/project/Mojave-Sun/mojave-sun-13 "Percentage of issues still open")
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/tgstation/tgstation.svg)](https://isitmaintained.com/project/Mojave-Sun/mojave-sun-13 "Average time to resolve an issue")
+[![Build Status](https://github.com/tgstation/tgstation/workflows/CI%20Suite/badge.svg)](https://github.com/mazzinsanity/Gold-Rush/actions?query=workflow%3A%22CI+Suite%22)
+[![Percentage of issues still open](https://isitmaintained.com/badge/open/tgstation/tgstation.svg)](https://isitmaintained.com/project/mazzinsanity/Gold-Rush "Percentage of issues still open")
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/tgstation/tgstation.svg)](https://isitmaintained.com/project/mazzinsanity/Gold-Rush "Average time to resolve an issue")
 
 [![resentment](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://www.monkeyuser.com/assets/images/2019/131-bug-free.png) [![resentment](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://user-images.githubusercontent.com/8171642/50290880-ffef5500-043a-11e9-8270-a2e5b697c86c.png) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
 * **Website:** soon
-* **Code:** https://github.com/Mojave-Sun/mojave-sun-13
+* **Code:** https://github.com/mazzinsanity/Gold-Rush
 * **Wiki:** soon
 * **Codedocs:** https://mojave-sun.github.io/mojave-sun-13/
-* **Mojave Sun Discord:** https://discord.gg/ms13
+* **Gold Rush Discord:** https://discord.gg/Pcenx5c33z
 * **Coderbus Discord:** https://discord.gg/Vh8TJp9
 
-Mojave Sun is a post-apocalyptic SS13 server based on modern /tg/station.
+Gold Rush is a roleplay-focused SS13 server based on Mojave Sun 13.
 
 ## DOWNLOADING
 [Downloading](.github/guides/DOWNLOADING.md)
 
-[Running on the server](.github/guides/RUNNING_A_SERVER.md)
+[Running a Server](.github/guides/RUNNING_A_SERVER.md)
 
 [Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
 
@@ -37,11 +37,11 @@ On **2021-01-04** we have changed the way to compile the codebase.
 ## Contributors
 [Guides for Contributors](.github/CONTRIBUTING.md)
 
-[/tg/station HACKMD account](https://hackmd.io/@tgstation) - Design documentation here
+[/tg/station HACKMD Account](https://hackmd.io/@tgstation) - /tg/station Design Documentation Here
 
-[Documenting your code](.github/AUTODOC_GUIDE.md)
+[Documenting Your Code](.github/AUTODOC_GUIDE.md)
 
-[Policy configuration system](.github/POLICYCONFIG.md)
+[Policy Configuration System](.github/POLICYCONFIG.md)
 
 ## LICENSE
 
