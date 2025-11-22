@@ -851,7 +851,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
  * Handles the mutant bodyparts of a human
  *
  * Handles the adding and displaying of, layers, colors, and overlays of mutant bodyparts and accessories.
- * Handles digitigrade leg displaying and squishing.
+ * Handles digitigrade leg displaying.
  * Arguments:
  * * H - Human, whoever we're handling the body for
  * * forced_colour - The forced color of an accessory. Leave null to use mutant color.
@@ -919,7 +919,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			bodyparts_to_add -= "mushcap"
 
 	//Digitigrade legs are stuck in the phantom zone between true limbs and mutant bodyparts. Mainly it just needs more aggressive updating than most limbs.
-	var/update_needed = FALSE
 	var/not_digitigrade = TRUE
 	for(var/obj/item/bodypart/bodypart as anything in source.bodyparts)
 		if(!bodypart.use_digitigrade)
@@ -927,17 +926,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		not_digitigrade = FALSE
 		if(!(DIGITIGRADE in species_traits)) //Someone cut off a digitigrade leg and tacked it on
 			species_traits += DIGITIGRADE
-		var/should_be_squished = FALSE
-		if(((source.wear_suit?.flags_inv & HIDEJUMPSUIT) || (source.wear_suit?.body_parts_covered & LEGS)) || source.w_uniform?.body_parts_covered & LEGS || source.shoes?.body_parts_covered & FEET)
-			should_be_squished = TRUE
-		if(bodypart.use_digitigrade == FULL_DIGITIGRADE && should_be_squished)
-			bodypart.use_digitigrade = SQUISHED_DIGITIGRADE
-			update_needed = TRUE
-		else if(bodypart.use_digitigrade == SQUISHED_DIGITIGRADE && !should_be_squished)
-			bodypart.use_digitigrade = FULL_DIGITIGRADE
-			update_needed = TRUE
-	if(update_needed)
-		source.update_body_parts()
 	if(not_digitigrade && (DIGITIGRADE in species_traits)) //Curse is lifted
 		species_traits -= DIGITIGRADE
 

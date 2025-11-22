@@ -40,7 +40,7 @@
 	/// bitflag used to check which clothes cover this bodypart
 	var/body_part
 	/// Used for alternate legs, useless elsewhere
-	var/use_digitigrade = NOT_DIGITIGRADE
+	var/use_digitigrade = FALSE
 	var/list/embedded_objects = list()
 	/// are we a hand? if so, which one!
 	var/held_index = 0
@@ -1148,7 +1148,7 @@
 			if(should_draw_gender)
 				limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
 			else if(use_digitigrade)
-				limb.icon_state = "digitigrade_[use_digitigrade]_[body_zone]"
+				limb.icon_state = "digitigrade_[body_zone]"
 			else
 				limb.icon_state = "[species_id]_[body_zone]"
 		else

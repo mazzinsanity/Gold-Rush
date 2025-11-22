@@ -311,7 +311,7 @@
 		var/obj/item/bodypart/BP = X
 		. += "-[BP.body_zone]"
 		if(BP.use_digitigrade)
-			. += "-digitigrade[BP.use_digitigrade]"
+			. += "-digitigrade"
 		if(BP.animal_origin)
 			. += "-[BP.animal_origin]"
 		if(BP.biological_state & BIO_STANDARD)
@@ -344,13 +344,9 @@
 		var/obj/item/bodypart/BP = b
 		if(BP.current_gauze && BP.current_gauze.overlay_prefix)
 			var/bp_suffix = BP.body_zone
-			if(BP.use_digitigrade)
-				bp_suffix += "_digitigrade"
 			overlays.add_overlay("[BP.current_gauze.overlay_prefix]_[bp_suffix]")
 		if(BP.current_splint && BP.current_splint.overlay_prefix)
 			var/bp_suffix = BP.body_zone
-			if(BP.use_digitigrade)
-				bp_suffix += "_digitigrade"
 			overlays.add_overlay("[BP.current_splint.overlay_prefix]_[bp_suffix]")
 
 	apply_overlay(BANDAGE_LAYER)
