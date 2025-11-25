@@ -1565,9 +1565,22 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	return TRUE
 
-/datum/species/proc/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked, mob/living/carbon/human/H, forced = FALSE, spread_damage = FALSE, wound_bonus = 0, bare_wound_bonus = 0, sharpness = NONE, attack_direction = null)
+/datum/species/proc/apply_damage(damage, \
+						damagetype = BRUTE, \
+						def_zone = null, \
+						blocked, \
+						mob/living/carbon/human/H, \
+						forced = FALSE, \
+						spread_damage = FALSE, \
+						wound_bonus = 0, \
+						bare_wound_bonus = 0, \
+						sharpness = NONE, \
+						attack_direction = null,
+						reduced = 0, \
+						edge_protection = 0, \
+						subarmor_flags = NONE)
 	SEND_SIGNAL(H, COMSIG_MOB_APPLY_DAMAGE, damage, damagetype, def_zone, wound_bonus, bare_wound_bonus, sharpness, attack_direction)
-	var/hit_percent = (100-(blocked+armor))/100
+	var/hit_percent = (100-(blocked+reduced))/100
 	hit_percent = (hit_percent * (100-H.physiology.damage_resistance))/100
 	if(!damage || (!forced && hit_percent <= 0))
 		return 0
@@ -1586,19 +1599,35 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	switch(damagetype)
 		if(BRUTE)
 			H.damageoverlaytemp = 20
-			var/damage_amount = forced ? damage : damage * hit_percent * brutemod * H.physiology.brute_mod
 			if(BP)
-				if(BP.receive_damage(damage_amount, 0, wound_bonus = wound_bonus, bare_wound_bonus = bare_wound_bonus, sharpness = sharpness, attack_direction = attack_direction))
+				if(BP.receive_damage(brute = (damage * brutemod * H.physiology.brute_mod), \
+									wound_bonus = wound_bonus, \
+									bare_wound_bonus = bare_wound_bonus, \
+									sharpness = sharpness, \
+									attack_direction = attack_direction, \
+									blocked = blocked, \
+									reduced = reduced, \
+									edge_protection = edge_protection, \
+									subarmor_flags = subarmor_flags))
 					H.update_damage_overlays()
 			else//no bodypart, we deal damage with a more general method.
+				var/damage_amount = forced ? damage : damage * hit_percent * brutemod * H.physiology.brute_mod
 				H.adjustBruteLoss(damage_amount)
 		if(BURN)
 			H.damageoverlaytemp = 20
-			var/damage_amount = forced ? damage : damage * hit_percent * burnmod * H.physiology.burn_mod
 			if(BP)
-				if(BP.receive_damage(0, damage_amount, wound_bonus = wound_bonus, bare_wound_bonus = bare_wound_bonus, sharpness = sharpness, attack_direction = attack_direction))
+				if(BP.receive_damage(burn = (damage * burnmod * H.physiology.burn_mod), \
+									wound_bonus = wound_bonus, \
+									bare_wound_bonus = bare_wound_bonus, \
+									sharpness = sharpness, \
+									attack_direction = attack_direction, \
+									blocked = blocked, \
+									reduced = reduced, \
+									edge_protection = edge_protection, \
+									subarmor_flags = subarmor_flags))
 					H.update_damage_overlays()
 			else
+				var/damage_amount = forced ? damage : damage * hit_percent * burnmod * H.physiology.burn_mod
 				H.adjustFireLoss(damage_amount)
 		if(TOX)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.tox_mod
@@ -1612,7 +1641,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(STAMINA)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.stamina_mod
 			if(BP)
-				if(BP.receive_damage(0, 0, damage_amount))
+				if(BP.receive_damage(stamina = damage_amount))
 					H.update_stamina()
 			else
 				H.adjustStaminaLoss(damage_amount)
