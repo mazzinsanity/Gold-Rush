@@ -209,10 +209,6 @@
 /obj/structure/ms13/pipes/horizontal/down/single,
 /turf/open/floor/ms13/concrete,
 /area/ms13/underground/mountain_bunker)
-"bB" = (
-/mob/living/basic/ms13/hostile_animal/radroach/glowie,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "bG" = (
 /mob/living/basic/ms13/ghoul/brown,
 /turf/open/floor/plating/ms13/ground/mountain/drought,
@@ -392,12 +388,6 @@
 	},
 /turf/open/floor/ms13/metal/plate,
 /area/ms13/underground/mountain_bunker)
-"di" = (
-/obj/structure/ms13/cave_decor/support/beams,
-/obj/structure/ms13/trash/papers/three,
-/obj/effect/spawner/random/ms13/tools/lights,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "dl" = (
 /obj/structure/ms13/rug/mat/welcome,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -609,10 +599,6 @@
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/town)
-"eE" = (
-/obj/structure/ladder/ms13,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "eF" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
@@ -824,14 +810,6 @@
 "fP" = (
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
-"fQ" = (
-/obj/structure/ms13/trash/papers/one,
-/obj/structure/ms13/trash/cardboard{
-	dir = 6
-	},
-/obj/effect/spawner/random/ms13/tools/hardware,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "fV" = (
 /obj/structure/ms13/trash/papers/three,
 /obj/structure/ms13/trash/glass/basic,
@@ -1035,13 +1013,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/ms13/ground/mountain/drought,
 /area/ms13/underground/mountain)
-"hi" = (
-/obj/structure/ms13/barrel/quadruple/yellow/one,
-/obj/structure/ms13/trash/glass/cans{
-	pixel_y = 10
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "hl" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/crafting/household,
@@ -1237,10 +1208,6 @@
 	},
 /turf/open/floor/plating/ms13/ground/mountain/drought,
 /area/ms13/underground/mountain)
-"iB" = (
-/obj/structure/ms13/trash/food/dinner,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "iC" = (
 /mob/living/basic/ms13/hostile_animal/molerat,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -1283,13 +1250,6 @@
 /obj/effect/spawner/random/ms13/clothing/under,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/town)
-"iN" = (
-/obj/structure/ms13/cave_decor/support/wall,
-/obj/structure/ms13/lamp/mining_lamp{
-	pixel_y = 30
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "iO" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/old,
@@ -1650,10 +1610,6 @@
 /obj/effect/spawner/random/ms13/guaranteed/medical/highrandom,
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/town)
-"lp" = (
-/obj/effect/turf_decal/ms13/graffiti/ghouls,
-/turf/closed/wall/ms13/adobe,
-/area/ms13/underground/mountain)
 "lr" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete/bricks,
@@ -2256,14 +2212,6 @@
 /obj/structure/ms13/barrel/double/red/one,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/town)
-"pH" = (
-/obj/structure/ms13/cave_decor/support/wall,
-/obj/structure/ms13/trash/glass/basic,
-/obj/structure/ms13/lamp/mining_lamp{
-	pixel_y = 30
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "pI" = (
 /obj/structure/ms13/pipes/vertical/west/random,
 /turf/open/floor/ms13/metal,
@@ -2425,14 +2373,6 @@
 /obj/effect/spawner/random/ms13/power_armor/lowrandom,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
-"qQ" = (
-/obj/structure/ms13/cave_decor/support/wall,
-/obj/structure/ms13/trash/papers/two{
-	dir = 1
-	},
-/obj/structure/ms13/trash/food/glass,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "qS" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/metal/grate/border/warning{
@@ -3119,11 +3059,6 @@
 	},
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
-"vL" = (
-/obj/structure/ms13/cave_decor/support/beams,
-/obj/effect/spawner/random/ms13/tools/hardware,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "vM" = (
 /obj/machinery/door/unpowered/ms13/seethrough/grate{
 	dir = 4
@@ -3849,13 +3784,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/mountain/drought,
-/area/ms13/underground/mountain)
-"Bc" = (
-/obj/structure/ms13/trash/papers/two{
-	dir = 8
-	},
-/obj/structure/ladder/ms13,
-/turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/underground/mountain)
 "Bi" = (
 /obj/structure/ms13/rug/red{
@@ -5582,14 +5510,6 @@
 "Nn" = (
 /turf/open/floor/ms13/tile,
 /area/ms13/underground/mountain_bunker)
-"No" = (
-/obj/structure/ms13/cave_decor/support/wall,
-/obj/structure/table/ms13/no_smooth/cable_reel,
-/obj/structure/ms13/lamp/makeshift{
-	pixel_y = 7
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/underground/mountain)
 "Nq" = (
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
@@ -13272,8 +13192,8 @@ uD
 uD
 uD
 uD
-uD
-uD
+uz
+uz
 uD
 uD
 uD
@@ -13473,9 +13393,9 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
+uz
+uz
+uz
 uD
 uD
 uD
@@ -13674,10 +13594,10 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -13875,11 +13795,11 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14064,6 +13984,7 @@ uD
 uD
 uD
 uD
+uz
 uD
 uD
 uD
@@ -14075,13 +13996,12 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14266,6 +14186,10 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14274,14 +14198,10 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14469,20 +14389,20 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
 uD
 uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14671,19 +14591,19 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uz
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -14873,16 +14793,16 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
 uD
 uD
 uD
@@ -15078,13 +14998,13 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uz
+uz
 uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
 uD
 uD
 uD
@@ -15280,13 +15200,13 @@ uD
 uD
 uD
 uD
-uD
-uD
-ma
-ma
-ma
-ma
-uD
+uz
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -15473,22 +15393,22 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uz
+uz
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-ma
-ma
-iN
-Bc
-ma
-uD
+uz
+uz
+uz
+uz
+uz
+uz
+Dr
+uz
+uz
 uD
 uD
 uD
@@ -15675,22 +15595,22 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-ma
-qQ
-nZ
-wR
-ma
-uD
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -15877,22 +15797,22 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
+uD
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-ma
-ma
-vL
-nZ
-ma
-ma
-uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -16087,18 +16007,18 @@ uD
 uD
 uD
 uD
-ma
-lp
-hi
-nZ
-iB
-ma
 uD
 uD
 uD
 uD
 uD
 uD
+uD
+uz
+uz
+uD
+uD
+uz
 uD
 uD
 uD
@@ -16288,19 +16208,19 @@ uD
 uD
 uD
 uD
-ma
-ma
-pH
-bB
-nZ
-fQ
-ma
 uD
 uD
 uD
 uD
 uD
 uD
+uD
+uD
+uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -16490,19 +16410,19 @@ uD
 uD
 uD
 uD
-ma
-di
-nZ
-nZ
-wR
-ma
-ma
 uD
 uD
 uD
 uD
 uD
 uD
+uD
+uD
+uD
+uD
+uz
+uz
+uz
 uD
 uD
 uD
@@ -16692,19 +16612,19 @@ uD
 uD
 uD
 uD
-ma
-No
-eE
-nZ
-ma
-ma
+uD
+uz
+Dr
 uD
 uD
 uD
 uD
 uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -16894,19 +16814,19 @@ uD
 uD
 uD
 uD
-ma
-ma
-ma
-ma
-ma
+uz
+uz
+uz
 uD
 uD
 uD
 uD
 uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -17096,19 +17016,19 @@ uD
 uD
 uD
 uD
+uz
+uz
 uD
 uD
 uD
 uD
+uz
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -17297,20 +17217,20 @@ uD
 uD
 uD
 uD
+uz
+uz
+uz
 uD
 uD
 uD
 uD
+uz
+uz
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -17499,20 +17419,20 @@ uD
 uD
 uD
 uD
+uz
+uz
 uD
 uD
 uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
-uD
+uz
+uz
+uz
+uz
+uz
+uz
 uD
 uD
 uD
@@ -17701,6 +17621,8 @@ uD
 uD
 uD
 uD
+uz
+uz
 uD
 uD
 uD
@@ -17709,10 +17631,8 @@ uD
 uD
 uD
 uD
-uD
-uD
-uD
-uD
+uz
+uz
 uD
 uD
 uD
@@ -17903,8 +17823,8 @@ uD
 uD
 uD
 uD
-uD
-uD
+uz
+uz
 uD
 uD
 uD
