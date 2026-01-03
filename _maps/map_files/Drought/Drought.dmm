@@ -5971,14 +5971,6 @@
 	},
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/ncr/building)
-"fAU" = (
-/obj/machinery/light/ms13{
-	dir = 4
-	},
-/turf/open/floor/ms13/metal{
-	dir = 8
-	},
-/area/ms13/bos/building)
 "fBd" = (
 /obj/structure/table/ms13/metal/grate,
 /turf/open/floor/ms13/tile/full/navy,
@@ -6018,6 +6010,14 @@
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/ncr/building)
+"fDX" = (
+/obj/machinery/light/ms13{
+	dir = 4
+	},
+/turf/open/floor/ms13/metal{
+	dir = 8
+	},
+/area/ms13/bos/building)
 "fEj" = (
 /obj/structure/ms13/storage/large/medical{
 	dir = 8
@@ -16034,6 +16034,7 @@
 	name = "checkpoint button";
 	dir = 4
 	},
+/obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "phm" = (
@@ -63804,7 +63805,7 @@ rEm
 pRq
 twK
 twK
-fAU
+fDX
 fsK
 fsK
 tPl
@@ -66626,7 +66627,7 @@ rNB
 luy
 obo
 luy
-jEd
+obo
 luy
 jEd
 luy
