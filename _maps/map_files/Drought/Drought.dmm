@@ -285,7 +285,7 @@
 /area/ms13/desert)
 "alU" = (
 /obj/structure/stairs/north,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/sidewalk,
 /area/ms13/bos)
 "alX" = (
 /obj/effect/decal/cleanable/blood/footprints{
@@ -10511,10 +10511,6 @@
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete,
 /area/ms13/water_baron/interior)
-"jYJ" = (
-/obj/structure/stairs/north,
-/turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/bos)
 "jZD" = (
 /obj/structure/chair/ms13/metal/broken,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -65200,8 +65196,8 @@ blm
 blm
 blm
 rEm
-jYJ
-jYJ
+alU
+alU
 hRG
 hRG
 hRG
