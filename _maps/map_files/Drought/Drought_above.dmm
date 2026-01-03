@@ -7281,7 +7281,7 @@
 "xJ" = (
 /obj/structure/ms13/pa_jack,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/t45/random,
+/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/random,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "xK" = (
