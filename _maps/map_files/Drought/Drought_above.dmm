@@ -3237,8 +3237,10 @@
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/town)
 "kK" = (
-/obj/machinery/light/ms13/bulb/industrial,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/machinery/light/ms13{
+	dir = 1
+	},
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "kM" = (
@@ -9373,10 +9375,8 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
 "EA" = (
-/obj/machinery/light/ms13/bulb/industrial{
-	dir = 1
-	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/machinery/light/ms13,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "EB" = (

@@ -5971,6 +5971,14 @@
 	},
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/ncr/building)
+"fAU" = (
+/obj/machinery/light/ms13{
+	dir = 4
+	},
+/turf/open/floor/ms13/metal{
+	dir = 8
+	},
+/area/ms13/bos/building)
 "fBd" = (
 /obj/structure/table/ms13/metal/grate,
 /turf/open/floor/ms13/tile/full/navy,
@@ -9960,6 +9968,9 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/factory)
 "jwi" = (
+/obj/machinery/light/ms13/bulb{
+	dir = 8
+	},
 /turf/open/floor/ms13/tile/brown,
 /area/ms13/goldman/building)
 "jwt" = (
@@ -10511,6 +10522,10 @@
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete,
 /area/ms13/water_baron/interior)
+"jYJ" = (
+/obj/machinery/light/ms13,
+/turf/open/floor/ms13/tile/full/green,
+/area/ms13/bos/building)
 "jZD" = (
 /obj/structure/chair/ms13/metal/broken,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -18705,6 +18720,7 @@
 /obj/item/restraints/handcuffs/ms13,
 /obj/item/restraints/handcuffs/ms13,
 /obj/item/restraints/handcuffs/ms13,
+/obj/machinery/light/ms13,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "rCv" = (
@@ -21394,6 +21410,9 @@
 /area/ms13/town)
 "ums" = (
 /obj/structure/bed/ms13/bedframe/cot,
+/obj/machinery/light/ms13/bulb/industrial{
+	dir = 4
+	},
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
@@ -24256,11 +24275,12 @@
 /area/ms13/town)
 "xkn" = (
 /obj/structure/filingcabinet/ms13/short,
-/obj/machinery/light/ms13/bulb/industrial,
+/obj/machinery/light/ms13/bulb/industrial{
+	dir = 4
+	},
 /obj/machinery/button/ms13{
 	id = "bos_gate";
-	name = "gate button";
-	dir = 8
+	name = "gate button"
 	},
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
@@ -63784,7 +63804,7 @@ rEm
 pRq
 twK
 twK
-fsK
+fAU
 fsK
 fsK
 tPl
@@ -68637,7 +68657,7 @@ fCL
 fCL
 mGa
 fCL
-xLW
+fCL
 fCL
 rEm
 blm
@@ -69242,7 +69262,7 @@ fCL
 fCL
 fCL
 fCL
-fCL
+jYJ
 rEm
 blm
 blm
