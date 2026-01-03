@@ -222,9 +222,17 @@
 	icon_state = "NCR_building"
 	dissipation_rate = 0.18 //not much escapes enclosed rooms
 
-/area/ms13/underground/bos
-	name = "BoS"
-	icon_state = "brotherhood"
+/area/ms13/bos
+	name = "BoS Base"
+	icon_state = "bos_base"
+	requires_power = FALSE
+	atmosphere_sound = MILLITARY_ATMOSPHERE
+	atmosphere_volume = 150
+
+/area/ms13/bos/building
+	name = "BoS building"
+	icon_state = "bos_building"
+	dissipation_rate = 0.18 //not much escapes enclosed rooms
 
 /area/ms13/raiders
 	name = "Raider stronghold"
