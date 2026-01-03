@@ -20,9 +20,11 @@
 
 //// Drought Barony Area Access ////
 
-// Head Paladin's personal quarters
+// Baron's personal quarters
 #define ACCESS_BARON_QUARTERS 8
 // Enforcer restricted points
 #define ACCESS_BARONY_RESTRICTED 9
 // Doctor's storage/general
 #define ACCESS_BARONY_DOCTOR 10
+// Shopkeeper's private areas
+#define ACCESS_BARONY_SHOPKEEP 11
