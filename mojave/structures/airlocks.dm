@@ -81,3 +81,6 @@
 
 /obj/machinery/door/airlock/ms13/barony/doctor
 	req_access = list(ACCESS_BARONY_DOCTOR)
+
+/obj/machinery/door/airlock/ms13/barony/shop
+	req_access = list(ACCESS_BARONY_SHOPKEEP)
