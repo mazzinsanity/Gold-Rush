@@ -14,7 +14,7 @@ The simple animal this is attached to should also be able to destroy obstacles s
 	///The "node" the animal wants to walk towards
 	var/list/animal_target_node = list()
 	///A list of nodes to walk through to make it to the first node in the list
-	var/list/list/animal_nodes_to_walk = list()
+	var/list/animal_nodes_to_walk = list()
 	///The identifier associated with the weights
 	var/list/animal_identifier = list()
 	///The move delay for patrolling with
@@ -56,10 +56,17 @@ The simple animal this is attached to should also be able to destroy obstacles s
 	patrol_move_delay -= animal
 
 /datum/element/generic_patrol_animal/proc/set_goal_node(datum/source, obj/effect/ai_node/new_node_target)
+
 	if(!new_node_target)
 		return
+
 	animal_nodes_to_walk[source] = get_path(starting_atom = animal_current_node[source], goal_atom = new_node_target, pathing_type = NODE_PATHING)
-	animal_target_node[source] = animal_nodes_to_walk[source[length(animal_nodes_to_walk[source])]]
+
+	if(isnull(animal_nodes_to_walk[source]))
+		return
+
+	var/source_length = length(animal_nodes_to_walk[source])
+	animal_target_node[source] = animal_nodes_to_walk[source[source_length]]
 	var/mob/living/simple_animal/animal = attached_animals[source]
 	animal.Goto(target = animal_target_node[source], delay = patrol_move_delay[source], minimum_distance = 0)
 

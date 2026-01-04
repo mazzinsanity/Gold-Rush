@@ -118,6 +118,13 @@
 
 // FLAG DEFINES
 
+/datum/job_department/bos
+	department_name = DEPARTMENT_BOS
+	department_bitflags = DEPARTMENT_BITFLAG_BOS
+	department_head = /datum/job/ms13/bos/head_paladin
+	department_experience_type = EXP_TYPE_BOS
+	department_full_name = "The Brotherhood Of Steel"	
+
 /datum/asset/simple/ms13/faction_flags
 	assets = list(
 		"NCR_flag.png" = 'mojave/icons/faction_flags/flag_ncr.png',
