@@ -59,7 +59,6 @@
 /.github/workflows/ @Mothblocks
 /code/game/gamemodes/ @Mothblocks
 /code/modules/autowiki/ @Mothblocks
-/code/modules/unit_tests/ @Mothblocks
 /code/modules/client/preferences/ @Mothblocks
 /code/modules/client/preferences_menu.dm @Mothblocks
 /tgui/packages/tgui/interfaces/PreferencesMenu/ @Mothblocks
