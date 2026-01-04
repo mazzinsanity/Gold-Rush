@@ -151,7 +151,7 @@
 	if(!bunch_turf)
 		return
 	if(!owner.CanReach(bunch_turf) || !isopenturf(bunch_turf))
-		owner.balloon_alert("can't do that here!")
+		owner.balloon_alert(owner, "can't do that here!")
 		return
 	activating = TRUE
 	if(!do_after(owner, 1 SECONDS))
