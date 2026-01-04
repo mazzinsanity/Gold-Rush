@@ -18,7 +18,7 @@ GLOBAL_LIST_EMPTY(heretic_sacrifice_landmarks)
 	/// What path this landmark is intended for.
 	var/for_heretic_path = PATH_START
 
-/obj/effect/landmark/heretic/Initialize()
+/obj/effect/landmark/heretic/Initialize(mapload)
 	. = ..()
 	GLOB.heretic_sacrifice_landmarks[for_heretic_path] = src
 
