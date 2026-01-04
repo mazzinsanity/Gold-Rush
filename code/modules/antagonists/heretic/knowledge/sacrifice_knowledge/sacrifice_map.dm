@@ -60,7 +60,7 @@ GLOBAL_LIST_EMPTY(heretic_sacrifice_landmarks)
 	/// Light power of the signpost.
 	var/power = 0.8
 
-/obj/structure/no_effect_signpost/void/Initialize()
+/obj/structure/no_effect_signpost/void/Initialize(mapload)
 	. = ..()
 	set_light(range, power)
 

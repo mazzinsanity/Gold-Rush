@@ -138,5 +138,5 @@
 	ai.forceMove(card)
 	card.AI = ai
 	ai.notify_ghost_cloning("You have been recovered from the wreckage!", source = card)
-	balloon_alert(user, "AI transferred to card")
+	balloon_alert(user, "ai transferred to card")
 	stored_ai = null
