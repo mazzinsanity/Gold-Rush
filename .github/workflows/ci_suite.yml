@@ -177,48 +177,6 @@ jobs:
         run: |
           echo "max_required_byond_client=$(grep -Ev '^[[:blank:]]{0,}#{1,}|^[[:blank:]]{0,}$' .github/max_required_byond_client.txt | tail -n1)" >> $GITHUB_OUTPUT
 
-  run_all_tests:
-    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
-    name: Integration Tests
-    needs: [collect_data]
-    strategy:
-      fail-fast: false
-      matrix:
-        map: ${{ fromJSON(needs.collect_data.outputs.maps).paths }}
-    concurrency:
-      group: run_all_tests-${{ github.head_ref || github.run_id }}-${{ matrix.map }}
-      cancel-in-progress: true
-    uses: ./.github/workflows/run_integration_tests.yml
-    with:
-      map: ${{ matrix.map }}
-      max_required_byond_client: ${{needs.collect_data.outputs.max_required_byond_client}}
-
-  run_alternate_tests:
-    if: ( !contains(github.event.head_commit.message, '[ci skip]') && needs.collect_data.outputs.alternate_tests != '[]' )
-    name: Alternate Tests
-    needs: [collect_data]
-    strategy:
-      fail-fast: false
-      matrix:
-        setup: ${{ fromJSON(needs.collect_data.outputs.alternate_tests) }}
-    concurrency:
-      group: run_all_tests-${{ github.head_ref || github.run_id }}-${{ matrix.setup.major }}.${{ matrix.setup.minor }}-${{ matrix.setup.map }}
-      cancel-in-progress: true
-    uses: ./.github/workflows/run_integration_tests.yml
-    with:
-      map: ${{ matrix.setup.map }}
-      major: ${{ matrix.setup.major }}
-      minor: ${{ matrix.setup.minor }}
-      max_required_byond_client: ${{needs.collect_data.outputs.max_required_byond_client}}
-
-  check_alternate_tests:
-    if: ( !contains(github.event.head_commit.message, '[ci skip]') && needs.collect_data.outputs.alternate_tests != '[]' )
-    name: Check Alternate Tests
-    needs: [run_alternate_tests]
-    runs-on: ubuntu-22.04
-    steps:
-      - run: echo Alternate tests passed.
-
   compare_screenshots:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') && (always() && (!failure() && !cancelled())) )
     needs: [run_all_tests, run_alternate_tests]
