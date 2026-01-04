@@ -1,19 +1,12 @@
 //#define LOWMEMORYMODE //uncomment this to load centcom and runtime station and thats it.
 
-#include "map_files\generic\MojaveCom.dmm" // MOJAVE SUN EDIT // ORIGINAL PATH "map_files\generic\CentCom.dmm"
+#include "_maps\map_files\Drought\Drought.dmm" // MOJAVE SUN EDIT // ORIGINAL PATH "map_files\generic\CentCom.dmm"
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
-		#include "map_files\Mining\Lavaland.dmm"
-		#include "map_files\debug\runtimestation.dmm"
-		#include "map_files\debug\multiz.dmm"
-		#include "map_files\Deltastation\DeltaStation2.dmm"
-		#include "map_files\sunlightDebug\sunlightDebug.dmm" //MOJAVE MODULE OUTDOOR_EFFECTS
-		#include "map_files\KiloStation\KiloStation.dmm"
-		#include "map_files\MetaStation\MetaStation.dmm"
-		#include "map_files\IceBoxStation\IceBoxStation.dmm"
-		#include "map_files\tramstation\tramstation.dmm"
-
+		#include "_maps\map_files\debug\runtimestation.dmm"
+		#include "_maps\map_files\debug\multiz.dmm"
+		#include "_maps\map_files\sunlightDebug\sunlightDebug.dmm" //MOJAVE MODULE OUTDOOR_EFFECTS
 		#ifdef CIBUILDING
 			#include "templates.dm"
 		#endif
