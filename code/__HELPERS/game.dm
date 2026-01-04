@@ -123,10 +123,21 @@
 		remove_from.images -= image_to_remove
 
 ///Add an image to a list of clients and calls a proc to remove it after a duration
-/proc/flick_overlay(image/image_to_show, list/show_to, duration)
+/atom/proc/flick_overlay(image/image_to_show, list/show_to, duration)
+	var/image/passed_image = \
+		istext(image_to_show) \
+			? image(icon, src, image_to_show, layer) \
+			: image_to_show
+
+	flick_overlay_global(passed_image, show_to, duration)
+
+/// Add an image to a list of clients and calls a proc to remove it after a duration
+/proc/flick_overlay_global(image/image_to_show, list/show_to, duration)
+	if(!show_to || !length(show_to) || !image_to_show)
+		return
 	for(var/client/add_to in show_to)
 		add_to.images += image_to_show
-	addtimer(CALLBACK(GLOBAL_PROC, PROC_REF(remove_images_from_clients), image_to_show, show_to), duration, TIMER_CLIENT_TIME)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(remove_image_from_clients), image_to_show, show_to), duration, TIMER_CLIENT_TIME)
 
 ///wrapper for flick_overlay(), flicks to everyone who can see the target atom
 /proc/flick_overlay_view(image/image_to_show, atom/target, duration)
@@ -134,7 +145,12 @@
 	for(var/mob/viewer as anything in viewers(target))
 		if(viewer.client)
 			viewing += viewer.client
-	flick_overlay(image_to_show, viewing, duration)
+	flick_overlay_global(image_to_show, viewing, duration)
+
+/// Like remove_image_from_client, but will remove the image from a list of clients
+/proc/remove_image_from_clients(image/image_to_remove, list/hide_from)
+	for(var/client/remove_from in hide_from)
+		remove_from.images -= image_to_remove
 
 ///Get active players who are playing in the round
 /proc/get_active_player_count(alive_check = 0, afk_check = 0, human_check = 0)
