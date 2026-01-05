@@ -1,7 +1,6 @@
 
 /obj/item/bodypart/proc/can_dismember(obj/item/item)
-	if(dismemberable)
-		return TRUE
+	return dismemberable
 
 //Dismember a limb
 /obj/item/bodypart/proc/dismember(dam_type = BRUTE, silent=TRUE, wounding_type)
