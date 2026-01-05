@@ -1350,13 +1350,16 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			else
 				miss_chance = min((user.dna.species.punchdamagehigh/user.dna.species.punchdamagelow) + user.getStaminaLoss() + (user.getBruteLoss()*0.5), 100) //old base chance for a miss + various damage. capped at 100 to prevent weirdness in prob()
 
-		if(!damage || !affecting || prob(miss_chance))//future-proofing for species that have 0 damage/weird cases where no zone is targeted
+		if(!damage || prob(miss_chance))//future-proofing for species that have 0 damage
 			playsound(target.loc, user.dna.species.miss_sound, 25, TRUE, -1)
 			target.visible_message(span_danger("[user]'s [atk_verb] misses [target]!"), \
 							span_danger("You avoid [user]'s [atk_verb]!"), span_hear("You hear a swoosh!"), COMBAT_MESSAGE_RANGE, user)
 			to_chat(user, span_warning("Your [atk_verb] misses [target]!"))
 			log_combat(user, target, "attempted to punch")
 			return FALSE
+
+		if(!affecting)
+			affecting = target.get_bodypart(BODY_ZONE_CHEST)
 
 		var/armor_block = target.run_armor_check(affecting, MELEE)
 		var/armor_reduce = target.run_subarmor_check(affecting, MELEE)
@@ -1377,11 +1380,11 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			target.dismembering_strike(user, affecting.body_zone)
 
 		var/attack_direction = get_dir(user, target)
+		var/remaining_damage = target.damage_armor(damage, MELEE, user.dna.species.attack_type, def_zone = affecting)
 		if(atk_effect == ATTACK_EFFECT_KICK)//kicks deal 1.5x raw damage
-			var/no_defended = target.damage_armor(damage, MELEE, user.dna.species.attack_type, def_zone = user.zone_selected)
-			if((no_defended * 1.5) >= 9)
+			if((remaining_damage * 1.5) >= 9)
 				target.force_say()
-			target.apply_damage(no_defended*1.5, \
+			target.apply_damage(remaining_damage*1.5, \
 								user.dna.species.attack_type, \
 								affecting, \
 								armor_block, \
@@ -1391,8 +1394,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 								subarmor_flags = subarmor_flags)
 			log_combat(user, target, "kicked")
 		else//other attacks deal full raw damage + 1.5x in stamina damage
-			var/no_defended = target.damage_armor(damage, MELEE, user.dna.species.attack_type, def_zone = user.zone_selected)
-			target.apply_damage(no_defended, \
+			target.apply_damage(remaining_damage, \
 								user.dna.species.attack_type, \
 								affecting, \
 								armor_block, \
@@ -1400,7 +1402,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 								reduced = armor_reduce, \
 								edge_protection = edge_protection, \
 								subarmor_flags = subarmor_flags)
-			if(no_defended >= 9)
+			if(remaining_damage >= 9)
 				target.force_say()
 			log_combat(user, target, "punched")
 
@@ -1497,8 +1499,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 
 	var/attack_direction = get_dir(user, H)
-	var/no_defended = H.damage_armor(I.force * weakness, MELEE, I.damtype, def_zone = def_zone)
-	apply_damage(no_defended, \
+	var/remaining_damage = H.damage_armor(I.force * weakness, MELEE, I.damtype, I.get_sharpness(), I.subtractible_armour_penetration, affecting)
+	apply_damage(remaining_damage, \
 				I.damtype, \
 				def_zone, \
 				armor_block, \
@@ -1565,9 +1567,22 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	return TRUE
 
-/datum/species/proc/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked, mob/living/carbon/human/H, forced = FALSE, spread_damage = FALSE, wound_bonus = 0, bare_wound_bonus = 0, sharpness = NONE, attack_direction = null)
+/datum/species/proc/apply_damage(damage, \
+						damagetype = BRUTE, \
+						def_zone = null, \
+						blocked, \
+						mob/living/carbon/human/H, \
+						forced = FALSE, \
+						spread_damage = FALSE, \
+						wound_bonus = 0, \
+						bare_wound_bonus = 0, \
+						sharpness = NONE, \
+						attack_direction = null,
+						reduced = 0, \
+						edge_protection = 0, \
+						subarmor_flags = NONE)
 	SEND_SIGNAL(H, COMSIG_MOB_APPLY_DAMAGE, damage, damagetype, def_zone, wound_bonus, bare_wound_bonus, sharpness, attack_direction)
-	var/hit_percent = (100-(blocked+armor))/100
+	var/hit_percent = (100-(blocked+reduced))/100
 	hit_percent = (hit_percent * (100-H.physiology.damage_resistance))/100
 	if(!damage || (!forced && hit_percent <= 0))
 		return 0
@@ -1586,19 +1601,35 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	switch(damagetype)
 		if(BRUTE)
 			H.damageoverlaytemp = 20
-			var/damage_amount = forced ? damage : damage * hit_percent * brutemod * H.physiology.brute_mod
 			if(BP)
-				if(BP.receive_damage(damage_amount, 0, wound_bonus = wound_bonus, bare_wound_bonus = bare_wound_bonus, sharpness = sharpness, attack_direction = attack_direction))
+				if(BP.receive_damage(brute = (damage * brutemod * H.physiology.brute_mod), \
+									wound_bonus = wound_bonus, \
+									bare_wound_bonus = bare_wound_bonus, \
+									sharpness = sharpness, \
+									attack_direction = attack_direction, \
+									blocked = blocked, \
+									reduced = reduced, \
+									edge_protection = edge_protection, \
+									subarmor_flags = subarmor_flags))
 					H.update_damage_overlays()
 			else//no bodypart, we deal damage with a more general method.
+				var/damage_amount = forced ? damage : damage * hit_percent * brutemod * H.physiology.brute_mod
 				H.adjustBruteLoss(damage_amount)
 		if(BURN)
 			H.damageoverlaytemp = 20
-			var/damage_amount = forced ? damage : damage * hit_percent * burnmod * H.physiology.burn_mod
 			if(BP)
-				if(BP.receive_damage(0, damage_amount, wound_bonus = wound_bonus, bare_wound_bonus = bare_wound_bonus, sharpness = sharpness, attack_direction = attack_direction))
+				if(BP.receive_damage(burn = (damage * burnmod * H.physiology.burn_mod), \
+									wound_bonus = wound_bonus, \
+									bare_wound_bonus = bare_wound_bonus, \
+									sharpness = sharpness, \
+									attack_direction = attack_direction, \
+									blocked = blocked, \
+									reduced = reduced, \
+									edge_protection = edge_protection, \
+									subarmor_flags = subarmor_flags))
 					H.update_damage_overlays()
 			else
+				var/damage_amount = forced ? damage : damage * hit_percent * burnmod * H.physiology.burn_mod
 				H.adjustFireLoss(damage_amount)
 		if(TOX)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.tox_mod
@@ -1612,7 +1643,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(STAMINA)
 			var/damage_amount = forced ? damage : damage * hit_percent * H.physiology.stamina_mod
 			if(BP)
-				if(BP.receive_damage(0, 0, damage_amount))
+				if(BP.receive_damage(stamina = damage_amount))
 					H.update_stamina()
 			else
 				H.adjustStaminaLoss(damage_amount)

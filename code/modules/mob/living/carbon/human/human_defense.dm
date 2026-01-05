@@ -361,8 +361,8 @@
 	var/subarmor = run_subarmor_check(affecting, MELEE, armour_penetration = user.subtractible_armour_penetration, sharpness = user.sharpness)
 	var/subarmor_flags = get_subarmor_flags(affecting)
 	var/edge_protection = get_edge_protection(affecting)
-	var/no_defended = damage_armor(damage, MELEE, user.melee_damage_type, def_zone = dam_zone)
-	apply_damage(no_defended, user.melee_damage_type, affecting, armor, \
+	var/remaining_damage = damage_armor(damage, MELEE, user.melee_damage_type, user.sharpness, user.subtractible_armour_penetration, affecting)
+	apply_damage(remaining_damage, user.melee_damage_type, affecting, armor, \
 				wound_bonus = user.wound_bonus, bare_wound_bonus = user.bare_wound_bonus, \
 				sharpness = user.sharpness, attack_direction = attack_direction, \
 				subarmor_flags = subarmor_flags, edge_protection = edge_protection, \
@@ -391,8 +391,8 @@
 	var/subarmor = run_subarmor_check(affecting, MELEE, armour_penetration = user.subtractible_armour_penetration, sharpness = user.sharpness)
 	var/subarmor_flags = get_subarmor_flags(affecting)
 	var/edge_protection = get_edge_protection(affecting)
-	var/no_defended = damage_armor(damage, MELEE, user.melee_damage_type, def_zone = dam_zone)
-	apply_damage(no_defended, user.melee_damage_type, affecting, armor, \
+	var/remaining_damage = damage_armor(damage, MELEE, user.melee_damage_type, user.sharpness, user.subtractible_armour_penetration, affecting)
+	apply_damage(remaining_damage, user.melee_damage_type, affecting, armor, \
 				wound_bonus = user.wound_bonus, bare_wound_bonus = user.bare_wound_bonus, \
 				sharpness = user.sharpness, attack_direction = attack_direction, \
 				subarmor_flags = subarmor_flags, edge_protection = edge_protection, \
