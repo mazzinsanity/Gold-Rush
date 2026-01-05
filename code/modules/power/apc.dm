@@ -1600,3 +1600,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/power/apc/auto_name, APC_PIXEL_OFFSET
 	name = "power control module"
 	icon_state = "power_mod"
 	desc = "Heavy-duty switching circuits for power control."
+
+#undef UPSTATE_OPENED1
+#undef UPSTATE_OPENED2
+
+#undef APC_CHANNEL_IS_ON

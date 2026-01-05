@@ -12,8 +12,6 @@
 #define CHAT_MESSAGE_APPROX_LHEIGHT 11
 /// Max width of chat message in pixels
 #define CHAT_MESSAGE_WIDTH 96
-/// Max length of chat message in characters
-#define CHAT_MESSAGE_MAX_LENGTH 110
 /// The dimensions of the chat message icons
 #define CHAT_MESSAGE_ICON_SIZE 9
 

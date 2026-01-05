@@ -110,3 +110,10 @@
 		/datum/gas/carbon_dioxide,
 		/datum/gas/nitrous_oxide
 		)
+
+#undef HIGH_FILTERING_RATIO
+#undef LOW_FILTERING_RATIO
+#undef HIGH_FILTERING_MOLES
+#undef MID_FILTERING_MOLES
+#undef LOW_FILTERING_MOLES
+#undef FILTERS_CONSTANT_WEAR

@@ -184,3 +184,5 @@ require only minor tweaks.
 #define SHELTER_DEPLOY_ANCHORED_OBJECTS "anchored objects"
 /// Shelter spot is out of bounds from the maps x/y coordinates 
 #define SHELTER_DEPLOY_OUTSIDE_MAP "outside map"
+
+#define SPACE_KEY "space"
