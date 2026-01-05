@@ -94,7 +94,7 @@
 /mob/living/proc/get_subarmor_flags(def_zone)
 	return NONE
 
-/mob/living/proc/damage_armor(damage = 0, damage_flag = MELEE, damage_type = BRUTE, sharpness = NONE, def_zone = BODY_ZONE_CHEST)
+/mob/living/proc/damage_armor(damage = 0, damage_flag = MELEE, damage_type = BRUTE, sharpness = NONE, armour_penetration = 0, def_zone)
 	return damage
 
 //this returns the mob's protection against eye damage (number between -1 and 2) from bright lights
@@ -122,28 +122,53 @@
 
 /mob/living/bullet_act(obj/projectile/P, def_zone, piercing_hit = FALSE)
 	. = ..()
-	if(!P.nodamage && (. != BULLET_ACT_BLOCK))
-		var/attack_direction = get_dir(P.starting, src)
-		//MOJAVE EDIT BEGIN
-		var/subarmor = run_subarmor_check(def_zone, P.flag, armour_penetration = P.subtractible_armour_penetration, weak_against_armour = P.weak_against_subtractible_armour, sharpness = P.sharpness)
-		//MOJAVE EDIT END
-		/* MOJAVE EDIT REMOVAL
-		// we need a second, silent armor check to actually know how much to reduce damage taken, as opposed to
-		// on [/atom/proc/bullet_act] where it's just to pass it to the projectile's on_hit().
-		var/armor_check = check_projectile_armor(def_zone, P, is_silent = TRUE)
-		apply_damage(P.damage, P.damage_type, def_zone, armor_check, wound_bonus=P.wound_bonus, bare_wound_bonus=P.bare_wound_bonus, sharpness = P.sharpness, attack_direction = attack_direction)
-		*/
-		//MOJAVE EDIT BEGIN
-		var/no_defended = damage_armor(P.damage, P.flag, P.damage_type, P.sharpness, def_zone)
-		if(apply_damage(no_defended, P.damage_type, def_zone, \
-					armor, wound_bonus=P.wound_bonus, bare_wound_bonus=P.bare_wound_bonus, \
-					sharpness = P.sharpness, attack_direction = attack_direction, \
-					reduced = subarmor))
-			//MOJAVE EDIT END
-			apply_effects(P.stun, P.knockdown, P.unconscious, P.slur, P.stutter, P.eyeblur, P.drowsy, armor, P.stamina, P.jitter, P.paralyze, P.immobilize)
-		if(P.dismemberment)
-			check_projectile_dismemberment(P, def_zone)
-	return . ? BULLET_ACT_HIT : BULLET_ACT_BLOCK
+	if (. != BULLET_ACT_HIT)
+		return .
+
+	var/subarmor = run_subarmor_check(def_zone, P.flag, armour_penetration = P.subtractible_armour_penetration, weak_against_armour = P.weak_against_subtractible_armour, sharpness = P.sharpness)
+	var/remaining_damage = damage_armor(P.damage, P.flag, P.damage_type, P.sharpness, P.subtractible_armour_penetration, def_zone)
+
+	if(remaining_damage < P.damage && P.impact_effect_type && !P.hitscan)
+		var/hitx
+		var/hity
+		if(src == P.original)
+			hitx = src.pixel_x + P.p_x - 16
+			hity = src.pixel_y + P.p_y - 16
+		else
+			hitx = src.pixel_x + rand(-8, 8)
+			hity = src.pixel_y + rand(-8, 8)
+
+		new P.impact_effect_type(get_turf(src), hitx, hity)
+
+	apply_damage(
+		damage = remaining_damage, 
+		damagetype = P.damage_type, 
+		def_zone = def_zone,
+		blocked = 0,
+		wound_bonus = P.wound_bonus,
+		bare_wound_bonus = P.bare_wound_bonus,
+		sharpness = P.sharpness,
+		attack_direction = get_dir(P.starting, src),
+		reduced = subarmor
+	)
+
+	apply_effects(
+		stun = P.stun, 
+		knockdown = P.knockdown, 
+		unconscious = P.unconscious, 
+		slur = P.slur, 
+		stutter = P.stutter, 
+		eyeblur = P.eyeblur, 
+		drowsy = P.drowsy, 
+		blocked = 0, 
+		stamina = P.stamina, 
+		jitter = P.jitter, 
+		paralyze = P.paralyze, 
+		immobilize = P.immobilize
+	)
+
+	if(P.dismemberment)
+		check_projectile_dismemberment(P, def_zone)
 
 /mob/living/check_projectile_armor(def_zone, obj/projectile/impacting_projectile, is_silent)
 	return run_armor_check(def_zone, impacting_projectile.flag, "","",impacting_projectile.subtractible_armour_penetration, "", is_silent, impacting_projectile.weak_against_armour)

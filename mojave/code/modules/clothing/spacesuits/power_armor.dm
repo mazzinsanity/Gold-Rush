@@ -17,6 +17,7 @@
 	var/obj/item/radio/headset/ms13/powerarmor/radio //Instantiated radio
 	var/radiotype = /obj/item/radio/headset/ms13/powerarmor //Typepath of the radio
 	actions_types = list(/datum/action/item_action/toggle_helmet_light) //New ability to modify the radio's settings
+	var/armour_penetration_threshold = 0	// Armour penetration value needed to punch through power armor
 
 //No touchy
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/Initialize()
@@ -33,21 +34,22 @@
 	suit = null
 	. = ..()
 
-/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration, def_zone)
+/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armour_penetration, def_zone)
 	if(!uses_integrity)
 		CRASH("[src] had /atom/proc/take_damage() called on it without it being a type that has uses_integrity = TRUE!")
 	if(QDELETED(src))
 		CRASH("[src] taking damage after deletion")
 	if(atom_integrity <= 0)
+		do_sparks(3, FALSE, src)
 		return damage_amount
 	if(sound_effect)
 		play_attack_sound(damage_amount, damage_type, damage_flag)
 	if(resistance_flags & INDESTRUCTIBLE)
 		return
-	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
+	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, armour_penetration)
 	if(damage_amount < DAMAGE_PRECISION)
 		return
-	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
+	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
 		return
 
 	. = damage_amount
@@ -65,7 +67,7 @@
 	. = ..()
 
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/atom_destruction(damage_flag)
-	return
+	do_sparks(3, FALSE, src)
 
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/get_examine_string(mob/user, thats, damage = TRUE)
 	var/damage_txt = ""
@@ -412,11 +414,13 @@
 		update_overlays()
 		return ..()
 
-/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration, def_zone = BODY_ZONE_CHEST)
+/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armour_penetration, def_zone = BODY_ZONE_CHEST)
 	if(!uses_integrity)
 		CRASH("[src] had /atom/proc/take_damage() called on it without it being a type that has uses_integrity = TRUE!")
 	if(QDELETED(src))
 		CRASH("[src] taking damage after deletion")
+	if(!def_zone)
+		return
 	if(sound_effect)
 		play_attack_sound(damage_amount, damage_type, damage_flag)
 	if(resistance_flags & INDESTRUCTIBLE)
@@ -427,30 +431,36 @@
 	if(def_zone == BODY_ZONE_PRECISE_EYES || def_zone == BODY_ZONE_PRECISE_MOUTH)
 		def_zone = BODY_ZONE_HEAD
 
+	var/remaining_damage = damage_amount
+
 	if(def_zone == BODY_ZONE_HEAD)
-		if(helmet && helmet.get_integrity() > 0)
-			var/damage_to_human = - (helmet.get_integrity() - helmet.take_damage(damage_amount, damage_type, damage_flag, null, attack_dir, subtractible_armour_penetration, def_zone))
-			return max(0, damage_to_human)
-		else
-			return damage_amount
+		if(istype(helmet, /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor))
+			var/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/pa_helmet = helmet
+			if(armour_penetration < pa_helmet.armour_penetration_threshold)
+				remaining_damage -= pa_helmet.get_integrity()
+			else
+				audible_message(span_bolddanger("You hear metal screeching as \the [pa_helmet] is fully penetrated!"), span_bolddanger("You see sparks fly as \the [pa_helmet] is fully penetrated!"))
+				do_sparks(5, FALSE, src)
+			pa_helmet.take_damage(damage_amount, damage_type, damage_flag, null, attack_dir, armour_penetration, def_zone)
+		damage_amount = 0
+	else
+		if(istype(module_armor[def_zone], /obj/item/ms13/power_armor))
+			var/obj/item/ms13/power_armor/pa_module = module_armor[def_zone]
+			if(armour_penetration < pa_module.armour_penetration_threshold)
+				remaining_damage -= pa_module.get_integrity()
+			else
+				audible_message(span_bolddanger("You hear metal screeching as \the [pa_module] is fully penetrated!"), span_bolddanger("You see sparks fly as \the [pa_module] is fully penetrated!"))
+				do_sparks(5, FALSE, src)
+			pa_module.take_damage(damage_amount, damage_type, damage_flag, null, attack_dir, armour_penetration)
+		damage_amount = remaining_damage
 
-	var/obj/item/ms13/power_armor/PA_item = module_armor[def_zone]
-	if(istype(PA_item) && PA_item.get_integrity() > 0)
-		var/damage_to_frame = - (PA_item.get_integrity() - PA_item.take_damage(damage_amount, damage_type, damage_flag, null, attack_dir, subtractible_armour_penetration, def_zone))
-		if(damage_to_frame <= 0)
-			return 0
-		damage_amount = damage_to_frame
+	. = max(0, remaining_damage)
 
-	if(atom_integrity <= 0)
-		return damage_amount
-
-	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
+	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, armour_penetration)
 	if(damage_amount < DAMAGE_PRECISION)
 		return
-	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
+	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
 		return
-
-	. = max(damage_amount - atom_integrity, 0)
 
 	update_integrity(atom_integrity - damage_amount)
 
@@ -469,6 +479,7 @@
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/atom_destruction(damage_flag)
 	subarmor = subarmor.setRating(NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 	listeningTo?.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
+	do_sparks(3, FALSE, src)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/equipped(mob/living/carbon/human/user, slot)
 	if(actions_modules)
@@ -620,15 +631,7 @@
 	light_color = "#d1c58d"
 	max_integrity = 340
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t51
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS4_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/t51
 	module_armor = list(
@@ -655,16 +658,7 @@
 	light_color = "#dabc7c"
 	max_integrity = 240
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t45
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
-
+	armour_penetration_threshold = 50
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/t45
 	module_armor = list(
@@ -687,15 +681,7 @@
 	hardsuit_type = "advanced" //Determines used sprites: hardsuit[on]-[type]
 	actions_types = null // No light for this one. When we get our NV working, we can make it a module and make them usually come with it, though.
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/advanced
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/advanced
 	module_armor = list(
