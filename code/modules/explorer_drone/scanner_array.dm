@@ -366,3 +366,9 @@ GLOBAL_LIST_INIT(scan_conditions,init_scan_conditions())
 
 /datum/scan_condition/easy/check_dish(obj/machinery/exoscanner/dish)
 	return 2
+
+#define MAX_SCAN_DISTANCE 10
+
+#undef WIDE_SCAN_COST
+#undef BASE_POINT_SCAN_TIME
+#undef BASE_DEEP_SCAN_TIME

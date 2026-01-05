@@ -221,3 +221,5 @@ SUBSYSTEM_DEF(persistent_paintings)
 	var/payload = json_encode(all_data)
 	fdel(json_file)
 	WRITE_FILE(json_file, payload)
+
+#undef PAINTINGS_DATA_FORMAT_VERSION

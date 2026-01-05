@@ -270,3 +270,6 @@
 	// Put our filthy fingerprints all over the contents
 	for(var/obj/item/item in wallet)
 		item.add_fingerprint(living_mob, ignoregloves = TRUE)
+
+#undef PARTY_COOLDOWN_LENGTH_MIN
+#undef PARTY_COOLDOWN_LENGTH_MAX 

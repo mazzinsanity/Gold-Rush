@@ -111,3 +111,5 @@
 /obj/item/pushbroom/cyborg/janicart_insert(mob/user, obj/structure/janitorialcart/J)
 	to_chat(user, span_notice("You cannot place your [src] into the [J]"))
 	return FALSE
+
+#undef BROOM_PUSH_LIMIT
