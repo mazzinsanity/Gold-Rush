@@ -380,7 +380,7 @@
 
 	wound_path_to_generate = /datum/wound/blunt/bone/critical
 
-		threshold_minimum = 110 //MOJAVE SUN EDIT - Original TG value is 115
+	threshold_minimum = 110 //MOJAVE SUN EDIT - Original TG value is 115
 
 // doesn't make much sense for "a" bone to stick out of your head
 /datum/wound/blunt/bone/critical/apply_wound(obj/item/bodypart/L, silent = FALSE, datum/wound/old_wound = null, smited = FALSE, attack_direction = null)

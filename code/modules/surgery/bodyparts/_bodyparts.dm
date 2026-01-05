@@ -390,9 +390,12 @@
 
 		spillover_brute -= brute
 		spillover_burn -= burn
+
 		var/mob/living/carbon/limb_owner = owner
-		var/obj/item/bodypart/chest = limb_owner.get_bodypart(BODY_ZONE_CHEST)
-		chest.receive_damage(clamp(spillover_brute / 2 * chest.body_damage_coeff, 0, 50), clamp(burn_dam/2 * chest.body_damage_coeff, 0, 50), wound_bonus=CANT_WOUND) //Damage the chest when limb damage is maxxed
+		if(limb_owner)
+			var/obj/item/bodypart/chest = limb_owner.get_bodypart(BODY_ZONE_CHEST)
+			if(src != chest)
+				chest.receive_damage(clamp(spillover_brute / 2 * chest.body_damage_coeff, 0, 50), clamp(burn_dam/2 * chest.body_damage_coeff, 0, 50), wound_bonus=CANT_WOUND) //Damage the chest when limb damage is maxxed
 
 	if(can_inflict <= 0)
 		return FALSE
