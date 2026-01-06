@@ -378,7 +378,6 @@
 								if(istype(active1.fields["photo_side"], /obj/item/photo))
 									var/obj/item/photo/P = active1.fields["photo_side"]
 									P.show(usr)
-					else
 
 			else if(href_list["p_stat"] && active1)
 

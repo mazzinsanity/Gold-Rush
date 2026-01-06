@@ -342,13 +342,7 @@ GLOBAL_LIST_EMPTY(gravity_generators) // We will keep track of this by adding ne
 	update_use_power(on ? ACTIVE_POWER_USE : IDLE_POWER_USE)
 	// Sound the alert if gravity was just enabled or disabled.
 	var/alert = FALSE
-	if(SSticker.IsRoundInProgress())
-		if(on) // If we turned on and the game is live.
-
-		else
-
-
-
+	
 	if(alert)
 		shake_everyone()
 
