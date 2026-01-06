@@ -868,3 +868,10 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	worn_icon = 'icons/mob/clothing/under/syndicate.dmi'
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 10, bio = 10, fire = 0, acid = 0)
 	can_adjust = FALSE
+
+#undef VEST_STEALTH
+#undef VEST_COMBAT
+#undef GIZMO_SCAN
+#undef GIZMO_MARK
+#undef MIND_DEVICE_MESSAGE
+#undef MIND_DEVICE_CONTROL
