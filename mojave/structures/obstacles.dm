@@ -1148,10 +1148,10 @@
 
 	return TRUE
 
-/obj/structure/ms13/turnstile/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller)
+/obj/structure/ms13/turnstile/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/passer)
 	if ((to_dir == turn(dir, 90)) || (to_dir == turn(dir, -90)))
 		return FALSE
-	return ..()
+	return CanAStarPass(ID, to_dir, passer)
 
 /obj/structure/ms13/turnstile/atom_break()
 	. = ..()
