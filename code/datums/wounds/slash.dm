@@ -353,7 +353,7 @@
 	minimum_flow = 2 //Original TG value is 2.75
 	clot_rate = 0.035 //Original TG value is 0.03
 	//MOJAVE EDIT END
-	threshold_penalty = 25
+	threshold_penalty = 30 //MOJAVE SUN EDIT - Original TG value is 25
 	demotes_to = /datum/wound/slash/flesh/moderate
 	status_effect_type = /datum/status_effect/wound/slash/flesh/severe
 	scar_keyword = "slashsevere"

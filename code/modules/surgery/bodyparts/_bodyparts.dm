@@ -276,7 +276,7 @@
 									edge_protection = 0, \
 									subarmor_flags = NONE)
 //MOJAVE EDIT END
-	var/hit_percent = (100-blocked)/100
+	var/hit_percent = (100-(blocked+reduced))/100
 	if((!brute && !burn && !stamina) || hit_percent <= 0)
 		return FALSE
 	if(owner && (owner.status_flags & GODMODE))
@@ -295,11 +295,11 @@
 	if(reduced)
 		if(brute >= burn)
 			var/brute_before = brute
-			brute = round(max(brute - reduced, MAXIMUM_ARMOR_REDUCTION * brute), DAMAGE_PRECISION)
+			brute = round(max(brute, brute * MAXIMUM_ARMOR_REDUCTION), DAMAGE_PRECISION)
 			if(subarmor_flags & SUBARMOR_FLEXIBLE)
 				brute += FLOOR((brute_before - brute) * 0.1, 1)
 		else
-			burn = round(max(burn - reduced, burn * MAXIMUM_ARMOR_REDUCTION), DAMAGE_PRECISION)
+			burn = round(max(burn, burn * MAXIMUM_ARMOR_REDUCTION), DAMAGE_PRECISION)
 	//MOJAVE EDIT END
 	//No stamina scaling.. for now..
 
@@ -390,9 +390,12 @@
 
 		spillover_brute -= brute
 		spillover_burn -= burn
+
 		var/mob/living/carbon/limb_owner = owner
-		var/obj/item/bodypart/chest = limb_owner.get_bodypart(BODY_ZONE_CHEST)
-		chest.receive_damage(clamp(spillover_brute / 2 * chest.body_damage_coeff, 0, 50), clamp(burn_dam/2 * chest.body_damage_coeff, 0, 50), wound_bonus=CANT_WOUND) //Damage the chest when limb damage is maxxed
+		if(limb_owner)
+			var/obj/item/bodypart/chest = limb_owner.get_bodypart(BODY_ZONE_CHEST)
+			if(src != chest)
+				chest.receive_damage(clamp(spillover_brute / 2 * chest.body_damage_coeff, 0, 50), clamp(burn_dam/2 * chest.body_damage_coeff, 0, 50), wound_bonus=CANT_WOUND) //Damage the chest when limb damage is maxxed
 
 	if(can_inflict <= 0)
 		return FALSE

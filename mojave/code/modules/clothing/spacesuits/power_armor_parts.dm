@@ -26,6 +26,7 @@
 	var/list/actions_modules = null
 	var/zone = null
 	var/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/frame = null
+	var/armour_penetration_threshold = 0	// Armour penetration value needed to punch through power armor
 
 /obj/item/ms13/power_armor/attackby(obj/item/I, mob/living/user, params)
 	if(I.tool_behaviour == TOOL_SCREWDRIVER)
@@ -98,6 +99,7 @@
 	if(QDELETED(src))
 		CRASH("[src] taking damage after deletion")
 	if(atom_integrity <= 0)
+		do_sparks(3, FALSE, src)
 		return damage_amount
 	if(sound_effect)
 		play_attack_sound(damage_amount, damage_type, damage_flag)
@@ -124,7 +126,7 @@
 	. = ..()
 
 /obj/item/ms13/power_armor/atom_destruction(damage_flag)
-	return
+	do_sparks(3, FALSE, src)
 
 /obj/item/ms13/power_armor/get_examine_string(mob/user, thats, damage = TRUE)
 	var/damage_txt = ""
@@ -190,15 +192,7 @@
 	icon_state = "t51_leftleg"
 	icon_state_pa = "t51_leftleg"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS4_EDGE, \
-					CRUSHING = CLASS5_CRUSH, \
-					CUTTING = CLASS5_CUT, \
-					PIERCING = CLASS4_PIERCE, \
-					IMPALING = CLASS5_STAB, \
-					LASER = CLASS4_LASER, \
-					ENERGY = CLASS4_PLASMA, \
-					FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 35
 
 /obj/item/ms13/power_armor/leg/right/t51
@@ -206,15 +200,7 @@
 	icon_state = "t51_rightleg"
 	icon_state_pa = "t51_rightleg"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS4_EDGE, \
-					CRUSHING = CLASS5_CRUSH, \
-					CUTTING = CLASS5_CUT, \
-					PIERCING = CLASS4_PIERCE, \
-					IMPALING = CLASS5_STAB, \
-					LASER = CLASS4_LASER, \
-					ENERGY = CLASS4_PLASMA, \
-					FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 35
 
 /obj/item/ms13/power_armor/chest/t51
@@ -222,15 +208,7 @@
 	icon_state = "t51_chest"
 	icon_state_pa = "t51_chest"
 	max_integrity = 480
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS4_EDGE, \
-					CRUSHING = CLASS5_CRUSH, \
-					CUTTING = CLASS5_CUT, \
-					PIERCING = CLASS4_PIERCE, \
-					IMPALING = CLASS5_STAB, \
-					LASER = CLASS4_LASER, \
-					ENERGY = CLASS4_PLASMA, \
-					FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 25
 
 /obj/item/ms13/power_armor/arm/left/t51
@@ -238,15 +216,7 @@
 	icon_state = "t51_lefthand"
 	icon_state_pa = "t51_lefthand"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS4_EDGE, \
-					CRUSHING = CLASS5_CRUSH, \
-					CUTTING = CLASS5_CUT, \
-					PIERCING = CLASS4_PIERCE, \
-					IMPALING = CLASS5_STAB, \
-					LASER = CLASS4_LASER, \
-					ENERGY = CLASS4_PLASMA, \
-					FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 35
 
 /obj/item/ms13/power_armor/arm/right/t51
@@ -254,15 +224,7 @@
 	icon_state = "t51_righthand"
 	icon_state_pa = "t51_righthand"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS4_EDGE, \
-					CRUSHING = CLASS5_CRUSH, \
-					CUTTING = CLASS5_CUT, \
-					PIERCING = CLASS4_PIERCE, \
-					IMPALING = CLASS5_STAB, \
-					LASER = CLASS4_LASER, \
-					ENERGY = CLASS4_PLASMA, \
-					FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 35
 
 /obj/item/ms13/power_armor/head/t51
@@ -277,15 +239,7 @@
 	icon_state = "t45_leftleg"
 	icon_state_pa = "t45_leftleg"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/leg/right/t45
@@ -293,15 +247,7 @@
 	icon_state = "t45_rightleg"
 	icon_state_pa = "t45_rightleg"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/chest/t45
@@ -309,15 +255,7 @@
 	icon_state = "t45_chest"
 	icon_state_pa = "t45_chest"
 	max_integrity = 360
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 75
 
 /obj/item/ms13/power_armor/arm/left/t45
@@ -325,15 +263,7 @@
 	icon_state = "t45_lefthand"
 	icon_state_pa = "t45_lefthand"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/arm/right/t45
@@ -341,15 +271,7 @@
 	icon_state = "t45_righthand"
 	icon_state_pa = "t45_righthand"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/head/t45
@@ -369,15 +291,7 @@
 	icon_state = "apa_chest"
 	icon_state_pa = "apa_chest"
 	max_integrity = 1000
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 0
 
 /obj/item/ms13/power_armor/arm/left/advanced
@@ -385,15 +299,7 @@
 	icon_state = "apa_lefthand"
 	icon_state_pa = "apa_lefthand"
 	max_integrity = 500
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS4_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 0
 
 /obj/item/ms13/power_armor/arm/right/advanced
@@ -401,15 +307,7 @@
 	icon_state = "apa_righthand"
 	icon_state_pa = "apa_righthand"
 	max_integrity = 500
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 0
 
 /obj/item/ms13/power_armor/leg/left/advanced
@@ -417,15 +315,7 @@
 	icon_state = "apa_leftleg"
 	icon_state_pa = "apa_leftleg"
 	max_integrity = 400
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 0
 
 /obj/item/ms13/power_armor/leg/right/advanced
@@ -433,13 +323,5 @@
 	icon_state = "apa_rightleg"
 	icon_state_pa = "apa_rightleg"
 	max_integrity = 400
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
+	armour_penetration_threshold = 50
 	chance = 0
