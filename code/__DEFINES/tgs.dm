@@ -1,6 +1,6 @@
 // tgstation-server DMAPI
 
-#define TGS_DMAPI_VERSION "6.4.4"
+#define TGS_DMAPI_VERSION "6.5.2"
 
 // All functions and datums outside this document are subject to change with any version and should not be relied on.
 
@@ -60,6 +60,8 @@
 #define TGS_EVENT_INSTANCE_RENAMED -3
 /// After the watchdog reattaches to DD, extra parameter is the new [/datum/tgs_version] of the server
 #define TGS_EVENT_WATCHDOG_REATTACH -4
+/// When the watchdog sends a health check to DD. No parameters.
+#define TGS_EVENT_HEALTH_CHECK -5
 
 /// When the repository is reset to its origin reference. Parameters: Reference name, Commit SHA
 #define TGS_EVENT_REPO_RESET_ORIGIN 0
@@ -104,12 +106,6 @@
 #define TGS_EVENT_WORLD_PRIME 21
 // DMAPI also doesnt implement this
 // #define TGS_EVENT_DREAM_DAEMON_LAUNCH 22
-/// After a single submodule update is performed. Parameters: Updated submodule name
-#define TGS_EVENT_REPO_SUBMODULE_UPDATE 23
-/// After CodeModifications are applied, before DreamMaker is run. Parameters: Game directory path, origin commit sha, byond version
-#define TGS_EVENT_PRE_DREAM_MAKER 24
-/// Whenever a deployment folder is deleted from disk. Parameters: Game directory path
-#define TGS_EVENT_DEPLOYMENT_CLEANUP 25
 
 // OTHER ENUMS
 
@@ -246,6 +242,11 @@
 	var/mention
 	/// The [/datum/tgs_chat_channel] the user was from
 	var/datum/tgs_chat_channel/channel
+
+/// User definable handler for TGS events.
+/datum/tgs_event_handler
+	/// If the handler receieves [TGS_EVENT_HEALTH_CHECK] events.
+	var/receive_health_checks = FALSE
 
 /**
  * User definable callback for handling TGS events.
@@ -487,3 +488,4 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
+
