@@ -1,8 +1,10 @@
-/datum/job/ms13/bos // File is unticked. Tick it to re-enable a major reason why Fallout servers are mid lol.
+/datum/job/ms13/bos
 	selection_color = "#737592"
 	departments_list = list(
 		/datum/job_department/bos,
 	)
+	exp_granted_type = EXP_TYPE_BOS
+	exp_required_type = EXP_TYPE_BOS
 	forbid = "Avoid unnecessary casualities. Experimentation on humans is forbidden."
 	enforce = "Abide by the Codex. Listen to and respect your fellow brothers. Help the needy but do not place them above the cause."
 

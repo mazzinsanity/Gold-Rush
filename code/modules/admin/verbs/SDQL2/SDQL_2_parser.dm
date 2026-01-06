@@ -46,6 +46,10 @@
 //
 //////////
 
+#define SDQL2_VALID_OPTION_TYPES list("proccall", "select", "priority", "autogc" , "sequential")
+#define SDQL2_VALID_OPTION_VALUES list("async", "blocking", "force_nulls", "skip_nulls", "high", "normal", "keep_alive" , "true")
+
+
 /datum/sdql_parser
 	var/query_type
 	var/error = 0
@@ -629,3 +633,6 @@
 		i = variable(i, node)
 
 	return i
+
+#undef SDQL2_VALID_OPTION_TYPES
+#undef SDQL2_VALID_OPTION_VALUES

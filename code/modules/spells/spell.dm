@@ -623,3 +623,6 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 	if(href_list[VV_HK_SPELL_SET_NONABSTRACT])
 		nonabstract_req = TRUE
 		return
+
+#undef TARGET_CLOSEST
+#undef TARGET_RANDOM

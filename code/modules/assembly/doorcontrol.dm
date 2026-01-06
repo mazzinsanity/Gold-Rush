@@ -1,3 +1,6 @@
+#define LOCKED 1
+#define UNLOCKED 0
+
 /obj/item/assembly/control
 	name = "blast door controller"
 	desc = "A small electronic device able to control a blast door remotely."
@@ -263,3 +266,6 @@
 
 	say("The tram has been called to [current_location.name]. Please wait for its arrival.")
 	tram_part.tram_travel(current_location)
+
+#undef LOCKED
+#undef UNLOCKED

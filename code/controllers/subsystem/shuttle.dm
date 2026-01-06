@@ -156,12 +156,6 @@ SUBSYSTEM_DEF(shuttle)
 	setup_shuttles(stationary_docking_ports)
 	has_purchase_shuttle_access = init_has_purchase_shuttle_access()
 
-	if(!arrivals)
-		log_mapping("No /obj/docking_port/mobile/arrivals placed on the map!")
-	if(!emergency)
-		log_mapping("No /obj/docking_port/mobile/emergency placed on the map!")
-	if(!backup_shuttle)
-		log_mapping("No /obj/docking_port/mobile/emergency/backup placed on the map!")
 	if(!supply)
 		log_mapping("No /obj/docking_port/mobile/supply placed on the map!")
 	return ..()
@@ -1013,3 +1007,5 @@ SUBSYSTEM_DEF(shuttle)
 			has_purchase_shuttle_access |= shuttle_template.who_can_purchase
 
 	return has_purchase_shuttle_access
+
+#undef MAX_TRANSIT_REQUEST_RETRIES

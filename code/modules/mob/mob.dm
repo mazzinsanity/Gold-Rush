@@ -1437,3 +1437,5 @@
 
 	data["memories"] = memories
 	return data
+
+#undef MOB_FACE_DIRECTION_DELAY

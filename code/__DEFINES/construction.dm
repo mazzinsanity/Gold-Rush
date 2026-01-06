@@ -171,3 +171,10 @@
 
 /// How much less resources the RCD uses when reconstructing
 #define RCD_MEMORY_COST_BUFF 8
+
+// Defines for the construction component
+#define FORWARD 1
+#define BACKWARD -1
+
+#define ITEM_DELETE "delete"
+#define ITEM_MOVE_INSIDE "move_inside"

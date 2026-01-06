@@ -4,7 +4,6 @@
  * @license MIT
  */
 
-import { BooleanLike, classes } from 'tgui-core/react';
 import {
   createElement,
   KeyboardEventHandler,
@@ -12,6 +11,7 @@ import {
   ReactNode,
   UIEventHandler,
 } from 'react';
+import { BooleanLike, classes } from 'tgui-core/react';
 
 import { CSS_COLORS } from '../constants';
 import { logger } from '../logging';

@@ -880,3 +880,5 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_SHOVEIMMUNE "shove_immune"//Makes the user completely immune to shoving
 
 // MOJAVE JOB TRAITS END
+
+#define TRAIT_STATUS_EFFECT(effect_id) "[effect_id]-trait"

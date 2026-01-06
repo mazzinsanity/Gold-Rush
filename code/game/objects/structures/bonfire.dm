@@ -193,3 +193,5 @@
 	scale = generator("vector", list(0.3, 0.3), list(1,1), NORMAL_RAND)
 	rotation = 30
 	spin = generator("num", -20, 20)
+
+#undef BONFIRE_FIRE_STACK_STRENGTH

@@ -234,3 +234,13 @@ GLOBAL_LIST_INIT(ai_employers, list(
 #define OBJECTIVE_STATE_FAILED 4
 /// If the objective is no longer valid
 #define OBJECTIVE_STATE_INVALID 5
+
+/// The duration of the fakedeath coma.
+#define LING_FAKEDEATH_TIME 40 SECONDS
+/// The number of recent spoken lines to gain on absorbing a mob
+#define LING_ABSORB_RECENT_SPEECH 8
+
+/// Helper to format the text that gets thrown onto the chem hud element.
+#define FORMAT_CHEM_CHARGES_TEXT(charges) MAPTEXT("<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#dd66dd'>[round(charges)]</font></div>")
+
+#define ABDUCTOR_MAX_TEAMS 4

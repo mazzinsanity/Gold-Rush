@@ -126,12 +126,13 @@ GLOBAL_LIST_INIT(sentrybot_dying_sound, list(
 	SIGNAL_HANDLER
 	//playsound(src, 'sound/mecha/mechstep.ogg', 40, TRUE)
 	last_move_done_at = world.time
-	addtimer(CALLBACK(src, PROC_REF(check_if_loop_should_continue), world.time), move_to_delay + 0.5 SECONDS)
+	var/datum/looping_sound/treads/soundloop = new /datum/looping_sound/treads(FALSE)
+	soundloop.start()
+	addtimer(CALLBACK(src, PROC_REF(check_if_loop_should_continue), world.time, soundloop), move_to_delay + 0.5 SECONDS)
 	/*
 	if(drift_cooldown > world.time) //Special move cooldown + drifting shouldn't restart the tread sounds
 		return
 	*/
-	soundloop.start()
 
 /*
 /mob/living/simple_animal/hostile/ms13/robot/sentrybot/Goto(target, delay, minimum_distance)
@@ -146,8 +147,11 @@ GLOBAL_LIST_INIT(sentrybot_dying_sound, list(
 	RangedAttack(target)
 	return .
 
-/mob/living/simple_animal/hostile/ms13/robot/sentrybot/proc/check_if_loop_should_continue(the_time)
+/mob/living/simple_animal/hostile/ms13/robot/sentrybot/proc/check_if_loop_should_continue(the_time, /datum/looping_sound/treads/soundloop)
 	if(the_time != last_move_done_at)
+		return
+
+	if(isnull(soundloop))
 		return
 	/*
 	if(drift_cooldown > world.time)
@@ -155,6 +159,7 @@ GLOBAL_LIST_INIT(sentrybot_dying_sound, list(
 	//TOKYO DRIFT
 	*/
 	soundloop.stop()
+	QDEL_NULL(soundloop)
 	/*
 	playsound(src, 'mojave/sound/ms13npc/sentrybot/drift_king.ogg', 50, FALSE)
 	drift_cooldown = world.time + 5 SECONDS
@@ -202,7 +207,6 @@ GLOBAL_LIST_INIT(sentrybot_dying_sound, list(
 	QDEL_NULL(rocket)
 	QDEL_NULL(grenade)
 	QDEL_NULL(flamethrow)
-	QDEL_NULL(soundloop)
 	return ..()
 
 /mob/living/simple_animal/hostile/ms13/robot/sentrybot/OpenFire(atom/A, actually_fire = FALSE)

@@ -1,6 +1,6 @@
-import { FeatureChoiced, FeatureDropdownInput } from "../base";
+import { FeatureChoiced, FeatureDropdownInput } from '../base';
 
 export const fat_adjective: FeatureChoiced = {
-  name: "Fat Adjective",
+  name: 'Fat Adjective',
   component: FeatureDropdownInput,
 };

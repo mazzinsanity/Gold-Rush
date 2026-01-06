@@ -278,3 +278,9 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define SPACEVINE_HEAT_RESISTANT (1 << 0)
 /// Is the spacevine / flower bud cold resistant
 #define SPACEVINE_COLD_RESISTANT (1 << 1)
+
+// Bitflags for emotes, used in var/emote_type of the emote datum
+/// Is the emote visible
+#define EMOTE_VISIBLE 1
+/// Is the emote audible
+#define EMOTE_AUDIBLE 2

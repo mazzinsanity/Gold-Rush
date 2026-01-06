@@ -948,7 +948,7 @@
 	///List of cards to add into the hand on initialization (used for mapping mostly)
 	var/list/init_cards = list()
 
-/obj/item/toy/cards/cardhand/Initialize()
+/obj/item/toy/cards/cardhand/Initialize(mapload)
 	. = ..()
 	if (init_cards.len > 0)
 		for (var/card in init_cards)

@@ -513,7 +513,7 @@
 	for(var/mob/M in speech_bubble_recipients)
 		if(M.client)
 			speech_bubble_recipients.Add(M.client)
-	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay), image('icons/mob/talk.dmi', src, "machine[say_test(speech_args[SPEECH_MESSAGE])]",MOB_LAYER+1), speech_bubble_recipients, 30)
+	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), image('icons/mob/talk.dmi', src, "machine[say_test(speech_args[SPEECH_MESSAGE])]",MOB_LAYER+1), speech_bubble_recipients, 30)
 
 ////////////////////////////
 ///// Action processing ////
@@ -896,27 +896,6 @@
 	to_chat(AI, AI.can_dominate_mechs ? span_greenannounce("Takeover of [name] complete! You are now loaded onto the onboard computer. Do not attempt to leave the station sector!") :\
 		span_notice("You have been uploaded to a mech's onboard computer."))
 	to_chat(AI, "<span class='reallybig boldnotice'>Use Middle-Mouse to activate mech functions and equipment. Click normally for AI interactions.</span>")
-
-
-///Handles an actual AI (simple_animal mecha pilot) entering the mech
-/obj/vehicle/sealed/mecha/proc/aimob_enter_mech(mob/living/simple_animal/hostile/syndicate/mecha_pilot/pilot_mob)
-	if(!pilot_mob?.Adjacent(src))
-		return
-	if(LAZYLEN(occupants))
-		return
-	LAZYSET(occupants, pilot_mob, NONE)
-	pilot_mob.mecha = src
-	pilot_mob.forceMove(src)
-	update_appearance()
-
-///Handles an actual AI (simple_animal mecha pilot) exiting the mech
-/obj/vehicle/sealed/mecha/proc/aimob_exit_mech(mob/living/simple_animal/hostile/syndicate/mecha_pilot/pilot_mob)
-	LAZYREMOVE(occupants, pilot_mob)
-	if(pilot_mob.mecha == src)
-		pilot_mob.mecha = null
-	pilot_mob.forceMove(get_turf(src))
-	update_appearance()
-
 
 
 /obj/vehicle/sealed/mecha/mob_try_enter(mob/M)

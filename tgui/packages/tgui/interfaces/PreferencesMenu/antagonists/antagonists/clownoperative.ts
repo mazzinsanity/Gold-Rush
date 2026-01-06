@@ -1,9 +1,9 @@
-import { Antagonist, Category } from "../base";
-import { OPERATIVE_MECHANICAL_DESCRIPTION } from "./operative";
+import { Antagonist, Category } from '../base';
+import { OPERATIVE_MECHANICAL_DESCRIPTION } from './operative';
 
 const ClownOperative: Antagonist = {
-  key: "clownoperative",
-  name: "Clown Operative",
+  key: 'clownoperative',
+  name: 'Clown Operative',
   description: [
     `
       Honk! You have been chosen, for better or worse to join the Syndicate

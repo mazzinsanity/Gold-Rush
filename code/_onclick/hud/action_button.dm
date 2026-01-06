@@ -1,4 +1,4 @@
-#define ACTION_BUTTON_DEFAULT_BACKGROUND "default"
+#define AB_MAX_COLUMNS 10
 
 /atom/movable/screen/movable/action_button
 	var/datum/action/linked_action
@@ -231,10 +231,6 @@
 	if(reload_screen)
 		client.screen += hud_used.hide_actions_toggle
 
-
-
-#define AB_MAX_COLUMNS 10
-
 /datum/hud/proc/ButtonNumberToScreenCoords(number) // TODO : Make this zero-indexed for readabilty
 	var/row = round((number - 1)/AB_MAX_COLUMNS)
 	var/col = ((number - 1)%(AB_MAX_COLUMNS)) + 1
@@ -255,3 +251,5 @@
 	var/matrix/M = matrix()
 	M.Translate(x_offset,y_offset)
 	button.transform = M
+
+#undef AB_MAX_COLUMNS

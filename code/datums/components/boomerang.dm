@@ -1,5 +1,6 @@
 ///The cooldown period between last_boomerang_throw and it's methods of implementing a rebound proc.
 #define BOOMERANG_REBOUND_INTERVAL (1 SECONDS)
+
 /**
  * If an ojvect is given the boomerang component, it should be thrown back to the thrower after either hitting it's target, or landing on the thrown tile.
  * Thrown objects should be thrown back to the original thrower with this component, a number of tiles defined by boomerang_throw_range.
@@ -83,3 +84,5 @@
 	true_parent.visible_message(span_danger("[true_parent] is flying back at [throwing_datum.thrower]!"), \
 						span_danger("You see [true_parent] fly back at you!"), \
 						span_hear("You hear an aerodynamic woosh!"))
+
+#undef BOOMERANG_REBOUND_INTERVAL

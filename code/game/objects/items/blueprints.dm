@@ -243,3 +243,8 @@
 	for(var/obj/machinery/firealarm/firepanel in area)
 		firepanel.name = replacetext(firepanel.name,oldtitle,title)
 	//TODO: much much more. Unnamed airlocks, cameras, etc.
+
+#undef AREA_ERRNONE
+#undef AREA_STATION
+#undef AREA_SPACE
+#undef AREA_SPECIAL

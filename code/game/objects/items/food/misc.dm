@@ -201,7 +201,7 @@
 	grid_width = 32
 	preserved_food = TRUE //Can't decompose any more than this
 
-/obj/item/food/badrecipe/Initialize()
+/obj/item/food/badrecipe/Initialize(mapload)
 	. = ..()
 	icon_state = "rot_[rand(1,4)]"
 	AddElement(/datum/element/item_scaling, 0.65, 1)
