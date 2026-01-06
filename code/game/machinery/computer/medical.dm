@@ -167,8 +167,6 @@
 						dat += "<br><center>None detected</center>"
 					else
 						dat += "<br>[bdat]"
-
-				else
 		else
 			dat += "<A href='byond://?src=[REF(src)];login=1'>{Log In}</A>"
 	var/datum/browser/popup = new(user, "med_rec", "Medical Records Console", 600, 400)
@@ -382,50 +380,49 @@
 									P.show(usr)
 					else
 
-			else if(href_list["p_stat"])
-				if(active1)
-					switch(href_list["p_stat"])
-						if("deceased")
-							active1.fields["p_stat"] = "*Deceased*"
-						if("unconscious")
-							active1.fields["p_stat"] = "*Unconscious*"
-						if("active")
-							active1.fields["p_stat"] = "Active"
-						if("unfit")
-							active1.fields["p_stat"] = "Physically Unfit"
+			else if(href_list["p_stat"] && active1)
 
-			else if(href_list["m_stat"])
-				if(active1)
-					switch(href_list["m_stat"])
-						if("insane")
-							active1.fields["m_stat"] = "*Insane*"
-						if("unstable")
-							active1.fields["m_stat"] = "*Unstable*"
-						if("watch")
-							active1.fields["m_stat"] = "*Watch*"
-						if("stable")
-							active1.fields["m_stat"] = "Stable"
+				switch(href_list["p_stat"])
+					if("deceased")
+						active1.fields["p_stat"] = "*Deceased*"
+					if("unconscious")
+						active1.fields["p_stat"] = "*Unconscious*"
+					if("active")
+						active1.fields["p_stat"] = "Active"
+					if("unfit")
+						active1.fields["p_stat"] = "Physically Unfit"
+
+			else if(href_list["m_stat"] && active1)
+
+				switch(href_list["m_stat"])
+					if("insane")
+						active1.fields["m_stat"] = "*Insane*"
+					if("unstable")
+						active1.fields["m_stat"] = "*Unstable*"
+					if("watch")
+						active1.fields["m_stat"] = "*Watch*"
+					if("stable")
+						active1.fields["m_stat"] = "Stable"
 
 
-			else if(href_list["blood_type"])
-				if(active2)
-					switch(href_list["blood_type"])
-						if("an")
-							active2.fields["blood_type"] = "A-"
-						if("bn")
-							active2.fields["blood_type"] = "B-"
-						if("abn")
-							active2.fields["blood_type"] = "AB-"
-						if("on")
-							active2.fields["blood_type"] = "O-"
-						if("ap")
-							active2.fields["blood_type"] = "A+"
-						if("bp")
-							active2.fields["blood_type"] = "B+"
-						if("abp")
-							active2.fields["blood_type"] = "AB+"
-						if("op")
-							active2.fields["blood_type"] = "O+"
+			else if(href_list["blood_type"] && active2)
+				switch(href_list["blood_type"])
+					if("an")
+						active2.fields["blood_type"] = "A-"
+					if("bn")
+						active2.fields["blood_type"] = "B-"
+					if("abn")
+						active2.fields["blood_type"] = "AB-"
+					if("on")
+						active2.fields["blood_type"] = "O-"
+					if("ap")
+						active2.fields["blood_type"] = "A+"
+					if("bp")
+						active2.fields["blood_type"] = "B+"
+					if("abp")
+						active2.fields["blood_type"] = "AB+"
+					if("op")
+						active2.fields["blood_type"] = "O+"
 
 
 			else if(href_list["del_r"])
@@ -493,16 +490,12 @@
 				for(var/datum/data/record/R in GLOB.data_core.medical)
 					if((lowertext(R.fields["name"]) == t1 || t1 == lowertext(R.fields["id"]) || t1 == lowertext(R.fields["b_dna"])))
 						active2 = R
-					else
-						//Foreach continue //goto(3229)
 				if(!( active2 ))
 					temp = text("Could not locate record [].", sanitize(t1))
 				else
 					for(var/datum/data/record/E in GLOB.data_core.general)
 						if((E.fields["name"] == active2.fields["name"] || E.fields["id"] == active2.fields["id"]))
 							active1 = E
-						else
-							//Foreach continue //goto(3334)
 					screen = 4
 
 			else if(href_list["print_p"])
