@@ -377,7 +377,6 @@
 	. += body_overlay
 
 #undef BEE_IDLE_ROAMING
-#undef BEE_IDLE_GOHOM
 #undef BEE_PROB_GOHOME
 #undef BEE_PROB_GOROAM
 #undef BEE_TRAY_RECENT_VISIT
