@@ -393,4 +393,4 @@ Difficulty: Extremely Hard
 	set_light_color(new_color)
 	set_light(new_range)
 
-#undef FROSTMINER_ENRAGE_TRAIT
+#undef FROST_MINER_SHOULD_ENRAGE
