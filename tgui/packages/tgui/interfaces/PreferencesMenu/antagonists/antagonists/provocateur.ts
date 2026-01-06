@@ -1,9 +1,9 @@
-import { Antagonist, Category } from "../base";
-import { REVOLUTIONARY_MECHANICAL_DESCRIPTION } from "./headrevolutionary";
+import { Antagonist, Category } from '../base';
+import { REVOLUTIONARY_MECHANICAL_DESCRIPTION } from './headrevolutionary';
 
 const Provocateur: Antagonist = {
-  key: "provocateur",
-  name: "Provocateur",
+  key: 'provocateur',
+  name: 'Provocateur',
   description: [
     `
       A form of head revolutionary that can activate when joining an ongoing

@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const BloodBrother: Antagonist = {
-  key: "bloodbrother",
-  name: "Blood Brother",
+  key: 'bloodbrother',
+  name: 'Blood Brother',
   description: [
     `
       Team up with other crew members as blood brothers to combine the strengths

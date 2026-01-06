@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const SentientDisease: Antagonist = {
-  key: "sentientdisease",
-  name: "Sentient Disease",
+  key: 'sentientdisease',
+  name: 'Sentient Disease',
   description: [
     `
       Mutate and spread yourself and infect as much of the crew as possible

@@ -1,14 +1,13 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
-export const HERETIC_MECHANICAL_DESCRIPTION
-   = `
+export const HERETIC_MECHANICAL_DESCRIPTION = `
       Find hidden influences and sacrifice crew members to gain magical
       powers and ascend as one of several paths.
    `;
 
 const Heretic: Antagonist = {
-  key: "heretic",
-  name: "Heretic",
+  key: 'heretic',
+  name: 'Heretic',
   description: [
     `
       Forgotten, devoured, gutted. Humanity has forgotten the eldritch forces

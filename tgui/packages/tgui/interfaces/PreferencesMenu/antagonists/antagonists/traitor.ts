@@ -1,14 +1,13 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
-export const TRAITOR_MECHANICAL_DESCRIPTION
-   = `
+export const TRAITOR_MECHANICAL_DESCRIPTION = `
       Start with an uplink to purchase your gear and take on your sinister
       objectives. Ascend through the ranks and become an infamous legend.
    `;
 
 const Traitor: Antagonist = {
-  key: "traitor",
-  name: "Traitor",
+  key: 'traitor',
+  name: 'Traitor',
   description: [
     `
       An unpaid debt. A score to be settled. Maybe you were just in the wrong

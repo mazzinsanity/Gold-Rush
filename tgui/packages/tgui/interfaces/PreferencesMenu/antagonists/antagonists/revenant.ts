@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const Revenant: Antagonist = {
-  key: "revenant",
-  name: "Revenant",
+  key: 'revenant',
+  name: 'Revenant',
   description: [
     `
       Become the mysterious revenant. Break windows, overload lights, and eat
