@@ -65,9 +65,7 @@
 	if(damage_flag == MELEE && damage_amount < damage_deflection)
 		return 0
 	switch(damage_type)
-		if(BRUTE)
-		if(BURN)
-		else
+		if((damage_type != BRUTE) || (damage != BURN))
 			return 0
 	var/armor_protection = 0
 	if(damage_flag)
