@@ -393,7 +393,7 @@
 
 	wound_path_to_generate = /datum/wound/slash/flesh/critical
 
-		threshold_minimum = 80
+	threshold_minimum = 80
 
 /datum/wound/slash/flesh/moderate/many_cuts
 	name = "Numerous Small Slashes"
