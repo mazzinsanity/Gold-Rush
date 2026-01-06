@@ -333,3 +333,6 @@ GLOBAL_LIST_INIT(medicine_reagents, build_medicine_reagents())
 	update_appearance()
 
 #undef VALID_RANDOM_RECIPE_REAGENT
+#undef RNGCHEM_INPUT
+#undef RNGCHEM_CATALYSTS
+#undef RNGCHEM_OUTPUT

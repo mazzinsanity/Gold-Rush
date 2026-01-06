@@ -392,3 +392,5 @@ Difficulty: Extremely Hard
 	color = new_color
 	set_light_color(new_color)
 	set_light(new_range)
+
+#undef FROSTMINER_ENRAGE_TRAIT

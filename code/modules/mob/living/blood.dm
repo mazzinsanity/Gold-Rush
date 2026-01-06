@@ -388,3 +388,6 @@
 	var/obj/effect/decal/cleanable/oil/B = locate() in T.contents
 	if(!B)
 		B = new(T)
+
+#undef BLOOD_DRIP_RATE_MOD
+

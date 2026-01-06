@@ -1039,3 +1039,5 @@
 
 /obj/docking_port/mobile/emergency/on_emergency_dock()
 	return
+
+#undef DOCKING_PORT_HIGHLIGHT

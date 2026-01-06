@@ -495,3 +495,7 @@
 /datum/export/pirate/holochip/get_cost(atom/movable/AM)
 	var/obj/item/holochip/H = AM
 	return H.credits
+
+#undef PIRATES_ROGUES
+#undef PIRATES_SILVERSCALES
+#undef PIRATES_DUTCHMAN

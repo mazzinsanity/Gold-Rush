@@ -242,3 +242,5 @@ GLOBAL_LIST_INIT(ai_employers, list(
 
 /// Helper to format the text that gets thrown onto the chem hud element.
 #define FORMAT_CHEM_CHARGES_TEXT(charges) MAPTEXT("<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#dd66dd'>[round(charges)]</font></div>")
+
+#define ABDUCTOR_MAX_TEAMS 4

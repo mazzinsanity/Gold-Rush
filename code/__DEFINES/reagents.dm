@@ -195,3 +195,7 @@
 #define GRENADE_WIRED 2
 /// Grenade is ready to be finished
 #define GRENADE_READY 3
+
+#define REM REAGENTS_EFFECT_MULTIPLIER
+
+#define ALCOHOL_RATE 0.003 //The rate at which alcohol affects you //Mojave Edit - Makes alcohol not as stupid

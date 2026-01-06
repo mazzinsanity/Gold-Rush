@@ -1,4 +1,4 @@
-#define GORILLA_HANDS_LAYER 1
+
 #define GORILLA_TOTAL_LAYERS 1
 
 /mob/living/simple_animal/hostile/gorilla
@@ -110,3 +110,6 @@
 	if(oogas >= rand(2,6))
 		playsound(src, 'sound/creatures/gorilla.ogg', 50)
 		oogas = 0
+
+
+#undef GORILLA_TOTAL_LAYERS
