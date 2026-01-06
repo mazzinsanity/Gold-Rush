@@ -346,3 +346,4 @@
 #undef HDD_PANEL_OPEN
 #undef HDD_PRIED
 #undef HDD_CUT_LOOSE
+#undef HDD_OVERLOADED

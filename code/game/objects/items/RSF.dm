@@ -5,6 +5,7 @@ RSF
 */
 ///Extracts the related object from an associated list of objects and values, or lists and objects.
 #define OBJECT_OR_LIST_ELEMENT(from, input) (islist(input) ? from[input] : input)
+
 /obj/item/rsf
 	name = "\improper Rapid-Service-Fabricator"
 	desc = "A device used to rapidly deploy service items."
@@ -189,3 +190,4 @@ RSF
 		to_dispense = /obj/item/food/cookie
 		to_chat(user, span_notice("Cookie Synthesizer reset."))
 
+#undef OBJECT_OR_LIST_ELEMENT

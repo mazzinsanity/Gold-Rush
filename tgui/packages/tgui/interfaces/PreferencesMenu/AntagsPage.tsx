@@ -1,6 +1,6 @@
 import { binaryInsertWith } from 'common/collections';
-import { classes } from 'tgui-core/react';
 import { useState } from 'react';
+import { classes } from 'tgui-core/react';
 
 import { useBackend } from '../../backend';
 import {

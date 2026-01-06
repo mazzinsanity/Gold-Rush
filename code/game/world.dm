@@ -81,10 +81,6 @@ GLOBAL_VAR(restart_counter)
 
 	Master.Initialize(10, FALSE, TRUE)
 
-	#ifdef UNIT_TESTS
-	HandleTestRun()
-	#endif
-
 	#ifdef AUTOWIKI
 	setup_autowiki()
 	#endif
@@ -99,11 +95,7 @@ GLOBAL_VAR(restart_counter)
 	SSticker.start_immediately = TRUE
 	CONFIG_SET(number/round_end_countdown, 0)
 	var/datum/callback/cb
-#ifdef UNIT_TESTS
-	cb = CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(RunUnitTests))
-#else
 	cb = VARSET_CALLBACK(SSticker, force_ending, TRUE)
-#endif
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(_addtimer), cb, 10 SECONDS))
 
 
@@ -158,10 +150,6 @@ GLOBAL_VAR(restart_counter)
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
 
-#ifdef UNIT_TESTS
-	GLOB.test_log = "[GLOB.log_directory]/tests.log"
-	start_log(GLOB.test_log)
-#endif
 #ifdef REFERENCE_DOING_IT_LIVE
 	GLOB.harddel_log = "[GLOB.log_directory]/harddels.log"
 	start_log(GLOB.harddel_log)
@@ -236,10 +224,6 @@ GLOBAL_VAR(restart_counter)
 	if(GLOB)
 		if(GLOB.total_runtimes != 0)
 			fail_reasons = list("Total runtimes: [GLOB.total_runtimes]")
-#ifdef UNIT_TESTS
-		if(GLOB.failed_any_test)
-			LAZYADD(fail_reasons, "Unit Tests failed!")
-#endif
 		if(!GLOB.log_directory)
 			LAZYADD(fail_reasons, "Missing GLOB.log_directory!")
 	else
@@ -260,11 +244,6 @@ GLOBAL_VAR(restart_counter)
 	else
 		to_chat(world, span_boldannounce("Rebooting world..."))
 		Master.Shutdown() //run SS shutdowns
-
-	#ifdef UNIT_TESTS
-	FinishTestRun()
-	return
-	#endif
 
 	if(TgsAvailable())
 		var/do_hard_reboot
@@ -386,3 +365,4 @@ GLOBAL_VAR(restart_counter)
 
 #undef OVERRIDE_LOG_DIRECTORY_PARAMETER
 #undef NO_INIT_PARAMETER
+#undef RESTART_COUNTER_PATH

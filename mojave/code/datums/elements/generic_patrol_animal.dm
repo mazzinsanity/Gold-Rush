@@ -80,7 +80,8 @@ The simple animal this is attached to should also be able to destroy obstacles s
 				var/obj/effect/ai_node/linted_current_node = animal_current_node[animal]
 				linted_current_node.set_weight(animal_identifier[animal], NODE_LAST_VISITED, world.time)
 				if(length(animal_nodes_to_walk[animal]))
-					animal_nodes_to_walk[animal].len--
+					var/list/to_decrease = animal_nodes_to_walk[animal]
+					to_decrease.len--
 					animal_target_node[animal] = animal_nodes_to_walk[animal[length(animal_nodes_to_walk[the_animal])]]
 				else
 					animal_target_node[animal] = linted_current_node.get_best_adj_node(animal_node_weights[animal], animal_identifier[animal])

@@ -359,3 +359,4 @@
 #undef SPIN_PRICE
 #undef HOLOCHIP
 #undef COIN
+#undef REEL_DEACTIVATE_DELAY 

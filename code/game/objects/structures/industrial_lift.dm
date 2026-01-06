@@ -619,3 +619,6 @@ GLOBAL_LIST_EMPTY(tram_landmarks)
 	name = "East Wing"
 	destination_id = "right_part"
 	tgui_icons = list("Departures" = "plane-departure", "Cargo" = "box", "Science" = "flask")
+
+#undef LOCKED
+#undef UNLOCKED

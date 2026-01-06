@@ -603,3 +603,5 @@ GLOBAL_LIST_EMPTY(tcgcard_radial_choices)
 
 #undef DEFAULT_TCG_DMI_ICON
 #undef DEFAULT_TCG_DMI
+#undef TAPPED_ANGLE
+#undef UNTAPPED_ANGLE

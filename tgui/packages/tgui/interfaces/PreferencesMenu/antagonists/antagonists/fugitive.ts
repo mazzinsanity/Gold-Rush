@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const Fugitive: Antagonist = {
-  key: "fugitive",
-  name: "Fugitive",
+  key: 'fugitive',
+  name: 'Fugitive',
   description: [
     `
     Wherever you come from, you're being hunted. You have 10 minutes to prepare

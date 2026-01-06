@@ -196,3 +196,8 @@
 
 /// How many maximum iterations do we allow the Newton-Raphson approximation for gas pressure to do.
 #define ATMOS_PRESSURE_APPROXIMATION_ITERATIONS 10
+
+//node2, air2, network2 correspond to input
+//node1, air1, network1 correspond to output
+#define CIRCULATOR_HOT 0
+#define CIRCULATOR_COLD 1

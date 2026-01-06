@@ -1,6 +1,6 @@
-import { FeatureChoiced, FeatureDropdownInput } from "../base";
+import { FeatureChoiced, FeatureDropdownInput } from '../base';
 
 export const generic_adjective: FeatureChoiced = {
-  name: "Adjective",
+  name: 'Adjective',
   component: FeatureDropdownInput,
 };

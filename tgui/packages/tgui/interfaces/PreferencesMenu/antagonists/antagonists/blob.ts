@@ -1,4 +1,4 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 export const BLOB_MECHANICAL_DESCRIPTION = `
   The blob infests the station and destroys everything in its path, including
@@ -8,11 +8,9 @@ export const BLOB_MECHANICAL_DESCRIPTION = `
 `;
 
 const Blob: Antagonist = {
-  key: "blob",
-  name: "Blob",
-  description: [
-    BLOB_MECHANICAL_DESCRIPTION,
-  ],
+  key: 'blob',
+  name: 'Blob',
+  description: [BLOB_MECHANICAL_DESCRIPTION],
   category: Category.Midround,
 };
 

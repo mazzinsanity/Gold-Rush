@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const Changeling: Antagonist = {
-  key: "changeling",
-  name: "Changeling",
+  key: 'changeling',
+  name: 'Changeling',
   description: [
     `
       A highly intelligent alien predator that is capable of altering their

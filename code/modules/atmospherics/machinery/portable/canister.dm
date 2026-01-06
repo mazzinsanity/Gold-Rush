@@ -729,3 +729,8 @@ GLOBAL_LIST_INIT(gas_id_to_canister, init_gas_id_to_canister())
 /obj/machinery/portable_atmospherics/canister/unregister_holding()
 	valve_open = FALSE
 	return ..()
+
+#undef CAN_DEFAULT_RELEASE_PRESSURE
+#undef CANISTER_TIER_1
+#undef CANISTER_TIER_2
+#undef CANISTER_TIER_3

@@ -1,4 +1,3 @@
-
 #define CATEGORY_FRUITS_VEGGIES 1
 #define CATEGORY_MILK_EGGS 2
 #define CATEGORY_SAUCES_REAGENTS 3
@@ -284,3 +283,7 @@
 	category_index = CATEGORY_SAUCES_REAGENTS
 	item_instance = /obj/item/reagent_containers/food/condiment/quality_oil
 	cost_per_order = 120 //Extra Virgin, just like you, the reader
+
+#undef CATEGORY_FRUITS_VEGGIES
+#undef CATEGORY_MILK_EGGS
+#undef CATEGORY_SAUCES_REAGENTS

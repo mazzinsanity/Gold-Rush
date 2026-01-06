@@ -660,3 +660,6 @@ Then we space some of our heat, and think about if we should stop conducting.
 			(heat_capacity * sharer.heat_capacity / (heat_capacity + sharer.heat_capacity)) //The larger the combined capacity the less is shared
 		temperature -= heat / heat_capacity //The higher your own heat cap the less heat you get from this arrangement
 		sharer.temperature += heat / sharer.heat_capacity
+
+#undef LAST_SHARE_CHECK
+#undef PLANET_SHARE_CHECK

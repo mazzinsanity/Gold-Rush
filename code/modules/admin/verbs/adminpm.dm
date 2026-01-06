@@ -434,3 +434,4 @@
 	return stealth
 
 #undef EXTERNALREPLYCOUNT
+#undef TGS_AHELP_USAGE

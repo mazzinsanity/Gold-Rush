@@ -1,8 +1,8 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 const Abductor: Antagonist = {
-  key: "abductor",
-  name: "Abductor",
+  key: 'abductor',
+  name: 'Abductor',
   description: [
     `
       Abductors are technologically advanced alien society set on cataloging

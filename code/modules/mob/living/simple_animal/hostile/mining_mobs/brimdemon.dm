@@ -162,7 +162,7 @@
 	light_power = 3
 	light_range = 2
 
-/obj/effect/brimbeam/Initialize()
+/obj/effect/brimbeam/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSfastprocess, src)
 
@@ -230,3 +230,5 @@
 		return
 	COOLDOWN_START(src, ore_sensing_cooldown, cooldown)
 	mineral_scan_pulse(get_turf(src), range)
+
+#undef BRIMBEAM_RANGE

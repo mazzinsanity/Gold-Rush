@@ -530,3 +530,7 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	name = "doubloon"
 
 #undef ORESTACK_OVERLAYS_MAX
+
+#undef GIBTONITE_QUALITY_HIGH
+#undef GIBTONITE_QUALITY_MEDIUM
+#undef GIBTONITE_QUALITY_LOW

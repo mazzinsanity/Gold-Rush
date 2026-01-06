@@ -86,7 +86,6 @@
 
 	infestation += infestation_rate * delta_time
 	switch(infestation)
-		if(0 to WOUND_INFECTION_MODERATE)
 		if(WOUND_INFECTION_MODERATE to WOUND_INFECTION_SEVERE)
 			if(DT_PROB(15, delta_time))
 				victim.adjustToxLoss(0.2)

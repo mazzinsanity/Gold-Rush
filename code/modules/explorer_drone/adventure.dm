@@ -534,3 +534,7 @@ GLOBAL_LIST_EMPTY(explorer_drone_adventure_db_entries)
 #undef REQ_QUALITY_FIELD
 #undef REQ_VALUE_FIELD
 #undef REQ_OPERATOR_FIELD
+
+
+#undef ADVENTURE_VERSION_FIELD
+#undef CURRENT_ADVENTURE_VERSION

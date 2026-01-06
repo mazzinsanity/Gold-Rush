@@ -26,7 +26,7 @@
 			intAI.controlled_equipment = null
 			intAI.remote_control = null
 			balloon_alert(intAI, "transferred to a card")
-			balloon_alert(user, "AI transferred to card")
+			balloon_alert(user, "ai transferred to card")
 			ai = null
 
 		if(AI_TRANS_FROM_CARD) //Using an AI card to upload to the suit.
@@ -37,13 +37,13 @@
 			if(intAI.deployed_shell) //Recall AI if shelled so it can be checked for a client
 				intAI.disconnect_shell()
 			if(intAI.stat || !intAI.client)
-				balloon_alert(user, "AI unresponsive!")
+				balloon_alert(user, "ai unresponsive!")
 				return
 			balloon_alert(user, "transferring to suit...")
 			if(!do_after(user, 5 SECONDS, target = src))
 				balloon_alert(user, "interrupted!")
 				return
-			balloon_alert(user, "AI transferred to suit")
+			balloon_alert(user, "ai transferred to suit")
 			ai_enter_mod(intAI)
 			card.AI = null
 
@@ -138,5 +138,7 @@
 	ai.forceMove(card)
 	card.AI = ai
 	ai.notify_ghost_cloning("You have been recovered from the wreckage!", source = card)
-	balloon_alert(user, "AI transferred to card")
+	balloon_alert(user, "ai transferred to card")
 	stored_ai = null
+
+#undef AI_FALL_TIME

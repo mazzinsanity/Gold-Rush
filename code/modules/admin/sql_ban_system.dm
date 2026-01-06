@@ -1023,3 +1023,5 @@
 				qdel(other_player_client)
 
 #undef MAX_REASON_LENGTH
+#undef MAX_ADMINBANS_PER_ADMIN
+#undef MAX_ADMINBANS_PER_HEADMIN

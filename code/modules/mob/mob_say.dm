@@ -188,3 +188,5 @@
 		var/mob/M = loc
 		return M.get_top_level_mob()
 	return src
+
+#undef MESSAGE_MODS_LENGTH

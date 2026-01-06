@@ -369,7 +369,7 @@
 			if(!reaction)
 				say("Could not find [name] reaction!")
 				return
-			edit_recipe = reaction[1]
+			// edit_recipe = reaction[1]
 		if("updateVar")
 			var/target = params["target"]
 			edit_recipe.vars[params["type"]] = target

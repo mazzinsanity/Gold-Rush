@@ -1,4 +1,4 @@
-import { Antagonist, Category } from "../base";
+import { Antagonist, Category } from '../base';
 
 export const OPERATIVE_MECHANICAL_DESCRIPTION = `
   Retrieve the nuclear authentication disk, use it to activate the nuclear
@@ -6,8 +6,8 @@ export const OPERATIVE_MECHANICAL_DESCRIPTION = `
 `;
 
 const Operative: Antagonist = {
-  key: "operative",
-  name: "Nuclear Operative",
+  key: 'operative',
+  name: 'Nuclear Operative',
   description: [
     `
       Congratulations, agent. You have been chosen to join the Syndicate
