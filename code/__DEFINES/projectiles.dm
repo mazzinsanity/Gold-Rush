@@ -65,3 +65,8 @@
 #define CALIBER_HOOK "hook"
 /// The caliber used by the changeling tentacle mutation.
 #define CALIBER_TENTACLE "tentacle"
+
+#define CHOKE_LOOSE -15
+#define CHOKE_WIDE 0
+#define CHOKE_MODERATE 7
+#define CHOKE_TIGHT 11

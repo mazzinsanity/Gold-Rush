@@ -875,3 +875,9 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 #undef GIZMO_MARK
 #undef MIND_DEVICE_MESSAGE
 #undef MIND_DEVICE_CONTROL
+
+#undef BATON_STUN
+#undef BATON_SLEEP
+#undef BATON_CUFF
+#undef BATON_PROBE
+#undef BATON_MODES
