@@ -2885,13 +2885,11 @@
 /turf/open/floor/plating/asteroid/snow/airless,
 /area/syndicate_mothership)
 "kv" = (
-/obj/machinery/door/poddoor/shuttledock{
-	checkdir = 1;
-	name = "syndicate blast door";
-	turftype = /turf/open/floor/plating/asteroid/snow
+/obj/structure/shuttle/engine/heater{
+	resistance_flags = 3
 	},
-/turf/open/floor/plating,
-/area/syndicate_mothership/control)
+/turf/open/lava/airless,
+/area/wizard_station)
 "kw" = (
 /turf/open/floor/iron/showroomfloor,
 /area/centcom/holding)
@@ -2942,18 +2940,9 @@
 /turf/open/floor/iron/dark,
 /area/centcom/control)
 "kC" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
-/turf/open/floor/iron/grimy,
-/area/centcom/control)
+/turf/open/lava,
+/area/wizard_station)
 "kD" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /obj/item/kirbyplants{
 	icon_state = "plant-22"
 	},
@@ -2961,22 +2950,17 @@
 /area/centcom/control)
 "kE" = (
 /obj/structure/chair,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "kF" = (
-/turf/open/lava,
-/area/wizard_station)
+/obj/structure/toilet,
+/obj/machinery/door/window/survival_pod,
+/turf/open/floor/iron/showroomfloor,
+/area/centcom/holding)
 "kG" = (
 /obj/structure/chair/comfy/brown{
 	color = "#596479"
 	},
-/turf/open/floor/iron/grimy,
-/area/centcom/control)
-"kH" = (
-/obj/structure/chair,
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "kI" = (
@@ -6465,10 +6449,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership/control)
-"ud" = (
-/obj/structure/toilet,
-/turf/open/floor/iron/showroomfloor,
-/area/centcom/holding)
 "ue" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -6813,14 +6793,6 @@
 /obj/machinery/door/firedoor,
 /obj/item/folder/red,
 /obj/item/pen/red,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 1;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
-/obj/machinery/door/window,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/control)
@@ -7329,12 +7301,6 @@
 "wn" = (
 /turf/open/floor/wood,
 /area/syndicate_mothership/control)
-"wo" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-22"
-	},
-/turf/open/floor/iron/grimy,
-/area/centcom/control)
 "wp" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/bar,
@@ -9088,13 +9054,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/item/storage/fancy/donut_box,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 1;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/evac)
@@ -9828,14 +9787,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/control)
-"DH" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
-/obj/item/folder/red,
-/obj/item/pen/red,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/iron,
-/area/centcom/control)
 "DI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -10489,16 +10440,6 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/iron,
-/area/tdome/tdomeobserve)
-"Fr" = (
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	icon_state = "rightsecure";
-	name = "Thunderdome Booth";
-	req_access_txt = "109"
-	},
-/obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/tdome/tdomeobserve)
 "Fs" = (
@@ -13302,12 +13243,6 @@
 /obj/item/storage/box/handcuffs,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/evac)
-"Lr" = (
-/obj/structure/shuttle/engine/heater{
-	resistance_flags = 3
-	},
-/turf/open/lava/airless,
-/area/wizard_station)
 "Ls" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -15034,9 +14969,6 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/holding)
 "SN" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/machinery/shower{
 	pixel_y = 16
 	},
@@ -16612,10 +16544,6 @@
 /area/centcom/admin)
 "Zi" = (
 /obj/structure/toilet,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 4
-	},
-/obj/machinery/door/window/survival_pod,
 /turf/open/floor/iron/showroomfloor,
 /area/centcom/holding)
 "Zk" = (
@@ -23238,7 +23166,7 @@ qE
 qZ
 qZ
 Qh
-kF
+kC
 qE
 lI
 lI
@@ -23495,8 +23423,8 @@ qE
 EW
 qZ
 qZ
-kF
-Lr
+kC
+kv
 GX
 lI
 lI
@@ -23752,8 +23680,8 @@ Ax
 EX
 qZ
 qZ
-Gr
-Gz
+kC
+kv
 GX
 lI
 lI
@@ -33990,7 +33918,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -34247,7 +34175,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -34504,7 +34432,7 @@ hl
 hl
 hl
 ki
-kv
+ll
 kR
 lm
 ng
@@ -34761,7 +34689,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -35018,7 +34946,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -35275,7 +35203,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ll
@@ -35532,7 +35460,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -35789,7 +35717,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -36046,7 +35974,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 lm
 ng
@@ -36303,7 +36231,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -36560,7 +36488,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -36817,7 +36745,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -39420,7 +39348,7 @@ dY
 dY
 dY
 fg
-ud
+Zi
 wX
 fO
 bN
@@ -39677,7 +39605,7 @@ Qc
 dY
 Qc
 fg
-Zi
+kF
 kw
 eT
 VS
@@ -59467,7 +59395,7 @@ io
 io
 iu
 Dt
-DH
+vd
 iu
 in
 Ev
@@ -61271,7 +61199,7 @@ Mg
 io
 Eu
 EP
-Fr
+Ey
 FL
 Gn
 Ep
@@ -63564,7 +63492,7 @@ rO
 sK
 iC
 uw
-DH
+vd
 vS
 wH
 nq
@@ -66629,7 +66557,7 @@ aa
 io
 nU
 km
-kC
+kI
 io
 iu
 lT
@@ -66886,7 +66814,7 @@ aa
 io
 ka
 kl
-wo
+kD
 la
 kl
 kl
@@ -67143,7 +67071,7 @@ aa
 in
 kc
 kl
-kH
+kE
 mn
 kl
 km
