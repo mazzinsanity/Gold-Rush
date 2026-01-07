@@ -7570,9 +7570,6 @@
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 1
 	},
-/obj/machinery/light/ms13/bulb/industrial{
-	dir = 1
-	},
 /obj/structure/ms13/large_pipe/ground{
 	dir = 4
 	},
@@ -11348,7 +11345,6 @@
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 9
 	},
-/obj/machinery/ms13/terminal,
 /obj/machinery/ms13/terminal,
 /obj/structure/table/ms13/no_smooth/large/metal/desk,
 /obj/structure/noticeboard/ms13/cork,

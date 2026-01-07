@@ -6199,13 +6199,6 @@
 	},
 /turf/open/floor/ms13/tile/fancy,
 /area/ms13/town)
-"uk" = (
-/obj/structure/table/ms13/low_wall/scrap/red,
-/obj/structure/window/fulltile/ms13/glass,
-/obj/structure/window/fulltile/ms13/glass,
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/legioncamp/building)
 "ul" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
@@ -6899,11 +6892,9 @@
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
 "wu" = (
-/obj/structure/sign/poster/ms13/protect{
-	pixel_x = 12
-	},
 /obj/structure/railing/ms13/solo,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/sign/poster/ms13/protect,
 /turf/open/openspace/ms13,
 /area/ms13/town)
 "wv" = (
@@ -10146,13 +10137,6 @@
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /turf/closed/wall/ms13/siding,
 /area/ms13/town)
-"Hk" = (
-/obj/structure/window/fulltile/ms13/glass,
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/table/ms13/low_wall/concrete,
-/obj/structure/table/ms13/low_wall/concrete,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/ncr/building)
 "Hl" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/cable/node,
@@ -16777,7 +16761,7 @@ uV
 zg
 zg
 cS
-Hk
+cS
 zg
 zg
 sO
@@ -57315,7 +57299,7 @@ Yk
 Yk
 Yk
 Yk
-uk
+AP
 Mp
 tX
 Il

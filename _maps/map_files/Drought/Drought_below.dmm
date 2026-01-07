@@ -2425,9 +2425,6 @@
 /obj/machinery/light/ms13{
 	dir = 1
 	},
-/obj/machinery/light/ms13{
-	dir = 1
-	},
 /turf/open/floor/plating/ms13/ground/mountain/drought,
 /area/ms13/underground/mountain)
 "rr" = (

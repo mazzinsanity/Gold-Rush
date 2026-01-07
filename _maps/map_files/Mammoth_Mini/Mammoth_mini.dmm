@@ -4134,9 +4134,6 @@
 /obj/machinery/griddle/ms13{
 	dir = 4
 	},
-/obj/machinery/griddle/ms13{
-	dir = 4
-	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/tribal_abandoned)
 "dss" = (
@@ -18791,10 +18788,6 @@
 /area/ms13/town)
 "mzs" = (
 /obj/effect/decal/cleanable/blood/old{
-	pixel_x = 1;
-	pixel_y = 6
-	},
-/obj/effect/decal/cleanable/blood/old{
 	pixel_x = -7
 	},
 /obj/structure/ms13/skeleton,
@@ -18802,7 +18795,6 @@
 	pixel_x = 10;
 	pixel_y = 9
 	},
-/obj/machinery/light/ms13/bulb,
 /obj/machinery/light/ms13/bulb,
 /obj/effect/spawner/random/ms13/currency/mammoth/prewar/highrandom,
 /turf/open/floor/ms13/tile,
@@ -26340,11 +26332,6 @@
 /obj/effect/spawner/random/ms13/smokeable/mammoth/lowrandom,
 /turf/open/floor/ms13/concrete,
 /area/ms13/army_base/building)
-"sJB" = (
-/obj/machinery/griddle/ms13,
-/obj/machinery/griddle/ms13,
-/turf/open/floor/ms13/tile/brown,
-/area/ms13/town)
 "sJG" = (
 /obj/structure/table/ms13/no_smooth/large/metal/desk{
 	dir = 4
@@ -27799,11 +27786,6 @@
 /obj/effect/spawner/random/ms13/tools/radio,
 /obj/effect/spawner/random/ms13/clothing/hat,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/town)
-"tZH" = (
-/obj/machinery/griddle/ms13,
-/obj/machinery/griddle/ms13,
-/turf/open/floor/ms13/tile/navy,
 /area/ms13/town)
 "tZR" = (
 /obj/machinery/button/ms13{
@@ -49017,7 +48999,7 @@ ylG
 xZD
 xZD
 voI
-sJB
+umj
 oJO
 oJO
 gWg
@@ -64220,7 +64202,7 @@ ykT
 ykT
 xZD
 jIO
-tZH
+glT
 scA
 tVG
 jIO
