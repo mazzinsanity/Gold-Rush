@@ -2967,14 +2967,8 @@
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "kF" = (
-/obj/structure/table/wood,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/item/paper_bin,
-/obj/item/pen/fourcolor,
-/turf/open/floor/iron/grimy,
-/area/centcom/control)
+/turf/open/lava,
+/area/wizard_station)
 "kG" = (
 /obj/structure/chair/comfy/brown{
 	color = "#596479"
@@ -2982,19 +2976,10 @@
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "kH" = (
-/obj/structure/table/wood,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/item/clipboard,
-/obj/item/folder/blue,
-/obj/item/stamp/law,
+/obj/structure/chair,
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "kI" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/item/kirbyplants{
 	icon_state = "plant-21"
 	},
@@ -3148,12 +3133,8 @@
 /area/centcom/control)
 "lc" = (
 /obj/structure/table/wood,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/item/gavelblock,
 /obj/item/gavelhammer,
-/obj/structure/window/reinforced,
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "ld" = (
@@ -3171,11 +3152,7 @@
 /area/centcom/control)
 "le" = (
 /obj/structure/table/wood,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/item/megaphone,
-/obj/structure/window/reinforced,
 /turf/open/floor/iron/grimy,
 /area/centcom/control)
 "lf" = (
@@ -4857,13 +4834,6 @@
 "pl" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 4;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
 /obj/item/clipboard,
 /obj/item/folder/yellow,
 /obj/item/pen/red,
@@ -5134,9 +5104,6 @@
 "pQ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/item/paper_bin,
 /obj/item/pen/red,
 /obj/effect/turf_decal/bot,
@@ -5968,15 +5935,6 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/structure/window/reinforced/tinted{
-	dir = 1
-	},
-/obj/machinery/door/window{
-	dir = 8;
-	icon_state = "right";
-	name = "Tactical Toilet";
-	opacity = 1
-	},
 /turf/open/floor/iron/freezer,
 /area/syndicate_mothership/control)
 "sk" = (
@@ -6508,12 +6466,9 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership/control)
 "ud" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "nukeop_ready";
-	name = "shuttle dock"
-	},
-/turf/open/floor/plating,
-/area/syndicate_mothership/control)
+/obj/structure/toilet,
+/turf/open/floor/iron/showroomfloor,
+/area/centcom/holding)
 "ue" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -7375,15 +7330,11 @@
 /turf/open/floor/wood,
 /area/syndicate_mothership/control)
 "wo" = (
-/obj/machinery/door/window{
-	base_state = "right";
-	dir = 4;
-	icon_state = "right";
-	name = "Uplink Management Control";
-	req_access_txt = "151"
+/obj/item/kirbyplants{
+	icon_state = "plant-22"
 	},
-/turf/open/floor/wood,
-/area/syndicate_mothership/control)
+/turf/open/floor/iron/grimy,
+/area/centcom/control)
 "wp" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/bar,
@@ -9152,22 +9103,12 @@
 /obj/machinery/door/firedoor,
 /obj/item/folder/red,
 /obj/item/pen/red,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/evac)
 "BP" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 1;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/evac)
@@ -9735,9 +9676,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/item/storage/fancy/donut_box,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/control)
@@ -9745,9 +9683,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
 /obj/item/reagent_containers/food/drinks/britcup,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/control)
@@ -9898,13 +9833,6 @@
 /obj/machinery/door/firedoor,
 /obj/item/folder/red,
 /obj/item/pen/red,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 4;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/control)
@@ -9913,13 +9841,6 @@
 /obj/machinery/door/firedoor,
 /obj/item/folder/white,
 /obj/item/pen/blue,
-/obj/machinery/door/window/brigdoor{
-	base_state = "rightsecure";
-	dir = 8;
-	icon_state = "rightsecure";
-	name = "CentCom Customs";
-	req_access_txt = "109"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/control)
@@ -13382,13 +13303,11 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/evac)
 "Lr" = (
-/obj/machinery/door/window/northright{
-	dir = 4;
-	name = "Security Desk";
-	req_access_txt = "103"
+/obj/structure/shuttle/engine/heater{
+	resistance_flags = 3
 	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/centcom/evac)
+/turf/open/lava/airless,
+/area/wizard_station)
 "Ls" = (
 /obj/docking_port/stationary{
 	dir = 4;
@@ -15122,9 +15041,6 @@
 	pixel_y = 16
 	},
 /obj/structure/curtain,
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "Shower"
-	},
 /obj/item/soap/deluxe,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/iron/white,
@@ -23322,7 +23238,7 @@ qE
 qZ
 qZ
 Qh
-Gr
+kF
 qE
 lI
 lI
@@ -23579,8 +23495,8 @@ qE
 EW
 qZ
 qZ
-Gr
-Gz
+kF
+Lr
 GX
 lI
 lI
@@ -33817,7 +33733,7 @@ hl
 hl
 hl
 hl
-kv
+ll
 kR
 ll
 ng
@@ -34092,7 +34008,7 @@ ng
 ng
 ng
 ng
-ud
+ll
 ng
 ng
 ng
@@ -35380,7 +35296,7 @@ sh
 pZ
 rg
 Qd
-wo
+wn
 tZ
 ng
 kt
@@ -39504,7 +39420,7 @@ dY
 dY
 dY
 fg
-Zi
+ud
 wX
 fO
 bN
@@ -43412,7 +43328,7 @@ KV
 Lg
 Lm
 Lg
-Lr
+Lo
 Lt
 KH
 KH
@@ -59299,7 +59215,7 @@ Mf
 io
 Eu
 EM
-Fr
+Ey
 FL
 Gj
 Ep
@@ -63648,7 +63564,7 @@ rO
 sK
 iC
 uw
-vd
+DH
 vS
 wH
 nq
@@ -66970,7 +66886,7 @@ aa
 io
 ka
 kl
-kD
+wo
 la
 kl
 kl
@@ -67227,8 +67143,8 @@ aa
 in
 kc
 kl
-kE
-lb
+kH
+mn
 kl
 km
 mn
@@ -67484,7 +67400,7 @@ aa
 io
 kd
 kl
-kF
+kX
 lc
 kl
 km
@@ -67998,7 +67914,7 @@ aa
 io
 kf
 kl
-kH
+kY
 le
 kl
 km
