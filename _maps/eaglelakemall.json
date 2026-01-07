@@ -2,14 +2,8 @@
 	"version": 1,
 	"map_name": "Eagle Lakes Mall",
 	"map_path": "map_files/EagleLakes",
-	"map_file": [
-		"EagleLakes_1.dmm",
-		"EagleLakes_2.dmm",
-		"EagleLakes_3.dmm",
-		"EagleLakes_4.dmm",
-		"EagleLakes_5.dmm",
-		"EagleLakes_6.dmm"
-	],
+	"map_file": "EagleLakesWhole.dmm",
+	"give_players_hooks": 1,
 	"shuttles": {
 		"cargo": "cargo_delta"
 	},

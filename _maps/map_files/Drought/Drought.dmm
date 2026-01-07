@@ -8192,12 +8192,6 @@
 /obj/structure/chair/ms13/metal,
 /turf/open/floor/plating/ms13/ground/mountain/drought,
 /area/ms13/town)
-"hIf" = (
-/obj/structure/table/ms13/low_wall/siding,
-/obj/structure/window/fulltile/ms13/glass,
-/obj/structure/window/fulltile/ms13/glass,
-/turf/open/floor/wood/ms13/common,
-/area/ms13/town)
 "hIH" = (
 /obj/structure/ms13/ncrflag,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -11746,9 +11740,6 @@
 /area/ms13/bos)
 "ljK" = (
 /obj/structure/closet/crate/ms13/woodcrate/compact,
-/obj/structure/closet/crate/ms13/cash_register{
-	pixel_y = 10
-	},
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/desert)
 "ljV" = (
@@ -13842,11 +13833,6 @@
 /mob/living/simple_animal/hostile/ms13/radscorpion/desert,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
-"niC" = (
-/obj/machinery/ms13/agriculture/soil,
-/obj/machinery/ms13/agriculture/soil,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/legioncamp)
 "nkC" = (
 /obj/effect/spawner/random/ms13/clothing/shoe,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -16050,15 +16036,6 @@
 /obj/structure/chair/office/ms13/green,
 /turf/open/floor/wood/ms13/carpet,
 /area/ms13/town)
-"pin" = (
-/obj/structure/chair/ms13/metal/red{
-	dir = 4
-	},
-/obj/structure/chair/ms13/metal/red{
-	dir = 4
-	},
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/legioncamp/building)
 "pjb" = (
 /obj/structure/chair/office/ms13/blue/broken{
 	dir = 1
@@ -19086,7 +19063,6 @@
 /area/ms13/town)
 "rTB" = (
 /obj/machinery/ms13/agriculture/soil,
-/obj/machinery/ms13/agriculture/soil,
 /obj/item/reagent_containers/glass/bucket/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp)
@@ -20309,7 +20285,7 @@
 /area/ms13/desert)
 "thA" = (
 /obj/structure/sign/poster/ms13/pinup_3{
-	pixel_x = -13
+	pixel_x = -10
 	},
 /obj/structure/ms13/foundation/mosaic/variantfour{
 	dir = 1
@@ -22509,7 +22485,6 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/ncr/building)
 "voq" = (
-/obj/structure/window/fulltile/ms13/glass,
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/concrete,
 /turf/open/floor/ms13/concrete,
@@ -52680,7 +52655,7 @@ cXR
 dfq
 cXR
 pAM
-hIf
+pAM
 cXR
 cXR
 iDe
@@ -59705,7 +59680,7 @@ blm
 blm
 blm
 eWH
-niC
+eWH
 eWH
 ppG
 ttx
@@ -63958,7 +63933,7 @@ iSs
 vAR
 vAR
 mwY
-pin
+mwY
 mwY
 ssy
 vAR
