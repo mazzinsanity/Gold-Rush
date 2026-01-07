@@ -11248,7 +11248,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/low_wall/brick/alt,
 /obj/structure/window/fulltile/ms13/glass,
-/turf/closed/wall/ms13/brick/alt,
+/turf/open/space/basic,
 /area/ms13/town)
 "gwz" = (
 /obj/structure/railing/ms13/solo,
@@ -17127,12 +17127,6 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/town)
-"omx" = (
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/table/ms13/low_wall/brick/alt,
-/obj/structure/window/fulltile/ms13/glass,
-/turf/open/space/basic,
 /area/ms13/town)
 "onb" = (
 /obj/machinery/door/unpowered/ms13/wood/green{
@@ -29910,7 +29904,7 @@ aLH
 aLH
 aLH
 aLH
-omx
+gvQ
 wqL
 apW
 iKF
