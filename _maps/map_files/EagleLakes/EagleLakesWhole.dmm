@@ -820,12 +820,6 @@
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/ms13/mall/hardware)
-"hi" = (
-/obj/structure/table/ms13/low_wall/brick/alt,
-/obj/structure/table/ms13/low_wall/brick/alt,
-/obj/structure/window/fulltile/ms13/glass,
-/turf/open/floor/wood/ms13/mosaic,
-/area/ms13/mall/storage)
 "hj" = (
 /turf/closed/wall/ms13/brick/alt,
 /area/ms13/mall/restroom)
@@ -2195,10 +2189,7 @@
 /area/ms13/mall/clothing)
 "rs" = (
 /obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable,
-/obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable{
-	pixel_x = -15;
-	pixel_y = 18
-	},
+/turf/open/space/basic,
 /area/ms13/mall/storage)
 "rv" = (
 /obj/structure/table/ms13/no_smooth/counter/wood/bend{
@@ -3026,14 +3017,6 @@
 /obj/structure/table/ms13/no_smooth/wood/low,
 /turf/open/floor/wood/ms13/carpet/blue,
 /area/ms13/mall/clothing)
-"xH" = (
-/obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable,
-/obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable{
-	pixel_x = -16;
-	pixel_y = 18
-	},
-/turf/open/floor/ms13/metal,
-/area/ms13/mall/storage)
 "xL" = (
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/ms13/mall/office)
@@ -78473,7 +78456,7 @@ ee
 Bf
 Pe
 Bf
-xH
+dn
 iP
 GX
 GX
@@ -140875,7 +140858,7 @@ zi
 zi
 zi
 iP
-hi
+zi
 zi
 zi
 zi

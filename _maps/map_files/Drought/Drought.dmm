@@ -6570,6 +6570,13 @@
 /obj/item/mop/ms13,
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
+"gcF" = (
+/obj/effect/turf_decal/ms13/covering/wallpaper/red,
+/obj/structure/sign/poster/ms13/pinup_3{
+	pixel_x = -10
+	},
+/turf/closed/wall/ms13/siding,
+/area/ms13/town)
 "gdd" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 1
@@ -20284,9 +20291,6 @@
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/desert)
 "thA" = (
-/obj/structure/sign/poster/ms13/pinup_3{
-	pixel_x = -10
-	},
 /obj/structure/ms13/foundation/mosaic/variantfour{
 	dir = 1
 	},
@@ -47715,7 +47719,7 @@ uAb
 uAb
 uAb
 cXR
-lXA
+gcF
 tJm
 cXR
 cXR

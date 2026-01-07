@@ -2576,7 +2576,6 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/legioncamp/building)
 "ue" = (
-,
 /turf/open/floor/iron/stairs{
 	dir = 4
 	},
