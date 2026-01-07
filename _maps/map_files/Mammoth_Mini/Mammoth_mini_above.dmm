@@ -13647,9 +13647,6 @@
 /obj/machinery/griddle/ms13{
 	dir = 4
 	},
-/obj/machinery/griddle/ms13{
-	dir = 4
-	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
 "jPw" = (
@@ -17131,6 +17128,12 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
+"omx" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/table/ms13/low_wall/brick/alt,
+/obj/structure/window/fulltile/ms13/glass,
+/turf/open/space/basic,
+/area/ms13/town)
 "onb" = (
 /obj/machinery/door/unpowered/ms13/wood/green{
 	dir = 1
@@ -19889,7 +19892,6 @@
 /area/ms13/town)
 "rTG" = (
 /obj/structure/ms13/chem_set,
-/obj/structure/table/ms13/metal/alt,
 /obj/structure/table/ms13/metal/alt,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/large/white,
@@ -29908,7 +29910,7 @@ aLH
 aLH
 aLH
 aLH
-gvQ
+omx
 wqL
 apW
 iKF
