@@ -6572,9 +6572,7 @@
 /area/ms13/town)
 "gcF" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/red,
-/obj/structure/sign/poster/ms13/pinup_3{
-	pixel_x = -10
-	},
+/obj/structure/sign/poster/ms13/pinup_3,
 /turf/closed/wall/ms13/siding,
 /area/ms13/town)
 "gdd" = (

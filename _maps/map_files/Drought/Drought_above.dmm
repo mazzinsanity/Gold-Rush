@@ -8388,9 +8388,6 @@
 "Bk" = (
 /obj/item/ammo_casing/ms13/spent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/sign/poster/ms13/protect{
-	pixel_x = 8
-	},
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/town)
 "Bl" = (
@@ -9641,9 +9638,6 @@
 /area/ms13/goldman/building)
 "Fx" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/sign/poster/ms13/protect{
-	pixel_x = 8
-	},
 /turf/open/floor/ms13/tile/full/black,
 /area/ms13/town)
 "Fy" = (
