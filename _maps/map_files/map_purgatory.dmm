@@ -812,8 +812,6 @@
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
-"gY" = (
-)
 "ha" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 8
@@ -1507,6 +1505,12 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/industrial,
 /area/space)
+"mk" = (
+/obj/structure/sign/poster/ms13/pinup_3{
+	pixel_x = -10
+	},
+/turf/closed/indestructible/rock/ms13/drought,
+/area/ms13/underground/mountain)
 "mm" = (
 /turf/open/floor/wood/ms13/wide,
 /area/space)
@@ -3811,6 +3815,8 @@
 /obj/effect/spawner/random/ms13/clothing/under,
 /obj/effect/spawner/random/ms13/clothing/shoe,
 /turf/open/floor/ms13/concrete)
+"Et" = (
+)
 "Ev" = (
 /obj/structure/table/ms13/low_wall/reinforced/metal,
 /obj/structure/window/fulltile/ms13/glass,
@@ -6493,7 +6499,7 @@ Xd
 Xd
 Xd
 Xd
-gY
+Et
 "}
 (2,1,1) = {"
 VZ
@@ -9507,7 +9513,7 @@ VZ
 VZ
 VZ
 Xd
-Xd
+mk
 Xd
 Xd
 Xd
