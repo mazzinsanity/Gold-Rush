@@ -10859,14 +10859,6 @@
 	},
 /turf/open/floor/iron,
 /area/tdome/tdomeobserve)
-"Gr" = (
-/obj/structure/window/reinforced{
-	color = "#008000";
-	dir = 1;
-	resistance_flags = 3
-	},
-/turf/open/lava,
-/area/wizard_station)
 "Gs" = (
 /obj/machinery/power/smes/magical,
 /obj/effect/turf_decal/stripes/line,
@@ -10909,17 +10901,6 @@
 /obj/structure/sign/nanotrasen,
 /turf/closed/indestructible/riveted,
 /area/tdome/tdomeobserve)
-"Gz" = (
-/obj/structure/shuttle/engine/heater{
-	resistance_flags = 3
-	},
-/obj/structure/window/reinforced{
-	color = "#008000";
-	dir = 1;
-	resistance_flags = 3
-	},
-/turf/open/lava/airless,
-/area/wizard_station)
 "GA" = (
 /obj/machinery/light/floor{
 	pixel_x = -4;
@@ -23937,8 +23918,8 @@ qE
 EW
 qZ
 qZ
-Gr
-Gz
+kC
+kv
 GX
 lI
 lI
@@ -24194,7 +24175,7 @@ qE
 EY
 qZ
 Qh
-Gr
+kC
 qE
 lI
 lI
