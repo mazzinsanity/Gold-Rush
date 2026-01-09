@@ -5,16 +5,6 @@
 	icon = 'mojave/icons/objects/pa_items.dmi'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	drop_sound = 'mojave/sound/ms13effects/impact/metal/metal_hollow_2.wav'
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 100, ACID = 0, WOUND = 15)
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = 0, \
-					CRUSHING = 0, \
-					CUTTING = 0, \
-					PIERCING = 0, \
-					IMPALING = 0, \
-					LASER = 0, \
-					ENERGY = 0, \
-					FIRE = 0)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	uses_integrity = TRUE
 	max_integrity = 100
