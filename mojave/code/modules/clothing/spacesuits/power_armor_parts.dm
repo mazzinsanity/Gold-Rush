@@ -188,7 +188,7 @@
 
 //T-51 SET
 /obj/item/ms13/power_armor/leg/left/t51
-	name = "T-51 Power Armor left leg"
+	name = "\improper T-51 power armor left leg"
 	icon_state = "t51_leftleg"
 	icon_state_pa = "t51_leftleg"
 	max_integrity = 250
@@ -196,7 +196,7 @@
 	chance = 35
 
 /obj/item/ms13/power_armor/leg/right/t51
-	name = "T-51 Power Armor right leg"
+	name = "\improper T-51 power armor right leg"
 	icon_state = "t51_rightleg"
 	icon_state_pa = "t51_rightleg"
 	max_integrity = 250
@@ -204,15 +204,15 @@
 	chance = 35
 
 /obj/item/ms13/power_armor/chest/t51
-	name = "T-51 Power Armor chest"
+	name = "\improper T-51 power prmor chest"
 	icon_state = "t51_chest"
 	icon_state_pa = "t51_chest"
-	max_integrity = 480
+	max_integrity = 350
 	armour_penetration_threshold = 50
 	chance = 25
 
 /obj/item/ms13/power_armor/arm/left/t51
-	name = "T-51 Power Armor left arm"
+	name = "\improper T-51 power armor left arm"
 	icon_state = "t51_lefthand"
 	icon_state_pa = "t51_lefthand"
 	max_integrity = 250
@@ -220,7 +220,7 @@
 	chance = 35
 
 /obj/item/ms13/power_armor/arm/right/t51
-	name = "T-51 Power Armor right arm"
+	name = "\improper T-51 power armor right arm"
 	icon_state = "t51_righthand"
 	icon_state_pa = "t51_righthand"
 	max_integrity = 250
@@ -228,54 +228,54 @@
 	chance = 35
 
 /obj/item/ms13/power_armor/head/t51
-	name = "T-51 Power Armor helmet"
+	name = "\improper T-51 power armor helmet"
 	icon_state = "t51_helmet"
 	type_helmet = /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/t51
 	chance = 25
 
 //T-45
 /obj/item/ms13/power_armor/leg/left/t45
-	name = "T-45 Power Armor left leg"
+	name = "\improper T-45 power armor left leg"
 	icon_state = "t45_leftleg"
 	icon_state_pa = "t45_leftleg"
-	max_integrity = 175
+	max_integrity = 200
 	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/leg/right/t45
-	name = "T-45 Power Armor right leg"
+	name = "\improper T-45 power armor right leg"
 	icon_state = "t45_rightleg"
 	icon_state_pa = "t45_rightleg"
-	max_integrity = 175
+	max_integrity = 200
 	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/chest/t45
-	name = "T-45 Power Armor chest"
+	name = "\improper T-45 power armor chest"
 	icon_state = "t45_chest"
 	icon_state_pa = "t45_chest"
-	max_integrity = 360
+	max_integrity = 300
 	armour_penetration_threshold = 50
 	chance = 75
 
 /obj/item/ms13/power_armor/arm/left/t45
-	name = "T-45 Power Armor left arm"
+	name = "\improper T-45 power armor left arm"
 	icon_state = "t45_lefthand"
 	icon_state_pa = "t45_lefthand"
-	max_integrity = 175
+	max_integrity = 200
 	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/arm/right/t45
-	name = "T-45 Power Armor right arm"
+	name = "\improper T-45 power armor right arm"
 	icon_state = "t45_righthand"
 	icon_state_pa = "t45_righthand"
-	max_integrity = 175
+	max_integrity = 200
 	armour_penetration_threshold = 50
 	chance = 65
 
 /obj/item/ms13/power_armor/head/t45
-	name = "T-45 Power Armor helmet"
+	name = "\improper T-45 power armor helmet"
 	icon_state = "t45_helmet"
 	type_helmet = /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/t45
 	chance = 75

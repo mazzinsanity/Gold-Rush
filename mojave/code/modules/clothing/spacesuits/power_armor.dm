@@ -7,7 +7,7 @@
 	icon_state = "null"
 	basestate = "helmet"
 	strip_delay = 15 SECONDS
-	max_integrity = 500
+	max_integrity = 250
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	worn_x_dimension = 32
@@ -107,13 +107,13 @@
         ui_interact(user)
 
 /obj/item/radio/headset/ms13/powerarmor/t45
-    name = "integrated T-45D power armor radio"
-    desc = "A mediocre quality radio internally attached to a T-45D power armor helmet."
+    name = "integrated T-45 power armor radio"
+    desc = "A mediocre quality radio internally attached to a T-45 power armor helmet."
     radio_broadcast = RADIOSTATIC_MEDIUM
 
 /obj/item/radio/headset/ms13/powerarmor/t51
-    name = "integrated T-51B power armor radio"
-    desc = "A high quality radio internally attached to a T-51B power armor helmet."
+    name = "integrated T-51 power armor radio"
+    desc = "A high quality radio internally attached to a T-51 power armor helmet."
     radio_broadcast = RADIOSTATIC_LIGHT
 
 /obj/item/radio/headset/ms13/powerarmor/advanced
@@ -127,8 +127,8 @@
 
 //Frame power armor based off of the hardsuit
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor
-	name = "Power Armor"
-	desc = "A power armour frame. It is capable of accepting any armor module with a bit of elbow grease."
+	name = "power armor"
+	desc = "A power armor frame. It is capable of accepting any armor module with a bit of elbow grease."
 	icon = 'mojave/icons/mob/large-worn-icons/32x48/armor.dmi'
 	worn_icon = 'mojave/icons/mob/large-worn-icons/32x48/armor.dmi'
 	icon_state = "frame"
@@ -141,14 +141,14 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS2_EDGE, \
-					CRUSHING = CLASS2_CRUSH, \
-					CUTTING = CLASS2_CUT, \
-					PIERCING = CLASS2_PIERCE, \
-					IMPALING = CLASS2_STAB, \
-					LASER = CLASS2_LASER, \
-					ENERGY = CLASS1_PLASMA, \
-					FIRE = CLASS2_FIRE)
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS3_CRUSH, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
+                FIRE = CLASS3_FIRE)
 
 	var/list/module_armor = list(
 		BODY_ZONE_HEAD = null,
@@ -622,14 +622,14 @@
 
 // T-51 PA set //
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/t51
-	name = "T-51B Power Armor Helmet"
+	name = "\improper T-51 power armor helmet"
 	desc = "A more advanced helmet for a more advanced piece of power armor. Comes with a high quality headlamp and integrated radio."
 	icon_state = "helmet0-t51"
 	hardsuit_type = "t51" //Determines used sprites: hardsuit[on]-[type]
 	light_range = 4.20
 	light_power = 0.9
 	light_color = "#d1c58d"
-	max_integrity = 340
+	max_integrity = 300
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t51
 	armour_penetration_threshold = 50
 
@@ -649,14 +649,14 @@
 
 // T-45 PA set //
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/t45
-	name = "T-45D Power Armor Helmet"
+	name = "\improper T-45 power armor helmet"
 	desc = "The helmet to a T-45 powered combat armor suit. Stare your foe down as they can only scrape your paint. Comes with a decent quality headlamp and integrated radio."
 	icon_state = "helmet0-t45"
 	hardsuit_type = "t45"
 	light_range = 4
 	light_power = 0.8
 	light_color = "#dabc7c"
-	max_integrity = 240
+	max_integrity = 250
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t45
 	armour_penetration_threshold = 50
 
@@ -674,6 +674,7 @@
 	random_type()
 	. = ..()
 
+// APA UNUSED
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/advanced
 	name = "Advanced Power Armor Helmet"
 	desc = "A more advanced helmet for a more advanced piece of power armor. Comes with a high quality headlamp and integrated radio."
