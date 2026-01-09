@@ -7035,7 +7035,7 @@
 /area/ms13/carlin)
 "wR" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/ms13/wall_decor/flag/rangers,
+/obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "wS" = (
@@ -8859,7 +8859,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/ms13/wall_decor/flag/rangers,
+/obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "CL" = (

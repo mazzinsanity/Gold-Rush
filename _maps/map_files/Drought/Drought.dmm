@@ -21711,7 +21711,7 @@
 /turf/closed/wall/ms13/scrap,
 /area/ms13/bos/building)
 "uBO" = (
-/obj/structure/ms13/wall_decor/flag/rangers,
+/obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "uBR" = (
