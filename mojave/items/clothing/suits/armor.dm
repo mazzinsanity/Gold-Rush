@@ -646,7 +646,7 @@
 /obj/item/clothing/suit/armor/ms13/eliteriot/ranger/ncr
 	name = "\improper NCR veteran ranger armor"
 	desc = "A set of NCR Veteran Ranger armor. Heavy kevlar padding in a duster, with a metal breastplate in the front. Built to last through the worst."
-	slowdown = 0.3
+	slowdown = 0.2
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
