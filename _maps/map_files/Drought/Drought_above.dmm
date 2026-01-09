@@ -1476,7 +1476,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "eW" = (
@@ -3038,13 +3038,6 @@
 /obj/structure/closet/ms13/fridge,
 /turf/open/openspace/ms13,
 /area/ms13/town)
-"jW" = (
-/obj/structure/bed/ms13/bedframe/wire,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/legion_veteran_decanus,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/legioncamp/building)
 "jX" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
@@ -3359,13 +3352,6 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
-"lh" = (
-/obj/structure/bed/ms13/bedframe/wire,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/legion_veteran_legionary,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/legioncamp/building)
 "li" = (
 /obj/structure/ms13/trash/papers/three{
 	dir = 4
@@ -5714,6 +5700,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
+"sA" = (
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/old,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/town_enforcer,
+/turf/open/floor/ms13/concrete,
+/area/ms13/carlin/interior)
 "sB" = (
 /obj/item/ms13_small_flag/usa,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -10234,6 +10227,7 @@
 "HB" = (
 /obj/structure/bed/ms13/mattress/stale,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/carlin_sheriff,
 /turf/open/floor/ms13/concrete,
 /area/ms13/carlin/interior)
 "HC" = (
@@ -11192,9 +11186,9 @@
 /area/ms13/carlin/interior)
 "KJ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/town_enforcer,
-/turf/open/floor/ms13/concrete,
-/area/ms13/carlin/interior)
+/obj/effect/landmark/start/ms13/legion_smith,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "KK" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -11663,6 +11657,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
+"Mk" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "Ml" = (
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -12336,6 +12337,13 @@
 	},
 /obj/effect/turf_decal/ms13/showerdrains/small,
 /turf/open/floor/ms13/tile/brown,
+/area/ms13/legioncamp/building)
+"OF" = (
+/obj/structure/bed/ms13/bedframe/wire,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/legion_veteran_legionary,
+/turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "OG" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk{
@@ -13159,6 +13167,13 @@
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/roof,
 /area/ms13/desert)
+"Rx" = (
+/obj/structure/bed/ms13/bedframe/wire,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/legion_veteran_decanus,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "Rz" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/ms13/terminal{
@@ -13481,11 +13496,6 @@
 	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
-"SG" = (
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/legion_smith,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/legioncamp/building)
 "SH" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 4
@@ -15280,13 +15290,6 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/carlin/interior)
-"Zk" = (
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/bed/ms13/bedframe/cot,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/sergeant,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/ncr/building)
 "Zm" = (
 /obj/machinery/recorder,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -18799,7 +18802,7 @@ ls
 Wr
 WS
 rk
-Zk
+eV
 vO
 zg
 uV
@@ -22246,7 +22249,7 @@ uV
 uV
 uV
 oH
-eV
+Mk
 zZ
 Tu
 Js
@@ -28959,13 +28962,13 @@ sa
 sa
 eM
 aZ
-rc
+sA
 Vc
 Vc
 pe
 TI
 Vc
-KJ
+Vc
 Dv
 Vc
 Vc
@@ -56513,7 +56516,7 @@ gX
 gX
 gX
 cj
-lh
+OF
 Qd
 Ts
 BB
@@ -57305,7 +57308,7 @@ MG
 Yk
 VS
 sJ
-SG
+KJ
 tX
 tX
 tX
@@ -57328,7 +57331,7 @@ Yk
 AP
 Mp
 tX
-jW
+Rx
 VS
 MG
 MG
