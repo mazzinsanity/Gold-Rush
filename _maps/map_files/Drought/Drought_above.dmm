@@ -1476,7 +1476,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "eW" = (
@@ -2675,6 +2675,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
+"iH" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "iI" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 8
@@ -4026,6 +4033,7 @@
 /obj/structure/ms13/wall_decor/clock,
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/head_scribe,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "ns" = (
@@ -4999,6 +5007,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/head_knight,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "qr" = (
@@ -11552,13 +11561,6 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
-"LW" = (
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/bed/ms13/bedframe/cot,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/sergeant,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/ncr/building)
 "LX" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -18784,7 +18786,7 @@ ls
 Wr
 WS
 rk
-LW
+eV
 vO
 zg
 uV
@@ -22231,7 +22233,7 @@ uV
 uV
 uV
 oH
-eV
+iH
 zZ
 Tu
 Js
