@@ -576,6 +576,12 @@
 	},
 /turf/open/floor/ms13/tile/large/checkered,
 /area/ms13/town)
+"aCT" = (
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/legion_prime_decanus,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "aEj" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/machinery/light/ms13/bulb{
@@ -672,10 +678,6 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/ncr/building)
-"aGV" = (
-/obj/effect/landmark/start/ms13/medic,
-/turf/open/floor/ms13/tile/full/white,
 /area/ms13/ncr/building)
 "aHj" = (
 /obj/structure/railing/ms13/wood/ending,
@@ -1680,6 +1682,7 @@
 /area/ms13/town)
 "bCn" = (
 /obj/structure/bed/ms13/mattress/yellowed,
+/obj/effect/landmark/start/ms13/legion_camp_auxilia,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp/building)
 "bCv" = (
@@ -2534,6 +2537,7 @@
 /area/ms13/carlin/interior)
 "cmZ" = (
 /obj/structure/chair/ms13/metal/folding,
+/obj/effect/landmark/start/ms13/legion_explorer,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "cnc" = (
@@ -3258,6 +3262,10 @@
 	},
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/carlin)
+"cVJ" = (
+/obj/effect/landmark/start/ms13/rear_echelon,
+/turf/open/floor/plating/ms13/ground/desertalt,
+/area/ms13/ncr)
 "cWl" = (
 /obj/structure/ms13/tank/chemical/huge,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -5354,6 +5362,7 @@
 "eQD" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/sleepingbag/red,
+/obj/effect/landmark/start/ms13/legion_recruit_legionary,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "eQU" = (
@@ -6594,12 +6603,6 @@
 	},
 /turf/open/floor/ms13/concrete,
 /area/ms13/desert)
-"gdA" = (
-/obj/structure/bed/ms13/bedframe/cot,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/scribe,
-/turf/open/floor/ms13/metal,
-/area/ms13/bos/building)
 "gdL" = (
 /obj/structure/sink/ms13{
 	pixel_y = 14
@@ -6919,6 +6922,7 @@
 /area/ms13/factory)
 "gpo" = (
 /obj/structure/bed/ms13/mattress/stale,
+/obj/effect/landmark/start/ms13/legion_camp_auxilia,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp/building)
 "gpx" = (
@@ -8380,6 +8384,7 @@
 /area/ms13/desert)
 "hQv" = (
 /obj/structure/bed/ms13/mattress/stained,
+/obj/effect/landmark/start/ms13/legion_camp_auxilia,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp/building)
 "hQE" = (
@@ -9800,12 +9805,6 @@
 /obj/structure/table/ms13/crafting/workbench,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/factory)
-"jkV" = (
-/obj/structure/bed/ms13/bedframe/cot,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/knight,
-/turf/open/floor/ms13/metal,
-/area/ms13/bos/building)
 "jlg" = (
 /obj/structure/ms13/fence/corner/wire{
 	dir = 8
@@ -10031,6 +10030,7 @@
 /obj/structure/ms13/wall_decor/flag/legion,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/legion_recruit_decanus,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "jyQ" = (
@@ -10385,6 +10385,7 @@
 "jPx" = (
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/legion_prime_legionary,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "jPQ" = (
@@ -11757,6 +11758,10 @@
 	},
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/desert)
+"liK" = (
+/obj/effect/landmark/start/ms13/base_staff,
+/turf/open/floor/ms13/tile/large/white,
+/area/ms13/bos/building)
 "liO" = (
 /obj/structure/kitchenspike/ms13,
 /obj/effect/decal/cleanable/blood,
@@ -15088,6 +15093,12 @@
 /obj/effect/spawner/random/ms13/currency/drought/lowrandom,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
+"otf" = (
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/knight,
+/turf/open/floor/ms13/metal,
+/area/ms13/bos/building)
 "otK" = (
 /obj/structure/sink/ms13{
 	dir = 4
@@ -16267,6 +16278,10 @@
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
 /area/ms13/desert)
+"puT" = (
+/obj/effect/landmark/start/ms13/legion_medicus,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "puZ" = (
 /obj/structure/ms13/barrel/quadruple/red,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -16904,13 +16919,6 @@
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/wood/ms13/common,
 /area/ms13/town)
-"pXV" = (
-/obj/structure/ms13/storage/vent,
-/obj/structure/bed/ms13/bedframe/cot,
-/obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/scribe,
-/turf/open/floor/ms13/metal,
-/area/ms13/bos/building)
 "pYn" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -17458,10 +17466,6 @@
 	dir = 1
 	},
 /area/ms13/town)
-"qtH" = (
-/obj/effect/landmark/start/ms13/base_staff,
-/turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building)
 "qtW" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -18517,6 +18521,10 @@
 	},
 /turf/open/floor/wood/ms13/common,
 /area/ms13/town)
+"rsJ" = (
+/obj/effect/landmark/start/ms13/rear_echelon,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "rsK" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -18672,6 +18680,10 @@
 /obj/structure/ms13/lamp/makeshift,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
+"rzW" = (
+/obj/effect/landmark/start/ms13/medic,
+/turf/open/floor/ms13/tile/full/white,
+/area/ms13/ncr/building)
 "rAj" = (
 /obj/structure/ms13/toilet{
 	dir = 4
@@ -19393,6 +19405,12 @@
 	},
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
+"slJ" = (
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/initiate,
+/turf/open/floor/ms13/metal,
+/area/ms13/bos/building)
 "slT" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
 	id = "carlin-craft-garage"
@@ -19722,6 +19740,7 @@
 "sAf" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/sleepingbag/green,
+/obj/effect/landmark/start/ms13/legion_recruit_legionary,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "sAR" = (
@@ -19916,10 +19935,6 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid/pre_open,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
-"sLw" = (
-/obj/effect/landmark/start/ms13/rear_echelon,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/ncr)
 "sMe" = (
 /obj/structure/closet/ms13/metal,
 /obj/structure/ms13/storage/vent,
@@ -21387,6 +21402,13 @@
 	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
+"ukg" = (
+/obj/structure/ms13/storage/vent,
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/scribe,
+/turf/open/floor/ms13/metal,
+/area/ms13/bos/building)
 "ukw" = (
 /obj/structure/ms13/fence/wire,
 /turf/open/floor/ms13/concrete,
@@ -23658,10 +23680,6 @@
 /obj/effect/turf_decal/ms13/road/horizontalcrossing,
 /turf/open/floor/plating/ms13/ground/road,
 /area/ms13/desert)
-"wCp" = (
-/obj/effect/landmark/start/ms13/rear_echelon,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/ncr/building)
 "wCu" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 1
@@ -23947,7 +23965,7 @@
 "wTu" = (
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
-/obj/effect/landmark/start/ms13/initiate,
+/obj/effect/landmark/start/ms13/scribe,
 /turf/open/floor/ms13/metal,
 /area/ms13/bos/building)
 "wTO" = (
@@ -24494,6 +24512,7 @@
 "xxm" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/mattress/old,
+/obj/effect/landmark/start/ms13/legion_recruit_legionary,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "xxC" = (
@@ -29507,7 +29526,7 @@ qpO
 syw
 jeA
 jeA
-sLw
+cVJ
 gvg
 sFz
 gTz
@@ -29911,7 +29930,7 @@ qpO
 rDj
 jeA
 jeA
-sLw
+cVJ
 gvg
 sFz
 gTz
@@ -32317,7 +32336,7 @@ blm
 blm
 lRa
 dnB
-wCp
+rsJ
 qcu
 lRa
 blm
@@ -32532,7 +32551,7 @@ ipH
 cWN
 dWL
 cda
-aGV
+rzW
 cda
 cda
 icM
@@ -61748,11 +61767,11 @@ vAR
 vAR
 mUT
 vAR
-vAR
+puT
 vAR
 mUT
 vAR
-vAR
+puT
 vAR
 onG
 hnZ
@@ -64237,7 +64256,7 @@ nzQ
 aQQ
 rEm
 aQQ
-qtH
+liK
 lEx
 rEm
 oVV
@@ -65843,13 +65862,13 @@ blm
 rEm
 pOe
 oKD
-jkV
+otf
 jgl
-jkV
+otf
 oKD
-wTu
+slJ
 jgl
-wTu
+slJ
 oKD
 rEm
 ljJ
@@ -66212,7 +66231,7 @@ jPx
 onG
 jyd
 bkd
-jPx
+aCT
 iSs
 blm
 blm
@@ -66851,15 +66870,15 @@ blm
 blm
 blm
 rEm
-pXV
-oKD
-gdA
-uEk
-gdA
+ukg
 oKD
 wTu
 uEk
 wTu
+oKD
+slJ
+uEk
+slJ
 oKD
 rEm
 ljJ
