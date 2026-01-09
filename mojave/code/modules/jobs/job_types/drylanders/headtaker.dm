@@ -1,7 +1,7 @@
 /datum/job/ms13/drylander/headtaker
 	title = "Drylander Headtaker"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Chieftain"
 	description = "You are an elite and hardened veteran of the Drylander tribe. Skilled in sniping, scouting, and covert operations. Carry out the will of the chieftain using your expertise."
 

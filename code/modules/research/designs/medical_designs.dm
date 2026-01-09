@@ -359,7 +359,7 @@
 	category = list("Implants", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
-/datum/design/cyberimp_medical_hud
+/datum/design/cyberimedical_hud
 	name = "Medical HUD Implant"
 	desc = "These cybernetic eyes will display a medical HUD over everything you see. Wiggle eyes to control."
 	id = "ci-medhud"

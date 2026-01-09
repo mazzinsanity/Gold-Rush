@@ -6,7 +6,6 @@
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	body_parts_covered = CHEST|ARMS|LEGS|GROIN
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
-	max_integrity = 325
 	///Icon file for left inhand overlays
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
@@ -50,7 +49,6 @@
 	desc = "A vest made of tanned leather."
 	icon_state = "leather_vest"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -97,7 +95,6 @@
 	desc = "A typical leather jacket. Nothing too special about it."
 	icon_state = "leatherjacket"
 	inhand_icon_state = "leatherjacket"
-	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -114,7 +111,6 @@
 	desc = "A blue padded coat adorned with war medals. Common attire for mercenaries."
 	icon_state = "veteran_coat"
 	inhand_icon_state = "leatherjacket"
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -135,7 +131,6 @@
 	name = "reinforced veteran coat"
 	desc = "A blue padded coat with additional leather and crude metal reinforcements. Common attire for hardened, dangerous mercenaries."
 	icon_state = "reinf_veteran_coat"
-	body_parts_covered = CHEST|GROIN|ARMS
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -146,8 +141,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -157,7 +150,6 @@
 	desc = "An atypical leather jacket reinforced with extra leather padding to make it into an actual makeshift suit of armor."
 	icon_state = "reinfljacket"
 	inhand_icon_state = "reinforcedjacket"
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -168,8 +160,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -180,7 +170,6 @@
 	name = "DO NOT USE ME - base type winter jacket"
 	desc = "If you are seeing this, someone fucked up."
 	inhand_icon_state = "winter"
-	body_parts_covered = CHEST|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -211,8 +200,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -231,8 +218,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
@@ -256,8 +241,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -276,8 +259,6 @@
                 LASER = CLASS3_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
@@ -301,8 +282,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -321,8 +300,6 @@
                 LASER = CLASS3_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
@@ -346,8 +323,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -366,8 +341,6 @@
                 LASER = CLASS3_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
@@ -379,7 +352,6 @@
 	desc = "A durable jacket made from pigrat hide."
 	icon_state = "moleskinjacket"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -395,7 +367,6 @@
 	desc = "An old, worn jacket that has no doubt seen it's fair share of places."
 	icon_state = "wanderer"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -411,7 +382,6 @@
 	desc = "An old school military jacket."
 	icon_state = "militaryjacket"
 	inhand_icon_state = "greenjump"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -427,7 +397,6 @@
 	desc = "A musty, old jacket full of holes. Better than nothing."
 	icon_state = "mustyjacket"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -460,7 +429,6 @@
 	desc = "A high school letterman jacket. For showing off your achievements in the post apocalypse."
 	icon_state = "letterman"
 	inhand_icon_state = "shirt"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -475,7 +443,6 @@
 	name = "bomber jacket"
 	desc = "A fur-lined bomber jacket. Warm and stylish."
 	icon_state = "bomberjacket"
-	body_parts_covered = CHEST|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -493,7 +460,6 @@
 	desc = "A heavy tan trenchcoat."
 	icon_state = "tantrench"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -509,7 +475,6 @@
 	name = "detective's trenchcoat"
 	desc = "A trenchcoat normally worn by pre-war detectives."
 	icon_state = "detective"
-	body_parts_covered = CHEST|ARMS|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -524,7 +489,6 @@
 	name = "brown overcoat"
 	desc = "A slightly dirty brown overcoat."
 	icon_state = "brownover"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -539,7 +503,6 @@
 	name = "leather overcoat"
 	desc = "A leather overcoat. Almost a duster"
 	icon_state = "bum"
-	body_parts_covered = CHEST|ARMS|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -555,7 +518,6 @@
 	desc = "An imposingblack trenchcoat."
 	icon_state = "blacktrench"
 	inhand_icon_state = "leatherjacket"
-	body_parts_covered = CHEST|ARMS|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -584,7 +546,6 @@
 	name = "reinforced black trenchcoat"
 	desc = "A black trenchcoat with the addition of some heavy metal reinforcements and armor for added protection."
 	icon_state = "reinfblacktrench"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -595,8 +556,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
@@ -605,7 +564,6 @@
 	name = "armored black trenchcoat"
 	desc = "A heavily armored black trenchcoat that is a near perfect balance between maximum style and maximum protection."
 	icon_state = "armorblacktrench"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
@@ -616,8 +574,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 	pocket_storage_component_path = null
@@ -629,7 +585,6 @@
 	desc = "A typical leather duster."
 	icon_state = "duster"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -655,8 +610,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -665,7 +618,6 @@
 	name = "\improper Desert Ranger duster"
 	desc = "A closed, padded duster used by the Desert Rangers. Commonly worn by Rangers preferring maximum mobility and discretion."
 	icon_state = "closed_duster"
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -681,7 +633,6 @@
 	name = "\improper Desert Ranger Deputy-Chief poncho"
 	desc = "A well made, padded poncho known for being specially made for certain high ranking members within the Desert Rangers."
 	icon_state = "deputy_chief"
-	body_parts_covered = CHEST|GROIN|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 
 // labcoats //
@@ -702,7 +653,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	body_parts_covered = CHEST|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 	equip_delay_self = 1.5 SECONDS
@@ -722,7 +672,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	body_parts_covered = CHEST|ARMS
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -734,7 +683,6 @@
 	desc = "A pair of heavy duty leather waders, they've seen better days."
 	icon_state = "hort_waders"
 	inhand_icon_state = "hort_waders"
-	body_parts_covered = CHEST|GROIN|LEGS
 	permeability_coefficient = 0.5
 
 /obj/item/clothing/suit/hooded/ms13/hubologist
@@ -742,7 +690,6 @@
 	desc = "Long, dark, and imposing padded robes worn by Hubologists."
 	icon_state = "hubologist"
 	inhand_icon_state = "hostrench"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 10,  "fire" = 10, "acid" = 10, "wound" = 0)
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	hoodtype = /obj/item/clothing/head/hooded/ms13/hubologist
 
@@ -757,7 +704,6 @@
 /obj/item/clothing/suit/ms13/drylander
 	name = "base type Drylander suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	icon_state = "dry_simple"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -774,7 +720,6 @@
 	name = "\improper Drylander hunter padded robes"
 	desc = "Lightly padded robes worn by hunters of the Drylander tribe. Light, breathable, and still somewhat protective."
 	icon_state = "hunter"
-	body_parts_covered = CHEST|GROIN|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -784,14 +729,11 @@
                 LASER = 0, \
                 ENERGY = 0, \
                 FIRE = 0)
-	max_integrity = 350
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
 
 /obj/item/clothing/suit/ms13/drylander/headtaker
 	name = "\improper Drylander Headtaker padded robes"
 	desc = "Padded robes worn by the notorious Headtakers of the Drylander tribe. A frightening sight."
-	body_parts_covered = CHEST|GROIN|LEGS|ARM_RIGHT
 	slowdown = 0.15
 	icon_state = "headtaker"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -803,8 +745,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
 
 /obj/item/clothing/suit/ms13/drylander/simple
@@ -825,13 +765,11 @@
 /obj/item/clothing/suit/ms13/drylander/bando
 	name = "\improper Drylander bandolier robes"
 	desc = "Light robes with a bandolier strewn across to help with storage. Doesn't seem to be very effective though."
-	body_parts_covered = CHEST|GROIN|LEGS|ARM_RIGHT
 	icon_state = "dry_bando"
 
 /obj/item/clothing/suit/ms13/drylander/chief
 	name = "\improper Drylander chieftain robes"
 	desc = "An impressive set of robes worn by the chieftain of the Drylander tribe. This commands respect."
-	body_parts_covered = CHEST|GROIN|ARMS
 	icon_state = "chief"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -842,8 +780,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = 0)
-	max_integrity = 350
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/ms13/drylander/shaman
 	name = "\improper Drylander shaman robes"
@@ -855,7 +791,6 @@
 /obj/item/clothing/suit/ms13/slickback
 	name = "base type Slickback suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	slowdown = 0.15
 	icon_state = "slick_1"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -971,7 +906,6 @@
 /obj/item/clothing/suit/ms13/goldman
 	name = "base type goldman suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	icon_state = "goldman_duster"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -983,60 +917,75 @@
                 ENERGY = 0, \
                 FIRE = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
-	max_integrity = 350
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/ms13/goldman/leader
-	name = "\improper goldman Ringleader trenchcoat"
+	name = "\improper Goldman ringleader trenchcoat"
 	desc = "A thick and carefully padded trenchcoat with a gold star embroidered on the back. A status symbol among the Goldman Posse and usually a sign of leadership."
 	icon_state = "goldman_leader"
-	slowdown = 0.15
+	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS4_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/suit/ms13/goldman/keeper
-	name = "\improper goldman padded suit"
+	name = "\improper Goldman padded suit"
 	desc = "A fancy suit with the addition of a small poncho draped over the shoulders and some light protective padding. Commonly seen adorning respected individuals within the Goldman Posse."
 	icon_state = "goldman_keeper"
+	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS3_CUT, \
+			PIERCING = CLASS3_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS2_LASER, \
+			ENERGY = CLASS2_PLASMA, \
+			FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/suit/ms13/goldman/poncho
 	name = "dark brown poncho"
-	desc = "A dark brown poncho with gold embroidery on the back, perfect for braving the desert in comfort and style."
-	body_parts_covered = CHEST|ARM_LEFT
+	desc = "A dark brown poncho with light protective padding and gold embroidery on the back, perfect for braving the desert in comfort and style."
 	icon_state = "goldman_poncho"
+	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
+                PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS1_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
 
 /obj/item/clothing/suit/ms13/goldman/duster
-	name = "lined duster"
+	name = "\improper Goldman lined duster"
 	desc = "A basic duster with an addition of some interior lining for comfort and mild protection, and some gold embroidery for style."
 	icon_state = "goldman_duster"
+	slowdown = 0.3
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS2_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS3_FIRE)
+	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
+
+/obj/item/clothing/suit/ms13/goldman/duster/covered
+	name = "\improper Goldman covered duster"
+	desc = "A thick, padded duster with an adorned poncho added for extra flair. Commonly associated with members of the Goldman Posse."
+	icon_state = "goldman_coveredduster"
 
 /obj/item/clothing/suit/ms13/goldman/duster_reinf
-	name = "\improper goldman reinforced duster"
+	name = "\improper Goldman reinforced duster"
 	desc = "A duster that has seen the addition of armoring and protective padding. This likely belongs to a member of the Goldman Posse."
 	icon_state = "goldman_reinfduster"
 	slowdown = 0.3
@@ -1051,34 +1000,18 @@
                 FIRE = CLASS2_FIRE)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
 
-/obj/item/clothing/suit/ms13/goldman/duster_covered
-	name = "\improper goldman covered duster"
-	desc = "A thick, padded duster with an adorned poncho added for extra flair. Commonly associated with members of the Goldman Posse."
-	icon_state = "goldman_coveredduster"
+/obj/item/clothing/suit/ms13/goldman/poncho_padded
+	name = "\improper Goldman embroidered poncho"
+	desc = "A poncho that has seen many modifications. From the addition of protective padding to embroidered gold symbols and stars. This is no doubt property of the Goldman Posse."
+	icon_state = "goldman_thickponcho"
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS1_CUT, \
+                PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS1_STAB, \
                 LASER = CLASS2_LASER, \
-                ENERGY = 0, \
+                ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
-
-/obj/item/clothing/suit/ms13/goldman/poncho_padded
-	name = "\improper goldman embroidered poncho"
-	desc = "A poncho that has seen many modifications. From the addition of protective padding to embroidered gold symbols and stars. This is no doubt property of the Goldman Posse."
-	body_parts_covered = CHEST|ARMS
-	icon_state = "goldman_thickponcho"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med

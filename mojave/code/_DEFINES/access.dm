@@ -15,16 +15,16 @@
 
 // General Brotherhood access
 #define ACCESS_BROTHERHOOD 6
-// Head Paladin's personal quarters
-#define ACCESS_BROTHERHOOD_HPALADIN 7
+// Head Knight's personal quarters
+#define ACCESS_BROTHERHOOD_HKNIGHT 7
 
-//// Drought Barony Area Access ////
+//// Drought Carlin Area Access ////
 
-// Baron's personal quarters
-#define ACCESS_BARON_QUARTERS 8
+// Mayor's personal quarters
+#define ACCESS_MAYOR_QUARTERS 8
 // Enforcer restricted points
-#define ACCESS_BARONY_RESTRICTED 9
+#define ACCESS_CARLIN_RESTRICTED 9
 // Doctor's storage/general
-#define ACCESS_BARONY_DOCTOR 10
+#define ACCESS_CARLIN_DOCTOR 10
 // Shopkeeper's private areas
-#define ACCESS_BARONY_SHOPKEEP 11
+#define ACCESS_CARLIN_SHOPKEEP 11

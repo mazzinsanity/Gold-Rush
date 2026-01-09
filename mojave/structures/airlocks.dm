@@ -67,20 +67,20 @@
 /obj/machinery/door/airlock/ms13/brotherhood
 	req_access = list(ACCESS_BROTHERHOOD)
 
-/obj/machinery/door/airlock/ms13/brotherhood/hpaladin
-	req_access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HPALADIN)
+/obj/machinery/door/airlock/ms13/brotherhood/hknight
+	req_access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HKNIGHT)
 
 
-//// Barony doors ////
+//// Carlin doors ////
 
-/obj/machinery/door/airlock/ms13/barony
-	req_access = list(ACCESS_BARONY_RESTRICTED)
+/obj/machinery/door/airlock/ms13/carlin
+	req_access = list(ACCESS_CARLIN_RESTRICTED)
 
-/obj/machinery/door/airlock/ms13/barony/quarters
-	req_access = list(ACCESS_BARON_QUARTERS)
+/obj/machinery/door/airlock/ms13/carlin/quarters
+	req_access = list(ACCESS_MAYOR_QUARTERS)
 
-/obj/machinery/door/airlock/ms13/barony/doctor
-	req_access = list(ACCESS_BARONY_DOCTOR)
+/obj/machinery/door/airlock/ms13/carlin/doctor
+	req_access = list(ACCESS_CARLIN_DOCTOR)
 
-/obj/machinery/door/airlock/ms13/barony/shop
-	req_access = list(ACCESS_BARONY_SHOPKEEP)
+/obj/machinery/door/airlock/ms13/carlin/shop
+	req_access = list(ACCESS_CARLIN_SHOPKEEP)

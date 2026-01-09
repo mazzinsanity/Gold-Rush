@@ -1634,7 +1634,7 @@
 /turf/open/floor/ms13/concrete,
 /area/ms13/underground/mountain_bunker)
 "lG" = (
-/obj/machinery/door/airlock/ms13/barony{
+/obj/machinery/door/airlock/ms13/carlin{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
@@ -5896,7 +5896,7 @@
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/town)
 "QA" = (
-/obj/machinery/door/airlock/ms13/barony{
+/obj/machinery/door/airlock/ms13/carlin{
 	dir = 4
 	},
 /obj/effect/spawner/random/ms13/locked/random/medchance,

@@ -65,6 +65,9 @@
 /obj/item/stack/ms13/currency/prewar/hunnedfourty
 	amount = 140
 
+/obj/item/stack/ms13/currency/prewar/hunnedfifty
+	amount = 150
+
 /obj/item/stack/ms13/currency/prewar/hunnedeighty
 	amount = 180
 
@@ -92,7 +95,7 @@
 	amount = 12
 
 /obj/item/stack/ms13/currency/ncr_dollar/twenty
-	amount = 25
+	amount = 20
 
 /obj/item/stack/ms13/currency/ncr_dollar/thirty
 	amount = 30
@@ -117,6 +120,9 @@
 
 /obj/item/stack/ms13/currency/ncr_dollar/hunned
 	amount = 100
+
+/obj/item/stack/ms13/currency/ncr_dollar/hunnedfifty
+	amount = 150
 
 /obj/item/stack/ms13/currency/ncr_coin
 	name = "\improper NCR coins"
@@ -187,6 +193,9 @@
 /obj/item/stack/ms13/currency/denarius/two
 	amount = 2
 
+/obj/item/stack/ms13/currency/denarius/three
+	amount = 3
+
 /obj/item/stack/ms13/currency/denarius/five
 	amount = 5
 
@@ -255,7 +264,10 @@
 /obj/item/stack/ms13/currency/cap/hunnedtwentyfive
 	amount = 125
 
-/obj/item/stack/ms13/currency/cap/baron
+/obj/item/stack/ms13/currency/cap/twohunned
+	amount = 200
+
+/obj/item/stack/ms13/currency/cap/mayor
 	amount = 300
 
 // Ideas- NCR dollar spawns 20% of the time.

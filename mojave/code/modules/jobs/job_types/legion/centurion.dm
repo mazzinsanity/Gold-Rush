@@ -2,9 +2,8 @@
 	title = "Legion Centurion"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Legate, if present. And Caesar himself."
-	description = "Command your Centuria, leading them to glorious victory at all costs."
-	enforce = "The Legion expects you to lead them effectively. Do not be a coward."
+	supervisors = "The Legate and the Caesar."
+	description = "You are tasked with overseeing the local Legion camp. Organize your Decani and command your Centuria, leading them to glorious victory."
 
 	outfit = /datum/outfit/job/ms13/legion/centurion
 
@@ -15,21 +14,22 @@
 	jobtype = /datum/job/ms13/legion/centurion
 
 	head = /obj/item/clothing/head/helmet/ms13/legion/centurion
-	uniform = /obj/item/clothing/under/ms13/legion/fatigues
+	glasses = /obj/item/clothing/glasses/ms13/leather
 	shoes = /obj/item/clothing/shoes/ms13/military/legion/tanboots
-	gloves = /obj/item/clothing/gloves/ms13/legion/bracers
 	suit = /obj/item/clothing/suit/armor/ms13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/rifle/ms13/hunting
-	belt = /obj/item/gun/ballistic/revolver/ms13/caravan/sawed
-	r_pocket = /obj/item/stack/medical/gauze/ms13/half
-	l_pocket = /obj/item/flashlight/flare/ms13
-	r_hand = /obj/item/claymore/ms13/machete/ripper
+	gloves = /obj/item/clothing/gloves/ms13/legion/bracers
+	suit_store = /obj/item/gun/ballistic/automatic/ms13/full/assaultrifle/chinese/handmade
+	belt = /obj/item/claymore/ms13/machete/gladius
+	r_pocket = /obj/item/stack/ms13/currency/aurelius/two
 	id = /obj/item/card/id/ms13/legcenturion
+	back = /obj/item/storage/ms13/satchel
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/ms13/r308=2,\
-		/obj/item/ammo_box/ms13/shotgun/buckshot=1,\
-		/obj/item/stack/ms13/currency/aurelius/five=1,\
-		/obj/item/stack/ms13/currency/denarius/fifteen=1)
-
-/datum/outfit/job/ms13/legion/centurion/pre_equip(mob/living/carbon/human/H)
-	..()
+		/obj/item/gun/ballistic/revolver/ms13/rev357=1,
+		/obj/item/ammo_box/ms13/a357box=1,
+		/obj/item/ammo_box/magazine/ms13/ar762=2,
+		/obj/item/stack/medical/gauze/ms13/half=1,
+		/obj/item/stack/medical/suture/ms13/eight=1,
+		/obj/item/reagent_containers/ms13/flask/bitter_drink=1,
+		/obj/item/flashlight/ms13=1,
+		/obj/item/radio/ms13/broadcast=1,
+	)

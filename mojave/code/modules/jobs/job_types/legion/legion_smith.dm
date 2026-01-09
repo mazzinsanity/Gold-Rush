@@ -2,8 +2,9 @@
 	title = "Legion Blacksmith"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Veteran Decanus"
-	description = "Ensure your fellow Legionaries are properly supplied and armed for the fights to come. Listen to orders from the Decanus."
+	supervisors = "Legionaries."
+	forbid = "Usage of chems and overreliance on technology is strictly forbidden. Women are not allowed to fight. Disobeying orders from superiors is typically met with death. Avoid engaging in active combat."
+	description = "You are an Auxilia, ordered to assist the Legion's army. Ensure the camp is well maintained. Ensure the Legionaries are properly supplied and armed for the battles to come. Obey the orders of the Legionaries."
 
 	outfit = /datum/outfit/job/ms13/legion/legion_smith
 
@@ -15,22 +16,11 @@
 	name = "_Legion Blacksmith"
 	jobtype = /datum/job/ms13/legion/legion_smith
 
-	uniform = /obj/item/clothing/under/ms13/legion/fatigues
 	shoes = /obj/item/clothing/shoes/ms13/military/legion/darkboots
-	suit = /obj/item/clothing/suit/armor/ms13/legion/prime
-	gloves = /obj/item/clothing/gloves/ms13/legion/dark
-	suit_store = /obj/item/gun/ballistic/revolver/ms13/caravan
-	belt = /obj/item/claymore/ms13/machete/gladius
-	r_pocket = /obj/item/ms13/hammer
-	l_pocket = /obj/item/flashlight/flare/ms13
+	gloves = /obj/item/clothing/gloves/ms13/legion/tan
+	r_hand = /obj/item/storage/ms13/toolbox/filled
 	id = /obj/item/card/id/ms13/blacksmith
 	backpack_contents = list(
-		/obj/item/ammo_box/ms13/shotgun/junkshot=1,\
-		/obj/item/ms13/handsaw=1,\
-		/obj/item/stack/ms13/currency/denarius/five=1,\
-		/obj/item/ms13/handdrill=1,\
-		/obj/item/weldingtool/ms13=1,\
-		/obj/item/clothing/glasses/ms13/welding=1)
-
-/datum/outfit/job/ms13/legion/legion_smith/pre_equip(mob/living/carbon/human/H)
-	..()
+		/obj/item/stack/medical/gauze/ms13/three=1,
+		/obj/item/flashlight/flare/ms13=1,
+	)

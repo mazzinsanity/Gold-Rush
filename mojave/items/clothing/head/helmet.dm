@@ -5,7 +5,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	dynamic_hair_suffix = "+generic"
 	dynamic_fhair_suffix = "+generic"
 	flags_inv = HIDEHAIR
@@ -34,7 +34,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
@@ -64,7 +64,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
@@ -77,7 +77,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	grid_width = 32
 	grid_height = 64
 
@@ -607,15 +607,14 @@
 	icon_state = "sheriffhat"
 	inhand_icon_state = "sheriffhat"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS4_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
+                FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/fedora
 	name = "gray fedora"
@@ -1247,16 +1246,14 @@
 	desc = "A black hat and mask with quite a bit of extra padding for protection. Something about this is quite intimidating."
 	icon_state = "enforcer"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS3_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS2_PLASMA, \
+                FIRE = CLASS3_FIRE)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 /obj/item/clothing/head/helmet/ms13/metal/baron
@@ -1406,39 +1403,22 @@
 
 /obj/item/clothing/head/helmet/ms13/ncr
 	name = "\improper NCR infantry helmet"
-	desc = "A standard issue NCR infantry helmet adapted for arctic environments."
+	desc = "A standard issue NCR infantry helmet."
 	icon_state = "ncr_infantry_helmet"
 	inhand_icon_state = "ncr_infantry_helmet"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS1_CUT, \
                 PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
-	flags_cover = NONE
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
-
-/obj/item/clothing/head/helmet/ms13/ncr/mp
-	name = "\improper NCR military police helmet"
-	desc = "An NCR helmet issued to military police stationed at NCR military installations or frontier towns."
-	icon_state = "ncr_mp_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/ncr/medic
 	name = "\improper NCR medic helmet"
@@ -1475,14 +1455,33 @@
 	alt_toggle_message = "You push the goggles up on"
 	actions_types = list(/datum/action/item_action/toggle)
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
+                FIRE = CLASS3_FIRE)
+
+/obj/item/clothing/head/helmet/ms13/ncr/goggles/sergeant
+	name = "\improper NCR sergeant helmet"
+	desc = "An NCR helmet with added goggles and an even heartier internal padding. Typically issues to Sergeants."
+	icon_state = "ncr_goggles_helmet"
+	inhand_icon_state = "ncr_goggles_helmet"
+	can_toggle = 1
+	toggle_message = "You pull the goggles down on"
+	alt_toggle_message = "You push the goggles up on"
+	actions_types = list(/datum/action/item_action/toggle)
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS3_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS2_PLASMA, \
+                FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/ncr/beret
 	name = "\improper NCR beret"
@@ -1503,6 +1502,34 @@
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 
+/obj/item/clothing/head/helmet/ms13/combat/ranger/ncr
+	name = "\improper NCR ranger combat helmet"
+	desc = "A helmet from a set of NCR Ranger combat armor. The thick materials hold up well against attacks, while keeping the wearer agile."
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS2_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
+
+/obj/item/clothing/head/helmet/ms13/eliteriot/ranger/ncr
+	name = "\improper NCR veteran ranger helmet"
+	desc = "An advanced and intimidating helmet used by equally intimidating and skilled NCR Veteran Rangers."
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS5_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
+                FIRE = CLASS3_FIRE)
+	equip_delay_self = 2 SECONDS
+	equip_delay_other = 4 SECONDS
+
 /obj/item/clothing/head/helmet/ms13/ncr/beret/nco
 	icon_state = "ncr_nco_beret"
 	inhand_icon_state = "ncr_officer_brberet"
@@ -1513,26 +1540,20 @@
 	icon_state = "ncr_officer_brberet"
 	inhand_icon_state = "ncr_officer_brberet"
 
-// Legion Helmets //
-
-/obj/item/clothing/head/helmet/ms13/legion/vexillarius
-	name = "vexillarius headdress"
-	desc = "A padded headdress used by only the loudest message relayers and heartiest morale boosters of the Legion"
-	icon_state = "leg_vex"
-	inhand_icon_state = "owl_mask"
+/obj/item/clothing/head/helmet/ms13/ncr/beret/officer/armored
+	name = "\improper NCR officer armored beret"
+	desc = "A brown NCR officer's beret with some internal kevlar padding."
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
-	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0) //No wound armor
-	equip_delay_self = 1.5 SECONDS
-	equip_delay_other = 3 SECONDS
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS4_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)
+
+// Legion Helmets //
 
 /obj/item/clothing/head/helmet/ms13/legion/recruit
 	name = "\improper Legion recruit helmet"
@@ -1540,16 +1561,14 @@
 	icon_state = "leg_rec"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
                 PIERCING = CLASS1_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
+                ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
 	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 60
@@ -1562,16 +1581,14 @@
 	icon_state = "leg_prime"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
                 PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
-	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS3_FIRE)
 	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 60
@@ -1584,17 +1601,15 @@
 	icon_state = "leg_vet"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
+                EDGE_PROTECTION = CLASS3_EDGE, \
                 CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS1_PLASMA, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS4_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 5)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1606,18 +1621,15 @@
 	icon_state = "leg_decr"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS1_PIERCE, \
+                IMPALING = CLASS2_STAB, \
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
-	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 5)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
+                FIRE = CLASS2_FIRE)
+	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1627,11 +1639,29 @@
 	name = "\improper Legion prime decanus helmet"
 	desc = "A feathery, quite protective helmet used by prime decanii of the Legion. It's got black feathers to signify a moderate rank."
 	icon_state = "leg_decp"
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS3_CUT, \
+			PIERCING = CLASS2_PIERCE, \
+			IMPALING = CLASS2_STAB, \
+			LASER = CLASS1_LASER, \
+			ENERGY = CLASS1_PLASMA, \
+			FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/legion/decanus/veteran
 	name = "\improper Legion veteran decanus helmet"
 	desc = "A feathery helmet used by only the most experienced decanii of the Legion. It's got striped feathers to signify superior rank."
 	icon_state = "leg_decv"
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+			EDGE_PROTECTION = CLASS3_EDGE, \
+			CRUSHING = CLASS3_CRUSH, \
+			CUTTING = CLASS4_CUT, \
+			PIERCING = CLASS3_PIERCE, \
+			IMPALING = CLASS4_STAB, \
+			LASER = CLASS2_LASER, \
+			ENERGY = CLASS2_PLASMA, \
+			FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/legion/centurion
 	name = "\improper Legion centurion helmet"
@@ -1639,38 +1669,20 @@
 	icon_state = "leg_cent"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
-	max_integrity = 375
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+			EDGE_PROTECTION = CLASS3_EDGE, \
+			CRUSHING = CLASS3_CRUSH, \
+			CUTTING = CLASS5_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS4_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)
+	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 	worn_y_offset = 16
-
-/obj/item/clothing/head/helmet/ms13/legion/praetorian
-	name = "\improper Legion praetorian helmet"
-	desc = "A skillfuly forged helmet for a skill endowed man. Only the highest of guards may wear this."
-	icon_state = "leg_prae"
-	inhand_icon_state = "owl_mask"
-	armor = list("melee" = 65, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 65, "bio" = 20,  "fire" = 25, "acid" = 20)
-	flags_inv = HIDEEARS|HIDEHAIR
-
-/obj/item/clothing/head/helmet/ms13/legion/scout
-	name = "\improper Legion scout bandana"
-	desc = "A red bandana, often seen tied aroudn the heads of Legion scouts."
-	icon_state = "leg_scout"
-	inhand_icon_state = "owl_mask"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 20,  "fire" = 25, "acid" = 20)
-	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/helmet/ms13/legion/explorer
 	name = "\improper Legion explorer hood"
@@ -1678,16 +1690,14 @@
 	icon_state = "leg_exp"
 	inhand_icon_state = "owl_mask"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+			EDGE_PROTECTION = CLASS1_EDGE, \
+			CRUSHING = CLASS1_CRUSH, \
+			CUTTING = CLASS2_CUT, \
+			PIERCING = CLASS1_PIERCE, \
+			IMPALING = CLASS1_STAB, \
+			LASER = CLASS1_LASER, \
+			ENERGY = CLASS1_PLASMA, \
+			FIRE = CLASS2_FIRE)
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 
@@ -1704,11 +1714,9 @@
                 CUTTING = CLASS1_CUT, \
                 PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
+                LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -1723,13 +1731,11 @@
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS3_STAB, \
                 LASER = CLASS3_LASER, \
-                ENERGY = CLASS2_PLASMA, \
+                ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1971,21 +1977,65 @@
 	desc = "A wide brim dark brown hat with the addition of some light protective padding."
 	icon_state = "goldman_basic"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
+                PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS1_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
+
+/obj/item/clothing/head/helmet/ms13/cowboy/goldman/reinforced
+	name = "reinforced wide brim brown hat"
+	desc = "A wide brim dark brown hat with the addition of some light kevlar padding."
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS2_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS3_FIRE)
+
+/obj/item/clothing/head/helmet/ms13/cowboy/goldman/runner
+	name = "wide brim brown hat"
+	desc = "A wide brim dark brown hat with the addition of some light kevlar padding."
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS1_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS1_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/veteran
-	name = "padded wide brim fedora"
-	desc = "A wide brim fedora with the addition of some light protective padding."
+	name = "reinforced wide brim fedora"
+	desc = "A wide brim fedora with the addition of some kevlar padding."
 	icon_state = "goldman_vet"
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS3_CUT, \
+			PIERCING = CLASS3_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS2_LASER, \
+			ENERGY = CLASS2_PLASMA, \
+			FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/leader
-	name = "\improper goldman Ringleader's hat"
+	name = "\improper Goldman ringleader hat"
 	desc = "A distinctive hat with the addition of a gold symbol, worn by high up members within the Goldman Posse."
 	icon_state = "goldman_lead"
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS4_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)

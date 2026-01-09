@@ -1,7 +1,5 @@
 GLOBAL_LIST_INIT(wasteland_positions, list(
-	"Wastelander",
-	"New Canaanite",
-	"Hubologist"))
+	"Wastelander",))
 
 GLOBAL_LIST_INIT(town_positions, list(
 	"Snowcrest Mayor",
@@ -13,29 +11,28 @@ GLOBAL_LIST_INIT(town_positions, list(
 	"Snowcrest Nurse",
 	"Town Deputy",
 	"Snowcrest Bodyguard",
-	"Town Sheriff"))
+	"Town Sheriff",))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
 	"NCR Military Police",
-	"NCR Radioman",
+	"NCR Radio Operator",
 	"NCR MP Medic",
 	"NCR Medic",
 	"NCR Engineer",
 	"NCR Sergeant",
-	"NCR MP Sergeant",
+	"NCR Sergeant",
 	"NCR Staff Sergeant",
 	"NCR Lieutenant"))
 
-/* // There. I made it easy for you to un-fix the server. Just remove the commenting out.
 GLOBAL_LIST_INIT(bos_positions, list(
+	"BoS Initiate",
 	"BoS Initiate",
 	"BoS Knight",
 	"BoS Paladin",
-	"BoS Head Paladin",
+	"BoS Head Knight",
 	"BoS Scribe",
 	"BoS Head Scribe")) 
-*/
 
 GLOBAL_LIST_INIT(raiders_positions, list(
 	"Raider",
@@ -103,7 +100,7 @@ GLOBAL_LIST_INIT(ms13_position_categories, list(
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#eec66f"),
 	EXP_TYPE_TOWN= list("jobs" = town_positions, "color" = "#4feb64"),
 	EXP_TYPE_NCR = list("jobs" = ncr_positions, "color" = "#cfd1ba"),
-	//EXP_TYPE_BOS = list("jobs" = bos_positions, "color" = "#737592"),
+	EXP_TYPE_BOS = list("jobs" = bos_positions, "color" = "#737592"),
 	EXP_TYPE_RAIDERS = list("jobs" = raiders_positions, "color" = "#30389c"),
 	EXP_TYPE_RANGERS = list("jobs" = ranger_positions, "color" = "#bdbc76"),
 	EXP_TYPE_DROUGHTTOWN = list("jobs" = drought_town_positions, "color" = "#12491a"),
@@ -116,7 +113,7 @@ GLOBAL_LIST_INIT(ms13_exp_jobsmap, list(
 	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
 	EXP_TYPE_TOWN = list("titles" = town_positions),
 	EXP_TYPE_NCR = list("titles" = ncr_positions),
-	//EXP_TYPE_BOS = list("titles" = bos_positions),
+	EXP_TYPE_BOS = list("titles" = bos_positions),
 	EXP_TYPE_RAIDERS = list("titles" = raiders_positions),
 	EXP_TYPE_RANGERS = list("titles" = ranger_positions),
 	EXP_TYPE_DROUGHTTOWN = list("titles" = drought_town_positions),

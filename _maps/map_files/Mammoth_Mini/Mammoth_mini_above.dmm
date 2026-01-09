@@ -11325,7 +11325,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/mp_sergeant,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/ms13/concrete,
 /area/ms13/snowcrest/republic)
 "gAL" = (
@@ -15492,7 +15492,7 @@
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/mp_medic,
+/obj/effect/landmark/start/ms13/medic,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/snowcrest/building)
 "lXg" = (
@@ -19414,7 +19414,7 @@
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/old,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/mp_sergeant,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/snowcrest/republic)
 "ruh" = (
@@ -21220,7 +21220,7 @@
 	},
 /obj/machinery/light/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/mp_medic,
+/obj/effect/landmark/start/ms13/medic,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/snowcrest/building)
 "tQJ" = (

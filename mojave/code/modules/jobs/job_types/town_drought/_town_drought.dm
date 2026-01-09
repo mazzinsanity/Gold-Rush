@@ -3,6 +3,8 @@
 	departments_list = list(
 		/datum/job_department/town_drought,
 	)
+	forbid = ""
+	enforce = ""
 
 /datum/outfit/job/ms13/town_drought
 	name = "Default"

@@ -55,52 +55,58 @@
 /obj/effect/landmark/start/ms13/trooper
 	name = "NCR Trooper"
 
-/obj/effect/landmark/start/ms13/milpolice
-	name = "NCR Military Police"
+/obj/effect/landmark/start/ms13/corporal
+	name = "NCR Corporal"
 
 /obj/effect/landmark/start/ms13/radioman
-	name = "NCR Radioman"
+	name = "NCR Radio Operator"
 
 /obj/effect/landmark/start/ms13/sergeant
 	name = "NCR Sergeant"
 
-/obj/effect/landmark/start/ms13/engineer
-	name = "NCR Engineer"
-
-/obj/effect/landmark/start/ms13/mp_medic
-	name = "NCR MP Medic"
-
-/obj/effect/landmark/start/ms13/mp_sergeant
-	name = "NCR MP Sergeant"
-
-/obj/effect/landmark/start/ms13/staffsergeant
-	name = "NCR Staff Sergeant"
+/obj/effect/landmark/start/ms13/sergeant
+	name = "NCR Sergeant"
 
 /obj/effect/landmark/start/ms13/medic
 	name = "NCR Medic"
 
+/obj/effect/landmark/start/ms13/medical_officer
+	name = "NCR Medical Officer"
+
+/obj/effect/landmark/start/ms13/quartermaster
+	name = "NCR Quartermaster"
+
 /obj/effect/landmark/start/ms13/lieutenant
 	name = "NCR Lieutenant"
+
+/obj/effect/landmark/start/ms13/ncr_ranger
+	name = "NCR Ranger"
+
+/obj/effect/landmark/start/ms13/ncr_veteran_ranger
+	name = "NCR Veteran Ranger"
+
+/obj/effect/landmark/start/ms13/rear_echelon
+	name = "NCR Rear Echelon"
 
 // Brotherhood Spawns //
 
 /obj/effect/landmark/start/ms13/initiate
-	name = "BoS Initiate"
+	name = "Brotherhood Initiate"
 
 /obj/effect/landmark/start/ms13/knight
-	name = "BoS Knight"
+	name = "Brotherhood Knight"
 
 /obj/effect/landmark/start/ms13/scribe
-	name = "BoS Scribe"
+	name = "Brotherhood Scribe"
 
-/obj/effect/landmark/start/ms13/paladin
-	name = "BoS Paladin"
-
-/obj/effect/landmark/start/ms13/head_paladin
-	name = "BoS Head Paladin"
+/obj/effect/landmark/start/ms13/head_knight
+	name = "Brotherhood Head Knight"
 
 /obj/effect/landmark/start/ms13/head_scribe
-	name = "BoS Head Scribe"
+	name = "Brotherhood Head Scribe"
+
+/obj/effect/landmark/start/ms13/base_staff
+	name = "Brotherhood Base Staff"
 
 // Mammoth Raider Spawns //
 
@@ -117,9 +123,6 @@
 	name = "Raider Boss"
 
 // Legion Spawns //
-
-/obj/effect/landmark/start/ms13/legion_praetorian
-	name = "Legion Praetorian"
 
 /obj/effect/landmark/start/ms13/legion_centurion
 	name = "Legion Centurion"
@@ -142,20 +145,17 @@
 /obj/effect/landmark/start/ms13/legion_recruit_legionary
 	name = "Recruit Legionary"
 
-/obj/effect/landmark/start/ms13/legion_speculatore
-	name = "Legion Speculatore"
-
 /obj/effect/landmark/start/ms13/legion_explorer
 	name = "Legion Explorer"
 
-/obj/effect/landmark/start/ms13/legion_scout
-	name = "Legion Scout"
-
-/obj/effect/landmark/start/ms13/legion_vexillarius
-	name = "Legion Vexillarius"
-
 /obj/effect/landmark/start/ms13/legion_smith
 	name = "Legion Blacksmith"
+
+/obj/effect/landmark/start/ms13/legion_camp_auxilia
+	name = "Legion Camp Auxilia"
+
+/obj/effect/landmark/start/ms13/legion_medicus
+	name = "Legion Medicus"
 
 // Desert Ranger Spawns //
 
@@ -176,23 +176,29 @@
 
 // Drought Town Spawns //
 
-/obj/effect/landmark/start/ms13/baron
-	name = "The Baron"
+/obj/effect/landmark/start/ms13/carlin_mayor
+	name = "Carlin Mayor"
 
 /obj/effect/landmark/start/ms13/denizen
-	name = "Barony Denizen"
+	name = "Carlin Denizen"
 
-/obj/effect/landmark/start/ms13/barkeep
-	name = "Barony Barkeep"
+/obj/effect/landmark/start/ms13/carlin_barkeep
+	name = "Carlin Barkeep"
+
+/obj/effect/landmark/start/ms13/carlin_shopkeep
+	name = "Carlin Shopkeep"
 
 /obj/effect/landmark/start/ms13/laborer
-	name = "Barony Laborer"
+	name = "Carlin Laborer"
 
 /obj/effect/landmark/start/ms13/clinician
-	name = "Barony Clinician"
+	name = "Carlin Clinician"
 
 /obj/effect/landmark/start/ms13/town_enforcer
-	name = "Barony Enforcer"
+	name = "Carlin Enforcer"
+
+/obj/effect/landmark/start/ms13/carlin_sheriff
+	name = "Carlin Sheriff"
 
 // Drylander Spawns //
 

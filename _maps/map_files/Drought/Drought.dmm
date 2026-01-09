@@ -41,7 +41,7 @@
 "abs" = (
 /obj/structure/ms13/rug/mat,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "abK" = (
 /obj/structure/ms13/pa_jack,
 /turf/open/floor/ms13/metal/grate/border,
@@ -49,7 +49,7 @@
 "abY" = (
 /obj/effect/landmark/start/ms13/laborer,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "acj" = (
 /obj/structure/ms13/barrel/single/hazard,
 /obj/structure/ms13/pipes/horizontal/random_alt,
@@ -129,7 +129,7 @@
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "agj" = (
 /obj/structure/ms13/wall_decor/clock,
 /obj/structure/closet/crate/ms13/woodcrate/compact,
@@ -143,7 +143,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "agL" = (
 /obj/machinery/door/unpowered/ms13/wood{
 	dir = 4
@@ -157,7 +157,7 @@
 "aiC" = (
 /obj/effect/turf_decal/ms13/road/horizontalcrossing,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aiH" = (
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/town)
@@ -173,7 +173,7 @@
 	},
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ajr" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -430,7 +430,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "atq" = (
 /obj/structure/chair/ms13/metal/blue/broken{
 	dir = 1
@@ -456,7 +456,7 @@
 "auq" = (
 /obj/structure/ms13/cave_decor/boards/drought/northsouth,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "auv" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 1
@@ -518,7 +518,7 @@
 "ayj" = (
 /obj/structure/table/ms13/crafting/workbench,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ayw" = (
 /obj/item/stack/sheet/ms13/wood/scrap_wood,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -591,7 +591,7 @@
 "aER" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aFh" = (
 /obj/structure/ms13/road_barrier/concrete{
 	dir = 4
@@ -619,7 +619,7 @@
 "aGd" = (
 /obj/effect/turf_decal/ms13/graffiti/ladder_east,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aGg" = (
 /obj/structure/table/ms13/metal/constructed,
 /obj/item/ms13/fluff/ruined_book{
@@ -684,7 +684,7 @@
 "aHN" = (
 /obj/effect/turf_decal/ms13/graffiti/many_eyes,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aIT" = (
 /obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable,
 /obj/effect/spawner/random/ms13/crafting/refined,
@@ -722,12 +722,12 @@
 /area/ms13/ncr)
 "aKh" = (
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aKq" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/chem_set,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aKs" = (
 /obj/structure/closet/crate/ms13/footlocker{
 	dir = 8;
@@ -747,7 +747,7 @@
 /area/ms13/town)
 "aKJ" = (
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aKM" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/machinery/light/ms13{
@@ -755,7 +755,7 @@
 	},
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aKR" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/yellowed,
@@ -837,7 +837,7 @@
 "aOG" = (
 /obj/structure/table/ms13/no_smooth/counter/metal/bend,
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aOI" = (
 /obj/structure/closet/ms13/metal,
 /obj/structure/ms13/wall_decor/flag/ncr,
@@ -932,7 +932,7 @@
 "aRW" = (
 /obj/effect/turf_decal/ms13/graffiti/ourtown,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aSh" = (
 /obj/structure/bed/ms13/medical/surgery,
 /obj/structure/ms13/rug/rubber{
@@ -980,7 +980,7 @@
 "aUi" = (
 /obj/structure/ms13/tank/massive,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aUM" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
@@ -1053,11 +1053,11 @@
 "aXG" = (
 /obj/structure/ms13/barrel/quadruple/red,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aYn" = (
 /obj/structure/chair/ms13/metal/unfinished,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "aYE" = (
 /obj/structure/ms13/barrel/quadruple/red/two,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -1081,7 +1081,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aYO" = (
 /obj/structure/ms13/fence,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -1217,7 +1217,7 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 8
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "beT" = (
 /obj/effect/spawner/random/ms13/power_armor/parts,
 /obj/structure/ms13/storage/vent,
@@ -1266,7 +1266,7 @@
 "bit" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "biA" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid{
 	id = "ncr_gate"
@@ -1351,7 +1351,7 @@
 	id = "hotel-r1-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bmR" = (
 /obj/structure/closet/crate/ms13/medical,
 /obj/effect/spawner/random/ms13/guaranteed/medical/bloodbag,
@@ -1389,7 +1389,7 @@
 "boj" = (
 /obj/structure/ms13/wall_decor/exit,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "boW" = (
 /obj/structure/table/ms13/crafting/armorbench,
 /turf/open/floor/ms13/tile/full/green,
@@ -1440,7 +1440,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "brJ" = (
 /obj/structure/mirror/ms13{
 	pixel_y = 35
@@ -1452,7 +1452,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bsg" = (
 /obj/structure/ms13/rug/yellow,
 /obj/structure/bed/ms13/mattress/filthy,
@@ -1498,9 +1498,9 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
 "btJ" = (
-/obj/machinery/door/airlock/ms13/barony/doctor,
+/obj/machinery/door/airlock/ms13/carlin/doctor,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "btL" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/ms13/lamp{
@@ -1536,7 +1536,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bvj" = (
 /obj/structure/ms13/rug/red,
 /turf/open/floor/wood/ms13/mosaic,
@@ -1601,7 +1601,7 @@
 /obj/structure/ms13/sandbag,
 /obj/structure/ms13/barricade,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "byK" = (
 /mob/living/basic/ms13/hostile_animal/mantis,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -1726,7 +1726,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bEh" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding/red,
@@ -1773,7 +1773,7 @@
 "bFR" = (
 /obj/structure/ms13/barrel/quadruple/red/one,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bGb" = (
 /turf/closed/wall/ms13/scrap/blue,
 /area/ms13/bos/building)
@@ -1789,11 +1789,11 @@
 "bGF" = (
 /obj/machinery/door/unpowered/ms13/metal,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bGS" = (
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bGX" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 8
@@ -1808,7 +1808,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bHc" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -1903,7 +1903,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bKg" = (
 /obj/structure/ms13/lamp/mining_lamp/on,
 /turf/closed/wall/ms13/scrap,
@@ -2096,7 +2096,7 @@
 /obj/item/reagent_containers/glass/bucket/ms13,
 /obj/item/mop/ms13,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bUE" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 8
@@ -2129,7 +2129,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bWc" = (
 /obj/structure/closet/crate/ms13/footlocker{
 	dir = 4
@@ -2189,11 +2189,11 @@
 /obj/machinery/ms13/terminal/crafted{
 	dir = 1;
 	remote_capability = 1;
-	signal_id_1 = "barony-craft-garage";
+	signal_id_1 = "carlin-craft-garage";
 	signal_title_1 = "garage doors"
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bYg" = (
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 8
@@ -2237,7 +2237,7 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 4
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bZh" = (
 /obj/machinery/light/ms13,
 /obj/structure/table/ms13/no_smooth/wood,
@@ -2256,7 +2256,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bZT" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 8
@@ -2341,7 +2341,7 @@
 	id = "hotel-r2-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cex" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -2418,7 +2418,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "chV" = (
 /obj/structure/ms13/pipes/horizontal/end{
 	dir = 1
@@ -2442,7 +2442,7 @@
 /obj/structure/ms13/large_pipe/pump,
 /obj/structure/ms13/pipes/horizontal/valve,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cjz" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 8
@@ -2499,7 +2499,7 @@
 "cmx" = (
 /obj/effect/landmark/start/ms13/laborer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cmC" = (
 /obj/structure/closet/ms13/metal,
 /obj/item/clothing/suit/armor/ms13/firesuit,
@@ -2523,7 +2523,7 @@
 "cmW" = (
 /obj/structure/ms13/rug/yellow,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cmZ" = (
 /obj/structure/chair/ms13/metal/folding,
 /turf/open/floor/wood/ms13/wide,
@@ -2555,7 +2555,7 @@
 /area/ms13/town)
 "cor" = (
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "coP" = (
 /obj/structure/table/ms13/no_smooth/large/metal/desk{
 	dir = 8
@@ -2690,7 +2690,7 @@
 "ctp" = (
 /obj/structure/ms13/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ctG" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/road,
@@ -2740,7 +2740,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cvC" = (
 /obj/structure/filingcabinet/ms13/busted{
 	dir = 4
@@ -2895,7 +2895,7 @@
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/smokeable/general,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cDX" = (
 /obj/structure/ms13/rug/rubber{
 	dir = 4
@@ -2910,14 +2910,14 @@
 	},
 /obj/structure/ms13/pipes/horizontal/down,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cEo" = (
 /obj/structure/ms13/rug/mat/rubber,
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/right/pre_open{
 	id = "town_hotel_shutters"
 	},
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cED" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 4
@@ -2941,7 +2941,7 @@
 "cFf" = (
 /obj/structure/ms13/cave_decor/boards/drought/westeast,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cFh" = (
 /obj/structure/ms13/cave_decor/minecart,
 /turf/open/floor/ms13/concrete/industrial/walkway,
@@ -2970,7 +2970,7 @@
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/smokeable/general,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cIx" = (
 /obj/structure/table/ms13/wood,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -3174,7 +3174,7 @@
 "cQu" = (
 /obj/machinery/ms13/agriculture/soil,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cQL" = (
 /obj/machinery/door/unpowered/ms13/metal/alt{
 	dir = 8
@@ -3200,7 +3200,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cSR" = (
 /obj/structure/chair/office/ms13/green{
 	dir = 4
@@ -3217,7 +3217,7 @@
 /area/ms13/town)
 "cTJ" = (
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cUk" = (
 /obj/structure/closet/ms13/metal,
 /obj/machinery/light/ms13{
@@ -3230,7 +3230,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cUG" = (
 /obj/structure/railing/ms13/sewer,
 /obj/structure/railing/ms13/sewer{
@@ -3239,7 +3239,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cVe" = (
 /obj/structure/ms13/trash/glass/plate,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -3249,7 +3249,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cWl" = (
 /obj/structure/ms13/tank/chemical/huge,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -3324,7 +3324,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dax" = (
 /obj/structure/ms13/trash/papers/two{
 	dir = 1
@@ -3354,7 +3354,7 @@
 /area/ms13/town)
 "dbU" = (
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dcc" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/tools/hardware,
@@ -3392,7 +3392,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dec" = (
 /obj/structure/ms13/toilet,
 /turf/open/floor/ms13/concrete,
@@ -3432,7 +3432,7 @@
 	},
 /obj/structure/window/reinforced/fulltile/ms13/glass,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dfV" = (
 /obj/machinery/button/ms13{
 	dir = 4;
@@ -3443,7 +3443,7 @@
 	},
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dgn" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/melee/lowrandom,
@@ -3500,7 +3500,7 @@
 /obj/structure/ms13/pipes/horizontal/single,
 /obj/structure/ms13/tank/chemical,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dif" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/phone/black{
@@ -3546,7 +3546,7 @@
 "djd" = (
 /obj/effect/turf_decal/ms13/graffiti/moyai,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "djf" = (
 /mob/living/basic/ms13/hostile_animal/gecko/golden,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -3576,7 +3576,7 @@
 "dki" = (
 /obj/effect/turf_decal/ms13/graffiti/ladder_south,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dkn" = (
 /mob/living/basic/ms13/ghoul/brown,
 /turf/open/floor/ms13/tile/full/green,
@@ -3612,7 +3612,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dmi" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -3648,7 +3648,7 @@
 "dni" = (
 /obj/structure/ms13/fence/vertical/wire/east/barb,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dnn" = (
 /turf/open/floor/ms13/concrete/cable/box{
 	dir = 1
@@ -3721,7 +3721,7 @@
 "dpR" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dqe" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/indestructible/red/right{
 	id = "bikers_club_garage"
@@ -3826,7 +3826,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "duH" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
@@ -3868,7 +3868,7 @@
 	pixel_y = 19
 	},
 /turf/open/floor/ms13/tile/full/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dwn" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/item/ms13/fluff/ashtray,
@@ -3902,7 +3902,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dwJ" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored{
 	dir = 1
@@ -4024,7 +4024,7 @@
 "dDv" = (
 /obj/machinery/door/unpowered/ms13/metal,
 /turf/open/floor/ms13/tile/full/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dEp" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid/pre_open{
 	id = "ore_refinery"
@@ -4033,7 +4033,7 @@
 /area/ms13/town)
 "dEE" = (
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dEO" = (
 /obj/structure/table/ms13/wood,
 /obj/item/papercutter/ms13{
@@ -4098,7 +4098,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dHQ" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -4115,7 +4115,7 @@
 "dIk" = (
 /obj/structure/ladder/ms13/manhole,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dIQ" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/effect/spawner/random/ms13/smokeable/general,
@@ -4140,7 +4140,7 @@
 "dKn" = (
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dLH" = (
 /obj/structure/ms13/barricade{
 	dir = 1
@@ -4171,7 +4171,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dME" = (
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /obj/effect/turf_decal/ms13/graffiti/fortretard,
@@ -4306,7 +4306,7 @@
 "dSM" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dSP" = (
 /obj/structure/closet/ms13/wall/firstaid,
 /obj/effect/spawner/random/ms13/medical/lowrandom,
@@ -4384,7 +4384,7 @@
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dWv" = (
 /obj/structure/table/ms13/low_wall/adobe,
 /obj/structure/window/fulltile/ms13/glass,
@@ -4393,7 +4393,7 @@
 "dWD" = (
 /obj/structure/ms13/fence/vertical/wire/east/barb,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "dWG" = (
 /obj/structure/bed/roller/ms13,
 /obj/machinery/light/ms13{
@@ -4408,7 +4408,7 @@
 "dWV" = (
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dXV" = (
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/wood/ms13/mosaic,
@@ -4553,7 +4553,7 @@
 	id = "town_hotel_window"
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "egw" = (
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp/building)
@@ -4636,7 +4636,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "eib" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -4647,11 +4647,11 @@
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "eiQ" = (
-/obj/machinery/door/airlock/ms13/barony/shop{
+/obj/machinery/door/airlock/ms13/carlin/shop{
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eiW" = (
 /obj/structure/ms13/rug/mat/rubber/single,
 /turf/open/floor/ms13/concrete,
@@ -4677,7 +4677,7 @@
 	},
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ejN" = (
 /obj/structure/filingcabinet/ms13,
 /obj/machinery/light/ms13/bulb{
@@ -4709,7 +4709,7 @@
 /area/ms13/town)
 "ekS" = (
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "elh" = (
 /obj/structure/ms13/pipes/horizontal/valve,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -4735,7 +4735,7 @@
 "emE" = (
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eop" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
 	id = "ncr_gate"
@@ -4752,7 +4752,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eoK" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/indestructible/red/mid{
 	id = "apparatus_bay2"
@@ -4794,7 +4794,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "epY" = (
 /obj/structure/closet/crate/ms13/woodcrate,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
@@ -4819,7 +4819,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ern" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 1
@@ -4907,7 +4907,7 @@
 	},
 /obj/machinery/light/ms13/bulb,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "euO" = (
 /obj/structure/ms13/storage/large/medical{
 	dir = 8
@@ -4938,11 +4938,11 @@
 /turf/open/floor/wood/ms13/carpet/shaggy/green,
 /area/ms13/town)
 "evW" = (
-/obj/machinery/door/airlock/ms13/barony{
+/obj/machinery/door/airlock/ms13/carlin{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ewg" = (
 /obj/structure/ms13/barrel/triple/red/one,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -4970,7 +4970,7 @@
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/dirty,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eyc" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -5086,7 +5086,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "eEm" = (
 /obj/structure/ms13/trash/food/misc,
 /turf/open/floor/wood/ms13/wide,
@@ -5147,7 +5147,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eIm" = (
 /obj/structure/ms13/pallet,
 /obj/structure/ms13/pipes/piped,
@@ -5185,7 +5185,7 @@
 "eKb" = (
 /obj/structure/ms13/pipes/horizontal/single/random,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eKq" = (
 /obj/structure/table/ms13/wood/constructed/cobbled,
 /obj/structure/ms13/trash/books/pile_alt{
@@ -5201,7 +5201,7 @@
 "eLo" = (
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eLV" = (
 /obj/structure/closet/ms13/wall/firstaid,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
@@ -5245,7 +5245,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eNE" = (
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/ammo/lowrandom,
@@ -5385,7 +5385,7 @@
 "eSQ" = (
 /obj/structure/ms13/pipes/horizontal/single/down,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eSY" = (
 /obj/structure/table/ms13/wood,
 /obj/structure/ms13/tv/rad_king{
@@ -5468,7 +5468,7 @@
 	pixel_y = 19
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eXB" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/ms13/wall_decor/calendar,
@@ -5481,7 +5481,7 @@
 	pixel_y = -6
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eXS" = (
 /obj/structure/ms13/wall_decor/flag/legion,
 /turf/closed/wall/ms13/scrap/red,
@@ -5600,7 +5600,7 @@
 "fet" = (
 /obj/structure/ms13/tank/massive/broken,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "feY" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -5663,7 +5663,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/structure/ms13/pipes/horizontal/single,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fiJ" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -5696,7 +5696,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fli" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /turf/closed/wall/ms13/scrap/white,
@@ -5710,7 +5710,7 @@
 /area/ms13/goldman/building)
 "fmt" = (
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fns" = (
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
@@ -5743,7 +5743,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "foW" = (
 /obj/structure/ms13/pipes/vertical/east/random,
 /turf/open/floor/ms13/concrete,
@@ -5867,7 +5867,7 @@
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/stale,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fve" = (
 /obj/structure/ms13/storage/bookshelf{
 	dir = 4
@@ -5914,7 +5914,7 @@
 "fyL" = (
 /obj/effect/turf_decal/ms13/road/verticalline,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fyO" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 4
@@ -5985,7 +5985,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fBT" = (
 /mob/living/simple_animal/hostile/ms13/radscorpion/desert,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -6133,7 +6133,7 @@
 "fIx" = (
 /obj/structure/ms13/trash/food/dinner,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fJg" = (
 /obj/structure/table/ms13/no_smooth/wood/square,
 /obj/structure/ms13/trash/papers{
@@ -6222,7 +6222,7 @@
 "fMh" = (
 /obj/effect/landmark/start/ms13/town_enforcer,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fMK" = (
 /obj/effect/spawner/random/ms13/medical/herbal,
 /obj/structure/closet/crate/ms13/footlocker,
@@ -6237,7 +6237,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fMZ" = (
 /obj/structure/ms13/barricade{
 	dir = 8
@@ -6300,19 +6300,19 @@
 	pixel_y = -14
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fRw" = (
 /obj/structure/chair/ms13/metal/blue{
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fRD" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fRI" = (
 /obj/structure/table/ms13/metal/grate,
 /turf/open/floor/ms13/tile/large/navy,
@@ -6336,7 +6336,7 @@
 	},
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fSV" = (
 /obj/item/reagent_containers/food/drinks/mug/ms13{
 	pixel_x = 8
@@ -6378,7 +6378,7 @@
 "fTI" = (
 /obj/structure/ms13/rug/mat/rubber,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fTU" = (
 /obj/machinery/iv_drip/ms13,
 /obj/machinery/light/ms13,
@@ -6394,7 +6394,7 @@
 "fUv" = (
 /obj/structure/fermenting_barrel/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fUy" = (
 /obj/machinery/ms13/terminal/wasteland{
 	dir = 1
@@ -6452,11 +6452,11 @@
 	id = "hotel-r2-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fXE" = (
 /obj/structure/ms13/trash/food/dinner,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fYk" = (
 /obj/effect/turf_decal/ms13/covering/paint/red,
 /turf/closed/wall/ms13/siding,
@@ -6509,7 +6509,7 @@
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fZq" = (
 /obj/structure/ms13/storage/large/medical{
 	dir = 4
@@ -6552,13 +6552,13 @@
 	},
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gbF" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gca" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 1
@@ -6602,11 +6602,11 @@
 "gdX" = (
 /obj/structure/bonfire/ms13/fire_barrel,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ged" = (
 /obj/machinery/ms13/fusion_generator,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gee" = (
 /obj/structure/table/ms13/metal/constructed,
 /obj/item/radio/ms13/ham/receiver/radioking,
@@ -6616,7 +6616,7 @@
 "geg" = (
 /obj/structure/filingcabinet/ms13/mail/old,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "geJ" = (
 /obj/structure/ms13/toilet{
 	dir = 4
@@ -6734,14 +6734,14 @@
 "gjR" = (
 /obj/structure/ms13/cave_decor/boards/drought/westeast,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "gjS" = (
 /obj/structure/ms13/tank/massive,
 /obj/structure/ms13/pipes/horizontal/single/random{
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gjT" = (
 /obj/item/reagent_containers/glass/bucket/ms13,
 /turf/open/floor/wood/ms13/wide,
@@ -6833,7 +6833,7 @@
 /area/ms13/town)
 "gnk" = (
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "gnw" = (
 /obj/structure/closet/ms13/metal,
 /obj/item/clothing/under/ms13/wasteland/mechanicprewar/mechanicgreen,
@@ -6878,11 +6878,11 @@
 "goS" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "goV" = (
 /obj/structure/ms13/pipes/horizontal/single,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gpb" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 8
@@ -6948,7 +6948,7 @@
 "grC" = (
 /obj/structure/ms13/trash/glass/plate,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gsf" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/tile/full/navy,
@@ -6980,7 +6980,7 @@
 	id = "hotel-r3-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gvd" = (
 /obj/structure/ms13/wall_decor/flag/legion,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -7013,7 +7013,7 @@
 	id = "hotel-r3-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gwb" = (
 /turf/closed/wall/ms13/craftable/scrap,
 /area/ms13/desert)
@@ -7113,7 +7113,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gDg" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/wood/ms13/mosaic,
@@ -7137,7 +7137,7 @@
 /obj/structure/bed/ms13/sleepingbag/green,
 /obj/structure/ms13/pipes/horizontal/single,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gDP" = (
 /obj/effect/turf_decal/ms13/road/verticalline,
 /obj/effect/landmark/start/ms13/wastelander,
@@ -7190,7 +7190,7 @@
 	},
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "gGg" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/concrete,
@@ -7199,7 +7199,7 @@
 "gGt" = (
 /obj/structure/ms13/pipes/horizontal/single/inwall,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gHe" = (
 /obj/structure/ms13/trash/papers/one{
 	dir = 8
@@ -7305,7 +7305,7 @@
 /obj/machinery/light/ms13,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gNQ" = (
 /obj/structure/ms13/wall_decor/calendar,
 /turf/open/floor/wood/ms13/wide,
@@ -7322,7 +7322,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gOQ" = (
 /obj/structure/ms13/wall_decor/cross,
 /obj/structure/ms13/trash/glass/basic,
@@ -7356,7 +7356,7 @@
 "gQe" = (
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gQx" = (
 /turf/open/floor/ms13/metal/grate/border/warning,
 /area/ms13/town)
@@ -7393,7 +7393,7 @@
 	id = "hotel-r4-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gTf" = (
 /obj/structure/bonfire/ms13/campfire,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -7453,7 +7453,7 @@
 	id = "town-shop-north"
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gXh" = (
 /obj/structure/table/ms13/no_smooth/large/wood/square{
 	dir = 4
@@ -7550,7 +7550,7 @@
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /obj/structure/ms13/lamp/makeshift,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hdF" = (
 /obj/structure/table/ms13/no_smooth/counter/wood/bend{
 	dir = 8
@@ -7567,7 +7567,7 @@
 	},
 /obj/structure/table/ms13/no_smooth/wood/stand,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hed" = (
 /obj/structure/ms13/storage/large/medical{
 	dir = 8
@@ -7586,7 +7586,7 @@
 "hgn" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hgp" = (
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/desert)
@@ -7682,7 +7682,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/food/random,
 /obj/effect/spawner/random/ms13/guaranteed/food/random,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hja" = (
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /turf/open/floor/ms13/concrete,
@@ -7705,13 +7705,13 @@
 "hjU" = (
 /obj/structure/ms13/fence/vertical/wire/west/barb,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hkw" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 5
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hkE" = (
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/ms13/concrete/industrial,
@@ -7740,7 +7740,7 @@
 /obj/structure/ms13/storage/vent,
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hlM" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 1
@@ -7778,7 +7778,7 @@
 "hnf" = (
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hnZ" = (
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp)
@@ -7836,7 +7836,7 @@
 /obj/structure/table/ms13/metal/constructed,
 /obj/structure/chair/comfy/ms13/armchair,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hqz" = (
 /obj/structure/ms13/foundation/wide/variantone{
 	dir = 4
@@ -7900,7 +7900,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "huA" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/tools/hardware,
@@ -7915,7 +7915,7 @@
 "huJ" = (
 /obj/structure/chair/ms13/metal/folding,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "huM" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -7950,7 +7950,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hvt" = (
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -7988,7 +7988,7 @@
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/tile/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hwU" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire{
 	dir = 4
@@ -8024,7 +8024,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hyw" = (
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/tile/full/white,
@@ -8090,7 +8090,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hBP" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left/pre_open,
 /turf/open/floor/ms13/concrete,
@@ -8134,7 +8134,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hEv" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 4
@@ -8271,7 +8271,7 @@
 "hMF" = (
 /obj/structure/ms13/tank/massive,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hNA" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/stale,
@@ -8374,7 +8374,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hRi" = (
 /obj/structure/closet/crate/ms13/woodcrate/compact,
 /obj/effect/spawner/random/ms13/food/packaged,
@@ -8570,7 +8570,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iaV" = (
 /obj/structure/ms13/barrel/double/red/one,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -8659,7 +8659,7 @@
 /obj/effect/spawner/random/ms13/armor/highrandom,
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ier" = (
 /obj/item/ammo_casing/ms13/spent,
 /turf/open/floor/wood/ms13/carpet/shaggy/blue,
@@ -8683,7 +8683,7 @@
 	id = "town-shop-north"
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ifH" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 1
@@ -8696,10 +8696,10 @@
 /area/ms13/town)
 "ifT" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid{
-	id = "barony-craft-garage"
+	id = "carlin-craft-garage"
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "igm" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/ms13/tile/full/green,
@@ -8778,7 +8778,7 @@
 "ilc" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ilf" = (
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/structure/window/fulltile/ms13/glass,
@@ -8841,7 +8841,7 @@
 "ioy" = (
 /obj/structure/ms13/wall_decor/flag,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ioA" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/ms13/tile,
@@ -8898,7 +8898,7 @@
 "iqY" = (
 /obj/structure/ms13/pot/plant,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "irf" = (
 /obj/structure/ms13/trash/papers{
 	dir = 6;
@@ -8947,7 +8947,7 @@
 "itU" = (
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "iuq" = (
 /obj/structure/closet/ms13/metal,
 /obj/structure/ms13/rug/rubber{
@@ -9046,7 +9046,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iyN" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/pipes/horizontal/box,
@@ -9155,7 +9155,7 @@
 "iDP" = (
 /obj/structure/closet/crate/ms13/woodcrate,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iDY" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /obj/structure/ms13/barricade,
@@ -9172,7 +9172,7 @@
 /obj/structure/ms13/barrel/quadruple/red,
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iEY" = (
 /obj/effect/mob_spawn/corpse/human/ms13/nomad,
 /obj/effect/decal/cleanable/blood/splatter{
@@ -9208,7 +9208,7 @@
 "iGl" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iGG" = (
 /obj/structure/closet/crate/ms13/woodcrate/compact,
 /obj/effect/spawner/random/ms13/tools/hardware,
@@ -9224,7 +9224,7 @@
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted/bend,
 /obj/item/shovel/ms13/spade,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "iGW" = (
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted/bend{
 	dir = 8
@@ -9267,7 +9267,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iJw" = (
 /obj/machinery/shower/ms13{
 	pixel_y = 24
@@ -9278,7 +9278,7 @@
 "iJC" = (
 /obj/structure/bonfire/ms13/fire_barrel,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "iJI" = (
 /obj/effect/turf_decal/ms13/covering/paint/white,
 /turf/closed/wall/ms13/brick/gray,
@@ -9294,7 +9294,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iKn" = (
 /obj/machinery/ms13/fusion_generator,
 /turf/open/floor/ms13/metal,
@@ -9374,7 +9374,7 @@
 "iOK" = (
 /obj/structure/ms13/large_pipe/pump,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "iOO" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 1
@@ -9387,7 +9387,7 @@
 	id = "town-shop-north"
 	},
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iOX" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/wood/ms13/wide,
@@ -9448,7 +9448,7 @@
 "iQr" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iRF" = (
 /obj/machinery/light/ms13,
 /obj/structure/ms13/foundation,
@@ -9770,7 +9770,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/food/produce_random,
 /obj/effect/spawner/random/ms13/guaranteed/food/produce_random,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jkp" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/machinery/light/ms13{
@@ -9788,7 +9788,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jlm" = (
 /obj/structure/chair/ms13/metal{
 	dir = 4
@@ -9850,11 +9850,11 @@
 	},
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jnm" = (
 /obj/structure/ms13/rug/red,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jnL" = (
 /obj/structure/ms13/pallet/stack{
 	dir = 1
@@ -9872,7 +9872,7 @@
 /obj/machinery/light/ms13,
 /obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jqn" = (
 /turf/open/floor/ms13/metal/grate,
 /area/ms13/town)
@@ -9921,7 +9921,7 @@
 "jsw" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jsZ" = (
 /obj/structure/ms13/trash/papers/two{
 	dir = 1
@@ -9946,7 +9946,7 @@
 /obj/structure/ms13/fence,
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jvp" = (
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /obj/effect/turf_decal/ms13/graffiti/aid,
@@ -9999,11 +9999,11 @@
 	},
 /obj/effect/spawner/random/ms13/drink/soda,
 /turf/open/floor/ms13/metal/pipe/corner,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jxP" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jyd" = (
 /obj/structure/ms13/wall_decor/flag/legion,
 /obj/structure/bed/ms13/bedframe/cot,
@@ -10018,7 +10018,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jyX" = (
 /obj/structure/dresser/ms13/orange,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -10059,7 +10059,7 @@
 /area/ms13/desert)
 "jAt" = (
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jAu" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/noticeboard/ms13/cork,
@@ -10068,7 +10068,7 @@
 "jBo" = (
 /obj/structure/filingcabinet/ms13/mail/old,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jBv" = (
 /obj/structure/ms13/barricade{
 	dir = 4
@@ -10081,7 +10081,7 @@
 "jBF" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jBL" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/structure/closet/crate/ms13/cash_register{
@@ -10095,7 +10095,7 @@
 "jCv" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jCS" = (
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -10141,7 +10141,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jFP" = (
 /obj/structure/filingcabinet/ms13,
 /turf/open/floor/ms13/concrete,
@@ -10190,7 +10190,7 @@
 "jGl" = (
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jGu" = (
 /obj/structure/table/ms13/no_smooth/counter/metal/bend{
 	dir = 1
@@ -10214,7 +10214,7 @@
 "jGW" = (
 /obj/structure/dresser/ms13/torquise,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jHx" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -10232,7 +10232,7 @@
 /obj/structure/ms13/sandbag,
 /obj/structure/ms13/barricade,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jHQ" = (
 /obj/structure/ms13/storage/store{
 	dir = 4
@@ -10327,7 +10327,7 @@
 "jMn" = (
 /obj/structure/ms13/trash/food/glass,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jMw" = (
 /obj/structure/ms13/storage/large/clothing,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -10381,7 +10381,7 @@
 "jQD" = (
 /obj/structure/stairs/east,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jQP" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 1
@@ -10396,7 +10396,7 @@
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /obj/item/knife/ms13,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jRx" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/bars/rusty{
@@ -10413,7 +10413,7 @@
 "jRI" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jRU" = (
 /obj/structure/closet/ms13/fridge,
 /obj/effect/spawner/random/ms13/drink/soda,
@@ -10454,7 +10454,7 @@
 /obj/structure/chair/ms13/metal/blue,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jXa" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/ms13/tile/large/cafeteria,
@@ -10516,11 +10516,11 @@
 "jYv" = (
 /obj/structure/ms13/pipes/vertical/east/corner,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jYE" = (
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jYJ" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/tile/full/green,
@@ -10564,7 +10564,7 @@
 "kca" = (
 /obj/structure/ms13/tank/pipe,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kcI" = (
 /mob/living/basic/ms13/ghoul/brown,
 /turf/open/floor/ms13/tile,
@@ -10592,7 +10592,7 @@
 /obj/structure/ms13/pipes/horizontal/down,
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kfr" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -10651,7 +10651,7 @@
 "khy" = (
 /obj/effect/turf_decal/ms13/graffiti/eyes,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "khI" = (
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -10688,7 +10688,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kkI" = (
 /obj/machinery/button/ms13{
 	dir = 8;
@@ -10741,7 +10741,7 @@
 "knc" = (
 /obj/structure/ms13/barrel/quadruple/red/two,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "knD" = (
 /obj/structure/ms13/tv/wooden/cabinet{
 	dir = 8
@@ -10800,7 +10800,7 @@
 	},
 /obj/structure/noticeboard/ms13/cork,
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kqA" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /turf/closed/wall/ms13/siding,
@@ -10827,7 +10827,7 @@
 	dir = 5
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ktq" = (
 /obj/structure/ms13/rug/yellow{
 	dir = 1;
@@ -10858,7 +10858,7 @@
 	},
 /obj/structure/ms13/rug/red,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ktX" = (
 /obj/effect/spawner/random/ms13/currency/drought/tier1,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -10895,11 +10895,11 @@
 "kvq" = (
 /obj/effect/turf_decal/ms13/graffiti/followwater,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kvw" = (
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kvN" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/wood/ms13/wide,
@@ -10952,7 +10952,7 @@
 	},
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kyP" = (
 /obj/item/reagent_containers/glass/bucket/ms13{
 	pixel_x = -8;
@@ -10982,7 +10982,7 @@
 	},
 /obj/effect/spawner/random/ms13/drink/alcohol,
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kAc" = (
 /obj/machinery/ms13/terminal/wall{
 	dir = 4;
@@ -10993,7 +10993,7 @@
 	signal_title_2 = "Window Shutters"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kAh" = (
 /obj/structure/ms13/storage/large/clothing,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -11004,7 +11004,7 @@
 "kBd" = (
 /obj/item/shovel/ms13/rake,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kBh" = (
 /obj/structure/ms13/barrel/single/hazard,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -11120,7 +11120,7 @@
 	},
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kEd" = (
 /obj/structure/ms13/trash/bricks,
 /turf/open/floor/ms13/tile/large/black,
@@ -11133,7 +11133,7 @@
 /obj/structure/ms13/pipes/horizontal/single,
 /obj/structure/closet/ms13/fridge,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kFz" = (
 /obj/structure/ms13/foundation/wide/variantone{
 	dir = 9
@@ -11156,7 +11156,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kGL" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /turf/open/floor/ms13/tile/large/checkered,
@@ -11262,7 +11262,7 @@
 "kLu" = (
 /obj/structure/table/ms13/metal/constructed,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kLJ" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/mattress/stained,
@@ -11291,7 +11291,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kMG" = (
 /obj/structure/ms13/rug{
 	dir = 1
@@ -11325,7 +11325,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kOD" = (
 /obj/structure/table/ms13/low_wall/scrap/blue,
 /obj/structure/ms13/barricade{
@@ -11395,7 +11395,7 @@
 /area/ms13/town)
 "kQF" = (
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kRS" = (
 /obj/structure/closet/crate/ms13/medical,
 /obj/effect/spawner/random/ms13/guaranteed/medical/bloodbag,
@@ -11407,7 +11407,7 @@
 /obj/effect/spawner/random/ms13/medical/bloodbag,
 /obj/effect/spawner/random/ms13/medical/bloodbag,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kSi" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -11448,7 +11448,7 @@
 	id = "town-gate"
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kUQ" = (
 /obj/structure/ms13/foundation/mosaic/varianttwo{
 	dir = 9
@@ -11560,7 +11560,7 @@
 /area/ms13/town)
 "kZw" = (
 /turf/closed/wall/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kZy" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -11587,7 +11587,7 @@
 "laV" = (
 /obj/structure/table/ms13/crafting/armorbench,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lbg" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -11603,7 +11603,7 @@
 "lbq" = (
 /obj/structure/ms13/cave_decor/boards/drought/northsouth,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lbv" = (
 /obj/structure/ms13/storage/vent,
 /obj/machinery/light/ms13{
@@ -11616,7 +11616,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lbX" = (
 /obj/structure/ms13/fence/wire/barb,
 /obj/structure/ms13/barrel/quadruple/grey/one,
@@ -11646,7 +11646,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lej" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -11870,7 +11870,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lot" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /obj/item/ms13/fluff/ashtray{
@@ -11885,7 +11885,7 @@
 "low" = (
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/tile/full/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "loz" = (
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /obj/effect/ai_node,
@@ -11942,7 +11942,7 @@
 "lqz" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lqY" = (
 /obj/structure/railing/ms13/sewer,
 /obj/structure/railing/ms13/sewer{
@@ -11951,7 +11951,7 @@
 /turf/open/floor/ms13/metal/pipe/intersection{
 	dir = 4
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lqZ" = (
 /mob/living/simple_animal/hostile/ms13/robot/protectron/police,
 /turf/open/floor/ms13/concrete,
@@ -11962,13 +11962,13 @@
 	id = "town_hotel_shutters"
 	},
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lro" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/structure/ms13/pipes/horizontal/single/down,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lrq" = (
 /obj/structure/table/ms13/low_wall/wood,
 /obj/structure/ms13/barricade,
@@ -11982,7 +11982,7 @@
 /obj/structure/ms13/barricade,
 /obj/structure/ms13/rug/red,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lrH" = (
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 4
@@ -12003,13 +12003,13 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lsw" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid/pre_open{
 	id = "town-gate"
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lsC" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk/alt,
 /obj/machinery/light/ms13{
@@ -12057,7 +12057,7 @@
 /obj/structure/chair/ms13/wood/padded,
 /obj/effect/landmark/start/ms13/clinician,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lvT" = (
 /obj/machinery/ms13/agriculture,
 /turf/open/floor/ms13/tile/large/white,
@@ -12089,14 +12089,14 @@
 "lwv" = (
 /obj/effect/turf_decal/ms13/graffiti/deadcount,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lww" = (
 /obj/effect/turf_decal/ms13/road/verticalline,
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid/pre_open{
 	id = "town-gate"
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lwV" = (
 /obj/structure/ms13/barrel/quadruple/yellow,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -12112,7 +12112,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/gun/lowrandom,
 /obj/effect/spawner/random/ms13/gun/highrandom,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lxj" = (
 /obj/structure/sign/poster/ms13/handgun,
 /turf/open/floor/wood/ms13/wide,
@@ -12130,7 +12130,7 @@
 "lyJ" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lyS" = (
 /obj/structure/chair/ms13/metal/unfinished{
 	dir = 1
@@ -12185,7 +12185,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lBy" = (
 /obj/machinery/vending/ms13/sarsaparilla,
 /turf/open/floor/wood/ms13/wide,
@@ -12223,7 +12223,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lDh" = (
 /obj/structure/bonfire/ms13/fire_barrel,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -12261,7 +12261,7 @@
 "lEN" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lFi" = (
 /obj/effect/spawner/random/ms13/melee/lowrandom,
 /obj/structure/closet/crate/ms13/footlocker{
@@ -12273,7 +12273,7 @@
 "lFv" = (
 /obj/effect/turf_decal/ms13/graffiti/aid,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lFw" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red,
 /turf/open/floor/ms13/concrete,
@@ -12316,7 +12316,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lIw" = (
 /obj/machinery/door/unpowered/ms13/metal,
 /turf/open/floor/ms13/tile/large/white,
@@ -12342,7 +12342,7 @@
 	},
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lJd" = (
 /obj/structure/table/ms13/conveyor_belt,
 /turf/open/floor/ms13/concrete,
@@ -12365,7 +12365,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lJD" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire{
 	dir = 4
@@ -12433,7 +12433,7 @@
 /obj/structure/ms13/pipes/horizontal/single/inwall,
 /obj/structure/ms13/tank,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lMa" = (
 /obj/structure/ms13/barricade{
 	dir = 1
@@ -12520,7 +12520,7 @@
 "lPZ" = (
 /obj/structure/railing/ms13/sewer,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lQb" = (
 /obj/structure/chair/comfy/ms13/armchair,
 /turf/open/floor/wood/ms13/wide,
@@ -12596,7 +12596,7 @@
 	dir = 9
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lUl" = (
 /obj/structure/ms13/trash/papers/three{
 	dir = 4
@@ -12677,7 +12677,7 @@
 "mad" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mat" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -12854,13 +12854,13 @@
 	dir = 1
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mjJ" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mke" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -12995,7 +12995,7 @@
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mqp" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -13011,7 +13011,7 @@
 "mqu" = (
 /obj/structure/chair/ms13/metal/red/unfinished,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mrh" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -13035,18 +13035,18 @@
 "mrQ" = (
 /obj/structure/ms13/rug/red,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "msi" = (
 /obj/structure/ms13/tank/chemical/container,
 /obj/structure/ms13/pipes/horizontal/random,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "msv" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 5
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "msw" = (
 /obj/structure/ms13/wall_decor/flag,
 /turf/open/floor/wood/ms13/wide,
@@ -13075,7 +13075,7 @@
 "mtE" = (
 /obj/structure/railing/ms13/sewer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mtU" = (
 /obj/effect/turf_decal/ms13/covering/tiles/blue,
 /turf/closed/wall/ms13/scrap/red,
@@ -13109,9 +13109,9 @@
 /area/ms13/town)
 "mws" = (
 /obj/structure/ms13/rug/mat/rubber,
-/obj/effect/landmark/start/ms13/barkeep,
+/obj/effect/landmark/start/ms13/carlin_barkeep,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mwv" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /turf/open/floor/ms13/tile/large/white,
@@ -13179,7 +13179,7 @@
 /obj/effect/spawner/random/ms13/seeds/random,
 /obj/effect/spawner/random/ms13/seeds/random,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "myc" = (
 /obj/structure/chair/ms13/wood{
 	dir = 4
@@ -13203,7 +13203,7 @@
 /area/ms13/town)
 "myZ" = (
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mzk" = (
 /obj/structure/ms13/toilet{
 	dir = 1
@@ -13226,7 +13226,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mDG" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/indestructible/red/right{
 	id = "gun_shop_ext"
@@ -13244,13 +13244,13 @@
 	id = "town-gate"
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mEm" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mEp" = (
 /obj/structure/table/ms13/low_wall/siding,
 /obj/structure/ms13/barricade{
@@ -13344,7 +13344,7 @@
 "mIG" = (
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mIK" = (
 /obj/item/ammo_casing/ms13/spent,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -13402,7 +13402,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mLT" = (
 /obj/structure/table/ms13/low_wall/siding,
 /obj/structure/window/fulltile/ms13/glass,
@@ -13487,7 +13487,7 @@
 	},
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mQg" = (
 /obj/structure/sink/ms13{
 	dir = 4
@@ -13509,7 +13509,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mSw" = (
 /obj/machinery/light/ms13,
 /obj/structure/closet/crate/ms13/woodcrate/compact/army,
@@ -13533,7 +13533,7 @@
 /obj/structure/table/ms13/metal/constructed,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mTY" = (
 /obj/structure/ms13/trash/wood{
 	dir = 10
@@ -13611,7 +13611,7 @@
 "mXj" = (
 /obj/structure/ms13/rug/mat/vulgar,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mXp" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 1
@@ -13676,7 +13676,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "naf" = (
 /obj/structure/ms13/fence/vertical/wire/east,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -13757,7 +13757,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ndF" = (
 /obj/structure/table/ms13/crafting/ammobench,
 /turf/open/floor/wood/ms13/wide,
@@ -13808,7 +13808,7 @@
 "ngZ" = (
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nhf" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
 	id = "clinic_garage"
@@ -13877,7 +13877,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nmM" = (
 /obj/structure/chair/ms13/wood{
 	dir = 4
@@ -13906,7 +13906,7 @@
 "nnZ" = (
 /obj/structure/ms13/fence/vertical/wire/east,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "noc" = (
 /obj/structure/ms13/trash/papers/one,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -14056,7 +14056,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nuA" = (
 /obj/structure/ms13/trash/papers/three{
 	dir = 4
@@ -14120,7 +14120,7 @@
 /obj/effect/spawner/random/ms13/crafting/refined,
 /obj/effect/spawner/random/ms13/crafting/refined,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nxU" = (
 /obj/machinery/door/poddoor/shutters/ms13/vertical/red/mid{
 	id = "mining_area"
@@ -14162,11 +14162,11 @@
 /area/ms13/bos/building)
 "nAg" = (
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nAE" = (
 /obj/item/pickaxe/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nAH" = (
 /obj/structure/ms13/barrel/triple/red,
 /turf/open/floor/wood/ms13/wide,
@@ -14203,7 +14203,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nCS" = (
 /obj/structure/ms13/pipes/horizontal/box,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -14231,7 +14231,7 @@
 /area/ms13/desert)
 "nDJ" = (
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nDL" = (
 /obj/machinery/button/ms13{
 	id = "town-shop-north"
@@ -14239,7 +14239,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nEa" = (
 /obj/structure/ms13/trash/papers{
 	dir = 6
@@ -14341,11 +14341,11 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nHR" = (
 /obj/effect/turf_decal/ms13/graffiti/camp_west,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nHU" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire{
 	dir = 1
@@ -14360,7 +14360,7 @@
 /obj/effect/spawner/random/ms13/medical/lowrandom,
 /obj/effect/spawner/random/ms13/medical/lowrandom,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nIm" = (
 /obj/machinery/door/unpowered/ms13/seethrough/metal{
 	dir = 1
@@ -14386,7 +14386,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nKF" = (
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 8
@@ -14424,7 +14424,7 @@
 /obj/structure/ms13/pipes/vertical/east/valve,
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nLU" = (
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/ms13/concrete,
@@ -14490,7 +14490,7 @@
 "nOq" = (
 /obj/structure/ms13/pipes/vent,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nOI" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /turf/closed/wall/ms13/concrete,
@@ -14583,7 +14583,7 @@
 "nUg" = (
 /obj/structure/ms13/barrel/double/grey/two,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nUG" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -14593,7 +14593,7 @@
 "nUQ" = (
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nVf" = (
 /obj/structure/stairs/south,
 /turf/open/floor/ms13/concrete/industrial,
@@ -14633,7 +14633,7 @@
 	id = "town-gate"
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nVN" = (
 /obj/structure/stairs/east,
 /obj/structure/railing/ms13/solo,
@@ -14646,7 +14646,7 @@
 "nWH" = (
 /obj/structure/ms13/fence,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nWQ" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -14680,7 +14680,7 @@
 "nYa" = (
 /obj/effect/turf_decal/ms13/graffiti/fuckyou,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nYj" = (
 /obj/structure/railing/ms13/solo,
 /turf/open/floor/ms13/concrete/industrial,
@@ -14708,7 +14708,7 @@
 "oad" = (
 /obj/structure/ms13/pa_jack,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oah" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/indestructible/red/right{
 	id = "general_store_ext"
@@ -14723,7 +14723,7 @@
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "obo" = (
 /obj/structure/closet/crate/ms13/army,
 /turf/open/floor/ms13/metal{
@@ -14756,7 +14756,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ocx" = (
 /obj/structure/ladder/ms13/manhole,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -14973,7 +14973,7 @@
 "opw" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "opO" = (
 /obj/structure/ms13/trash/papers/one{
 	dir = 4
@@ -15174,7 +15174,7 @@
 "oyL" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oza" = (
 /obj/structure/chair/comfy/ms13/armchair,
 /turf/open/floor/wood/ms13/carpet/shaggy/green,
@@ -15182,7 +15182,7 @@
 "ozO" = (
 /obj/structure/ms13/rug/mat/rubber/single,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oAa" = (
 /obj/structure/ms13/pipes/vertical/east/corner/down,
 /obj/structure/ladder/ms13,
@@ -15192,7 +15192,7 @@
 "oAi" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oAK" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 1
@@ -15214,7 +15214,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oCz" = (
 /obj/structure/bed/ms13/bedframe/metal,
 /obj/structure/bed/ms13/mattress/old,
@@ -15229,14 +15229,14 @@
 /obj/structure/bed/ms13/mattress/dirty,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oDw" = (
 /obj/machinery/light/ms13{
 	dir = 1
 	},
 /obj/machinery/griddle/ms13,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oDB" = (
 /obj/structure/railing/ms13/wood{
 	dir = 8
@@ -15369,7 +15369,7 @@
 	pixel_y = -14
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oGr" = (
 /obj/structure/ms13/lamp{
 	pixel_y = 12
@@ -15448,7 +15448,7 @@
 "oJi" = (
 /obj/structure/chair/ms13/metal/folding,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oKd" = (
 /obj/item/ms13/brick{
 	pixel_x = 14;
@@ -15463,7 +15463,7 @@
 "oKz" = (
 /obj/structure/railing/ms13/sewer,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oKD" = (
 /turf/open/floor/ms13/metal,
 /area/ms13/bos/building)
@@ -15498,7 +15498,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oMe" = (
 /obj/effect/turf_decal/ms13/covering/paint/green,
 /turf/closed/wall/ms13/scrap,
@@ -15506,10 +15506,10 @@
 "oMf" = (
 /obj/effect/turf_decal/ms13/graffiti/followwater,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oMv" = (
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oMO" = (
 /obj/machinery/power/ms13/streetlamp/corner{
 	dir = 8
@@ -15525,7 +15525,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oNA" = (
 /obj/machinery/vending/ms13/sarsaparilla{
 	dir = 4
@@ -15565,7 +15565,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oPn" = (
 /obj/structure/ms13/trash/papers/one{
 	dir = 1
@@ -15619,7 +15619,7 @@
 "oRt" = (
 /obj/item/stack/sheet/ms13/wood/plank,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oRv" = (
 /obj/machinery/door/unpowered/ms13/wood,
 /turf/open/floor/ms13/tile,
@@ -15642,7 +15642,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oRU" = (
 /obj/structure/chair/pew/left{
 	dir = 8
@@ -15668,7 +15668,7 @@
 "oTd" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "oTs" = (
 /obj/structure/chair/ms13/wood,
 /obj/effect/landmark/start/ms13/wastelander,
@@ -15679,7 +15679,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oTW" = (
 /obj/structure/ms13/storage/large/shop,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
@@ -15770,13 +15770,13 @@
 "oXb" = (
 /obj/machinery/ms13/plant_machinery/broken,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oXf" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 4
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oXq" = (
 /obj/structure/chair/ms13/metal{
 	dir = 8
@@ -15808,7 +15808,7 @@
 "oZa" = (
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oZb" = (
 /obj/structure/filingcabinet/ms13/empty,
 /obj/structure/ms13/storage/vent,
@@ -15967,7 +15967,7 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "peK" = (
 /obj/structure/closet/crate/ms13/woodcrate,
 /obj/effect/spawner/random/ms13/crafting/electrical,
@@ -16097,11 +16097,11 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pmr" = (
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pmK" = (
 /obj/structure/ms13/rug/mat/vulgar{
 	dir = 4
@@ -16159,7 +16159,7 @@
 /area/ms13/town)
 "pqg" = (
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "pqx" = (
 /obj/structure/ms13/pot/plant,
 /turf/open/floor/wood/ms13/carpet/shaggy/blue,
@@ -16183,7 +16183,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "psc" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/ms13/mosaic,
@@ -16310,7 +16310,7 @@
 /area/ms13/town)
 "pxF" = (
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pxT" = (
 /obj/structure/table/ms13/no_smooth/large/metal/desk{
 	dir = 8
@@ -16334,7 +16334,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pyP" = (
 /obj/structure/table/ms13/no_smooth/wood/square,
 /obj/structure/ms13/tv/rad_king{
@@ -16362,7 +16362,7 @@
 "pzU" = (
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pAa" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/backpack,
@@ -16587,7 +16587,7 @@
 "pIc" = (
 /obj/structure/bonfire/ms13/fire_barrel,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "pIG" = (
 /obj/item/pickaxe/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -16752,7 +16752,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pQi" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -16807,7 +16807,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pSM" = (
 /mob/living/basic/ms13/hostile_animal/mantis,
 /turf/open/floor/wood/ms13/wide,
@@ -17092,7 +17092,7 @@
 "qiA" = (
 /obj/structure/bed/ms13/sleepingbag/red,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qiT" = (
 /obj/structure/ms13/pipes/horizontal/valve,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -17132,7 +17132,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qjA" = (
 /obj/structure/ms13/deli{
 	dir = 8
@@ -17180,11 +17180,11 @@
 	dir = 10
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qly" = (
 /obj/effect/turf_decal/trimline/yellow/line,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qme" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -17314,13 +17314,13 @@
 "qqb" = (
 /obj/structure/stairs/east,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qqo" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 6
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qqw" = (
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/structure/window/fulltile/ms13/glass,
@@ -17340,7 +17340,7 @@
 	id = "town-shop-south"
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qry" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -17389,7 +17389,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qsu" = (
 /obj/structure/ms13/trash/wood{
 	dir = 1
@@ -17408,7 +17408,7 @@
 "qsM" = (
 /obj/structure/table/ms13/metal/heavy,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qsZ" = (
 /obj/structure/ms13/foundation/wide/varianttwo{
 	dir = 8
@@ -17447,7 +17447,7 @@
 "qux" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "quB" = (
 /obj/structure/ms13/storage/large/shop,
 /turf/open/floor/ms13/tile/large/black,
@@ -17513,7 +17513,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qxj" = (
 /obj/structure/chair/office/ms13/green,
 /turf/open/floor/ms13/tile/full/green,
@@ -17541,7 +17541,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qxW" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /turf/closed/wall/ms13/scrap/blue,
@@ -17568,12 +17568,12 @@
 "qzh" = (
 /obj/structure/ms13/rug/mat/rubber,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qzs" = (
 /obj/structure/closet/ms13/wall/firstaid,
 /obj/effect/spawner/random/ms13/guaranteed/medical/medkit,
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qzv" = (
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/gun/lowrandom,
@@ -17583,7 +17583,7 @@
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qAd" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -17614,7 +17614,7 @@
 /obj/structure/chair/ms13/metal/stool,
 /obj/effect/landmark/start/ms13/town_enforcer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qBM" = (
 /obj/structure/table/ms13/low_wall/siding,
 /turf/open/floor/ms13/tile/full/green,
@@ -17652,7 +17652,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qDh" = (
 /obj/structure/ms13/pipes/piped,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -17807,7 +17807,7 @@
 	},
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qLa" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 6
@@ -17818,7 +17818,7 @@
 	},
 /obj/item/mop/ms13,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qLG" = (
 /obj/structure/ms13/barrel/double/yellow/one,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -17902,7 +17902,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qOH" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -17921,7 +17921,7 @@
 	},
 /obj/structure/ms13/pipes/horizontal/down/single,
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qPJ" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 8
@@ -17987,12 +17987,12 @@
 /obj/structure/chair/ms13/metal/broken,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qRM" = (
 /obj/structure/ms13/pipes/vertical/east/corner/down,
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qRS" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -18008,7 +18008,7 @@
 "qSd" = (
 /obj/structure/ms13/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qSj" = (
 /obj/structure/table/ms13/low_wall/siding,
 /obj/structure/window/fulltile/ms13/glass,
@@ -18037,7 +18037,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qTk" = (
 /obj/item/ms13_small_flag/usa{
 	pixel_y = 20
@@ -18141,7 +18141,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qXi" = (
 /obj/structure/ms13/large_pipe/pump,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -18153,7 +18153,7 @@
 "qYx" = (
 /obj/structure/stairs/west,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qZi" = (
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -18246,7 +18246,7 @@
 /obj/structure/chair/ms13/metal/folding,
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rjd" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/machinery/light/ms13,
@@ -18263,7 +18263,7 @@
 "rkq" = (
 /obj/structure/table/ms13/no_smooth/large/pool,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rkC" = (
 /obj/structure/ms13/trash/papers/three,
 /obj/structure/ms13/trash/glass/basic,
@@ -18283,7 +18283,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rlZ" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -18298,7 +18298,7 @@
 "rmn" = (
 /obj/structure/chair/ms13/metal/stool,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rmE" = (
 /obj/effect/turf_decal/ms13/showerdrains/small,
 /obj/structure/table/rolling/ms13,
@@ -18377,7 +18377,7 @@
 "rny" = (
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rnJ" = (
 /obj/structure/table/ms13/metal/small,
 /obj/effect/spawner/random/ms13/gun/lowrandom,
@@ -18409,7 +18409,7 @@
 /area/ms13/legioncamp/building)
 "rpg" = (
 /turf/open/floor/ms13/tile/full/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rpv" = (
 /obj/effect/spawner/random/ms13/gun/lowrandom,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -18514,7 +18514,7 @@
 "rus" = (
 /obj/effect/turf_decal/ms13/graffiti/dead,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ruz" = (
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -18536,7 +18536,7 @@
 "ruY" = (
 /obj/structure/ms13/barrel/quadruple/red/two,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "rvz" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
@@ -18550,7 +18550,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rwl" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/stack/sheet/ms13/wood/plank{
@@ -18593,7 +18593,7 @@
 "rxN" = (
 /obj/structure/ms13/rug/mat/vulgar/fuckoff,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "rxY" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -18617,11 +18617,11 @@
 	},
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rzv" = (
 /obj/structure/ms13/trash/food/misc,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rzA" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -18640,7 +18640,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rAq" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/bars,
@@ -18724,7 +18724,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rDj" = (
 /obj/structure/ms13/wall_decor/sign,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -18745,7 +18745,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rEv" = (
 /obj/structure/bed/ms13/mattress/dirty,
 /turf/open/floor/wood/ms13/wide,
@@ -18909,7 +18909,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rNA" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
@@ -18957,7 +18957,7 @@
 /area/ms13/town)
 "rOL" = (
 /turf/open/floor/ms13/metal/pipe/corner,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rOP" = (
 /mob/living/basic/ms13/hostile_animal/pigrat,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -19088,12 +19088,12 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "rTZ" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /obj/effect/turf_decal/ms13/graffiti/eyes,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rUo" = (
 /obj/structure/ms13/bars/rusty{
 	dir = 4
@@ -19140,15 +19140,15 @@
 "rVY" = (
 /obj/structure/ms13/pipes/horizontal/random,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rWT" = (
 /obj/structure/chair/ms13/overlaypickup/plastic,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "rXc" = (
 /obj/structure/ms13/pipes/horizontal/down,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rXi" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/yellowed,
@@ -19185,7 +19185,7 @@
 "rXV" = (
 /obj/structure/ms13/pipes/vent,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rZM" = (
 /obj/structure/chair/ms13/metal/broken{
 	dir = 8
@@ -19273,7 +19273,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sfp" = (
 /obj/structure/ms13/wall_decor/calendar,
 /turf/open/floor/ms13/tile/large/checkered,
@@ -19287,7 +19287,7 @@
 "sfP" = (
 /obj/structure/table/ms13/crafting/weaponbench,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sgj" = (
 /mob/living/simple_animal/hostile/ms13/radscorpion/desert,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -19300,7 +19300,7 @@
 "sgN" = (
 /obj/structure/ms13/pipes/horizontal/valve,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sgO" = (
 /turf/closed/indestructible/rock/ms13/drought,
 /area/ms13/goldman/building)
@@ -19308,7 +19308,7 @@
 /obj/structure/ms13/pipes/horizontal/random,
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "siv" = (
 /obj/structure/ms13/barricade{
 	dir = 4
@@ -19326,11 +19326,11 @@
 "sja" = (
 /obj/structure/ms13/barricade,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sjd" = (
 /obj/structure/ms13/fence/corner/wire/barb,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "skl" = (
 /obj/structure/table/ms13/metal/small,
 /obj/item/ms13/fluff/ashtray,
@@ -19358,10 +19358,10 @@
 /area/ms13/bos/building)
 "slT" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
-	id = "barony-craft-garage"
+	id = "carlin-craft-garage"
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "slX" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 8
@@ -19400,7 +19400,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "soP" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/radio,
@@ -19443,7 +19443,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sqV" = (
 /obj/item/ammo_casing/ms13/spent,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -19492,7 +19492,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "stb" = (
 /obj/structure/chair/office/ms13/red/broken{
 	dir = 8
@@ -19546,7 +19546,7 @@
 	name = "gate button"
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "svE" = (
 /obj/structure/ms13/jukebox,
 /obj/structure/ms13/foundation/wide/variantfive,
@@ -19583,13 +19583,13 @@
 "swK" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sxv" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/right{
-	id = "barony-craft-garage"
+	id = "carlin-craft-garage"
 	},
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sxC" = (
 /obj/structure/ms13/rug/mat/rubber,
 /obj/structure/ms13/rug/mat/rubber,
@@ -19601,7 +19601,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sxU" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/item/paper_bin/ms13{
@@ -19614,7 +19614,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "syi" = (
 /obj/structure/ms13/fence/corner/wire{
 	dir = 4
@@ -19704,7 +19704,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sBZ" = (
 /obj/structure/ms13/foundation/wide/variantfive{
 	dir = 9
@@ -19772,7 +19772,7 @@
 /obj/structure/ms13/pipes/horizontal/box,
 /obj/structure/safe/ms13,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sFm" = (
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /obj/item/ms13/fluff/ashtray{
@@ -19836,12 +19836,12 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sIV" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/item/radio/ms13/ham/receiver/radioking,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sJc" = (
 /obj/structure/table/ms13/crafting/workbench,
 /turf/open/floor/ms13/concrete,
@@ -19891,7 +19891,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sMy" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk/alt,
 /turf/open/floor/wood/ms13/wide,
@@ -20009,12 +20009,12 @@
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sUU" = (
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 4
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sUW" = (
 /obj/structure/closet/ms13/fridge,
 /obj/machinery/light/ms13/bulb{
@@ -20131,7 +20131,7 @@
 "tax" = (
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "taN" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/item/ms13/fluff/ashtray{
@@ -20165,7 +20165,7 @@
 "tbl" = (
 /obj/structure/ms13/pipes/horizontal/end,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tbw" = (
 /obj/machinery/door/unpowered/ms13/metal/red,
 /turf/open/floor/ms13/tile/full/white,
@@ -20325,7 +20325,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tif" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -20379,7 +20379,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tjS" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/stale,
@@ -20539,7 +20539,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tsF" = (
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/mattress/stale,
@@ -20554,7 +20554,7 @@
 "ttl" = (
 /obj/structure/table/ms13/no_smooth/dice,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ttx" = (
 /obj/structure/railing/ms13/wood/ending{
 	dir = 4
@@ -20563,7 +20563,7 @@
 /area/ms13/legioncamp)
 "tuR" = (
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tvf" = (
 /obj/structure/ms13/storage/large/shelf/wood,
 /obj/effect/spawner/random/ms13/crafting/household,
@@ -20644,7 +20644,7 @@
 "tzE" = (
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tzH" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 1
@@ -20670,7 +20670,7 @@
 "tAE" = (
 /obj/structure/bed/ms13/mattress/stained,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tBt" = (
 /obj/item/ms13/brick{
 	pixel_x = 7
@@ -20685,7 +20685,7 @@
 /area/ms13/town)
 "tBV" = (
 /turf/open/floor/ms13/metal/grate/border,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tCf" = (
 /obj/effect/spawner/random/ms13/guaranteed/crafting/electrical,
 /turf/open/floor/ms13/concrete/industrial,
@@ -20717,7 +20717,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tDJ" = (
 /obj/machinery/door/unpowered/ms13/metal/red,
 /turf/open/floor/ms13/tile/large/cafeteria,
@@ -20781,7 +20781,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tFS" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 4
@@ -20842,7 +20842,7 @@
 "tIJ" = (
 /obj/machinery/ms13/agriculture/soil,
 /turf/open/floor/plating/ms13/ground/mountain,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tIY" = (
 /obj/structure/table/ms13/low_wall/scrap/red,
 /obj/structure/ms13/bars/rusty,
@@ -20871,7 +20871,7 @@
 "tJC" = (
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tJQ" = (
 /obj/structure/closet/crate/ms13/woodcrate,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
@@ -20908,7 +20908,7 @@
 "tLm" = (
 /obj/structure/ms13/large_pipe/pump,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tLn" = (
 /obj/structure/ms13/storage/trashcan{
 	pixel_y = 4
@@ -20948,7 +20948,7 @@
 	name = "checkpoint button"
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tMX" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/closet/crate/ms13/woodcrate,
@@ -20962,7 +20962,7 @@
 "tNu" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tNM" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 8
@@ -20979,7 +20979,7 @@
 	signal_title_1 = "Gate"
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tNT" = (
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /obj/structure/chair/ms13/metal/folding{
@@ -21011,7 +21011,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tOL" = (
 /obj/machinery/vending/ms13/sarsaparilla{
 	dir = 1
@@ -21059,11 +21059,11 @@
 "tQD" = (
 /obj/structure/ms13/fence/vertical/wire/west/barb,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tQY" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tRl" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/wood/ms13/wide,
@@ -21128,7 +21128,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/crafting/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/crafting/lowrandom,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tUB" = (
 /obj/structure/table/ms13/crafting/workbench,
 /obj/structure/noticeboard/ms13/cork,
@@ -21219,7 +21219,7 @@
 "uaL" = (
 /obj/item/stack/sheet/ms13/glass,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ubW" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -21244,13 +21244,13 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "udx" = (
 /obj/structure/ms13/street_sign/one_way{
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ueL" = (
 /obj/structure/ms13/barricade,
 /obj/structure/ms13/storage/shelf/wood/alt,
@@ -21419,7 +21419,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uow" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 8
@@ -21440,7 +21440,7 @@
 	id = "town_hotel_shutters"
 	},
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "upe" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/tools/hardware,
@@ -21497,18 +21497,18 @@
 /obj/effect/turf_decal/ms13/showerdrains/long,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "urE" = (
 /obj/structure/stairs/north,
 /obj/machinery/light/ms13/bulb{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "urL" = (
 /obj/structure/ms13/fence/vertical/wire/east,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "urX" = (
 /obj/structure/railing/ms13/wood,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -21601,7 +21601,7 @@
 "uyb" = (
 /obj/structure/ms13/tank/chemical/container,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uye" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/indestructible/red/mid{
 	id = "robco_factory_wh1"
@@ -21641,7 +21641,7 @@
 "uBI" = (
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uBJ" = (
 /turf/closed/wall/ms13/scrap,
 /area/ms13/bos/building)
@@ -21664,7 +21664,7 @@
 	},
 /obj/structure/dresser/ms13/torquise/tall,
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uDP" = (
 /obj/structure/closet/crate/ms13/army,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -21680,7 +21680,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uEk" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -21711,7 +21711,7 @@
 /obj/effect/spawner/random/ms13/ammo/highrandom,
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uFl" = (
 /obj/structure/table/ms13/no_smooth/large/wood,
 /obj/item/folder/ms13/green{
@@ -21749,7 +21749,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "uGT" = (
 /obj/effect/turf_decal/ms13/road/verticalline,
 /turf/open/floor/plating/ms13/ground/road,
@@ -21777,11 +21777,11 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uIp" = (
 /obj/item/chair/ms13/metal/folding,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "uIr" = (
 /obj/item/reagent_containers/glass/bucket/ms13{
 	pixel_x = 1;
@@ -21844,7 +21844,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uMv" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/ms13/storage/vent,
@@ -21909,7 +21909,7 @@
 	},
 /obj/structure/ms13/pipes/horizontal/single/down,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uOK" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/structure/closet/crate/ms13/cash_register{
@@ -22052,7 +22052,7 @@
 "uVE" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "uVI" = (
 /obj/structure/ms13/trash/papers/two,
 /turf/open/floor/wood/ms13/wide,
@@ -22088,7 +22088,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uXe" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 8
@@ -22163,7 +22163,7 @@
 "uZW" = (
 /obj/structure/chair/ms13/metal/blue,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uZZ" = (
 /obj/machinery/button/ms13{
 	dir = 8;
@@ -22202,7 +22202,7 @@
 "vbq" = (
 /obj/structure/ms13/street_sign/parking,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "vbu" = (
 /obj/structure/ms13/toilet,
 /obj/machinery/light/ms13/bulb{
@@ -22371,7 +22371,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vhS" = (
 /obj/effect/turf_decal/ms13/graffiti/ourtown,
 /turf/closed/wall/ms13/siding,
@@ -22381,7 +22381,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vjw" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -22391,7 +22391,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vjK" = (
 /obj/effect/mob_spawn/corpse/human/ms13/nomad,
 /obj/effect/decal/cleanable/blood/old{
@@ -22420,14 +22420,14 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vls" = (
 /obj/structure/chair/sofa/corp,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vlt" = (
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "vlR" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -22490,7 +22490,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/concrete,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vpr" = (
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -22514,7 +22514,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vpO" = (
 /obj/effect/landmark/start/ms13/wastelander,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -22557,7 +22557,7 @@
 "vrm" = (
 /obj/structure/ms13/fence/vertical/wire/east,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vro" = (
 /obj/machinery/button/ms13{
 	id = "ncr_west_shutters";
@@ -22575,7 +22575,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vry" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -22593,7 +22593,7 @@
 /obj/structure/bed/ms13/mattress/dirty,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vsr" = (
 /obj/structure/table/ms13/conveyor_belt,
 /obj/effect/spawner/random/ms13/crafting/refined,
@@ -22652,7 +22652,7 @@
 "vwp" = (
 /obj/structure/ms13/pipes/horizontal/single/inwall,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vwU" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
@@ -22739,7 +22739,7 @@
 /obj/structure/table/ms13/metal/small,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vBp" = (
 /obj/structure/ms13/trash/papers{
 	dir = 5
@@ -22790,7 +22790,7 @@
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/item/storage/firstaid/ms13/bag/filled,
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vDB" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
@@ -22802,7 +22802,7 @@
 /obj/structure/bed/ms13/bedframe/wood,
 /obj/structure/bed/ms13/mattress/dirty,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vDT" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 1
@@ -22888,7 +22888,7 @@
 	},
 /obj/effect/spawner/random/ms13/smokeable/general,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vJN" = (
 /obj/structure/chair/office/ms13/blue/broken,
 /turf/open/floor/ms13/tile/large/white,
@@ -22924,7 +22924,7 @@
 "vLt" = (
 /obj/structure/ladder/ms13,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vLK" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/road,
@@ -22966,7 +22966,7 @@
 "vPk" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vPS" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/effect/spawner/random/ms13/guaranteed/tools/tool,
@@ -22995,7 +22995,7 @@
 "vQs" = (
 /obj/structure/table/ms13/crafting/ammobench,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vQt" = (
 /obj/structure/chair/ms13/metal/red{
 	dir = 4
@@ -23004,7 +23004,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vQw" = (
 /obj/effect/decal/cleanable/blood/splatter{
 	pixel_x = 9;
@@ -23056,7 +23056,7 @@
 "vSN" = (
 /obj/structure/chair/ms13/metal/stool,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vSP" = (
 /obj/structure/ms13/barrel/triple/yellow/two,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -23066,7 +23066,7 @@
 /obj/structure/ms13/rug/rubber,
 /obj/effect/spawner/random/ms13/smokeable/general,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vTi" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid{
 	id = "legion_gate"
@@ -23170,11 +23170,11 @@
 /area/ms13/ncr)
 "vYq" = (
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vYz" = (
 /obj/structure/bed/ms13/sleepingbag/red,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vYZ" = (
 /obj/structure/ms13/foundation/wide/variantfive{
 	dir = 1
@@ -23191,7 +23191,7 @@
 "vZl" = (
 /obj/effect/landmark/start/ms13/town_enforcer,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vZq" = (
 /turf/open/floor/ms13/tile/long/blue,
 /area/ms13/town)
@@ -23207,7 +23207,7 @@
 "wbF" = (
 /obj/structure/ms13/tank/massive,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wbZ" = (
 /obj/structure/ms13/wall_decor/poster/fallout,
 /turf/open/floor/wood/ms13/wide,
@@ -23215,12 +23215,12 @@
 "wcq" = (
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wct" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /obj/effect/spawner/random/ms13/drink/soda,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wcx" = (
 /obj/structure/ms13/trash/papers/two{
 	dir = 1
@@ -23244,7 +23244,7 @@
 "wcS" = (
 /obj/structure/ms13/fence/junction/wire/east,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wdr" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -23255,7 +23255,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wdN" = (
 /obj/structure/ms13/foundation/mosaic/varianttwo,
 /turf/open/floor/plating/ms13/ground/mountain/drought,
@@ -23314,7 +23314,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wid" = (
 /obj/structure/ms13/foundation/wide/variantfive{
 	dir = 6
@@ -23333,7 +23333,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/item/radio/ms13/ham/receiver,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wjp" = (
 /obj/item/chair/ms13/metal/blue/broken,
 /turf/open/floor/wood/ms13/wide,
@@ -23376,7 +23376,7 @@
 	id = "hotel-r4-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wqp" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /obj/effect/turf_decal/ms13/graffiti/gangshit,
@@ -23398,7 +23398,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wrY" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -23448,7 +23448,7 @@
 "wuf" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wuh" = (
 /obj/structure/ms13/storage/large/showcase,
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
@@ -23474,7 +23474,7 @@
 	dir = 9
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wvc" = (
 /obj/structure/ms13/celldoor,
 /turf/open/floor/ms13/concrete/industrial,
@@ -23492,7 +23492,7 @@
 "wvK" = (
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/ms13/metal,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wvL" = (
 /obj/structure/ms13/trash/wood{
 	dir = 10
@@ -23571,7 +23571,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wAu" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/ms13/barricade{
@@ -23602,7 +23602,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wAW" = (
 /obj/structure/ms13/wall_decor/sign,
 /turf/open/floor/ms13/concrete,
@@ -23610,7 +23610,7 @@
 "wBG" = (
 /obj/structure/ms13/tank/massive/broken,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wBK" = (
 /obj/effect/turf_decal/ms13/road/horizontalcrossing,
 /turf/open/floor/plating/ms13/ground/road,
@@ -23643,7 +23643,7 @@
 /obj/structure/ms13/storage/large/shelf/wood/drawers,
 /obj/structure/ms13/pipes/horizontal/single/random,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wEO" = (
 /obj/structure/ms13/pot/plant,
 /obj/structure/noticeboard/ms13/cork,
@@ -23659,7 +23659,7 @@
 "wFg" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wFS" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
@@ -23687,7 +23687,7 @@
 "wHs" = (
 /obj/effect/turf_decal/ms13/showerdrains/long,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wHx" = (
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /turf/open/floor/plating/ms13/ground/road,
@@ -23704,7 +23704,7 @@
 /turf/open/floor/ms13/metal/grate/border{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wIw" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -23733,7 +23733,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wLg" = (
 /obj/structure/ms13/trash/papers/three{
 	dir = 4
@@ -23768,7 +23768,7 @@
 "wMm" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/plating/ms13/ground/road,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wNR" = (
 /obj/machinery/door/unpowered/ms13/wood/red{
 	dir = 8
@@ -23819,7 +23819,7 @@
 /obj/structure/chair/ms13/metal/folding,
 /obj/structure/ms13/rug/red,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wQC" = (
 /obj/structure/ms13/trash/papers{
 	dir = 4;
@@ -23947,7 +23947,7 @@
 "wUX" = (
 /obj/structure/bonfire/ms13/campfire,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wVm" = (
 /obj/structure/ms13/storage/shelf/wood/alt{
 	dir = 1
@@ -24029,7 +24029,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wZS" = (
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 8
@@ -24074,7 +24074,7 @@
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/drink/soda,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xcd" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -24086,7 +24086,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xch" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 8
@@ -24125,7 +24125,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xcE" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -24181,7 +24181,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xgI" = (
 /obj/structure/filingcabinet/ms13/empty{
 	dir = 8
@@ -24301,7 +24301,7 @@
 "xnf" = (
 /obj/structure/ms13/rug/mat/rubber/single,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "xop" = (
 /obj/structure/table/ms13/low_wall/scrap,
 /obj/structure/window/fulltile/ms13/glass,
@@ -24370,7 +24370,7 @@
 "xrK" = (
 /obj/effect/turf_decal/ms13/graffiti/no_way,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xrP" = (
 /obj/structure/closet/ms13/fridge,
 /obj/effect/spawner/random/ms13/food/random,
@@ -24381,7 +24381,7 @@
 "xrV" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "xsD" = (
 /obj/structure/ms13/barrel/double/red/two,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -24389,7 +24389,7 @@
 "xtd" = (
 /obj/structure/dresser/ms13/torquise/tall,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xtt" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/effect/spawner/random/ms13/currency/mammoth/prewar/lowrandom,
@@ -24437,7 +24437,7 @@
 "xwt" = (
 /obj/structure/ms13/fence/wire,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xwI" = (
 /obj/structure/ms13/pipes/vertical/east/valve,
 /turf/open/floor/ms13/concrete/industrial,
@@ -24458,7 +24458,7 @@
 "xyn" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xyp" = (
 /obj/machinery/button/ms13{
 	dir = 4;
@@ -24519,11 +24519,11 @@
 "xCo" = (
 /obj/structure/ms13/pipes/horizontal/down,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xCY" = (
 /obj/effect/turf_decal/ms13/graffiti/gangshit,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xDc" = (
 /obj/structure/ladder/ms13,
 /turf/open/floor/ms13/concrete,
@@ -24533,7 +24533,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xDD" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 4
@@ -24580,7 +24580,7 @@
 /obj/effect/spawner/random/ms13/crafting/highrandom,
 /obj/effect/spawner/random/ms13/crafting/highrandom,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xFO" = (
 /obj/structure/ms13/pipes/vertical/west/corner/down,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -24649,7 +24649,7 @@
 	},
 /obj/structure/window/reinforced/fulltile/ms13/glass,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xIf" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/structure/ms13/lamp/makeshift{
@@ -24704,7 +24704,7 @@
 	},
 /obj/structure/window/reinforced/fulltile/ms13/glass,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xLg" = (
 /obj/structure/ms13/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -24733,7 +24733,7 @@
 "xLG" = (
 /obj/effect/turf_decal/ms13/graffiti/guns,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xLW" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -24776,7 +24776,7 @@
 	id = "hotel-r1-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xOA" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 8;
@@ -24794,7 +24794,7 @@
 /area/ms13/town)
 "xQn" = (
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xQG" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 4
@@ -24854,7 +24854,7 @@
 "xUB" = (
 /obj/structure/stairs/north,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xUT" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -25007,7 +25007,7 @@
 "ybL" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ycq" = (
 /obj/structure/ms13/rug/rubber{
 	dir = 4
@@ -25020,7 +25020,7 @@
 	id = "town-shop-south"
 	},
 /turf/open/floor/ms13/concrete/bricks,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ycS" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/ms13/storage/vent,
@@ -25048,7 +25048,7 @@
 "yeV" = (
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yeX" = (
 /obj/structure/bonfire/ms13/campfire,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -25104,7 +25104,7 @@
 "yhI" = (
 /obj/structure/table/ms13/metal/constructed,
 /turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "yhX" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
@@ -25148,7 +25148,7 @@
 	},
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/tile/large/navy,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yll" = (
 /obj/structure/closet/crate/ms13/footlocker{
 	dir = 8
