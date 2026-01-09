@@ -832,6 +832,7 @@
 	dir = 1
 	},
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/radioman,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "aOG" = (
@@ -1012,6 +1013,7 @@
 	},
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/medic,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "aVE" = (
@@ -1456,6 +1458,7 @@
 "bsg" = (
 /obj/structure/ms13/rug/yellow,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/radioman,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "bss" = (
@@ -2289,6 +2292,7 @@
 /obj/machinery/light/ms13/bulb,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/corporal,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "cbk" = (
@@ -3604,6 +3608,7 @@
 "dlh" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/corporal,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "dlW" = (
@@ -5836,6 +5841,7 @@
 /area/ms13/bos/building)
 "fsX" = (
 /obj/structure/bed/ms13/sleepingbag/red,
+/obj/effect/landmark/start/ms13/trooper,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "ftS" = (
@@ -6826,6 +6832,7 @@
 /obj/structure/chair/office/ms13/green{
 	dir = 8
 	},
+/obj/effect/landmark/start/ms13/medical_officer,
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/ncr/building)
 "gnj" = (
@@ -10884,6 +10891,10 @@
 	},
 /turf/open/floor/ms13/tile/large/black,
 /area/ms13/town)
+"kuV" = (
+/obj/effect/landmark/start/ms13/rear_echelon,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "kuW" = (
 /obj/structure/ms13/storage/shelf,
 /turf/open/floor/ms13/concrete/industrial,
@@ -11544,6 +11555,10 @@
 	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
+"kYG" = (
+/obj/effect/landmark/start/ms13/medic,
+/turf/open/floor/ms13/tile/full/white,
+/area/ms13/ncr/building)
 "kZi" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 1
@@ -15164,6 +15179,10 @@
 /obj/structure/ms13/wall_decor/flag/bos,
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/bos)
+"oyl" = (
+/obj/effect/landmark/start/ms13/rear_echelon,
+/turf/open/floor/plating/ms13/ground/desertalt,
+/area/ms13/ncr)
 "oyI" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/ms13/lamp/makeshift{
@@ -15614,6 +15633,7 @@
 /area/ms13/town)
 "oRl" = (
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/trooper,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "oRt" = (
@@ -19722,6 +19742,7 @@
 /area/ms13/town)
 "sCW" = (
 /obj/structure/chair/office/ms13/green,
+/obj/effect/landmark/start/ms13/quartermaster,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "sDa" = (
@@ -20335,6 +20356,7 @@
 /area/ms13/town)
 "tiI" = (
 /obj/structure/bed/ms13/sleepingbag/green,
+/obj/effect/landmark/start/ms13/trooper,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/ncr/building)
 "tjb" = (
@@ -29458,7 +29480,7 @@ qpO
 syw
 jeA
 jeA
-jeA
+oyl
 gvg
 sFz
 gTz
@@ -29862,7 +29884,7 @@ qpO
 rDj
 jeA
 jeA
-jeA
+oyl
 gvg
 sFz
 gTz
@@ -32268,7 +32290,7 @@ blm
 blm
 lRa
 dnB
-hFE
+kuV
 qcu
 lRa
 blm
@@ -32483,7 +32505,7 @@ ipH
 cWN
 dWL
 cda
-cda
+kYG
 cda
 cda
 icM

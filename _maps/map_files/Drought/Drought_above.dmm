@@ -1476,6 +1476,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "eW" = (
@@ -6030,6 +6031,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/lieutenant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "tJ" = (
@@ -9681,6 +9683,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "FG" = (
@@ -10725,6 +10728,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_ranger,
 /turf/open/floor/wood/ms13/carpet,
 /area/ms13/ncr/building)
 "Jp" = (
@@ -11548,6 +11552,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
+"LW" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/sergeant,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "LX" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -18773,7 +18784,7 @@ ls
 Wr
 WS
 rk
-eV
+LW
 vO
 zg
 uV
