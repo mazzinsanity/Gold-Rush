@@ -1197,11 +1197,6 @@
 /obj/structure/ms13/trash/glass/plate,
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/ncr)
-"bdQ" = (
-/obj/structure/ms13/departure,
-/obj/effect/turf_decal/ms13/road/horizontalline,
-/turf/open/floor/plating/ms13/ground/road,
-/area/ms13/desert)
 "bdU" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -1574,12 +1569,6 @@
 	},
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
-"bwy" = (
-/obj/structure/sink/ms13/functional{
-	dir = 1
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/ncr)
 "bwL" = (
 /obj/structure/ms13/barrel/single/flammable,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -17303,11 +17292,10 @@
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
 "qow" = (
-/obj/structure/sink/ms13/functional/tainted{
-	dir = 8
-	},
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/legioncamp)
+/obj/structure/ms13/departure,
+/obj/effect/turf_decal/ms13/road/horizontalline,
+/turf/open/floor/plating/ms13/ground/road,
+/area/ms13/desert)
 "qoH" = (
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
@@ -25312,7 +25300,7 @@ blm
 blm
 blm
 lNx
-bdQ
+qow
 lNx
 blm
 blm
@@ -27489,7 +27477,7 @@ mWF
 jeA
 jeA
 jeA
-bwy
+jeA
 qpO
 qpO
 ipH
@@ -59145,7 +59133,7 @@ blm
 blm
 eWH
 eWH
-giW
+hnZ
 ybl
 pIG
 vdx
@@ -60559,7 +60547,7 @@ blm
 eWH
 eWH
 hnZ
-hnZ
+giW
 iQd
 hnZ
 hnZ
@@ -60761,7 +60749,7 @@ blm
 blm
 xan
 qJW
-qow
+hnZ
 ybl
 hnZ
 hnZ
