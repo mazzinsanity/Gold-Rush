@@ -313,6 +313,7 @@ ROUNDSTART_RACES human
 
 ## These are basically humans, but with extra customization options
 ROUNDSTART_RACES anthropomorph
+ROUNDSTART_RACES humanoid
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 #ROUNDSTART_RACES felinid
