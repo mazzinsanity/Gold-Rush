@@ -361,8 +361,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_AI_BAGATTACK "bagattack"
 /// This mobs bodyparts are invisible but still clickable.
 #define TRAIT_INVISIBLE_MAN "invisible_man"
-/// Don't draw external organs/species features like wings, horns, frills and stuff
-#define TRAIT_HIDE_EXTERNAL_ORGANS "hide_external_organs"
 ///When people are floating from zero-grav or something, we can move around freely!
 #define TRAIT_FREE_FLOAT_MOVEMENT "free_float_movement"
 // You can stare into the abyss, but it does not stare back.
@@ -859,7 +857,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 #define TRAIT_MEDICAL_TRAINING "medical_training" //Trait for medical jobs that allows better crafting of medical items
 
-#define TRAIT_SCRIBE_TRAINING "scribe_training" //Trait for BoS Scribes that allows better electronics crafting
+#define  TRAIT_ELECTRICAL_TRAINING "scribe_training" //Trait for BoS Scribes and NCR Quartermaster that allows better electronics crafting
 
 #define TRAIT_LEGION_SMITHING "legion_smithing" //Trait for Legion Blacksmith to make Legion weapon recipes
 
@@ -882,3 +880,5 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_SHOVEIMMUNE "shove_immune"//Makes the user completely immune to shoving
 
 // MOJAVE JOB TRAITS END
+
+#define TRAIT_STATUS_EFFECT(effect_id) "[effect_id]-trait"

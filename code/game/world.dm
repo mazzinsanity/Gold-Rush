@@ -81,10 +81,6 @@ GLOBAL_VAR(restart_counter)
 
 	Master.Initialize(10, FALSE, TRUE)
 
-	#ifdef UNIT_TESTS
-	HandleTestRun()
-	#endif
-
 	#ifdef AUTOWIKI
 	setup_autowiki()
 	#endif
@@ -99,11 +95,7 @@ GLOBAL_VAR(restart_counter)
 	SSticker.start_immediately = TRUE
 	CONFIG_SET(number/round_end_countdown, 0)
 	var/datum/callback/cb
-#ifdef UNIT_TESTS
-	cb = CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(RunUnitTests))
-#else
 	cb = VARSET_CALLBACK(SSticker, force_ending, TRUE)
-#endif
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(_addtimer), cb, 10 SECONDS))
 
 
@@ -158,10 +150,6 @@ GLOBAL_VAR(restart_counter)
 
 	GLOB.demo_log = "[GLOB.log_directory]/demo.log"
 
-#ifdef UNIT_TESTS
-	GLOB.test_log = "[GLOB.log_directory]/tests.log"
-	start_log(GLOB.test_log)
-#endif
 #ifdef REFERENCE_DOING_IT_LIVE
 	GLOB.harddel_log = "[GLOB.log_directory]/harddels.log"
 	start_log(GLOB.harddel_log)
@@ -236,10 +224,6 @@ GLOBAL_VAR(restart_counter)
 	if(GLOB)
 		if(GLOB.total_runtimes != 0)
 			fail_reasons = list("Total runtimes: [GLOB.total_runtimes]")
-#ifdef UNIT_TESTS
-		if(GLOB.failed_any_test)
-			LAZYADD(fail_reasons, "Unit Tests failed!")
-#endif
 		if(!GLOB.log_directory)
 			LAZYADD(fail_reasons, "Missing GLOB.log_directory!")
 	else
@@ -260,11 +244,6 @@ GLOBAL_VAR(restart_counter)
 	else
 		to_chat(world, span_boldannounce("Rebooting world..."))
 		Master.Shutdown() //run SS shutdowns
-
-	#ifdef UNIT_TESTS
-	FinishTestRun()
-	return
-	#endif
 
 	if(TgsAvailable())
 		var/do_hard_reboot
@@ -307,32 +286,28 @@ GLOBAL_VAR(restart_counter)
 		if (server_name)
 			s += "<b>[server_name]</b> "
 		features += "[CONFIG_GET(flag/norespawn) ? "no " : ""]respawn"
-		if(CONFIG_GET(flag/allow_ai))
-			features += "AI allowed"
 		hostedby = CONFIG_GET(string/hostedby)
 
-	if (CONFIG_GET(flag/station_name_in_hub_entry))
-		s += " &#8212; <b>[station_name()]</b>"
-
 	s += " ("
-	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
-	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-	s += "</a>"
-	s += ")"
+	s += "<a href=\"[CONFIG_GET(string/discordurl)]\">" //Change this to wherever you want the hub to link to.
+	s += "Discord - Apply Here!"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += ")\]"
+	s += "<br>[CONFIG_GET(string/servertagline)]"
 
 	var/players = GLOB.clients.len
 
-	var/popcaptext = ""
-	var/popcap = max(CONFIG_GET(number/extreme_popcap), CONFIG_GET(number/hard_popcap), CONFIG_GET(number/soft_popcap))
-	if (popcap)
-		popcaptext = "/[popcap]"
+	if(SSticker.current_state <= GAME_STATE_PREGAME)
+		s += "<br>GAME STATUS: <b>IN LOBBY</b><br>"
+	else
+		s += "<br>GAME STATUS: <b>PLAYING</b><br>"
 
-	if (players > 1)
-		features += "[players][popcaptext] players"
-	else if (players > 0)
-		features += "[players][popcaptext] player"
+	if (SSticker.HasRoundStarted())
+		s += "Round Time: <b>[time2text(station_time(), "hh:mm", 0)]</b>"
+	else
+		s += "Round Time: <b>NEW ROUND STARTING</b>"
 
-	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
+	s += "<br>Player[players == 1 ? "": "s"]: <b>[players]</b>"
+	s += "</a>"
 
 	if (!host && hostedby)
 		features += "hosted by <b>[hostedby]</b>"
@@ -386,3 +361,4 @@ GLOBAL_VAR(restart_counter)
 
 #undef OVERRIDE_LOG_DIRECTORY_PARAMETER
 #undef NO_INIT_PARAMETER
+#undef RESTART_COUNTER_PATH

@@ -583,7 +583,7 @@
 
 /datum/reagent/toxin/histamine/overdose_process(mob/living/M, delta_time, times_fired)
 	M.adjustOxyLoss(2 * REM * delta_time, FALSE)
-	M.adjustBruteLoss(2 * REM * delta_time, FALSE, FALSE, BODYPART_ORGANIC)
+	M.adjustBruteLoss(2 * REM * delta_time, FALSE, FALSE, BIO_STANDARD)
 	M.adjustToxLoss(2 * REM * delta_time, FALSE)
 	..()
 	. = TRUE
@@ -1200,3 +1200,5 @@
 		to_chat(M, span_notice("Ah, what was that? You thought you heard something..."))
 		M.add_confusion(5)
 	return ..()
+
+#undef LIQUID_PLASMA_BP

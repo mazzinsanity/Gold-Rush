@@ -1,4 +1,4 @@
-import { BooleanLike } from 'common/react';
+import { BooleanLike } from 'tgui-core/react';
 
 import { sendAct } from '../../backend';
 import { Gender } from './preferences/gender';
@@ -138,6 +138,7 @@ export type PreferencesMenuData = {
       [otherKey: string]: unknown;
     };
     secondary_features: Record<string, unknown>;
+    flavor_features: Record<string, unknown>;
     supplemental_features: Record<string, unknown>;
     manually_rendered_features: Record<string, string>;
 

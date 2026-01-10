@@ -1,4 +1,12 @@
-export type Channel = 'Say' | 'Radio' | 'Me' | 'OOC' | 'Admin';
+export type Channel =
+  | 'Say'
+  | 'Radio'
+  | 'Me'
+  | 'Whis'
+  | 'LOOC'
+  | 'Do'
+  | 'OOC'
+  | 'Admin';
 
 /**
  * ### ChannelIterator
@@ -8,7 +16,16 @@ export type Channel = 'Say' | 'Radio' | 'Me' | 'OOC' | 'Admin';
  */
 export class ChannelIterator {
   private index: number = 0;
-  private readonly channels: Channel[] = ['Say', 'Radio', 'Me', 'OOC', 'Admin'];
+  private readonly channels: Channel[] = [
+    'Say',
+    'Radio',
+    'Me',
+    'Whis',
+    'LOOC',
+    'Do',
+    'OOC',
+    'Admin',
+  ];
   private readonly blacklist: Channel[] = ['Admin'];
   private readonly quiet: Channel[] = ['OOC', 'Admin'];
 
@@ -18,7 +35,7 @@ export class ChannelIterator {
     }
 
     for (let index = 1; index <= this.channels.length; index++) {
-      let nextIndex = (this.index + index) % this.channels.length;
+      const nextIndex = (this.index + index) % this.channels.length;
       if (!this.blacklist.includes(this.channels[nextIndex])) {
         this.index = nextIndex;
         break;

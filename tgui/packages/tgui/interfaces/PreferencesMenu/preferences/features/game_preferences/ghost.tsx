@@ -1,7 +1,6 @@
 import { binaryInsertWith } from 'common/collections';
-import { classes } from 'common/react';
-import { multiline } from 'common/string';
 import { ReactNode } from 'react';
+import { classes } from 'tgui-core/react';
 
 import { useBackend } from '../../../../../backend';
 import { Box, Dropdown, Flex } from '../../../../../components';
@@ -109,7 +108,7 @@ export const ghost_hud: FeatureToggle = {
 export const ghost_orbit: FeatureChoiced = {
   name: 'Ghost orbit',
   category: 'GHOST',
-  description: multiline`
+  description: `
     The shape in which your ghost will orbit.
     Requires BYOND membership.
   `,
@@ -128,7 +127,7 @@ export const ghost_orbit: FeatureChoiced = {
 export const ghost_others: FeatureChoiced = {
   name: 'Ghosts of others',
   category: 'GHOST',
-  description: multiline`
+  description: `
     Do you want the ghosts of others to show up as their own setting, as
     their default sprites, or always as the default white ghost?
   `,

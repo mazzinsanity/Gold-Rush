@@ -130,7 +130,7 @@
 	else
 		t += "<span class='bad'>Unable to locate any parts!</span>"
 	if(include_link)
-		t += "<BR><A href='?src=[REF(src)];close=1'>Close</A>"
+		t += "<BR><A href='byond://?src=[REF(src)];close=1'>Close</A>"
 
 	return t
 
@@ -228,3 +228,5 @@
 	if(cold_circ)
 		cold_circ.generator = null
 		cold_circ = null
+
+#undef GENRATE

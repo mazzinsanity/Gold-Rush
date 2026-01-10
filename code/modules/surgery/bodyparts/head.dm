@@ -31,11 +31,11 @@
 	//Limb appearance info:
 	var/real_name = "" //Replacement name
 	//Hair colour and style
-	var/hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/hair_color = COLOR_BLACK
 	var/hairstyle = "Bald"
 	var/hair_alpha = 255
 	//Facial hair colour and style
-	var/facial_hair_color = "#341d18" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/facial_hair_color = COLOR_BLACK
 	var/facial_hairstyle = "Shaved"
 	//Eye Colouring
 
@@ -73,7 +73,7 @@
 
 /obj/item/bodypart/head/examine(mob/user)
 	. = ..()
-	if(status == BODYPART_ORGANIC && show_organs_on_examine)
+	if(biological_state & BIO_STANDARD && show_organs_on_examine)
 		if(!brain)
 			. += span_info("The brain has been removed from [src].")
 		else if(brain.suicided || brainmob?.suiciding)
@@ -107,7 +107,7 @@
 
 /obj/item/bodypart/head/drop_organs(mob/user, violent_removal)
 	var/turf/head_turf = get_turf(src)
-	if(status != BODYPART_ROBOTIC)
+	if(!(biological_state & BIO_ROBOTIC))
 		playsound(head_turf, 'sound/misc/splort.ogg', 50, TRUE, -1)
 	for(var/obj/item/head_item in src)
 		if(head_item == brain)
@@ -209,12 +209,12 @@
 		img.pixel_y = px_y
 	add_overlay(standing)
 
-/obj/item/bodypart/head/get_limb_icon(dropped, draw_external_organs)
+/obj/item/bodypart/head/get_limb_icon(dropped)
 	cut_overlays()
 	. = ..()
 	if(dropped) //certain overlays only appear when the limb is being detached from its owner.
 
-		if(status != BODYPART_ROBOTIC) //having a robotic head hides certain features.
+		if(!(biological_state & BIO_ROBOTIC)) //having a robotic head hides certain features.
 			//facial hair
 			if(facial_hairstyle)
 				var/datum/sprite_accessory/sprite = GLOB.facial_hairstyles_list[facial_hairstyle]

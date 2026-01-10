@@ -83,7 +83,7 @@
 	if(!affecting) //Missing limb?
 		to_chat(user, span_warning("[C] doesn't have \a [parse_zone(user.zone_selected)]!"))
 		return FALSE
-	if(affecting.status != BODYPART_ORGANIC) //Limb must be organic to be healed - RR
+	if(!(affecting.biological_state & BIO_STANDARD)) //Limb must be organic to be healed - RR
 		to_chat(user, span_warning("[src] won't work on a robotic limb!"))
 		return FALSE
 	if(affecting.brute_dam && brute || affecting.burn_dam && burn)
@@ -392,9 +392,9 @@
 	C.emote("scream")
 	for(var/i in C.bodyparts)
 		var/obj/item/bodypart/bone = i
-		var/datum/wound/blunt/severe/oof_ouch = new
+		var/datum/wound/blunt/bone/severe/oof_ouch = new
 		oof_ouch.apply_wound(bone)
-		var/datum/wound/blunt/critical/oof_OUCH = new
+		var/datum/wound/blunt/bone/critical/oof_OUCH = new
 		oof_OUCH.apply_wound(bone)
 
 	for(var/i in C.bodyparts)

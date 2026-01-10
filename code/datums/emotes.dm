@@ -1,6 +1,3 @@
-#define EMOTE_VISIBLE 1
-#define EMOTE_AUDIBLE 2
-
 /**
  * # Emote
  *
@@ -106,18 +103,20 @@
 		TIMER_COOLDOWN_START(user, type, audio_cooldown)
 		playsound(user, tmp_sound, 50, vary)
 
+	var/space = should_have_space_before_emote(html_decode(msg)[1]) ? " " : ""
+
 	var/user_turf = get_turf(user)
 	if (user.client)
 		for(var/mob/ghost as anything in GLOB.dead_mob_list)
 			if(!ghost.client || isnewplayer(ghost))
 				continue
 			if(ghost.client.prefs.chat_toggles & CHAT_GHOSTSIGHT && !(ghost in viewers(user_turf, null)))
-				ghost.show_message("<span class='emote'>[FOLLOW_LINK(ghost, user)] [dchatmsg]</span>")
+				ghost.show_message(span_emote("[FOLLOW_LINK(ghost, user)] [dchatmsg]"))
 
 	if(emote_type == EMOTE_AUDIBLE)
-		user.audible_message(msg, deaf_message = "<span class='emote'>You see how <b>[user]</b> [msg]</span>", audible_message_flags = EMOTE_MESSAGE)
+		user.audible_message(msg, deaf_message = span_emote("You see how <b>[user]</b> [msg]"), audible_message_flags = EMOTE_MESSAGE, separation = space)
 	else
-		user.visible_message(msg, blind_message = "<span class='emote'>You hear how <b>[user]</b> [msg]</span>", visible_message_flags = EMOTE_MESSAGE)
+		user.visible_message(msg, blind_message = span_emote("You hear how <b>[user]</b> [msg]"), visible_message_flags = EMOTE_MESSAGE, separation = space)
 
 	SEND_SIGNAL(user, COMSIG_MOB_EMOTED(key))
 
@@ -288,6 +287,8 @@
 
 	log_message(text, LOG_EMOTE)
 
+	var/space = should_have_space_before_emote(html_decode(text)[1]) ? " " : ""
+
 	var/ghost_text = "<b>[src]</b> [text]"
 
 	var/origin_turf = get_turf(src)
@@ -298,4 +299,4 @@
 			if(ghost.client.prefs.chat_toggles & CHAT_GHOSTSIGHT && !(ghost in viewers(origin_turf, null)))
 				ghost.show_message("[FOLLOW_LINK(ghost, src)] [ghost_text]")
 
-	visible_message(text, visible_message_flags = EMOTE_MESSAGE)
+	visible_message(text, visible_message_flags = EMOTE_MESSAGE, separation = space)

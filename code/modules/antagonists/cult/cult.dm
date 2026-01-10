@@ -503,3 +503,8 @@
 	var/obj/item/clothing/suit/hooded/hooded = locate() in H
 	hooded.MakeHood() // This is usually created on Initialize, but we run before atoms
 	hooded.ToggleHood()
+
+#undef SUMMON_POSSIBILITIES
+#undef CULT_VICTORY
+#undef CULT_LOSS
+#undef CULT_NARSIE_KILLED

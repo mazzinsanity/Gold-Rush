@@ -53,9 +53,6 @@
 #define ORGAN_ORGANIC 1
 #define ORGAN_ROBOTIC 2
 
-#define BODYPART_ORGANIC 1
-#define BODYPART_ROBOTIC 2
-
 #define DEFAULT_BODYPART_ICON_ORGANIC 'mojave/icons/mob/humanoid.dmi' //MOJAVE SUN EDIT - Humanoid Sprites original: 'icons/mob/human_parts_greyscale.dmi'
 #define DEFAULT_BODYPART_ICON_ROBOTIC 'icons/mob/augmentation/augments.dmi'
 
@@ -334,7 +331,7 @@
 #define OFFSET_NECK "neck"
 
 //MINOR TWEAKS/MISC
-#define AGE_MIN 17 //youngest a character can be
+#define AGE_MIN 18 //youngest a character can be
 #define AGE_MAX 85 //oldest a character can be
 #define AGE_MINOR 20  //legal age of space drinking and smoking
 #define WIZARD_AGE_MIN 30 //youngest a wizard can be
@@ -343,6 +340,10 @@
 #define SHOES_SPEED_SLIGHT  SHOES_SLOWDOWN - 1 // slightest speed boost to movement
 #define POCKET_STRIP_DELAY (4 SECONDS) //time taken to search somebody's pockets
 #define DOOR_CRUSH_DAMAGE 15 //the amount of damage that airlocks deal when they crush you
+
+//Fallout Special Stats
+#define SPECIAL_STAT_MIN 1
+#define SPECIAL_STAT_MAX 8
 
 #define HUNGER_FACTOR 0.05 //factor at which mob nutrition decreases
 #define ETHEREAL_CHARGE_FACTOR 0.8 //factor at which ethereal's charge decreases per second
@@ -628,3 +629,29 @@
 
 /// Possible value of [/atom/movable/buckle_lying]. If set to a different (positive-or-zero) value than this, the buckling thing will force a lying angle on the buckled.
 #define NO_BUCKLE_LYING -1
+
+// friendly trader defines
+#define ITEM_REJECTED_PHRASE "ITEM_REJECTED_PHRASE"
+#define ITEM_SELLING_CANCELED_PHRASE "ITEM_SELLING_CANCELED_PHRASE"
+#define ITEM_SELLING_ACCEPTED_PHRASE "ITEM_SELLING_ACCEPTED_PHRASE"
+#define INTERESTED_PHRASE "INTERESTED_PHRASE"
+#define BUY_PHRASE "BUY_PHRASE"
+#define NO_CASH_PHRASE "NO_CASH_PHRASE"
+#define NO_STOCK_PHRASE "NO_STOCK_PHRASE"
+#define NOT_WILLING_TO_BUY_PHRASE "NOT_WILLING_TO_BUY_PHRASE"
+#define ITEM_IS_WORTHLESS_PHRASE "ITEM_IS_WORTHLESS_PHRASE"
+#define TRADER_HAS_ENOUGH_ITEM_PHRASE "TRADER_HAS_ENOUGH_ITEM_PHRASE"
+#define TRADER_LORE_PHRASE "TRADER_LORE_PHRASE"
+#define TRADER_NOT_BUYING_ANYTHING "TRADER_NOT_BUYING_ANYTHING"
+#define TRADER_NOT_SELLING_ANYTHING "TRADER_NOT_SELLING_ANYTHING"
+
+#define TRADER_PRODUCT_INFO_PRICE 1
+#define TRADER_PRODUCT_INFO_QUANTITY 2
+//Only valid for wanted_items
+#define TRADER_PRODUCT_INFO_PRICE_MOD_DESCRIPTION 3
+
+#define IDENTIFIER_GENERIC_SIMPLE "identifies_generic_simple"
+#define IDENTIFIER_EYEBOT "identifies_eyebot"
+#define NODE_TRADER_STAYS_THIS_LONG "node_trader_stays_this_long"
+#define COMSIG_AI_SET_GOAL_NODE "ai_set_goal_node"
+#define COMSIG_AI_NODE_REACHED "ai_node_reached"

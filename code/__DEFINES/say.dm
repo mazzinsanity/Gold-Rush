@@ -78,6 +78,9 @@
 //Eavesdropping
 #define EAVESDROP_EXTRA_RANGE 1 //how much past the specified message_range does the message get starred, whispering only
 
+//LOOC range
+#define LOOC_RANGE 7
+
 /// How close intercoms can be for radio code use
 #define MODE_RANGE_INTERCOM 1
 
@@ -95,8 +98,6 @@
 // Audio/Visual Flags. Used to determine what sense are required to notice a message.
 #define MSG_VISUAL (1<<0)
 #define MSG_AUDIBLE (1<<1)
-
-
 
 //Used in visible_message_flags, audible_message_flags and runechat_flags
 #define EMOTE_MESSAGE (1<<0)

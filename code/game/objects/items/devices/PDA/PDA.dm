@@ -288,8 +288,8 @@ GLOBAL_LIST_EMPTY(PDAs)
 			if (PDA_UI_HUB)
 				dat += "<h2>PERSONAL DATA ASSISTANT v.1.2</h2>"
 				dat += "Owner: [owner], [ownjob]<br>"
-				dat += text("ID: <a href='?src=[REF(src)];choice=Authenticate'>[id ? "[id.registered_name], [id.assignment]" : "----------"]")
-				dat += text("<br><a href='?src=[REF(src)];choice=UpdateInfo'>[id ? "Update PDA Info" : ""]</A><br><br>")
+				dat += text("ID: <a href='byond://?src=[REF(src)];choice=Authenticate'>[id ? "[id.registered_name], [id.assignment]" : "----------"]")
+				dat += text("<br><a href='byond://?src=[REF(src)];choice=UpdateInfo'>[id ? "Update PDA Info" : ""]</A><br><br>")
 
 				dat += "[station_time_timestamp()]<br>" //:[world.time / 100 % 6][world.time / 100 % 10]"
 				dat += "[time2text(world.realtime, "MMM DD")] [GLOB.year_integer+540]<br>"
@@ -896,7 +896,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 		var/hrefstart
 		var/hrefend
 		if (isAI(L))
-			hrefstart = "<a href='?src=[REF(L)];track=[html_encode(signal.data["name"])]'>"
+			hrefstart = "<a href='byond://?src=[REF(L)];track=[html_encode(signal.data["name"])]'>"
 			hrefend = "</a>"
 
 		if(signal.data["automated"])
@@ -1338,3 +1338,12 @@ GLOBAL_LIST_EMPTY(PDAs)
 #undef PDA_SCANNER_REAGENT
 #undef PDA_SCANNER_GAS
 #undef PDA_SPAM_DELAY
+
+#undef FONT_MONO
+#undef FONT_SHARE
+#undef FONT_ORBITRON
+#undef FONT_VT
+#undef MODE_MONO
+#undef MODE_SHARE
+#undef MODE_ORBITRON
+#undef MODE_VT

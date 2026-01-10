@@ -85,7 +85,7 @@
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/human_yeetus = src
 		var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-		var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/severe))
+		var/type_wound = pick(list(/datum/wound/blunt/bone/severe, /datum/wound/blunt/bone/severe))
 		limb.force_wound_upwards(type_wound)
 		playsound(src, 'mojave/sound/ms13effects/body_fall.ogg', 75, TRUE)
 	Knockdown(levels * 50)
@@ -100,7 +100,7 @@
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/human_yeetus = src
 		var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-		var/type_wound = pick(list(/datum/wound/blunt/severe, /datum/wound/blunt/severe))
+		var/type_wound = pick(list(/datum/wound/blunt/bone/severe, /datum/wound/blunt/bone/severe))
 		limb.force_wound_upwards(type_wound)
 	Knockdown(levels * 50)*/
 	// MOJAVE SUN EDIT END
@@ -434,11 +434,13 @@
 			if(M.lying_angle == 90)
 				M.set_lying_angle(270)
 			animate(M, pixel_x = M.base_pixel_x - offset, pixel_y = M.base_pixel_y, 3)
+	SEND_SIGNAL(M, COMSIG_LIVING_SET_PULL_OFFSET)
 
 /mob/living/proc/reset_pull_offsets(mob/living/M, override)
 	if(!override && M.buckled)
 		return
 	animate(M, pixel_x = M.base_pixel_x, pixel_y = M.base_pixel_y, 1)
+	SEND_SIGNAL(M, COMSIG_LIVING_RESET_PULL_OFFSETS)
 
 //mob verbs are a lot faster than object verbs
 //for more info on why this is not atom/pull, see examinate() in mob.dm
@@ -1745,13 +1747,13 @@
 	. += {"
 		<br><font size='1'>[VV_HREF_TARGETREF(refid, VV_HK_GIVE_DIRECT_CONTROL, "[ckey || "no ckey"]")] / [VV_HREF_TARGETREF_1V(refid, VV_HK_BASIC_EDIT, "[real_name || "no real name"]", NAMEOF(src, real_name))]</font>
 		<br><font size='1'>
-			BRUTE:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=brute' id='brute'>[getBruteLoss()]</a>
-			FIRE:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=fire' id='fire'>[getFireLoss()]</a>
-			TOXIN:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=toxin' id='toxin'>[getToxLoss()]</a>
-			OXY:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=oxygen' id='oxygen'>[getOxyLoss()]</a>
-			CLONE:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=clone' id='clone'>[getCloneLoss()]</a>
-			BRAIN:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=brain' id='brain'>[getOrganLoss(ORGAN_SLOT_BRAIN)]</a>
-			STAMINA:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=stamina' id='stamina'>[getStaminaLoss()]</a>
+			BRUTE:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=brute' id='brute'>[getBruteLoss()]</a>
+			FIRE:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=fire' id='fire'>[getFireLoss()]</a>
+			TOXIN:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=toxin' id='toxin'>[getToxLoss()]</a>
+			OXY:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=oxygen' id='oxygen'>[getOxyLoss()]</a>
+			CLONE:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=clone' id='clone'>[getCloneLoss()]</a>
+			BRAIN:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=brain' id='brain'>[getOrganLoss(ORGAN_SLOT_BRAIN)]</a>
+			STAMINA:<font size='1'><a href='byond://?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=stamina' id='stamina'>[getStaminaLoss()]</a>
 		</font>
 	"}
 
@@ -2277,3 +2279,10 @@
 	if(SEND_SIGNAL(src, COMSIG_LIVING_WRITE_MEMORY, dead, gibbed) & COMPONENT_DONT_WRITE_MEMORY)
 		return FALSE
 	return TRUE
+
+/// Adds pixel_shift component on call. Default proc does nothing.
+/mob/proc/add_pixel_shift_component()
+	return
+
+/mob/living/add_pixel_shift_component()
+	AddComponent(/datum/component/pixel_shift)

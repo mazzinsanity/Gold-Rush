@@ -2,6 +2,7 @@
 #define COOLDOWN_INTERACT 6 SECONDS
 #define COOLDOWN_SLOGAN 5 MINUTES
 #define COOLDOWN_SPEW 5 MINUTES
+
 /obj/machinery/pinpointer_dispenser
 	name = "wayfinding pinpointer synthesizer"
 	icon = 'icons/obj/machines/wayfinding.dmi'
@@ -232,7 +233,7 @@
 
 /obj/machinery/pinpointer_dispenser/point_at(A)
 	. = ..()
-	visible_message("<span class='emote'>[span_name("[src]")] points at [A]. [prob(funnyprob) ? "How'd it do that?" : ""]</span>")
+	visible_message(span_emote("[span_name("[src]")] points at [A]. [prob(funnyprob) ? "How'd it do that?" : ""]"))
 
 //Pinpointer itself
 /obj/item/pinpointer/wayfinding //Help players new to a station find their way around
@@ -424,3 +425,8 @@
 
 /obj/machinery/navbeacon/wayfinding/disposals
 	location = "Disposals"
+
+#undef COOLDOWN_SPAWN
+#undef COOLDOWN_INTERACT
+#undef COOLDOWN_SLOGAN
+#undef COOLDOWN_SPEW 

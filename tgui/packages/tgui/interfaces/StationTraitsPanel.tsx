@@ -1,7 +1,7 @@
 import { filter, map } from 'common/collections';
 import { exhaustiveCheck } from 'common/exhaustive';
-import { BooleanLike } from 'common/react';
 import { useState } from 'react';
+import { BooleanLike } from 'tgui-core/react';
 
 import { useBackend } from '../backend';
 import { Box, Button, Divider, Dropdown, Stack, Tabs } from '../components';

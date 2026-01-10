@@ -5,15 +5,12 @@
 	)
 	exp_granted_type = EXP_TYPE_GOLDMAN
 	exp_required_type = EXP_TYPE_GOLDMAN
-	forbid = "The Goldman Posse forbids betrayal of one's own, a close ally, or of a previous agreement. Hostility towards protected individiuals, as determined by Goldman leadership."
-	enforce = "The Goldman Posse expects obeying your superiors, keeping a cool head, and adhering to agreements and obligations expected of the group. Money and power is important, but so is the word of the Goldman Posse and not backing down from it."
+	forbid = "Hostility towards fellow Goldmen and protected individuals, as determined by Goldman leadership, is forbidden."
+	enforce = "Listen to your superiors. Protect Carlin from outside forces as long you're paid. Seek out mercenary contracts from the highest bidder."
 
 /datum/outfit/job/ms13/goldman
 	name = "GoldmanDatums"
 	jobtype = /datum/job/ms13/goldman
-
-/datum/outfit/job/ms13/goldman/pre_equip(mob/living/carbon/human/H)
-	..()
 
 //These are base jobs, we don't want them appearing at all
 /datum/job/ms13/goldman/config_check()

@@ -84,9 +84,6 @@
 	new_data["medium"] = medium
 	return new_data
 
-/// Only returns paintings with 23x23 or 24x24 sizes fitting AI display icon.
-#define PAINTINGS_FILTER_AI_PORTRAIT 1
-
 SUBSYSTEM_DEF(persistent_paintings)
 	name = "Persistent Paintings"
 	init_order = INIT_ORDER_PERSISTENT_PAINTINGS
@@ -221,3 +218,5 @@ SUBSYSTEM_DEF(persistent_paintings)
 	var/payload = json_encode(all_data)
 	fdel(json_file)
 	WRITE_FILE(json_file, payload)
+
+#undef PAINTINGS_DATA_FORMAT_VERSION

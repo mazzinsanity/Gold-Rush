@@ -502,7 +502,7 @@
 	/// Whitelist of attachable hats, read note in Initialize() below this line
 	var/static/list/attachable_hats_list
 
-/obj/item/mod/module/hat_stabilizer/Initialize()
+/obj/item/mod/module/hat_stabilizer/Initialize(mapload)
 	. = ..()
 	attachable_hats_list = typecacheof(
 	//List of attachable hats. Make sure these and their subtypes are all tested, so they dont appear janky.

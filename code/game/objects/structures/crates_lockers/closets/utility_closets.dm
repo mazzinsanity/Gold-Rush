@@ -45,11 +45,7 @@
 		if ("both")
 			new /obj/item/tank/internals/emergency_oxygen(src)
 			new /obj/item/clothing/mask/breath(src)
-
-		if ("nothing")
-			// doot
-
-		// teehee //Fuck you
+			
 		if ("delete")
 			qdel(src)
 

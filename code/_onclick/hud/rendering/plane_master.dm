@@ -105,7 +105,7 @@
 	appearance_flags = PLANE_MASTER //should use client color
 	blend_mode = BLEND_OVERLAY
 
-/atom/movable/screen/plane_master/game_world_fov_hidden/Initialize()
+/atom/movable/screen/plane_master/game_world_fov_hidden/Initialize(mapload)
 	. = ..()
 	add_filter("vision_cone", 1, alpha_mask_filter(render_source = FIELD_OF_VISION_BLOCKER_RENDER_TARGET, flags = MASK_INVERSE))//MOJAVE SUN EDIT - Wallening Testmerge
 
@@ -282,21 +282,6 @@
 	remove_filter("AO")
 	if(istype(mymob) && mymob.client?.prefs?.read_preference(/datum/preference/toggle/ambient_occlusion))
 		add_filter("AO", 1, drop_shadow_filter(x = 0, y = -2, size = 4, color = "#04080FAA"))
-
-// MOJAVE EDIT BEGIN - Fatties
-/**
- * this exists to make displacement maps have no alpha, while still
- * being considered "visible" by the displacement filter...
- *
- * yes this is jank!
- */
-/atom/movable/screen/plane_master/displacement_maps
-	name = "displacement maps plane"
-	plane = DISPLACEMENT_MAP_PLANE
-	alpha = 0
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	render_relay_plane = null
-// MOJAVE EDIT END - Fatties
 
 /atom/movable/screen/plane_master/gravpulse
 	name = "gravpulse plane"

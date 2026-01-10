@@ -156,3 +156,7 @@
 	var/obj/item/cursed_item = parent
 	var/mob/living/carbon/cursed = cursed_item.loc
 	cursed.dropItemToGround(cursed_item, TRUE)
+
+#undef FULL_HEALTH 
+#undef HUNGER_THRESHOLD_WARNING
+#undef HUNGER_THRESHOLD_TRY_EATING

@@ -1,3 +1,7 @@
+#define MAX_SAFE_BYOND_ICON_SCALE_TILES (MAX_SAFE_BYOND_ICON_SCALE_PX / world.icon_size)
+#define MAX_SAFE_BYOND_ICON_SCALE_PX (33 * 32) //Not using world.icon_size on purpose.
+
+
 /*
 	Click code cleanup
 	~Sayu
@@ -23,10 +27,9 @@
 /mob/living/changeNext_move(num)
 	var/mod = next_move_modifier
 	var/adj = next_move_adjust
-	for(var/i in status_effects)
-		var/datum/status_effect/S = i
-		mod *= S.nextmove_modifier()
-		adj += S.nextmove_adjust()
+	for(var/datum/status_effect/effect as anything in status_effects)
+		mod *= effect.nextmove_modifier()
+		adj += effect.nextmove_adjust()
 	next_move = world.time + ((num + adj)*mod)
 
 /**
@@ -409,7 +412,7 @@
 	var/turf/T = get_turf(src)
 	if(T && (isturf(loc) || isturf(src)) && user.TurfAdjacent(T))
 		user.listed_turf = T
-		user.client << output("[url_encode(json_encode(T.name))];", "statbrowser:create_listedturf")
+		user.client.stat_panel.send_message("create_listedturf", T.name)
 
 ///The base proc of when something is right clicked on when alt is held - generally use alt_click_secondary instead
 /atom/proc/alt_click_on_secondary(atom/A)
@@ -433,13 +436,14 @@
 	var/turf/T = get_turf(A)
 	if(T && user.TurfAdjacent(T))
 		user.listed_turf = T
-		user.client << output("[url_encode(json_encode(T.name))];", "statbrowser:create_listedturf")
+		user.client.stat_panel.send_message("create_listedturf", T.name)
 
 /mob/proc/TurfAdjacent(turf/T)
 	return T.Adjacent(src)
 
 /**
  * Control+Shift click
+ * Unused except for AI
  */
 /mob/proc/CtrlShiftClickOn(atom/A)
 	A.CtrlShiftClick(src)
@@ -503,9 +507,6 @@
 	mouse_opacity = MOUSE_OPACITY_OPAQUE
 	screen_loc = "CENTER"
 
-#define MAX_SAFE_BYOND_ICON_SCALE_TILES (MAX_SAFE_BYOND_ICON_SCALE_PX / world.icon_size)
-#define MAX_SAFE_BYOND_ICON_SCALE_PX (33 * 32) //Not using world.icon_size on purpose.
-
 /atom/movable/screen/click_catcher/proc/UpdateGreed(view_size_x = 15, view_size_y = 15)
 	var/icon/newicon = icon('icons/hud/screen_gen.dmi', "catcher")
 	var/ox = min(MAX_SAFE_BYOND_ICON_SCALE_TILES, view_size_x)
@@ -559,3 +560,7 @@
 			return TRUE
 
 	return FALSE
+
+
+#undef MAX_SAFE_BYOND_ICON_SCALE_TILES
+#undef MAX_SAFE_BYOND_ICON_SCALE_PX

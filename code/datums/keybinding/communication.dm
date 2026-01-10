@@ -24,3 +24,21 @@
 	name = ME_CHANNEL
 	full_name = "Custom Emote (/Me)"
 	keybind_signal = COMSIG_KB_CLIENT_ME_DOWN
+
+/datum/keybinding/client/communication/looc
+	hotkey_keys = list("CtrlO")
+	name = LOOC_CHANNEL
+	full_name = "Local OOC (LOOC)"
+	keybind_signal = COMSIG_KB_CLIENT_LOOC_DOWN
+
+/datum/keybinding/client/communication/whisper
+	hotkey_keys = list("CtrlT")
+	name = WHIS_CHANNEL
+	full_name = "IC Whisper"
+	keybind_signal = COMSIG_KB_CLIENT_WHISPER_DOWN
+
+/datum/keybinding/client/communication/Do
+	hotkey_keys = list("K")
+	name = DO_CHANNEL
+	full_name = "Do"
+	keybind_signal = COMSIG_KB_CLIENT_DO_DOWN

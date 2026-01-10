@@ -144,13 +144,15 @@
 	if(LAZYLEN(scar_data) != SCAR_SAVE_LENGTH)
 		return // invalid, should delete
 	var/version = text2num(scar_data[SCAR_SAVE_VERS])
-	if(!version || version < SCAR_CURRENT_VERSION) // get rid of old scars
+	if(!version || version != SCAR_CURRENT_VERSION) // get rid of scars using a incompatable version
 		return
 	if(specified_char_index && (mind?.original_character_slot_index != specified_char_index))
 		return
+	if (isnull(text2num(scar_data[SCAR_SAVE_BIOLOGY])))
+		return
 	var/obj/item/bodypart/the_part = get_bodypart("[scar_data[SCAR_SAVE_ZONE]]")
 	var/datum/scar/scaries = new
-	return scaries.load(the_part, scar_data[SCAR_SAVE_VERS], scar_data[SCAR_SAVE_DESC], scar_data[SCAR_SAVE_PRECISE_LOCATION], text2num(scar_data[SCAR_SAVE_SEVERITY]), text2num(scar_data[SCAR_SAVE_BIOLOGY]), text2num(scar_data[SCAR_SAVE_CHAR_SLOT]))
+	return scaries.load(the_part, scar_data[SCAR_SAVE_VERS], scar_data[SCAR_SAVE_DESC], scar_data[SCAR_SAVE_PRECISE_LOCATION], text2num(scar_data[SCAR_SAVE_SEVERITY]), text2num(scar_data[SCAR_SAVE_BIOLOGY]), text2num(scar_data[SCAR_SAVE_CHAR_SLOT]), text2num(scar_data[SCAR_SAVE_CHECK_ANY_BIO]))
 
 /// Read all the scars we have for the designated character/scar slots, verify they're good/dump them if they're old/wrong format, create them on the user, and write the scars that passed muster back to the file
 /mob/living/carbon/human/proc/load_persistent_scars()
@@ -223,7 +225,7 @@
 
 /// Fully randomizes everything according to the given flags.
 /mob/living/carbon/human/proc/randomize_human_appearance(randomize_flags = ALL)
-	var/datum/preferences/preferences = new
+	var/datum/preferences/preferences = new(new /datum/client_interface)
 
 	for (var/datum/preference/preference as anything in get_preferences_in_priority_order())
 		if (!preference.included_in_randomization_flags(randomize_flags))
@@ -275,23 +277,22 @@
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
 	var/hide_features = (obscured & ITEM_SLOT_ICLOTHING) && skipface
 
-	var/visible_weight
-	if((fatness == FATNESS_OBESE) && !hide_features)
-		visible_weight = "[fatness_adjective || "Fat"] "
 	var/visible_adjective
-	if(generic_adjective && !hide_features && ((fatness != FATNESS_OBESE) || !(generic_adjective in GLOB.fatness_incompatible_adjectives)))
+	if(generic_adjective && !hide_features)
 		visible_adjective = "[generic_adjective] "
 	var/visible_age = get_age()
 	if(visible_age)
 		visible_age = "[visible_age] "
 	var/visible_skin
-	//i am not quite sure how to implement a check for skin tone/species visibility so uhh, get fucked i guess?
 	if(dna.species.use_skintones)
 		visible_skin = GLOB.skin_tone_names[skin_tone] ? "[GLOB.skin_tone_names[skin_tone]] " : null
+	var/visible_species
+	if(custom_species_name)
+		visible_species = "[custom_species_name] "
 	else
-		visible_skin = "[dna.species.name] "
+		visible_species = "[dna.species.name] "
 	var/visible_gender = get_gender()
-	var/final_string = "[visible_weight][visible_adjective][visible_age][visible_skin][visible_gender]"
+	var/final_string = "[visible_adjective][visible_age][visible_skin][visible_species][visible_gender]"
 	if(prefixed)
 		final_string = "\A [final_string]"
 	return lowercase ? lowertext(final_string) : final_string

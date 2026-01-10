@@ -237,6 +237,9 @@ GLOBAL_LIST_INIT(message_modes_stat_limits, list(
 			succumb()
 		return
 
+	//ensure EOL punctuation exists and that word-bounded 'i' are capitalized before we do anything else
+	message = autopunct_bare(message)
+
 	//This is before anything that sends say a radio message, and after all important message type modifications, so you can scumb in alien chat or something
 	if(saymode && !saymode.handle_message(src, message, language))
 		return
@@ -399,7 +402,7 @@ GLOBAL_LIST_INIT(message_modes_stat_limits, list(
 	var/image/I = image('icons/mob/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
 	I.plane = ABOVE_GAME_PLANE
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
-	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay), I, speech_bubble_recipients, 30)
+	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flick_overlay_global), I, speech_bubble_recipients, 30)
 
 /mob/proc/binarycheck()
 	return FALSE

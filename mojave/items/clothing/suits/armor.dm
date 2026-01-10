@@ -4,6 +4,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
+	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	max_integrity = 400
 	///Icon file for left hand inhand overlays
@@ -27,6 +28,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	hoodtype = /obj/item/clothing/head/hooded/ms13
+	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
 	grid_width = 64
 	grid_height = 96
@@ -42,7 +44,6 @@
 	desc = "A makeshift kit of armor intended to be worn over clothing and made mostly of metal."
 	icon_state = "armorkit"
 	inhand_icon_state = "armorkit"
-	body_parts_covered = CHEST|LEGS|ARM_LEFT
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -53,7 +54,6 @@
                 LASER = 0, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -62,7 +62,6 @@
 	desc = "A reinforced, heavier kit of armor intended to be worn over clothing. Made mostly of durable metal plates."
 	icon_state = "reinf_armorkit"
 	inhand_icon_state = "reinf_armorkit"
-	body_parts_covered = CHEST|LEGS|ARM_LEFT|GROIN
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -73,7 +72,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 
@@ -84,7 +82,6 @@
 	desc = "Sections of tire, roughly cut apart and bound together. Getting into a firefight isn't advised, but you shouldn't feel a punch in this."
 	icon_state = "tirearmor"
 	inhand_icon_state = "tirearmor"
-	body_parts_covered = CHEST|GROIN
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -95,7 +92,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -104,7 +100,6 @@
 	desc = "A suit of armor made of hardened leather, a wasteland staple."
 	icon_state = "leatherarmor"
 	inhand_icon_state = "leatherarmor"
-	body_parts_covered = CHEST|LEGS|GROIN
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -115,7 +110,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 
@@ -134,8 +128,6 @@
                 LASER = CLASS3_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 
 // Metal Armor //
 
@@ -144,7 +136,6 @@
 	desc = "Standard metal armor, great protection from blades but quite bulky and susceptible to lasers and blunt weapons."
 	icon_state = "metalarmor"
 	inhand_icon_state = "metalarmor"
-	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
 	slowdown = 0.5
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
@@ -155,8 +146,6 @@
                 LASER = 0, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
@@ -165,7 +154,6 @@
 	desc = "Sturdy metal armor with additional reinforcements, excellent protection from blades and bullets at the cost of mobility and vulnerability to lasers and blunt weapons."
 	icon_state = "reinforcedmetal"
 	inhand_icon_state = "reinforcedmetal"
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -175,14 +163,12 @@
                 LASER = 0, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 575
 
 /obj/item/clothing/suit/armor/ms13/metal/heavy
 	name = "heavy metal armor"
 	desc = "A full suit of heavy duty plated metal armor. Looks quite intimidating and offers the protection to match."
 	icon_state = "heavymetal"
 	inhand_icon_state = "heavymetal"
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -192,15 +178,12 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS4_FIRE)
-	max_integrity = 575
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 75, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/armor/ms13/vaultvan
 	name = "\improper Vault-tec van armor"
 	desc = "Makeshift armor scrounged together from, as one may expect, the old remains of a Vault-tec van."
 	icon_state = "vaultvanarmor"
 	inhand_icon_state = "vaultvanarmor"
-	body_parts_covered = CHEST|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -211,7 +194,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 
@@ -223,7 +205,6 @@
 	icon_state = "police_kevlar"
 	inhand_icon_state = "policekevlar"
 	blood_overlay_type = "armor"
-	body_parts_covered = CHEST
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
@@ -234,7 +215,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -252,7 +232,6 @@
                 LASER = 0, \
                 ENERGY = 0, \
                 FIRE = CLASS1_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/small
 
 /obj/item/clothing/suit/armor/ms13/vest/military
@@ -260,7 +239,6 @@
 	desc = "A military grade bulletproof kevlar vest, unmatched protection against almost any caliber of bullet."
 	icon_state = "military_kevlar"
 	inhand_icon_state = "militarykevlar"
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS3_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -270,13 +248,11 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/armor/ms13/vest/vault
 	name = "vault security vest"
 	desc = "A thick kevlar vest worn by vault security officers."
 	icon_state = "vaultarmor"
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -286,13 +262,11 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/armor/ms13/vest/snowcrest
 	name = "heavy kevlar vest"
 	desc = "A heavy duty bulletproof kevlar vest. Not the easiest to maneuver in, but could certainly save your life."
 	icon_state = "snow_guard"
-	body_parts_covered = CHEST|GROIN
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS3_EDGE, \
@@ -303,7 +277,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
 
 // Raider Armor //
 
@@ -313,14 +286,12 @@
 	icon_state = "enforcercoat"
 	inhand_icon_state = "det_suit"
 	blood_overlay_type = "armor"
-	body_parts_covered = CHEST|ARMS|GROIN
 
 /obj/item/clothing/suit/ms13/trench/boss
 	name = "boss' coat"
 	desc = "A padded trenchcoat, with the arms left exposed. Worn by the biggest and baddest."
 	icon_state = "courier"
 	inhand_icon_state = "duster"
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -340,7 +311,6 @@
 	icon_state = "winterjacketraider"
 	inhand_icon_state = "det_suit"
 	blood_overlay_type = "armor"
-	body_parts_covered = CHEST|ARMS|GROIN|LEG_RIGHT
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -351,8 +321,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/small
@@ -361,7 +329,6 @@
 	name = "raider plated jacket"
 	desc = "A light jacket that has been crudely reinforced with various metal plates and strips. An armored jacket like this is almost exclusively used by raiders."
 	icon_state = "knightlyraider"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -377,7 +344,6 @@
 	name = "raider kevlar jacket"
 	desc = "A fur lined jacket with an added light kevlar vest and some metal reinforcements. Predominantly seen protecting raiders from bullets seeking justice."
 	icon_state = "dapperraider"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
@@ -389,7 +355,6 @@
                 ENERGY = 0, \
                 FIRE = CLASS2_FIRE)
 
-
 // Combat Armor //
 
 /obj/item/clothing/suit/armor/ms13/combat
@@ -397,7 +362,6 @@
 	desc = "Pre-war military grade combat armor. Offers great all around protection."
 	icon_state = "combatarmor"
 	inhand_icon_state = "combatarmor"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
@@ -408,8 +372,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
@@ -427,7 +389,6 @@
                 LASER = CLASS3_LASER, \
                 ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 575
 
 // Special Armor //
 
@@ -437,7 +398,6 @@
 	icon_state = "assassin"
 	inhand_icon_state = "assassin"
 	slowdown = -0.3
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -447,8 +407,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	clothing_traits = list(TRAIT_SILENT_FOOTSTEPS)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -460,7 +418,6 @@
 	inhand_icon_state = "tesla_armor"
 	blood_overlay_type = "armor"
 	slowdown = 0.3
-	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -470,8 +427,6 @@
                 LASER = CLASS4_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 
@@ -481,7 +436,6 @@
 	icon_state = "riotgear"
 	inhand_icon_state = "riotgear"
 	slowdown = 0.5
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
@@ -491,8 +445,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 575
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
@@ -506,18 +458,19 @@
 	name = "surplus combat armor"
 	desc = "Cheap, surplus combat armor likely acquired from some kind of pre-war reserve armory. Still gets the job done."
 	icon_state = "enforcer"
-	body_parts_covered = CHEST|GROIN|LEGS
+
+/obj/item/clothing/suit/ms13/trench/black/reinf/sheriff
+	name = "sheriff's reinforced black trenchcoat"
+	desc = "A black trenchcoat with the addition of some heavy metal reinforcements and armor for added protection. Used by sheriffs of the wastes."
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS4_PIERCE, \
                 IMPALING = CLASS3_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS2_PLASMA, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
 
 // Enviro Armor //
 
@@ -527,7 +480,6 @@
 	icon_state = "firesuit"
 	inhand_icon_state = "firesuit"
 	slowdown = 0.3
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -537,8 +489,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = CLASS5_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 100, acid = 0, wound = 0)
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	resistance_flags = FIRE_PROOF
 	equip_delay_self = 3.5 SECONDS
@@ -562,7 +512,6 @@
 	icon_state = "radsuit"
 	inhand_icon_state = "radsuit"
 	slowdown = 0.3
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -572,8 +521,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 450
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
 
@@ -589,7 +536,6 @@
 	slowdown = 0.15
 	hoodtype = /obj/item/clothing/head/hooded/ms13/hazmat
 	resistance_flags = ACID_PROOF
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS|HANDS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -599,7 +545,6 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = 0, \
                 FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 15, acid = 0) //No wound armor
 
 /obj/item/clothing/suit/space/ms13
 	name = "\improper Space suit"
@@ -608,28 +553,24 @@
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "spacesuit"
 	inhand_icon_state = "spacesuit"
-	armor = list(melee = 25, bullet = 15, laser = 25, energy = 25, bomb = 5, bio = 50, fire = 60, acid = 50)
 
 // NCR Armor //
 
 /obj/item/clothing/suit/armor/ms13/ncr
 	name = "\improper NCR infantry vest"
-	desc = "A standard issue NCR infantry vest specialized for arctic environments."
+	desc = "A standard issue NCR infantry vest."
 	icon_state = "ncr_vest"
 	inhand_icon_state = "ncr_infantry_vest"
 	slowdown = 0.15
-	body_parts_covered = CHEST
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS1_CUT, \
                 PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
+                IMPALING = CLASS1_STAB, \
+                LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/small
@@ -639,16 +580,16 @@
 	desc = "An NCR infantry vest with extra protective reinforcements."
 	icon_state = "ncr_reinforced_vest"
 	inhand_icon_state = "ncr_reinforced_vest"
-	body_parts_covered = CHEST|GROIN
+	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
+                FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/suit/armor/ms13/ncr/mantle
 	name = "\improper NCR mantle vest"
@@ -656,14 +597,14 @@
 	icon_state = "ncr_standard_mantle"
 	inhand_icon_state = "ncr_standard_mantle"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
+                CUTTING = CLASS3_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS3_STAB, \
                 LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
+                ENERGY = CLASS2_PLASMA, \
+                FIRE = CLASS3_FIRE)
 
 /obj/item/clothing/suit/armor/ms13/ncr/mantle/reinforced
 	name = "\improper NCR reinforced mantle vest"
@@ -671,20 +612,52 @@
 	icon_state = "ncr_reinforced_mantle"
 	inhand_icon_state = "ncr_reinforced_mantle"
 	slowdown = 0.3
-	body_parts_covered = CHEST|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
+			EDGE_PROTECTION = CLASS2_EDGE, \
+			CRUSHING = CLASS2_CRUSH, \
+			CUTTING = CLASS4_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS3_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)
+	equip_delay_self = 3.5 SECONDS
+	equip_delay_other = 5 SECONDS
+
+/obj/item/clothing/suit/armor/ms13/combat/ranger/ncr
+	name = "\improper NCR ranger combat armor"
+	desc = "A set of NCR Ranger combat armor. The thick materials hold up well against attacks, while keeping the wearer agile."
+	icon_state = "patrol_armor"
+	worn_icon_state = "patrol_armor"
+	slowdown = 0.15
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
+                CRUSHING = CLASS1_CRUSH, \
+                CUTTING = CLASS2_CUT, \
                 PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
+	equip_delay_self = 2.5 SECONDS
+	equip_delay_other = 4 SECONDS
+	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
+
+/obj/item/clothing/suit/armor/ms13/eliteriot/ranger/ncr
+	name = "\improper NCR veteran ranger armor"
+	desc = "A set of NCR Veteran Ranger armor. Heavy kevlar padding in a duster, with a metal breastplate in the front. Built to last through the worst."
+	slowdown = 0.2
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS5_PIERCE, \
+                IMPALING = CLASS3_STAB, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
-	equip_delay_self = 3.5 SECONDS
-	equip_delay_other = 5 SECONDS
+	equip_delay_self = 4 SECONDS
+	equip_delay_other = 6 SECONDS
 
 // Legion Armor //
 
@@ -694,9 +667,6 @@
 	icon_state = "leg_rec"
 	inhand_icon_state = "legarmor"
 	slowdown = 0.15
-	body_parts_covered = CHEST|GROIN|LEGS
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 
 /obj/item/clothing/suit/armor/ms13/legion/recruit
 	name = "\improper Legion recruit armor"
@@ -704,13 +674,13 @@
 	icon_state = "leg_rec"
 	inhand_icon_state = "legarmor"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
                 PIERCING = CLASS1_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
+                ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -720,14 +690,14 @@
 	desc = "Legion leather armor with the small addition of some metal reinforcements for added protection. Intended for Prime Legionaries."
 	icon_state = "leg_prime"
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
                 PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS2_STAB, \
                 LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS3_FIRE)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -737,24 +707,16 @@
 	icon_state = "leg_vet"
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
+                EDGE_PROTECTION = CLASS3_EDGE, \
                 CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS1_PLASMA, \
+                CUTTING = CLASS4_CUT, \
+                PIERCING = CLASS3_PIERCE, \
+                IMPALING = CLASS4_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
-
-/obj/item/clothing/suit/armor/ms13/legion/scout
-	name = "\improper Legion scout armor"
-	desc = "Legion recruit armor without a chestplate, slightly reduced protection as a result."
-	icon_state = "leg_scout"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 5,  "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armor/ms13/legion/explorer
 	name = "\improper Legion explorer armor"
@@ -762,77 +724,41 @@
 	icon_state = "leg_exp"
 	slowdown = 0
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
+			EDGE_PROTECTION = CLASS1_EDGE, \
+			CRUSHING = CLASS1_CRUSH, \
+			CUTTING = CLASS2_CUT, \
+			PIERCING = CLASS1_PIERCE, \
+			IMPALING = CLASS1_STAB, \
+			LASER = CLASS1_LASER, \
+			ENERGY = CLASS1_PLASMA, \
+			FIRE = CLASS2_FIRE)
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
-
-/obj/item/clothing/suit/armor/ms13/legion/speculatore
-	name = "\improper Legion speculatore armor"
-	desc = "Legion veteran armor with less reinforcements, reducing some of it's protection."
-	icon_state = "leg_spec"
-	armor = list("melee" = 45, "bullet" = 40, "laser" = 10, "energy" = 10, "bomb" = 25, "bio" = 20,  "fire" = 25, "acid" = 20)
-
-/obj/item/clothing/suit/armor/ms13/legion/vexillarius
-	name = "\improper Legion vexillarius armor"
-	desc = "Legion vexillarius armor. Lighter than his typical Veteran counterparts."
-	icon_state = "leg_prime" //placeholder for now
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
-	equip_delay_self = 2.5 SECONDS
-	equip_delay_other = 4 SECONDS
-
-/obj/item/clothing/suit/armor/ms13/legion/praetorian
-	name = "\improper Legion praetorian armor"
-	desc = "Legion praetorian armor, worn only by the most skilled guardians of the Legion."
-	icon_state = "leg_prae"
-	armor = list("melee" = 55, "bullet" = 40, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 20,  "fire" = 30, "acid" = 20)
 
 /obj/item/clothing/suit/armor/ms13/legion/centurion
 	name = "\improper Legion centurion armor"
 	desc = "A hulking suit of armor cobbled together mostly from various other pieces of armor. It serves as both great protection and a status symbol for a Legion Centurion."
 	icon_state = "leg_cent"
-	slowdown = 0.5
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
-	max_integrity = 575
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
+			EDGE_PROTECTION = CLASS3_EDGE, \
+			CRUSHING = CLASS3_CRUSH, \
+			CUTTING = CLASS5_CUT, \
+			PIERCING = CLASS4_PIERCE, \
+			IMPALING = CLASS4_STAB, \
+			LASER = CLASS3_LASER, \
+			ENERGY = CLASS3_PLASMA, \
+			FIRE = CLASS3_FIRE)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
 // BOS Armor //
 
 /obj/item/clothing/suit/armor/ms13/scribe
-	name = "\improper Brotherhood scribe's robe"
-	desc = "A finely made, comfortable cloth robe worn by Brotherhood scribes."
+	name = "\improper Brotherhood Scribe robe"
+	desc = "A finely made, comfortable cloth robe worn by Brotherhood Scribes."
 	icon_state = "scribe"
 	inhand_icon_state = "scribe"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -852,21 +778,20 @@
 	icon_state = "head_scribe"
 	inhand_icon_state = "head_scribe"
 
-/obj/item/clothing/suit/armor/ms13/head_paladin
-	name = "\improper Brotherhood head paladin's battlecoat"
+/obj/item/clothing/suit/armor/ms13/head_knight
+	name = "\improper Brotherhood Head Knight's battlecoat"
 	desc = "A masterwork of Brotherhood tailoring, featuring good reinforcements and armoring while not compromising on style or weight."
 	icon_state = "battlecoat"
 	inhand_icon_state = "battlecoat"
-	body_parts_covered = CHEST|ARMS|GROIN
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
+                EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS2_PIERCE, \
+                IMPALING = CLASS2_STAB, \
+                LASER = CLASS3_LASER, \
+                ENERGY = CLASS3_PLASMA, \
+                FIRE = CLASS3_FIRE)
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -875,7 +800,6 @@
 	name = "\improper Brotherhood kevlar vest"
 	desc = "A light kevlar vest in use by the Brotherhood of Steel. Normally given to low ranking members not worthy of the Brotherhood's standard combat armor, or Power Armor."
 	icon_state = "bos_kevlar"
-	body_parts_covered = CHEST
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
@@ -883,11 +807,9 @@
                 CUTTING = CLASS1_CUT, \
                 PIERCING = CLASS2_PIERCE, \
                 IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
+                LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS2_FIRE)
-	max_integrity = 400
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/small
@@ -896,19 +818,16 @@
 	name = "\improper Brotherhood combat armor"
 	desc = "A custom built and specialized suit of combat armor used by the Brotherhood of Steel."
 	icon_state = "bos_combat"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
+                PIERCING = CLASS3_PIERCE, \
                 IMPALING = CLASS3_STAB, \
                 LASER = CLASS3_LASER, \
-                ENERGY = CLASS2_PLASMA, \
+                ENERGY = CLASS3_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
@@ -919,7 +838,6 @@
 	desc = "A set of Desert Ranger combat armor. The thick materials hold up well against attacks, while keeping the wearer agile."
 	icon_state = "patrol_armor"
 	worn_icon_state = "patrol_armor"
-	body_parts_covered = CHEST|GROIN
 	slowdown = 0.15
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
@@ -930,8 +848,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 0)
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
@@ -965,7 +881,6 @@
 	alternative_mode = TRUE
 	slowdown = 0
 	hoodtype = /obj/item/clothing/head/hooded/ms13/mon_city
-	body_parts_covered = CHEST|GROIN|ARMS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -981,7 +896,6 @@
 	name = "reinforced winter apparel"
 	desc = "A set of winter clothes with the addition of some protective leather reinforcements and some kevlar padding."
 	icon_state = "mon_padded"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
@@ -1006,8 +920,6 @@
                 LASER = CLASS2_LASER, \
                 ENERGY = CLASS1_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	max_integrity = 500
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
 
 /obj/item/clothing/suit/ms13/veteran_coat/reinf/mon_city/pointman
 	name = "metal reinforced winter fur coat"
@@ -1023,5 +935,4 @@
                 LASER = CLASS1_LASER, \
                 ENERGY = CLASS2_PLASMA, \
                 FIRE = CLASS3_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/small

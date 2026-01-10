@@ -51,12 +51,6 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 #define testing_profile_local_output(NAME) testing_profile_output(NAME, _timer_system)
 #define testing_profile_local_output_all testing_profile_output_all(_timer_system)
 
-#if defined(UNIT_TESTS) || defined(SPACEMAN_DMM)
-/proc/log_test(text)
-	WRITE_LOG(GLOB.test_log, text)
-	SEND_TEXT(world.log, text)
-#endif
-
 #if defined(REFERENCE_DOING_IT_LIVE)
 #define log_reftracker(msg) log_harddel("## REF SEARCH [msg]")
 
@@ -199,6 +193,10 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 /proc/log_emote(text)
 	if (CONFIG_GET(flag/log_emote))
 		WRITE_LOG(GLOB.world_game_log, "EMOTE: [text]")
+
+/proc/log_subtle(text)
+	if (CONFIG_GET(flag/log_subtle))
+		WRITE_LOG(GLOB.world_game_log, "SUBTLE EMOTE: [text]")
 
 /proc/log_radio_emote(text)
 	if (CONFIG_GET(flag/log_emote))
@@ -402,11 +400,11 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 	if(key)
 		if(C?.holder && C.holder.fakekey && !include_name)
 			if(include_link)
-				. += "<a href='?priv_msg=[C.findStealthKey()]'>"
+				. += "<a href='byond://?priv_msg=[C.findStealthKey()]'>"
 			. += "Administrator"
 		else
 			if(include_link)
-				. += "<a href='?priv_msg=[ckey]'>"
+				. += "<a href='byond://?priv_msg=[ckey]'>"
 			. += key
 		if(!C)
 			. += "\[DC\]"

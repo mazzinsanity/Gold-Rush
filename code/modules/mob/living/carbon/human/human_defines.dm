@@ -14,8 +14,8 @@
 	can_be_shoved_into = TRUE
 
 	//Hair colour and style
-	var/hair_color = "Light Blonde" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
-	var/hairstyle = "Business Slick" //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/hair_color = COLOR_BLACK
+	var/hairstyle = "Bald"
 
 	///Colours used for hair and facial hair gradients.
 	var/list/grad_color
@@ -23,11 +23,11 @@
 	var/list/grad_style
 
 	//Facial hair colour and style
-	var/facial_hair_color = "Light Blonde" //Hair color //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/facial_hair_color = COLOR_BLACK
 	var/facial_hairstyle = "Shaved"
 
 	//Eye colour
-	var/eye_color = "Black" //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/eye_color = COLOR_BLACK
 
 	var/skin_tone = "caucasian1" //Skin tone
 
@@ -38,11 +38,31 @@
 
 	//consider updating /mob/living/carbon/human/copy_clothing_prefs() if adding more of these
 	var/underwear = "Nude" //Which underwear the player wants
-	var/underwear_color = "#FFCC99" //MOJAVE SUN EDIT - Hair/Gendered/Colours
+	var/underwear_color = COLOR_BLACK
 	var/undershirt = "Nude" //Which undershirt the player wants
 	var/socks = "Nude" //Which socks the player wants
 	var/backpack = DBACKPACK //Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
+
+	// Flavor features
+	var/flavor_text
+	var/flavor_text_nsfw
+	var/custom_species_name
+	var/custom_species_lore
+	var/ooc_notes
+	var/ooc_notes_nsfw
+	var/headshot_url
+
+	// Fallout Special Stats
+	var/list/special_stats = list(
+		SPECIAL_STRENGTH = 5,
+		SPECIAL_PERCEPTION = 5,
+		SPECIAL_ENDURANCE = 5,
+		SPECIAL_CHARISMA = 5,
+		SPECIAL_INTELLIGENCE = 5,
+		SPECIAL_AGILITY = 5,
+		SPECIAL_LUCK = 5
+	)
 
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null

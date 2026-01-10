@@ -92,7 +92,6 @@
 	heat_protection = FEET|LEGS
 	cold_protection = FEET|LEGS
 	obj_flags = IMMUTABLE_SLOW
-	item_flags = IGNORE_DIGITIGRADE
 	can_be_tied = FALSE
 	var/obj/item/mod/control/mod
 	var/obj/item/clothing/overslot

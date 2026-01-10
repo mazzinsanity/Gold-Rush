@@ -1,7 +1,7 @@
 /datum/job/ms13/drylander/dryfolk
 	title = "Drylander Folk"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Chieftain and the Shaman"
 	description = "You are a proud member of the Drylander tribe. You have no particular role or specialization, but should do what you can to help the tribe prosper. Listen to the Chieftain and Shaman's orders."
 

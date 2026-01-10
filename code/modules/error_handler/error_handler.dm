@@ -10,7 +10,6 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 	if(!istype(E)) //Something threw an unusual exception
 		log_world("uncaught runtime error: [E]")
 		return ..()
-
 	//this is snowflake because of a byond bug (ID:2306577), do not attempt to call non-builtin procs in this if
 	if(copytext(E.name, 1, 32) == "Maximum recursion level reached")//32 == length() of that string + 1
 		//log to world while intentionally triggering the byond bug.
@@ -126,13 +125,8 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 	for(var/line in desclines)
 		SEND_TEXT(world.log, line)
 
-#ifdef UNIT_TESTS
-	if(GLOB.current_test)
-		//good day, sir
-		GLOB.current_test.Fail("[main_line]\n[desclines.Join("\n")]")
-#endif
-
-
 	// This writes the regular format (unwrapping newlines and inserting timestamps as needed).
 	log_runtime("runtime error: [E.name]\n[E.desc]")
 #endif
+
+#undef ERROR_USEFUL_LEN

@@ -1,5 +1,3 @@
-#define HITS_TO_CRIT(damage) round(100 / damage, 0.1)
-
 //MOJAVE EDIT - Commenting all of this out because frankly it's stupid and I hate seeing it on almost all of our items.
 
 
@@ -48,7 +46,7 @@
 	SIGNAL_HANDLER
 
 	if(item.force >= 5 || item.throwforce >= 5 || item.override_notes || item.offensive_notes || attached_proc) /// Only show this tag for items that could feasibly be weapons, shields, or those that have special notes
-		examine_texts += span_notice("It appears to have an ever-updating bluespace <a href='?src=[REF(item)];examine=1'>warning label.</a>")
+		examine_texts += span_notice("It appears to have an ever-updating bluespace <a href='byond://?src=[REF(item)];examine=1'>warning label.</a>")
 
 /**
  *

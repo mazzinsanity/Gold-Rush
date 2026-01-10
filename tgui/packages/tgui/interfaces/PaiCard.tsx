@@ -1,6 +1,6 @@
-import { decodeHtmlEntities } from 'common/string';
+import { BooleanLike } from 'tgui-core/react';
+import { decodeHtmlEntities } from 'tgui-core/string';
 
-import { BooleanLike } from '../../common/react';
 import { useBackend } from '../backend';
 import {
   BlockQuote,

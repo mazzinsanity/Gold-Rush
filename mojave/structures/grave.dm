@@ -31,7 +31,7 @@
 	. = ..()
 	register_context()
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_entered,
+		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
@@ -51,7 +51,7 @@
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/human_yeetus = src
 		var/obj/item/bodypart/limb = pick(human_yeetus.bodyparts)
-		var/type_wound = pick(list(/datum/wound/blunt/moderate, /datum/wound/blunt/severe))
+		var/type_wound = pick(list(/datum/wound/blunt/bone/moderate, /datum/wound/blunt/bone/severe))
 		limb.force_wound_upwards(type_wound)
 		playsound(src, 'mojave/sound/ms13effects/body_fall.ogg', 75, TRUE)
 	victim.Knockdown(3 SECONDS)

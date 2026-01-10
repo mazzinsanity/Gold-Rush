@@ -27,7 +27,7 @@
 	if(cavity_item)
 		cavity_item.forceMove(drop_location())
 		cavity_item = null
-	..()
+	return ..()
 
 /obj/item/bodypart/chest/monkey
 	icon = 'icons/mob/animal_parts.dmi'
@@ -74,7 +74,7 @@
 	px_x = -6
 	px_y = 0
 	can_be_disabled = TRUE
-
+	biological_state = BIO_STANDARD_JOINTED
 
 /obj/item/bodypart/l_arm/set_owner(new_owner)
 	. = ..()
@@ -173,7 +173,7 @@
 	px_x = 6
 	px_y = 0
 	can_be_disabled = TRUE
-
+	biological_state = BIO_STANDARD_JOINTED
 
 /obj/item/bodypart/r_arm/set_owner(new_owner)
 	. = ..()
@@ -270,7 +270,7 @@
 	px_x = -2
 	px_y = 12
 	can_be_disabled = TRUE
-
+	biological_state = BIO_STANDARD_JOINTED
 
 /obj/item/bodypart/l_leg/set_owner(new_owner)
 	. = ..()
@@ -325,7 +325,7 @@
 
 /obj/item/bodypart/l_leg/digitigrade
 	name = "left digitigrade leg"
-	use_digitigrade = FULL_DIGITIGRADE
+	use_digitigrade = TRUE
 
 /obj/item/bodypart/l_leg/monkey
 	icon = 'icons/mob/animal_parts.dmi'
@@ -365,7 +365,7 @@
 	px_x = 2
 	px_y = 12
 	can_be_disabled = TRUE
-
+	biological_state = BIO_STANDARD_JOINTED
 
 /obj/item/bodypart/r_leg/set_owner(new_owner)
 	. = ..()
@@ -420,7 +420,7 @@
 
 /obj/item/bodypart/r_leg/digitigrade
 	name = "right digitigrade leg"
-	use_digitigrade = FULL_DIGITIGRADE
+	use_digitigrade = TRUE
 
 /obj/item/bodypart/r_leg/monkey
 	icon = 'icons/mob/animal_parts.dmi'

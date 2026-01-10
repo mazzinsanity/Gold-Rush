@@ -190,7 +190,7 @@
  * * vision_distance (optional) define how many tiles away the message can be seen.
  * * ignored_mob (optional) doesn't show any message to a given mob if TRUE.
  */
-/atom/proc/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
+/atom/proc/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE, separation = " ")
 	var/turf/T = get_turf(src)
 	if(!T)
 		return
@@ -225,12 +225,12 @@
 
 		//emote handling
 		if(visible_message_flags & EMOTE_MESSAGE)
-			msg = "<span class='emote'><b>[src]</b> [raw_msg]</span>"
+			msg = span_emote("<b>[src]</b>[separation][raw_msg]")
 			if(M.mind?.guestbook && ishuman(src))
 				var/mob/living/carbon/human/human_source = src
 				var/known_name = M.mind.guestbook.get_known_name(M, src, msg_type == MSG_VISUAL ? human_source.get_face_name() : human_source.GetVoice())
 				if(known_name)
-					msg = "<span class='emote'><b>[known_name]</b> [raw_msg]</span>"
+					msg = span_emote("<b>[known_name]</b>[separation][raw_msg]")
 
 		if(!msg)
 			continue
@@ -238,11 +238,11 @@
 		if(visible_message_flags & EMOTE_MESSAGE && runechat_prefs_check(M, visible_message_flags) && !M.is_blind())
 			M.create_chat_message(src, raw_message = raw_msg, runechat_flags = visible_message_flags)
 
-		M.show_message(msg, msg_type, blind_message, MSG_AUDIBLE)
+		M.show_message(M.say_emphasis(msg), msg_type, M.say_emphasis(blind_message), MSG_AUDIBLE)
 
 
 ///Adds the functionality to self_message.
-/mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE)
+/mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, visible_message_flags = NONE, separation = " ")
 	. = ..()
 	if(self_message)
 		show_message(self_message, MSG_VISUAL, blind_message, MSG_AUDIBLE)
@@ -257,7 +257,7 @@
  * * deaf_message (optional) is what deaf people will see.
  * * hearing_distance (optional) is the range, how many tiles away the message can be heard.
  */
-/atom/proc/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE)
+/atom/proc/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE, separation = " ")
 	var/list/hearers = get_hearers_in_view(hearing_distance, src)
 	if(self_message)
 		hearers -= src
@@ -267,16 +267,16 @@
 
 		//emote handling
 		if(audible_message_flags & EMOTE_MESSAGE)
-			msg = "<span class='emote'><b>[src]</b> [message]</span>"
+			msg = span_emote("<b>[src]</b>[separation][message]")
 			if(M.mind?.guestbook && ishuman(src))
 				var/mob/living/carbon/human/human_source = src
 				var/known_name = M.mind.guestbook.get_known_name(M, src, human_source.GetVoice())
 				if(known_name)
-					msg = "<span class='emote'><b>[known_name]</b> [raw_msg]</span>"
+					msg = span_emote("[known_name]</b>[separation][raw_msg]")
 			if(runechat_prefs_check(M, audible_message_flags) && M.can_hear())
 				M.create_chat_message(src, raw_message = raw_msg, runechat_flags = audible_message_flags)
 
-		M.show_message(msg, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
+		M.show_message(M.say_emphasis(msg), MSG_AUDIBLE, M.say_emphasis(deaf_message), MSG_VISUAL)
 
 /**
  * Show a message to all mobs in earshot of this one
@@ -289,7 +289,7 @@
  * * deaf_message (optional) is what deaf people will see.
  * * hearing_distance (optional) is the range, how many tiles away the message can be heard.
  */
-/mob/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE)
+/mob/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE, separation = " ")
 	. = ..()
 	if(self_message)
 		show_message(self_message, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
@@ -946,7 +946,7 @@
 			LAZYREMOVE(mob_spell_list, S)
 			qdel(S)
 	if(client)
-		client << output(null, "statbrowser:check_spells")
+		client.stat_panel.send_message("check_spells")
 
 ///Return any anti magic atom on this mob that matches the magic type
 /mob/proc/anti_magic_check(magic = TRUE, holy = FALSE, tinfoil = FALSE, chargecost = 1, self = FALSE)
@@ -1437,3 +1437,5 @@
 
 	data["memories"] = memories
 	return data
+
+#undef MOB_FACE_DIRECTION_DELAY

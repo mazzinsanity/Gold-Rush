@@ -2,13 +2,6 @@
 #define DUALWIELD_PENALTY_EXTRA_MULTIPLIER 1.4
 #define FIRING_PIN_REMOVAL_DELAY 50
 
-//MS13 EDIT BEGIN
-#define CHOKE_LOOSE -15
-#define CHOKE_WIDE 0
-#define CHOKE_MODERATE 7
-#define CHOKE_TIGHT 11
-//MS13 EDIT END
-
 /obj/item/gun
 	name = "gun"
 	desc = "It's a gun. It's pretty terrible, though."

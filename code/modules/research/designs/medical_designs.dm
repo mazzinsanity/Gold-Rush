@@ -359,7 +359,7 @@
 	category = list("Implants", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
-/datum/design/cyberimp_medical_hud
+/datum/design/cyberimedical_hud
 	name = "Medical HUD Implant"
 	desc = "These cybernetic eyes will display a medical HUD over everything you see. Wiggle eyes to control."
 	id = "ci-medhud"
@@ -827,10 +827,3 @@
 	id = "surgery_zombie"
 	surgery = /datum/surgery/advanced/necrotic_revival
 	research_icon_state = "surgery_head"
-
-/datum/design/surgery/wing_reconstruction
-	name = "Wing Reconstruction"
-	desc = "An experimental surgical procedure that reconstructs the damaged wings of moth people. Requires Synthflesh."
-	id = "surgery_wing_reconstruction"
-	surgery = /datum/surgery/advanced/wing_reconstruction
-	research_icon_state = "surgery_chest"

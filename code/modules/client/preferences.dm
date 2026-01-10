@@ -4,8 +4,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/client/parent
 	//doohickeys for savefiles
 	var/path
+	/// Whether or not we allow saving/loading. Used for guests, if they're enabled
+	var/load_and_save = TRUE
 	var/default_slot = 1 //Holder so it doesn't default to slot 1, rather the last one used
-	var/max_save_slots = 8
+	var/max_save_slots = 20
 
 	//non-preference stuff
 	var/muted = 0
@@ -68,11 +70,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	/// A list of instantiated middleware
 	var/list/datum/preference_middleware/middleware = list()
 
-	/// The savefile relating to core preferences, PREFERENCE_PLAYER
-	var/savefile/game_savefile
+	/// The json savefile for this datum
+	var/datum/json_savefile/savefile
 
 	/// The savefile relating to character preferences, PREFERENCE_CHARACTER
-	var/savefile/character_savefile
+	var/list/character_data
 
 	/// A list of keys that have been updated since the last save.
 	var/list/recently_updated_keys = list()
@@ -90,18 +92,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	value_cache = null
 	return ..()
 
-/datum/preferences/New(client/C)
-	parent = C
+/datum/preferences/New(client/parent)
+	src.parent = parent
 
 	for (var/middleware_type in subtypesof(/datum/preference_middleware))
 		middleware += new middleware_type(src)
 
-	if(istype(C))
-		if(!is_guest_key(C.key))
-			load_path(C.ckey)
-			unlock_content = !!C.IsByondMember()
-			if(unlock_content)
-				max_save_slots = 8
+	if(IS_CLIENT_OR_MOCK(parent))
+		load_and_save = !is_guest_key(parent.key)
+		load_path(parent.ckey)
+		if(load_and_save && !fexists(path))
+			try_savefile_type_migration()
+	else
+		CRASH("attempted to create a preferences datum without a client or mock!")
+	load_savefile()
 
 	// give them default keybinds and update their movement keys
 	key_bindings = deep_copy_list(GLOB.default_hotkeys)
@@ -114,9 +118,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 	//we couldn't load character data so just randomize the character appearance + name
 	randomise_appearance_prefs() //let's create a random character then - rather than a fat, bald and naked man.
-	if(C)
+	if(parent)
 		apply_all_client_preferences()
-		C.set_macros()
+		parent.set_macros()
 
 	if(!loaded_preferences_successfully)
 		save_preferences()
@@ -270,6 +274,40 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			return TRUE
 
+		if ("set_tricolor_preference")
+			var/requested_preference_key = params["preference"]
+			var/index_key = params["value"]
+
+			var/datum/preference/requested_preference = GLOB.preference_entries_by_key[requested_preference_key]
+			if (isnull(requested_preference))
+				return FALSE
+
+			if (!istype(requested_preference, /datum/preference/tri_color))
+				return FALSE
+
+			var/default_value_list = read_preference(requested_preference.type)
+			if (!islist(default_value_list))
+				return FALSE
+			var/default_value = default_value_list[index_key]
+
+			// Yielding
+			var/new_color = input(
+				usr,
+				"Select new color",
+				null,
+				default_value || COLOR_WHITE,
+			) as color | null
+
+			if (!new_color)
+				return FALSE
+
+			default_value_list[index_key] = new_color
+
+			if (!update_preference(requested_preference, default_value_list))
+				return FALSE
+
+			return TRUE
+
 	for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 		var/delegation = preference_middleware.action_delegations[action]
 		if (!isnull(delegation))
@@ -349,7 +387,6 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/character_preview_view)
 
 	/// The body that is displayed
 	var/mob/living/carbon/human/dummy/body
-
 	/// The preferences this refers to
 	var/datum/preferences/preferences
 
@@ -420,17 +457,15 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/character_preview_view)
 /datum/preferences/proc/create_character_profiles()
 	var/list/profiles = list()
 
-	var/savefile/savefile = new(path)
 	for (var/index in 1 to max_save_slots)
 		// It won't be updated in the savefile yet, so just read the name directly
 		if (index == default_slot)
 			profiles += read_preference(/datum/preference/name/real_name)
 			continue
 
-		savefile.cd = "/character[index]"
-
-		var/name
-		READ_FILE(savefile["real_name"], name)
+		var/tree_key = "character[index]"
+		var/save_data = savefile.get_entry(tree_key)
+		var/name = save_data?["real_name"]
 
 		if (isnull(name))
 			profiles += null
@@ -445,11 +480,21 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/character_preview_view)
 		return FALSE
 
 	if (level == JP_HIGH)
+		var/datum/job/overflow_role = SSjob.overflow_role
+		var/overflow_role_title = initial(overflow_role.title)
+
 		for(var/other_job in job_preferences)
 			if(job_preferences[other_job] == JP_HIGH)
-				job_preferences[other_job] = JP_MEDIUM
+				// Overflow role needs to go to NEVER, not medium!
+				if(other_job == overflow_role_title)
+					job_preferences[other_job] = null
+				else
+					job_preferences[other_job] = JP_MEDIUM
 
-	job_preferences[job.title] = level
+	if(level == null)
+		job_preferences -= job.title
+	else
+		job_preferences[job.title] = level
 
 	return TRUE
 

@@ -24,7 +24,7 @@
 			if (SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
 				return TRUE
 			if (SECONDARY_ATTACK_CONTINUE_CHAIN)
-				// Normal behavior
+				EMPTY_BLOCK_GUARD
 			else
 				CRASH("pre_attack_secondary must return an SECONDARY_ATTACK_* define, please consult code/__DEFINES/combat.dm")
 	else
@@ -42,7 +42,7 @@
 			if (SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
 				return TRUE
 			if (SECONDARY_ATTACK_CONTINUE_CHAIN)
-				// Normal behavior
+				EMPTY_BLOCK_GUARD
 			else
 				CRASH("attackby_secondary must return an SECONDARY_ATTACK_* define, please consult code/__DEFINES/combat.dm")
 	else
@@ -265,16 +265,14 @@
 
 /mob/living/attacked_by(obj/item/I, mob/living/user)
 	send_item_attack_message(I, user)
-	var/no_defended = damage_armor(I.force, MELEE, I.damtype)
-	if(no_defended)
-		apply_damage(no_defended, I.damtype)
-		if(I.damtype == BRUTE)
-			if(prob(33))
-				I.add_mob_blood(src)
-				var/turf/location = get_turf(src)
-				add_splatter_floor(location)
-				if(get_dist(user, src) <= 1) //people with TK won't get smeared with blood
-					user.add_mob_blood(src)
+	var/remaining_damage = damage_armor(I.force, MELEE, I.damtype)
+	if(apply_damage(remaining_damage, I.damtype) && I.damtype == BRUTE)
+		if(prob(33))
+			I.add_mob_blood(src)
+			var/turf/location = get_turf(src)
+			add_splatter_floor(location)
+			if(get_dist(user, src) <= 1) //people with TK won't get smeared with blood
+				user.add_mob_blood(src)
 		return TRUE //successful attack
 
 /mob/living/simple_animal/attacked_by(obj/item/I, mob/living/user)

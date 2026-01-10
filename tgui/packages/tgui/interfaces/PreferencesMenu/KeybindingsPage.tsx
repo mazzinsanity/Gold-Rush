@@ -1,9 +1,7 @@
 import { range, sortBy } from 'common/collections';
-import { KEY } from 'common/keys';
 import { Component } from 'react';
-
-import { resolveAsset } from '../../assets';
-import { useBackend } from '../../backend';
+import { resolveAsset } from 'tgui/assets';
+import { useBackend } from 'tgui/backend';
 import {
   Box,
   Button,
@@ -11,9 +9,11 @@ import {
   Stack,
   Tooltip,
   TrackOutsideClicks,
-} from '../../components';
-import { KeyEvent } from '../../events';
-import { fetchRetry } from '../../http';
+} from 'tgui-core/components';
+import { KeyEvent } from 'tgui-core/events';
+import { fetchRetry } from 'tgui-core/http';
+import { isEscape, KEY } from 'tgui-core/keys';
+
 import { PreferencesMenuData } from './data';
 import { TabbedMenu } from './TabbedMenu';
 
@@ -37,14 +37,14 @@ type KeybindingsPageState = {
   rebindingHotkey?: [string, number];
 };
 
-const isStandardKey = (event: KeyboardEvent): boolean => {
+function isStandardKey(event: KeyboardEvent): boolean {
   return (
     event.key !== KEY.Alt &&
     event.key !== KEY.Control &&
     event.key !== KEY.Shift &&
-    event.key !== KEY.Escape
+    !isEscape(event.key)
   );
-};
+}
 
 const KEY_CODE_TO_BYOND: Record<string, string> = {
   DEL: 'Delete',
@@ -67,16 +67,19 @@ const KEY_CODE_TO_BYOND: Record<string, string> = {
  */
 const DOM_KEY_LOCATION_NUMPAD = 3;
 
-const sortKeybindings = (array: [string, Keybinding][]) =>
-  sortBy(array, ([_, keybinding]) => {
+function sortKeybindings(array: [string, Keybinding][]) {
+  return sortBy(array, ([_, keybinding]) => {
     return keybinding.name;
   });
+}
 
-const sortKeybindingsByCategory = (
+function sortKeybindingsByCategory(
   array: [string, Record<string, Keybinding>][],
-) => sortBy(array, ([category, _]) => category);
+) {
+  return sortBy(array, ([category, _]) => category);
+}
 
-const formatKeyboardEvent = (event: KeyboardEvent): string => {
+function formatKeyboardEvent(event: KeyboardEvent): string {
   let text = '';
 
   if (event.altKey) {
@@ -101,9 +104,9 @@ const formatKeyboardEvent = (event: KeyboardEvent): string => {
   }
 
   return text;
-};
+}
 
-const moveToBottom = (entries: [string, unknown][], findCategory: string) => {
+function moveToBottom(entries: [string, unknown][], findCategory: string) {
   entries.push(
     entries.splice(
       entries.findIndex(([category, _]) => {
@@ -112,7 +115,7 @@ const moveToBottom = (entries: [string, unknown][], findCategory: string) => {
       1,
     )[0],
   );
-};
+}
 
 class KeybindingButton extends Component<{
   currentHotkey?: string;
@@ -157,7 +160,11 @@ class KeybindingButton extends Component<{
   }
 }
 
-const KeybindingName = (props: { keybinding: Keybinding }) => {
+type KeybindingNameProps = {
+  keybinding: Keybinding;
+};
+
+function KeybindingName(props: KeybindingNameProps) {
   const { keybinding } = props;
 
   return keybinding.description ? (
@@ -174,9 +181,13 @@ const KeybindingName = (props: { keybinding: Keybinding }) => {
   ) : (
     <span>{keybinding.name}</span>
   );
+}
+
+type ResetToDefaultButtonProps = {
+  keybindingId: string;
 };
 
-const ResetToDefaultButton = (props: { keybindingId: string }) => {
+function ResetToDefaultButton(props: ResetToDefaultButtonProps) {
   const { act } = useBackend<PreferencesMenuData>();
 
   return (
@@ -192,7 +203,7 @@ const ResetToDefaultButton = (props: { keybindingId: string }) => {
       Reset to Defaults
     </Button>
   );
-};
+}
 
 export class KeybindingsPage extends Component<{}, KeybindingsPageState> {
   cancelNextKeyUp?: number;
@@ -287,7 +298,7 @@ export class KeybindingsPage extends Component<{}, KeybindingsPageState> {
     if (isStandardKey(event)) {
       this.setRebindingHotkey(formatKeyboardEvent(event));
       return;
-    } else if (event.key === KEY.Escape) {
+    } else if (isEscape(event.key)) {
       this.setRebindingHotkey(undefined);
       return;
     }
@@ -457,10 +468,9 @@ export class KeybindingsPage extends Component<{}, KeybindingsPageState> {
           </Stack.Item>
 
           <Stack.Item align="center">
-            <Button.Confirm
-              content="Reset all keybindings"
-              onClick={() => act('reset_all_keybinds')}
-            />
+            <Button.Confirm onClick={() => act('reset_all_keybinds')}>
+              Reset all keybindings
+            </Button.Confirm>
           </Stack.Item>
         </Stack>
       </>

@@ -1,11 +1,7 @@
 //Preferences stuff
 	//Hairstyles
 GLOBAL_LIST_EMPTY(hairstyles_list) //stores /datum/sprite_accessory/hair indexed by name
-GLOBAL_LIST_EMPTY(hairstyles_male_list) //stores only hair names
-GLOBAL_LIST_EMPTY(hairstyles_female_list) //stores only hair names
 GLOBAL_LIST_EMPTY(facial_hairstyles_list) //stores /datum/sprite_accessory/facial_hair indexed by name
-GLOBAL_LIST_EMPTY(facial_hairstyles_male_list) //stores only hair names
-GLOBAL_LIST_EMPTY(facial_hairstyles_female_list) //stores only hair names
 GLOBAL_LIST_EMPTY(hair_gradients_list) //stores /datum/sprite_accessory/hair_gradient indexed by name
 GLOBAL_LIST_EMPTY(facial_hair_gradients_list) //stores /datum/sprite_accessory/facial_hair_gradient indexed by name
 	//Hairstyles MS13
@@ -15,18 +11,23 @@ GLOBAL_LIST_EMPTY(hairstyles_medium_list) //stores only hair names
 GLOBAL_LIST_EMPTY(hairstyles_long_list) //stores only hair names
 	//Underwear
 GLOBAL_LIST_EMPTY(underwear_list) //stores /datum/sprite_accessory/underwear indexed by name
-GLOBAL_LIST_EMPTY(underwear_m) //stores only underwear name
-GLOBAL_LIST_EMPTY(underwear_f) //stores only underwear name
 	//Undershirts
 GLOBAL_LIST_EMPTY(undershirt_list) //stores /datum/sprite_accessory/undershirt indexed by name
-GLOBAL_LIST_EMPTY(undershirt_m)  //stores only undershirt name
-GLOBAL_LIST_EMPTY(undershirt_f)  //stores only undershirt name
 	//Socks
 GLOBAL_LIST_EMPTY(socks_list) //stores /datum/sprite_accessory/socks indexed by name
 	//Lizard Bits (all datum lists indexed by name)
-GLOBAL_LIST_EMPTY(body_markings_list)
-GLOBAL_LIST_EMPTY(tails_list_lizard)
-GLOBAL_LIST_EMPTY(animated_tails_list_lizard)
+GLOBAL_LIST_EMPTY(head_markings_list)
+GLOBAL_LIST_EMPTY(chest_markings_list)
+GLOBAL_LIST_EMPTY(l_arm_markings_list)
+GLOBAL_LIST_EMPTY(l_hand_markings_list)
+GLOBAL_LIST_EMPTY(r_arm_markings_list)
+GLOBAL_LIST_EMPTY(r_hand_markings_list)
+GLOBAL_LIST_EMPTY(l_leg_markings_list)
+GLOBAL_LIST_EMPTY(l_foot_markings_list)
+GLOBAL_LIST_EMPTY(r_leg_markings_list)
+GLOBAL_LIST_EMPTY(r_foot_markings_list)
+GLOBAL_LIST_EMPTY(tails_list)
+GLOBAL_LIST_EMPTY(animated_tails_list)
 GLOBAL_LIST_EMPTY(snouts_list)
 GLOBAL_LIST_EMPTY(horns_list)
 GLOBAL_LIST_EMPTY(frills_list)
@@ -36,17 +37,10 @@ GLOBAL_LIST_EMPTY(animated_spines_list)
 	//Voices MS13
 GLOBAL_LIST_EMPTY(voices_male_list) //stores only voice names
 GLOBAL_LIST_EMPTY(voices_female_list) //stores only voice names
-	//Mutant Human bits
-GLOBAL_LIST_EMPTY(tails_list_human)
-GLOBAL_LIST_EMPTY(animated_tails_list_human)
 GLOBAL_LIST_EMPTY(ears_list)
 GLOBAL_LIST_EMPTY(wings_list)
-GLOBAL_LIST_EMPTY(wings_open_list)
-GLOBAL_LIST_EMPTY(moth_wings_list)
-GLOBAL_LIST_EMPTY(moth_antennae_list)
-GLOBAL_LIST_EMPTY(moth_markings_list)
-GLOBAL_LIST_EMPTY(caps_list)
-GLOBAL_LIST_EMPTY(tails_list_monkey)
+GLOBAL_LIST_EMPTY(antennae_list)
+GLOBAL_LIST_EMPTY(mushcaps_list)
 
 GLOBAL_LIST_INIT(color_list_ethereal, list(
 	"Blue" = "#3399ff",

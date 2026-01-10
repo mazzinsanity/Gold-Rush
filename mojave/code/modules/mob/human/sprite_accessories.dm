@@ -54,8 +54,10 @@
 /datum/sprite_accessory
 	/// The icon file the accessory is located in.
 	var/icon
-	/// The icon_state of the accessory.
+	/// The icon_state of the accessory. 
 	var/icon_state
+	var/icon_state_2
+	var/icon_state_3
 	/// The preview name of the accessory.
 	var/name
 	/// Determines if the accessory will be skipped or included in random hair generations.
@@ -64,13 +66,6 @@
 	var/gender_specific
 	/// Determines if the accessory will be skipped by color preferences.
 	var/use_static
-	/*
-	 * Currently only used by mutantparts so don't worry about hair and stuff.
-	 * This is the source that this accessory will get its color from. Default is MUTCOLOR, but can also be HAIR, FACEHAIR, EYECOLOR and 0 if none.
-	 */
-	var/color_src = MUTCOLORS
-	/// Decides if this sprite has an "inner" part, such as the fleshy parts on ears.
-	var/hasinner
 	/// Is this part locked from roundstart selection? Used for parts that apply effects.
 	var/locked = FALSE
 	/// Should we center the sprite?
@@ -762,6 +757,11 @@
 
 // please make sure they're sorted alphabetically and categorized
 
+/datum/sprite_accessory/facial_hair/shaved
+	name = "Shaved"
+	icon_state = null
+	gender = NEUTER
+
 /datum/sprite_accessory/facial_hair/abe
 	name = "Beard (Abraham Lincoln)"
 	icon_state = "facial_abe"
@@ -898,11 +898,6 @@
 	name = "Sideburns"
 	icon_state = "facial_sideburn"
 
-/datum/sprite_accessory/facial_hair/shaved
-	name = "Shaved"
-	icon_state = null
-	gender = NEUTER
-
 ///////////////////////////
 // Underwear Definitions //
 ///////////////////////////
@@ -1018,324 +1013,1589 @@
 
 //END OF MOJAVE SUN CHANGES//
 
+//////////////////////////
+// Markings Definitions //
+//////////////////////////
 
+/datum/sprite_accessory/markings
+	icon = 'icons/mob/markings.dmi'
 
+///////////////////////////////
+// Head Markings Definitions //
+///////////////////////////////
 
-
-
-//TG FURRY GUFF BELOW//
-
-
-
-
-
-
-
-//////////.//////////////////
-// MutantParts Definitions //
-/////////////////////////////
-
-/datum/sprite_accessory/body_markings
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-
-/datum/sprite_accessory/body_markings/none
+/datum/sprite_accessory/markings/head/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/body_markings/dtiger
-	name = "Dark Tiger Body"
+/datum/sprite_accessory/markings/head/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/head/fox
+	name = "Fox"
+	icon_state = "fox"
+
+/datum/sprite_accessory/markings/head/facemask
+	name = "Facemask"
+	icon_state = "facemask"
+
+/datum/sprite_accessory/markings/head/facedisc
+	name = "Facedisc"
+	icon_state = "facedisc"
+
+/datum/sprite_accessory/markings/head/verticalstripe
+	name = "Vertical Stripe"
+	icon_state = "verticalstripe"
+
+/datum/sprite_accessory/markings/head/fangs
+	name = "Fangs"
+	icon_state = "fangs"
+
+/datum/sprite_accessory/markings/head/lips
+	name = "Lips"
+	icon_state = "lips"
+
+/datum/sprite_accessory/markings/head/cyclopssclera
+	name = "Cyclops Sclera"
+	icon_state = "cyclopssclera"
+
+/datum/sprite_accessory/markings/head/monster3
+	name = "Monster 3"
+	icon_state = "monster3"
+
+/datum/sprite_accessory/markings/head/monster2
+	name = "Monster 2"
+	icon_state = "monster2"
+
+/datum/sprite_accessory/markings/head/clowncross
+	name = "Clown Cross"
+	icon_state = "clowncross"
+
+/datum/sprite_accessory/markings/head/clownlips
+	name = "Clown Lips"
+	icon_state = "clownlips"
+
+/datum/sprite_accessory/markings/head/eyesinner
+	name = "Eyes Sinner"
+	icon_state = "eyesinner"
+
+/datum/sprite_accessory/markings/head/eyesouter
+	name = "Eyes Outer"
+	icon_state = "eyesouter"
+
+/datum/sprite_accessory/markings/head/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/head/thirdeye
+	name = "Third Eye"
+	icon_state = "thirdeye"
+
+/datum/sprite_accessory/markings/head/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/head/splotcheswap
+	name = "Splotches Swap"
+	icon_state = "splotcheswap"
+
+/datum/sprite_accessory/markings/head/dome
+	name = "Dome"
+	icon_state = "dome"
+
+/datum/sprite_accessory/markings/head/talleyes
+	name = "Tall Eyes"
+	icon_state = "talleyes"
+
+/datum/sprite_accessory/markings/head/wideeyes
+	name = "Wide Eyes"
+	icon_state = "wideeyes"
+
+/datum/sprite_accessory/markings/head/angledeyes
+	name = "Angled Eyes"
+	icon_state = "angledeyes"
+
+/datum/sprite_accessory/markings/head/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/head/drakeeyes
+	name = "Drake Eyes"
+	icon_state = "drakeeyes"
+
+/datum/sprite_accessory/markings/head/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/head/pilot_jaw
+	name = "Pilot Jaw"
+	icon_state = "pilot_jaw"
+
+/datum/sprite_accessory/markings/head/flushed_cheeks
+	name = "Flushed Cheeks"
+	icon_state = "flushed_cheeks"
+
+/datum/sprite_accessory/markings/head/nose_blemish
+	name = "Nose Blemish"
+	icon_state = "nose_blemish"
+
+/datum/sprite_accessory/markings/head/brows
+	name = "Brows"
+	icon_state = "brows"
+
+/datum/sprite_accessory/markings/head/eyeliner
+	name = "Eyeliner"
+	icon_state = "eyeliner"
+
+/datum/sprite_accessory/markings/head/blankface
+	name = "Blank Face"
+	icon_state = "blankface"
+
+/datum/sprite_accessory/markings/head/cyclops
+	name = "Cyclops"
+	icon_state = "cyclops"
+
+/datum/sprite_accessory/markings/head/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/head/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/head/wolf
+	name = "Wolf"
+	icon_state = "wolf"
+
+/datum/sprite_accessory/markings/head/possum
+	name = "Possum"
+	icon_state = "possum"
+
+/datum/sprite_accessory/markings/head/skunk
+	name = "Skunk"
+	icon_state = "skunk"
+
+/datum/sprite_accessory/markings/head/corvid
+	name = "Corvid"
+	icon_state = "corvid"
+
+/datum/sprite_accessory/markings/head/bat
+	name = "Bat"
+	icon_state = "bat"
+
+/datum/sprite_accessory/markings/head/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/head/tajaran
+	name = "Feline"
+	icon_state = "tajaran"
+
+/datum/sprite_accessory/markings/head/sergal
+	name = "Sergal"
+	icon_state = "sergal"
+
+/datum/sprite_accessory/markings/head/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/head/raccoon
+	name = "Raccoon"
+	icon_state = "raccoon"
+
+/datum/sprite_accessory/markings/head/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/head/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/head/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/head/tiger
+	name = "Tiger"
+	icon_state = "tiger"
+
+/datum/sprite_accessory/markings/head/otter
+	name = "Otter"
+	icon_state = "otter"
+
+/datum/sprite_accessory/markings/head/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+
+/datum/sprite_accessory/markings/head/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/head/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/head/harlequin
+	name = "Harlequin"
+	icon_state = "harlequin"
+
+/datum/sprite_accessory/markings/head/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/head/harlequin_reversed
+	name = "Harlequin Reversed"
+	icon_state = "harlequin_reversed"
+
+////////////////////////////////
+// Chest Markings Definitions //
+////////////////////////////////
+
+/datum/sprite_accessory/markings/chest/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/chest/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/chest/dtiger
+	name = "Dark Tiger"
 	icon_state = "dtiger"
-	gender_specific = 1
 
-/datum/sprite_accessory/body_markings/ltiger
-	name = "Light Tiger Body"
+/datum/sprite_accessory/markings/chest/ltiger
+	name = "Light Tiger"
 	icon_state = "ltiger"
-	gender_specific = 1
 
-/datum/sprite_accessory/body_markings/lbelly
+/datum/sprite_accessory/markings/chest/lbelly
 	name = "Light Belly"
 	icon_state = "lbelly"
-	gender_specific = 1
+
+/datum/sprite_accessory/markings/chest/floofer_f
+	name = "Floofer (Female)"
+	icon_state = "floofer_f"
+
+/datum/sprite_accessory/markings/chest/chestplate
+	name = "Chestplate"
+	icon_state = "chestplate"
+
+/datum/sprite_accessory/markings/chest/bellybutton
+	name = "Belly Button"
+	icon_state = "bellybutton"
+
+/datum/sprite_accessory/markings/chest/cleavage
+	name = "Cleavage"
+	icon_state = "cleavage"
+
+/datum/sprite_accessory/markings/chest/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/chest/topscars
+	name = "Top Scars"
+	icon_state = "topscars_1"
+	icon_state_2 = "topscars_2"
+
+/datum/sprite_accessory/markings/chest/cryptid_male
+	name = "Cryptid"
+	icon_state = "cryptid_marking_m"
+
+/datum/sprite_accessory/markings/chest/cryptid_female
+	name = "Cryptid (Female)"
+	icon_state = "cryptid_marking_f"
+
+/datum/sprite_accessory/markings/chest/cryptid_simple
+	name = "Cryptid (Simple)"
+	icon_state = "cryptid"
+
+/datum/sprite_accessory/markings/chest/skintone_male
+	name = "Skintone"
+	icon_state = "skintone_m"
+
+/datum/sprite_accessory/markings/chest/skintone_female
+	name = "Skintone (Female)"
+	icon_state = "skintone_f"
+
+/datum/sprite_accessory/markings/chest/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/chest/weight2_m
+	name = "Body Weight (Male)"
+	icon_state = "weight2_m"
+
+/datum/sprite_accessory/markings/chest/weight2_f
+	name = "Body Weight (Female)"
+	icon_state = "weight2_f"
+
+/datum/sprite_accessory/markings/chest/bellymonster
+	name = "Belly Monster"
+	icon_state = "bellymonster"
+
+/datum/sprite_accessory/markings/chest/bellymonster_alt
+	name = "Belly Monster Alt"
+	icon_state = "bellymonster_alt"
+
+/datum/sprite_accessory/markings/chest/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/chest/tonage
+	name = "Tonage"
+	icon_state = "tonage"
+
+/datum/sprite_accessory/markings/chest/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/chest/fennec_m
+	name = "Fennec (Male)"
+	icon_state = "fennec_m"
+
+/datum/sprite_accessory/markings/chest/fennec_f
+	name = "Fennec (Female)"
+	icon_state = "fennec_f"
+
+/datum/sprite_accessory/markings/chest/redpanda_m
+	name = "Red Panda (Male)"
+	icon_state = "redpanda_m"
+
+/datum/sprite_accessory/markings/chest/redpanda_f
+	name = "Red Panda (Female)"
+	icon_state = "redpanda_f"
+
+/datum/sprite_accessory/markings/chest/shepherd_m
+	name = "Shepherd (Male)"
+	icon_state = "shepherd_m"
+
+/datum/sprite_accessory/markings/chest/shepherd_f
+	name = "Shepherd (Female)"
+	icon_state = "shepherd_f"
+
+/datum/sprite_accessory/markings/chest/wolf_m
+	name = "Wolf (Male)"
+	icon_state = "wolf_m"
+
+/datum/sprite_accessory/markings/chest/wolf_f
+	name = "Wolf (Female)"
+	icon_state = "wolf_f"
+
+/datum/sprite_accessory/markings/chest/fox_m
+	name = "Fox (Male)"
+	icon_state = "fox_m"
+
+/datum/sprite_accessory/markings/chest/fox_f
+	name = "Fox (Female)"
+	icon_state = "fox_f"
+
+/datum/sprite_accessory/markings/chest/possum
+	name = "Possum"
+	icon_state = "possum"
+
+/datum/sprite_accessory/markings/chest/skunk
+	name = "Skunk"
+	icon_state = "skunk"
+
+/datum/sprite_accessory/markings/chest/corvid_m
+	name = "Corvid (Male)"
+	icon_state = "corvid_m"
+
+/datum/sprite_accessory/markings/chest/corvid_f
+	name = "Corvid (Female)"
+	icon_state = "corvid_f"
+
+/datum/sprite_accessory/markings/chest/bat_m
+	name = "Bat (Male)"
+	icon_state = "bat_m"
+
+/datum/sprite_accessory/markings/chest/bat_f
+	name = "Bat (Female)"
+	icon_state = "bat_f"
+
+/datum/sprite_accessory/markings/chest/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/chest/tajaran_m
+	name = "Feline (Male)"
+	icon_state = "tajaran_m"
+
+/datum/sprite_accessory/markings/chest/tajaran_f
+	name = "Feline (Female)"
+	icon_state = "tajaran_f"
+
+/datum/sprite_accessory/markings/chest/sergal_m
+	name = "Sergal (Male)"
+	icon_state = "sergal_m"
+
+/datum/sprite_accessory/markings/chest/sergal_f
+	name = "Sergal (Female)"
+	icon_state = "sergal_f"
+
+/datum/sprite_accessory/markings/chest/husky_m
+	name = "Husky (Male)"
+	icon_state = "husky_m"
+
+/datum/sprite_accessory/markings/chest/husky_f
+	name = "Husky (Female)"
+	icon_state = "husky_f"
+
+/datum/sprite_accessory/markings/chest/raccoon_m
+	name = "Raccoon (Male)"
+	icon_state = "raccoon_m"
+
+/datum/sprite_accessory/markings/chest/raccoon_f
+	name = "Raccoon (Female)"
+	icon_state = "raccoon_f"
+
+/datum/sprite_accessory/markings/chest/bovine_m
+	name = "Bovine (Male)"
+	icon_state = "bovine_m"
+
+/datum/sprite_accessory/markings/chest/bovine_f
+	name = "Bovine (Female)"
+	icon_state = "bovine_f"
+
+/datum/sprite_accessory/markings/chest/corgi_m
+	name = "Corgi (Male)"
+	icon_state = "corgi_m"
+
+/datum/sprite_accessory/markings/chest/corgi_f
+	name = "Corgi (Female)"
+	icon_state = "corgi_f"
+
+/datum/sprite_accessory/markings/chest/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/chest/tiger_m
+	name = "Tiger (Male)"
+	icon_state = "tiger_m"
+
+/datum/sprite_accessory/markings/chest/tiger_f
+	name = "Tiger (Female)"
+	icon_state = "tiger_f"
+
+/datum/sprite_accessory/markings/chest/otter_m
+	name = "Otter (Male)"
+	icon_state = "otter_m"
+
+/datum/sprite_accessory/markings/chest/otter_f
+	name = "Otter (Female)"
+	icon_state = "otter_f"
+
+/datum/sprite_accessory/markings/chest/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+
+/datum/sprite_accessory/markings/chest/deer_m
+	name = "Deer (Male)"
+	icon_state = "deer_m"
+
+/datum/sprite_accessory/markings/chest/deer_f
+	name = "Deer (Female)"
+	icon_state = "deer_f"
+
+/datum/sprite_accessory/markings/chest/hyena_m
+	name = "Hyena (Male)"
+	icon_state = "hyena_m"
+
+/datum/sprite_accessory/markings/chest/hyena_f
+	name = "Hyena (Female)"
+	icon_state = "hyena_f"
+
+/datum/sprite_accessory/markings/chest/bellyslim_m
+	name = "Belly Slim (Male)"
+	icon_state = "bellyslim_m"
+
+/datum/sprite_accessory/markings/chest/bellyslim_f
+	name = "Belly Slim (Female)"
+	icon_state = "bellyslim_f"
+
+/datum/sprite_accessory/markings/chest/bellyslim_alt_m
+	name = "Belly Slim Alt (Male)"
+	icon_state = "bellyslim_alt_m"
+
+/datum/sprite_accessory/markings/chest/bellyslim_alt_f
+	name = "Belly Slim Alt (Female)"
+	icon_state = "bellyslim_alt_f"
+
+/datum/sprite_accessory/markings/chest/bellyandbutt_m
+	name = "Belly and Butt (Male)"
+	icon_state = "bellyandbutt_m"
+
+/datum/sprite_accessory/markings/chest/bellyandbutt_f
+	name = "Belly and Butt (Female)"
+	icon_state = "bellyandbutt_f"
+
+/datum/sprite_accessory/markings/chest/butt_m
+	name = "Butt (Male)"
+	icon_state = "butt_m"
+
+/datum/sprite_accessory/markings/chest/butt_f
+	name = "Butt (Female)"
+	icon_state = "butt_f"
+
+/datum/sprite_accessory/markings/chest/belly_m
+	name = "Belly (Male)"
+	icon_state = "belly_m"
+
+/datum/sprite_accessory/markings/chest/belly_f
+	name = "Belly (Female)"
+	icon_state = "belly_f"
+
+/datum/sprite_accessory/markings/chest/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/chest/harlequin_m
+	name = "Harlequin (Male)"
+	icon_state = "harlequin_m"
+
+/datum/sprite_accessory/markings/chest/harlequin_f
+	name = "Harlequin (Female)"
+	icon_state = "harlequin_f"
+
+/datum/sprite_accessory/markings/chest/plain_m
+	name = "Plain (Male)"
+	icon_state = "plain_m"
+
+/datum/sprite_accessory/markings/chest/plain_f
+	name = "Plain (Female)"
+	icon_state = "plain_f"
+
+/datum/sprite_accessory/markings/chest/harlequin_reversed_m
+	name = "Harlequin Reversed (Male)"
+	icon_state = "harlequin_m"
+
+/datum/sprite_accessory/markings/chest/harlequin_reversed_f
+	name = "Harlequin Reversed (Female)"
+	icon_state = "harlequin_reversed_m"
+
+/datum/sprite_accessory/markings/chest/leopard2
+	name = "Leopard 2"
+	icon_state = "leopard2"
+
+/datum/sprite_accessory/markings/chest/leopard1
+	name = "Leopard"
+	icon_state = "leopard1"
+
+///////////////////////////////////
+// Left Arm Markings Definitions //
+///////////////////////////////////
+
+/datum/sprite_accessory/markings/l_arm/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/l_arm/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/l_arm/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/l_arm/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/l_arm/shoulder
+	name = "Shoulder"
+	icon_state = "shoulder"
+
+/datum/sprite_accessory/markings/l_arm/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/l_arm/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_arm/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_arm/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/l_arm/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/l_arm/shoulderpad
+	name = "Shoulderpad"
+	icon_state = "shoulderpad"
+
+/datum/sprite_accessory/markings/l_arm/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/l_arm/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/l_arm/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/l_arm/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/l_arm/shepherd
+	name = "Shepherd"
+	icon_state = "shepherd"
+
+/datum/sprite_accessory/markings/l_arm/fox
+	name = "Fox"
+	icon_state = "fox"
+
+/datum/sprite_accessory/markings/l_arm/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/l_arm/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/l_arm/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/l_arm/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/l_arm/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/l_arm/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/l_arm/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/l_arm/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+/datum/sprite_accessory/markings/l_arm/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/l_arm/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/l_arm/harlequin
+	name = "Harlequin"
+	icon_state = "harlequin"
+
+/datum/sprite_accessory/markings/l_arm/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/l_arm/leopard1
+	name = "Leopard"
+	icon_state = "leopard1"
+
+////////////////////////////////////
+// Left Hand Markings Definitions //
+////////////////////////////////////
+
+/datum/sprite_accessory/markings/l_hand/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/l_hand/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/l_hand/claws
+	name = "Claws"
+	icon_state = "claws"
+
+/datum/sprite_accessory/markings/l_hand/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/l_hand/glove
+	name = "Glove"
+	icon_state = "glove"
+
+/datum/sprite_accessory/markings/l_hand/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/l_hand/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_hand/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_hand/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/l_hand/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/l_hand/chitinarmor
+	name = "Chitin Armor"
+	icon_state = "chitinarmor"
+
+/datum/sprite_accessory/markings/l_hand/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/l_hand/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/l_hand/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/l_hand/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/l_hand/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/l_hand/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/l_hand/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/l_hand/raccoon
+	name = "Raccoon"
+	icon_state = "raccoon"
+
+/datum/sprite_accessory/markings/l_hand/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/l_hand/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/l_hand/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/l_hand/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/l_hand/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/l_hand/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+/datum/sprite_accessory/markings/l_hand/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/l_hand/harlequin
+	name = "Harlequin"
+	icon_state = "harlequin"
+
+/datum/sprite_accessory/markings/l_hand/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/l_hand/leopard1
+	name = "Leopard"
+	icon_state = "leopard1"
+
+////////////////////////////////////
+// Right Arm Markings Definitions //
+////////////////////////////////////
+
+/datum/sprite_accessory/markings/r_arm/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/r_arm/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/r_arm/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/r_arm/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/r_arm/shoulder
+	name = "Shoulder"
+	icon_state = "shoulder"
+
+/datum/sprite_accessory/markings/r_arm/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/r_arm/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_arm/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_arm/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/r_arm/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/r_arm/shoulderpad
+	name = "Shoulderpad"
+	icon_state = "shoulderpad"
+
+/datum/sprite_accessory/markings/r_arm/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/r_arm/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/r_arm/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/r_arm/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/r_arm/shepherd
+	name = "Shepherd"
+	icon_state = "shepherd"
+
+/datum/sprite_accessory/markings/r_arm/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/r_arm/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/r_arm/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/r_arm/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/r_arm/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/r_arm/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/r_arm/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/r_arm/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+/datum/sprite_accessory/markings/r_arm/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/r_arm/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/r_arm/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/r_arm/harlequin_reversed
+	name = "Harlequin Reversed"
+	icon_state = "harlequin_reversed"
+
+/datum/sprite_accessory/markings/r_arm/leopard1
+	name = "Leopard"
+	icon_state = "leopard1"
+
+/////////////////////////////////////
+// Right Hand Markings Definitions //
+/////////////////////////////////////
+
+/datum/sprite_accessory/markings/r_hand/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/r_hand/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/r_hand/claws
+	name = "Claws"
+	icon_state = "claws"
+
+/datum/sprite_accessory/markings/r_hand/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/r_hand/glove
+	name = "Glove"
+	icon_state = "glove"
+
+/datum/sprite_accessory/markings/r_hand/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/r_hand/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_hand/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_hand/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/r_hand/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/r_hand/chitinarmor
+	name = "Chitin Armor"
+	icon_state = "chitinarmor"
+
+/datum/sprite_accessory/markings/r_hand/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/r_hand/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/r_hand/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/r_hand/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/r_hand/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/r_hand/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/r_hand/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/r_hand/raccoon
+	name = "Raccoon"
+	icon_state = "raccoon"
+
+/datum/sprite_accessory/markings/r_hand/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/r_hand/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/r_hand/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/r_hand/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/r_hand/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/r_hand/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+/datum/sprite_accessory/markings/r_hand/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/r_hand/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/r_hand/harlequin_reversed
+	name = "Harlequin Reversed"
+	icon_state = "harlequin_reversed"
+
+/datum/sprite_accessory/markings/r_hand/leopard1
+	name = "Leopard"
+	icon_state = "leopard1"
+
+///////////////////////////////////
+// Left Leg Markings Definitions //
+///////////////////////////////////
+
+/datum/sprite_accessory/markings/l_leg/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/l_leg/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/l_leg/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/l_leg/longsock
+	name = "Long Sock"
+	icon_state = "longsock"
+
+/datum/sprite_accessory/markings/l_leg/hip
+	name = "Hip"
+	icon_state = "hip"
+
+/datum/sprite_accessory/markings/l_leg/talon
+	name = "Talon"
+	icon_state = "talon"
+
+/datum/sprite_accessory/markings/l_leg/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_leg/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_leg/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/l_leg/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/l_leg/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/l_leg/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/l_leg/shepherd
+	name = "Shepherd"
+	icon_state = "shepherd"
+
+/datum/sprite_accessory/markings/l_leg/fox
+	name = "Fox"
+	icon_state = "fox"
+
+/datum/sprite_accessory/markings/l_leg/skunk
+	name = "Skunk"
+	icon_state = "skunk"
+
+/datum/sprite_accessory/markings/l_leg/corvid
+	name = "Corvid"
+	icon_state = "corvid"
+
+/datum/sprite_accessory/markings/l_leg/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/l_leg/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/l_leg/raccoon
+	name = "Raccoon"
+	icon_state = "raccoon"
+
+/datum/sprite_accessory/markings/l_leg/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/l_leg/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/l_leg/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/l_leg/tiger
+	name = "Tiger"
+	icon_state = "tiger"
+
+/datum/sprite_accessory/markings/l_leg/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+
+/datum/sprite_accessory/markings/l_leg/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/l_leg/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/l_leg/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/l_leg/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/l_leg/harlequin
+	name = "Harlequin"
+	icon_state = "harlequin"
+
+/datum/sprite_accessory/markings/l_leg/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/markings/l_leg/harlequin_reversed
+	name = "Harlequin Reversed"
+	icon_state = "harlequin_reversed"
+
+////////////////////////////////////
+// Left Foot Markings Definitions //
+////////////////////////////////////
+
+/datum/sprite_accessory/markings/l_foot/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/l_foot/claws
+	name = "Claws"
+	icon_state = "claws"
+
+/datum/sprite_accessory/markings/l_foot/sock
+	name = "Sock"
+	icon_state = "sock"
+
+/datum/sprite_accessory/markings/l_foot/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/l_foot/anklet
+	name = "Anklet"
+	icon_state = "anklet"
+
+/datum/sprite_accessory/markings/l_foot/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+///////////////////////////////////
+// Right Leg Markings Definitions //
+///////////////////////////////////
+
+/datum/sprite_accessory/markings/r_leg/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/r_leg/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/markings/r_leg/floofer
+	name = "Floofer"
+	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/r_leg/longsock
+	name = "Long Sock"
+	icon_state = "longsock"
+
+/datum/sprite_accessory/markings/r_leg/hip
+	name = "Hip"
+	icon_state = "hip"
+
+/datum/sprite_accessory/markings/r_leg/talon
+	name = "Talon"
+	icon_state = "talon"
+
+/datum/sprite_accessory/markings/r_leg/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_leg/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_leg/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/r_leg/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/r_leg/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+
+/datum/sprite_accessory/markings/r_leg/redpanda
+	name = "Red Panda"
+	icon_state = "redpanda"
+
+/datum/sprite_accessory/markings/r_leg/shepherd
+	name = "Shepherd"
+	icon_state = "shepherd"
+
+/datum/sprite_accessory/markings/r_leg/fox
+	name = "Fox"
+	icon_state = "fox"
+
+/datum/sprite_accessory/markings/r_leg/skunk
+	name = "Skunk"
+	icon_state = "skunk"
+
+/datum/sprite_accessory/markings/r_leg/corvid
+	name = "Corvid"
+	icon_state = "corvid"
+
+/datum/sprite_accessory/markings/r_leg/dalmation
+	name = "Dalmation"
+	icon_state = "dalmation"
+
+/datum/sprite_accessory/markings/r_leg/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/markings/r_leg/raccoon
+	name = "Raccoon"
+	icon_state = "raccoon"
+
+/datum/sprite_accessory/markings/r_leg/bovine
+	name = "Bovine"
+	icon_state = "bovine"
+
+/datum/sprite_accessory/markings/r_leg/corgi
+	name = "Corgi"
+	icon_state = "corgi"
+
+/datum/sprite_accessory/markings/r_leg/panther
+	name = "Panther"
+	icon_state = "panther"
+
+/datum/sprite_accessory/markings/r_leg/tiger
+	name = "Tiger"
+	icon_state = "tiger"
+
+/datum/sprite_accessory/markings/r_leg/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+
+/datum/sprite_accessory/markings/r_leg/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/r_leg/hyena
+	name = "Hyena"
+	icon_state = "hyena"
+
+/datum/sprite_accessory/markings/r_leg/bee
+	name = "Bee"
+	icon_state = "bee"
+
+/datum/sprite_accessory/markings/r_leg/gradient
+	name = "Gradient"
+	icon_state = "gradient"
+
+/datum/sprite_accessory/markings/r_leg/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/////////////////////////////////////
+// Right Foot Markings Definitions //
+/////////////////////////////////////
+
+/datum/sprite_accessory/markings/r_foot/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/markings/r_foot/claws
+	name = "Claws"
+	icon_state = "claws"
+
+/datum/sprite_accessory/markings/r_foot/sock
+	name = "Sock"
+	icon_state = "sock"
+
+/datum/sprite_accessory/markings/r_foot/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/r_foot/anklet
+	name = "Anklet"
+	icon_state = "anklet"
+
+/datum/sprite_accessory/markings/r_foot/handsfeet
+	name = "Hands Feet"
+	icon_state = "handsfeet"
+
+///////////////////////
+// Tails Definitions //
+///////////////////////
 
 /datum/sprite_accessory/tails
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/tails.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/tails_animated
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/tails.dmi'
 	em_block = TRUE
 
-/datum/sprite_accessory/tails/lizard/smooth
-	name = "Smooth"
-	icon_state = "smooth"
-
-/datum/sprite_accessory/tails_animated/lizard/smooth
-	name = "Smooth"
-	icon_state = "smooth"
-
-/datum/sprite_accessory/tails/lizard/dtiger
-	name = "Dark Tiger"
-	icon_state = "dtiger"
-
-/datum/sprite_accessory/tails_animated/lizard/dtiger
-	name = "Dark Tiger"
-	icon_state = "dtiger"
-
-/datum/sprite_accessory/tails/lizard/ltiger
-	name = "Light Tiger"
-	icon_state = "ltiger"
-
-/datum/sprite_accessory/tails_animated/lizard/ltiger
-	name = "Light Tiger"
-	icon_state = "ltiger"
-
-/datum/sprite_accessory/tails/lizard/spikes
-	name = "Spikes"
-	icon_state = "spikes"
-
-/datum/sprite_accessory/tails_animated/lizard/spikes
-	name = "Spikes"
-	icon_state = "spikes"
-
-/datum/sprite_accessory/tails/human/none
+/datum/sprite_accessory/tails/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/tails_animated/human/none
+/datum/sprite_accessory/tails_animated/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/tails/human/cat
+/datum/sprite_accessory/tails/smooth
+	name = "Smooth"
+	icon_state = "smooth"
+
+/datum/sprite_accessory/tails_animated/smooth
+	name = "Smooth"
+	icon_state = "smooth"
+
+/datum/sprite_accessory/tails/dtiger
+	name = "Dark Tiger"
+	icon_state = "dtiger"
+
+/datum/sprite_accessory/tails_animated/dtiger
+	name = "Dark Tiger"
+	icon_state = "dtiger"
+
+/datum/sprite_accessory/tails/ltiger
+	name = "Light Tiger"
+	icon_state = "ltiger"
+
+/datum/sprite_accessory/tails_animated/ltiger
+	name = "Light Tiger"
+	icon_state = "ltiger"
+
+/datum/sprite_accessory/tails/spikes
+	name = "Spikes"
+	icon_state = "spikes"
+
+/datum/sprite_accessory/tails_animated/spikes
+	name = "Spikes"
+	icon_state = "spikes"
+
+/datum/sprite_accessory/tails/cat
 	name = "Cat"
 	icon_state = "cat"
-	color_src = HAIR
 
-/datum/sprite_accessory/tails_animated/human/cat
+/datum/sprite_accessory/tails_animated/cat
 	name = "Cat"
 	icon_state = "cat"
-	color_src = HAIR
 
-/datum/sprite_accessory/tails/monkey/default
+/datum/sprite_accessory/tails/monkey
 	name = "Monkey"
 	icon_state = "monkey"
-	color_src = FALSE
 
-/datum/sprite_accessory/snouts
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-	em_block = TRUE
+/datum/sprite_accessory/tails/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
 
-/datum/sprite_accessory/snouts/sharp
-	name = "Sharp"
-	icon_state = "sharp"
+/datum/sprite_accessory/tails_animated/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
 
-/datum/sprite_accessory/snouts/round
-	name = "Round"
-	icon_state = "round"
+/datum/sprite_accessory/tails/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
 
-/datum/sprite_accessory/snouts/sharplight
-	name = "Sharp + Light"
-	icon_state = "sharplight"
+/datum/sprite_accessory/tails_animated/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
 
-/datum/sprite_accessory/snouts/roundlight
-	name = "Round + Light"
-	icon_state = "roundlight"
+/datum/sprite_accessory/tails/shark
+	name = "Shark"
+	icon_state = "shark"
 
-/datum/sprite_accessory/horns
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-	em_block = TRUE
+/datum/sprite_accessory/tails_animated/shark
+	name = "Shark"
+	icon_state = "shark"
 
-/datum/sprite_accessory/horns/none
-	name = "None"
-	icon_state = "none"
+/datum/sprite_accessory/tails/murid
+	name = "Murid"
+	icon_state = "murid"
 
-/datum/sprite_accessory/horns/simple
-	name = "Simple"
-	icon_state = "simple"
+/datum/sprite_accessory/tails/hawk
+	name = "Hawk"
+	icon_state = "hawk"
+	icon_state_2 = "hawk_2"
 
-/datum/sprite_accessory/horns/short
-	name = "Short"
-	icon_state = "short"
+/datum/sprite_accessory/tails/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
 
-/datum/sprite_accessory/horns/curled
-	name = "Curled"
-	icon_state = "curled"
+/datum/sprite_accessory/tails_animated/australianshepherd
+	name = "Australian Shepherd"
+	icon_state = "australianshepherd"
+	icon_state_2 = "australianshepherd_2"
 
-/datum/sprite_accessory/horns/ram
-	name = "Ram"
-	icon_state = "ram"
+/datum/sprite_accessory/tails/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
 
-/datum/sprite_accessory/horns/angler
-	name = "Angeler"
-	icon_state = "angler"
+/datum/sprite_accessory/tails_animated/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
 
-/datum/sprite_accessory/ears
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-	em_block = TRUE
+/datum/sprite_accessory/tails/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
 
-/datum/sprite_accessory/ears/none
-	name = "None"
-	icon_state = "none"
+/datum/sprite_accessory/tails/cow
+	name = "Cow"
+	icon_state = "cow"
 
-/datum/sprite_accessory/ears/cat
-	name = "Cat"
-	icon_state = "cat"
-	hasinner = 1
-	color_src = HAIR
+/datum/sprite_accessory/tails/bat
+	name = "Bat"
+	icon_state = "bat"
+	icon_state_2 = "bat_2"
 
-/datum/sprite_accessory/wings/none
-	name = "None"
-	icon_state = "none"
+/datum/sprite_accessory/tails/bee
+	name = "Bee"
+	icon_state = "bee"
+	icon_state_2 = "bee_2"
 
-/datum/sprite_accessory/wings
-	icon = 'icons/mob/clothing/wings.dmi'
-	em_block = TRUE
+/datum/sprite_accessory/tails/queenbee
+	name = "Queen Bee"
+	icon_state = "queenbee"
+	icon_state_2 = "queenbee_2"
 
-/datum/sprite_accessory/wings_open
-	icon = 'icons/mob/clothing/wings.dmi'
-	em_block = TRUE
+/datum/sprite_accessory/tails/insectunder
+	name = "Insect (Under)"
+	icon_state = "insectunder"
+	icon_state_2 = "insectunder_2"
 
-/datum/sprite_accessory/wings/angel
-	name = "Angel"
-	icon_state = "angel"
-	color_src = FALSE
-	dimension_x = 46
-	center = TRUE
-	dimension_y = 34
-	locked = TRUE
+/datum/sprite_accessory/tails/husky
+	name = "Husky"
+	icon_state = "husky"
+	icon_state_2 = "husky_2"
 
-/datum/sprite_accessory/wings_open/angel
-	name = "Angel"
-	icon_state = "angel"
-	color_src = FALSE
-	dimension_x = 46
-	center = TRUE
-	dimension_y = 34
+/datum/sprite_accessory/tails/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
 
-/datum/sprite_accessory/wings/dragon
-	name = "Dragon"
-	icon_state = "dragon"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails_animated/leopard
+	name = "Leopard"
+	icon_state = "leopard"
+	icon_state_2 = "leopard_2"
 
-/datum/sprite_accessory/wings_open/dragon
-	name = "Dragon"
-	icon_state = "dragon"
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+/datum/sprite_accessory/tails/snake
+	name = "Snake"
+	icon_state = "snake"
 
-/datum/sprite_accessory/wings/megamoth
-	name = "Megamoth"
-	icon_state = "megamoth"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails/snakestripe
+	name = "Snake (Striped)"
+	icon_state = "snakestripe"
+	icon_state_2 = "snakestripe_2"
 
-/datum/sprite_accessory/wings_open/megamoth
-	name = "Megamoth"
-	icon_state = "megamoth"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+/datum/sprite_accessory/tails/snakeunder
+	name = "Snake (Under)"
+	icon_state = "snakeunder"
+	icon_state_2 = "snakeunder_2"
 
-/datum/sprite_accessory/wings/mothra
-	name = "Mothra"
-	icon_state = "mothra"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
 
-/datum/sprite_accessory/wings_open/mothra
-	name = "Mothra"
-	icon_state = "mothra"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+/datum/sprite_accessory/tails_animated/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"
+	icon_state_2 = "rattlesnake_2"
 
-/datum/sprite_accessory/wings/skeleton
-	name = "Skeleton"
-	icon_state = "skele"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
 
-/datum/sprite_accessory/wings_open/skeleton
-	name = "Skeleton"
-	icon_state = "skele"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+/datum/sprite_accessory/tails_animated/peacock
+	name = "Peacock"
+	icon_state = "peacock"
+	icon_state_2 = "peacock_2"
+	icon_state_3 = "peacock_3"
 
-/datum/sprite_accessory/wings/robotic
-	name = "Robotic"
-	icon_state = "robotic"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails/blackjackal
+	name = "Black Jackal"
+	icon_state = "blackjackal"
+	icon_state_2 = "blackjackal_2"
+	icon_state_3 = "blackjackal_3"
 
-/datum/sprite_accessory/wings_open/robotic
-	name = "Robotic"
-	icon_state = "robotic"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
+/datum/sprite_accessory/tails/gecko
+	name = "Gecko"
+	icon_state = "gecko"
+	icon_state_2 = "gecko_2"
+	icon_state_3 = "gecko_3"
 
-/datum/sprite_accessory/wings/fly
-	name = "Fly"
-	icon_state = "fly"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-	locked = TRUE
+/datum/sprite_accessory/tails/tuft
+	name = "Tuft"
+	icon_state = "tuft"
 
-/datum/sprite_accessory/wings_open/fly
-	name = "Fly"
-	icon_state = "fly"
-	color_src = FALSE
-	dimension_x = 96
-	center = TRUE
-	dimension_y = 32
-
-/datum/sprite_accessory/frills
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-
-/datum/sprite_accessory/frills/none
-	name = "None"
-	icon_state = "none"
-
-/datum/sprite_accessory/frills/simple
-	name = "Simple"
-	icon_state = "simple"
-
-/datum/sprite_accessory/frills/short
-	name = "Short"
-	icon_state = "short"
-
-/datum/sprite_accessory/frills/aquatic
-	name = "Aquatic"
-	icon_state = "aqua"
+////////////////////////
+// Spines Definitions //
+////////////////////////
 
 /datum/sprite_accessory/spines
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/spines.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/spines_animated
-	icon = 'icons/mob/mutant_bodyparts.dmi'
+	icon = 'icons/mob/mutant_bodyparts/spines.dmi'
 	em_block = TRUE
 
 /datum/sprite_accessory/spines/none
@@ -1386,6 +2646,602 @@
 	name = "Aquatic"
 	icon_state = "aqua"
 
+////////////////////////
+// Snouts Definitions //
+////////////////////////
+
+/datum/sprite_accessory/snouts
+	icon = 'icons/mob/mutant_bodyparts/snouts.dmi'
+	em_block = TRUE
+
+/datum/sprite_accessory/snouts/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/snouts/sharp
+	name = "Sharp"
+	icon_state = "sharp"
+
+/datum/sprite_accessory/snouts/round
+	name = "Round"
+	icon_state = "round"
+
+/datum/sprite_accessory/snouts/sharplight
+	name = "Sharp + Light"
+	icon_state = "sharplight"
+
+/datum/sprite_accessory/snouts/roundlight
+	name = "Round + Light"
+	icon_state = "roundlight"
+
+/datum/sprite_accessory/snouts/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
+
+/datum/sprite_accessory/snouts/cat
+	name = "Cat"
+	icon_state = "catsnout"
+	icon_state_2 = "catsnout_2"
+
+/datum/sprite_accessory/snouts/cervine
+	name = "Cervine"
+	icon_state = "cervine"
+	icon_state_2 = "cervine_2"
+	icon_state_3 = "cervine_3"
+
+/datum/sprite_accessory/snouts/husky
+	name = "Husky"
+	icon_state = "husky"
+	icon_state_2 = "husky_2"
+
+/datum/sprite_accessory/snouts/mandibles
+	name = "Mandibles"
+	icon_state = "mandibles"
+
+/datum/sprite_accessory/snouts/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+	icon_state_2 = "elephant_2"
+
+/datum/sprite_accessory/snouts/rodent
+	name = "Rodent"
+	icon_state = "rodent"
+
+/datum/sprite_accessory/snouts/lcanid
+	name = "Mammal, Long"
+	icon_state = "lcanid"
+	icon_state_2 = "lcanid_2"
+
+/datum/sprite_accessory/snouts/lcanidstriped
+	name = "Mammal, Long, Striped"
+	icon_state = "lcanidstripe"
+	icon_state_2 = "lcanidstripe_2"
+
+/datum/sprite_accessory/snouts/scanid
+	name = "Mammal, Short"
+	icon_state = "scanid"
+	icon_state_2 = "scanid_2"
+	icon_state_3 = "scanid_3"
+
+/datum/sprite_accessory/snouts/scanidalt
+	name = "Mammal, Short ALT"
+	icon_state = "scanidalt"
+	icon_state_2 = "scanidalt_2"
+	icon_state_3 = "scanidalt_3"
+
+/datum/sprite_accessory/snouts/scanidalt2
+	name = "Mammal, Short ALT 2"
+	icon_state = "scanidalt2"
+	icon_state_2 = "scanidalt2_2"
+
+/datum/sprite_accessory/snouts/scanidalt3
+	name = "Mammal, Short ALT 3"
+	icon_state = "scanidalt3"
+	icon_state_2 = "scanidalt3_2"
+	icon_state_3 = "scanidalt3_3"
+
+/datum/sprite_accessory/snouts/bird
+	name = "Bird"
+	icon_state = "bird"
+	icon_state_2 = "bird_2"
+	icon_state_3 = "bird_3"
+
+/datum/sprite_accessory/snouts/toucan
+	name = "Toucan"
+	icon_state = "toucan"
+	icon_state_2 = "toucan_2"
+
+/datum/sprite_accessory/snouts/leporid
+	name = "Leporid"
+	icon_state = "leporid"
+	icon_state_2 = "leporid_2"
+
+/datum/sprite_accessory/snouts/stubby
+	name = "Stubby"
+	icon_state = "stubby"
+	icon_state_2 = "stubby_2"
+
+/datum/sprite_accessory/snouts/tajaran
+	name = "Tajaran"
+	icon_state = "tajaran"
+	icon_state_2 = "tajaran_2"
+
+////////////////////////
+// Frills Definitions //
+////////////////////////
+
+/datum/sprite_accessory/frills
+	icon = 'icons/mob/mutant_bodyparts/frills.dmi'
+
+/datum/sprite_accessory/frills/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/frills/simple
+	name = "Simple"
+	icon_state = "simple"
+	icon_state_2 = "simple_2"
+
+/datum/sprite_accessory/frills/short
+	name = "Short"
+	icon_state = "short"
+	icon_state_2 = "short_2"
+
+/datum/sprite_accessory/frills/aquatic
+	name = "Aquatic"
+	icon_state = "aqua"
+	icon_state_2 = "aqua_2"
+
+/datum/sprite_accessory/frills/droopy
+	name = "Droopy"
+	icon_state = "droopy"
+	icon_state_2 = "droopy_2"
+
+/datum/sprite_accessory/frills/neck
+	name = "Neck"
+	icon_state = "neck"
+	icon_state_2 = "neck_2"
+
+/datum/sprite_accessory/frills/neckbig
+	name = "Neck (Alt)"
+	icon_state = "neckbig"
+	icon_state_2 = "neckbig_2"
+
+/datum/sprite_accessory/frills/frillhawk
+	name = "Frillhawk"
+	icon_state = "frillhawk"
+	icon_state_2 = "frillhawk_2"
+
+/datum/sprite_accessory/frills/split
+	name = "Split"
+	icon_state = "split"
+
+///////////////////////
+// Horns Definitions //
+///////////////////////
+
+/datum/sprite_accessory/horns
+	icon = 'icons/mob/mutant_bodyparts/horns.dmi'
+	em_block = TRUE
+
+/datum/sprite_accessory/horns/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/horns/simple
+	name = "Simple"
+	icon_state = "simple"
+
+/datum/sprite_accessory/horns/newsimple
+	name = "Simple (Alt)"
+	icon_state = "newsimple"
+
+/datum/sprite_accessory/horns/short
+	name = "Short"
+	icon_state = "short"
+
+/datum/sprite_accessory/horns/broken
+	name = "Broken"
+	icon_state = "newbroken"
+
+/datum/sprite_accessory/horns/curled
+	name = "Curled"
+	icon_state = "curled"
+
+/datum/sprite_accessory/horns/ram
+	name = "Ram"
+	icon_state = "ram"
+
+/datum/sprite_accessory/horns/newram
+	name = "Ram (Alt)"
+	icon_state = "newram"
+
+/datum/sprite_accessory/horns/angler
+	name = "Angeler"
+	icon_state = "angler"
+	icon_state_2 = "angler_2"
+
+/datum/sprite_accessory/horns/lightning
+	name = "Lightning"
+	icon_state = "lightning"
+
+/datum/sprite_accessory/horns/drake
+	name = "Drake"
+	icon_state = "drake"
+
+/datum/sprite_accessory/horns/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+
+/datum/sprite_accessory/horns/brimstone
+	name = "Brimstone"
+	icon_state = "brimstone"
+
+/datum/sprite_accessory/horns/crippledbull
+	name = "Crippled Bull"
+	icon_state = "crippledbull"
+
+/datum/sprite_accessory/horns/hollowpoint
+	name = "Hollow Point"
+	icon_state = "hollowpoint"
+
+/datum/sprite_accessory/horns/ticketrack
+	name = "Ticket Rack"
+	icon_state = "ticketrack"
+
+/datum/sprite_accessory/horns/hopefulhorns
+	name = "Hopeful Horns"
+	icon_state = "hopefulhorns"
+
+/datum/sprite_accessory/horns/analyticalantlers
+	name = "Analytical Antlers"
+	icon_state = "analyticalantlers"
+
+/datum/sprite_accessory/horns/lifted
+	name = "Lifted"
+	icon_state = "lifted"
+
+/datum/sprite_accessory/horns/antlers
+	name = "Antlers"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlers"
+
+/datum/sprite_accessory/horns/antlersmore
+	name = "Antlers (More)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersmore"
+
+/datum/sprite_accessory/horns/antlersshort
+	name = "Antlers (Short)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersshort"
+
+/datum/sprite_accessory/horns/antlersregal
+	name = "Antlers (Regal)"
+	icon = 'icons/mob/mutant_bodyparts/horns_big.dmi'
+	icon_state = "antlersregal"
+
+//////////////////////
+// Ears Definitions //
+//////////////////////
+
+/datum/sprite_accessory/ears
+	icon = 'icons/mob/mutant_bodyparts/ears.dmi'
+	em_block = TRUE
+
+/datum/sprite_accessory/ears/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/ears/cat
+	name = "Cat"
+	icon_state = "cat"
+
+/datum/sprite_accessory/ears/fox
+	name = "Fox"
+	icon_state = "fox"
+	icon_state_2 = "fox_2"
+
+/datum/sprite_accessory/ears/wolf
+	name = "Wolf"
+	icon_state = "wolf"
+	icon_state_2 = "wolf_2"
+
+/datum/sprite_accessory/ears/bigwolf
+	name = "Big Wolf"
+	icon_state = "bigwolf"
+	icon_state_2 = "bigwolf_2"
+
+/datum/sprite_accessory/ears/mouse
+	name = "Mouse"
+	icon_state = "mouse"
+	icon_state_2 = "mouse_2"
+
+/datum/sprite_accessory/ears/sergal
+	name = "Sergal"
+	icon_state = "sergal"
+	icon_state_2 = "sergal_2"
+
+/datum/sprite_accessory/ears/fennec
+	name = "Fennec"
+	icon_state = "fennec"
+	icon_state_2 = "fennec_2"
+
+/datum/sprite_accessory/ears/elf
+	name = "Elf"
+	icon_state = "elf"
+
+/datum/sprite_accessory/ears/cobrahood
+	name = "Cobra (Hood)"
+	icon_state = "cobrahood"
+	icon_state_2 = "cobrahood_2"
+
+/datum/sprite_accessory/ears/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+
+/datum/sprite_accessory/ears/deer
+	name = "Deer"
+	icon_state = "deer"
+	icon_state_2 = "deer_2"
+
+/datum/sprite_accessory/ears/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	icon_state_2 = "rabbit_2"
+	icon_state_3 = "rabbit_3"
+
+/datum/sprite_accessory/ears/floppy
+	name = "Floppy"
+	icon_state = "floppy"
+	icon_state_2 = "floppy_2"
+	icon_state_3 = "floppy_3"
+
+//////////////////////////
+// Antennae Definitions //
+//////////////////////////
+
+/datum/sprite_accessory/antennae
+	icon = 'icons/mob/mutant_bodyparts/antennae.dmi'
+
+/datum/sprite_accessory/antennae/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/antennae/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/antennae/reddish
+	name = "Reddish"
+	icon_state = "reddish"
+
+/datum/sprite_accessory/antennae/royal
+	name = "Royal"
+	icon_state = "royal"
+
+/datum/sprite_accessory/antennae/gothic
+	name = "Gothic"
+	icon_state = "gothic"
+
+/datum/sprite_accessory/antennae/whitefly
+	name = "White Fly"
+	icon_state = "whitefly"
+
+/datum/sprite_accessory/antennae/lovers
+	name = "Lovers"
+	icon_state = "lovers"
+
+/datum/sprite_accessory/antennae/burnt_off
+	name = "Burnt Off"
+	icon_state = "burnt_off"
+
+/datum/sprite_accessory/antennae/firewatch
+	name = "Firewatch"
+	icon_state = "firewatch"
+
+/datum/sprite_accessory/antennae/deathshead
+	name = "Deathshead"
+	icon_state = "deathshead"
+
+/datum/sprite_accessory/antennae/poison
+	name = "Poison"
+	icon_state = "poison"
+
+/datum/sprite_accessory/antennae/ragged
+	name = "Ragged"
+	icon_state = "ragged"
+
+/datum/sprite_accessory/antennae/moonfly
+	name = "Moon Fly"
+	icon_state = "moonfly"
+
+/datum/sprite_accessory/antennae/oakworm
+	name = "Oak Worm"
+	icon_state = "oakworm"
+
+/datum/sprite_accessory/antennae/jungle
+	name = "Jungle"
+	icon_state = "jungle"
+
+/datum/sprite_accessory/antennae/witchwing
+	name = "Witch Wing"
+	icon_state = "witchwing"
+
+/datum/sprite_accessory/antennae/regal
+	name = "Regal"
+	icon_state = "regal"
+
+///////////////////////
+// Wings Definitions //
+///////////////////////
+
+/datum/sprite_accessory/wings
+	icon = 'icons/mob/mutant_bodyparts/wings.dmi'
+	em_block = TRUE
+
+/datum/sprite_accessory/wings/none
+	name = "None"
+	icon_state = "none"
+
+/* To do: Fix big wings' broken sprites
+
+/datum/sprite_accessory/wings/angel
+	name = "Angel"
+	icon_state = "angel"
+	dimension_x = 46
+	center = TRUE
+	dimension_y = 34
+
+/datum/sprite_accessory/wings/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+	dimension_x = 96
+	center = TRUE
+	dimension_y = 32
+
+/datum/sprite_accessory/wings/megamoth
+	name = "Megamoth"
+	icon_state = "megamoth"
+	dimension_x = 96
+	center = TRUE
+	dimension_y = 32
+
+/datum/sprite_accessory/wings/mothra
+	name = "Mothra"
+	icon_state = "mothra"
+	dimension_x = 96
+	center = TRUE
+	dimension_y = 32
+
+/datum/sprite_accessory/wings/fly
+	name = "Fly"
+	icon_state = "fly"
+	dimension_x = 96
+	center = TRUE
+	dimension_y = 32
+
+*/
+
+/datum/sprite_accessory/wings/dragon
+	name = "Dragon"
+	icon_state = "dragon"
+	icon_state_2 = "dragon_2"
+
+/datum/sprite_accessory/wings/harpy
+	name = "Harpy (Top)"
+	icon_state = "harpy_top"
+
+/datum/sprite_accessory/wings/spider
+	name = "Spider"
+	icon_state = "spider"
+
+/datum/sprite_accessory/wings/insect
+	name = "Insect"
+	icon_state = "insect"
+
+/datum/sprite_accessory/wings/mantis
+	name = "Mantis"
+	icon_state = "mantis"
+	icon_state_2 = "mantis_2"
+
+/datum/sprite_accessory/wings/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/wings/monarch
+	name = "Monarch"
+	icon_state = "monarch"
+
+/datum/sprite_accessory/wings/luna
+	name = "Luna"
+	icon_state = "luna"
+
+/datum/sprite_accessory/wings/atlas
+	name = "Atlas"
+	icon_state = "atlas"
+
+/datum/sprite_accessory/wings/reddish
+	name = "Reddish"
+	icon_state = "redish"
+
+/datum/sprite_accessory/wings/royal
+	name = "Royal"
+	icon_state = "royal"
+
+/datum/sprite_accessory/wings/gothic
+	name = "Gothic"
+	icon_state = "gothic"
+
+/datum/sprite_accessory/wings/lovers
+	name = "Lovers"
+	icon_state = "lovers"
+
+/datum/sprite_accessory/wings/whitefly
+	name = "White Fly"
+	icon_state = "whitefly"
+
+/datum/sprite_accessory/wings/burnt_off
+	name = "Burnt Off"
+	icon_state = "burnt_off"
+
+/datum/sprite_accessory/wings/firewatch
+	name = "Firewatch"
+	icon_state = "firewatch"
+
+/datum/sprite_accessory/wings/deathshead
+	name = "Deathshead"
+	icon_state = "deathshead"
+
+/datum/sprite_accessory/wings/poison
+	name = "Poison"
+	icon_state = "poison"
+
+/datum/sprite_accessory/wings/ragged
+	name = "Ragged"
+	icon_state = "ragged"
+
+/datum/sprite_accessory/wings/moonfly
+	name = "Moon Fly"
+	icon_state = "moonfly"
+
+/datum/sprite_accessory/wings/snow
+	name = "Snow"
+	icon_state = "snow"
+
+/datum/sprite_accessory/wings/oakworm
+	name = "Oak Worm"
+	icon_state = "oakworm"
+
+/datum/sprite_accessory/wings/jungle
+	name = "Jungle"
+	icon_state = "jungle"
+
+/datum/sprite_accessory/wings/witchwing
+	name = "Witch Wing"
+	icon_state = "witchwing"
+
+/datum/sprite_accessory/wings/rosy
+	name = "Rosy"
+	icon_state = "rosy"
+
+/datum/sprite_accessory/wings/feathery
+	name = "Feathery"
+	icon_state = "feathery"
+
+/datum/sprite_accessory/wings/brown
+	name = "Brown"
+	icon_state = "brown"
+
+/datum/sprite_accessory/wings/plasmafire
+	name = "Plasmafire"
+	icon_state = "plasmafire"
+
+//////////////////////
+// Legs Definitions //
+//////////////////////
+
 /datum/sprite_accessory/legs //legs are a special case, they aren't actually sprite_accessories but are updated with them.
 	icon = null //These datums exist for selecting legs on preference, and little else
 	em_block = TRUE
@@ -1396,226 +3252,18 @@
 /datum/sprite_accessory/legs/digitigrade_lizard
 	name = "Digitigrade Legs"
 
-/datum/sprite_accessory/caps
-	icon = 'icons/mob/mutant_bodyparts.dmi'
-	color_src = HAIR
+/////////////////////
+// Cap Definitions //
+/////////////////////
+
+/datum/sprite_accessory/mushcap
+	icon = 'icons/mob/mutant_bodyparts/cap.dmi'
 	em_block = TRUE
 
-/datum/sprite_accessory/caps/round
-	name = "Round"
-	icon_state = "round"
-
-/datum/sprite_accessory/moth_wings
-	icon = 'icons/mob/moth_wings.dmi'
-	color_src = null
-	em_block = TRUE
-
-/datum/sprite_accessory/moth_wings/plain
-	name = "Plain"
-	icon_state = "plain"
-
-/datum/sprite_accessory/moth_wings/monarch
-	name = "Monarch"
-	icon_state = "monarch"
-
-/datum/sprite_accessory/moth_wings/luna
-	name = "Luna"
-	icon_state = "luna"
-
-/datum/sprite_accessory/moth_wings/atlas
-	name = "Atlas"
-	icon_state = "atlas"
-
-/datum/sprite_accessory/moth_wings/reddish
-	name = "Reddish"
-	icon_state = "redish"
-
-/datum/sprite_accessory/moth_wings/royal
-	name = "Royal"
-	icon_state = "royal"
-
-/datum/sprite_accessory/moth_wings/gothic
-	name = "Gothic"
-	icon_state = "gothic"
-
-/datum/sprite_accessory/moth_wings/lovers
-	name = "Lovers"
-	icon_state = "lovers"
-
-/datum/sprite_accessory/moth_wings/whitefly
-	name = "White Fly"
-	icon_state = "whitefly"
-
-/datum/sprite_accessory/moth_wings/burnt_off
-	name = "Burnt Off"
-	icon_state = "burnt_off"
-	locked = TRUE
-
-/datum/sprite_accessory/moth_wings/firewatch
-	name = "Firewatch"
-	icon_state = "firewatch"
-
-/datum/sprite_accessory/moth_wings/deathhead
-	name = "Deathshead"
-	icon_state = "deathhead"
-
-/datum/sprite_accessory/moth_wings/poison
-	name = "Poison"
-	icon_state = "poison"
-
-/datum/sprite_accessory/moth_wings/ragged
-	name = "Ragged"
-	icon_state = "ragged"
-
-/datum/sprite_accessory/moth_wings/moonfly
-	name = "Moon Fly"
-	icon_state = "moonfly"
-
-/datum/sprite_accessory/moth_wings/snow
-	name = "Snow"
-	icon_state = "snow"
-
-/datum/sprite_accessory/moth_wings/oakworm
-	name = "Oak Worm"
-	icon_state = "oakworm"
-
-/datum/sprite_accessory/moth_wings/jungle
-	name = "Jungle"
-	icon_state = "jungle"
-
-/datum/sprite_accessory/moth_wings/witchwing
-	name = "Witch Wing"
-	icon_state = "witchwing"
-
-/datum/sprite_accessory/moth_antennae //Finally splitting the sprite
-	icon = 'icons/mob/moth_antennae.dmi'
-	color_src = null
-
-/datum/sprite_accessory/moth_antennae/plain
-	name = "Plain"
-	icon_state = "plain"
-
-/datum/sprite_accessory/moth_antennae/reddish
-	name = "Reddish"
-	icon_state = "reddish"
-
-/datum/sprite_accessory/moth_antennae/royal
-	name = "Royal"
-	icon_state = "royal"
-
-/datum/sprite_accessory/moth_antennae/gothic
-	name = "Gothic"
-	icon_state = "gothic"
-
-/datum/sprite_accessory/moth_antennae/whitefly
-	name = "White Fly"
-	icon_state = "whitefly"
-
-/datum/sprite_accessory/moth_antennae/lovers
-	name = "Lovers"
-	icon_state = "lovers"
-
-/datum/sprite_accessory/moth_antennae/burnt_off
-	name = "Burnt Off"
-	icon_state = "burnt_off"
-
-/datum/sprite_accessory/moth_antennae/firewatch
-	name = "Firewatch"
-	icon_state = "firewatch"
-
-/datum/sprite_accessory/moth_antennae/deathhead
-	name = "Deathshead"
-	icon_state = "deathhead"
-
-/datum/sprite_accessory/moth_antennae/poison
-	name = "Poison"
-	icon_state = "poison"
-
-/datum/sprite_accessory/moth_antennae/ragged
-	name = "Ragged"
-	icon_state = "ragged"
-
-/datum/sprite_accessory/moth_antennae/moonfly
-	name = "Moon Fly"
-	icon_state = "moonfly"
-
-/datum/sprite_accessory/moth_antennae/oakworm
-	name = "Oak Worm"
-	icon_state = "oakworm"
-
-/datum/sprite_accessory/moth_antennae/jungle
-	name = "Jungle"
-	icon_state = "jungle"
-
-/datum/sprite_accessory/moth_antennae/witchwing
-	name = "Witch Wing"
-	icon_state = "witchwing"
-
-/datum/sprite_accessory/moth_antennae/regal
-	name = "Regal"
-	icon_state = "regal"
-
-/datum/sprite_accessory/moth_markings // the markings that moths can have. finally something other than the boring tan
-	icon = 'icons/mob/moth_markings.dmi'
-	color_src = null
-
-/datum/sprite_accessory/moth_markings/none
+/datum/sprite_accessory/mushcap/none
 	name = "None"
 	icon_state = "none"
 
-/datum/sprite_accessory/moth_markings/reddish
-	name = "Reddish"
-	icon_state = "reddish"
-
-/datum/sprite_accessory/moth_markings/royal
-	name = "Royal"
-	icon_state = "royal"
-
-/datum/sprite_accessory/moth_markings/gothic
-	name = "Gothic"
-	icon_state = "gothic"
-
-/datum/sprite_accessory/moth_markings/whitefly
-	name = "White Fly"
-	icon_state = "whitefly"
-
-/datum/sprite_accessory/moth_markings/lovers
-	name = "Lovers"
-	icon_state = "lovers"
-
-/datum/sprite_accessory/moth_markings/burnt_off
-	name = "Burnt Off"
-	icon_state = "burnt_off"
-
-/datum/sprite_accessory/moth_markings/firewatch
-	name = "Firewatch"
-	icon_state = "firewatch"
-
-/datum/sprite_accessory/moth_markings/deathhead
-	name = "Deathshead"
-	icon_state = "deathhead"
-
-/datum/sprite_accessory/moth_markings/poison
-	name = "Poison"
-	icon_state = "poison"
-
-/datum/sprite_accessory/moth_markings/ragged
-	name = "Ragged"
-	icon_state = "ragged"
-
-/datum/sprite_accessory/moth_markings/moonfly
-	name = "Moon Fly"
-	icon_state = "moonfly"
-
-/datum/sprite_accessory/moth_markings/oakworm
-	name = "Oak Worm"
-	icon_state = "oakworm"
-
-/datum/sprite_accessory/moth_markings/jungle
-	name = "Jungle"
-	icon_state = "jungle"
-
-/datum/sprite_accessory/moth_markings/witchwing
-	name = "Witch Wing"
-	icon_state = "witchwing"
-
+/datum/sprite_accessory/mushcap/round
+	name = "Round"
+	icon_state = "round"

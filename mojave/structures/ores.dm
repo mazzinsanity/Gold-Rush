@@ -109,7 +109,7 @@
 /obj/structure/ms13/ore_deposit/sulfur/Initialize()
 	. = ..()
 	sulfur_rate = rand(1,5) // Anywhere from a 1 to 5 multiplier on regrow time / fumes
-	addtimer(CALLBACK(src, .proc/growup), 20 MINUTES / sulfur_rate) // Shart tier takes 20 minutes to regen. top dawgs come back in 4.
+	addtimer(CALLBACK(src, PROC_REF(growup)), 20 MINUTES / sulfur_rate) // Shart tier takes 20 minutes to regen. top dawgs come back in 4.
 	AddElement(/datum/element/vapour_emitter, /datum/vapours/sulfur_concentrate, 50 * sulfur_rate) // Less it built up make this thing really shart yellow. Be wary of these fellas.
 
 /obj/structure/ms13/ore_deposit/sulfur/examine(mob/user)

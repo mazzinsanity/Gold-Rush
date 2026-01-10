@@ -130,7 +130,7 @@
 		log_combat(user, target, "gibbed", name)
 		if(LAZYLEN(target.butcher_results) || LAZYLEN(target.guaranteed_butcher_results))
 			var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
-			butchering.Butcher(chassis, target)
+			butchering.on_butchering(chassis, target)
 		else
 			target.gib()
 	else

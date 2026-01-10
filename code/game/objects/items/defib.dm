@@ -315,6 +315,12 @@
 	paddle_type = /obj/item/shockpaddles/syndicate/nanotrasen
 	paddle_state = "defibnt-paddles"
 
+/obj/item/defibrillator/loaded/mojave
+	paddle_type = /obj/item/shockpaddles/mojave
+
+/obj/item/defibrillator/loaded/mojave/screwdriver_act(mob/living/user, obj/item/tool)
+	return
+
 //paddles
 
 /obj/item/shockpaddles
@@ -337,7 +343,7 @@
 	var/busy = FALSE
 	var/obj/item/defibrillator/defib
 	var/req_defib = TRUE // Whether or not the paddles require a defibrilator object
-	var/recharge_time = 6 SECONDS // Only applies to defibs that do not require a defibrilator. See: .proc/do_success
+	var/recharge_time = 6 SECONDS // Only applies to defibs that do not require a defibrilator. See: proc/do_success
 	var/combat = FALSE //If it penetrates armor and gives additional functionality
 	var/wielded = FALSE // track wielded status on item
 
@@ -708,6 +714,9 @@
 
 /obj/item/shockpaddles/syndicate/cyborg
 	req_defib = FALSE
+
+/obj/item/shockpaddles/mojave
+	revivecost = 0
 
 #undef HALFWAYCRITDEATH
 #undef DEFIB_CAN_HURT

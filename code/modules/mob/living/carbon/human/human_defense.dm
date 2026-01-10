@@ -361,8 +361,8 @@
 	var/subarmor = run_subarmor_check(affecting, MELEE, armour_penetration = user.subtractible_armour_penetration, sharpness = user.sharpness)
 	var/subarmor_flags = get_subarmor_flags(affecting)
 	var/edge_protection = get_edge_protection(affecting)
-	var/no_defended = damage_armor(damage, MELEE, user.melee_damage_type, def_zone = dam_zone)
-	apply_damage(no_defended, user.melee_damage_type, affecting, armor, \
+	var/remaining_damage = damage_armor(damage, MELEE, user.melee_damage_type, user.sharpness, user.subtractible_armour_penetration, affecting)
+	apply_damage(remaining_damage, user.melee_damage_type, affecting, armor, \
 				wound_bonus = user.wound_bonus, bare_wound_bonus = user.bare_wound_bonus, \
 				sharpness = user.sharpness, attack_direction = attack_direction, \
 				subarmor_flags = subarmor_flags, edge_protection = edge_protection, \
@@ -391,8 +391,8 @@
 	var/subarmor = run_subarmor_check(affecting, MELEE, armour_penetration = user.subtractible_armour_penetration, sharpness = user.sharpness)
 	var/subarmor_flags = get_subarmor_flags(affecting)
 	var/edge_protection = get_edge_protection(affecting)
-	var/no_defended = damage_armor(damage, MELEE, user.melee_damage_type, def_zone = dam_zone)
-	apply_damage(no_defended, user.melee_damage_type, affecting, armor, \
+	var/remaining_damage = damage_armor(damage, MELEE, user.melee_damage_type, user.sharpness, user.subtractible_armour_penetration, affecting)
+	apply_damage(remaining_damage, user.melee_damage_type, affecting, armor, \
 				wound_bonus = user.wound_bonus, bare_wound_bonus = user.bare_wound_bonus, \
 				sharpness = user.sharpness, attack_direction = attack_direction, \
 				subarmor_flags = subarmor_flags, edge_protection = edge_protection, \
@@ -558,7 +558,7 @@
 		return
 	var/informed = FALSE
 	for(var/obj/item/bodypart/L in src.bodyparts)
-		if(L.status == BODYPART_ROBOTIC)
+		if(L.biological_state & BIO_ROBOTIC)
 			if(!informed)
 				to_chat(src, span_userdanger("You feel a sharp pain as your robotic limbs overload."))
 				informed = TRUE
@@ -827,17 +827,17 @@
 
 		if(body_part.current_gauze)
 			var/datum/bodypart_aid/current_gauze = body_part.current_gauze
-			combined_msg += "\t <span class='notice'>Your [body_part.name] is [current_gauze.desc_prefix] with <a href='?src=[REF(current_gauze)];remove=1'>[current_gauze.get_description()]</a>.</span>"
+			combined_msg += "\t <span class='notice'>Your [body_part.name] is [current_gauze.desc_prefix] with <a href='byond://?src=[REF(current_gauze)];remove=1'>[current_gauze.get_description()]</a>.</span>"
 		if(body_part.current_splint)
 			var/datum/bodypart_aid/current_splint = body_part.current_splint
-			combined_msg += "\t <span class='notice'>Your [body_part.name] is [current_splint.desc_prefix] with <a href='?src=[REF(current_splint)];remove=1'>[current_splint.get_description()]</a>.</span>"
+			combined_msg += "\t <span class='notice'>Your [body_part.name] is [current_splint.desc_prefix] with <a href='byond://?src=[REF(current_splint)];remove=1'>[current_splint.get_description()]</a>.</span>"
 			// MOJAVE SUN EDIT END
 
 		for(var/obj/item/I in body_part.embedded_objects)
 			if(I.isEmbedHarmless())
-				combined_msg += "\t <a href='?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(body_part)]' class='warning'>There is \a [I] stuck to your [body_part.name]!</a>"
+				combined_msg += "\t <a href='byond://?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(body_part)]' class='warning'>There is \a [I] stuck to your [body_part.name]!</a>"
 			else
-				combined_msg += "\t <a href='?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(body_part)]' class='warning'>There is \a [I] embedded in your [body_part.name]!</a>"
+				combined_msg += "\t <a href='byond://?src=[REF(src)];embedded_object=[REF(I)];embedded_limb=[REF(body_part)]' class='warning'>There is \a [I] embedded in your [body_part.name]!</a>"
 
 	for(var/t in missing)
 		combined_msg += span_boldannounce("Your [parse_zone(t)] is missing!")

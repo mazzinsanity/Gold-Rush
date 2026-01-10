@@ -75,3 +75,5 @@
 	printed_canvas.update_icon()
 	to_chat(usr, span_notice("You have printed [chosen_portrait.title] onto a new canvas."))
 	playsound(computer.physical, 'sound/items/poster_being_created.ogg', 100, TRUE)
+
+#undef CANVAS_PAPER_COST

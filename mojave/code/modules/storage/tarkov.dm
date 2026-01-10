@@ -242,16 +242,18 @@
 	var/maximum_depth = 1
 	var/storage_flags = NONE
 
+	var/list/first_coordinates_item = list()
+
 /datum/component/storage/proc/get_grid_box_size()
 	return world.icon_size
 
 /datum/component/storage/Initialize(datum/component/storage/concrete/master)
 	if(!grid_box_size)
 		grid_box_size = get_grid_box_size()
+	RegisterSignal(parent, COMSIG_STORAGE_BLOCK_USER_TAKE, PROC_REF(should_block_user_take))
 	. = ..()
 	if(.)
 		return
-	RegisterSignal(parent, COMSIG_STORAGE_BLOCK_USER_TAKE, PROC_REF(should_block_user_take))
 	if(grid)
 		var/atom/atom_parent = parent
 		atom_parent.reset_grid_inventory()
@@ -287,25 +289,28 @@
 		var/screen_y
 		var/screen_pixel_x
 		var/screen_pixel_y
-		//i'm gonna be real i did NOT test numbered items this probably doesn't work
 		if(islist(numerical_display_contents))
 			for(var/index in numerical_display_contents)
 				var/datum/numbered_display/numbered_display = numerical_display_contents[index]
 				var/obj/item/stored_item = numbered_display.sample_object
+				var/used_gridwidth = stored_item.grid_width
+				var/used_gridheight = stored_item.grid_height
+
 				stored_item.mouse_opacity = MOUSE_OPACITY_OPAQUE
-				bound_underlay = get_bound_underlay(stored_item.grid_width, stored_item.grid_height)
+				bound_underlay = get_bound_underlay(used_gridwidth, used_gridheight)
 				if(!bound_underlay)
-					bound_underlay = generate_bound_underlay(stored_item.grid_width, stored_item.grid_height)
+					bound_underlay = generate_bound_underlay(used_gridwidth, used_gridheight)
+					underlay_appearances_by_size["[used_gridwidth]x[used_gridheight]"] = bound_underlay
 				stored_item.underlays += bound_underlay
 				screen_loc = LAZYACCESSASSOC(master.item_to_grid_coordinates, stored_item, 1)
 				screen_loc = master.grid_coordinates_to_screen_loc(screen_loc)
 				screen_x = copytext(screen_loc, 1, findtext(screen_loc, ","))
 				screen_pixel_x = text2num(copytext(screen_x, findtext(screen_x, ":") + 1))
-				screen_pixel_x += (world.icon_size/2)*((stored_item.grid_width/world.icon_size)-1)
+				screen_pixel_x += (world.icon_size/2)*((used_gridwidth/world.icon_size)-1)
 				screen_x = text2num(copytext(screen_x, 1, findtext(screen_x, ":")))
 				screen_y = copytext(screen_loc, findtext(screen_loc, ",") + 1)
 				screen_pixel_y = text2num(copytext(screen_y, findtext(screen_y, ":") + 1))
-				screen_pixel_y += (world.icon_size/2)*((stored_item.grid_height/world.icon_size)-1)
+				screen_pixel_y += (world.icon_size/2)*((used_gridheight/world.icon_size)-1)
 				screen_y = text2num(copytext(screen_y, 1, findtext(screen_y, ":")))
 				stored_item.screen_loc = "[screen_x]:[screen_pixel_x],[screen_y]:[screen_pixel_y]"
 				stored_item.plane = ABOVE_HUD_PLANE
@@ -316,19 +321,22 @@
 				if(QDELETED(stored_item))
 					continue
 				stored_item.mouse_opacity = MOUSE_OPACITY_OPAQUE
-				bound_underlay = get_bound_underlay(stored_item.grid_width, stored_item.grid_height)
+				var/used_gridwidth = stored_item.grid_width
+				var/used_gridheight = stored_item.grid_height
+				bound_underlay = get_bound_underlay(used_gridwidth, used_gridheight)
 				if(!bound_underlay)
-					bound_underlay = generate_bound_underlay(stored_item.grid_width, stored_item.grid_height)
+					bound_underlay = generate_bound_underlay(used_gridwidth, used_gridheight)
+					underlay_appearances_by_size["[used_gridwidth]x[used_gridheight]"] = bound_underlay
 				stored_item.underlays += bound_underlay
 				screen_loc = LAZYACCESSASSOC(master.item_to_grid_coordinates, stored_item, 1)
 				screen_loc = master.grid_coordinates_to_screen_loc(screen_loc)
 				screen_x = copytext(screen_loc, 1, findtext(screen_loc, ","))
 				screen_pixel_x = text2num(copytext(screen_x, findtext(screen_x, ":") + 1))
-				screen_pixel_x += (world.icon_size/2)*((stored_item.grid_width/world.icon_size)-1)
+				screen_pixel_x += (world.icon_size/2)*((used_gridwidth/world.icon_size)-1)
 				screen_x = text2num(copytext(screen_x, 1, findtext(screen_x, ":")))
 				screen_y = copytext(screen_loc, findtext(screen_loc, ",") + 1)
 				screen_pixel_y = text2num(copytext(screen_y, findtext(screen_y, ":") + 1))
-				screen_pixel_y += (world.icon_size/2)*((stored_item.grid_height/world.icon_size)-1)
+				screen_pixel_y += (world.icon_size/2)*((used_gridheight/world.icon_size)-1)
 				screen_y = text2num(copytext(screen_y, 1, findtext(screen_y, ":")))
 				stored_item.screen_loc = "[screen_x]:[screen_pixel_x],[screen_y]:[screen_pixel_y]"
 				stored_item.plane = ABOVE_HUD_PLANE
@@ -595,11 +603,15 @@
 /datum/component/storage/proc/update_closer(rows = 0, cols = 0)
 	closer.cut_overlays()
 	closer.icon_state = "close"
-	var/half = (cols - 1)/2
-	var/half_ceiling = CEILING(half, 1)
-	var/half_floor = FLOOR(half, 1)
-	closer.screen_loc = "[src.screen_start_x+half_floor]:[src.screen_pixel_x],[src.screen_start_y+1]:[src.screen_pixel_y]"
-	switch(cols)
+	var/half_rows = FLOOR((rows-1) * 0.5, 1)
+	var/half_row_ceil = CEILING((rows-1) * 0.5, 1)
+
+	var/extra = 0
+	if(ISEVEN(rows))
+		extra = 1
+
+	closer.screen_loc = "[src.screen_start_x+cols]:[src.screen_pixel_x],[src.screen_start_y - (half_rows + extra)]:[src.screen_pixel_y]"
+	switch(rows)
 		if(-INFINITY to 1)
 			closer.icon_state = "close"
 		if(2)
@@ -607,19 +619,19 @@
 		if(3 to INFINITY)
 			closer.icon_state = "close_mid"
 	var/image/offset_image
-	for(var/overlayer in 1 to half_floor)
-		var/state = (overlayer >= half_floor) ? "close_left" : "close_mid"
+	for(var/overlayer in 1 to half_rows)
+		var/state = (overlayer >= half_rows) ? "close_right" : "close_mid"
 		offset_image = image(closer.icon, state)
-		offset_image.transform = offset_image.transform.Translate(world.icon_size * -overlayer, 0)
+		offset_image.transform = offset_image.transform.Translate(0, world.icon_size * -overlayer)
 		closer.add_overlay(offset_image)
-	for(var/overlayer in 1 to half_ceiling)
-		var/state = (overlayer >= half_ceiling) ? "close_right" : "close_mid"
+	for(var/overlayer in 1 to half_row_ceil)
+		var/state = (overlayer >= half_row_ceil) ? "close_left" : "close_mid"
 		offset_image = image(closer.icon, state)
-		offset_image.transform = offset_image.transform.Translate(world.icon_size * overlayer, 0)
+		offset_image.transform = offset_image.transform.Translate(0, world.icon_size * overlayer)
 		closer.add_overlay(offset_image)
-	if(cols > 1)
+	if(rows > 1)
 		var/image/close_overlay = image(closer.icon, "close_overlay")
-		close_overlay.transform = close_overlay.transform.Translate(world.icon_size * (half - half_floor), 0)
+		close_overlay.transform = close_overlay.transform.Translate(0, world.icon_size * ((((rows-1) * 0.5) + extra) - (half_row_ceil)))
 		closer.add_overlay(close_overlay)
 
 /datum/component/storage/proc/screen_loc_to_grid_coordinates(screen_loc = "")
@@ -752,27 +764,34 @@
 	return final_appearance
 
 /datum/component/storage/proc/grid_add_item(obj/item/storing, coordinates)
+
+	var/used_gridwidth = storing.grid_width
+	var/used_gridheight = storing.grid_height
+
 	var/coordinate_x = text2num(copytext(coordinates, 1, findtext(coordinates, ",")))
 	var/coordinate_y = text2num(copytext(coordinates, findtext(coordinates, ",") + 1))
 	var/calculated_coordinates = ""
 	var/final_x
 	var/final_y
-	var/validate_x = (storing.grid_width/grid_box_size)-1
-	var/validate_y = (storing.grid_height/grid_box_size)-1
-	//this loops through all cells we overlap given these coordinates and adds the item to the associated lists
+	var/validate_x = (used_gridwidth/grid_box_size)-1
+	var/validate_y = (used_gridheight/grid_box_size)-1
+	//this loops through all cells we overlap given these coordinates
+	first_coordinates_item |= storing
+	first_coordinates_item[storing] = list(coordinate_x, coordinate_y)
 	for(var/current_x in 0 to validate_x)
 		for(var/current_y in 0 to validate_y)
 			final_x = coordinate_x+current_x
 			final_y = coordinate_y+current_y
 			calculated_coordinates = "[final_x],[final_y]"
 			testing("handle_item_insertion SUCCESS calculated_coordinates: ([calculated_coordinates])")
-			LAZYADDASSOC(grid_coordinates_to_item, calculated_coordinates, storing)
+			LAZYADDASSOCLIST(grid_coordinates_to_item, calculated_coordinates, storing)
 			LAZYINITLIST(item_to_grid_coordinates)
 			LAZYINITLIST(item_to_grid_coordinates[storing])
 			LAZYADD(item_to_grid_coordinates[storing], calculated_coordinates)
 	return TRUE
 
 /datum/component/storage/proc/grid_remove_item(obj/item/removed)
+	first_coordinates_item -= removed
 	if(grid && LAZYACCESS(item_to_grid_coordinates, removed))
 		for(var/location in LAZYACCESS(item_to_grid_coordinates, removed))
 			LAZYREMOVE(grid_coordinates_to_item, location)
@@ -782,16 +801,42 @@
 	return FALSE
 
 /datum/component/storage/concrete/slave_can_insert_object(datum/component/storage/slave, obj/item/storing, stop_messages = FALSE, mob/user, params, storage_click = FALSE)
+	//This is where the pain begins
+	if(grid)
+		var/list/modifiers = params2list(params)
+		var/coordinates = LAZYACCESS(modifiers, SCREEN_LOC)
+		var/grid_box_ratio = (world.icon_size/grid_box_size)
 
-	// Attempt to find a valid grid location for the item
-	if(can_fit_item(storing, params, storage_click))
-		return TRUE
-	// If none found, rotate and try again (if not a square or a storage click)
-	if(!storage_click && storing.grid_height != storing.grid_width)
-		storing.inventory_flip(null, TRUE)
-		return can_fit_item(storing, params, storage_click)
+		var/used_gridwidth = storing.grid_width
+		var/used_gridheight = storing.grid_height
 
-	return FALSE
+		//if it's not a storage click, find the first cell that happens to be valid
+		if(!storage_click)
+			var/final_x = 0
+			var/final_y = 0
+			var/final_coordinates = ""
+			var/grid_location_found = FALSE
+			var/x_value = ((screen_max_columns*grid_box_ratio)-1)
+			for(var/current_y in 0 to ((screen_max_rows*grid_box_ratio)-1))
+				for(var/current_x in 0 to x_value)
+					final_y = current_y
+					final_x = current_x
+					final_coordinates = "[final_x],[final_y]"
+					if(validate_grid_coordinates(final_coordinates, used_gridwidth, used_gridheight, storing))
+						coordinates = final_coordinates
+						grid_location_found = TRUE
+						break
+				if(grid_location_found)
+					break
+			if(!grid_location_found)
+				return FALSE
+		else
+			coordinates = screen_loc_to_grid_coordinates(coordinates)
+
+
+		if(!validate_grid_coordinates(coordinates, used_gridwidth, used_gridheight, storing))
+			return FALSE
+	return TRUE
 
 
 /datum/component/storage/concrete/proc/can_fit_item(obj/item/storing, params, storage_click = FALSE)
@@ -881,14 +926,16 @@
 			var/final_y = 0
 			var/final_coordinates = ""
 			var/grid_location_found = FALSE
-			var/rows = ((screen_max_rows*grid_box_ratio)-1)
-			var/columns = ((screen_max_columns*grid_box_ratio)-1)
-			for(var/current_x in 0 to columns)
-				for(var/current_y in 0 to rows)
-					final_y = rows - current_y
+			var/x_value = ((screen_max_columns*grid_box_ratio)-1)
+			for(var/current_y in 0 to ((screen_max_rows*grid_box_ratio)-1))
+				for(var/current_x in 0 to x_value)
+					final_y = current_y
 					final_x = current_x
 					final_coordinates = "[final_x],[final_y]"
-					if(validate_grid_coordinates(final_coordinates, storing.grid_width, storing.grid_height, storing))
+					var/used_gridwidth = storing.grid_width
+					var/used_gridheight = storing.grid_height
+
+					if(validate_grid_coordinates(final_coordinates, used_gridwidth, used_gridheight, storing))
 						coordinates = final_coordinates
 						grid_location_found = TRUE
 						break
@@ -935,6 +982,7 @@
 	update_icon()
 	refresh_mob_views()
 	return TRUE
+
 
 /atom/movable/screen/close
 	icon = 'mojave/icons/hud/storage.dmi'
@@ -1081,3 +1129,11 @@
 	layer = HUD_BACKGROUND_LAYER
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	alpha = 96
+
+// Currently unused, proc for if a stored item needs to update it's size/position in the grid.
+/datum/component/storage/proc/update_item(obj/item/item)
+	var/list/coords = first_coordinates_item[item]
+	var/coordinate_x = coords[1]
+	var/coordinate_y = coords[2]
+	grid_remove_item(item)
+	grid_add_item(item, "[coordinate_x],[coordinate_y]")

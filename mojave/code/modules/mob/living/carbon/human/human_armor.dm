@@ -85,16 +85,11 @@
 	var/protection = 0
 	var/list/clothings = clothingonpart(affecting)
 	for(var/obj/item/clothing as anything in clothings)
-		if(istype(clothing, /obj/item/clothing/suit/space/hardsuit/ms13/power_armor))
-			var/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/pa = clothing
-			var/obj/item/ms13/power_armor/PA_part = pa.module_armor[def_zone.body_zone]
-			if(PA_part != null)
-				protection += PA_part.subarmor.getRating(d_type)
 		protection += clothing.subarmor.getRating(d_type)
 	protection += physiology.subarmor.getRating(d_type)
 	return protection
 
-/mob/living/carbon/human/damage_armor(damage = 0, damage_flag = MELEE, damage_type = BRUTE, sharpness = NONE, def_zone = BODY_ZONE_CHEST)
+/mob/living/carbon/human/damage_armor(damage = 0, damage_flag = MELEE, damage_type = BRUTE, sharpness = NONE, armour_penetration = 0, def_zone)
 	//We need to convert attack flags into actually useful subarmor variables
 	var/static/list/conversion_table = list(MELEE, BULLET)
 	if(damage_flag in conversion_table)
@@ -107,21 +102,6 @@
 			damage_flag = CUTTING
 
 	if(wear_suit && istype(wear_suit, /obj/item/clothing/suit/space/hardsuit/ms13/power_armor))
-		return wear_suit.take_damage(damage, damage_type, damage_flag, 0, def_zone = def_zone)
-
-	var/obj/item/bodypart/affecting
-	if(def_zone)
-		if(isbodypart(def_zone))
-			affecting = def_zone
-		else
-			affecting = get_bodypart(check_zone(def_zone))
-
-	if(!affecting)
-		return damage
-
-	var/list/clothings = clothingonpart(affecting)
-	for(var/obj/item/clothing/clothing as anything in clothings)
-		if(clothing.take_damage_zone(def_zone, damage, damage_flag, damage_type, sharpness, 100))
-			return damage
-
+		return wear_suit.take_damage(damage, damage_type, damage_flag, null, armour_penetration = armour_penetration, def_zone = def_zone)
+	
 	return damage

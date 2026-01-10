@@ -119,9 +119,6 @@ There are several things that need to be remembered:
 		var/target_overlay = U.icon_state
 		if(U.adjusted == ALT_STYLE)
 			target_overlay = "[target_overlay]_d"
-		else if(U.adjusted == DIGITIGRADE_STYLE)
-			target_overlay = "[target_overlay]_l"
-
 
 		var/mutable_appearance/uniform_overlay
 		/* MOJAVE SUN EDIT - Gender Prefs
@@ -135,14 +132,9 @@ There are several things that need to be remembered:
 		if(OFFSET_UNIFORM in dna.species.offset_features)
 			uniform_overlay.pixel_x += dna.species.offset_features[OFFSET_UNIFORM][1]
 			uniform_overlay.pixel_y += dna.species.offset_features[OFFSET_UNIFORM][2]
-		// MOJAVE EDIT BEGIN - Fatties
-		uniform_overlay = apply_fatness_filter(uniform_overlay, TRUE)
-		// MOJAVE EDIT END - Fatties
 		overlays_standing[UNIFORM_LAYER] = uniform_overlay
 
 	apply_overlay(UNIFORM_LAYER)
-	update_mutant_bodyparts()
-
 
 /mob/living/carbon/human/update_inv_wear_id()
 	remove_overlay(ID_LAYER)
@@ -177,9 +169,6 @@ There are several things that need to be remembered:
 				id_card_overlay.pixel_x += dna.species.offset_features[OFFSET_ID][1]
 				id_card_overlay.pixel_y += dna.species.offset_features[OFFSET_ID][2]
 
-			// MOJAVE EDIT BEGIN - Fatties
-			id_card_overlay = apply_fatness_filter(id_card_overlay, TRUE)
-			// MOJAVE EDIT END - Fatties
 			overlays_standing[ID_CARD_LAYER] = id_card_overlay
 
 	apply_overlay(ID_LAYER)
@@ -201,9 +190,6 @@ There are several things that need to be remembered:
 			else if(has_right_hand(FALSE))
 				bloody_overlay.icon_state = "bloodyhands_right"
 
-		// MOJAVE EDIT BEGIN - Fatties
-		bloody_overlay = apply_fatness_filter(bloody_overlay, TRUE)
-		// MOJAVE EDIT END - Fatties
 		overlays_standing[GLOVES_LAYER] = bloody_overlay
 
 	var/mutable_appearance/gloves_overlay = overlays_standing[GLOVES_LAYER]
@@ -218,9 +204,6 @@ There are several things that need to be remembered:
 		if(OFFSET_GLOVES in dna.species.offset_features)
 			gloves_overlay.pixel_x += dna.species.offset_features[OFFSET_GLOVES][1]
 			gloves_overlay.pixel_y += dna.species.offset_features[OFFSET_GLOVES][2]
-		// MOJAVE EDIT BEGIN - Fatties
-		gloves_overlay = apply_fatness_filter(gloves_overlay, TRUE)
-		// MOJAVE EDIT END - Fatties
 	overlays_standing[GLOVES_LAYER] = gloves_overlay
 	apply_overlay(GLOVES_LAYER)
 
@@ -304,7 +287,6 @@ There are several things that need to be remembered:
 
 	apply_overlay(SHOES_LAYER)
 
-
 /mob/living/carbon/human/update_inv_s_store()
 	remove_overlay(SUIT_STORE_LAYER)
 
@@ -355,9 +337,6 @@ There are several things that need to be remembered:
 		if(OFFSET_BELT in dna.species.offset_features)
 			belt_overlay.pixel_x += dna.species.offset_features[OFFSET_BELT][1]
 			belt_overlay.pixel_y += dna.species.offset_features[OFFSET_BELT][2]
-		// MOJAVE EDIT BEGIN - Fatties
-		belt_overlay = apply_fatness_filter(belt_overlay, TRUE)
-		// MOJAVE EDIT END - Fatties
 		overlays_standing[BELT_LAYER] = belt_overlay
 
 	apply_overlay(BELT_LAYER)
@@ -382,9 +361,6 @@ There are several things that need to be remembered:
 		if(OFFSET_SUIT in dna.species.offset_features)
 			suit_overlay.pixel_x += dna.species.offset_features[OFFSET_SUIT][1]
 			suit_overlay.pixel_y += dna.species.offset_features[OFFSET_SUIT][2]
-		// MOJAVE EDIT BEGIN - Fatties
-		suit_overlay = apply_fatness_filter(suit_overlay, TRUE)
-		// MOJAVE EDIT END - Fatties
 		overlays_standing[SUIT_LAYER] = suit_overlay
 	update_hair()
 	update_mutant_bodyparts()
@@ -609,17 +585,12 @@ generate/load female uniform sprites matching all previously decided variables
 		var/obj/item/bodypart/BP = X
 		. += "-[BP.body_zone]"
 
-		if(!HAS_TRAIT(src, TRAIT_INVISIBLE_MAN))
-			for(var/obj/item/organ/external/organ as anything in BP.external_organs)
-				if(organ.can_draw_on_bodypart(src)) //make sure we're drawn before generating a key
-					. += "([organ.cache_key])"
-
-		if(BP.status == BODYPART_ORGANIC)
+		if(BP.biological_state & BIO_STANDARD)
 			. += "-organic"
 		else
 			. += "-robotic"
 		if(BP.use_digitigrade)
-			. += "-digitigrade[BP.use_digitigrade]"
+			. += "-digitigrade"
 		if(BP.dmg_overlay_type)
 			. += "-[BP.dmg_overlay_type]"
 		if(HAS_TRAIT(BP, TRAIT_PLASMABURNT))

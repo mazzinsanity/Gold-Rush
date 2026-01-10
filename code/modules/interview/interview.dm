@@ -1,10 +1,3 @@
-/// State when an interview has been approved
-#define INTERVIEW_APPROVED "interview_approved"
-/// State when an interview as been denied
-#define INTERVIEW_DENIED "interview_denied"
-/// State when an interview has had no action on it yet
-#define INTERVIEW_PENDING "interview_pending"
-
 /**
  * Represents a new-player interview form
  *
@@ -165,4 +158,4 @@
  * Generates a clickable link to open this interview
  */
 /datum/interview/proc/link_self()
-	return "<a href='?_src_=holder;[HrefToken(TRUE)];interview=[REF(src)]'>Interview #[id]</a>"
+	return "<a href='byond://?_src_=holder;[HrefToken(TRUE)];interview=[REF(src)]'>Interview #[id]</a>"

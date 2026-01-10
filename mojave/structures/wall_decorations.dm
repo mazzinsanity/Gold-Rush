@@ -149,8 +149,12 @@
 	desc = "A flag representing the Desert Rangers. A beacon of hope and safety."
 	icon_state = "flag_rangers"
 
+/obj/structure/ms13/wall_decor/flag/rangers/ncr
+	desc = "A flag representing the NCR Rangers. A beacon of hope and safety."
+	icon_state = "flag_rangers"
+
 /obj/structure/ms13/wall_decor/flag/bos
-	desc = "A flag the Brotherhood of Steel. It is in the western chapter pattern."
+	desc = "A flag representing the Brotherhood of Steel. It is in the western chapter pattern."
 	icon_state = "flag_westbos"
 
 /obj/structure/ms13/wall_decor/clock

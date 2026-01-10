@@ -6,7 +6,6 @@
  */
 
 import { KEY } from 'common/keys';
-import { classes } from 'common/react';
 import {
   forwardRef,
   RefObject,
@@ -16,6 +15,7 @@ import {
   useState,
 } from 'react';
 import { KeyboardEvent, SyntheticEvent } from 'react';
+import { classes } from 'tgui-core/react';
 
 import { Box, BoxProps } from './Box';
 import { toInputValue } from './Input';

@@ -51,8 +51,6 @@
 
 		handle_diseases(delta_time, times_fired)// DEAD check is in the proc itself; we want it to spread even if the mob is dead, but to handle its disease-y properties only if you're not.
 
-		handle_wounds(delta_time, times_fired)
-
 		if (QDELETED(src)) // diseases can qdel the mob via transformations
 			return
 
@@ -66,11 +64,12 @@
 			handle_environment(environment, delta_time, times_fired)
 
 		handle_gravity(delta_time, times_fired)
-
+	
 		if(stat != DEAD)
 			handle_traits(delta_time, times_fired) // eye, ear, brain damages
 			handle_status_effects(delta_time, times_fired) //all special effects, stun, knockdown, jitteryness, hallucination, sleeping, etc
 
+	handle_wounds(delta_time, times_fired)
 	handle_fire(delta_time, times_fired)
 
 	if(machine)

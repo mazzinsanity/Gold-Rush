@@ -1,7 +1,7 @@
 /datum/job/ms13/drylander/chieftain
 	title = "Drylander Chieftain"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The well being and survival of your tribe."
 	description = "You are the chief and leader of the Drylander tribe. Navigate your tribe through this tumultuous and rapidly changing period, and make the ultimate decisions for the tribe."
 

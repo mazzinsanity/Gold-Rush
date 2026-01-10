@@ -553,3 +553,8 @@
  */
 /obj/machinery/atmospherics/proc/paint(paint_color)
 	return FALSE
+
+#undef PIPE_VISIBLE_LEVEL
+#undef PIPE_HIDDEN_LEVEL
+
+#undef VENT_SOUND_DELAY

@@ -118,7 +118,7 @@
 				to_chat(user, span_notice("With a lot of effort, you manage to finally get the cover off."))
 				if(prob(10))
 					to_chat(user, span_userdanger("MY ARM! THE PAIN!"))
-					arm.force_wound_upwards(/datum/wound/blunt/moderate)
+					arm.force_wound_upwards(/datum/wound/blunt/bone/moderate)
 					arm.receive_damage(10)
 		else
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))

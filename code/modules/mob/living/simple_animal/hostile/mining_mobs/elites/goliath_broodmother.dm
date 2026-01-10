@@ -264,3 +264,8 @@
 	to_chat(living_user, "<b>You squeeze the tongue, and some transluscent liquid shoots out all over you.</b>")
 	addtimer(TRAIT_CALLBACK_REMOVE(user, TRAIT_LAVA_IMMUNE, type), 10 SECONDS)
 	use_time = world.time + 60 SECONDS
+
+#undef TENTACLE_PATCH
+#undef SPAWN_CHILDREN
+#undef RAGE
+#undef CALL_CHILDREN

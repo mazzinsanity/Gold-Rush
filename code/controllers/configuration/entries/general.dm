@@ -115,6 +115,9 @@
 /// log emotes
 /datum/config_entry/flag/log_emote
 
+/// log emotes
+/datum/config_entry/flag/log_subtle
+
 /// log economy actions
 /datum/config_entry/flag/log_econ
 
@@ -244,6 +247,10 @@
 /datum/config_entry/string/hostedby
 
 /datum/config_entry/flag/norespawn
+
+/datum/config_entry/string/discordurl
+
+/datum/config_entry/string/servertagline
 
 /datum/config_entry/number/respawn_time
 	default = null
