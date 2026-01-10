@@ -248,10 +248,6 @@
 
 /datum/config_entry/flag/norespawn
 
-/datum/config_entry/string/discordurl
-
-/datum/config_entry/string/servertagline
-
 /datum/config_entry/number/respawn_time
 	default = null
 	min_val = 0
