@@ -3148,8 +3148,8 @@
 	dir = 4
 	},
 /obj/machinery/button/ms13{
-	id = "bos_east_shutters";
-	name = "checkpoint button";
+	id = "bos_gate";
+	name = "gate button";
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
@@ -10619,8 +10619,8 @@
 /area/ms13/town)
 "kdU" = (
 /obj/machinery/button/ms13{
-	id = "bos_gate";
-	name = "gate button"
+	id = "bos_east_shutters";
+	name = "checkpoint button"
 	},
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
@@ -16631,11 +16631,6 @@
 /obj/item/pickaxe/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp)
-"pIK" = (
-/obj/structure/ms13/departure,
-/obj/effect/turf_decal/ms13/road/horizontalline,
-/turf/open/floor/plating/ms13/ground/road,
-/area/ms13/desert)
 "pIS" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -17290,6 +17285,11 @@
 /obj/effect/spawner/random/ms13/food/random,
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
+"qow" = (
+/obj/structure/ms13/departure,
+/obj/effect/turf_decal/ms13/road/horizontalline,
+/turf/open/floor/plating/ms13/ground/road,
+/area/ms13/desert)
 "qoH" = (
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
@@ -25294,7 +25294,7 @@ blm
 blm
 blm
 lNx
-pIK
+qow
 lNx
 blm
 blm
