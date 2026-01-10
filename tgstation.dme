@@ -4357,7 +4357,6 @@
 #include "interface\interface.dm"
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
-#include "interface\skin.dmf"
 #include "mojave\__DEFINES\ambience_sounds.dm"
 #include "mojave\__DEFINES\atmosphere_sounds.dm"
 #include "mojave\__DEFINES\crafting.dm"
@@ -4516,7 +4515,6 @@
 #include "mojave\code\modules\jobs\job_types\town_drought\carlin_mayor.dm"
 #include "mojave\code\modules\jobs\job_types\town_drought\carlin_sheriff.dm"
 #include "mojave\code\modules\jobs\job_types\town_drought\carlin_shopkeep.dm"
-
 #include "mojave\code\modules\jobs\job_types\wasteland\_wasteland.dm"
 #include "mojave\code\modules\jobs\job_types\wasteland\wastelander.dm"
 #include "mojave\code\modules\locks\keys.dm"
@@ -4799,4 +4797,5 @@
 #include "mojave\turfs\plating.dm"
 #include "mojave\turfs\wall.dm"
 #include "mojave\turfs\window.dm"
+#include "interface\skin.dmf"
 // END_INCLUDE
