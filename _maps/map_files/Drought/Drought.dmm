@@ -770,7 +770,11 @@
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
 "aLt" = (
-/obj/structure/ms13/storage/shelf,
+/obj/machinery/button/ms13{
+	id = "bos_west_shutters";
+	name = "checkpoint button";
+	dir = 4
+	},
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "aLP" = (
@@ -1193,10 +1197,6 @@
 /obj/structure/ms13/trash/glass/plate,
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/ncr)
-"bdQ" = (
-/obj/structure/stairs/south,
-/turf/open/floor/wood/ms13/wide,
-/area/ms13/goldman/building)
 "bdU" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -1273,7 +1273,7 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid{
 	id = "ncr_gate"
 	},
-/turf/open/floor/plating/ms13/ground/desertalt,
+/turf/open/floor/plating/ms13/ground/road,
 /area/ms13/ncr)
 "biV" = (
 /obj/structure/railing/ms13/solo/industrial{
@@ -3148,8 +3148,8 @@
 	dir = 4
 	},
 /obj/machinery/button/ms13{
-	id = "bos_east_shutters";
-	name = "checkpoint button";
+	id = "bos_gate";
+	name = "gate button";
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
@@ -4479,7 +4479,7 @@
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
 "ebd" = (
-/obj/structure/sink/ms13{
+/obj/structure/sink/ms13/functional{
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/navy,
@@ -4759,7 +4759,7 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
 	id = "ncr_gate"
 	},
-/turf/open/floor/plating/ms13/ground/desertalt,
+/turf/open/floor/plating/ms13/ground/road,
 /area/ms13/ncr)
 "eoA" = (
 /obj/structure/bonfire/ms13/fire_barrel,
@@ -4874,9 +4874,7 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/factory)
 "esX" = (
-/obj/structure/sink/ms13/functional/tainted{
-	pixel_y = 14
-	},
+/obj/structure/sink/ms13/functional,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "etm" = (
@@ -7512,7 +7510,7 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/right{
 	id = "ncr_gate"
 	},
-/turf/open/floor/plating/ms13/ground/desertalt,
+/turf/open/floor/plating/ms13/ground/road,
 /area/ms13/ncr)
 "gYX" = (
 /obj/structure/ms13/storage/large/medical{
@@ -10620,7 +10618,10 @@
 /turf/open/floor/wood/ms13/common,
 /area/ms13/town)
 "kdU" = (
-/obj/structure/ms13/wall_decor/clock,
+/obj/machinery/button/ms13{
+	id = "bos_east_shutters";
+	name = "checkpoint button"
+	},
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "kes" = (
@@ -11170,7 +11171,7 @@
 /turf/open/floor/ms13/tile/large/black,
 /area/ms13/town)
 "kEk" = (
-/obj/structure/sink/ms13,
+/obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "kEl" = (
@@ -12577,7 +12578,7 @@
 /obj/structure/mirror/ms13{
 	pixel_y = 28
 	},
-/obj/structure/sink/ms13,
+/obj/structure/sink/ms13/functional/tainted,
 /turf/open/floor/ms13/tile/brown,
 /area/ms13/goldman/building)
 "lQQ" = (
@@ -12992,9 +12993,6 @@
 /turf/open/floor/ms13/tile,
 /area/ms13/town)
 "moU" = (
-/obj/structure/railing/ms13/sewer{
-	dir = 8
-	},
 /obj/structure/railing/ms13/sewer,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/goldman/building)
@@ -16066,11 +16064,6 @@
 	pixel_y = 5;
 	pixel_x = 1
 	},
-/obj/machinery/button/ms13{
-	id = "bos_west_shutters";
-	name = "checkpoint button";
-	dir = 4
-	},
 /obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
@@ -16638,12 +16631,6 @@
 /obj/item/pickaxe/ms13,
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp)
-"pIK" = (
-/obj/structure/table/ms13/no_smooth/counter/metal{
-	dir = 1
-	},
-/turf/open/floor/ms13/concrete,
-/area/ms13/ncr/building)
 "pIS" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -17299,10 +17286,10 @@
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
 "qow" = (
-/obj/structure/table/ms13/no_smooth/cable_reel,
-/obj/structure/ms13/lamp/mining_lamp/on,
-/turf/open/floor/plating/ms13/ground/desertalt,
-/area/ms13/legioncamp)
+/obj/structure/ms13/departure,
+/obj/effect/turf_decal/ms13/road/horizontalline,
+/turf/open/floor/plating/ms13/ground/road,
+/area/ms13/desert)
 "qoH" = (
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
@@ -21181,9 +21168,6 @@
 /area/ms13/town)
 "tUr" = (
 /obj/structure/table/ms13/metal/grate,
-/obj/machinery/light/ms13/bulb/industrial{
-	dir = 1
-	},
 /obj/item/ms13/fluff/chems,
 /obj/effect/spawner/random/ms13/medical/lowrandom,
 /obj/effect/spawner/random/ms13/medical/lowrandom,
@@ -21700,11 +21684,6 @@
 /area/ms13/town)
 "uAS" = (
 /obj/structure/table/ms13/metal/alt,
-/obj/machinery/button/ms13{
-	id = "bos_gate";
-	name = "gate button";
-	dir = 4
-	},
 /obj/item/radio/ms13/ham/receiver,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
@@ -23354,7 +23333,7 @@
 /obj/machinery/light/ms13{
 	dir = 1
 	},
-/obj/structure/ms13/storage/vent,
+/obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "whx" = (
@@ -24322,7 +24301,6 @@
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
 "xkn" = (
-/obj/structure/filingcabinet/ms13/short,
 /obj/machinery/light/ms13/bulb/industrial{
 	dir = 4
 	},
@@ -25315,9 +25293,9 @@ blm
 blm
 blm
 blm
-blm
-blm
-blm
+lNx
+qow
+lNx
 blm
 blm
 blm
@@ -25516,11 +25494,11 @@ blm
 blm
 blm
 blm
-blm
-blm
-blm
-blm
-blm
+oSs
+hQa
+hQa
+hQa
+oSs
 blm
 blm
 blm
@@ -25717,12 +25695,12 @@ blm
 blm
 blm
 blm
-blm
-blm
-blm
-blm
-blm
-blm
+oSs
+oSs
+hQa
+wHx
+hQa
+oSs
 blm
 blm
 blm
@@ -25918,15 +25896,15 @@ blm
 blm
 blm
 blm
-blm
 oSs
 oSs
-blm
-blm
-blm
-blm
-blm
-blm
+oSs
+hQa
+hQa
+hQa
+oSs
+oSs
+oSs
 blm
 oSs
 oSs
@@ -26123,13 +26101,13 @@ oSs
 oSs
 oSs
 oSs
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
 oSs
-blm
-blm
-blm
 oSs
 oSs
 oSs
@@ -26325,9 +26303,9 @@ oSs
 oSs
 oSs
 oSs
-oSs
-oSs
-oSs
+hQa
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -26527,9 +26505,9 @@ oSs
 oSs
 oSs
 oSs
-oSs
-oSs
-oSs
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
@@ -26729,9 +26707,9 @@ oSs
 oSs
 oSs
 oSs
-oSs
-oSs
-oSs
+hQa
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -26928,12 +26906,12 @@ oSs
 oSs
 oSs
 oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
@@ -27130,12 +27108,12 @@ oSs
 oSs
 hgp
 oSs
+hgp
 oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+gir
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -27330,14 +27308,14 @@ qpO
 ecq
 oSs
 oSs
-oSs
-oSs
+hgp
+hgp
 hgp
 oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
@@ -27531,15 +27509,15 @@ pCK
 qpO
 nMh
 oSs
-oSs
-oSs
-oSs
 hgp
 oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hQa
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -27729,19 +27707,19 @@ owa
 oFw
 oFw
 pup
-pIK
+oFw
 qpO
 nMh
 oSs
-oSs
-oSs
-oSs
 hgp
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
@@ -27934,16 +27912,16 @@ pxT
 vro
 qpO
 oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hQa
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -28135,17 +28113,17 @@ eeI
 eeI
 qpO
 qpO
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hQa
+wHx
+hQa
 oSs
 oSs
 oSs
@@ -28337,17 +28315,17 @@ pXu
 sFz
 sFz
 sFz
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hQa
+hQa
+hQa
 oSs
 oSs
 oSs
@@ -28965,7 +28943,7 @@ hQa
 hQa
 hQa
 hQa
-hQa
+wUC
 hQa
 hQa
 hQa
@@ -29145,14 +29123,14 @@ pXu
 sFz
 sFz
 sFz
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -29190,7 +29168,7 @@ oSs
 oSs
 oSs
 oSs
-oSs
+nmS
 oSs
 oSs
 oSs
@@ -29248,7 +29226,7 @@ hQa
 hQa
 wHx
 hQa
-hQa
+gir
 oSs
 hgp
 hgp
@@ -29348,13 +29326,13 @@ sFz
 mPb
 sFz
 oSs
+hgp
+hgp
 oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -29411,7 +29389,7 @@ oSs
 oSs
 hQa
 hQa
-hQa
+gir
 jJD
 mnl
 mnl
@@ -29550,13 +29528,13 @@ sFz
 sFz
 sFz
 hgp
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -29753,12 +29731,12 @@ sFz
 sFz
 hgp
 hgp
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -29955,12 +29933,12 @@ sFz
 qcn
 hgp
 hgp
-oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -30158,11 +30136,11 @@ qjF
 hgp
 hgp
 oSs
-oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -30361,8 +30339,8 @@ hgp
 hgp
 oSs
 oSs
-oSs
-oSs
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -34057,7 +34035,7 @@ oSs
 oSs
 hQa
 wHx
-hQa
+gir
 jJD
 mnl
 mnl
@@ -45746,8 +45724,8 @@ gFn
 ezs
 fcO
 fcO
-bdQ
-dyO
+fcO
+fcO
 sct
 blm
 oSs
@@ -46362,7 +46340,7 @@ oSs
 jJD
 hQa
 hQa
-hQa
+gir
 jJD
 cFc
 uAb
@@ -47636,7 +47614,7 @@ iNR
 oSs
 oSs
 oSs
-nmS
+oSs
 hgp
 hgp
 oSs
@@ -49236,7 +49214,7 @@ hQa
 oSs
 oSs
 oSs
-gir
+hQa
 hQa
 hQa
 eeM
@@ -50066,7 +50044,7 @@ oSs
 oSs
 oSs
 oSs
-nmS
+oSs
 oSs
 oSs
 hgp
@@ -50886,7 +50864,7 @@ hgp
 hgp
 oSs
 oSs
-nmS
+oSs
 hgp
 hgp
 hgp
@@ -51277,7 +51255,7 @@ hgp
 hgp
 qhT
 hgp
-aJA
+hgp
 hgp
 oSs
 oSs
@@ -51286,7 +51264,7 @@ hgp
 hgp
 pOP
 pOP
-aJA
+hgp
 hgp
 hgp
 oSs
@@ -52079,7 +52057,7 @@ oSs
 iNR
 oSs
 oSs
-nmS
+oSs
 hgp
 oSs
 oSs
@@ -52488,7 +52466,7 @@ hgp
 vAv
 oSs
 hgp
-mxc
+hgp
 hgp
 hgp
 hgp
@@ -52701,7 +52679,7 @@ hgp
 hgp
 hgp
 hgp
-aJA
+hgp
 hgp
 iNr
 tmC
@@ -53751,7 +53729,7 @@ cXR
 jJD
 hQa
 hQa
-hQa
+gir
 jJD
 oSs
 tPj
@@ -54929,7 +54907,7 @@ pwF
 hgp
 hgp
 hgp
-aJA
+hgp
 hgp
 oSs
 oSs
@@ -59149,7 +59127,7 @@ blm
 blm
 eWH
 eWH
-eWH
+hnZ
 ybl
 pIG
 vdx
@@ -60159,7 +60137,7 @@ blm
 eWH
 rTB
 eWH
-qow
+bSw
 hnZ
 hnZ
 hnZ
@@ -62070,7 +62048,7 @@ oSs
 jJD
 hQa
 hQa
-hQa
+gir
 xmr
 tSm
 ini
@@ -62761,8 +62739,8 @@ hQa
 hQa
 hQa
 hQa
-oSs
-oSs
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -62963,8 +62941,8 @@ hQa
 hQa
 hQa
 hQa
-oSs
-oSs
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -63097,7 +63075,7 @@ tmC
 rzA
 cXR
 jJD
-hQa
+wUC
 wHx
 hQa
 jJD
@@ -63165,10 +63143,10 @@ hQa
 wHx
 hQa
 hQa
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -63368,10 +63346,10 @@ hQa
 hQa
 hQa
 hgp
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
 oSs
 oSs
 cIY
@@ -63570,11 +63548,11 @@ hQa
 hQa
 hQa
 hgp
+hgp
+hgp
 oSs
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
 oSs
 pGp
 jls
@@ -63772,12 +63750,12 @@ wHx
 hQa
 hQa
 hgp
+oSs
 hgp
 hgp
-oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
 iSs
 fpH
 vAR
@@ -63977,9 +63955,9 @@ hgp
 hgp
 hgp
 hgp
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
 iSs
 iSs
 mOK
@@ -64786,8 +64764,8 @@ hgp
 hgp
 hgp
 hgp
-oSs
-oSs
+hgp
+hgp
 onG
 iSs
 xTU
@@ -64984,12 +64962,12 @@ wHx
 hQa
 hQa
 hgp
-oSs
 hgp
 oSs
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
+hgp
 iSs
 cNE
 vAR
@@ -65187,9 +65165,9 @@ hQa
 hQa
 hgp
 hgp
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
 oSs
 oSs
 cfM
@@ -65388,9 +65366,9 @@ hQa
 hQa
 hQa
 hgp
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -65589,9 +65567,9 @@ hQa
 wHx
 hQa
 hQa
-oSs
-oSs
-oSs
+hgp
+hgp
+hgp
 oSs
 oSs
 oSs
@@ -65791,7 +65769,7 @@ hQa
 hQa
 hQa
 gir
-oSs
+hgp
 oSs
 oSs
 oSs
@@ -65993,7 +65971,7 @@ hQa
 hQa
 hQa
 hQa
-oSs
+hgp
 oSs
 oSs
 oSs
@@ -67913,7 +67891,7 @@ kIS
 vvn
 rEm
 aQQ
-aQQ
+afs
 tUr
 rEm
 blm

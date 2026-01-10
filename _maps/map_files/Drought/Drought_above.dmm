@@ -3695,11 +3695,11 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
 "mm" = (
-/obj/structure/sink/ms13{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/mirror/ms13{
+	dir = 4
+	},
+/obj/structure/sink/ms13/functional{
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/brown,
@@ -4182,12 +4182,12 @@
 /turf/open/openspace/ms13,
 /area/ms13/carlin/interior)
 "nP" = (
-/obj/structure/sink/ms13{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/mirror/ms13{
 	pixel_y = 28
+	},
+/obj/structure/sink/ms13/functional{
+	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/ncr/building)
@@ -4901,10 +4901,10 @@
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
 "qb" = (
-/obj/structure/sink/ms13{
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/sink/ms13/functional{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/ncr/building)
 "qc" = (
@@ -8391,10 +8391,10 @@
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "Bj" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/sink/ms13/functional{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "Bk" = (
@@ -8670,13 +8670,11 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
 "Ci" = (
-/obj/structure/sink/ms13{
-	pixel_y = 2
-	},
 /obj/structure/mirror/ms13{
 	pixel_y = 28
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/brown,
 /area/ms13/legioncamp/building)
 "Cj" = (
@@ -10251,11 +10249,11 @@
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/town)
 "HF" = (
-/obj/structure/sink/ms13,
 /obj/structure/mirror/ms13{
 	pixel_y = 28
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/brown,
 /area/ms13/goldman/building)
 "HG" = (
@@ -15605,9 +15603,9 @@ MG
 MG
 MG
 MG
-MG
-MG
-MG
+qi
+qi
+qi
 MG
 MG
 MG
@@ -15806,11 +15804,11 @@ MG
 MG
 MG
 MG
-MG
-MG
-MG
-MG
-MG
+qi
+qi
+qi
+qi
+qi
 MG
 MG
 MG
@@ -16007,12 +16005,12 @@ MG
 MG
 MG
 MG
-MG
-MG
-MG
-MG
-MG
-MG
+qi
+qi
+qi
+qi
+qi
+qi
 MG
 MG
 MG
@@ -16208,15 +16206,15 @@ MG
 MG
 MG
 MG
-MG
 qi
 qi
-MG
-MG
-MG
-MG
-MG
-MG
+qi
+qi
+qi
+qi
+qi
+qi
+qi
 MG
 qi
 qi
@@ -16417,9 +16415,9 @@ qi
 qi
 qi
 qi
-MG
-MG
-MG
+qi
+qi
+qi
 qi
 qi
 qi
