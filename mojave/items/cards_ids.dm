@@ -111,6 +111,14 @@
 	icon_state = "ncrdogtag"
 	assignment = "NCR Trooper"
 
+/obj/item/card/id/ms13/ncr/rear_echelon
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Rear Echelon' and the rank is listed as 'Private'."
+	assignment = "NCR Rear Echelon"
+
+/obj/item/card/id/ms13/ncr/corporal
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Trooper' and the rank is listed as 'Corporal'."
+	assignment = "NCR Corporal"
+
 /obj/item/card/id/ms13/ncr/mp
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police' and the rank is listed as 'Private First Class'."
 	assignment = "NCR Military Police"
@@ -130,21 +138,17 @@
 	return ..()
 
 /obj/item/card/id/ms13/ncr/medic
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Medic' and the rank is listed as 'Specialist'."
-	assignment = "NCR Medic"
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Combat Medic' and the rank is listed as 'Corporal'."
+	assignment = "NCR Combat Medic"
 
 /obj/item/card/id/ms13/ncr/medic/mp
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police Medic' and the rank is listed as 'Corporal'."
 	assignment = "NCR MP Medic"
 	access = list(ACCESS_TOWN_DOCTOR, ACCESS_TOWN_LAW)
 
-/obj/item/card/id/ms13/ncr/engineer
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Engineer' and the rank is listed as 'Specialist'."
-	assignment = "NCR Engineer"
-
 /obj/item/card/id/ms13/ncr/radioman
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Radioman' and the rank is listed as 'Corporal'."
-	assignment = "NCR Radioman"
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Radio Operator' and the rank is listed as 'Corporal'."
+	assignment = "NCR Radio Operator"
 
 /obj/item/card/id/ms13/ncr/sergeant
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Squad Leader' and the rank is listed as 'Sergeant'."
@@ -152,16 +156,34 @@
 
 /obj/item/card/id/ms13/ncr/sergeant/mp
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police NCO' and the rank is listed as 'Sergeant'."
-	assignment = "NCR MP Sergeant"
+	assignment = "NCR Sergeant"
 	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_WORKER, ACCESS_TOWN_DOCTOR)
 
-/obj/item/card/id/ms13/ncr/staff_sergeant
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Platoon Sergeant' and the rank is listed as 'Staff Sergeant'."
-	assignment = "NCR Staff Sergeant"
-
 /obj/item/card/id/ms13/ncr/lieutenant
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Platoon Commander' and the rank is listed as 'First Lieutenant'."
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Lieutenant' and the rank is listed as 'First Lieutenant'."
 	assignment = "NCR Lieutenant"
+
+/obj/item/card/id/ms13/ncr/medical_officer
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Medical Officer' and the rank is listed as 'Second Lieutenant'."
+	assignment = "NCR Medical Officer"
+
+/obj/item/card/id/ms13/ncr/quartermaster
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Quartermaster' and the rank is listed as 'Second Lieutenant'."
+	assignment = "NCR Quartermaster"
+
+/obj/item/card/id/ms13/ncr/ranger
+	name = "\improper NCR ranger badge"
+	desc = "A gold rimmed Ranger badge with a silver star. Worn by your average NCR Ranger."
+	icon_state = "ranger"
+	assignment = "NCR Ranger"
+	shows_age = FALSE
+
+/obj/item/card/id/ms13/ncr/ranger/vet
+	name = "\improper NCR veteran ranger badge"
+	desc = "A Ranger badge with a solid gold star, issued to NCR Rangers that have shown exceptional merit and with many years of experience in the field."
+	icon_state = "ranger_elite"
+	assignment = "NCR Veteran Ranger"
+	shows_age = FALSE
 
 /obj/item/card/id/ms13/legrecruit
 	name = "recruit blade"
@@ -210,17 +232,25 @@
 	assignment = "Legion Blacksmith"
 	shows_age = FALSE
 
+/obj/item/card/id/ms13/medicus
+	name = "medicus medallion"
+	desc = "A marked dark colored disc stamped with the Legion's Bull insignia. Belongs to a Legion Medicus."
+	icon_state = "leg_aux"
+	assignment = "Legion Medicus"
+	shows_age = FALSE
+
+/obj/item/card/id/ms13/camp_auxilia
+	name = "Camp Auxilia medallion"
+	desc = "A marked dark colored disc stamped with the Legion's Bull insignia. Belongs to a Legion Camp Auxilia."
+	icon_state = "leg_aux"
+	assignment = "Legion Camp Auxilia"
+	shows_age = FALSE
+
 /obj/item/card/id/ms13/legveteran
 	name = "veteran medallion"
 	desc = "A well worn silver disc stamped with the Legion's Bull insignia. Belongs to a Veteran, and reeks of iron."
 	icon_state = "leg_veteran"
 	assignment = "Veteran Legionary"
-	shows_age = FALSE
-
-/obj/item/card/id/ms13/legveteran/vex
-	name = "vexillarius medallion"
-	desc = "A well worn silver disc stamped with the Legion's Bull insignia. Belongs to a Legion Vexillarius, and reeks of iron."
-	assignment = "Legion Vexillarius"
 	shows_age = FALSE
 
 /obj/item/card/id/ms13/legveteran/decanus
@@ -301,49 +331,56 @@
 	assignment = "Desert Ranger Doctor"
 
 /obj/item/card/id/ms13/drought_denizen
-	name = "\improper Barony identification papers"
-	desc = "Stamped identification papers for a citizen of the Barony. This has no special assignment on it and likely belongs to a typical Denizen."
+	name = "\improper Carlin identification papers"
+	desc = "Stamped identification papers for a citizen of Carlin. This has no special assignment on it and likely belongs to a typical Denizen."
 	icon_state = "drought_town"
-	assignment = "Barony Denizen"
+	assignment = "Carlin Denizen"
 
 /obj/item/card/id/ms13/drought_visa
-	name = "\improper Barony identification papers"
-	desc = "Freshly stamped identification papers for a new citizen of the Barony. The freshness of these papers likely indicate these are for a recent arrival to the Barony."
+	name = "\improper Carlin identification papers"
+	desc = "Freshly stamped identification papers for a new citizen of Carlin. The freshness of these papers likely indicate these are for a recent arrival to Carlin."
 	icon_state = "drought_town"
-	assignment = "Barony Migrant"
+	assignment = "Carlin Migrant"
 
 /obj/item/card/id/ms13/drought_visa/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/card/id/ms13/drought_baron))
+	if(istype(W, /obj/item/card/id/ms13/drought_mayor))
 		registered_name = stripped_input(user, "Who do you want to grant these papers to?", , "", MAX_NAME_LEN)
 		to_chat(user, "You scribble [registered_name] for the name on the papers.")
 		update_label()
 	return ..()
 
-/obj/item/card/id/ms13/drought_slave
-	name = "\improper Barony identification papers"
-	desc = "Stamped identification papers for a citizen of the Barony. This has special clearance for labor and maintenance duties included."
-	assignment = "Barony Laborer"
+/obj/item/card/id/ms13/drought_laborer
+	name = "\improper Carlin identification papers"
+	desc = "Stamped identification papers for a citizen of Carlin. This has special clearance for labor and maintenance duties included."
+	assignment = "Carlin Laborer"
 	icon_state = "drought_town"
 
 /obj/item/card/id/ms13/drought_barkeep
-	name = "\improper Barony identification papers"
-	desc = "Stamped identification papers for a citizen of the Barony. This has special clearance for operation of a dining and drinking establishment within the Barony."
-	assignment = "Barony Barkeep"
+	name = "\improper Carlin identification papers"
+	desc = "Stamped identification papers for a citizen of the Carlin. This has special clearance for operation of a dining and drinking establishment within Carlin."
+	assignment = "Carlin Barkeep"
 	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/drought_shopkeep
+	name = "\improper Carlin identification papers"
+	desc = "Stamped identification papers for a citizen of the Carlin. This has special clearance for operation of a shop within Carlin."
+	assignment = "Carlin Shopkeep"
+	icon_state = "drought_town"
+	access = list(ACCESS_CARLIN_SHOPKEEP)
 
 /obj/item/card/id/ms13/drought_doctor
-	name = "\improper Barony identification papers"
-	desc = "Stamped identification papers for a citizen of the Barony. This has special clearance for operation of a clinic and medical duties within the Barony."
-	assignment = "Barony Clinician"
+	name = "\improper Carlin identification papers"
+	desc = "Stamped identification papers for a citizen of Carlin. This has special clearance for operation of a clinic and medical duties within Carlin."
+	assignment = "Carlin Clinician"
 	icon_state = "drought_town"
-	access = list(ACCESS_BARONY_DOCTOR)
+	access = list(ACCESS_CARLIN_DOCTOR)
 
 /obj/item/card/id/ms13/drought_medical
-	name = "\improper Barony identification papers"
-	desc = "Freshly stamped identification papers for a citizen of the Barony. This is specifically designated for individuals assisting the operation of the Barony's clinic."
-	assignment = "Barony Medical Support"
+	name = "\improper Carlin identification papers"
+	desc = "Freshly stamped identification papers for a citizen of Carlin. This is specifically designated for individuals assisting the operation of the Carlin's clinic."
+	assignment = "Carlin Medical Support"
 	icon_state = "drought_town"
-	access = list(ACCESS_BARONY_DOCTOR)
+	access = list(ACCESS_CARLIN_DOCTOR)
 
 /obj/item/card/id/ms13/drought_medical/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/card/id/ms13/drought_doctor))
@@ -354,19 +391,27 @@
 
 /obj/item/card/id/ms13/drought_enforcer
 	name = "enforcer's golden pin"
-	desc = "A gold talon pin, worn by Enforcers of the Baron. An intimidating sight."
-	assignment = "Barony Enforcer"
+	desc = "A gold talon pin, worn by Enforcers of Carlin. An intimidating sight."
+	assignment = "Carlin Enforcer"
 	icon_state = "drought_enforcer"
-	access = list(ACCESS_BARONY_RESTRICTED, ACCESS_BARONY_DOCTOR)
+	access = list(ACCESS_CARLIN_RESTRICTED, ACCESS_CARLIN_DOCTOR)
 	shows_age = FALSE
 	just_initials = TRUE
 
-/obj/item/card/id/ms13/drought_baron
-	name = "\improper Baron's golden pin"
-	desc = "A golden pin with a skull belonging to the Baron himself."
+/obj/item/card/id/ms13/drought_sheriff
+	name = "\improper Sheriff's golden pin"
+	desc = "A golden pin with a skull belonging to the Sheriff himself."
 	icon_state = "baron"
-	assignment = "The Baron"
-	access = list(ACCESS_BARONY_RESTRICTED, ACCESS_BARON_QUARTERS, ACCESS_BARONY_DOCTOR)
+	assignment = "The Sheriff"
+	access = list(ACCESS_CARLIN_RESTRICTED, ACCESS_MAYOR_QUARTERS, ACCESS_CARLIN_DOCTOR, ACCESS_CARLIN_SHOPKEEP)
+	shows_age = FALSE
+
+/obj/item/card/id/ms13/drought_mayor
+	name = "\improper Mayor's golden pin"
+	desc = "A golden pin with a skull belonging to the Mayor himself."
+	icon_state = "baron"
+	assignment = "The Sheriff"
+	access = list(ACCESS_CARLIN_RESTRICTED, ACCESS_MAYOR_QUARTERS, ACCESS_CARLIN_DOCTOR, ACCESS_CARLIN_SHOPKEEP)
 	shows_age = FALSE
 
 /obj/item/card/id/ms13/drylander
@@ -460,29 +505,32 @@
 // Brotherhood IDs //
 
 /obj/item/card/id/ms13/bos
-	name = "\improper BoS holotag"
+	name = "\improper Brotherhood holotag"
 	desc = "A set of dogtags, identifying the wearer as a member of the Brotherhood of Steel."
 	icon_state = "bos_holotag"
 	access = list(ACCESS_BROTHERHOOD)
 
-/obj/item/card/id/ms13/bos/headpaladin
-	assignment = "BoS Head Paladin"
-	access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HPALADIN)
+/obj/item/card/id/ms13/bos/initiate
+	assignment = "\improper Brotherhood Initiate"
 
-/obj/item/card/id/ms13/bos/paladin
-	assignment = "BoS Paladin"
+/obj/item/card/id/ms13/bos/base_staff
+	assignment = "\improper Brotherhood Base Staff"
 
 /obj/item/card/id/ms13/bos/knight
-	assignment = "BoS Knight"
+	assignment = "\improper Brotherhood Knight"
 
-/obj/item/card/id/ms13/bos/initiate
-	assignment = "BoS Initiate"
+/obj/item/card/id/ms13/bos/paladin
+	assignment = "\improper Brotherhood Paladin"
 
-/obj/item/card/id/ms13/bos/headscribe
-	assignment = "BoS Head Scribe"
+/obj/item/card/id/ms13/bos/headknight
+	assignment = "\improper Brotherhood Head Knight"
+	access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HKNIGHT)
 
 /obj/item/card/id/ms13/bos/scribe
-	assignment = "BoS Scribe"
+	assignment = "\improper Brotherhood Scribe"
+
+/obj/item/card/id/ms13/bos/headscribe
+	assignment = "\improper Brotherhood Head Scribe"
 
 // Combat Test IDs //
 

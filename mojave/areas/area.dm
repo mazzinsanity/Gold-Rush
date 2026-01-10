@@ -307,14 +307,14 @@
 	outdoors = FALSE
 	dissipation_rate = 0.18 //not much escapes enclosed rooms
 
-/area/ms13/water_baron
-	name = "The Barony"
+/area/ms13/carlin
+	name = "Carlin"
 	icon_state = "barony"
 	ambientsounds = GENERIC_AMBIENCE
 	atmosphere_volume = 150
 
-/area/ms13/water_baron/interior
-	name = "The Barony building"
+/area/ms13/carlin/interior
+	name = "Carlin building"
 	icon_state = "baronyinterior"
 	dissipation_rate = 0.18 //not much escapes enclosed rooms
 

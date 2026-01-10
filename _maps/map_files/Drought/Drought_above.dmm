@@ -27,7 +27,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ag" = (
 /obj/structure/chair/comfy/ms13/retro{
 	dir = 1
@@ -273,11 +273,11 @@
 /obj/structure/table/ms13/crafting/workbench,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aV" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "aW" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 8
@@ -303,7 +303,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ba" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -342,7 +342,7 @@
 	},
 /obj/item/ms13/fluff/ashtray,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "bf" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/turf_decal/ms13/covering/tiles/white,
@@ -377,7 +377,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bl" = (
 /obj/structure/railing/ms13/solo{
 	dir = 1
@@ -388,7 +388,7 @@
 "bm" = (
 /obj/structure/ms13/lamp/mining_lamp,
 /turf/closed/indestructible/rock/ms13/drought,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "bn" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -470,7 +470,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/ammo/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/ammo/lowrandom,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "by" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/gun/lowrandom,
@@ -480,14 +480,14 @@
 /obj/effect/turf_decal/ms13/graffiti/no_way,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bA" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/yellowed,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bD" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/blue/stripes,
 /obj/effect/turf_decal/ms13/graffiti/many_eyes,
@@ -571,12 +571,12 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bR" = (
 /obj/structure/ms13/rug/rubber,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "bS" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/metal/constructed,
@@ -586,7 +586,7 @@
 "bT" = (
 /obj/structure/ms13/cave_decor/support/wall,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "bU" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
@@ -685,7 +685,7 @@
 /obj/structure/ms13/rug/yellow,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cm" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -741,7 +741,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cv" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 4
@@ -758,7 +758,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cy" = (
 /obj/machinery/door/unpowered/ms13/wood{
 	dir = 8
@@ -811,11 +811,11 @@
 /obj/structure/ms13/pipes/piped,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "cJ" = (
 /obj/structure/closet/crate/ms13/woodcrate/uncrowbarrable,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "cM" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/filingcabinet/ms13/short{
@@ -904,7 +904,7 @@
 /obj/structure/ms13/tank/massive,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "db" = (
 /obj/structure/ms13/storage/trashcan,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1006,7 +1006,7 @@
 /obj/structure/ms13/barrel/quadruple/red/two,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dt" = (
 /obj/structure/ms13/pallet,
 /obj/structure/ms13/trash/cardboard,
@@ -1059,7 +1059,7 @@
 /obj/structure/table/ms13/low_wall/concrete,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dC" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -1088,12 +1088,12 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dH" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/dresser/ms13/orange,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dI" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/old,
@@ -1106,7 +1106,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dK" = (
 /obj/structure/ms13/tv/rad_king{
 	pixel_y = 8
@@ -1155,7 +1155,7 @@
 /obj/structure/ms13/pot/plant,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dR" = (
 /obj/structure/ms13/skeleton,
 /obj/machinery/light/ms13{
@@ -1209,7 +1209,7 @@
 	},
 /obj/effect/spawner/random/ms13/food/packaged,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "dY" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/trash/food/misc,
@@ -1243,7 +1243,7 @@
 /obj/item/radio/ms13/ham/receiver/radioking/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ef" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -1279,7 +1279,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/dresser/ms13/torquise/tall,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ej" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
@@ -1418,7 +1418,7 @@
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eI" = (
 /turf/closed/wall/ms13/scrap,
 /area/ms13/desert)
@@ -1451,7 +1451,7 @@
 "eM" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "eN" = (
 /obj/machinery/door/unpowered/ms13/metal/red,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1465,7 +1465,7 @@
 "eR" = (
 /obj/effect/spawner/random/ms13/smokeable/highrandom,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "eT" = (
 /obj/structure/table/ms13/low_wall/siding,
 /obj/structure/window/fulltile/ms13/glass,
@@ -1476,6 +1476,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "eW" = (
@@ -1539,7 +1540,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/bars/rusty,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fe" = (
 /obj/structure/table/ms13/metal/alt,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1551,7 +1552,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/ammo/highrandom,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fg" = (
 /obj/effect/turf_decal/ms13/covering/paint/white,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1563,7 +1564,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fi" = (
 /obj/structure/ms13/storage/large/shelf,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1655,7 +1656,7 @@
 /obj/effect/spawner/random/ms13/food/trash,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fB" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/blue,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -1769,13 +1770,13 @@
 /area/ms13/town)
 "fQ" = (
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fR" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/roof,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "fS" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8
@@ -1794,7 +1795,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "fW" = (
 /obj/structure/ms13/fence/vertical/wire/east/barb,
 /turf/open/openspace/ms13,
@@ -1814,7 +1815,7 @@
 /obj/structure/ms13/large_pipe/ground,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ga" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/unpowered/ms13/metal{
@@ -1831,7 +1832,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gc" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/light/ms13/bulb{
@@ -1886,7 +1887,7 @@
 /obj/item/radio/ms13/ham/receiver/radioking/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gk" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /obj/effect/turf_decal/ms13/graffiti/stop,
@@ -1937,7 +1938,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gr" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -1979,14 +1980,14 @@
 /obj/structure/table/ms13/no_smooth/dice,
 /obj/effect/spawner/random/ms13/smokeable/general,
 /turf/open/floor/plating/ms13/roof,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "gw" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/light/ms13{
 	dir = 1
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gx" = (
 /obj/structure/closet/ms13/metal,
 /obj/structure/ms13/wall_decor/clock,
@@ -2073,7 +2074,7 @@
 /obj/structure/ms13/pipes/horizontal/single/down,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gK" = (
 /obj/structure/ms13/lamp/medical_lamp{
 	dir = 1
@@ -2110,7 +2111,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/lattice/catwalk/ms13,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gP" = (
 /obj/item/ms13/fluff/ruined_book{
 	pixel_y = 3
@@ -2143,12 +2144,12 @@
 	},
 /obj/structure/closet/crate/ms13/woodcrate/compact,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "gV" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/light/ms13/bulb,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "gW" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/window/fulltile/ms13/glass,
@@ -2196,7 +2197,7 @@
 /obj/effect/turf_decal/ms13/graffiti/moyai,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "he" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -2239,7 +2240,7 @@
 "hj" = (
 /obj/structure/chair/ms13/metal,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hk" = (
 /obj/structure/ms13/storage/shelf/wood/alt{
 	dir = 4
@@ -2282,12 +2283,12 @@
 /obj/structure/ms13/pipes/vertical/east/valve,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hr" = (
 /obj/effect/turf_decal/ms13/graffiti/gangshit,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hs" = (
 /obj/structure/railing/ms13/solo{
 	dir = 8
@@ -2365,7 +2366,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hE" = (
 /obj/item/radio/ms13/ham/receiver/radioking/wood,
 /obj/structure/table/ms13/no_smooth/wood/low,
@@ -2392,7 +2393,7 @@
 /area/ms13/town)
 "hI" = (
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hK" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 1
@@ -2401,7 +2402,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "hL" = (
 /obj/structure/ms13/rug/mat/welcome{
 	dir = 1
@@ -2452,7 +2453,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "hT" = (
 /obj/structure/bed/ms13/sleepingbag/green,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -2510,7 +2511,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "id" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/railing/ms13/solo/industrial{
@@ -2568,7 +2569,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "il" = (
 /obj/structure/ms13/storage/shelf/wood/alt{
 	dir = 1
@@ -2634,7 +2635,7 @@
 /obj/item/clothing/under/ms13/wasteland/mechanicprewar/mechanicgreen,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iB" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/dirty,
@@ -2651,7 +2652,7 @@
 	id = "hotel-r5-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iD" = (
 /obj/structure/railing/ms13/solo{
 	dir = 1
@@ -2689,7 +2690,7 @@
 "iK" = (
 /obj/structure/railing/ms13/sewer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "iL" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/machinery/light/ms13/bulb/industrial{
@@ -2786,7 +2787,7 @@
 /obj/structure/ms13/pipes/horizontal/random_alt,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "je" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/button/ms13{
@@ -2794,7 +2795,7 @@
 	id = "hotel-r8-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jf" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
@@ -2813,7 +2814,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/drugs/lowrandom,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jj" = (
 /obj/structure/railing/ms13/solo{
 	dir = 1
@@ -2910,7 +2911,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jA" = (
 /obj/structure/ms13/foundation/variantsix{
 	dir = 4
@@ -2949,7 +2950,7 @@
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "jG" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 4
@@ -2957,10 +2958,10 @@
 /turf/open/floor/ms13/concrete/bricks,
 /area/ms13/town)
 "jH" = (
-/obj/effect/landmark/start/ms13/baron,
+/obj/effect/landmark/start/ms13/carlin_mayor,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "jI" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -3082,7 +3083,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kh" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
@@ -3109,7 +3110,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kn" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/structure/ms13/lamp/makeshift{
@@ -3130,7 +3131,7 @@
 /obj/structure/dresser/ms13/torquise,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "kq" = (
 /obj/structure/ms13/wall_decor/flag,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -3159,7 +3160,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kx" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/trash/papers/two{
@@ -3193,7 +3194,7 @@
 /obj/effect/turf_decal/ms13/graffiti/eyes,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kC" = (
 /obj/structure/chair/ms13/overlaypickup/plastic,
 /turf/open/floor/ms13/concrete,
@@ -3207,7 +3208,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kF" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/turf_decal/ms13/covering/wallpaper/red,
@@ -3264,7 +3265,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "kQ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/industrial/walkway{
@@ -3461,7 +3462,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ly" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/structure/ms13/lamp/makeshift{
@@ -3479,7 +3480,7 @@
 /obj/structure/chair/ms13/metal/broken,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lC" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -3538,7 +3539,7 @@
 /obj/structure/ms13/foundation/common/variantfour,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "lL" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/brown,
@@ -3572,7 +3573,7 @@
 	},
 /obj/structure/railing/ms13/solo,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "lU" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 4
@@ -3631,7 +3632,7 @@
 /obj/structure/ms13/pipes/horizontal/single/inwall,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "md" = (
 /turf/open/openspace/ms13,
 /area/ms13/underground/mountain)
@@ -3640,7 +3641,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mf" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/no_smooth/counter/wood,
@@ -3684,7 +3685,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ml" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/ms13/terminal/wasteland{
@@ -3777,7 +3778,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mB" = (
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/roof/metal,
@@ -3788,7 +3789,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mE" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/tools/hardware,
@@ -3798,12 +3799,12 @@
 "mF" = (
 /obj/structure/ms13/cave_decor/boards/drought/westeast,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "mH" = (
 /obj/structure/ms13/sandbag,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "mI" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/siding/red,
@@ -4025,6 +4026,7 @@
 /obj/structure/ms13/wall_decor/clock,
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/head_scribe,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "ns" = (
@@ -4077,7 +4079,7 @@
 	},
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nD" = (
 /obj/structure/table/ms13/crafting/armorbench,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -4149,7 +4151,7 @@
 /obj/item/card/id/ms13/drought_visa,
 /obj/item/card/id/ms13/drought_visa,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "nL" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -4177,7 +4179,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/pipes/horizontal/single/down,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nP" = (
 /obj/structure/sink/ms13{
 	dir = 4
@@ -4227,14 +4229,14 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nY" = (
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "nZ" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/structure/noticeboard/ms13/cork,
@@ -4482,7 +4484,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "oL" = (
 /obj/structure/table/ms13/wood,
 /obj/structure/ms13/trash/papers{
@@ -4608,7 +4610,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pd" = (
 /obj/structure/chair/ms13/metal{
 	dir = 4
@@ -4622,7 +4624,7 @@
 "pe" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pf" = (
 /obj/structure/ms13/foundation/wide/variantfive{
 	dir = 6
@@ -4686,7 +4688,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pp" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -4717,7 +4719,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pw" = (
 /obj/structure/chair/ms13/metal/stool,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -4791,7 +4793,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "pL" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/wall_decor/clock{
@@ -4980,7 +4982,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qo" = (
 /obj/structure/table/ms13/low_wall/scrap,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -4998,6 +5000,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/head_knight,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "qr" = (
@@ -5121,7 +5124,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "qL" = (
 /obj/structure/ms13/tv/wooden,
 /obj/structure/ms13/wall_decor/clock,
@@ -5146,7 +5149,7 @@
 /obj/effect/spawner/random/ms13/food/trash,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "qP" = (
 /obj/structure/ms13/foundation/wide/variantfive{
 	dir = 5
@@ -5223,7 +5226,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ra" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/storage/large/shelf,
@@ -5240,7 +5243,7 @@
 /obj/structure/bed/ms13/mattress/old,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rf" = (
 /obj/machinery/door/unpowered/ms13/metal{
 	dir = 1
@@ -5250,7 +5253,7 @@
 	id = "hotel-r7-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rg" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/crafting/ammobench,
@@ -5428,7 +5431,7 @@
 	id = "hotel-r5-quarantine"
 	},
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "rI" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/structure/ms13/lamp/makeshift,
@@ -5535,7 +5538,7 @@
 /area/ms13/town)
 "sa" = (
 /turf/open/openspace/ms13,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "sb" = (
 /obj/structure/closet/crate/ms13/footlocker{
 	dir = 4
@@ -5576,7 +5579,7 @@
 /obj/structure/chair/ms13/metal,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sh" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/fancy,
@@ -5586,7 +5589,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sj" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/metal/grate/border{
@@ -5637,7 +5640,7 @@
 /obj/machinery/light/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sr" = (
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -5697,6 +5700,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
+"sA" = (
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/old,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/town_enforcer,
+/turf/open/floor/ms13/concrete,
+/area/ms13/carlin/interior)
 "sB" = (
 /obj/item/ms13_small_flag/usa,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -5734,7 +5744,7 @@
 /obj/structure/ms13/pipes/horizontal/valve,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sH" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
@@ -5820,7 +5830,7 @@
 /obj/structure/chair/comfy/ms13/armchair,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "sW" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/shower/ms13{
@@ -5967,12 +5977,12 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/item/radio/ms13/ham/receiver/radioking/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tx" = (
 /obj/structure/ms13/storage/trashcan,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ty" = (
 /obj/structure/ms13/rug/red{
 	pixel_y = 9
@@ -6021,7 +6031,7 @@
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "tG" = (
 /obj/structure/ms13/trash/papers/three,
 /turf/open/floor/ms13/concrete,
@@ -6030,6 +6040,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/lieutenant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "tJ" = (
@@ -6042,7 +6053,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/large_pipe/corner,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tL" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 4
@@ -6085,14 +6096,14 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tR" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tS" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 1
@@ -6121,7 +6132,7 @@
 /obj/effect/spawner/random/ms13/food/trash,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "tW" = (
 /obj/structure/bed/ms13/sleepingbag/green,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -6242,7 +6253,7 @@
 	id = "hotel-r6-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "us" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/ms13/substation/discharge,
@@ -6255,7 +6266,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uu" = (
 /obj/structure/table/ms13/no_smooth/large/wood/square{
 	dir = 4
@@ -6294,7 +6305,7 @@
 /obj/structure/ms13/pipes/vertical/west/valve,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uz" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/railing/ms13/solo,
@@ -6317,7 +6328,7 @@
 /obj/structure/ms13/rug/red,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uE" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/ms13/roof,
@@ -6342,7 +6353,7 @@
 /obj/structure/table/ms13/no_smooth/wood/stand,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uL" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/pot/plant,
@@ -6416,7 +6427,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "uZ" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 4
@@ -6452,7 +6463,7 @@
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vg" = (
 /obj/machinery/door/unpowered/ms13/wood{
 	dir = 4
@@ -6494,7 +6505,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vm" = (
 /obj/structure/table/ms13/no_smooth/wood/low,
 /obj/item/ms13/fluff/alarmclock,
@@ -6538,12 +6549,12 @@
 /obj/structure/bed/ms13/mattress/stale,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vq" = (
 /obj/structure/ms13/pipes/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vr" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -6570,17 +6581,17 @@
 /obj/effect/turf_decal/trimline/yellow/line,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vw" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "vx" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "vy" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/no_smooth/large/cards,
@@ -6600,7 +6611,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vC" = (
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /turf/closed/wall/ms13/brick/gray,
@@ -6666,7 +6677,7 @@
 /obj/structure/railing/ms13/sewer,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vL" = (
 /obj/structure/ms13/trash/papers{
 	dir = 9
@@ -6686,7 +6697,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/mattress/yellowed,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "vO" = (
 /obj/structure/table/ms13/no_smooth/wood/stand,
 /obj/structure/ms13/rug/fancy{
@@ -6828,7 +6839,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wl" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 1
@@ -6868,7 +6879,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wq" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -7001,7 +7012,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wO" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/carpet,
@@ -7021,10 +7032,10 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/roof,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "wR" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/ms13/wall_decor/flag/rangers,
+/obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "wS" = (
@@ -7033,7 +7044,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "wT" = (
 /obj/structure/table/ms13/no_smooth/wood/low,
 /obj/item/ms13/fluff/ashtray{
@@ -7081,14 +7092,14 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xc" = (
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "xd" = (
 /obj/machinery/light/ms13/bulb/industrial,
 /turf/open/floor/ms13/concrete/industrial,
@@ -7099,7 +7110,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "xf" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -7144,7 +7155,7 @@
 /obj/effect/turf_decal/ms13/graffiti/fuckyou,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xo" = (
 /obj/structure/ms13/skeleton,
 /obj/effect/spawner/random/ms13/melee/lowrandom,
@@ -7164,7 +7175,7 @@
 /obj/structure/table/ms13/crafting/workbench,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xr" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -7220,7 +7231,7 @@
 	dir = 4
 	},
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "xC" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/item/chair/ms13/metal/unfinished,
@@ -7468,7 +7479,7 @@
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ym" = (
 /obj/structure/ms13/barricade,
 /obj/structure/ms13/storage/shelf/wood/alt,
@@ -7496,7 +7507,7 @@
 /obj/structure/ms13/rug/rubber,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yr" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
@@ -7531,7 +7542,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yv" = (
 /obj/structure/ms13/rug/rubber,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -7542,7 +7553,7 @@
 /obj/structure/ms13/storage/bookshelf,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yx" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/machinery/light/ms13{
@@ -7572,7 +7583,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yB" = (
 /obj/structure/ms13/rug/mat,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -7584,7 +7595,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yD" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/low_wall/siding,
@@ -7607,7 +7618,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "yI" = (
 /obj/structure/ms13/rug/red,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -7655,7 +7666,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "yT" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/ms13/trash/food/misc,
@@ -7672,10 +7683,10 @@
 /obj/machinery/light/ms13/bulb,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "yW" = (
 /turf/closed/indestructible/rock/ms13/drought,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "yY" = (
 /obj/machinery/light/ms13/broken{
 	dir = 1
@@ -7803,7 +7814,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "zu" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/plating/ms13/roof/wood,
@@ -7831,7 +7842,7 @@
 /area/ms13/bos/building)
 "zz" = (
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "zA" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 4
@@ -7954,7 +7965,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/gun/lowrandom,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "zU" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 8
@@ -8185,7 +8196,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/railing/ms13/sewer,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "AE" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/closet/crate/ms13/red,
@@ -8220,7 +8231,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "AJ" = (
 /obj/structure/ms13/wall_decor/poster/espionage,
 /turf/open/floor/ms13/concrete,
@@ -8274,7 +8285,7 @@
 /obj/effect/turf_decal/ms13/graffiti/deadcount,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "AS" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/food/trash,
@@ -8360,7 +8371,7 @@
 /area/ms13/goldman/building)
 "Bg" = (
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Bi" = (
 /obj/structure/ms13/fence,
 /obj/item/ms13/fluff/ashtray{
@@ -8421,7 +8432,7 @@
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/railing/ms13/sewer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Br" = (
 /obj/structure/ms13/foundation/variantsix{
 	dir = 5
@@ -8451,7 +8462,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "BA" = (
 /obj/structure/table/ms13/no_smooth/counter/metal/bend,
 /obj/structure/ms13/wall_decor/calendar/blank,
@@ -8578,7 +8589,7 @@
 "BT" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "BU" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 8
@@ -8651,7 +8662,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/smokeable/lowrandom,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ch" = (
 /obj/structure/ms13/trash/papers,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -8741,7 +8752,7 @@
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Cv" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 1
@@ -8794,19 +8805,19 @@
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CD" = (
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/ms13/rug/red,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CE" = (
 /obj/structure/ms13/large_pipe/corner,
 /obj/structure/ms13/pipes/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CF" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -8833,7 +8844,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CJ" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /obj/structure/ms13/rug/fancy{
@@ -8848,7 +8859,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/structure/ms13/wall_decor/flag/rangers,
+/obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "CL" = (
@@ -8856,7 +8867,7 @@
 /obj/effect/spawner/random/ms13/food/junkfood_canned,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CM" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
@@ -8884,7 +8895,7 @@
 /obj/structure/bed/ms13/mattress/yellowed,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "CW" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -8957,7 +8968,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Di" = (
 /obj/structure/ms13/rug/mat{
 	dir = 8
@@ -8978,7 +8989,7 @@
 /area/ms13/goldman/building)
 "Do" = (
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Dp" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 8
@@ -9021,12 +9032,12 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Dv" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/barony,
+/obj/machinery/door/airlock/ms13/carlin,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Dw" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/sandbag,
@@ -9136,7 +9147,7 @@
 "DQ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "DR" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 8
@@ -9144,7 +9155,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/chair/ms13/metal,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "DS" = (
 /obj/structure/ms13/trash/papers/three{
 	pixel_y = -4
@@ -9379,7 +9390,7 @@
 "EC" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "EE" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/closet/ms13/metal,
@@ -9403,7 +9414,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "EK" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 4
@@ -9437,7 +9448,7 @@
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "EQ" = (
 /obj/structure/closet/ms13/fridge,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -9528,7 +9539,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/airlock/ms13,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Fc" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/melee/lowrandom,
@@ -9586,7 +9597,7 @@
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Fo" = (
 /obj/structure/ms13/wall_decor/clock,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -9595,7 +9606,7 @@
 "Fp" = (
 /obj/structure/ms13/pipes/vertical/west/corner/down,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Fq" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 1
@@ -9656,14 +9667,14 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "FC" = (
 /obj/structure/ms13/rug{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "FD" = (
 /obj/structure/ms13/rug/fancy{
 	dir = 4
@@ -9681,6 +9692,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/sergeant,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/ncr/building)
 "FG" = (
@@ -9710,7 +9722,7 @@
 /obj/structure/ladder/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "FL" = (
 /obj/structure/table/ms13/no_smooth/wood/stand,
 /obj/item/ms13/fluff/alarmclock{
@@ -9758,7 +9770,7 @@
 /obj/structure/bed/ms13/mattress/stained,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "FS" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -9789,7 +9801,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "FY" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk,
 /obj/item/ms13/fluff/typewriter,
@@ -9846,7 +9858,7 @@
 	id = "hotel-r7-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Gn" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/green,
@@ -9879,7 +9891,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Gs" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 8
@@ -9921,7 +9933,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "GA" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/machinery/light/ms13{
@@ -9996,7 +10008,7 @@
 /obj/structure/ms13/pipes/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "GN" = (
 /turf/closed/wall/ms13/siding,
 /area/ms13/desert)
@@ -10044,7 +10056,7 @@
 /obj/structure/ms13/pipes/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "GV" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/railing/ms13/solo/industrial,
@@ -10102,7 +10114,7 @@
 "Hc" = (
 /obj/structure/ms13/pipes/piped,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Hd" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -10194,7 +10206,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Hx" = (
 /obj/machinery/server,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -10215,14 +10227,15 @@
 "HB" = (
 /obj/structure/bed/ms13/mattress/stale,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/carlin_sheriff,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "HC" = (
 /obj/structure/ms13/pipes/piped,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/chair/ms13/overlaypickup/plastic,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "HD" = (
 /obj/structure/filingcabinet/ms13,
 /obj/structure/ms13/wall_decor/calendar,
@@ -10267,7 +10280,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "HL" = (
 /obj/machinery/server,
 /turf/open/floor/ms13/concrete/cable/node,
@@ -10282,7 +10295,7 @@
 /obj/structure/table/ms13/wood/constructed,
 /obj/item/radio/ms13/ham/receiver/radioking,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "HP" = (
 /obj/structure/bonfire/ms13/fire_barrel,
 /turf/open/floor/plating/ms13/roof/metal,
@@ -10310,7 +10323,7 @@
 "HT" = (
 /obj/structure/ms13/pipes/vertical/east/corner/down,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "HU" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -10427,7 +10440,7 @@
 /obj/effect/turf_decal/ms13/graffiti/stop,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Io" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 1
@@ -10487,6 +10500,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/legion_centurion,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "Ix" = (
@@ -10505,7 +10519,7 @@
 	},
 /obj/effect/spawner/random/ms13/drink/alcohol_beer,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Iz" = (
 /obj/structure/table/ms13/no_smooth/cable_reel,
 /obj/structure/ms13/lamp/makeshift{
@@ -10594,7 +10608,7 @@
 /obj/structure/ms13/pipes/horizontal/brown,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "IN" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/ms13/pipes/horizontal/box,
@@ -10725,6 +10739,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_ranger,
 /turf/open/floor/wood/ms13/carpet,
 /area/ms13/ncr/building)
 "Jp" = (
@@ -10857,7 +10872,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/pipes/horizontal/single/valve,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "JJ" = (
 /obj/structure/table/ms13/conveyor_belt{
 	dir = 4
@@ -10920,12 +10935,12 @@
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
 "JS" = (
-/obj/machinery/door/airlock/ms13/barony{
+/obj/machinery/door/airlock/ms13/carlin{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "JT" = (
 /obj/structure/ms13/barricade{
 	dir = 4
@@ -11152,7 +11167,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "KH" = (
 /obj/structure/ms13/storage/shelf/wood/alt{
 	dir = 1
@@ -11168,12 +11183,12 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "KJ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/town_enforcer,
-/turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/obj/effect/landmark/start/ms13/legion_smith,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "KK" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -11388,7 +11403,7 @@
 /obj/machinery/light/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Lx" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
@@ -11477,7 +11492,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "LL" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/light/ms13/bulb{
@@ -11542,7 +11557,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "LT" = (
 /obj/machinery/door/unpowered/ms13/metal/red,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -11562,14 +11577,14 @@
 /obj/structure/ms13/fence/wire,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "LZ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted/bend{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ma" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -11642,6 +11657,13 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
+"Mk" = (
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/structure/bed/ms13/bedframe/cot,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/landmark/start/ms13/ncr_veteran_ranger,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/ncr/building)
 "Ml" = (
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -11686,7 +11708,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/gun/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/gun/lowrandom,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Mu" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/ms13/pipes/vertical/west/corner,
@@ -11696,7 +11718,7 @@
 /obj/structure/ms13/foundation/wide/variantfour,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Mx" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/blue/stripes,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -11708,7 +11730,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Mz" = (
 /obj/structure/table/ms13/metal/small,
 /obj/structure/ms13/storage/vent,
@@ -11757,12 +11779,12 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "MI" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "MK" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/guaranteed/crafting/electrical,
@@ -11907,7 +11929,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Nh" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 8
@@ -11934,7 +11956,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/wood/constructed,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Nm" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 1
@@ -11953,7 +11975,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/drink/alcohol,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "No" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/unpowered/ms13/wood,
@@ -11999,7 +12021,7 @@
 	},
 /obj/structure/railing/ms13/sewer,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Nv" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/ms13/pipes/vertical/east/corner,
@@ -12111,7 +12133,7 @@
 /obj/structure/ms13/wall_decor/clock,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "NU" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/ms13/pipes/horizontal/random,
@@ -12174,7 +12196,7 @@
 	id = "hotel-r6-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Oh" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/crafting/electrical,
@@ -12184,7 +12206,7 @@
 "Oi" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Oj" = (
 /obj/structure/ms13/foundation/wide/varianttwo{
 	dir = 8
@@ -12271,7 +12293,7 @@
 /obj/structure/lattice/catwalk/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Oz" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
 	dir = 8
@@ -12286,7 +12308,7 @@
 	pixel_y = 24
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "OB" = (
 /obj/machinery/door/unpowered/ms13/wood{
 	dir = 4
@@ -12315,6 +12337,13 @@
 	},
 /obj/effect/turf_decal/ms13/showerdrains/small,
 /turf/open/floor/ms13/tile/brown,
+/area/ms13/legioncamp/building)
+"OF" = (
+/obj/structure/bed/ms13/bedframe/wire,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/legion_veteran_legionary,
+/turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "OG" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk{
@@ -12360,7 +12389,7 @@
 /obj/structure/ms13/pipes/horizontal/down/single,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "OK" = (
 /obj/structure/railing/ms13/solo/industrial,
 /obj/structure/railing/ms13/solo/industrial{
@@ -12380,7 +12409,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ON" = (
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -12419,7 +12448,7 @@
 /obj/structure/ms13/storage/large/shelf/wood/drawers,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "OV" = (
 /obj/structure/ms13/fence/wire,
 /obj/structure/closet/crate/ms13/woodcrate/compact,
@@ -12460,7 +12489,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Pd" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -12495,7 +12524,7 @@
 /obj/machinery/light/ms13/bulb,
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Pi" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/unpowered/ms13/seethrough/bar{
@@ -12508,7 +12537,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Pm" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/chair/office/ms13/blue{
@@ -12609,7 +12638,7 @@
 /obj/structure/ms13/pipes/vertical/west/corner/single,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "PG" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/wood,
@@ -12645,7 +12674,7 @@
 /obj/structure/ms13/large_pipe/pump,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "PM" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -12667,7 +12696,7 @@
 /obj/structure/ms13/pipes/horizontal/single/random,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "PR" = (
 /obj/structure/ms13/rug/mat/welcome,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -12707,7 +12736,7 @@
 	dir = 8
 	},
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "PX" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
@@ -12777,7 +12806,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Qh" = (
 /obj/machinery/iv_drip/ms13,
 /obj/structure/ms13/storage/vent,
@@ -12856,7 +12885,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Qy" = (
 /obj/machinery/light/ms13/bulb,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -12869,7 +12898,7 @@
 /obj/effect/turf_decal/ms13/graffiti/free,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "QC" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -12880,7 +12909,7 @@
 /obj/structure/ms13/wall_decor/clock,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "QE" = (
 /obj/structure/ms13/foundation/wide/varianttwo{
 	dir = 6
@@ -12927,7 +12956,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "QL" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/sink/ms13{
@@ -13005,7 +13034,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/barrel/double/yellow/two,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ra" = (
 /obj/structure/table/ms13/metal/alt,
 /obj/structure/ms13/storage/vent,
@@ -13072,6 +13101,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/legion_veteran_legionary,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "Rk" = (
@@ -13137,6 +13167,13 @@
 /obj/structure/ms13/sandbag,
 /turf/open/floor/plating/ms13/roof,
 /area/ms13/desert)
+"Rx" = (
+/obj/structure/bed/ms13/bedframe/wire,
+/obj/structure/bed/ms13/mattress/filthy,
+/obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/effect/landmark/start/ms13/legion_veteran_decanus,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/legioncamp/building)
 "Rz" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/ms13/terminal{
@@ -13189,7 +13226,7 @@
 	dir = 8
 	},
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "RF" = (
 /obj/structure/table/ms13/no_smooth/large/cards,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -13298,7 +13335,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Sb" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -13309,7 +13346,7 @@
 "Sc" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Se" = (
 /obj/machinery/shower/ms13{
 	dir = 8
@@ -13360,7 +13397,7 @@
 "Sp" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Sq" = (
 /obj/effect/spawner/random/ms13/crafting/electrical,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -13404,7 +13441,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Sy" = (
 /obj/structure/table/ms13/metal/small,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -13482,7 +13519,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "SO" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -13514,7 +13551,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ST" = (
 /obj/structure/table/ms13/no_smooth/wood,
 /obj/item/reagent_containers/food/drinks/mug/ms13{
@@ -13539,7 +13576,7 @@
 /area/ms13/desert)
 "SX" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/brotherhood/hpaladin{
+/obj/machinery/door/airlock/ms13/brotherhood/hknight{
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
@@ -13555,7 +13592,7 @@
 "Ta" = (
 /obj/structure/chair/ms13/overlaypickup/plastic,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Tb" = (
 /obj/structure/ms13/pallet/stack,
 /obj/item/radio/ms13/ham/receiver/radioking{
@@ -13573,7 +13610,7 @@
 /area/ms13/town)
 "Td" = (
 /turf/open/floor/plating/ms13/roof,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Te" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/light/ms13,
@@ -13601,14 +13638,14 @@
 /obj/effect/turf_decal/ms13/graffiti/arrows_yellow,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ti" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/machinery/ms13/terminal/crafted{
 	dir = 4
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Tj" = (
 /obj/structure/table/ms13/no_smooth/large/metal/desk{
 	dir = 8
@@ -13645,7 +13682,7 @@
 /obj/structure/chair/office/ms13/green,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Tn" = (
 /obj/structure/ms13/barricade{
 	dir = 1
@@ -13679,14 +13716,6 @@
 "Ts" = (
 /obj/structure/table/ms13/no_smooth/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/item/ms13/fluff/ashtray{
-	pixel_x = -7;
-	pixel_y = 2
-	},
-/obj/item/ms13/fluff/ashtray{
-	pixel_y = -3;
-	pixel_x = 2
-	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "Tt" = (
@@ -13712,7 +13741,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ty" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk{
 	dir = 1
@@ -13726,7 +13755,7 @@
 /obj/machinery/light/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "TA" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/chair/ms13/metal/blue/broken,
@@ -13783,9 +13812,9 @@
 /area/ms13/town)
 "TI" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/barony,
+/obj/machinery/door/airlock/ms13/carlin,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "TJ" = (
 /obj/structure/ms13/wall_decor/cross,
 /obj/structure/ms13/pot/plant,
@@ -13882,7 +13911,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "TZ" = (
 /obj/structure/table/ms13/wood/bar,
 /obj/effect/spawner/random/ms13/drink/soda,
@@ -13899,7 +13928,7 @@
 /obj/effect/turf_decal/ms13/graffiti/followwater,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ud" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/wall_decor/flag/arizona,
@@ -13999,11 +14028,11 @@
 /area/ms13/town)
 "Uu" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/barony{
+/obj/machinery/door/airlock/ms13/carlin{
 	dir = 4
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Uv" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -14045,7 +14074,7 @@
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "UD" = (
 /obj/structure/noticeboard/ms13/cork,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -14069,14 +14098,14 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/concrete,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "UH" = (
 /obj/machinery/light/ms13{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "UI" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -14138,7 +14167,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "UR" = (
 /obj/structure/table/ms13/no_smooth/wood/stand,
 /obj/item/ms13/fluff/ashtray,
@@ -14205,11 +14234,11 @@
 /obj/structure/ms13/rug/rubber,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Vc" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Vd" = (
 /obj/structure/ms13/sandbag,
 /obj/structure/ms13/sandbag,
@@ -14251,7 +14280,7 @@
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/dirty,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Vn" = (
 /obj/structure/ms13/rug/mat/welcome{
 	dir = 1
@@ -14265,7 +14294,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Vq" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -14291,7 +14320,7 @@
 /obj/item/restraints/handcuffs/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Vt" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 1
@@ -14325,7 +14354,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Vx" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/crafting/household,
@@ -14418,7 +14447,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "VW" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 4
@@ -14461,9 +14490,9 @@
 /area/ms13/town)
 "Wb" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/barony/quarters,
+/obj/machinery/door/airlock/ms13/carlin/quarters,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Wd" = (
 /obj/item/ammo_casing/ms13/spent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -14531,7 +14560,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Wq" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/yellowed,
@@ -14565,7 +14594,7 @@
 	dir = 1
 	},
 /turf/open/openspace/ms13,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Ww" = (
 /obj/structure/chair/comfy/ms13/ergo{
 	dir = 8
@@ -14586,7 +14615,7 @@
 /obj/structure/bed/ms13/mattress/stained,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Wz" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 8
@@ -14659,7 +14688,7 @@
 /obj/structure/railing/ms13/sewer,
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "WS" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/blue/stripes,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -14749,7 +14778,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Xm" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/railing/ms13/solo,
@@ -14860,12 +14889,12 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 4
 	},
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "XH" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/wall_decor/flag/arizona,
 /turf/open/floor/wood/ms13/wide,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "XI" = (
 /obj/structure/table/ms13/wood,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -14957,7 +14986,7 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/ms13/barrel/quadruple/red/one,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "XX" = (
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -15044,7 +15073,7 @@
 "Yp" = (
 /obj/structure/ms13/cave_decor/boards/drought/northsouth,
 /turf/open/floor/plating/ms13/ground/desert,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "Yq" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/metal/walkway,
@@ -15088,7 +15117,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "YB" = (
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/siding,
@@ -15107,7 +15136,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "YE" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -15145,12 +15174,12 @@
 /obj/item/reagent_containers/glass/bucket/ms13,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "YN" = (
 /obj/structure/ms13/sandbag,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "YQ" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /mob/living/basic/ms13/ghoul/radioactive,
@@ -15160,7 +15189,7 @@
 /obj/structure/ms13/tank/pipe,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "YU" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -15232,7 +15261,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Zg" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/table/ms13/metal/grate,
@@ -15260,7 +15289,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Zm" = (
 /obj/machinery/recorder,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -15302,7 +15331,7 @@
 /area/ms13/legioncamp/building)
 "Zv" = (
 /turf/closed/wall/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "Zw" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 8
@@ -15368,7 +15397,7 @@
 /obj/structure/ms13/pipes/vertical/east/corner/down,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ZF" = (
 /obj/structure/ms13/rug/rubber,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
@@ -15378,7 +15407,7 @@
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ZH" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/structure/table/ms13/low_wall/brick/gray,
@@ -15407,7 +15436,7 @@
 /obj/structure/ms13/bars/rusty,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ZL" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/machinery/light/ms13{
@@ -15426,7 +15455,7 @@
 	id = "hotel-r8-quarantine"
 	},
 /turf/open/floor/wood/ms13/common,
-/area/ms13/water_baron/interior)
+/area/ms13/carlin/interior)
 "ZO" = (
 /obj/structure/railing/ms13/solo{
 	dir = 4
@@ -15473,7 +15502,7 @@
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
-/area/ms13/water_baron)
+/area/ms13/carlin)
 "ZV" = (
 /obj/structure/ms13/rug/rubber{
 	dir = 8
@@ -22220,7 +22249,7 @@ uV
 uV
 uV
 oH
-eV
+Mk
 zZ
 Tu
 Js
@@ -28933,13 +28962,13 @@ sa
 sa
 eM
 aZ
-rc
+sA
 Vc
 Vc
 pe
 TI
 Vc
-KJ
+Vc
 Dv
 Vc
 Vc
@@ -56487,7 +56516,7 @@ gX
 gX
 gX
 cj
-Il
+OF
 Qd
 Ts
 BB
@@ -57279,7 +57308,7 @@ MG
 Yk
 VS
 sJ
-tX
+KJ
 tX
 tX
 tX
@@ -57302,7 +57331,7 @@ Yk
 AP
 Mp
 tX
-Il
+Rx
 VS
 MG
 MG

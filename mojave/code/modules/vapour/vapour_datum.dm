@@ -95,7 +95,7 @@
 			/area/ms13/legioncamp = TRUE,
 			/area/ms13/drylanders = TRUE,
 			/area/ms13/goldman = TRUE,
-			/area/ms13/water_baron = TRUE,
+			/area/ms13/carlin = TRUE,
 			/area/ms13/snow = TRUE,
 			/area/ms13/snow/forest = TRUE,
 			/area/ms13/snow/lightforest = TRUE,

@@ -36,7 +36,7 @@
 	time = 20 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH)
 	tool_paths = list(/obj/item/wirecutters/ms13)
-	trait = TRAIT_SCRIBE_TRAINING
+	trait =  TRAIT_ELECTRICAL_TRAINING
 	reqs = list(/obj/item/ms13/component/cell = 2,
 				/obj/item/stack/sheet/ms13/scrap_copper = 6,
 				/obj/item/stack/sheet/ms13/scrap_electronics = 6,
@@ -85,7 +85,7 @@
 	time = 20 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
-	trait = TRAIT_SCRIBE_TRAINING
+	trait =  TRAIT_ELECTRICAL_TRAINING
 	reqs = list(/obj/item/radio/ms13/broadcast = 1,
 				/obj/item/ms13/component/cell = 1,
 				/obj/item/ms13/component/vacuum_tube = 2,
@@ -115,7 +115,7 @@
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
-	trait = TRAIT_SCRIBE_TRAINING
+	trait =  TRAIT_ELECTRICAL_TRAINING
 	reqs = list(/obj/item/ms13/component/cell = 2,
 				/obj/item/stack/sheet/ms13/refined_copper = 3,
 				/obj/item/stack/sheet/ms13/scrap_electronics = 5,
@@ -130,7 +130,7 @@
 	time = 15 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
-	trait = TRAIT_SCRIBE_TRAINING
+	trait =  TRAIT_ELECTRICAL_TRAINING
 	reqs = list(/obj/item/ms13/component/cell = 2,
 				/obj/item/stack/sheet/ms13/refined_copper = 4,
 				/obj/item/stack/sheet/ms13/scrap_electronics = 6,
@@ -145,7 +145,7 @@
 	time = 15 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
-	trait = TRAIT_SCRIBE_TRAINING
+	trait =  TRAIT_ELECTRICAL_TRAINING
 	reqs = list(/obj/item/ms13/component/plasma_battery = 2,
 				/obj/item/stack/sheet/ms13/refined_copper = 4,
 				/obj/item/stack/sheet/ms13/refined_lead = 2,

@@ -1,4 +1,4 @@
-/datum/job/ms13/town/mayor
+/datum/job/ms13/town/snowcrest_mayor
 	title = "Snowcrest Mayor"
 	total_positions = 1
 	spawn_positions = 1
@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/mayor
+	outfit = /datum/outfit/job/ms13/town/snowcrest_mayor
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MAYOR
 
-/datum/outfit/job/ms13/town/mayor
+/datum/outfit/job/ms13/town/snowcrest_mayor
 	name = "_Snowcrest Mayor"
-	jobtype = /datum/job/ms13/town/mayor
+	jobtype = /datum/job/ms13/town/snowcrest_mayor
 
 	id = 		 /obj/item/card/id/ms13/mayor
 	uniform =    /obj/item/clothing/under/ms13/regal
@@ -25,5 +25,5 @@
 	l_pocket =   /obj/item/stack/ms13/currency/prewar/mayor
 	back =       null
 
-/datum/outfit/job/ms13/town/mayor/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_mayor/pre_equip(mob/living/carbon/human/H)
 	..()

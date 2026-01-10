@@ -1,4 +1,4 @@
-/datum/job/ms13/town/nurse
+/datum/job/ms13/town/snowcrest_nurse
 	title = "Snowcrest Nurse"
 	total_positions = 1
 	spawn_positions = 1
@@ -7,15 +7,15 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/nurse
+	outfit = /datum/outfit/job/ms13/town/snowcrest_nurse
 
 	display_order = JOB_DISPLAY_ORDER_MS13_NURSE
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING)
 
-/datum/outfit/job/ms13/town/nurse
+/datum/outfit/job/ms13/town/snowcrest_nurse
 	name = "_Snowcrest Nurse"
-	jobtype = /datum/job/ms13/town/nurse
+	jobtype = /datum/job/ms13/town/snowcrest_nurse
 
 	id =		 /obj/item/card/id/ms13/doctor/nurse
 	belt = 		 /obj/item/storage/firstaid/ms13/regular
@@ -24,5 +24,5 @@
 	shoes = 	 /obj/item/clothing/shoes/ms13/winter
 	back =       /obj/item/storage/ms13/satchel
 
-/datum/outfit/job/ms13/town/nurse/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_nurse/pre_equip(mob/living/carbon/human/H)
 	..()

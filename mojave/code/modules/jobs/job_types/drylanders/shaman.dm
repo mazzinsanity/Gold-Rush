@@ -1,7 +1,7 @@
 /datum/job/ms13/drylander/shaman
 	title = "Drylander Shaman"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Chieftain"
 	description = "You are the Shaman of the Drylander tribe. Coordinate the common folk of the tribe, listen to and advise the Chieftain, and ensure the Hunters and Headtakers of the tribe are well equipped and cared for."
 

@@ -42,7 +42,7 @@
 	has_water_reclaimer = TRUE
 	reclaim_rate = 1
 
-/obj/structure/sink/ms13/functional/tainted // For Barony scrub locations.
+/obj/structure/sink/ms13/functional/tainted // For Carlin scrub locations.
 	name = "sink"
 	icon_state = "sink"
 	desc = "A sink. This one seems to function well, but there's a gross buildup around the faucet end."

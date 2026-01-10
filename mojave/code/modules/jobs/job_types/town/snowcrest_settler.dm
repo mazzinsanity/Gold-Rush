@@ -1,4 +1,4 @@
-/datum/job/ms13/town/settler
+/datum/job/ms13/town/snowcrest_settler
 	title = "Snowcrest Citizen"
 	total_positions = 8
 	spawn_positions = 8
@@ -7,19 +7,19 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/settler
+	outfit = /datum/outfit/job/ms13/town/snowcrest_settler
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SETTLER
 
-/datum/outfit/job/ms13/town/settler
+/datum/outfit/job/ms13/town/snowcrest_settler
 	name = "_Snowcrest Citizen"
-	jobtype = /datum/job/ms13/town/settler
+	jobtype = /datum/job/ms13/town/snowcrest_settler
 
 	id =		 /obj/item/card/id/ms13/town
 	r_pocket =   /obj/item/stack/ms13/currency/prewar/eighty
 	back =       null
 
-/datum/outfit/job/ms13/town/settler/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_settler/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	if(prob(35))
