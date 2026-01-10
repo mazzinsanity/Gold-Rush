@@ -180,6 +180,7 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 //Defines for Species IDs
 #define SPECIES_HUMAN "human"
 #define SPECIES_ANTHROPOMORPH "anthropomorph"
+#define SPECIES_HUMANOID "humanoid"
 #define SPECIES_FELINE "felinid"
 #define SPECIES_MOTH "moth"
 #define SPECIES_ETHEREAL "ethereal"
