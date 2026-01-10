@@ -1,7 +1,7 @@
 //Guns
 /obj/item/gun/ballistic/automatic/ms13/semi/service
 	name = "service rifle"
-	desc = "A 5.56 semi-automatic rifle manufactured by and for the NCR."
+	desc = "A pre-war semi-automatic AR-15 sporting rifle maintained by the Gun Runners and used as the primary infantry weapon of the NCRA. Chambered in 5.56mm."
 	icon_state = "service"
 	inhand_icon_state = "service"
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
@@ -24,8 +24,8 @@
 	grid_height = 64
 
 /obj/item/gun/ballistic/automatic/ms13/semi/service/maquis
-	name = "\improper Maquis"
-	desc = "A unique, heavy duty service rifle. Fires much more accurately and with less of a kick. Has a flag supporting a different kind of patriotism than most are used to."
+	name = "\improper Overture"
+	desc = "A pre-war AR-15 sporting rifle with an improved recoil spring and a match-grade barrel, complete with a forward rear sight for accurate shooting. Chambered in 5.56mm, proudly NCR."
 	icon_state = "maquis"
 	inhand_icon_state = "maquis"
 	spread = 2
@@ -68,7 +68,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/semi/marksman
 	name = "marksman carbine"
-	desc = "A 5.56 marksman carbine with a scope attached to help in long range combat."
+	desc = "A semi-automatic Colt rifle that was specially modified for paratrooper marksmen. It's been fitted with a precision stock and a West-Tek combat gunsight. Chambered in 5.56mm."
 	icon_state = "marksman"
 	inhand_icon_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/ms13/r20
@@ -94,15 +94,15 @@
 
 /obj/item/gun/ballistic/automatic/ms13/semi/marksman/american
 	name = "\improper All-American"
-	desc = "A unique and customized marksman carbine. Improved rate of fire for improved dispensing of patriotic lead."
+	desc = "A semi-automatic Colt rifle that was specially modified for paratrooper marksmen. It's been fitted with a precision stock and a Future-Tec electronic scope. Chambered in 5.56mm, personally made for the 82nd Airborne Division."
 	icon_state = "allamerican"
 	inhand_icon_state = "allamerican"
 	fire_delay = 0.45 SECONDS
 
 /obj/item/gun/ballistic/automatic/ms13/semi/battle
 	name = "battle rifle"
-	desc = "A very old but also very reliable semi-automatic rifle chambered for .308. From long before the war, but still packs a very heavy punch."
-	icon_state = "battler"
+	desc = "A gas-operated, semi-automatic, clip-fed pre-war rifle. It's been refurbished by the Gun Runners and enjoys a cozy spot in their Big Book of Death, it even makes a cool reloading sound. The rifle, not the book. Chambered in .308."
+	icon_state = "battlerifle"
 	inhand_icon_state = "battler"
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
@@ -152,7 +152,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg45
 	name = ".45 submachine gun"
-	desc = "A classic .45 submachine gun that takes an expansive 50 round drum magazine."
+	desc = "A classic, American-made Thompson M1A1 submachine gun chambered in .45 Auto. It feeds from a large drum."
 	icon_state = "smg45"
 	inhand_icon_state = "smg45"
 	w_class = WEIGHT_CLASS_BULKY
@@ -177,7 +177,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg22
 	name = ".22 submachine gun"
-	desc = "A suppressed .22 submachine gun that feeds from a large pan magazine placed on top of the gun. An interesting weapon for interesting people."
+	desc = "An integrally suppressed American 180 riot suppression submachine gun chambered in .22 LR, feeding from top-loaded pan magazines."
 	icon_state = "smg22"
 	inhand_icon_state = "smg22"
 	w_class = WEIGHT_CLASS_BULKY
@@ -201,7 +201,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg10mm
 	name = "10mm submachine gun"
-	desc = "A light, one handed 10mm submachine gun. Decent power in a small package."
+	desc = "An open-bolt Heckler & Koch MP9 that saw extensive use in military and police units prior to the war, chambered in 10mm despite its name."
 	icon_state = "smg10mm"
 	inhand_icon_state = "smg10mm"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -225,7 +225,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg9mm
 	name = "9mm submachine gun"
-	desc = "A fast firing, old school 9mm submachine gun. Doesn't pack a lot of punch per bullet, but that doesn't matter when you're spitting them out so fast."
+	desc = "A compact and reliable Uzi SMG chambered for 9mm, best paired with a .45 longslide with laser sighting."
 	icon_state = "smg9mm"
 	inhand_icon_state = "smg9mm"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -250,7 +250,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg12mm
 	name = "12.7mm submachine gun"
-	desc = "A heavy duty submachine gun chambered in 12.7mm, fires at a slower rate of fire, but it sure does pack a punch."
+	desc = "A SIG-made hand-cannon chambered for the 12.7mm hunting cartridge, loading from top-mounted magazines and benefitting from an unique recoil reduction system."
 	icon_state = "smg12mm"
 	inhand_icon_state = "smg12mm"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -298,8 +298,8 @@
 	grid_height = 64
 
 /obj/item/gun/ballistic/automatic/ms13/full/assaultrifle/proto_service
-	name = "prototype service rifle"
-	desc = "A relatively new and improved modern service rifle sporting full auto capabilities and a generally improved rate of fire at the cost of some accuracy."
+	name = "upgraded service rifle"
+	desc = "A fully-automatic service rifle with a heavier barrel, lighter furniture, and a dot-sight. Issued to high-ranking troopers and specialized units. Chambered in 5.56mm."
 	icon_state = "protoservice"
 	inhand_icon_state = "protoservice"
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
@@ -315,7 +315,7 @@
 
 /obj/item/gun/ballistic/automatic/ms13/full/assaultrifle/infiltrator
 	name = "\improper Infiltrator"
-	desc = "A heavily modified and customized assault rifle with a scope and suppressor as it's most notable additions to improve accuracy and recoil. The added weight from the scope will slow down the user, but the modifications reduce it's bulk."
+	desc = "An especially tuned and modified R91 rifle manufactured by Stent Security Solutions. The name's Plissken. Chambered in 5.56mm."
 	icon_state = "infiltrator"
 	inhand_icon_state = "infiltrator"
 	has_scope = TRUE
@@ -349,9 +349,9 @@
 /obj/item/gun/ballistic/automatic/ms13/full/assaultrifle/dakka/Initialize()
 	. = ..()
 	name = pick(
-		"\improper Dakka",\
-		"\improper Scrapper",\
-		"\improper Killjoy")
+		"\improper Shitbox",\
+		"\improper Hoopty",\
+		"\improper P-O-S")
 
 /obj/item/gun/ballistic/automatic/ms13/full/assaultrifle/chinese
 	name = "\improper Chinese assault rifle"
