@@ -10,81 +10,45 @@
 
 	component_type = /datum/component/storage/concrete/ms13/rad_pack
 	storage_flags = 0
-	var/held = 0
-	var/obj/item/radio/ms13/ncr/radio
+	var/obj/item/radio/ms13/ncr/radio_type = /obj/item/radio/ms13/ncr
+	var/last_frequency = 0
 
-/obj/item/storage/ms13/radiopack/Initialize()
+/obj/item/storage/ms13/radiopack/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.max_items = 16
 	STR.max_combined_w_class = 100
 
-	radio = new(src)
-
-/obj/item/storage/ms13/radiopack/PopulateContents()
+/obj/item/storage/ms13/radiopack/alt_click_secondary(mob/user)
 	. = ..()
-	START_PROCESSING(SSobj, src)
-
-/obj/item/storage/ms13/radiopack/Destroy()
-	STOP_PROCESSING(SSobj, src)
-	QDEL_NULL(radio)
-	return ..()
-
-/* Broken ""feature"". Tends to break the radio and/or delete stuff.
-/obj/item/storage/ms13/radiopack/AltClick(var/mob/living/carbon/user)
-	if(src.loc == user)
-		if(!held)
-			if(user.get_item_by_slot(ITEM_SLOT_BACK) == src)
-				held = 1
-				if(!user.put_in_hands(radio))
-					held = 0
-					to_chat(user, "<span class='warning'>You need a free hand to hold the radio!</span>")
-					return
-				update_icon()
-				user.update_inv_back()
-		else
-			to_chat(user, "<span class='warning'>You are already holding the radio!</span>")
-	else
-		..() */
-
-/obj/item/storage/ms13/radiopack/attackby(obj/item/W, mob/user, params)
-	if(W == radio)
-		user.dropItemToGround(radio, TRUE)
-	else
-		..()
-
-/obj/item/storage/ms13/radiopack/dropped(mob/user)
-	. = ..()
-	if(held)
-		user.dropItemToGround(radio, TRUE)
-
-/obj/item/storage/ms13/radiopack/MouseDrop(atom/over_object)
-	. = ..()
-	if(held)
+	var/back_item = user.get_item_by_slot(ITEM_SLOT_BACK)
+	if(!back_item || back_item != src)
+		to_chat(user, "<span class='warning'>You must wear \the [src] on your back to access the radio!</span>")
 		return
-	if(iscarbon(usr))
-		var/mob/M = usr
-
-		if(!over_object)
+	
+	for(var/item as anything in user.held_items)
+		if(istype(item, radio_type))
+			to_chat(user, "<span class='warning'>You are already holding \the [item]!</span>")
 			return
-
-		if(!M.incapacitated())
-
-			if(istype(over_object, /atom/movable/screen/inventory/hand))
-				var/atom/movable/screen/inventory/hand/H = over_object
-				M.putItemFromInventoryInHandIfPossible(src, H.held_index)
-
-/obj/item/storage/ms13/radiopack/proc/attach_radio(var/mob/user)
-	if(!radio)
-		radio = new(src)
-	radio.forceMove(src)
-	held = 0
-	if(user)
-		to_chat(user, "<span class='notice'>You attach the [radio.name] to the [name].</span>")
+	
+	var/obj/item/radio/ms13/ncr/radio = new radio_type(src)
+	radio.radiopack = src
+	radio.set_frequency(last_frequency)
+	user.put_in_hands(radio)
 	update_icon()
 	user.update_inv_back()
 
+/obj/item/storage/ms13/radiopack/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, radio_type))
+		user.dropItemToGround(W)
+
+/obj/item/storage/ms13/radiopack/dropped(mob/user)
+	. = ..()
+	for(var/obj/item/item as anything in user.held_items)
+		if(istype(item, radio_type))
+			user.dropItemToGround(item)
 
 /obj/item/radio/ms13/ncr
 	name = "walkie-talkie"
@@ -97,33 +61,17 @@
 	static = TRUE
 	grid_height = 32
 	grid_width = 32
-	var/req_radio = TRUE
-	var/obj/item/storage/ms13/radiopack/radiopack
+	item_flags = DROPDEL
+	var/obj/item/storage/ms13/radiopack_type = /obj/item/storage/ms13/radiopack
+	var/obj/item/storage/ms13/radiopack/radiopack = null
 
 /obj/item/radio/ms13/ncr/Initialize()
-	if(istype(loc, /obj/item/storage/ms13/radiopack))
-		radiopack = loc
-
-	else
-		return INITIALIZE_HINT_QDEL
-
+	. = ..()
 	become_hearing_sensitive()
 
-	return ..()
-
 /obj/item/radio/ms13/ncr/Destroy()
-	radiopack = null
+	if(radiopack)
+		radiopack.last_frequency = frequency
+	
 	return ..()
-
-/obj/item/radio/ms13/ncr/dropped(mob/user)
-	. = ..()
-	if(user)
-		UnregisterSignal(user, COMSIG_MOVABLE_MOVED)
-	if(req_radio)
-		snap_back()
-
-/obj/item/radio/ms13/ncr/proc/snap_back()
-	if(!radiopack)
-		return
-	forceMove(radiopack)
 
