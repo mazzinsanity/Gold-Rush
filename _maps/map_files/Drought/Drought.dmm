@@ -16632,11 +16632,10 @@
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/legioncamp)
 "pIK" = (
-/obj/structure/table/ms13/no_smooth/counter/metal{
-	dir = 1
-	},
-/turf/open/floor/ms13/concrete,
-/area/ms13/ncr/building)
+/obj/structure/ms13/departure,
+/obj/effect/turf_decal/ms13/road/horizontalline,
+/turf/open/floor/plating/ms13/ground/road,
+/area/ms13/desert)
 "pIS" = (
 /obj/structure/table/ms13/wood/constructed,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -17291,11 +17290,6 @@
 /obj/effect/spawner/random/ms13/food/random,
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
-"qow" = (
-/obj/structure/ms13/departure,
-/obj/effect/turf_decal/ms13/road/horizontalline,
-/turf/open/floor/plating/ms13/ground/road,
-/area/ms13/desert)
 "qoH" = (
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
@@ -25300,7 +25294,7 @@ blm
 blm
 blm
 lNx
-qow
+pIK
 lNx
 blm
 blm
@@ -27713,7 +27707,7 @@ owa
 oFw
 oFw
 pup
-pIK
+oFw
 qpO
 nMh
 oSs
