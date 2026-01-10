@@ -1,6 +1,6 @@
 /obj/item/storage/ms13/radiopack
 	name = "radiopack"
-	desc = "A radio backpack primarily in use by the NCR. The peak of NCR communication, when they feel like using it."
+	desc = "A radio backpack primarily in use by the NCR. The peak of NCR communication, when they feel like using it. Alt + Right Click it to take out the radio. Must be worn on the back and with an empty hand."
 	icon = 'mojave/icons/objects/clothing/clothing_inventory/backpack_inventory.dmi'
 	icon_state = "radiopack"
 	inhand_icon_state = "radiopack"

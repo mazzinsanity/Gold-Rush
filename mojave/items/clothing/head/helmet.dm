@@ -1421,7 +1421,7 @@
 	equip_delay_other = 3 SECONDS
 
 /obj/item/clothing/head/helmet/ms13/ncr/medic
-	name = "\improper NCR medic helmet"
+	name = "\improper NCR combat medic helmet"
 	desc = "A standard NCR infantry helmet with the addition of a blue cross for identifying the soldier as a medic."
 	icon_state = "ncr_medic_helmet"
 	inhand_icon_state = "ncr_medic_helmet"

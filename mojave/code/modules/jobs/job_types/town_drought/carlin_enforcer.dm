@@ -3,7 +3,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "The Sheriff and the Mayor"
-	description = ""
+	description = "Enforce the Mayor's laws on the streets of Carlin. Follow the orders of the Sheriff and the Mayor."
 
 	outfit = /datum/outfit/job/ms13/town_drought/enforcer
 

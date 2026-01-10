@@ -3,7 +3,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "The Lieutenant."
-	description = ""
+	description = "Lead and organize your squad. Ensure your squad is properly equipped and prepared for combat. Rally the troops towards your objective. Follow the orders of the Lieutenant."
 
 	outfit = /datum/outfit/job/ms13/ncr/sergeant
 

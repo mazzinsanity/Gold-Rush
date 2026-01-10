@@ -3,7 +3,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Troopers and above."
-	description = ""
+	description = "You are a member of the Rear Echelon of the NCR, charged with menial tasks around the camp."
 
 	outfit = /datum/outfit/job/ms13/ncr/rear_echelon
 

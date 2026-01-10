@@ -3,7 +3,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Legionaries."
-	forbid = "Usage of chems and overreliance on technology is strictly forbidden. Women are not allowed to fight. Disobeying orders from superiors is typically met with death. Avoid engaging in active combat."
 	description = "You are an Auxilia, ordered to assist the Legion's army. Ensure the camp is well maintained. Ensure the Legionaries are properly supplied and armed for the battles to come. Obey the orders of the Legionaries."
 
 	outfit = /datum/outfit/job/ms13/legion/legion_smith

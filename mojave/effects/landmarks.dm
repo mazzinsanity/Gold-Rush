@@ -68,7 +68,7 @@
 	name = "NCR Sergeant"
 
 /obj/effect/landmark/start/ms13/medic
-	name = "NCR Medic"
+	name = "NCR Combat Medic"
 
 /obj/effect/landmark/start/ms13/medical_officer
 	name = "NCR Medical Officer"

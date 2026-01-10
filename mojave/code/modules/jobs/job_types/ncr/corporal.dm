@@ -3,7 +3,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Sergeants and above."
-	description = ""
+	description = "You have shown good competence and have been promoted to Corporal. Reinforce squads with your superior equipment and training. Follow the orders of Sergeants and above."
 
 	outfit = /datum/outfit/job/ms13/ncr/corporal
 

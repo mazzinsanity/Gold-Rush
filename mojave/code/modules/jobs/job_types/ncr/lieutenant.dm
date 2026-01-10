@@ -3,7 +3,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Captain and NCR High Command."
-	description = ""
+	req_admin_notify = 1
+	description = "You are charged with overseeing the local NCR camp. Delegate orders to your Sergeants. Communicate with Radio Operators. Work with the Veteran Ranger to coordinate efforts for the NCR's mission in the region."
 
 	outfit = /datum/outfit/job/ms13/ncr/lieutenant
 

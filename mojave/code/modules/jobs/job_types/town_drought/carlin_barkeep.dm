@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Enforcers and The Mayor."
-	description = "Tend to Carlin's bar and food services."
+	description = "Tend to Carlin's bar and food services. Entertain guests and defend your establishment."
 
 	outfit = /datum/outfit/job/ms13/town_drought/carlin_barkeep
 

@@ -3,6 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Fellow Goldman Ringleaders."
+	req_admin_notify = 1
 	description = "You are among the most senior members of the Goldman Posse, charged with overseeing the local camp. Lead and organize your Goldmen to expand the influence and profits of the group. Establish new mercenary contracts as needed."
 
 	outfit = /datum/outfit/job/ms13/goldman/ringleader

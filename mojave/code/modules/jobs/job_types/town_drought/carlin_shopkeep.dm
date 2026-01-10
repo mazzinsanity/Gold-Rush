@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Enforcers and The Mayor."
-	description = ""
+	description = "Run Carlin's shop. Sell weapons, armor, trinkets, and anything else you can think of. Hire mercenaries to bring you more wares."
 
 	outfit = /datum/outfit/job/ms13/town_drought/carlin_shopkeep
 

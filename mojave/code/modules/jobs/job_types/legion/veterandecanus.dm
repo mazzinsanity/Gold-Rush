@@ -3,6 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Centurion."
+	req_admin_notify = 1
 	description = "You are the commander of the Veteran Legionaries, the Centurion's right hand man and second in command. Lead and organize your Veteran Legionaries in battle. Engage in matters on the Centurion's behalf if needed. Obey orders given to you by the Centurion to the death."
 
 	outfit = /datum/outfit/job/ms13/legion/veterandecanus

@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The People."
-	description = ""
+	description = "Come up with laws and make difficult decisions to make Carlin prosper in whichever way you see fit. Work with the Sheriff to ensure the security of the town."
 
 	outfit = /datum/outfit/job/ms13/town_drought/carlin_mayor
 

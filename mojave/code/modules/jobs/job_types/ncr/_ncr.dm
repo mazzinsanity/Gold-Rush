@@ -5,8 +5,8 @@
 	)
 	exp_granted_type = EXP_TYPE_NCR
 	exp_required_type = EXP_TYPE_NCR
-	forbid = ""
-	enforce = ""
+	forbid = "Recreational drugs are banned. Drinking and gambling on duty is forbidden. Do not disobey lawful orders of your superiors. Desertion is treated harshly."
+	enforce = "Follow NCR laws. Treat prisoners fairly. Protect your camp and establish a foothold in the region. Relations with the Brotherhood are tense. You are at war with the Legion."
 
 /datum/outfit/job/ms13/ncr
 	name = "NCRDatums"

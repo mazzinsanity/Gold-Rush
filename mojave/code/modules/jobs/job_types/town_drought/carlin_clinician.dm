@@ -3,7 +3,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "The Enforcers and The Mayor."
-	description = ""
+	description = "Ensure that the townsfolk of Carlin are healthy. Provide medical services to the wounded and sick."
 
 	outfit = /datum/outfit/job/ms13/town_drought/carlin_clinician
 

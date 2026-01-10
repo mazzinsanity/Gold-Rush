@@ -3,7 +3,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Sergeants and above."
-	description = ""
+	description = "Relay messages between your squad and Command. Assist the Sergeant in maintaining squad cohesion. Follow the orders of Sergeants and above."
 
 	outfit = /datum/outfit/job/ms13/ncr/radioman
 

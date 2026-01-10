@@ -139,7 +139,7 @@
 
 /obj/item/card/id/ms13/ncr/medic
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Combat Medic' and the rank is listed as 'Corporal'."
-	assignment = "NCR Medic"
+	assignment = "NCR Combat Medic"
 
 /obj/item/card/id/ms13/ncr/medic/mp
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police Medic' and the rank is listed as 'Corporal'."

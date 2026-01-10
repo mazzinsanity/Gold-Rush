@@ -3,6 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Legate and the Caesar."
+	req_admin_notify = 1
 	description = "You are tasked with overseeing the local Legion camp. Organize your Decani and command your Centuria, leading them to glorious victory."
 
 	outfit = /datum/outfit/job/ms13/legion/centurion

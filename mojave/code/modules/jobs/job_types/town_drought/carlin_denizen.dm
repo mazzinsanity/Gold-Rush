@@ -3,7 +3,7 @@
 	total_positions = 10
 	spawn_positions = 10
 	supervisors = "The Enforcers and The Mayor."
-	description = ""
+	description = "Live a quiet life in Carlin, safe from the dangers of the Wasteland. Help the community prosper or drink booze all day."
 
 	outfit = /datum/outfit/job/ms13/town_drought/carlin_denizen
 

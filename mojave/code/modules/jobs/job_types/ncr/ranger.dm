@@ -3,7 +3,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "The Veteran Ranger."
-	description = ""
+	description = "You are an NCR Ranger, a member of an elite military division within the NCR. Assist the main forces by scouting ahead and reporting your findings. Follow the orders of the Veteran Ranger."
 
 	outfit = /datum/outfit/job/ms13/ncr/ranger
 

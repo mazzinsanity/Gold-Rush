@@ -3,6 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Ringleader."
+	req_admin_notify = 1
 	description = "You are a trusted veteran member of the Goldman Posse, the Ringleader's right hand man and second in command. Organize the Goldman camp and keep it stocked with supplies. Engage in matters on the Ringleader's behalf if needed."
 
 	outfit = /datum/outfit/job/ms13/goldman/keeper

@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(town_positions, list(
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
 	"NCR Radio Operator",
-	"NCR Medic",
+	"NCR Combat Medic",
 	"NCR Sergeant",
 	"NCR Lieutenant",
 	"NCR Ranger",

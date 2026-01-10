@@ -3,7 +3,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Corporals and above."
-	description = ""
+	description = "You are a Private First Class, a common foot soldier of the NCR Army. You have completed basic training and have been issued simple gear. Stick to your squad and follow the orders of Corporals and above."
 
 	outfit = /datum/outfit/job/ms13/ncr/trooper
 

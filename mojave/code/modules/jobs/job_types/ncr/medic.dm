@@ -1,9 +1,9 @@
 /datum/job/ms13/ncr/medic
-	title = "NCR Medic"
+	title = "NCR Combat Medic"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Sergeants and above."
-	description = ""
+	description = "Ensure everyone is in good health. Keep your squad alive during combat. Follow the orders of Sergeants and above."
 
 	outfit = /datum/outfit/job/ms13/ncr/medic
 
@@ -12,7 +12,7 @@
 	mind_traits = list(TRAIT_MEDICAL_TRAINING)
 
 /datum/outfit/job/ms13/ncr/medic
-	name = "_NCR Medic"
+	name = "_NCR Combat Medic"
 	jobtype = /datum/job/ms13/ncr/medic
 	id = /obj/item/card/id/ms13/ncr/medic
 	head = /obj/item/clothing/head/helmet/ms13/ncr/medic

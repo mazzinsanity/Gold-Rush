@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Lieutenant."
-	description = ""
+	description = "Ensure the base is stocked with supplies. Ensure the base is up to standards. Distribute equipment and monitor the armory. Follow the orders of the Lieutenant."
 
 	outfit = /datum/outfit/job/ms13/ncr/quartermaster
 

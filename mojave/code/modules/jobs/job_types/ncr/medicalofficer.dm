@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Lieutenant."
-	description = ""
+	description = "Ensure the base is stocked with medical supplies. Triage the wounded and oversee surgery. Advise the Combat Medics on medical matters. Follow the orders of the Lieutenant."
 
 	outfit = /datum/outfit/job/ms13/ncr/medical_officer
 
