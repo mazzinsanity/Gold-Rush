@@ -315,6 +315,12 @@
 	paddle_type = /obj/item/shockpaddles/syndicate/nanotrasen
 	paddle_state = "defibnt-paddles"
 
+/obj/item/defibrillator/loaded/mojave
+	paddle_type = /obj/item/shockpaddles/mojave
+
+/obj/item/defibrillator/loaded/mojave/screwdriver_act(mob/living/user, obj/item/tool)
+	return
+
 //paddles
 
 /obj/item/shockpaddles
@@ -708,6 +714,9 @@
 
 /obj/item/shockpaddles/syndicate/cyborg
 	req_defib = FALSE
+
+/obj/item/shockpaddles/mojave
+	revivecost = 0
 
 #undef HALFWAYCRITDEATH
 #undef DEFIB_CAN_HURT
