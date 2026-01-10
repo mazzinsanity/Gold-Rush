@@ -1036,6 +1036,90 @@
 	name = "Fox"
 	icon_state = "fox"
 
+/datum/sprite_accessory/markings/head/facemask
+	name = "Facemask"
+	icon_state = "facemask"
+
+/datum/sprite_accessory/markings/head/facedisk
+	name = "Facedisk"
+	icon_state = "facedisk"
+
+/datum/sprite_accessory/markings/head/verticalstripe
+	name = "Vertical Stripe"
+	icon_state = "verticalstripe"
+
+/datum/sprite_accessory/markings/head/fangs
+	name = "Fangs"
+	icon_state = "fangs"
+
+/datum/sprite_accessory/markings/head/lips
+	name = "Lips"
+	icon_state = "lips"
+
+/datum/sprite_accessory/markings/head/cyclopssclera
+	name = "Cyclops Sclera"
+	icon_state = "cyclopssclera"
+
+/datum/sprite_accessory/markings/head/monster3
+	name = "Monster 3"
+	icon_state = "monster3"
+
+/datum/sprite_accessory/markings/head/monster2
+	name = "Monster 2"
+	icon_state = "monster2"
+
+/datum/sprite_accessory/markings/head/clowncross
+	name = "Clown Cross"
+	icon_state = "clowncross"
+
+/datum/sprite_accessory/markings/head/clownlips
+	name = "Clown Lips"
+	icon_state = "clownlips"
+
+/datum/sprite_accessory/markings/head/eyesinner
+	name = "Eyes Sinner"
+	icon_state = "eyesinner"
+
+/datum/sprite_accessory/markings/head/eyesouter
+	name = "Eyes Outer"
+	icon_state = "eyesouter"
+
+/datum/sprite_accessory/markings/head/deer
+	name = "Deer"
+	icon_state = "deer"
+
+/datum/sprite_accessory/markings/head/thirdeye
+	name = "Third Eye"
+	icon_state = "thirdeye"
+
+/datum/sprite_accessory/markings/head/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/head/splotcheswap
+	name = "Splotches Swap"
+	icon_state = "splotchesswap"
+
+/datum/sprite_accessory/markings/head/dome
+	name = "Dome"
+	icon_state = "dome"
+
+/datum/sprite_accessory/markings/head/talleyes
+	name = "Tall Eyes"
+	icon_state = "talleyes"
+
+/datum/sprite_accessory/markings/head/wideeyes
+	name = "Wide Eyes"
+	icon_state = "wideeyes"
+
+/datum/sprite_accessory/markings/head/angledeyes
+	name = "Angled Eyes"
+	icon_state = "angledeyes"
+
+/datum/sprite_accessory/markings/head/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
 ////////////////////////////////
 // Chest Markings Definitions //
 ////////////////////////////////
@@ -1064,6 +1148,67 @@
 	name = "Floofer (Female)"
 	icon_state = "floofer_f"
 
+/datum/sprite_accessory/markings/chest/chestplate
+	name = "Chestplate"
+	icon_state = "chestplate"
+
+/datum/sprite_accessory/markings/chest/bellybutton
+	name = "Belly Button"
+	icon_state = "bellybutton"
+
+/datum/sprite_accessory/markings/chest/cleavage
+	name = "Cleavage"
+	icon_state = "cleavage"
+
+/datum/sprite_accessory/markings/chest/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/chest/topscars
+	name = "Top Scars"
+	icon_state = "topscars_1"
+	icon_state_2 = "topscars_2"
+
+/datum/sprite_accessory/markings/chest/cryptid_male
+	name = "Cryptid"
+	icon_state = "cryptid_marking_m"
+
+/datum/sprite_accessory/markings/chest/cryptid_female
+	name = "Cryptid (Female)"
+	icon_state = "cryptid_marking_f"
+
+/datum/sprite_accessory/markings/chest/cryptid_simple
+	name = "Cryptid (Simple)"
+	icon_state = "cryptid"
+
+/datum/sprite_accessory/markings/chest/skintone_male
+	name = "Skintone"
+	icon_state = "skintone_m"
+
+/datum/sprite_accessory/markings/chest/skintone_female
+	name = "Skintone (Female)"
+	icon_state = "skintone_f"
+
+/datum/sprite_accessory/markings/chest/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/chest/weight2_m
+	name = "Body Weight (Male)"
+	icon_state = "weight2_m"
+
+/datum/sprite_accessory/markings/chest/weight2_f
+	name = "Body Weight (Female)"
+	icon_state = "weight2_f"
+
+/datum/sprite_accessory/markings/chest/bellymonster
+	name = "Belly Monster"
+	icon_state = "bellymonster"
+
+/datum/sprite_accessory/markings/chest/bellymonster_alt
+	name = "Belly Monster Alt"
+	icon_state = "bellymonster_alt"
+
 ///////////////////////////////////
 // Left Arm Markings Definitions //
 ///////////////////////////////////
@@ -1079,6 +1224,38 @@
 /datum/sprite_accessory/markings/l_arm/floofer
 	name = "Floofer"
 	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/l_arm/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/l_arm/shoulder
+	name = "Shoulder"
+	icon_state = "shoulder"
+
+/datum/sprite_accessory/markings/l_arm/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/l_arm/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_arm/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_arm/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/l_arm/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/l_arm/shoulderpad
+	name = "Shoulderpad"
+	icon_state = "shoulderpad"
 
 ////////////////////////////////////
 // Left Hand Markings Definitions //
@@ -1096,6 +1273,38 @@
 	name = "Claws"
 	icon_state = "claws"
 
+/datum/sprite_accessory/markings/l_hand/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/l_hand/glove
+	name = "Glove"
+	icon_state = "glove"
+
+/datum/sprite_accessory/markings/l_hand/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/l_hand/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_hand/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_hand/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/l_hand/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/l_hand/chitinarmor
+	name = "Chitin Armor"
+	icon_state = "chitinarmor"
+
 ////////////////////////////////////
 // Right Arm Markings Definitions //
 ////////////////////////////////////
@@ -1111,6 +1320,38 @@
 /datum/sprite_accessory/markings/r_arm/floofer
 	name = "Floofer"
 	icon_state = "floofer"
+
+/datum/sprite_accessory/markings/r_arm/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/r_arm/shoulder
+	name = "Shoulder"
+	icon_state = "shoulder"
+
+/datum/sprite_accessory/markings/r_arm/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/r_arm/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_arm/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_arm/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/r_arm/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/r_arm/shoulderpad
+	name = "Shoulderpad"
+	icon_state = "shoulderpad"
 
 /////////////////////////////////////
 // Right Hand Markings Definitions //
@@ -1128,6 +1369,38 @@
 	name = "Claws"
 	icon_state = "claws"
 
+/datum/sprite_accessory/markings/r_hand/sleeve
+	name = "Sleeve"
+	icon_state = "sleeve"
+
+/datum/sprite_accessory/markings/r_hand/glove
+	name = "Glove"
+	icon_state = "glove"
+
+/datum/sprite_accessory/markings/r_hand/elbow
+	name = "Elbow"
+	icon_state = "elbow"
+
+/datum/sprite_accessory/markings/r_hand/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_hand/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_hand/cryptid
+	name = "Cryptid"
+	icon_state = "cryptid_marking"
+
+/datum/sprite_accessory/markings/r_hand/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
+/datum/sprite_accessory/markings/r_hand/chitinarmor
+	name = "Chitin Armor"
+	icon_state = "chitinarmor"
+
 ///////////////////////////////////
 // Left Leg Markings Definitions //
 ///////////////////////////////////
@@ -1144,6 +1417,30 @@
 	name = "Floofer"
 	icon_state = "floofer"
 
+/datum/sprite_accessory/markings/l_leg/longsock
+	name = "Long Sock"
+	icon_state = "longsock"
+
+/datum/sprite_accessory/markings/l_leg/hip
+	name = "Hip"
+	icon_state = "hip"
+
+/datum/sprite_accessory/markings/l_leg/talon
+	name = "Talon"
+	icon_state = "talon"
+
+/datum/sprite_accessory/markings/l_leg/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/l_leg/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/l_leg/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
 ////////////////////////////////////
 // Left Foot Markings Definitions //
 ////////////////////////////////////
@@ -1155,6 +1452,10 @@
 /datum/sprite_accessory/markings/l_foot/claws
 	name = "Claws"
 	icon_state = "claws"
+
+/datum/sprite_accessory/markings/l_foot/sock
+	name = "Sock"
+	icon_state = "sock"
 
 ///////////////////////////////////
 // Right Leg Markings Definitions //
@@ -1172,6 +1473,30 @@
 	name = "Floofer"
 	icon_state = "floofer"
 
+/datum/sprite_accessory/markings/r_leg/longsock
+	name = "Long Sock"
+	icon_state = "longsock"
+
+/datum/sprite_accessory/markings/r_leg/hip
+	name = "Hip"
+	icon_state = "hip"
+
+/datum/sprite_accessory/markings/r_leg/talon
+	name = "Talon"
+	icon_state = "talon"
+
+/datum/sprite_accessory/markings/r_leg/splotches
+	name = "Splotches"
+	icon_state = "splotches"
+
+/datum/sprite_accessory/markings/r_leg/chitin
+	name = "Chitin"
+	icon_state = "chitin"
+
+/datum/sprite_accessory/markings/r_leg/skintone
+	name = "Skintone"
+	icon_state = "skintone"
+
 /////////////////////////////////////
 // Right Foot Markings Definitions //
 /////////////////////////////////////
@@ -1183,6 +1508,10 @@
 /datum/sprite_accessory/markings/r_foot/claws
 	name = "Claws"
 	icon_state = "claws"
+
+/datum/sprite_accessory/markings/r_foot/sock
+	name = "Sock"
+	icon_state = "sock"
 
 ///////////////////////
 // Tails Definitions //
