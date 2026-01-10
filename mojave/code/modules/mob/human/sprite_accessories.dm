@@ -1120,6 +1120,42 @@
 	name = "Skintone"
 	icon_state = "skintone"
 
+/datum/sprite_accessory/markings/head/drakeeyes
+	name = "Drake Eyes"
+	icon_state = "drakeeyes"
+
+/datum/sprite_accessory/markings/head/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/head/pilot_jaw
+	name = "Pilot Jaw"
+	icon_state = "pilot_jaw"
+
+/datum/sprite_accessory/markings/head/flushed_cheeks
+	name = "Flushed Cheeks"
+	icon_state = "flushed_cheeks"
+
+/datum/sprite_accessory/markings/head/nose_blemish
+	name = "Nose Blemish"
+	icon_state = "nose_blemish"
+
+/datum/sprite_accessory/markings/head/brows
+	name = "Brows"
+	icon_state = "brows"
+
+/datum/sprite_accessory/markings/head/eyeliner
+	name = "Eyeliner"
+	icon_state = "eyeliner"
+
+/datum/sprite_accessory/markings/head/blankface
+	name = "Blank Face"
+	icon_state = "blankface"
+
+/datum/sprite_accessory/markings/head/cyclops
+	name = "Cyclops"
+	icon_state = "cyclops"
+
 ////////////////////////////////
 // Chest Markings Definitions //
 ////////////////////////////////
@@ -1209,6 +1245,18 @@
 	name = "Belly Monster Alt"
 	icon_state = "bellymonster_alt"
 
+/datum/sprite_accessory/markings/chest/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/chest/tonage
+	name = "Tonage"
+	icon_state = "tonage"
+
+/datum/sprite_accessory/markings/chest/bands
+	name = "Bands"
+	icon_state = "bands"
+
 ///////////////////////////////////
 // Left Arm Markings Definitions //
 ///////////////////////////////////
@@ -1256,6 +1304,14 @@
 /datum/sprite_accessory/markings/l_arm/shoulderpad
 	name = "Shoulderpad"
 	icon_state = "shoulderpad"
+
+/datum/sprite_accessory/markings/l_arm/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/l_arm/bands
+	name = "Bands"
+	icon_state = "bands"
 
 ////////////////////////////////////
 // Left Hand Markings Definitions //
@@ -1305,6 +1361,18 @@
 	name = "Chitin Armor"
 	icon_state = "chitinarmor"
 
+/datum/sprite_accessory/markings/l_hand/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/l_hand/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/l_hand/bands
+	name = "Bands"
+	icon_state = "bands"
+
 ////////////////////////////////////
 // Right Arm Markings Definitions //
 ////////////////////////////////////
@@ -1352,6 +1420,14 @@
 /datum/sprite_accessory/markings/r_arm/shoulderpad
 	name = "Shoulderpad"
 	icon_state = "shoulderpad"
+
+/datum/sprite_accessory/markings/r_arm/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/r_arm/bands
+	name = "Bands"
+	icon_state = "bands"
 
 /////////////////////////////////////
 // Right Hand Markings Definitions //
@@ -1401,6 +1477,18 @@
 	name = "Chitin Armor"
 	icon_state = "chitinarmor"
 
+/datum/sprite_accessory/markings/r_hand/drakebone
+	name = "Drakebone"
+	icon_state = "drakebone"
+
+/datum/sprite_accessory/markings/r_hand/pilot
+	name = "Pilot"
+	icon_state = "pilot"
+
+/datum/sprite_accessory/markings/r_hand/bands
+	name = "Bands"
+	icon_state = "bands"
+
 ///////////////////////////////////
 // Left Leg Markings Definitions //
 ///////////////////////////////////
@@ -1441,6 +1529,10 @@
 	name = "Skintone"
 	icon_state = "skintone"
 
+/datum/sprite_accessory/markings/l_leg/bands
+	name = "Bands"
+	icon_state = "bands"
+
 ////////////////////////////////////
 // Left Foot Markings Definitions //
 ////////////////////////////////////
@@ -1456,6 +1548,14 @@
 /datum/sprite_accessory/markings/l_foot/sock
 	name = "Sock"
 	icon_state = "sock"
+
+/datum/sprite_accessory/markings/l_foot/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/l_foot/anklet
+	name = "Anklet"
+	icon_state = "anklet"
 
 ///////////////////////////////////
 // Right Leg Markings Definitions //
@@ -1497,6 +1597,10 @@
 	name = "Skintone"
 	icon_state = "skintone"
 
+/datum/sprite_accessory/markings/r_leg/bands
+	name = "Bands"
+	icon_state = "bands"
+
 /////////////////////////////////////
 // Right Foot Markings Definitions //
 /////////////////////////////////////
@@ -1512,6 +1616,14 @@
 /datum/sprite_accessory/markings/r_foot/sock
 	name = "Sock"
 	icon_state = "sock"
+
+/datum/sprite_accessory/markings/r_foot/bands
+	name = "Bands"
+	icon_state = "bands"
+
+/datum/sprite_accessory/markings/r_foot/anklet
+	name = "Anklet"
+	icon_state = "anklet"
 
 ///////////////////////
 // Tails Definitions //
