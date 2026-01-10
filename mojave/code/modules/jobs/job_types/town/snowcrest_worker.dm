@@ -1,4 +1,4 @@
-/datum/job/ms13/town/worker
+/datum/job/ms13/town/snowcrest_worker
 	title = "Snowcrest Worker"
 	total_positions = 3
 	spawn_positions = 3
@@ -7,15 +7,15 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/worker
+	outfit = /datum/outfit/job/ms13/town/snowcrest_worker
 
 	display_order = JOB_DISPLAY_ORDER_MS13_WORKER
 
 	mind_traits = list(TRAIT_SNOWCREST_TAILOR)
 
-/datum/outfit/job/ms13/town/worker
+/datum/outfit/job/ms13/town/snowcrest_worker
 	name = "_Snowcrest Worker"
-	jobtype = /datum/job/ms13/town/worker
+	jobtype = /datum/job/ms13/town/snowcrest_worker
 
 	id = 		 /obj/item/card/id/ms13/town/worker
 	head =       /obj/item/clothing/head/helmet/ms13/hardhat
@@ -25,7 +25,7 @@
 	r_hand =	 /obj/item/storage/ms13/toolbox/filled
 
 
-/datum/outfit/job/ms13/town/worker/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_worker/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

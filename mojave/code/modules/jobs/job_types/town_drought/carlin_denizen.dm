@@ -1,17 +1,17 @@
-/datum/job/ms13/town_drought/denizen
+/datum/job/ms13/town_drought/carlin_denizen
 	title = "Carlin Denizen"
 	total_positions = 10
 	spawn_positions = 10
 	supervisors = "The Enforcers and The Mayor."
 	description = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/denizen
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_denizen
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINDENIZEN
 
-/datum/outfit/job/ms13/town_drought/denizen
+/datum/outfit/job/ms13/town_drought/carlin_denizen
 	name = "_Carlin Denizen"
-	jobtype = /datum/job/ms13/town_drought/denizen
+	jobtype = /datum/job/ms13/town_drought/carlin_denizen
 
 	id = /obj/item/card/id/ms13/drought_denizen
 	backpack_contents = list(
@@ -19,7 +19,7 @@
 		/obj/item/flashlight/flare/ms13=1,
 	)	
 
-/datum/outfit/job/ms13/town_drought/denizen/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town_drought/carlin_denizen/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

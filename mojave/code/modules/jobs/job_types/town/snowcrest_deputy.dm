@@ -1,4 +1,4 @@
-/datum/job/ms13/town/deputy
+/datum/job/ms13/town/snowcrest_deputy
 	title = "Town Deputy"
 	total_positions = 4
 	spawn_positions = 4
@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/deputy
+	outfit = /datum/outfit/job/ms13/town/snowcrest_deputy
 
 	display_order = JOB_DISPLAY_ORDER_MS13_DEPUTY
 
-/datum/outfit/job/ms13/town/deputy
+/datum/outfit/job/ms13/town/snowcrest_deputy
 	name = "_Town Deputy"
-	jobtype = /datum/job/ms13/town/deputy
+	jobtype = /datum/job/ms13/town/snowcrest_deputy
 
 	id = 		 /obj/item/card/id/ms13/deputy
 	head =		 /obj/item/clothing/head/helmet/ms13/deputy
@@ -34,5 +34,5 @@
 		/obj/item/ammo_box/ms13/a357box=1, \
 		/obj/item/radio/ms13=1)
 
-/datum/outfit/job/ms13/town/deputy/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_deputy/pre_equip(mob/living/carbon/human/H)
 	..()

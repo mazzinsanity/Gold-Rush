@@ -1,19 +1,19 @@
-/datum/job/ms13/town_drought/clinician
+/datum/job/ms13/town_drought/carlin_clinician
 	title = "Carlin Clinician"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "The Enforcers and The Mayor."
 	description = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/clinician
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_clinician
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINCLINICIAN
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING, TRAIT_DRUGGIE)
 
-/datum/outfit/job/ms13/town_drought/clinician
+/datum/outfit/job/ms13/town_drought/carlin_clinician
 	name = "_Carlin Clinician"
-	jobtype = /datum/job/ms13/town_drought/clinician
+	jobtype = /datum/job/ms13/town_drought/carlin_clinician
 
 	id = /obj/item/card/id/ms13/drought_doctor
 	suit = /obj/item/clothing/suit/toggle/labcoat/ms13
@@ -25,7 +25,7 @@
 		/obj/item/flashlight/flare/ms13=1,
 	)	
 
-/datum/outfit/job/ms13/town_drought/clinician/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town_drought/carlin_clinician/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	r_pocket = pick(

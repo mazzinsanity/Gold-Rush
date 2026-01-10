@@ -1,4 +1,4 @@
-/datum/job/ms13/town/doctor
+/datum/job/ms13/town/snowcrest_doctor
 	title = "Snowcrest Doctor"
 	total_positions = 1
 	spawn_positions = 1
@@ -7,15 +7,15 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/doctor
+	outfit = /datum/outfit/job/ms13/town/snowcrest_doctor
 
 	display_order = JOB_DISPLAY_ORDER_MS13_DOCTOR
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING, TRAIT_DRUGGIE)
 
-/datum/outfit/job/ms13/town/doctor
+/datum/outfit/job/ms13/town/snowcrest_doctor
 	name = "_Snowcrest Doctor"
-	jobtype = /datum/job/ms13/town/doctor
+	jobtype = /datum/job/ms13/town/snowcrest_doctor
 
 	id = 		 /obj/item/card/id/ms13/doctor
 	suit =       /obj/item/clothing/suit/toggle/labcoat/ms13
@@ -26,5 +26,5 @@
 	r_pocket =   /obj/item/stack/ms13/currency/prewar/hunnedeighty
 	back =       /obj/item/storage/ms13/satchel
 
-/datum/outfit/job/ms13/town/doctor/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_doctor/pre_equip(mob/living/carbon/human/H)
 	..()

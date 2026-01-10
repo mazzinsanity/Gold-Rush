@@ -1,4 +1,4 @@
-/datum/job/ms13/town/squatter
+/datum/job/ms13/town/snowcrest_squatter
 	title = "Snowcrest Squatter"
 	total_positions = -1
 	spawn_positions = -1
@@ -7,19 +7,19 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/squatter
+	outfit = /datum/outfit/job/ms13/town/snowcrest_squatter
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SQUATTER
 
 	guestbook_flags = GUESTBOOK_FORGETMENOT //anonymity from the rest of town
 
-/datum/outfit/job/ms13/town/squatter
+/datum/outfit/job/ms13/town/snowcrest_squatter
 	name = "_Snowcrest Squatter"
-	jobtype = /datum/job/ms13/town/squatter
+	jobtype = /datum/job/ms13/town/snowcrest_squatter
 
 	back =       null
 
-/datum/outfit/job/ms13/town/squatter/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_squatter/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	if(prob(10))

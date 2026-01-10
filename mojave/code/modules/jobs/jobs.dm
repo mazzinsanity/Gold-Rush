@@ -15,24 +15,26 @@ GLOBAL_LIST_INIT(town_positions, list(
 
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Trooper",
-	"NCR Military Police",
 	"NCR Radio Operator",
-	"NCR MP Medic",
 	"NCR Medic",
-	"NCR Engineer",
 	"NCR Sergeant",
-	"NCR Sergeant",
-	"NCR Staff Sergeant",
-	"NCR Lieutenant"))
+	"NCR Lieutenant",
+	"NCR Ranger",
+	"NCR Veteran Ranger",
+	"NCR Quartermaster",
+	"NCR Medical Officer",
+	"NCR Rear Echelon",
+	"NCR Corporal",
+	))
 
 GLOBAL_LIST_INIT(bos_positions, list(
-	"BoS Initiate",
-	"BoS Initiate",
-	"BoS Knight",
-	"BoS Paladin",
-	"BoS Head Knight",
-	"BoS Scribe",
-	"BoS Head Scribe")) 
+	"Brotherhood Initiate",
+	"Brotherhood Knight",
+	"Brotherhood Head Knight",
+	"Brotherhood Scribe",
+	"Brotherhood Head Scribe",
+	"Brotherhood Base Staff",
+	)) 
 
 GLOBAL_LIST_INIT(raiders_positions, list(
 	"Raider",
@@ -48,19 +50,18 @@ GLOBAL_LIST_INIT(raiders_positions, list(
 	"Mon City Captain"))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Praetorian",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
 	"Legion Recruit Decanus",
-	"Legion Veteran",
-	"Legion Prime ",
-	"Legion Recruit",
-	"Legion Vexillarius",
-	"Legion Speculatore",
+	"Legion Veteran Legionary",
+	"Legion Prime Legionary",
+	"Legion Recruit Legionary",
 	"Legion Explorer",
-	"Legion Scout",
-	"Legion Blacksmith",))
+	"Legion Blacksmith",
+	"Legion Medicus",
+	"Legion Camp Auxilia",
+	))
 
 GLOBAL_LIST_INIT(ranger_positions, list(
 	"Desert Ranger Deputy-Chief",
@@ -70,12 +71,15 @@ GLOBAL_LIST_INIT(ranger_positions, list(
 	"Desert Ranger Doctor",))
 
 GLOBAL_LIST_INIT(drought_town_positions, list(
-	"The Baron",
-	"Barony Denizen",
-	"Barony Laborer",
-	"Barony Barkeep",
-	"Barony Clinician",
-	"Barony Enforcer"))
+	"Carlin Mayor",
+	"Carlin Denizen",
+	"Carlin Laborer",
+	"Carlin Barkeep",
+	"Carlin Shopkeep",
+	"Carlin Clinician",
+	"Carlin Enforcer",
+	"Carlin Sheriff",
+	))
 
 GLOBAL_LIST_INIT(drylander_positions, list(
 	"Drylander Chieftain",
@@ -86,7 +90,7 @@ GLOBAL_LIST_INIT(drylander_positions, list(
 
 GLOBAL_LIST_INIT(goldman_positions, list(
 	"Goldman Ringleader",
-	"Goldman Quartermaster",
+	"Goldman Keeper",
 	"Goldman Road Runner",
 	"Goldman",
 	"Goldman Unproven"))

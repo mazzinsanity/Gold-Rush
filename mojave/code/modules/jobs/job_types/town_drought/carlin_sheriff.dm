@@ -1,4 +1,4 @@
-/datum/job/ms13/town_drought/sheriff
+/datum/job/ms13/town_drought/carlin_sheriff
 	title = "Carlin Sheriff"
 	total_positions = 1
 	spawn_positions = 1
@@ -9,9 +9,9 @@
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINSHERIFF
 
-/datum/outfit/job/ms13/town_drought/sheriff
+/datum/outfit/job/ms13/town_drought/carlin_sheriff
 	name = "_Carlin Sheriff"
-	jobtype = /datum/job/ms13/town_drought/sheriff
+	jobtype = /datum/job/ms13/town_drought/carlin_sheriff
 
 	id = /obj/item/card/id/ms13/drought_sheriff
 	head = /obj/item/clothing/head/helmet/ms13/sheriff

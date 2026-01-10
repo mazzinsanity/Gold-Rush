@@ -1,17 +1,17 @@
-/datum/job/ms13/town_drought/barkeep
+/datum/job/ms13/town_drought/carlin_barkeep
 	title = "Carlin Barkeep"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Enforcers and The Mayor."
 	description = "Tend to Carlin's bar and food services."
 
-	outfit = /datum/outfit/job/ms13/town_drought/barkeep
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_barkeep
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINBARKEEP
 
-/datum/outfit/job/ms13/town_drought/barkeep
+/datum/outfit/job/ms13/town_drought/carlin_barkeep
 	name = "_Carlin Barkeep"
-	jobtype = /datum/job/ms13/town_drought/barkeep
+	jobtype = /datum/job/ms13/town_drought/carlin_barkeep
 
 	id = /obj/item/card/id/ms13/drought_barkeep
 	suit = /obj/item/clothing/suit/ms13/vest
@@ -24,7 +24,7 @@
 		/obj/item/flashlight/flare/ms13=1,
 	)
 
-/datum/outfit/job/ms13/town_drought/barkeep/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town_drought/carlin_barkeep/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	r_pocket = pick(

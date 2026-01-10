@@ -1,17 +1,17 @@
-/datum/job/ms13/town_drought/laborer
+/datum/job/ms13/town_drought/carlin_laborer
 	title = "Carlin Laborer"
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "The Enforcers and The Mayor."
 	description = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/laborer
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_laborer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINLABORER
 
-/datum/outfit/job/ms13/town_drought/laborer
+/datum/outfit/job/ms13/town_drought/carlin_laborer
 	name = "_Carlin Laborer"
-	jobtype = /datum/job/ms13/town_drought/laborer
+	jobtype = /datum/job/ms13/town_drought/carlin_laborer
 
 	id = /obj/item/card/id/ms13/drought_laborer
 	shoes = /obj/item/clothing/shoes/ms13/explorer
@@ -21,7 +21,7 @@
 		/obj/item/flashlight/flare/ms13=1,
 	)	
 
-/datum/outfit/job/ms13/town_drought/laborer/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town_drought/carlin_laborer/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

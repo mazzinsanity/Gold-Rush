@@ -45,7 +45,7 @@
 /datum/job_department/town_drought
 	department_name = DEPARTMENT_DROUGHTTOWN
 	department_bitflags = DEPARTMENT_BITFLAG_DROUGHTTOWN
-	department_head = /datum/job/ms13/town_drought/mayor
+	department_head = /datum/job/ms13/town_drought/carlin_mayor
 	department_experience_type = EXP_TYPE_DROUGHTTOWN
 	department_full_name = "Carlin"
 
@@ -72,7 +72,7 @@
 /datum/job_department/town
 	department_name = DEPARTMENT_TOWN
 	department_bitflags = DEPARTMENT_BITFLAG_TOWN
-	department_head = /datum/job/ms13/town/mayor
+	department_head = /datum/job/ms13/town/snowcrest_mayor
 	department_experience_type = EXP_TYPE_TOWN
 	department_full_name = "Town of Snowcrest"
 

@@ -1,4 +1,4 @@
-/datum/job/ms13/town/sheriff
+/datum/job/ms13/town/snowcrest_sheriff
 	title = "Town Sheriff"
 	total_positions = 1
 	spawn_positions = 1
@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/sheriff
+	outfit = /datum/outfit/job/ms13/town/snowcrest_sheriff
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SHERIFF
 
-/datum/outfit/job/ms13/town/sheriff
+/datum/outfit/job/ms13/town/snowcrest_sheriff
 	name = "_Town Sheriff"
-	jobtype = /datum/job/ms13/town/sheriff
+	jobtype = /datum/job/ms13/town/snowcrest_sheriff
 
 	id = 		 /obj/item/card/id/ms13/sheriff
 	head = 	     /obj/item/clothing/head/helmet/ms13/sheriff
@@ -36,5 +36,5 @@
 		/obj/item/radio/ms13/broadcast/advanced=1, \
 		/obj/item/ammo_box/magazine/ms13/m10mm=1)
 
-/datum/outfit/job/ms13/town/sheriff/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_sheriff/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -1,4 +1,4 @@
-/datum/job/ms13/town/bartender
+/datum/job/ms13/town/snowcrest_bartender
 	title = "Snowcrest Bartender"
 	total_positions = 1
 	spawn_positions = 1
@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/bartender
+	outfit = /datum/outfit/job/ms13/town/snowcrest_bartender
 
 	display_order = JOB_DISPLAY_ORDER_MS13_BARTENDER
 
-/datum/outfit/job/ms13/town/bartender
+/datum/outfit/job/ms13/town/snowcrest_bartender
 	name = "_Snowcrest Bartender"
-	jobtype = /datum/job/ms13/town/bartender
+	jobtype = /datum/job/ms13/town/snowcrest_bartender
 
 	id =		 /obj/item/card/id/ms13/town/bartender
 	suit =       /obj/item/clothing/suit/ms13/vest/black
@@ -24,5 +24,5 @@
 	l_pocket =   /obj/item/stack/ms13/currency/prewar/hunnedfourty
 	back =       null
 
-/datum/outfit/job/ms13/town/bartender/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town/snowcrest_bartender/pre_equip(mob/living/carbon/human/H)
 	..()

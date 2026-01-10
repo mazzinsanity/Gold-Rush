@@ -1,4 +1,4 @@
-/datum/job/ms13/town_drought/enforcer
+/datum/job/ms13/town_drought/carlin_enforcer
 	title = "Carlin Enforcer"
 	total_positions = 4
 	spawn_positions = 4
@@ -9,9 +9,9 @@
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINENFORCER
 
-/datum/outfit/job/ms13/town_drought/enforcer
+/datum/outfit/job/ms13/town_drought/carlin_enforcer
 	name = "_Carlin Enforcer"
-	jobtype = /datum/job/ms13/town_drought/enforcer
+	jobtype = /datum/job/ms13/town_drought/carlin_enforcer
 
 	id = /obj/item/card/id/ms13/drought_enforcer
 	head = /obj/item/clothing/head/helmet/ms13/enforcer
@@ -29,7 +29,7 @@
 		/obj/item/flashlight/ms13=1,
 	)
 
-/datum/outfit/job/ms13/town_drought/enforcer/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/ms13/town_drought/carlin_enforcer/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

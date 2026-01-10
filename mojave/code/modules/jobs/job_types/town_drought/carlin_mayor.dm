@@ -1,17 +1,17 @@
-/datum/job/ms13/town_drought/mayor
+/datum/job/ms13/town_drought/carlin_mayor
 	title = "Carlin Mayor"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The People."
 	description = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/mayor
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_mayor
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINMAYOR
 
-/datum/outfit/job/ms13/town_drought/mayor
-	name = "_The Mayor"
-	jobtype = /datum/job/ms13/town_drought/mayor
+/datum/outfit/job/ms13/town_drought/carlin_mayor
+	name = "_Carlin Mayor"
+	jobtype = /datum/job/ms13/town_drought/carlin_mayor
 
 	id = /obj/item/card/id/ms13/drought_mayor
 	uniform = /obj/item/clothing/under/ms13/regal
