@@ -1545,6 +1545,7 @@
 /obj/structure/table/ms13/metal/alt,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/effect/spawner/random/ms13/medical/medkit,
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
 "ff" = (

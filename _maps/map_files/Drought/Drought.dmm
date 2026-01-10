@@ -5875,6 +5875,7 @@
 /obj/structure/ms13/storage/large/medical{
 	dir = 4
 	},
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/town)
 "fuf" = (
@@ -6001,6 +6002,7 @@
 /area/ms13/ncr/building)
 "fBd" = (
 /obj/structure/table/ms13/metal/grate,
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/full/navy,
 /area/ms13/ncr/building)
 "fBy" = (
@@ -15927,6 +15929,7 @@
 /obj/machinery/light/ms13{
 	dir = 4
 	},
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/bos/building)
 "pcm" = (
@@ -18607,6 +18610,7 @@
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 4
 	},
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/large/navy,
 /area/ms13/carlin/interior)
 "rwl" = (
@@ -20448,6 +20452,7 @@
 /area/ms13/town)
 "tjV" = (
 /obj/structure/ms13/storage/shelf,
+/obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/legioncamp/building)
 "tkB" = (
