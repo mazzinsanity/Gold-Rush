@@ -178,6 +178,21 @@
 	assignment = "NCR Veteran Ranger"
 	shows_age = FALSE
 
+/obj/item/card/id/ms13/ncr/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police' and the rank is listed as 'Private First Class'."
+	assignment = "NCR Military Police"
+	access = list(ACCESS_TOWN_LAW)
+
+/obj/item/card/id/ms13/ncr/medic/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police Medic' and the rank is listed as 'Corporal'."
+	assignment = "NCR MP Medic"
+	access = list(ACCESS_TOWN_DOCTOR, ACCESS_TOWN_LAW)
+
+/obj/item/card/id/ms13/ncr/sergeant/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police NCO' and the rank is listed as 'Sergeant'."
+	assignment = "NCR Sergeant"
+	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_WORKER, ACCESS_TOWN_DOCTOR)
+
 /obj/item/card/id/ms13/legrecruit
 	name = "recruit blade"
 	desc = "A tiny, dull blade on a string. Used to identify recruits and new blood in Caesar's Legion."
