@@ -5,7 +5,7 @@
 	supervisors = "The Mayor"
 	description = "Lead and organize your team of Enforcers to ensure the Mayor's laws are being upheld. Work with the Mayor to make Carlin a better place to live."
 
-	outfit = /datum/outfit/job/ms13/town_drought/sheriff
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_sheriff
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINSHERIFF
 
