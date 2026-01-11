@@ -12,7 +12,7 @@
 /datum/outfit/job/ms13/goldman/standardgold
 	name = "_Goldman"
 	jobtype = 	 /datum/job/ms13/goldman/standardgold
-	id =		 /obj/item/card/id/ms13/goldman
+	id =		 /obj/item/card/id/ms13/goldman/standardgold
 	head = 		 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/reinforced
 	uniform =	 /obj/item/clothing/under/ms13/goldman
 	belt =		 /obj/item/gun/ballistic/revolver/ms13/rev10mm

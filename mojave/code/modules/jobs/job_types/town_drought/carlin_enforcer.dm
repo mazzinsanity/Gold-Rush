@@ -5,7 +5,7 @@
 	supervisors = "The Sheriff and the Mayor"
 	description = "Enforce the Mayor's laws on the streets of Carlin. Follow the orders of the Sheriff and the Mayor."
 
-	outfit = /datum/outfit/job/ms13/town_drought/enforcer
+	outfit = /datum/outfit/job/ms13/town_drought/carlin_enforcer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CARLINENFORCER
 

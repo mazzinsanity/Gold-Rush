@@ -106,23 +106,20 @@
 	assignment = "Snowcrest Bartender"
 
 /obj/item/card/id/ms13/ncr
-	name = "\improper NCR dog tags"
+	name = "\improper NCR trooper dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Trooper' and the rank is listed as 'Private First Class'."
 	icon_state = "ncrdogtag"
 	assignment = "NCR Trooper"
 
 /obj/item/card/id/ms13/ncr/rear_echelon
+	name = "\improper NCR rear echelon dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Rear Echelon' and the rank is listed as 'Private'."
 	assignment = "NCR Rear Echelon"
 
 /obj/item/card/id/ms13/ncr/corporal
+	name = "\improper NCR corporal dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Trooper' and the rank is listed as 'Corporal'."
 	assignment = "NCR Corporal"
-
-/obj/item/card/id/ms13/ncr/mp
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police' and the rank is listed as 'Private First Class'."
-	assignment = "NCR Military Police"
-	access = list(ACCESS_TOWN_LAW)
 
 /obj/item/card/id/ms13/ncr/recruit
 	name = "\improper NCR recruit dog tags"
@@ -138,36 +135,32 @@
 	return ..()
 
 /obj/item/card/id/ms13/ncr/medic
+	name = "\improper NCR combat medic dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Combat Medic' and the rank is listed as 'Corporal'."
 	assignment = "NCR Combat Medic"
 
-/obj/item/card/id/ms13/ncr/medic/mp
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police Medic' and the rank is listed as 'Corporal'."
-	assignment = "NCR MP Medic"
-	access = list(ACCESS_TOWN_DOCTOR, ACCESS_TOWN_LAW)
-
 /obj/item/card/id/ms13/ncr/radioman
+	name = "\improper NCR radio operator dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Radio Operator' and the rank is listed as 'Corporal'."
 	assignment = "NCR Radio Operator"
 
 /obj/item/card/id/ms13/ncr/sergeant
+	name = "\improper NCR sergeant dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Squad Leader' and the rank is listed as 'Sergeant'."
 	assignment = "NCR Sergeant"
 
-/obj/item/card/id/ms13/ncr/sergeant/mp
-	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police NCO' and the rank is listed as 'Sergeant'."
-	assignment = "NCR Sergeant"
-	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_WORKER, ACCESS_TOWN_DOCTOR)
-
 /obj/item/card/id/ms13/ncr/lieutenant
+	name = "\improper NCR lieutenant dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Lieutenant' and the rank is listed as 'First Lieutenant'."
 	assignment = "NCR Lieutenant"
 
 /obj/item/card/id/ms13/ncr/medical_officer
+	name = "\improper NCR medical officer dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Medical Officer' and the rank is listed as 'Second Lieutenant'."
 	assignment = "NCR Medical Officer"
 
 /obj/item/card/id/ms13/ncr/quartermaster
+	name = "\improper NCR quartermaster dog tags"
 	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Quartermaster' and the rank is listed as 'Second Lieutenant'."
 	assignment = "NCR Quartermaster"
 
@@ -184,6 +177,21 @@
 	icon_state = "ranger_elite"
 	assignment = "NCR Veteran Ranger"
 	shows_age = FALSE
+
+/obj/item/card/id/ms13/ncr/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police' and the rank is listed as 'Private First Class'."
+	assignment = "NCR Military Police"
+	access = list(ACCESS_TOWN_LAW)
+
+/obj/item/card/id/ms13/ncr/medic/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police Medic' and the rank is listed as 'Corporal'."
+	assignment = "NCR MP Medic"
+	access = list(ACCESS_TOWN_DOCTOR, ACCESS_TOWN_LAW)
+
+/obj/item/card/id/ms13/ncr/sergeant/mp
+	desc = "Standard NCR dog tags. The assignment listed on the tag is 'Military Police NCO' and the rank is listed as 'Sergeant'."
+	assignment = "NCR Sergeant"
+	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_WORKER, ACCESS_TOWN_DOCTOR)
 
 /obj/item/card/id/ms13/legrecruit
 	name = "recruit blade"
@@ -240,7 +248,7 @@
 	shows_age = FALSE
 
 /obj/item/card/id/ms13/camp_auxilia
-	name = "Camp Auxilia medallion"
+	name = "camp auxilia medallion"
 	desc = "A marked dark colored disc stamped with the Legion's Bull insignia. Belongs to a Legion Camp Auxilia."
 	icon_state = "leg_aux"
 	assignment = "Legion Camp Auxilia"
@@ -331,13 +339,13 @@
 	assignment = "Desert Ranger Doctor"
 
 /obj/item/card/id/ms13/drought_denizen
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin denizen identification papers"
 	desc = "Stamped identification papers for a citizen of Carlin. This has no special assignment on it and likely belongs to a typical Denizen."
 	icon_state = "drought_town"
 	assignment = "Carlin Denizen"
 
 /obj/item/card/id/ms13/drought_visa
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin migrant identification papers"
 	desc = "Freshly stamped identification papers for a new citizen of Carlin. The freshness of these papers likely indicate these are for a recent arrival to Carlin."
 	icon_state = "drought_town"
 	assignment = "Carlin Migrant"
@@ -350,33 +358,33 @@
 	return ..()
 
 /obj/item/card/id/ms13/drought_laborer
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin laborer identification papers"
 	desc = "Stamped identification papers for a citizen of Carlin. This has special clearance for labor and maintenance duties included."
 	assignment = "Carlin Laborer"
 	icon_state = "drought_town"
 
 /obj/item/card/id/ms13/drought_barkeep
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin barkeep identification papers"
 	desc = "Stamped identification papers for a citizen of the Carlin. This has special clearance for operation of a dining and drinking establishment within Carlin."
 	assignment = "Carlin Barkeep"
 	icon_state = "drought_town"
 
 /obj/item/card/id/ms13/drought_shopkeep
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin shopkeep identification papers"
 	desc = "Stamped identification papers for a citizen of the Carlin. This has special clearance for operation of a shop within Carlin."
 	assignment = "Carlin Shopkeep"
 	icon_state = "drought_town"
 	access = list(ACCESS_CARLIN_SHOPKEEP)
 
 /obj/item/card/id/ms13/drought_doctor
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin clinician identification papers"
 	desc = "Stamped identification papers for a citizen of Carlin. This has special clearance for operation of a clinic and medical duties within Carlin."
 	assignment = "Carlin Clinician"
 	icon_state = "drought_town"
 	access = list(ACCESS_CARLIN_DOCTOR)
 
 /obj/item/card/id/ms13/drought_medical
-	name = "\improper Carlin identification papers"
+	name = "\improper Carlin nurse identification papers"
 	desc = "Freshly stamped identification papers for a citizen of Carlin. This is specifically designated for individuals assisting the operation of the Carlin's clinic."
 	assignment = "Carlin Medical Support"
 	icon_state = "drought_town"
@@ -390,7 +398,7 @@
 	return ..()
 
 /obj/item/card/id/ms13/drought_enforcer
-	name = "enforcer's golden pin"
+	name = "\improper Carlin enforcer's golden pin"
 	desc = "A gold talon pin, worn by Enforcers of Carlin. An intimidating sight."
 	assignment = "Carlin Enforcer"
 	icon_state = "drought_enforcer"
@@ -399,7 +407,7 @@
 	just_initials = TRUE
 
 /obj/item/card/id/ms13/drought_sheriff
-	name = "\improper Sheriff's golden pin"
+	name = "\improper Carlin sheriff's golden pin"
 	desc = "A golden pin with a skull belonging to the Sheriff himself."
 	icon_state = "baron"
 	assignment = "The Sheriff"
@@ -407,7 +415,7 @@
 	shows_age = FALSE
 
 /obj/item/card/id/ms13/drought_mayor
-	name = "\improper Mayor's golden pin"
+	name = "\improper Carlin mayor's golden pin"
 	desc = "A golden pin with a skull belonging to the Mayor himself."
 	icon_state = "baron"
 	assignment = "The Sheriff"
@@ -482,24 +490,27 @@
 	shows_age = FALSE
 
 /obj/item/card/id/ms13/goldman
-	name = "\improper goldman bullet necklace"
+	name = "\improper Goldman unproven bullet necklace"
 	desc = "A necklace composed of small caliber rounds. Usually used to identify members of the Goldman Posse."
 	assignment = "Goldman"
 	icon_state = "raider" //placeholder
 	just_initials  = TRUE
 	shows_age = FALSE
 
+/obj/item/card/id/ms13/goldman/standardgold
+	name = "\improper Goldman bullet necklace"
+
 /obj/item/card/id/ms13/goldman/keeper
-	name = "\improper Goldman Keeper necklace"
+	name = "\improper Goldman keeper necklace"
 	assignment = "Goldman Keeper"
 
 /obj/item/card/id/ms13/goldman/ringleader
-	name = "\improper Goldman Ringleader necklace"
+	name = "\improper Goldman ringleader necklace"
 	icon_state = "boss" //placeholder
 	assignment = "Goldman Ringleader"
 
 /obj/item/card/id/ms13/goldman/road
-	name = "\improper Goldman Road Runner necklace"
+	name = "\improper Goldman road runner necklace"
 	assignment = "Goldman Road Runner"
 
 // Brotherhood IDs //
@@ -511,25 +522,28 @@
 	access = list(ACCESS_BROTHERHOOD)
 
 /obj/item/card/id/ms13/bos/initiate
+	name = "\improper Brotherhood initiate holotag"
 	assignment = "\improper Brotherhood Initiate"
 
 /obj/item/card/id/ms13/bos/base_staff
+	name = "\improper Brotherhood base staff holotag"
 	assignment = "\improper Brotherhood Base Staff"
 
 /obj/item/card/id/ms13/bos/knight
+	name = "\improper Brotherhood knight holotag"
 	assignment = "\improper Brotherhood Knight"
 
-/obj/item/card/id/ms13/bos/paladin
-	assignment = "\improper Brotherhood Paladin"
-
 /obj/item/card/id/ms13/bos/headknight
+	name = "\improper Brotherhood head knight holotag"
 	assignment = "\improper Brotherhood Head Knight"
 	access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HKNIGHT)
 
 /obj/item/card/id/ms13/bos/scribe
+	name = "\improper Brotherhood scribe holotag"
 	assignment = "\improper Brotherhood Scribe"
 
 /obj/item/card/id/ms13/bos/headscribe
+	name = "\improper Brotherhood head scribe holotag"
 	assignment = "\improper Brotherhood Head Scribe"
 
 // Combat Test IDs //
