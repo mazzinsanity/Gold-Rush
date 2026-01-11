@@ -298,19 +298,6 @@
 	category = CAT_STAN_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
-/datum/crafting_recipe/762
-	name = "7.62 ammo"
-	result = /obj/item/ammo_box/ms13/a762/junk
-	time = 18 SECONDS
-	tool_behaviors = list()
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/junk_bullets = 24,
-				/obj/item/stack/sheet/ms13/junk_casings = 24,
-				/obj/item/ms13/component/gunpowder = 2
-				)
-	category = CAT_JUNK_AMMO
-	crafting_interface = CRAFTING_BENCH_CAMPFIRE
-
 /datum/crafting_recipe/ap_762
 	name = "armor piercing 7.62 ammo box"
 	result = /obj/item/ammo_box/ms13/a762/ap
