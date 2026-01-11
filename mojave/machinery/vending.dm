@@ -47,7 +47,7 @@
 			if(1 to 24) //nothing
 				to_chat(user, span_danger("You feel a slight discomfort and feel nothing in reach.</span>"))
 				return
-			if(25 to 79) //winner winner
+			if(25 to 90) //winner winner
 				var/chance = pick_weight(list("medium" = medium_chance, "high" = high_chance, "rare" = rare_chance))
 				switch(chance)
 					if("medium")
@@ -61,13 +61,11 @@
 				user.put_in_active_hand(vend_loot)
 				loot_inside -= 1
 				return
-			if(80 to 100) //arm break
+			if(91 to 100) //arm damage
 				var/mob/living/carbon/vender_victim = user
 				var/obj/item/bodypart/affecting = vender_victim.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 				to_chat(user, span_danger("You feel a horrible pain as your arm gets stuck in the [src]s [pick("mechanisms", "parts", "gears")]!"))
-				if(affecting?.receive_damage(30))
-					var/type_wound = pick(list(/datum/wound/blunt/bone/critical, /datum/wound/blunt/bone/severe, /datum/wound/blunt/bone/moderate))
-					affecting.force_wound_upwards(type_wound)
+				if(affecting?.receive_damage(20))
 					vender_victim.emote("scream")
 					vender_victim.update_damage_overlays()
 				return
