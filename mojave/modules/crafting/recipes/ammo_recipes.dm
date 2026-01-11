@@ -155,7 +155,7 @@
 	result = /obj/item/stack/sheet/ms13/hq_casings/twenty
 	time = 12 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/refined_brass = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/refined_brass = 1)
 	category = CAT_STAN_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
@@ -164,7 +164,7 @@
 	result = /obj/item/stack/sheet/ms13/hq_bullets/twenty
 	time = 12 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/refined_lead = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/refined_lead = 1)
 	category = CAT_STAN_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
@@ -298,33 +298,10 @@
 	category = CAT_STAN_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
-//DRYLANDER SHAMAN RECIPES
-
-/datum/crafting_recipe/shaman_casings
-	name = "conjure bullet casings"
-	result = /obj/item/stack/sheet/ms13/junk_casings/twelve
-	time = 8 SECONDS
-	trait = TRAIT_DRY_SHAMAN
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_brass = 3)
-	category = CAT_JUNK_AMMO
-	crafting_interface = CRAFTING_BENCH_CAMPFIRE
-
-/datum/crafting_recipe/shaman_bullets
-	name = "conjure bullets"
-	result = /obj/item/stack/sheet/ms13/junk_bullets/twelve
-	time = 8 SECONDS
-	trait = TRAIT_DRY_SHAMAN
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_lead = 3)
-	category = CAT_JUNK_AMMO
-	crafting_interface = CRAFTING_BENCH_CAMPFIRE
-
-/datum/crafting_recipe/shaman_762
-	name = "conjure 7.62 ammo"
+/datum/crafting_recipe/762
+	name = "7.62 ammo"
 	result = /obj/item/ammo_box/ms13/a762/junk
 	time = 18 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list()
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/junk_bullets = 24,
@@ -338,7 +315,6 @@
 	name = "armor piercing 7.62 ammo box"
 	result = /obj/item/ammo_box/ms13/a762/ap
 	time = 16 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 24,
@@ -352,7 +328,6 @@
 	name = "high velocity 7.62 ammo box"
 	result = /obj/item/ammo_box/ms13/a762/hv
 	time = 16 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 24,
@@ -366,7 +341,6 @@
 	name = "standard .45-70 ammo box"
 	result = /obj/item/ammo_box/ms13/c4570box
 	time = 12 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 16,
@@ -380,7 +354,6 @@
 	name = "armor piercing .45-70 ammo box"
 	result = /obj/item/ammo_box/ms13/c4570box/ap
 	time = 16 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 16,
@@ -394,7 +367,6 @@
 	name = "high velocity .45-70 ammo box"
 	result = /obj/item/ammo_box/ms13/c4570box/hv
 	time = 16 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 16,
@@ -408,7 +380,6 @@
 	name = "12 gauge slug shotgun ammo box"
 	result = /obj/item/ammo_box/ms13/shotgun/slug
 	time = 14 SECONDS
-	trait = TRAIT_DRY_SHAMAN
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/plastic = 8,
