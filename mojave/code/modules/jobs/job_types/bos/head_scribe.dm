@@ -27,4 +27,5 @@
 		/obj/item/stock_parts/cell/ms13/mfc=2,
 		/obj/item/flashlight/ms13/mag=1,
 		/obj/item/radio/ms13/broadcast/advanced=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak=1,
 	)

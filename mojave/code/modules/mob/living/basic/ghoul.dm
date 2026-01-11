@@ -6,13 +6,13 @@
 	icon_dead = "feralghoul_dead"
 	mob_biotypes = MOB_HUMANOID
 	gender = MALE
-	health = 100
-	maxHealth = 100
+	health = 90
+	maxHealth = 90
 	speed = 0.25
 	attack_verb_continuous = "tears"
 	attack_verb_simple = "claws"
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 7.5
+	melee_damage_upper = 12
 	subtractible_armour_penetration = 5
 	attack_sound = list('mojave/sound/ms13npc/ghoul_attack1.ogg', 'mojave/sound/ms13npc/ghoul_attack2.ogg', 'mojave/sound/ms13npc/ghoul_attack3.ogg')
 	deathsound = list('mojave/sound/ms13npc/ghoul_death1.ogg', 'mojave/sound/ms13npc/ghoul_death2.ogg', 'mojave/sound/ms13npc/ghoul_death3.ogg')
@@ -65,8 +65,8 @@
 	health = 140
 	maxHealth = 140
 	speed = 1.35
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 9
+	melee_damage_upper = 13
 	subtractible_armour_penetration = 20
 
 /mob/living/basic/ms13/ghoul/radioactive
@@ -76,10 +76,10 @@
 	icon_dead = "glowingghoul_dead"
 	health = 125
 	maxHealth = 125
-	melee_damage_lower = 20
-	melee_damage_upper = 20
+	melee_damage_lower = 10
+	melee_damage_upper = 18
 	subtractible_armour_penetration = 20
-	wound_bonus = 8
-	bare_wound_bonus = 8
+	wound_bonus = 5
+	bare_wound_bonus = 10
 	light_range = 2
 	light_color = "#4ba54f"

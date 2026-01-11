@@ -31,6 +31,7 @@
 		/obj/item/stack/medical/gauze/ms13/half=1,
 		/obj/item/stack/medical/suture/ms13/eight=1,
 		/obj/item/reagent_containers/ms13/flask/bitter_drink=1,
+		/obj/item/stack/medical/ms13/healing_powder/poultice=1,
 		/obj/item/flashlight/ms13=1,
 		/obj/item/radio/ms13/broadcast=1,
 	)

@@ -133,8 +133,8 @@
 		/obj/item/clothing/shoes/ms13/brownie, \
 		/obj/item/clothing/shoes/ms13/crude)
 
-	if(prob(50))
-		r_pocket = /obj/item/flashlight/flare/ms13
+	if(prob(100))
+		r_pocket = /obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy
 	else
 		r_pocket = null
 

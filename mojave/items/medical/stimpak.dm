@@ -62,3 +62,10 @@
 	icon_state = "superstim"
 	inhand_icon_state = "superstim"
 	list_reagents = list(/datum/reagent/ms13/medicine/stimpak_fluid/super = 10)
+
+/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy
+	name = "homemade stimpak"
+	desc = "A crudely made stimpak concocted with a cocktail that simulates the effects of a common one, albeit poorly."
+	volume = 5
+	amount_per_transfer_from_this = 5
+	list_reagents = list(/datum/reagent/ms13/medicine/stimpak_fluid = 5)

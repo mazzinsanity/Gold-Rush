@@ -19,6 +19,7 @@
 	backpack_contents = list(
 		/obj/item/stack/medical/gauze/ms13/three=1,
 		/obj/item/flashlight/flare/ms13=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy=1,
 	)	
 
 /datum/outfit/job/ms13/town_drought/carlin_laborer/pre_equip(mob/living/carbon/human/H)
