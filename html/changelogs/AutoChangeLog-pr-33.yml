@@ -1,0 +1,4 @@
+author: "mazzinsanity"
+delete-after: True
+changes:
+  - server: "Re-adds the server BYOND hub name setup"
