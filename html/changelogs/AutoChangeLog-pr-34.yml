@@ -1,0 +1,6 @@
+author: "mazzinsanity"
+delete-after: True
+changes:
+  - qol: "Added role names to IDs"
+  - balance: "Fixes vending machines absolutely destroying people"
+  - bugfix: "Fixes naked sheriff and enforcer loadouts"
