@@ -386,9 +386,18 @@
 	name = "low quality gunpowder"
 	result = /obj/item/ms13/component/gunpowder
 	time = 10 SECONDS
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_coal = 3,
-				/obj/item/stack/sheet/ms13/nugget/sulfur = 4)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_coal = 1,
+				/obj/item/stack/sheet/ms13/nugget/sulfur = 2)
 	category = CAT_JUNK_AMMO
+	crafting_interface = CRAFTING_BENCH_CHEM
+
+/datum/crafting_recipe/hq_gp
+	name = "high quality gunpowder"
+	result = /obj/item/ms13/component/gunpowder/hq
+	time = 10 SECONDS
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_coal = 2,
+				/obj/item/stack/sheet/ms13/nugget/sulfur = 4)
+	category = CAT_STAN_AMMO
 	crafting_interface = CRAFTING_BENCH_CHEM
 
 /datum/crafting_recipe/lq_gp_shaman
