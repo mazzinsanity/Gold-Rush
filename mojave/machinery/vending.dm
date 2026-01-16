@@ -6,6 +6,7 @@
 	light_power = 0
 	active = 0
 	max_integrity = 350
+	tiltable = FALSE
 	var/loot_inside //amount of times you can rummage in here/what you can get
 	//loot tables and chances
 	var/rare_chance = 20
@@ -128,7 +129,6 @@
 	name = "cigarette vending machine"
 	desc = "Delicious cigarettes"
 	icon_state = "cigarette"
-	tiltable = FALSE
 	loot_rare = CIGARETTE_VENDOR_DROP_RARE
 	loot_high = CIGARETTE_VENDOR_DROP_HIGH
 	loot_medium = CIGARETTE_VENDOR_DROP_MEDIUM
