@@ -4431,7 +4431,6 @@
 #include "mojave\code\game\atom_defines.dm"
 #include "mojave\code\game\atoms_examine.dm"
 #include "mojave\code\game\objs.dm"
-#include "mojave\code\game\game_modes\game_mode.dm"
 #include "mojave\code\game\movables\follower.dm"
 #include "mojave\code\game\movables\follower\density.dm"
 #include "mojave\code\game\movables\follower\opacity.dm"
