@@ -65,7 +65,7 @@ SUBSYSTEM_DEF(autoroundend)
 	targettime = REALTIMEOFDAY + autoroundend_delay
 	roundend_allowed = TRUE
 	to_chat(world, span_boldwarning("The week has come to a close and the round will end in [autoroundend_delay / 600] minutes."))
-	for(var/client in GLOB.clients)
+	for(var/client/client in GLOB.clients)
 		if(client.prefs.toggles & SOUND_ANNOUNCEMENTS)
 			SEND_SOUND(client, sound('mojave/sound/ms13/quest.ogg'))
 
