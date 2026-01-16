@@ -4449,7 +4449,7 @@
 #include "mojave\code\modules\jobs\job_types\ms13.dm"
 #include "mojave\code\modules\jobs\job_types\bos\_bos.dm"
 #include "mojave\code\modules\jobs\job_types\bos\base_staff.dm"
-#include "mojave\code\modules\jobs\job_types\bos\head_knight.dm"
+#include "mojave\code\modules\jobs\job_types\bos\head_paladin.dm"
 #include "mojave\code\modules\jobs\job_types\bos\head_scribe.dm"
 #include "mojave\code\modules\jobs\job_types\bos\initiate.dm"
 #include "mojave\code\modules\jobs\job_types\bos\knight.dm"

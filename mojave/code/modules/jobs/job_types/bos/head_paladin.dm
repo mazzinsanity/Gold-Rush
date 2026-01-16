@@ -1,21 +1,21 @@
-/datum/job/ms13/bos/head_knight
-	title = "Brotherhood Head Knight"
+/datum/job/ms13/bos/head_paladin
+	title = "Brotherhood Head Paladin"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Brotherhood High Command"
 	req_admin_notify = 1
-	description = "Lead and organize your team of Knights. Work with the Head Scribe to coordinate efforts for the Brotherhood's mission in the region."
+	description = "Lead and organize your team of Knights and Paladins. Work with the Head Scribe to coordinate efforts for the Brotherhood's mission in the region."
 
-	outfit = /datum/outfit/job/ms13/bos/head_knight
+	outfit = /datum/outfit/job/ms13/bos/head_paladin
 
-	display_order = JOB_DISPLAY_ORDER_MS13_HEAD_KNIGHT
+	display_order = JOB_DISPLAY_ORDER_MS13_HEAD_PALADIN
 
-/datum/outfit/job/ms13/bos/head_knight
-	name = "_Brotherhood Head Knight"
-	jobtype = /datum/job/ms13/bos/head_knight
+/datum/outfit/job/ms13/bos/head_paladin
+	name = "_Brotherhood Head Paladin"
+	jobtype = /datum/job/ms13/bos/head_paladin
 
-	id = /obj/item/card/id/ms13/bos/headknight
-	suit = /obj/item/clothing/suit/armor/ms13/head_knight
+	id = /obj/item/card/id/ms13/bos/headpaladin
+	suit = /obj/item/clothing/suit/armor/ms13/head_paladin
 	uniform = /obj/item/clothing/under/ms13/bos/officer
 	belt = /obj/item/gun/energy/ms13/laser/pistol/advanced/brotherhood
 	gloves = /obj/item/clothing/gloves/ms13/bos

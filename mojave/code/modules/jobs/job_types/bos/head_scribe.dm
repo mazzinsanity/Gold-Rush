@@ -4,7 +4,7 @@
 	spawn_positions = 1
 	supervisors = "Brotherhood High Command"
 	req_admin_notify = 1
-	description = "Lead and organize your team of Scribes. Assign Scribes to assist Knights. Work with the Head Knight to coordinate efforts for the Brotherhood's mission in the region."
+	description = "Lead and organize your team of Scribes. Assign Scribes to assist Knights. Work with the Head Paladin to coordinate efforts for the Brotherhood's mission in the region."
 
 	outfit = /datum/outfit/job/ms13/bos/head_scribe
 

@@ -38,7 +38,7 @@
 /datum/job_department/bos
 	department_name = DEPARTMENT_BOS
 	department_bitflags = DEPARTMENT_BITFLAG_BOS
-	department_head = /datum/job/ms13/bos/head_knight
+	department_head = /datum/job/ms13/bos/head_paladin
 	department_experience_type = EXP_TYPE_BOS
 	department_full_name = "Brotherhood of Steel"	
 

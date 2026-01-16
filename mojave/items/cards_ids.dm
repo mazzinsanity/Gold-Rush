@@ -533,10 +533,10 @@
 	name = "\improper Brotherhood knight holotag"
 	assignment = "\improper Brotherhood Knight"
 
-/obj/item/card/id/ms13/bos/headknight
-	name = "\improper Brotherhood head knight holotag"
-	assignment = "\improper Brotherhood Head Knight"
-	access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HKNIGHT)
+/obj/item/card/id/ms13/bos/headpaladin
+	name = "\improper Brotherhood head paladin holotag"
+	assignment = "\improper Brotherhood Head Paladin"
+	access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HPALADIN)
 
 /obj/item/card/id/ms13/bos/scribe
 	name = "\improper Brotherhood scribe holotag"

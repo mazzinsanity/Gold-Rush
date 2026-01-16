@@ -99,8 +99,8 @@
 /obj/effect/landmark/start/ms13/scribe
 	name = "Brotherhood Scribe"
 
-/obj/effect/landmark/start/ms13/head_knight
-	name = "Brotherhood Head Knight"
+/obj/effect/landmark/start/ms13/head_paladin
+	name = "Brotherhood Head Paladin"
 
 /obj/effect/landmark/start/ms13/head_scribe
 	name = "Brotherhood Head Scribe"

@@ -15,8 +15,8 @@
 
 // General Brotherhood access
 #define ACCESS_BROTHERHOOD 6
-// Head Knight's personal quarters
-#define ACCESS_BROTHERHOOD_HKNIGHT 7
+// Head Paladin's personal quarters
+#define ACCESS_BROTHERHOOD_HPALADIN 7
 
 //// Drought Carlin Area Access ////
 
