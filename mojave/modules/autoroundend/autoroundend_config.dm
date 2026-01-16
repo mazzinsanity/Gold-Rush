@@ -1,17 +1,17 @@
 /// Length of time in deciseconds before the first autoroundend vote is called
 /// Set to 0 to disable the subsystem altogether.
 /datum/config_entry/number/vote_autoroundend_initial
-	config_entry_value = 63000	// 1 hour 45 minutes
+	default = 63000	// 1 hour 45 minutes
 	min_val = 0
 
 ///length of time in deciseconds to wait before subsequent autoroundend votes
 /datum/config_entry/number/vote_autoroundend_interval
-	config_entry_value = 18000	// 30 minutes
+	default = 18000	// 30 minutes
 	min_val = 0
 
 ///length of time in deciseconds to wait before ending the round
 /datum/config_entry/number/autoroundend_delay
-	config_entry_value = 12000	// 20 minutes
+	default = 12000	// 20 minutes
 	min_val = 0
 
 /// maximum extensions until the round autoends.
