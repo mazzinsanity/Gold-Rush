@@ -118,6 +118,13 @@ SUBSYSTEM_DEF(vote)
 			if("map")
 				SSmapping.changemap(global.config.maplist[.])
 				SSmapping.map_voted = TRUE
+			// GOLD RUSH EDIT
+			if("autoroundend")
+				if(. == "Initiate Round End")
+					var/autoroundend_delay = CONFIG_GET(number/autoroundend_delay)
+					SSticker.mode.autoroundend = TRUE
+					SSticker.mode.round_end_time = REALTIMEOFDAY + autoroundend_delay
+					to_chat(world, span_boldwarning("The round will end in [autoroundend_delay / 600] minutes."))
 	if(restart)
 		var/active_admins = FALSE
 		for(var/client/C in GLOB.admins + GLOB.deadmins)
@@ -200,6 +207,9 @@ SUBSYSTEM_DEF(vote)
 					if(!option || mode || !usr.client)
 						break
 					choices.Add(capitalize(option))
+			// GOLD RUSH EDIT
+			if("autoroundend")
+				choices.Add("Initiate Round End", "Continue Playing")
 			else
 				return FALSE
 		mode = vote_type
