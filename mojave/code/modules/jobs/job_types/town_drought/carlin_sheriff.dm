@@ -16,6 +16,7 @@
 	id = /obj/item/card/id/ms13/drought_sheriff
 	head = /obj/item/clothing/head/helmet/ms13/sheriff
 	suit = /obj/item/clothing/suit/ms13/trench/black/reinf/sheriff
+	uniform = /obj/item/clothing/under/ms13/wasteland/cowboy/grey
 	suit_store = /obj/item/gun/ballistic/revolver/ms13/huntingrev
 	gloves = /obj/item/clothing/gloves/ms13/military
 	shoes = /obj/item/clothing/shoes/ms13/military
