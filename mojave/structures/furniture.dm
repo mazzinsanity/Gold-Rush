@@ -250,11 +250,48 @@
 	name = "generic ms13 storage"
 	desc = "You place stuff on/in/or around it or it pretends to at least, pretty generic right."
 	icon = 'mojave/icons/structure/32x64_tall_furniture.dmi'
-	armor = list(MELEE = 30, BULLET = 40, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 100,  FIRE = 80, ACID = 100)
 	density = TRUE
 	anchored = TRUE
 	max_integrity = 225
 	var/materialtype = /obj/item/stack/sheet/ms13/scrap //What it drops when being destroyed
+
+/obj/structure/ms13/storage/examine(mob/user)
+	. = ..()
+	. += span_notice("It's held together by a couple of <b>bolts</b>.")
+
+/obj/structure/ms13/storage/MouseDrop_T(obj/object, mob/user)
+	. = ..()
+	if ((!( istype(object, /obj/item) ) || user.get_active_held_item() != object))
+		return
+	if(!user.dropItemToGround(object))
+		return
+	if(object.loc != src.loc)
+		step(object, get_dir(object, src))
+
+/obj/structure/ms13/storage/attackby(obj/item/item, mob/living/user, params)
+	var/list/modifiers = params2list(params)
+	if (item.tool_behaviour == TOOL_WRENCH && !(flags_1 & NODECONSTRUCT_1) && LAZYACCESS(modifiers, RIGHT_CLICK))
+		item.play_tool_sound(src)
+		deconstruct(TRUE)
+		return
+	if(user.combat_mode)
+		return ..()
+	if(user.transferItemToLoc(item, drop_location()))
+		return 1
+
+/obj/structure/ms13/storage/attack_paw(mob/living/user, list/modifiers)
+	attack_hand(user, modifiers)
+
+/obj/structure/ms13/storage/attack_hand(mob/living/user, list/modifiers)
+	. = ..()
+	if(.)
+		return
+	if(user.body_position == LYING_DOWN || user.usable_legs < 2)
+		return
+	user.changeNext_move(CLICK_CD_MELEE)
+	user.do_attack_animation(src, ATTACK_EFFECT_KICK)
+	user.visible_message(span_danger("[user] kicks [src]."), null, null, COMBAT_MESSAGE_RANGE)
+	take_damage(rand(4,8), BRUTE, MELEE, 1)
 
 /obj/structure/ms13/storage/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
