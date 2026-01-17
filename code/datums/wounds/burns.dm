@@ -16,7 +16,7 @@
 
 	default_scar_file = FLESH_SCAR_FILE
 
-	treatable_by = list(/obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh) // sterilizer and alcohol will require reagent treatments, coming soon
+	treatable_by = list(/obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh, /obj/item/stack/medical/ms13/healing_powder/burn, /obj/item/stack/medical/ms13/balm) // sterilizer and alcohol will require reagent treatments, coming soon
 
 	// Flesh damage vars
 	/// How much damage to our flesh we currently have. Once both this and infestation reach 0, the wound is considered healed
@@ -87,9 +87,9 @@
 	infestation += infestation_rate * delta_time
 	switch(infestation)
 		if(WOUND_INFECTION_MODERATE to WOUND_INFECTION_SEVERE)
-			if(DT_PROB(15, delta_time))
+			if(DT_PROB(10, delta_time))
 				victim.adjustToxLoss(0.2)
-				if(prob(6))
+				if(prob(10))
 					to_chat(victim, span_warning("The blisters on your [limb.name] ooze a strange pus..."))
 		if(WOUND_INFECTION_SEVERE to WOUND_INFECTION_CRITICAL)
 			if(!disabling)
@@ -103,7 +103,7 @@
 				return
 
 			if(DT_PROB(10, delta_time))
-				victim.adjustToxLoss(0.5)
+				victim.adjustToxLoss(0.4)
 
 		if(WOUND_INFECTION_CRITICAL to WOUND_INFECTION_SEPTIC)
 			if(!disabling)
@@ -111,17 +111,15 @@
 					to_chat(victim, span_warning("<b>You suddenly lose all sensation of the festering infection in your [limb.name]!</b>"))
 					set_disabling(TRUE)
 					return
-			else if(DT_PROB(1.5, delta_time))
+			else if(DT_PROB(3, delta_time))
 				to_chat(victim, span_notice("You can barely feel your [limb.name] again, and you have to strain to retain motor control!"))
 				set_disabling(FALSE)
 				return
 
-			if(DT_PROB(2.48, delta_time))
-				if(prob(20))
+			if(DT_PROB(10, delta_time))
+				victim.adjustToxLoss(0.6)
+				if(prob(10))
 					to_chat(victim, span_warning("You contemplate life without your [limb.name]..."))
-					victim.adjustToxLoss(0.75)
-				else
-					victim.adjustToxLoss(1)
 
 		if(WOUND_INFECTION_SEPTIC to INFINITY)
 			if(DT_PROB(0.5 * infestation, delta_time))
@@ -207,7 +205,7 @@
 	user.visible_message(span_notice("[user] begins applying [I] to [victim]'s [limb.name]..."), span_notice("You begin applying [I] to [user == victim ? "your" : "[victim]'s"] [limb.name]..."))
 	if (I.amount <= 0)
 		return TRUE
-	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, (user == victim ? I.self_delay : I.other_delay), target = victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return TRUE
 
 	limb.heal_damage(I.heal_brute, I.heal_burn)
@@ -299,7 +297,7 @@
 
 	wound_path_to_generate = /datum/wound/burn/flesh/moderate
 
-	threshold_minimum = 30 //MOJAVE SUN EDIT - Original TG value is 40
+	threshold_minimum = 40
 
 /datum/wound/burn/flesh/severe
 	name = "Third Degree Burns"
@@ -315,7 +313,7 @@
 	status_effect_type = /datum/status_effect/wound/burn/flesh/severe
 	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh)
 	//MOJAVE EDIT CHANGE BEGIN
-	infestation_rate = 0.06 //Original TG value is 0.07
+	infestation_rate = 0.015 //Original TG value is 0.07
 	flesh_damage = 10 //Original TG value is 12.5
 	//MOJAVE EDIT CHANGE END
 	scar_keyword = "burnsevere"
@@ -325,7 +323,7 @@
 
 	wound_path_to_generate = /datum/wound/burn/flesh/severe
 
-	threshold_minimum = 70 //MOJAVE SUN EDIT - Original TG value is 80
+	threshold_minimum = 80
 
 /datum/wound/burn/flesh/critical
 	name = "Catastrophic Burns"
@@ -342,7 +340,7 @@
 	status_effect_type = /datum/status_effect/wound/burn/flesh/critical
 	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh)
 	//MOJAVE EDIT CHANGE BEGIN
-	infestation_rate = 0.035 //Original TG value is 0.075
+	infestation_rate = 0.025 //Original TG value is 0.075
 	flesh_damage = 17.5 //Original TG value is 20
 	//MOJAVE EDIT CHANGE END
 	scar_keyword = "burncritical"
@@ -352,7 +350,7 @@
 
 	wound_path_to_generate = /datum/wound/burn/flesh/critical
 
-	threshold_minimum = 120 //MOJAVE SUN EDIT - Original TG value is 140
+	threshold_minimum = 140
 
 ///special severe wound caused by sparring interference or other god related punishments.
 /datum/wound/burn/flesh/severe/brand
