@@ -110,9 +110,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aft" = (
 /obj/structure/ms13/street_sign/interstate{
 	dir = 1
@@ -340,15 +338,11 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "anS" = (
 /obj/structure/ms13/rug/rubber,
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aoy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/ms13/sandbag,
@@ -447,9 +441,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "asN" = (
 /obj/structure/noticeboard/ms13/cork,
 /turf/open/floor/wood/ms13/wide,
@@ -603,9 +595,7 @@
 /obj/effect/spawner/random/ms13/food/produce_random,
 /obj/effect/spawner/random/ms13/guaranteed/food/produce_random,
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aCe" = (
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/goldman)
@@ -640,9 +630,7 @@
 /obj/structure/table/rolling/ms13,
 /obj/item/storage/firstaid/ms13/bag/filled,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aFh" = (
 /obj/structure/ms13/road_barrier/concrete{
 	dir = 4
@@ -830,9 +818,7 @@
 	},
 /obj/structure/table/ms13/low_wall/reinforced/bunker,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aLP" = (
 /obj/structure/ms13/barrel/single/red/one,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -857,9 +843,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aMv" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 8
@@ -944,9 +928,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aPX" = (
 /obj/machinery/door/unpowered/ms13/metal{
 	dir = 4
@@ -996,9 +978,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aRx" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/structure/ms13/wall_decor/poster/you,
@@ -1044,9 +1024,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "aTm" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -1274,9 +1252,7 @@
 "bcV" = (
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bdp" = (
 /obj/structure/ms13/trash/food/misc,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -1299,9 +1275,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "beq" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -1488,9 +1462,7 @@
 "boW" = (
 /obj/effect/turf_decal/ms13/covering/paint/red,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bpc" = (
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/metal,
@@ -1875,9 +1847,7 @@
 /area/ms13/carlin/interior)
 "bGb" = (
 /turf/closed/wall/ms13/scrap/blue,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bGl" = (
 /obj/structure/ms13/pay_phone/withthephone{
 	dir = 1
@@ -1982,9 +1952,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bJv" = (
 /obj/structure/ms13/pipes/horizontal/down/single,
 /turf/open/floor/ms13/concrete,
@@ -2096,9 +2064,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/landmark/start/ms13/scribe,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bMP" = (
 /obj/structure/ms13/rug/mat,
 /turf/open/floor/wood/ms13/wide,
@@ -2160,9 +2126,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bOP" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -2179,9 +2143,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bQO" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /obj/machinery/light/ms13/bulb{
@@ -2281,9 +2243,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bUO" = (
 /mob/living/simple_animal/hostile/ms13/robot/protectron/police,
 /turf/open/floor/wood/ms13/wide,
@@ -2335,9 +2295,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "bWt" = (
 /obj/structure/chair/ms13/metal,
 /turf/open/floor/ms13/tile/full/navy,
@@ -2756,9 +2714,7 @@
 "coN" = (
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "coP" = (
 /obj/structure/table/ms13/no_smooth/large/metal/desk{
 	dir = 8
@@ -2832,9 +2788,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cqx" = (
 /obj/structure/ms13/fence/corner/wire{
 	dir = 1
@@ -2998,9 +2952,7 @@
 	},
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cxe" = (
 /obj/structure/table/ms13/crafting/weaponbench,
 /obj/structure/closet/ms13/wall/firstaid,
@@ -3071,9 +3023,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cBb" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red,
 /turf/open/floor/wood/ms13/wide,
@@ -3306,9 +3256,7 @@
 "cMk" = (
 /obj/structure/ms13/wall_decor/wallscreen,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cMD" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 1
@@ -3360,9 +3308,7 @@
 	pixel_y = -10
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cNY" = (
 /obj/structure/ms13/tank/chemical,
 /turf/open/floor/ms13/metal/plate,
@@ -3410,9 +3356,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cRM" = (
 /obj/structure/closet/ms13/fridge,
 /obj/effect/spawner/random/ms13/guaranteed/food/random,
@@ -3421,9 +3365,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/food/random,
 /obj/effect/spawner/random/ms13/guaranteed/food/random,
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cSJ" = (
 /obj/structure/table/ms13/wood/bar,
 /turf/open/floor/ms13/tile/large/cafeteria,
@@ -3485,9 +3427,7 @@
 "cVM" = (
 /obj/item/reagent_containers/glass/bucket/ms13,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cWl" = (
 /obj/structure/ms13/tank/chemical/huge,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -3542,9 +3482,7 @@
 	},
 /obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cXs" = (
 /obj/structure/closet/crate/ms13/woodcrate/compact,
 /obj/effect/spawner/random/ms13/tools/farming,
@@ -3572,9 +3510,7 @@
 	id = "bos_east_window_shutters"
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "cZW" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/dirty,
@@ -3712,17 +3648,13 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dgl" = (
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/landmark/start/ms13/scribe,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dgn" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/melee/lowrandom,
@@ -3898,9 +3830,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dmz" = (
 /obj/structure/stairs/north,
 /turf/open/floor/wood/ms13/wide,
@@ -4053,9 +3983,7 @@
 "dsi" = (
 /obj/machinery/door/unpowered/ms13/metal/alt,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dsB" = (
 /obj/structure/ms13/pallet,
 /obj/structure/ms13/trash/cardboard,
@@ -4116,9 +4044,7 @@
 /area/ms13/carlin/interior)
 "duH" = (
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "duN" = (
 /obj/machinery/light/ms13,
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted{
@@ -4442,9 +4368,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dMm" = (
 /obj/structure/table/ms13/no_smooth/large/wood/square{
 	dir = 4
@@ -4634,9 +4558,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dUU" = (
 /obj/effect/turf_decal/ms13/covering/wallpaper/green,
 /turf/closed/wall/ms13/siding,
@@ -4737,9 +4659,7 @@
 "dZL" = (
 /obj/structure/stairs/north,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "dZS" = (
 /obj/structure/ms13/wall_decor/poster/espionage,
 /obj/machinery/light/ms13{
@@ -4915,9 +4835,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ehD" = (
 /obj/structure/ms13/trash/glass/basic,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -5364,9 +5282,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/ms13/pipes/vent,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eBK" = (
 /obj/structure/ms13/trash/wood{
 	dir = 8
@@ -5405,9 +5321,7 @@
 "eEi" = (
 /obj/structure/ms13/pipes/vertical/east,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eEm" = (
 /obj/structure/ms13/trash/food/misc,
 /turf/open/floor/wood/ms13/wide,
@@ -5417,9 +5331,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eFJ" = (
 /obj/structure/table/ms13/low_wall/adobe,
 /obj/structure/window/fulltile/ms13/glass,
@@ -5534,9 +5446,7 @@
 "eLV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eMp" = (
 /obj/structure/chair/ms13/wood{
 	dir = 1
@@ -5661,9 +5571,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eQf" = (
 /obj/effect/spawner/random/ms13/crafting/lowrandom,
 /turf/open/floor/ms13/concrete/industrial,
@@ -5688,9 +5596,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "eRO" = (
 /obj/structure/ms13/skeleton,
 /obj/effect/spawner/random/ms13/drink/alcohol,
@@ -5882,9 +5788,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fcL" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 1
@@ -5962,9 +5866,7 @@
 /obj/structure/ms13/pipes/vertical/east,
 /obj/structure/railing/ms13/solo/industrial,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fgc" = (
 /obj/structure/chair/ms13/overlaypickup/plastic{
 	dir = 8
@@ -5983,9 +5885,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fhq" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 4
@@ -6172,9 +6072,7 @@
 "fsK" = (
 /obj/structure/ms13/rug/mat,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fsX" = (
 /obj/structure/bed/ms13/sleepingbag/red,
 /obj/effect/landmark/start/ms13/trooper,
@@ -6280,9 +6178,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fzy" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk,
 /obj/item/paper_bin/ms13{
@@ -6349,9 +6245,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fDI" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -6371,9 +6265,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/landmark/start/ms13/scribe,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fEg" = (
 /obj/structure/table/ms13/no_smooth/counter/metal/bend{
 	dir = 4
@@ -6381,9 +6273,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fEj" = (
 /obj/structure/ms13/storage/large/medical{
 	dir = 8
@@ -6597,9 +6487,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fMK" = (
 /obj/effect/spawner/random/ms13/medical/herbal,
 /obj/structure/closet/crate/ms13/footlocker,
@@ -6678,9 +6566,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fRs" = (
 /obj/structure/ms13/storage/washingmachine,
 /obj/structure/ms13/rug/mat/rubber/single{
@@ -6770,9 +6656,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "fTI" = (
 /obj/structure/ms13/rug/mat/rubber,
 /turf/open/floor/ms13/concrete/small,
@@ -7183,9 +7067,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gld" = (
 /obj/structure/chair/ms13/metal/folding{
 	dir = 1
@@ -7365,9 +7247,7 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gsf" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/tile/full/navy,
@@ -7422,9 +7302,7 @@
 /area/ms13/town)
 "gvQ" = (
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gvR" = (
 /obj/machinery/button/ms13{
 	dir = 8;
@@ -7630,9 +7508,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gHF" = (
 /obj/structure/chair/sofa/corner{
 	dir = 4
@@ -7679,9 +7555,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gKD" = (
 /obj/item/stack/sheet/ms13/scrap,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -7742,9 +7616,7 @@
 	},
 /obj/structure/ms13/pipes/top,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gNQ" = (
 /obj/structure/ms13/wall_decor/calendar,
 /turf/open/floor/wood/ms13/wide,
@@ -7898,9 +7770,7 @@
 /obj/structure/ms13/pipes/top,
 /obj/structure/ms13/wall_decor/flag/bos,
 /turf/open/floor/ms13/metal/grate,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "gXh" = (
 /obj/structure/table/ms13/no_smooth/large/wood/square{
 	dir = 4
@@ -7962,9 +7832,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hah" = (
 /obj/structure/ms13/large_pipe/pump,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -8029,9 +7897,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "heg" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 4
@@ -8108,9 +7974,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hin" = (
 /obj/structure/railing/ms13/solo/industrial,
 /obj/structure/ms13/rug/mat/rubber/single,
@@ -8233,9 +8097,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hmT" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -8340,9 +8202,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hrD" = (
 /obj/machinery/ms13/terminal{
 	dir = 4
@@ -8662,9 +8522,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hGZ" = (
 /obj/structure/ms13/foundation/wide/varianttwo{
 	dir = 9
@@ -8700,9 +8558,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hIJ" = (
 /obj/structure/table/ms13/wood,
 /obj/structure/ms13/rug/red,
@@ -8751,9 +8607,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hKS" = (
 /obj/structure/chair/ms13/metal/red/broken{
 	dir = 1
@@ -8789,9 +8643,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hNA" = (
 /obj/structure/bed/ms13/bedframe/wire,
 /obj/structure/bed/ms13/mattress/stale,
@@ -8837,9 +8689,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hPr" = (
 /obj/structure/ms13/storage/shelf,
 /turf/open/floor/wood/ms13/carpet,
@@ -8898,9 +8748,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hQE" = (
 /obj/structure/ms13/rug/fancy{
 	dir = 4
@@ -8924,9 +8772,7 @@
 "hRw" = (
 /obj/machinery/door/airlock/ms13/brotherhood,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hRz" = (
 /obj/structure/ms13/trash/glass/cans,
 /turf/open/floor/plating/ms13/ground/road,
@@ -8938,9 +8784,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hRG" = (
 /turf/open/floor/plating/ms13/ground/sidewalk,
 /area/ms13/bos)
@@ -9045,9 +8889,7 @@
 /obj/structure/table/ms13/metal/heavy,
 /obj/structure/ms13/pipes/vent,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "hWS" = (
 /obj/structure/ms13/foundation/wide/variantfive,
 /obj/structure/chair/ms13/metal{
@@ -9249,9 +9091,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ihi" = (
 /obj/structure/ms13/wall_decor/clock,
 /turf/open/floor/ms13/tile/large/white,
@@ -9309,9 +9149,7 @@
 /obj/structure/ms13/storage/shelf,
 /obj/effect/spawner/random/ms13/tools/lights,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ikx" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 8
@@ -9419,9 +9257,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ipD" = (
 /obj/effect/spawner/random/ms13/melee/lowrandom,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -9439,9 +9275,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/food/junkfood_canned,
 /obj/effect/spawner/random/ms13/guaranteed/food/junkfood_boxed,
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ipO" = (
 /obj/structure/chair/ms13/wood,
 /turf/open/floor/plating/ms13/ground/road,
@@ -9497,9 +9331,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "isr" = (
 /obj/structure/ms13/trash/papers/one,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -9516,9 +9348,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "isI" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -9553,9 +9383,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "iuO" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -9609,9 +9437,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "iwA" = (
 /obj/structure/table/ms13/wood,
 /obj/item/papercutter/ms13{
@@ -9630,9 +9456,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ixH" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/right{
 	id = "junkyard-gate"
@@ -10321,9 +10145,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jgu" = (
 /mob/living/basic/ms13/hostile_animal/radroach,
 /turf/open/floor/ms13/tile/long,
@@ -10376,9 +10198,7 @@
 "jiC" = (
 /obj/structure/table/rolling/ms13,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jiF" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored/red{
 	dir = 8
@@ -10424,9 +10244,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jls" = (
 /obj/structure/table/ms13/metal/constructed,
 /obj/item/radio/ms13/ham/receiver,
@@ -10461,9 +10279,7 @@
 "jmt" = (
 /obj/structure/chair/office/ms13/green,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jmQ" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 8
@@ -10606,9 +10422,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jwi" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 8
@@ -10746,9 +10560,7 @@
 /area/ms13/desert)
 "jEd" = (
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jEk" = (
 /obj/structure/closet/ms13/wall/firstaid,
 /obj/effect/spawner/random/ms13/medical/lowrandom,
@@ -10770,9 +10582,7 @@
 "jFk" = (
 /obj/structure/table/ms13/metal/grate,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jFs" = (
 /obj/structure/ms13/rug/yellow{
 	dir = 8
@@ -10858,9 +10668,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jHC" = (
 /obj/structure/bonfire/ms13/fire_barrel/prelit,
 /turf/open/floor/plating/ms13/ground/road,
@@ -11165,9 +10973,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "jZD" = (
 /obj/structure/chair/ms13/metal/broken,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -11185,9 +10991,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kap" = (
 /turf/open/floor/ms13/concrete,
 /area/ms13/desert)
@@ -11203,9 +11007,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kaU" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -11245,9 +11047,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kes" = (
 /obj/structure/table/ms13/metal/alt,
 /obj/machinery/ms13/terminal{
@@ -11356,17 +11156,13 @@
 	signal_title_4 = null
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "khP" = (
 /obj/structure/table/ms13/crafting/tinkerbench,
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kiv" = (
 /turf/open/floor/ms13/tile/large/navy,
 /area/ms13/town)
@@ -11418,9 +11214,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "klF" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = -13
@@ -11838,9 +11632,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kEl" = (
 /obj/structure/ms13/pipes/horizontal/single,
 /obj/structure/closet/ms13/fridge,
@@ -11898,9 +11690,7 @@
 "kIl" = (
 /obj/structure/bed/ms13/medical,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kIR" = (
 /obj/structure/ms13/wall_decor/flag/legion,
 /obj/structure/table/ms13/no_smooth/counter/metal,
@@ -11914,9 +11704,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kJi" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 8
@@ -12084,9 +11872,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kPR" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 1
@@ -12118,9 +11904,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "kRS" = (
 /obj/structure/closet/crate/ms13/medical,
 /obj/effect/spawner/random/ms13/guaranteed/medical/bloodbag,
@@ -12298,9 +12082,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lax" = (
 /obj/effect/turf_decal/ms13/graffiti/gohome,
 /turf/closed/wall/ms13/siding,
@@ -12765,9 +12547,7 @@
 "luy" = (
 /obj/effect/turf_decal/ms13/covering/paint/green,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "luG" = (
 /obj/structure/table/ms13/low_wall/siding,
 /turf/open/floor/wood/ms13/mosaic,
@@ -12789,9 +12569,7 @@
 "lvT" = (
 /obj/machinery/ms13/agriculture,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lwb" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 8
@@ -12854,9 +12632,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lyx" = (
 /obj/effect/spawner/random/ms13/food/trash,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -12895,9 +12671,7 @@
 /obj/structure/ms13/storage/vent,
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lAq" = (
 /obj/structure/ms13/pallet{
 	dir = 1
@@ -12994,9 +12768,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lEH" = (
 /obj/structure/chair/office/ms13/green,
 /turf/open/floor/wood/ms13/wide,
@@ -13069,9 +12841,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lIC" = (
 /obj/structure/closet/ms13/metal,
 /obj/effect/spawner/random/ms13/clothing/under,
@@ -13302,9 +13072,7 @@
 	},
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lRj" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = -8;
@@ -13364,9 +13132,7 @@
 "lVp" = (
 /obj/structure/ms13/pipes/top,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "lVx" = (
 /obj/structure/ms13/pipes/vertical/west/corner/down,
 /turf/open/floor/plating/ms13/ground/sidewalk,
@@ -13499,9 +13265,7 @@
 /obj/machinery/ms13/agriculture,
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mep" = (
 /obj/machinery/ms13/terminal,
 /turf/open/floor/ms13/concrete/industrial,
@@ -13611,9 +13375,7 @@
 	},
 /obj/structure/ms13/pipes/top,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mjw" = (
 /obj/structure/table/ms13/crafting/weaponbench,
 /obj/machinery/light/ms13/bulb{
@@ -13654,9 +13416,7 @@
 /obj/effect/spawner/random/ms13/tools/tool,
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mkZ" = (
 /obj/structure/closet/crate/ms13/woodcrate/compact/army,
 /obj/effect/spawner/random/ms13/guaranteed/gun/lowrandom,
@@ -13751,17 +13511,13 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mpq" = (
 /obj/structure/chair/office/ms13/green{
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mpx" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/structure/ms13/trash/food/misc,
@@ -13803,9 +13559,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mrh" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -13908,9 +13662,7 @@
 /obj/item/shovel/ms13/rake,
 /obj/item/shovel/ms13/spade,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mws" = (
 /obj/structure/ms13/rug/mat/rubber,
 /obj/effect/landmark/start/ms13/carlin_barkeep,
@@ -13919,9 +13671,7 @@
 "mwv" = (
 /obj/structure/table/ms13/no_smooth/metal,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mwH" = (
 /obj/effect/landmark/start/ms13/ranger_sharps,
 /turf/open/floor/plating/ms13/ground/road,
@@ -14027,9 +13777,7 @@
 /obj/effect/spawner/random/ms13/medical/bloodbag,
 /obj/structure/closet/crate/ms13/medical,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mBs" = (
 /obj/effect/spawner/random/ms13/tools/lights,
 /obj/structure/closet/crate/ms13/footlocker{
@@ -14039,16 +13787,12 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mBU" = (
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mCZ" = (
 /obj/structure/chair/ms13/metal/unfinished{
 	dir = 4
@@ -14113,9 +13857,7 @@
 /obj/structure/table/ms13/low_wall/reinforced/bunker,
 /obj/structure/window/reinforced/fulltile/ms13/glass,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "mGq" = (
 /obj/structure/closet/ms13/metal,
 /obj/item/clothing/suit/armor/ms13/firesuit,
@@ -14674,9 +14416,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nkC" = (
 /obj/effect/spawner/random/ms13/clothing/shoe,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -14758,9 +14498,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "noy" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 1
@@ -14838,9 +14576,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nrn" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 4
@@ -14952,9 +14688,7 @@
 "nwC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nwG" = (
 /obj/structure/ms13/trash/papers/one{
 	dir = 4
@@ -15008,9 +14742,7 @@
 "nzQ" = (
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nAg" = (
 /turf/open/floor/ms13/metal/pipe,
 /area/ms13/carlin/interior)
@@ -15042,17 +14774,13 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nBB" = (
 /obj/machinery/light/ms13{
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nBO" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/structure/closet/crate/ms13/cash_register{
@@ -15332,9 +15060,7 @@
 	signal_title_4 = "East Window Lockdown"
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nMQ" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -15349,9 +15075,7 @@
 /obj/effect/spawner/random/ms13/guaranteed/crafting/lowrandom,
 /obj/structure/closet/crate/ms13/enclave,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nNv" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -15475,9 +15199,7 @@
 	},
 /obj/structure/ms13/storage/vent,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nTW" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 1
@@ -15491,9 +15213,7 @@
 "nUq" = (
 /obj/machinery/door/airlock/ms13/brotherhood,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nUG" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 4
@@ -15552,9 +15272,7 @@
 "nWq" = (
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nWH" = (
 /obj/structure/ms13/fence,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -15606,9 +15324,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "nYX" = (
 /obj/machinery/door/poddoor/shutters/ms13/vertical/red/mid{
 	id = "mining_area"
@@ -15642,9 +15358,7 @@
 /obj/structure/ms13/wall_decor/flag/bos,
 /obj/structure/closet/crate/ms13/army,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "obr" = (
 /obj/structure/ms13/trash/papers/three,
 /obj/structure/ms13/pallet,
@@ -15671,9 +15385,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ocl" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -15806,9 +15518,7 @@
 	signal_title_4 = "East Window Lockdown"
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "oiX" = (
 /obj/structure/table/ms13/low_wall/concrete,
 /turf/open/floor/ms13/concrete/industrial,
@@ -15892,9 +15602,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "onG" = (
 /turf/closed/wall/ms13/scrap,
 /area/ms13/legioncamp/building)
@@ -15919,9 +15627,7 @@
 /obj/structure/table/ms13/metal/alt,
 /obj/item/radio/ms13/ham/receiver,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "opf" = (
 /obj/structure/ms13/storage/trashcan,
 /turf/open/floor/wood/ms13/common,
@@ -16076,9 +15782,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ovJ" = (
 /obj/machinery/light/ms13{
 	dir = 8
@@ -16148,9 +15852,7 @@
 	pixel_y = 35
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "oza" = (
 /obj/structure/chair/comfy/ms13/armchair,
 /turf/open/floor/wood/ms13/carpet/shaggy/green,
@@ -16443,9 +16145,7 @@
 "oKD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "oKG" = (
 /obj/effect/turf_decal/ms13/showerdrains/small,
 /obj/structure/ms13/storage/shelf{
@@ -16683,9 +16383,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "oVb" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/tools/farming,
@@ -16793,9 +16491,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/ms13/pipes/top,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "oXV" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 8
@@ -16877,9 +16573,7 @@
 "pci" = (
 /obj/structure/sink/ms13/functional,
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pcm" = (
 /obj/structure/ms13/road_barrier/concrete{
 	dir = 4
@@ -17012,9 +16706,7 @@
 	pixel_y = -10
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "phm" = (
 /obj/structure/ms13/rug/mat/rubber,
 /turf/open/floor/wood/ms13/wide,
@@ -17414,9 +17106,7 @@
 /area/ms13/town)
 "pBr" = (
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pBt" = (
 /obj/structure/ms13/toilet{
 	dir = 4
@@ -17474,9 +17164,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pEn" = (
 /obj/structure/chair/ms13/metal,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -17688,9 +17376,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pOj" = (
 /turf/open/floor/iron/stairs{
 	dir = 8
@@ -17774,18 +17460,14 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pRJ" = (
 /obj/structure/closet/ms13/wall/firstaid,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /obj/effect/spawner/random/ms13/guaranteed/medical/lowrandom,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pRW" = (
 /obj/structure/ms13/storage/shelf{
 	dir = 8
@@ -17843,9 +17525,7 @@
 /area/ms13/desert)
 "pVK" = (
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "pVZ" = (
 /obj/effect/spawner/random/ms13/tools/tool,
 /turf/open/floor/ms13/concrete/industrial,
@@ -17927,9 +17607,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qaz" = (
 /obj/structure/ms13/trash/papers/three{
 	pixel_y = 12
@@ -18025,9 +17703,7 @@
 	pixel_y = -4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qeX" = (
 /mob/living/basic/ms13/ghoul/radioactive,
 /turf/open/floor/ms13/concrete,
@@ -18044,9 +17720,7 @@
 /obj/structure/table/ms13/metal/alt,
 /obj/item/defibrillator/loaded/mojave,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qgl" = (
 /obj/structure/chair/comfy/ms13/armchair{
 	dir = 8
@@ -18685,9 +18359,7 @@
 /obj/machinery/door/unpowered/ms13/seethrough/mirrored/metal,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qFg" = (
 /obj/structure/ms13/storage/store/metal{
 	dir = 4
@@ -18882,9 +18554,7 @@
 	dir = 8
 	},
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qNn" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 1
@@ -18894,9 +18564,7 @@
 "qNB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qNH" = (
 /obj/structure/ms13/pallet{
 	dir = 1
@@ -19019,9 +18687,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qQP" = (
 /obj/structure/chair/ms13/metal/broken,
 /obj/effect/landmark/start/ms13/denizen,
@@ -19073,9 +18739,7 @@
 	},
 /obj/structure/bed/ms13/medical/surgery,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qSx" = (
 /obj/structure/ms13/wall_decor/exit,
 /obj/effect/spawner/random/ms13/food/trash,
@@ -19171,9 +18835,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "qWt" = (
 /obj/structure/ms13/rug/mat/rubber,
 /turf/open/floor/ms13/concrete,
@@ -19214,9 +18876,7 @@
 "qZi" = (
 /obj/structure/ms13/pipes/vertical/east/corner/single,
 /turf/open/floor/ms13/concrete/small,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "raq" = (
 /obj/structure/table/ms13/no_smooth/large/wood/desk{
 	dir = 8
@@ -19370,9 +19030,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rmQ" = (
 /obj/structure/table/ms13/wood/constructed/cobbled,
 /obj/structure/ms13/trash/books,
@@ -19707,9 +19365,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rAs" = (
 /obj/structure/railing/ms13/solo/industrial{
 	dir = 8
@@ -19755,9 +19411,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rBm" = (
 /obj/structure/ms13/storage/shelf,
 /turf/open/floor/ms13/concrete,
@@ -19780,9 +19434,7 @@
 "rCh" = (
 /obj/machinery/light/ms13,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rCv" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -19813,9 +19465,7 @@
 "rEm" = (
 /obj/effect/turf_decal/ms13/covering/paint/white,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rEp" = (
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted{
 	dir = 1
@@ -20004,9 +19654,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rND" = (
 /obj/structure/table/ms13/no_smooth/counter/wood{
 	dir = 4
@@ -20057,9 +19705,7 @@
 "rQp" = (
 /obj/effect/turf_decal/ms13/covering/paint/gray,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rQK" = (
 /obj/item/ammo_casing/ms13/spent,
 /obj/effect/decal/cleanable/blood/gibs/body,
@@ -20104,9 +19750,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rSt" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/item/paper_bin/ms13{
@@ -20135,9 +19779,7 @@
 	},
 /obj/effect/spawner/random/ms13/gun/lowrandom,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rTj" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/item/ms13/fluff/ashtray{
@@ -20228,9 +19870,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "rVL" = (
 /obj/structure/ms13/storage/shelf/wood/alt,
 /obj/effect/spawner/random/ms13/tools/lights,
@@ -20301,9 +19941,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "sav" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -20387,9 +20025,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "sfP" = (
 /obj/structure/table/ms13/crafting/weaponbench,
 /turf/open/floor/ms13/concrete,
@@ -20421,9 +20057,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "siv" = (
 /obj/structure/ms13/barricade{
 	dir = 4
@@ -20473,9 +20107,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "slT" = (
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left{
 	id = "carlin-craft-garage"
@@ -21094,9 +20726,7 @@
 "sRw" = (
 /obj/structure/table/ms13/metal/heavy,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "sRP" = (
 /turf/open/floor/ms13/tile/full/white,
 /area/ms13/town)
@@ -21132,9 +20762,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "sTR" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -21305,9 +20933,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tbl" = (
 /obj/structure/ms13/pipes/horizontal/end,
 /turf/closed/wall/ms13/concrete,
@@ -21325,9 +20951,7 @@
 "tci" = (
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tcv" = (
 /mob/living/simple_animal/hostile/ms13/robot/protectron/reinforced,
 /turf/open/floor/ms13/concrete/industrial,
@@ -21568,9 +21192,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tmC" = (
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
@@ -21714,9 +21336,7 @@
 /obj/structure/railing/ms13/solo,
 /obj/structure/ms13/pipes/top,
 /turf/open/floor/ms13/metal/pipe,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tvr" = (
 /obj/structure/filingcabinet/ms13/busted,
 /turf/open/floor/wood/ms13/wide,
@@ -21751,18 +21371,14 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "txq" = (
 /obj/machinery/door/airlock/ms13/brotherhood,
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/solo{
 	id = "bos_engineering"
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "txB" = (
 /obj/structure/ms13/trash/papers/two{
 	dir = 8
@@ -21772,9 +21388,7 @@
 "tyj" = (
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tyD" = (
 /obj/item/ms13/fluff/ruined_book{
 	pixel_y = -7
@@ -21961,9 +21575,7 @@
 "tGi" = (
 /obj/structure/ms13/pipes/vent,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tGt" = (
 /obj/structure/closet/ms13/metal,
 /obj/item/clothing/under/ms13/wasteland/mechanicprewar/mechanicgrey,
@@ -22191,9 +21803,7 @@
 "tPl" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tPv" = (
 /obj/structure/ms13/rug/mat/rubber,
 /obj/machinery/light/ms13{
@@ -22240,9 +21850,7 @@
 /obj/structure/chair/office/ms13/green,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tRW" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 1
@@ -22288,9 +21896,7 @@
 	dir = 1
 	},
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "tUs" = (
 /obj/structure/closet/crate/ms13/aluminum,
 /obj/effect/spawner/random/ms13/guaranteed/crafting/lowrandom,
@@ -22386,9 +21992,7 @@
 	id = "bos_storage"
 	},
 /turf/open/floor/ms13/metal/grate/border/warning,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uaf" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 1
@@ -22412,9 +22016,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "ubW" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -22554,9 +22156,7 @@
 /obj/structure/railing/ms13/solo/industrial,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uld" = (
 /obj/structure/table/ms13/metal/small,
 /obj/item/ms13/fluff/ashtray,
@@ -22593,9 +22193,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "umw" = (
 /obj/effect/turf_decal/ms13/road/horizontalline,
 /obj/effect/landmark/start/ms13/wastelander,
@@ -22732,9 +22330,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "usU" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/machinery/light/ms13{
@@ -22755,9 +22351,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "utG" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 4
@@ -22812,9 +22406,7 @@
 	},
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uxe" = (
 /obj/structure/ms13/pipes/horizontal/valve,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -22826,9 +22418,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uxx" = (
 /obj/structure/chair/office/ms13/blue{
 	dir = 8
@@ -22868,18 +22458,14 @@
 "uAS" = (
 /obj/effect/turf_decal/ms13/graffiti/many_eyes,
 /turf/closed/wall/ms13/bunker,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uBI" = (
 /obj/effect/landmark/start/ms13/denizen,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/carlin/interior)
 "uBJ" = (
 /turf/closed/wall/ms13/scrap,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uBO" = (
 /obj/structure/ms13/wall_decor/flag/rangers/ncr,
 /turf/open/floor/wood/ms13/wide,
@@ -22904,9 +22490,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/ms13/metal/alt,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uEg" = (
 /obj/structure/chair/ms13/metal/unfinished{
 	dir = 1
@@ -22921,9 +22505,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uEm" = (
 /obj/structure/table/ms13/metal/heavy,
 /obj/effect/spawner/random/ms13/tools/tool,
@@ -22971,9 +22553,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 4
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uGb" = (
 /obj/structure/ms13/trash/papers{
 	dir = 1
@@ -23028,9 +22608,7 @@
 /turf/open/floor/ms13/metal/pipe{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uIP" = (
 /obj/machinery/light/ms13{
 	dir = 1
@@ -23119,9 +22697,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uNb" = (
 /obj/machinery/light/ms13{
 	dir = 4
@@ -23129,9 +22705,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uNf" = (
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /obj/effect/turf_decal/ms13/graffiti/clueless,
@@ -23370,9 +22944,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "uXF" = (
 /obj/structure/ms13/trash/food/dinner,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -23456,9 +23028,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vbb" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -23640,9 +23210,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/landmark/start/ms13/knight,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vhP" = (
 /obj/structure/table/ms13/no_smooth/counter/wood/crafted{
 	dir = 1
@@ -23772,15 +23340,11 @@
 /obj/structure/ms13/pipes/top,
 /obj/structure/table/ms13/crafting/workbench,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vpr" = (
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vpt" = (
 /obj/structure/ms13/storage/large/shelf/wood{
 	dir = 4
@@ -23830,9 +23394,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vqw" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/machinery/light/ms13{
@@ -23931,9 +23493,7 @@
 /obj/structure/table/ms13/metal/alt,
 /obj/effect/spawner/random/ms13/guaranteed/medical/medkit,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vvB" = (
 /obj/structure/ms13/storage/shelf/wood/alt{
 	dir = 8
@@ -24005,9 +23565,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vyK" = (
 /obj/structure/chair/ms13/metal/stool,
 /turf/open/floor/wood/ms13/carpet/shaggy,
@@ -24074,9 +23632,7 @@
 /area/ms13/town)
 "vCA" = (
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vCX" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 8
@@ -24127,9 +23683,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vFo" = (
 /obj/structure/ms13/barrel/single/hazard/two,
 /obj/structure/ms13/pipes/vertical/east/corner/down,
@@ -24258,9 +23812,7 @@
 /area/ms13/town)
 "vNe" = (
 /turf/open/floor/ms13/tile/full/navy,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vNj" = (
 /obj/machinery/vending/ms13/cigarettes{
 	dir = 4
@@ -24305,9 +23857,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/unpowered/ms13/seethrough/metal,
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vQs" = (
 /obj/structure/table/ms13/crafting/ammobench,
 /turf/open/floor/ms13/concrete,
@@ -24523,9 +24073,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "vZS" = (
 /obj/structure/ms13/wall_decor/flag/bos,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -24612,9 +24160,7 @@
 "whh" = (
 /obj/machinery/iv_drip/ms13,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "whx" = (
 /obj/machinery/light/ms13/bulb{
 	dir = 4
@@ -24990,9 +24536,7 @@
 /turf/open/floor/ms13/metal{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "wFg" = (
 /obj/machinery/door/unpowered/ms13/seethrough/fence/wire/barb,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -25017,9 +24561,7 @@
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "wGX" = (
 /obj/structure/ms13/trash/papers/two,
 /turf/open/floor/ms13/concrete/bricks,
@@ -25245,9 +24787,7 @@
 "wTu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "wTO" = (
 /obj/structure/closet/crate/ms13/medical,
 /obj/effect/spawner/random/ms13/medical/bloodbag,
@@ -25351,9 +24891,7 @@
 	},
 /obj/structure/table/ms13/metal/heavy,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "wXX" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /obj/effect/turf_decal/ms13/graffiti/free,
@@ -25549,9 +25087,7 @@
 /turf/open/floor/ms13/metal/pipe/corner{
 	dir = 8
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xhf" = (
 /obj/structure/ms13/foundation/wide/variantone{
 	dir = 9
@@ -25598,9 +25134,7 @@
 /turf/open/floor/ms13/metal/grate/border/warning{
 	dir = 1
 	},
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xiL" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
@@ -25633,9 +25167,7 @@
 	},
 /obj/structure/table/ms13/low_wall/reinforced/bunker,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xkY" = (
 /mob/living/basic/ms13/hostile_animal/gecko/golden,
 /turf/open/floor/ms13/concrete/industrial,
@@ -26112,9 +25644,7 @@
 "xLW" = (
 /obj/structure/table/ms13/metal/heavy,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xLY" = (
 /turf/open/floor/ms13/tile/full/black,
 /area/ms13/town)
@@ -26129,9 +25659,7 @@
 "xMu" = (
 /obj/machinery/ms13/fusion_generator,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xMM" = (
 /obj/structure/ms13/wall_decor/exit,
 /turf/open/floor/wood/ms13/mosaic,
@@ -26266,17 +25794,13 @@
 "xWZ" = (
 /obj/structure/bed/roller/ms13,
 /turf/open/floor/ms13/tile/large/white,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xXs" = (
 /obj/structure/bed/ms13/bedframe/cot,
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/effect/landmark/start/ms13/initiate,
 /turf/open/floor/ms13/metal,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xXz" = (
 /obj/structure/ms13/storage/large/shelf{
 	dir = 8
@@ -26300,9 +25824,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "xXR" = (
 /obj/machinery/door/unpowered/ms13/wood/mirrored/white{
 	dir = 1
@@ -26487,9 +26009,7 @@
 "yhB" = (
 /obj/machinery/door/unpowered/ms13/metal,
 /turf/open/floor/plating/ms13/ground/sidewalk,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "yhI" = (
 /obj/structure/table/ms13/metal/constructed,
 /turf/open/floor/plating/ms13/ground/desertalt,
@@ -26517,9 +26037,7 @@
 "yir" = (
 /obj/machinery/door/unpowered/ms13/metal/mirrored,
 /turf/open/floor/ms13/tile/large/checkered,
-/area/ms13/bos/building{
-	mood_message = "<span class='nicegreen'>This area is psretty nice!</span>\n"
-	})
+/area/ms13/bos/building)
 "yiD" = (
 /obj/structure/ms13/toilet{
 	dir = 1
