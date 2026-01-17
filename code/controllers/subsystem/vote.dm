@@ -118,6 +118,9 @@ SUBSYSTEM_DEF(vote)
 			if("map")
 				SSmapping.changemap(global.config.maplist[.])
 				SSmapping.map_voted = TRUE
+			if("autoroundend") // GOLD RUSH EDIT
+				if(. == "Initiate Round End") // GOLD RUSH EDIT
+					SSautoroundend.end_round_after_delay() // GOLD RUSH EDIT
 	if(restart)
 		var/active_admins = FALSE
 		for(var/client/C in GLOB.admins + GLOB.deadmins)
@@ -200,6 +203,8 @@ SUBSYSTEM_DEF(vote)
 					if(!option || mode || !usr.client)
 						break
 					choices.Add(capitalize(option))
+			if("autoroundend") // GOLD RUSH EDIT
+				choices.Add("Initiate Round End", "Continue Playing") // GOLD RUSH EDIT
 			else
 				return FALSE
 		mode = vote_type
@@ -221,7 +226,7 @@ SUBSYSTEM_DEF(vote)
 			V.Grant(C.mob)
 			generated_actions += V
 			if(C.prefs.toggles & SOUND_ANNOUNCEMENTS)
-				SEND_SOUND(C, sound('sound/misc/bloop.ogg'))
+				SEND_SOUND(C, sound('mojave/sound/ms13/mysterious_stranger.ogg')) // GOLD RUSH EDIT
 		return TRUE
 	return FALSE
 

@@ -1,0 +1,20 @@
+## Length of time in deciseconds before the first autoroundend vote is called
+## Set to 0 to disable the subsystem altogether.
+VOTE_AUTOROUNDEND_INITIAL 63000
+
+## Length of time in deciseconds to wait before subsequent autoroundend votes
+VOTE_AUTOROUNDEND_INTERVAL 18000
+
+## Length of time in deciseconds to wait before ending the round
+AUTOROUNDEND_DELAY 12000
+
+## Maximum extensions until the round autoends.
+## Set to 0 to force automatic round end after the VOTE_AUTOROUNDEND_INITIAL elapsed.
+## Set to -1 to disable the maximum extensions cap.
+VOTE_AUTOROUNDEND_MAXIMUM 2
+
+## Uncomment to enable the autoroundend system.
+AUTOROUNDEND
+
+## Uncomment to allow the roundend vote to be started by anyone.
+#ALLOW_VOTE_ROUNDEND
