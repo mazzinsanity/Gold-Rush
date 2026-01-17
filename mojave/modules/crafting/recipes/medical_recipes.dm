@@ -19,6 +19,15 @@
 	category = CAT_MEDICAL
 	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR
 
+/datum/crafting_recipe/six_ointment
+	name = "four use ointment"
+	result = /obj/item/stack/medical/ointment/ms13/four
+	time = 10 SECONDS
+	reqs = list(/obj/item/food/grown/ms13/agave = 1,
+				/obj/item/stack/sheet/ms13/plastic = 1)
+	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_CAMPFIRE
+
 /datum/crafting_recipe/full_gauze
 	name = "twelve rolls of gauze"
 	result = /obj/item/stack/medical/gauze/ms13
@@ -38,6 +47,16 @@
 				/obj/item/stack/sheet/ms13/scrap = 2)
 	category = CAT_MEDICAL
 	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR
+
+/datum/crafting_recipe/full_ointment
+	name = "twelve use ointment"
+	result = /obj/item/stack/medical/ointment/ms13
+	time = 15 SECONDS
+	trait = TRAIT_MEDICAL_TRAINING
+	reqs = list(/obj/item/food/grown/ms13/agave = 2,
+				/obj/item/stack/sheet/ms13/plastic = 2)
+	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_CAMPFIRE
 
 /datum/crafting_recipe/mil_gauze
 	name = "military gauze"

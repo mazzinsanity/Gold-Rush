@@ -71,6 +71,9 @@
 	gender = NEUTER //So examine text says "This is a bottle of ointment" instead of "These are some bottle of ointment"
 	merge_type = /obj/item/stack/medical/ointment/ms13
 
+/obj/item/stack/medical/ointment/ms13/four
+	amount = 4
+
 /obj/item/stack/medical/ointment/ms13/half
 	amount = 6
 
