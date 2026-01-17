@@ -8,7 +8,7 @@
 	tool_behaviors = list(TOOL_KNIFE)
 	reqs = list(/obj/item/stack/sheet/ms13/cloth = 1)
 	category = CAT_MEDICAL
-	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR
+	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR | CRAFTING_BENCH_CAMPFIRE
 
 /datum/crafting_recipe/four_suture
 	name = "four use suture"
@@ -17,7 +17,7 @@
 	reqs = list(/obj/item/stack/sheet/ms13/thread = 1,
 				/obj/item/stack/sheet/ms13/scrap = 1)
 	category = CAT_MEDICAL
-	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR
+	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR | CRAFTING_BENCH_CAMPFIRE
 
 /datum/crafting_recipe/six_ointment
 	name = "four use ointment"
@@ -56,7 +56,7 @@
 	reqs = list(/obj/item/food/grown/ms13/agave = 2,
 				/obj/item/stack/sheet/ms13/plastic = 2)
 	category = CAT_MEDICAL
-	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_CAMPFIRE
+	crafting_interface = CRAFTING_BENCH_GENERAL
 
 /datum/crafting_recipe/mil_gauze
 	name = "military gauze"
@@ -307,6 +307,20 @@
 		/obj/item/food/grown/ms13/brocflower = 3,
 		/obj/item/food/grown/ms13/xander = 3,
 		/obj/item/stack/sheet/ms13/scrap = 1
+		)
+	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_CHEM
+
+/datum/crafting_recipe/bonegel
+	name = "bonegel"
+	result = /obj/item/stack/medical/bone_gel/ms13
+	time = 12 SECONDS
+	trait = TRAIT_MEDICAL_TRAINING
+	reqs = list(
+		/obj/item/seeds/ms13/xander = 1,
+		/obj/item/seeds/ms13/gremlinstool = 1,
+		/obj/item/food/grown/ms13/tarberry = 1,
+		/obj/item/stack/sheet/ms13/plastic = 1
 		)
 	category = CAT_MEDICAL
 	crafting_interface = CRAFTING_BENCH_CHEM
