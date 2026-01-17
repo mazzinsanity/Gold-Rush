@@ -8,11 +8,6 @@
 	stack_size = 12
 	no_inventory_sprite = TRUE
 
-/obj/item/ammo_casing/ms13/m44/junk
-	name = "junk .44 magnum bullet casing"
-	desc = "A makeshift .44 Magnum bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/m44/junk
-
 /obj/item/ammo_casing/ms13/m44/ap
 	name = "AP .44 magnum bullet casing"
 	desc = "An armor piercing .44 Magnum bullet casing."
@@ -40,10 +35,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/m44box/junk
-	name = "junk .44 ammo box"
-	desc = "A crude box containing junk quality .44 magnum ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/m44/junk
+/obj/item/ammo_box/ms13/m44box/fmj
+	name = "FMJ .44 ammo box"
+	desc = "A box containing FMJ .44 magnum ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/m44/fmj
 
 //45-70
 /obj/item/ammo_casing/ms13/c4570
@@ -100,23 +95,18 @@
 	stack_size = 12
 	no_inventory_sprite = TRUE
 
-/obj/item/ammo_casing/ms13/a357/junk
-	name = "junk .357 bullet casing"
-	desc = "A makeshift .357 bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/a357/junk
-
 /obj/item/ammo_casing/ms13/a357/ap
 	name = "AP .357 bullet casing"
 	desc = "An armor piercing .357 bullet casing."
 	projectile_type = /obj/projectile/bullet/ms13/a357/ap
 
 /obj/item/ammo_casing/ms13/a357/fmj
-	name = ".357 bullet casing"
+	name = "FMJ .357 bullet casing"
 	desc = "A full metal jacket .357 bullet casing."
 	projectile_type = /obj/projectile/bullet/ms13/a357/fmj
 
 /obj/item/ammo_casing/ms13/a357/hv
-	name = ".357 bullet casing"
+	name = "HV .357 bullet casing"
 	desc = "A high velocity .357 bullet casing."
 	projectile_type = /obj/projectile/bullet/ms13/a357/hv
 
@@ -132,7 +122,7 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/a357box/junk
-	name = "junk .357 ammo box"
-	desc = "A crude box containing junk quality .357 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/a357/junk
+/obj/item/ammo_box/ms13/a357box/fmj
+	name = "FMJ .357 ammo box"
+	desc = "A box containing FMJ .357 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/a357/fmj

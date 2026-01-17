@@ -21,7 +21,6 @@
 			/obj/item/ammo_box/ms13/stripper/r762 = 2,
 			/obj/item/stock_parts/cell/ms13/ec = 1,
 			/obj/item/stock_parts/cell/ms13/mfc = 1,
-			/obj/item/ammo_box/ms13/shotgun/junkshot = 2,
 			/obj/item/ammo_box/ms13/c9mm = 1,
 			)
 

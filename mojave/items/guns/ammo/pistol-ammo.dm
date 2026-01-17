@@ -8,11 +8,6 @@
 	stack_size = 12
 	no_inventory_sprite = TRUE
 
-/obj/item/ammo_casing/ms13/c45/junk
-	name = "junk .45 bullet casing"
-	desc = "A makeshift .45 bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/c45/junk
-
 /obj/item/ammo_casing/ms13/c45/ap
 	name = "AP .45 bullet casing"
 	desc = "An armor piercing .45 bullet casing."
@@ -40,10 +35,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/c45/junk
-	name = "junk .45 ammo box"
-	desc = "A crude box containing junk quality .45 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/c45/junk
+/obj/item/ammo_box/ms13/c45/fmj
+	name = "FMJ .45 ammo box"
+	desc = "A box containing FMJ .45 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/c45/fmj
 
 //.22
 /obj/item/ammo_casing/ms13/c22
@@ -54,11 +49,6 @@
 	projectile_type = /obj/projectile/bullet/ms13/c22
 	stack_size = 20
 	no_inventory_sprite = TRUE
-
-/obj/item/ammo_casing/ms13/c22/junk
-	name = "junk .22 bullet casing"
-	desc = "A makeshift .22 bullet casing"
-	projectile_type = /obj/projectile/bullet/ms13/c22/junk
 
 /obj/item/ammo_casing/ms13/c22/ap
 	name = "AP .22 bullet casing"
@@ -87,10 +77,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/c22box/junk
-	name = "junk .22 ammo box"
-	desc = "A crude box containing junk quality .22 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/c22/junk
+/obj/item/ammo_box/ms13/c22box/fmj
+	name = "FMJ .22 ammo box"
+	desc = "A box containing FMJ .22 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/c22/fmj
 
 //9mm
 /obj/item/ammo_casing/ms13/c9mm
@@ -101,11 +91,6 @@
 	projectile_type = /obj/projectile/bullet/ms13/c9mm
 	stack_size = 15
 	no_inventory_sprite = TRUE
-
-/obj/item/ammo_casing/ms13/c9mm/junk
-	name = "junk 9mm bullet casing"
-	desc = "A makeshift 9mm bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/c9mm/junk
 
 /obj/item/ammo_casing/ms13/c9mm/ap
 	name = "AP 9mm bullet casing"
@@ -134,10 +119,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/c9mm/junk
-	name = "junk 9mm ammo box"
-	desc = "A crude box containing junk quality 9mm ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/c9mm/junk
+/obj/item/ammo_box/ms13/c9mm/fmj
+	name = "FMJ 9mm ammo box"
+	desc = "A box containing high FMJ 9mm ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/c9mm/fmj
 
 //10mm
 /obj/item/ammo_casing/ms13/c10mm
@@ -147,11 +132,6 @@
 	icon_state = "10mm_casing"
 	projectile_type = /obj/projectile/bullet/ms13/c10mm
 	stack_size = 12
-
-/obj/item/ammo_casing/ms13/c10mm/junk
-	name = "junk 10mm bullet casing"
-	desc = "A makeshift 10mm bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/c10mm/junk
 
 /obj/item/ammo_casing/ms13/c10mm/ap
 	name = "AP 10mm bullet casing"
@@ -181,10 +161,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/c10mm/junk
-	name = "junk 10mm ammo box"
-	desc = "A crude box containing junk quality 10mm ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/c10mm/junk
+/obj/item/ammo_box/ms13/c10mm/fmj
+	name = "10mm ammo box"
+	desc = "A box containing FMJ 10mm ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/c10mm/fmj
 
 //12.7mm
 /obj/item/ammo_casing/ms13/m12mm

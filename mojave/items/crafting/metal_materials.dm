@@ -171,25 +171,25 @@ GLOBAL_LIST_INIT(refined_steel_recipes, list ( \
 	beauty_modifier = 0
 	strength_modifier = 1
 
-/obj/item/stack/sheet/ms13/junk_bullets
-	name = "junk bullets"
-	desc = "Poor quality bullets made from scrap lead."
-	singular_name = "junk bullet"
+/obj/item/stack/sheet/ms13/bullets
+	name = "bullets"
+	desc = "Standard bullets made from scrap lead."
+	singular_name = "bullet"
 	icon_state = "bullets"
-	merge_type = /obj/item/stack/sheet/ms13/junk_bullets
+	merge_type = /obj/item/stack/sheet/ms13/bullets
 	amount = 1
 	max_amount = 20
 	grid_width = 32
 	grid_height = 32
 	w_class = WEIGHT_CLASS_TINY
 
-/obj/item/stack/sheet/ms13/junk_bullets/ten
+/obj/item/stack/sheet/ms13/bullets/ten
 	amount = 10
 
-/obj/item/stack/sheet/ms13/junk_bullets/twelve
+/obj/item/stack/sheet/ms13/bullets/twelve
 	amount = 12
 
-/obj/item/stack/sheet/ms13/junk_bullets/twenty
+/obj/item/stack/sheet/ms13/bullets/twenty
 	amount = 20
 
 /obj/item/stack/sheet/ms13/hq_bullets
@@ -261,25 +261,25 @@ GLOBAL_LIST_INIT(refined_steel_recipes, list ( \
 	beauty_modifier = 0
 	strength_modifier = 1
 
-/obj/item/stack/sheet/ms13/junk_casings
-	name = "junk bullet casings"
-	desc = "Poor quality bullet casings made from scrap brass."
-	singular_name = "junk bullet casing"
+/obj/item/stack/sheet/ms13/casings
+	name = "bullet casings"
+	desc = "Standard bullet casings made from scrap brass."
+	singular_name = "bullet casing"
 	icon_state = "casings"
-	merge_type = /obj/item/stack/sheet/ms13/junk_casings
+	merge_type = /obj/item/stack/sheet/ms13/casings
 	amount = 1
 	max_amount = 20
 	grid_width = 32
 	grid_height = 32
 	w_class = WEIGHT_CLASS_TINY
 
-/obj/item/stack/sheet/ms13/junk_casings/ten
+/obj/item/stack/sheet/ms13/casings/ten
 	amount = 10
 
-/obj/item/stack/sheet/ms13/junk_casings/twelve
+/obj/item/stack/sheet/ms13/casings/twelve
 	amount = 12
 
-/obj/item/stack/sheet/ms13/junk_casings/twenty
+/obj/item/stack/sheet/ms13/casings/twenty
 	amount = 20
 
 /obj/item/stack/sheet/ms13/hq_casings
