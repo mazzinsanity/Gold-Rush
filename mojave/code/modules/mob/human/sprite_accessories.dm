@@ -2635,6 +2635,54 @@
 	name = "Tuft"
 	icon_state = "tuft"
 
+/datum/sprite_accessory/tails/largecatplain
+	name = "Large Cat (Plain)"
+	icon_state = "largecatplain"
+
+/datum/sprite_accessory/tails_animated/largecatplain
+	name = "Large Cat (Plain)"
+	icon_state = "largecatplain"
+
+/datum/sprite_accessory/tails/largecattip
+	name = "Large Cat (Tip)"
+	icon_state = "largecattip"
+	icon_state_2 = "largecattip_2"
+
+/datum/sprite_accessory/tails_animated/largecattip
+	name = "Large Cat (Tip)"
+	icon_state = "largecattip"
+	icon_state_2 = "largecattip_2"
+
+/datum/sprite_accessory/tails/largecatstriped
+	name = "Large Cat (Striped)"
+	icon_state = "largecatstriped"
+	icon_state_2 = "largecatstriped_2"
+
+/datum/sprite_accessory/tails_animated/largecatstriped
+	name = "Large Cat (Striped)"
+	icon_state = "largecatstriped"
+	icon_state_2 = "largecatstriped_2"
+
+/datum/sprite_accessory/tails/largecatcircle
+	name = "Large Cat (Circle)"
+	icon_state = "largecatcircle"
+	icon_state_2 = "largecatcircle_2"
+
+/datum/sprite_accessory/tails_animated/largecatcircle
+	name = "Large Cat (Circle)"
+	icon_state = "largecatcircle"
+	icon_state_2 = "largecatcircle_2"
+
+/datum/sprite_accessory/tails/largecatcovered
+	name = "Large Cat (Covered)"
+	icon_state = "largecatcovered"
+	icon_state_2 = "largecatcovered_2"
+
+/datum/sprite_accessory/tails_animated/largecatcovered
+	name = "Large Cat (Covered)"
+	icon_state = "largecatcovered"
+	icon_state_2 = "largecatcovered_2"
+
 ////////////////////////
 // Spines Definitions //
 ////////////////////////
