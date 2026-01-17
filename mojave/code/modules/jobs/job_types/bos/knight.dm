@@ -2,8 +2,8 @@
 	title = "Brotherhood Knight"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "The Head Knight"
-	description = "You are an engineer and soldier of the Brotherhood. Ensure the security of your base and fellow Brotherhood members. Execute orders given to you by the Head Knight."
+	supervisors = "The Head Paladin"
+	description = "You are an engineer and soldier of the Brotherhood. Ensure the security of your base and fellow Brotherhood members. Execute orders given to you by the Head Paladin."
 
 	outfit = /datum/outfit/job/ms13/bos/knight
 

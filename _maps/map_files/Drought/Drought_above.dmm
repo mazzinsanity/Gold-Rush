@@ -5001,7 +5001,7 @@
 /obj/structure/bed/ms13/mattress/filthy,
 /obj/structure/ms13/storage/vent,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/effect/landmark/start/ms13/head_knight,
+/obj/effect/landmark/start/ms13/head_paladin,
 /turf/open/floor/ms13/tile/full/green,
 /area/ms13/bos/building)
 "qr" = (
@@ -13575,7 +13575,7 @@
 /area/ms13/desert)
 "SX" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
-/obj/machinery/door/airlock/ms13/brotherhood/hknight{
+/obj/machinery/door/airlock/ms13/brotherhood/hpaladin{
 	dir = 4
 	},
 /turf/open/floor/ms13/tile/full/green,

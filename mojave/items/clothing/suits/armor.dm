@@ -778,8 +778,8 @@
 	icon_state = "head_scribe"
 	inhand_icon_state = "head_scribe"
 
-/obj/item/clothing/suit/armor/ms13/head_knight
-	name = "\improper Brotherhood Head Knight's battlecoat"
+/obj/item/clothing/suit/armor/ms13/head_paladin
+	name = "\improper Brotherhood head paladin's battlecoat"
 	desc = "A masterwork of Brotherhood tailoring, featuring good reinforcements and armoring while not compromising on style or weight."
 	icon_state = "battlecoat"
 	inhand_icon_state = "battlecoat"

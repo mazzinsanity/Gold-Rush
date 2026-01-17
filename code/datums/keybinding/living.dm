@@ -21,7 +21,7 @@
 	return TRUE
 
 /datum/keybinding/living/look_up
-	hotkey_keys = list("L")
+	hotkey_keys = list("P")
 	name = "look up"
 	full_name = "Look Up"
 	description = "Look up at the next z-level.  Only works if directly below open space."
@@ -61,7 +61,7 @@
 	return TRUE
 
 /datum/keybinding/living/rest
-	hotkey_keys = list("U")
+	hotkey_keys = list("ShiftR")
 	name = "rest"
 	full_name = "Rest"
 	description = "Lay down, or get up."
@@ -76,7 +76,7 @@
 	return TRUE
 
 /datum/keybinding/living/toggle_combat_mode
-	hotkey_keys = list("F")
+	hotkey_keys = list("Unbound")
 	name = "toggle_combat_mode"
 	full_name = "Toggle Combat Mode"
 	description = "Toggles combat mode. Like Help/Harm but cooler."

@@ -1,1 +1,17 @@
-This is the Open Beta for Mojave Sun.  Please be sure to note any bugs you find while playing.  Rules can be found here:  https://docs.google.com/document/d/1oQRTz-WbaOEoGLtMmMyaUQ6zXZLTkhfwsc8Pohgoa3w/edit?usp=sharing.  Discord can be found here: https://discord.gg/ms13.  Respawn timer is currently set to 10 minutes.  Please change your character on each respawn.
+Shift + Right click opens the context menu, letting you see things in a tile. Useful when you need to pick something up from the floor.
+"B" is the hotkey to resist. Useful for when you're literally on fire!
+Right click while unarmed will shove/disarm someone, right click with certain weapons like knives will stab instead of slash, right click can be used to disassemble objects.
+Clothes can be ripped with sharp tools to obtain thread and cloth.
+Vehicle ruins can be disassembled with a welder for materials.
+Crowbars can be used to open crates and barricades. Claw hammers can also do it but slower.
+Terminals can provide access into locked areas. Beware booby-trapped ones!
+Healing powder, burn powder and healing poultice work similarly to sutures and ointment, not like reagents.
+Simple medicine can be crafted at a campfire or fire barrel using Ctrl + Click. 
+Interact with a crafting bench using Ctrl + Click to open its crafting interface.
+You can construct a fire barrel with scrap metal or scrap steel, and then light it and attach a grill with scrap metal to grill meat and fish.
+Ctrl-Shift + Click on a person to open the Guestbook menu, letting you set the name you remember them by. Open the Guestbook from the IC tab.
+Right click with a scoped weapon to use the scope.
+Ctrl + Click to rotate items in the grid inventory.
+Some suit slot armor has built-in storage. Right click on a suit or shoes to quickdraw a stored item.
+Power armor absorbs all damage until a piece is broken or it is penetrated by a blow with enough armor penetration (like .50 BMG). The power armor frame itself has good protection until broken. Wearing it means you will need support when it comes to carrying stuff.
+Flames inside buildings will fill them with toxic gas and make you suffocate.

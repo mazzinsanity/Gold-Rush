@@ -57,13 +57,9 @@
 	target.dna.features["mcolor"] = value
 
 /datum/preference/color/mutant_color/is_valid(value)
-	if (!..(value))
+	. = ..()
+	if(is_color_dark(value))
 		return FALSE
-
-	if (is_color_dark(value))
-		return FALSE
-
-	return TRUE
 
 /datum/preference/choiced/legs
 	savefile_key = "feature_legs"

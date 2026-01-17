@@ -30,7 +30,7 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 GLOBAL_LIST_INIT(bos_positions, list(
 	"Brotherhood Initiate",
 	"Brotherhood Knight",
-	"Brotherhood Head Knight",
+	"Brotherhood Head Paladin",
 	"Brotherhood Scribe",
 	"Brotherhood Head Scribe",
 	"Brotherhood Base Staff",

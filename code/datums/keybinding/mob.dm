@@ -72,7 +72,7 @@
 	return TRUE
 
 /datum/keybinding/mob/toggle_move_intent
-	hotkey_keys = list("C")
+	hotkey_keys = list("N")
 	name = "toggle_move_intent"
 	full_name = "Hold to toggle move intent"
 	description = "Held down to cycle to the other move intent, release to cycle back"
@@ -252,7 +252,7 @@
 	user.movement_locked = FALSE
 
 /datum/keybinding/mob/pixel_shift
-	hotkey_keys = list("B")
+	hotkey_keys = list(",")
 	name = "pixel_shift"
 	full_name = "Pixel Shift"
 	description = "Shift your characters offset."

@@ -67,8 +67,8 @@
 /obj/machinery/door/airlock/ms13/brotherhood
 	req_access = list(ACCESS_BROTHERHOOD)
 
-/obj/machinery/door/airlock/ms13/brotherhood/hknight
-	req_access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HKNIGHT)
+/obj/machinery/door/airlock/ms13/brotherhood/hpaladin
+	req_access = list(ACCESS_BROTHERHOOD, ACCESS_BROTHERHOOD_HPALADIN)
 
 
 //// Carlin doors ////
