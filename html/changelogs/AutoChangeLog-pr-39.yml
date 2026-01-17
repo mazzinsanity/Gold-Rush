@@ -1,0 +1,13 @@
+author: "mazzinsanity"
+delete-after: True
+changes:
+  - rscadd: "Added tips of the round that now feature useful info on how to play this codebase."
+  - rscdel: "Vending machine tipping disabled, rummage damage reduced."
+  - qol: "Departure opens job slots and you can now depart others if they are AFK."
+  - qol: "Radio static reduced for medium and low end radios."
+  - qol: "Mutant color darkness threshold reduced from 25% to 10%."
+  - qol: "Default keybinds have been adjusted to be improve usability."
+  - bugfix: "Head Knight renamed to Head Paladin"
+  - bugfix: "Snouts layer fixed to appear above markings."
+  - bugfix: "Sheriff loadout fixed."
+  - bugfix: "Shelves can now store items and be disassembled with a wrench."
