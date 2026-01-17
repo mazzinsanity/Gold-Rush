@@ -683,6 +683,51 @@
 	gender = FEMALE
 	length = LONG
 
+/datum/sprite_accessory/hair/fluffaju
+	name = "Fluffaju"
+	icon_state = "fluffaju"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/morning
+	name = "Morning"
+	icon_state = "morning"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/dawn
+	name = "Dawn"
+	icon_state = "dawn"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/kobeni
+	name = "Kobeni"
+	icon_state = "kobeni"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/kobeni_alt
+	name = "Kobeni (Alt)"
+	icon_state = "kobeni_alt"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/hairfre
+	name = "Hairfre"
+	icon_state = "hairfre"
+	length = LONG
+
+/datum/sprite_accessory/hair/zone
+	name = "Zone"
+	icon_state = "zone"
+	length = LONG
+
+/datum/sprite_accessory/hair/inari
+	name = "Inari"
+	icon_state = "inari"
+	length = LONG
+
+/datum/sprite_accessory/hair/shortmessy
+	name = "Short Messy"
+	icon_state = "shortmessy"
+	length = SHORT
+
 /*
 /////////////////////////////////////
 /  =---------------------------=    /
@@ -845,6 +890,10 @@
 /datum/sprite_accessory/facial_hair/sevenoclockm
 	name = "Beard (Seven o Clock Moustache)"
 	icon_state = "facial_7oclockmoustache"
+
+/datum/sprite_accessory/facial_hair/brokenman
+	name = "Beard (Broken Man)"
+	icon_state = "facial_brokenman"
 
 /datum/sprite_accessory/facial_hair/moustache
 	name = "Moustache"
