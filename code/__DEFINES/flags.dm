@@ -271,6 +271,8 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define IGNORE_INCAPACITATED (1<<3)
 /// Used to prevent important slowdowns from being abused by drugs like kronkaine
 #define IGNORE_SLOWDOWNS (1<<4)
+/// Can only do the action if target stays near. Must be used with IGNORE_USER_LOC_CHANGE and IGNORE_TARGET_LOC_CHANGE
+#define ENFORCE_TARGET_PROXIMITY (1<<5)
 
 
 // Spacevine-related flags

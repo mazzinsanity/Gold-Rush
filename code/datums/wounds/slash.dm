@@ -214,7 +214,7 @@
 
 	user.visible_message(span_notice("[user] begins licking the wounds on [victim]'s [limb.name]."), span_notice("You begin licking the wounds on [victim]'s [limb.name]..."), ignored_mobs=victim)
 	to_chat(victim, span_notice("[user] begins to lick the wounds on your [limb.name]."))
-	if(!do_after(user, base_treat_time, target=victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, base_treat_time, target=victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return
 
 	user.visible_message(span_notice("[user] licks the wounds on [victim]'s [limb.name]."), span_notice("You lick some of the wounds on [victim]'s [limb.name]"), ignored_mobs=victim)
@@ -240,7 +240,7 @@
 /datum/wound/slash/flesh/proc/las_cauterize(obj/item/gun/energy/laser/lasgun, mob/user)
 	var/self_penalty_mult = (user == victim ? 1.25 : 1)
 	user.visible_message(span_warning("[user] begins aiming [lasgun] directly at [victim]'s [limb.name]..."), span_userdanger("You begin aiming [lasgun] directly at [user == victim ? "your" : "[victim]'s"] [limb.name]..."))
-	if(!do_after(user, base_treat_time  * self_penalty_mult, target=victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, base_treat_time  * self_penalty_mult, target=victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return
 	var/damage = lasgun.chambered.loaded_projectile.damage
 	lasgun.chambered.loaded_projectile.wound_bonus -= 30
@@ -265,7 +265,7 @@
 	else
 		user.visible_message(span_danger("[user] begins cauterizing [victim]'s [limb.name] with [I]..."), span_warning("You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 
-	if(!do_after(user, treatment_delay, target = victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, treatment_delay, target = victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return
 	var/bleeding_wording = (!limb.can_bleed() ? "cuts" : "bleeding")
 	user.visible_message(span_green("[user] cauterizes some of the [bleeding_wording] on [victim]."), span_green("You cauterize some of the [bleeding_wording] on [victim]."))
@@ -293,7 +293,7 @@
 	else
 		user.visible_message(span_notice("[user] begins stitching [victim]'s [limb.name] with [I]..."), span_notice("You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 
-	if(!do_after(user, treatment_delay, target = victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, treatment_delay, target = victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return TRUE
 	var/bleeding_wording = (!limb.can_bleed() ? "cuts" : "bleeding")
 	user.visible_message(span_green("[user] stitches up some of the [bleeding_wording] on [victim]."), span_green("You stitch up some of the [bleeding_wording] on [user == victim ? "yourself" : "[victim]"]."))
