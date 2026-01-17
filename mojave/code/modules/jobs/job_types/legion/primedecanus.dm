@@ -29,6 +29,7 @@
 		/obj/item/stack/medical/suture/ms13/four=1,
 		/obj/item/flashlight/flare/ms13=1,
 		/obj/item/radio/ms13/broadcast=1,
+		/obj/item/stack/medical/ms13/healing_powder/poultice=1,
 	)
 
 /datum/outfit/job/ms13/legion/primedecanus/pre_equip(mob/living/carbon/human/H)

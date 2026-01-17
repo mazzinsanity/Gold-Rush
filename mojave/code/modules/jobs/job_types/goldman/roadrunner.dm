@@ -31,6 +31,7 @@
 		/obj/item/stack/medical/suture/ms13/four=1,
 		/obj/item/flashlight/flare/ms13=1,
 		/obj/item/radio/ms13/broadcast=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy=1,
 	)
 
 /datum/outfit/job/ms13/goldman/roadrunner/pre_equip(mob/living/carbon/human/H)

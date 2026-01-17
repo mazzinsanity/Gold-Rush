@@ -27,6 +27,7 @@
 		/obj/item/stack/medical/gauze/ms13/three=1,
 		/obj/item/stack/medical/suture/ms13/four=1,
 		/obj/item/flashlight/ms13=1,
+		/obj/item/stack/medical/ms13/healing_powder/poultice=1,
 	)
 
 /datum/outfit/job/ms13/legion/veteranlegionary/pre_equip(mob/living/carbon/human/H)

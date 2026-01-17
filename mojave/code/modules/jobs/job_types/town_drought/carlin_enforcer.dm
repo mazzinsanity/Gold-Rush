@@ -27,6 +27,7 @@
 		/obj/item/stack/medical/suture/ms13/four=1,
 		/obj/item/restraints/handcuffs/ms13=1,
 		/obj/item/flashlight/ms13=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy=1,
 	)
 
 /datum/outfit/job/ms13/town_drought/carlin_enforcer/pre_equip(mob/living/carbon/human/H)

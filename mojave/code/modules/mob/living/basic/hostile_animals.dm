@@ -53,9 +53,9 @@
 	deathsound = list('mojave/sound/ms13npc/radroach_death1.ogg', 'mojave/sound/ms13npc/radroach_death2.ogg', 'mojave/sound/ms13npc/radroach_death3.ogg')
 	health = 30
 	maxHealth = 30
-	melee_damage_lower = 10
-	melee_damage_upper = 10
-	subtractible_armour_penetration = 5
+	melee_damage_lower = 2
+	melee_damage_upper = 7
+	subtractible_armour_penetration = 0
 	speed = -0.35
 	sharpness = NONE
 	wound_bonus = CANT_WOUND
@@ -78,8 +78,8 @@
 	icon_dead = "glowroach_dead"
 	health = 50
 	maxHealth = 50
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 8
+	melee_damage_upper = 12
 	subtractible_armour_penetration = 5
 	sharpness = SHARP_EDGED
 	wound_bonus = 4
@@ -100,8 +100,8 @@
 	deathsound = 'mojave/sound/ms13npc/mantis_death.ogg'
 	health = 25
 	maxHealth = 25
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 7
+	melee_damage_upper = 10
 	subtractible_armour_penetration = 10
 	speed = 0
 	sharpness = SHARP_EDGED
@@ -126,13 +126,13 @@
 	deathsound = list('mojave/sound/ms13npc/gecko_death1.ogg', 'mojave/sound/ms13npc/gecko_death2.ogg')
 	health = 60
 	maxHealth = 60
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 9
+	melee_damage_upper = 13
 	subtractible_armour_penetration = 5
 	speed = -0.25
 	sharpness = SHARP_EDGED
-	wound_bonus = 6
-	bare_wound_bonus = 8
+	wound_bonus = 3
+	bare_wound_bonus = 12
 	faction = list("gecko")
 	butcher_results = list(/obj/item/food/meat/slab/ms13/carcass/gecko/desert = 1, /obj/item/ms13/animalitem/gecko/claws = 1)
 	/*food_type = null //insert TECHNOFISH TM HERE
@@ -160,7 +160,7 @@
 	maxHealth = 85
 	subtractible_armour_penetration = 10
 	wound_bonus = 8
-	bare_wound_bonus = 12
+	bare_wound_bonus = 18
 	butcher_results = list(/obj/item/food/meat/slab/ms13/carcass/gecko/golden = 1, /obj/item/ms13/animalitem/gecko/claws = 1)
 
 /mob/living/basic/ms13/hostile_animal/molerat
@@ -176,13 +176,13 @@
 	deathsound = list('mojave/sound/ms13npc/molerat_death1.ogg', 'mojave/sound/ms13npc/molerat_death2.ogg', 'mojave/sound/ms13npc/molerat_death3.ogg')
 	health = 80
 	maxHealth = 80
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 8
+	melee_damage_upper = 12
 	subtractible_armour_penetration = 20
 	speed = 0.65
 	sharpness = SHARP_IMPALING
-	wound_bonus = 8
-	bare_wound_bonus = 2
+	wound_bonus = 2
+	bare_wound_bonus = 8
 	butcher_results = list(/obj/item/food/meat/slab/ms13/carcass/molerat = 1, /obj/item/ms13/animalitem/molerat/teeth = 2)
 	faction = list("rat")
 	/*food_type = list(/obj/item/food/grown/ms13/potato)
@@ -205,7 +205,7 @@
 	attack_verb_continuous = "nips"
 	attack_verb_simple = "nip"
 	melee_damage_lower = 1
-	melee_damage_upper = 5
+	melee_damage_upper = 3
 	health = 15
 	maxHealth = 15
 	/*is_young = TRUE
@@ -224,13 +224,13 @@
 	deathsound = list('mojave/sound/ms13npc/pigrat_death1.ogg', 'mojave/sound/ms13npc/pigrat_death2.ogg', 'mojave/sound/ms13npc/pigrat_death3.ogg')
 	health = 60
 	maxHealth = 60
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 8
+	melee_damage_upper = 12
 	subtractible_armour_penetration = 5
 	speed = 0.25
 	sharpness = SHARP_IMPALING
-	wound_bonus = 8
-	bare_wound_bonus = 2
+	wound_bonus = 2
+	bare_wound_bonus = 8
 	butcher_results = list(/obj/item/ms13/hide/pigrat = 1, /obj/item/food/meat/slab/ms13/carcass/molerat/pig = 1, /obj/item/ms13/animalitem/pigrat/snout = 1)
 	faction = list("rat")
 	/*food_type = list(/obj/item/food/grown/ms13/xander, /obj/item/food/grown/ms13/carrot)
@@ -253,7 +253,7 @@
 	attack_verb_continuous = "nips"
 	attack_verb_simple = "nip"
 	melee_damage_lower = 5
-	melee_damage_upper = 10
+	melee_damage_upper = 8
 	health = 25
 	maxHealth = 25
 	/*is_young = TRUE
@@ -274,8 +274,8 @@
 	deathsound = list('mojave/sound/ms13npc/ant_death1.ogg', 'mojave/sound/ms13npc/ant_death2.ogg')
 	health = 100
 	maxHealth = 100
-	melee_damage_lower = 20
-	melee_damage_upper = 20
+	melee_damage_lower = 9
+	melee_damage_upper = 15
 	subtractible_armour_penetration = 10
 	speed = 0.8
 	sharpness = NONE
@@ -305,8 +305,8 @@
 	deathsound = list('mojave/sound/ms13npc/dog_death1.ogg', 'mojave/sound/ms13npc/dog_death2.ogg')
 	health = 70
 	maxHealth = 70
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	melee_damage_lower = 9
+	melee_damage_upper = 13
 	subtractible_armour_penetration = 10
 	speed = -0.5
 	sharpness = SHARP_EDGED
@@ -334,8 +334,8 @@
 	deathsound = list('mojave/sound/ms13npc/ant_death1.ogg', 'mojave/sound/ms13npc/ant_death2.ogg') //placeholder for now, it sounds alright
 	health = 225
 	maxHealth = 225
-	melee_damage_lower = 25
-	melee_damage_upper = 25
+	melee_damage_lower = 15
+	melee_damage_upper = 20
 	subtractible_armour_penetration = 20
 	speed = 2.4
 	sharpness = SHARP_EDGED
@@ -361,8 +361,8 @@
 	icon_dead = "radlurk_dead"
 	health = 250
 	maxHealth = 250
-	melee_damage_lower = 30
-	melee_damage_upper = 30
+	melee_damage_lower = 20
+	melee_damage_upper = 27
 	subtractible_armour_penetration = 20
 	wound_bonus = 12
 	bare_wound_bonus = 8
@@ -384,8 +384,8 @@
 	deathsound = list('mojave/sound/ms13npc/yaoguai_death1.ogg', 'mojave/sound/ms13npc/yaoguai_death2.ogg')
 	health = 450
 	maxHealth = 450
-	melee_damage_lower = 45
-	melee_damage_upper = 45
+	melee_damage_lower = 35
+	melee_damage_upper = 40
 	subtractible_armour_penetration = 15
 	speed = 1.35
 	sharpness = SHARP_EDGED
@@ -417,7 +417,7 @@
 	deathsound = list('mojave/sound/ms13npc/hellpig_death1.ogg', 'mojave/sound/ms13npc/hellpig_death2.ogg') //Not in love with either of these death or attack sounds but they work for now. Just pulled them from Yaoguai files
 	health = 550
 	maxHealth = 550
-	melee_damage_lower = 45
+	melee_damage_lower = 38
 	melee_damage_upper = 45
 	subtractible_armour_penetration = 20
 	speed = 1.8
@@ -451,8 +451,8 @@
 	deathsound = list('mojave/sound/ms13npc/hellpig_death1.ogg', 'mojave/sound/ms13npc/hellpig_death2.ogg') //Not in love with either of these death or attack sounds but they work for now. Just pulled them from Yaoguai files
 	health = 85
 	maxHealth = 85
-	melee_damage_lower = 20
-	melee_damage_upper = 20
+	melee_damage_lower = 10
+	melee_damage_upper = 18
 	subtractible_armour_penetration = 10
 	speed = 0.5
 	sharpness = NONE

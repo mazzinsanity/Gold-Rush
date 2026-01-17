@@ -25,6 +25,7 @@
 		/obj/item/stack/medical/suture/ms13/eight=1,
 		/obj/item/stack/medical/ointment/ms13=1,
 		/obj/item/reagent_containers/ms13/flask/bitter_drink=1,
+		/obj/item/stack/medical/ms13/healing_powder/poultice=2,
 		/obj/item/stack/medical/splint/ms13/wooden=2,
 		/obj/item/flashlight/flare/ms13=1,
 	)

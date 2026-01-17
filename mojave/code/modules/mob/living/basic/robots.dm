@@ -10,7 +10,7 @@
 	speed = 1
 	attack_verb_continuous = "dissects"
 	attack_verb_simple = "stabs"
-	melee_damage_lower = 10
+	melee_damage_lower = 5
 	melee_damage_upper = 10
 	attack_sound = 'sound/weapons/punch1.ogg'
 	deathsound = 'mojave/sound/ms13npc/robot_death.ogg'
@@ -51,8 +51,8 @@
     icon_state = "mrhandy_claw"
     health = 130
     maxHealth = 130
-    melee_damage_lower = 15
-    melee_damage_upper = 15
+    melee_damage_lower = 8
+    melee_damage_upper = 12
     subtractible_armour_penetration = 5
     speed = 0.5
     speak_emote = list("states", "says")
@@ -80,8 +80,8 @@
 /mob/living/basic/ms13/robot/handy/saw
     desc = "A work model Mr. Handy unit, armed with a horrifyingly sharp saw. It's long lost any rational wires in its circuits."
     icon_state = "mrhandy_saw"
-    melee_damage_lower = 25
-    melee_damage_upper = 25
+    melee_damage_lower = 12
+    melee_damage_upper = 20
     subtractible_armour_penetration = 15
     sharpness = SHARP_EDGED
     wound_bonus = 8

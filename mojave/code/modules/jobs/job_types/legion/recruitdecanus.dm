@@ -29,4 +29,5 @@
 		/obj/item/stack/medical/gauze/ms13/three=1,
 		/obj/item/flashlight/flare/ms13=1,
 		/obj/item/radio/ms13/broadcast=1,
+		/obj/item/stack/medical/ms13/healing_powder/poultice=1,
 	)

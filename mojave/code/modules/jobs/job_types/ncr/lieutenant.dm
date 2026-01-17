@@ -30,4 +30,5 @@
 		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak=1,
 		/obj/item/flashlight/ms13=1,
 		/obj/item/radio/ms13/broadcast=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak=1,
 	)

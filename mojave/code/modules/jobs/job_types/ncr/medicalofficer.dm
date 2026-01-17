@@ -24,6 +24,7 @@
 		/obj/item/ammo_box/magazine/ms13/m45=2,
 		/obj/item/gun/ballistic/automatic/pistol/ms13/pistol45=1,
 		/obj/item/flashlight/ms13=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak=2,
 	)
 
 /datum/outfit/job/ms13/ncr/medical_officer/pre_equip(mob/living/carbon/human/H)

@@ -22,4 +22,5 @@
 		/obj/item/ammo_box/magazine/ms13/m10mm=2,
 		/obj/item/stack/medical/gauze/ms13/three=1,
 		/obj/item/flashlight/ms13/crafted=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy=1,
 	)

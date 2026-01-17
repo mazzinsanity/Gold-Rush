@@ -23,6 +23,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/ms13/m10mm=2,
 		/obj/item/flashlight/ms13=1,
+		/obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/crappy=1,
 	)
 
 /datum/outfit/job/ms13/bos/scribe/pre_equip(mob/living/carbon/human/H)
