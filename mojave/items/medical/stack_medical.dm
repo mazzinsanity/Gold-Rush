@@ -33,10 +33,9 @@
 	icon_state = "suture"
 	max_amount = 12
 	amount = 12
-	self_delay = 3.5 SECONDS
+	self_delay = 2.5 SECONDS
 	other_delay = 2 SECONDS
-	repeating = FALSE
-	heal_brute = 10
+	heal_brute = 15
 	stop_bleeding = 0.75
 	gender = NEUTER //So examine text says "This is a suture" instead of "These are some suture"
 	merge_type = /obj/item/stack/medical/suture/ms13
@@ -62,11 +61,10 @@
 	inhand_icon_state = "ointment"
 	amount = 12
 	max_amount = 12
-	repeating = FALSE
 	self_delay = 2.5 SECONDS
-	other_delay = 1.5 SECONDS
-	heal_burn = 8
-	flesh_regeneration = 2.25
+	repeating = TRUE
+	heal_burn = 15
+	flesh_regeneration = 2.75
 	sanitization = 0.5
 	gender = NEUTER //So examine text says "This is a bottle of ointment" instead of "These are some bottle of ointment"
 	merge_type = /obj/item/stack/medical/ointment/ms13
@@ -84,8 +82,8 @@
 	singular_name = "dressing"
 	icon_state = "burndress"
 	inhand_icon_state = null
-	heal_burn = 12
-	flesh_regeneration = 3
+	heal_burn = 20
+	flesh_regeneration = 3.5
 	sanitization = 1
 	gender = PLURAL
 	merge_type = /obj/item/stack/medical/ointment/ms13/dressing
@@ -102,12 +100,10 @@
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "bandage"
 	inhand_icon_state = "bandage"
-	self_delay = 2 SECONDS
-	other_delay = 1 SECONDS
+	self_delay = 2.5 SECONDS
 	max_amount = 12
 	amount = 12
 	novariants = TRUE
-	burn_cleanliness_bonus = 0.5
 	merge_type = /obj/item/stack/medical/gauze/ms13
 	gauze_type = /datum/bodypart_aid/gauze/ms13
 
@@ -132,7 +128,6 @@
 	desc = "A sterile and elastic roll of gauze with a handle used to help pin the dressing down. Very good at soaking up blood from wounds."
 	icon_state = "bandage_m"
 	inhand_icon_state = "bandage_m"
-	burn_cleanliness_bonus = 0.3 //Lower = better
 	merge_type = /obj/item/stack/medical/gauze/ms13/military
 	gauze_type = /datum/bodypart_aid/gauze/ms13/military
 
@@ -146,7 +141,6 @@
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	singular_name = "medical splint"
 	icon_state = "splint_metal"
-	self_delay = 5 SECONDS
 	other_delay = 3 SECONDS
 	max_amount = 1
 	amount = 1
@@ -183,10 +177,11 @@
 	icon_state = "healing_powder"
 	self_delay = 2.5 SECONDS
 	other_delay = 2 SECONDS
-	amount = 5
-	max_amount = 5
+	repeating = TRUE
+	amount = 10
+	max_amount = 10
 	heal_brute = 10
-	heal_burn = 3
+	heal_burn = 10
 	novariants = TRUE
 	merge_type = /obj/item/stack/medical/ms13/healing_powder
 
@@ -204,10 +199,10 @@
 	desc = "A potent poultice containing a mixture of various plants."
 	singular_name = "poultice"
 	icon_state = "healing_poultice"
-	amount = 5
-	max_amount = 5
+	amount = 10
+	max_amount = 10
 	heal_brute = 15
-	heal_burn = 8
+	heal_burn = 15
 	merge_type = /obj/item/stack/medical/ms13/healing_powder/poultice
 
 /obj/item/stack/medical/ms13/healing_powder/burn
@@ -215,10 +210,11 @@
 	desc = "A bag of burn powder, comprised of a mixture of ashrose and aster flower."
 	singular_name = "bag of burn powder"
 	icon_state = "burn_powder"
-	amount = 5
-	max_amount = 5
-	heal_burn = 12
-	flesh_regeneration = 1.5
+	amount = 10
+	max_amount = 10
+	heal_brute = 0
+	heal_burn = 20
+	flesh_regeneration = 2.35
 	sanitization = 0.35
 	merge_type = /obj/item/stack/medical/ms13/healing_powder/burn
 
@@ -229,12 +225,13 @@
 	icon_state = "balm"
 	self_delay = 2.5 SECONDS
 	other_delay = 2 SECONDS
+	repeating = TRUE
 	amount = 8
 	max_amount = 8
-	heal_brute = 12
-	heal_burn = 12
-	flesh_regeneration = 1.5
-	sanitization = 0.15
+	heal_brute = 20
+	heal_burn = 20
+	flesh_regeneration = 3
+	sanitization = 0.75
 	merge_type = /obj/item/stack/medical/ms13/balm
 	novariants = TRUE
 
