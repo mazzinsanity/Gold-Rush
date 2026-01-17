@@ -683,6 +683,51 @@
 	gender = FEMALE
 	length = LONG
 
+/datum/sprite_accessory/hair/fluffaju
+	name = "Fluffaju"
+	icon_state = "fluffaju"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/morning
+	name = "Morning"
+	icon_state = "morning"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/dawn
+	name = "Dawn"
+	icon_state = "dawn"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/kobeni
+	name = "Kobeni"
+	icon_state = "kobeni"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/kobeni_alt
+	name = "Kobeni (Alt)"
+	icon_state = "kobeni_alt"
+	length = MEDIUM
+
+/datum/sprite_accessory/hair/hairfre
+	name = "Hairfre"
+	icon_state = "hairfre"
+	length = LONG
+
+/datum/sprite_accessory/hair/zone
+	name = "Zone"
+	icon_state = "zone"
+	length = LONG
+
+/datum/sprite_accessory/hair/inari
+	name = "Inari"
+	icon_state = "inari"
+	length = LONG
+
+/datum/sprite_accessory/hair/shortmessy
+	name = "Short Messy"
+	icon_state = "shortmessy"
+	length = SHORT
+
 /*
 /////////////////////////////////////
 /  =---------------------------=    /
@@ -845,6 +890,10 @@
 /datum/sprite_accessory/facial_hair/sevenoclockm
 	name = "Beard (Seven o Clock Moustache)"
 	icon_state = "facial_7oclockmoustache"
+
+/datum/sprite_accessory/facial_hair/brokenman
+	name = "Beard (Broken Man)"
+	icon_state = "facial_brokenman"
 
 /datum/sprite_accessory/facial_hair/moustache
 	name = "Moustache"
@@ -2585,6 +2634,54 @@
 /datum/sprite_accessory/tails/tuft
 	name = "Tuft"
 	icon_state = "tuft"
+
+/datum/sprite_accessory/tails/largecatplain
+	name = "Large Cat (Plain)"
+	icon_state = "largecatplain"
+
+/datum/sprite_accessory/tails_animated/largecatplain
+	name = "Large Cat (Plain)"
+	icon_state = "largecatplain"
+
+/datum/sprite_accessory/tails/largecattip
+	name = "Large Cat (Tip)"
+	icon_state = "largecattip"
+	icon_state_2 = "largecattip_2"
+
+/datum/sprite_accessory/tails_animated/largecattip
+	name = "Large Cat (Tip)"
+	icon_state = "largecattip"
+	icon_state_2 = "largecattip_2"
+
+/datum/sprite_accessory/tails/largecatstriped
+	name = "Large Cat (Striped)"
+	icon_state = "largecatstriped"
+	icon_state_2 = "largecatstriped_2"
+
+/datum/sprite_accessory/tails_animated/largecatstriped
+	name = "Large Cat (Striped)"
+	icon_state = "largecatstriped"
+	icon_state_2 = "largecatstriped_2"
+
+/datum/sprite_accessory/tails/largecatcircle
+	name = "Large Cat (Circle)"
+	icon_state = "largecatcircle"
+	icon_state_2 = "largecatcircle_2"
+
+/datum/sprite_accessory/tails_animated/largecatcircle
+	name = "Large Cat (Circle)"
+	icon_state = "largecatcircle"
+	icon_state_2 = "largecatcircle_2"
+
+/datum/sprite_accessory/tails/largecatcovered
+	name = "Large Cat (Covered)"
+	icon_state = "largecatcovered"
+	icon_state_2 = "largecatcovered_2"
+
+/datum/sprite_accessory/tails_animated/largecatcovered
+	name = "Large Cat (Covered)"
+	icon_state = "largecatcovered"
+	icon_state_2 = "largecatcovered_2"
 
 ////////////////////////
 // Spines Definitions //
