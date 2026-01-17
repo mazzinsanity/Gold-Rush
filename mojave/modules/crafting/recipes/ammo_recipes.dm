@@ -128,14 +128,37 @@
 	category = CAT_STANDARD_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
-/datum/crafting_recipe/standard_buckshot
+/datum/crafting_recipe/buckshot
 	name = "12 gauge buckshot ammo box"
-	result = /obj/item/ammo_box/ms13/shotgun
+	result = /obj/item/ammo_box/ms13/shotgun/buckshot
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/bullets = 12,
 				/obj/item/stack/sheet/ms13/casings = 12,
+				/obj/item/ms13/component/gunpowder = 1
+				)
+	category = CAT_STANDARD_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
+
+/datum/crafting_recipe/standard_4570
+	name = ".45-70 ammo box"
+	result = /obj/item/ammo_box/ms13/c4570box
+	time = 12 SECONDS
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	reqs = list(/obj/item/stack/sheet/ms13/bullets = 16,
+				/obj/item/stack/sheet/ms13/casings = 16,
+				/obj/item/ms13/component/gunpowder = 1
+				)
+	category = CAT_STANDARD_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
+
+/datum/crafting_recipe/standard_127
+	name = "12.7 ammo box"
+	result = /obj/item/ammo_box/ms13/m12mmbox
+	time = 12 SECONDS
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	reqs = list(/obj/item/stack/sheet/ms13/bullets = 21,
+				/obj/item/stack/sheet/ms13/casings = 21,
 				/obj/item/ms13/component/gunpowder = 1
 				)
 	category = CAT_STANDARD_AMMO
@@ -164,7 +187,6 @@
 	result = /obj/item/ammo_box/ms13/c22box/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 32,
 				/obj/item/stack/sheet/ms13/hq_casings = 32,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -177,7 +199,6 @@
 	result = /obj/item/ammo_box/ms13/c9mm/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 30,
 				/obj/item/stack/sheet/ms13/hq_casings = 30,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -190,7 +211,6 @@
 	result = /obj/item/ammo_box/ms13/c10mm/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 24,
 				/obj/item/stack/sheet/ms13/hq_casings = 24,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -203,7 +223,6 @@
 	result = /obj/item/ammo_box/ms13/c45/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 21,
 				/obj/item/stack/sheet/ms13/hq_casings = 21,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -216,7 +235,6 @@
 	result = /obj/item/ammo_box/ms13/a556/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 40,
 				/obj/item/stack/sheet/ms13/hq_casings = 40,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -229,7 +247,6 @@
 	result = /obj/item/ammo_box/ms13/m44box/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 24,
 				/obj/item/stack/sheet/ms13/hq_casings = 24,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -242,7 +259,6 @@
 	result = /obj/item/ammo_box/ms13/a357box/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 18,
 				/obj/item/stack/sheet/ms13/hq_casings = 18,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -255,7 +271,6 @@
 	result = /obj/item/ammo_box/ms13/a308/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 20,
 				/obj/item/stack/sheet/ms13/hq_casings = 20,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -268,7 +283,6 @@
 	result = /obj/item/ammo_box/ms13/a762/fmj
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 24,
 				/obj/item/stack/sheet/ms13/hq_casings = 24,
 				/obj/item/ms13/component/gunpowder/hq = 1
@@ -276,15 +290,26 @@
 	category = CAT_QUALITY_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
-/datum/crafting_recipe/buckshot
+/datum/crafting_recipe/triplebuck
 	name = "12 gauge 000 buckshot ammo box"
 	result = /obj/item/ammo_box/ms13/shotgun/triplebuck
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
-	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 12,
 				/obj/item/stack/sheet/ms13/hq_casings = 12,
 				/obj/item/ms13/component/gunpowder/hq = 1
+				)
+	category = CAT_QUALITY_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
+
+/datum/crafting_recipe/50mg
+	name = ".50MG ammo box"
+	result = /obj/item/ammo_box/ms13/a50MG
+	time = 12 SECONDS
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	reqs = list(/obj/item/stack/sheet/ms13/hq_bullets = 12,
+				/obj/item/stack/sheet/ms13/hq_casings = 12,
+				/obj/item/ms13/component/gunpowder/hq = 2
 				)
 	category = CAT_QUALITY_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
@@ -296,6 +321,15 @@
 	result = /obj/item/ms13/component/gunpowder
 	time = 10 SECONDS
 	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_coal = 1,
+				/obj/item/stack/sheet/ms13/nugget/sulfur = 1)
+	category = CAT_STANDARD_AMMO
+	crafting_interface = CRAFTING_BENCH_CHEM | CRAFTING_BENCH_RELOADING
+
+/datum/crafting_recipe/hq_gp
+	name = "high quality gunpowder"
+	result = /obj/item/ms13/component/gunpowder/hq
+	time = 10 SECONDS
+	reqs = list(/obj/item/ms13/component/gunpowder = 1,
 				/obj/item/stack/sheet/ms13/nugget/sulfur = 1)
 	category = CAT_STANDARD_AMMO
 	crafting_interface = CRAFTING_BENCH_CHEM | CRAFTING_BENCH_RELOADING
