@@ -348,7 +348,7 @@
 	grid_width = 32
 
 /obj/item/ammo_box/ms13/stripper/r762
-	name = "rifle stripper clip (7.62)"
+	name = "5 round stripper clip (7.62)"
 	icon_state = "762clip"
 	ammo_type = /obj/item/ammo_casing/ms13/a762
 	caliber = "a762"

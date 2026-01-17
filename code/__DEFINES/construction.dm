@@ -122,6 +122,7 @@
 #define CAT_GUNS "Guns"
 #define CAT_STANDARD_AMMO "Standard Ammo"
 #define CAT_QUALITY_AMMO "Quality Ammo"
+#define CAT_MAGAZINES "Magazines"
 #define CAT_ELECTRONICS "Electronics"
 #define CAT_UTILITY "Utility"
 #define CAT_SMELTER "Smelt"

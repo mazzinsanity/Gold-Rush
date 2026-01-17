@@ -302,7 +302,7 @@
 	category = CAT_QUALITY_AMMO
 	crafting_interface = CRAFTING_BENCH_RELOADING
 
-/datum/crafting_recipe/50mg
+/datum/crafting_recipe/a50mg
 	name = ".50MG ammo box"
 	result = /obj/item/ammo_box/ms13/a50MG
 	time = 12 SECONDS
@@ -351,3 +351,185 @@
 	reqs = list(/datum/reagent/toxin/ms13/gunpowder = 10)
 	category = CAT_STANDARD_AMMO
 	crafting_interface = CRAFTING_BENCH_CHEM | CRAFTING_BENCH_RELOADING
+
+// MAGAZINES
+
+/datum/crafting_recipe/m45
+	name = "7 round magazine (.45)"
+	result = /obj/item/ammo_box/magazine/ms13/m45
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/deagle
+	name = "8 round magazine (.44)"
+	result = /obj/item/ammo_box/magazine/ms13/deagle
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/m10mm
+	name = "12 round magazine (10mm)"
+	result = /obj/item/ammo_box/magazine/ms13/m10mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/cpistol
+	name = "\improper Chinese pistol stripper clip (10mm)"
+	result = /obj/item/ammo_box/ms13/cpistol
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/m9mm
+	name = "13 round magazine (9mm)"
+	result = /obj/item/ammo_box/magazine/ms13/m9mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/m22
+	name = "16 round magazine (.22)"
+	result = /obj/item/ammo_box/magazine/ms13/m22
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/m12mm
+	name = "7 round magazine (12.7mm)"
+	result = /obj/item/ammo_box/magazine/ms13/m12mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/r10
+	name = "10 round magazine (5.56mm)"
+	result = /obj/item/ammo_box/magazine/ms13/r10
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/r20
+	name = "20 round magazine (5.56mm)"
+	result = /obj/item/ammo_box/magazine/ms13/r20
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/r308
+	name = "5 round magazine (.308)"
+	result = /obj/item/ammo_box/magazine/ms13/r308
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/r308_10
+	name = "10 round magazine (.308)"
+	result = /obj/item/ammo_box/magazine/ms13/r308_10
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/smgm10mm
+	name = "24 round magazine (10mm)"
+	result = /obj/item/ammo_box/magazine/ms13/smgm10mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/smgm9mm
+	name = "30 round magazine (9mm)"
+	result = /obj/item/ammo_box/magazine/ms13/smgm9mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/smgm45
+	name = "50 round drum magazine (.45)"
+	result = /obj/item/ammo_box/magazine/ms13/smgm45
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=3)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/smgm22
+	name = "60 round magazine (.22)"
+	result = /obj/item/ammo_box/magazine/ms13/smgm22
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=3)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/ar762
+	name = "24 round magazine (7.62mm)"
+	result = /obj/item/ammo_box/magazine/ms13/ar762
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=3)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/r762
+	name = "5 round stripper clip (7.62)"
+	result = /obj/item/ammo_box/ms13/stripper/r762
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=1)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/battlerifle
+	name = "8 round enbloc magazine (.308)"
+	result = /obj/item/ammo_box/magazine/ms13/r308/battlerifle
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=2)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/amr
+	name = "6 round magazine (.50)"
+	result = /obj/item/ammo_box/magazine/ms13/amr
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=3)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/smg12mm
+	name = "21 round magazine (12.7mm)"
+	result = /obj/item/ammo_box/magazine/ms13/smg12mm
+	time = 12 SECONDS
+	tool_paths = list(/obj/item/ms13/hammer)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap=3)
+	category = CAT_MAGAZINES
+	crafting_interface = CRAFTING_BENCH_RELOADING | CRAFTING_BENCH_WEAPONS
