@@ -40,16 +40,12 @@
 /obj/item/stack/medical/proc/try_heal(mob/living/patient, mob/user, silent = FALSE)
 	if(!patient.try_inject(user, injection_flags = INJECT_TRY_SHOW_ERROR_MESSAGE))
 		return
-	if(patient == user)
-		if(!silent)
-			user.visible_message(span_notice("[user] starts to apply [src] on [user.p_them()]self..."), span_notice("You begin applying [src] on yourself..."))
-		if(!do_mob(user, patient, self_delay, extra_checks=CALLBACK(patient, /mob/living/proc/try_inject, user, null, INJECT_TRY_SHOW_ERROR_MESSAGE)))
-			return
-	else if(other_delay)
-		if(!silent)
-			user.visible_message(span_notice("[user] starts to apply [src] on [patient]."), span_notice("You begin applying [src] on [patient]..."))
-		if(!do_mob(user, patient, other_delay, extra_checks=CALLBACK(patient, /mob/living/proc/try_inject, user, null, INJECT_TRY_SHOW_ERROR_MESSAGE)))
-			return
+
+	if(!silent)
+		user.visible_message(span_notice("[user] starts to apply [src] on [user == patient ? "[user.p_them()]self" : "[patient]"]..."), span_notice("You begin applying [src] on [user == patient ? "yourself" : "[patient]"]..."))
+
+	if(!do_after(user, (user == patient ? self_delay : other_delay), patient, (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks=CALLBACK(patient, /mob/living/proc/try_inject, user, null, INJECT_TRY_SHOW_ERROR_MESSAGE)))
+		return
 
 	if(heal(patient, user))
 		log_combat(user, patient, "healed", src.name)
@@ -161,11 +157,11 @@
 		to_chat(user, "<span class='warning'>[user==M ? "Your" : "[M]'s"] [limb.name] is already bandaged!</span>")	// MOJAVE SUN EDIT - ORIGINAL IS 	to_chat(user, span_warning("The bandage currently on [user==M ? "your" : "[M]'s"] [limb.name] is still in good condition!"))
 		return
 
-	user.visible_message(span_warning("[user] begins wrapping the wounds on [M]'s [limb.name] with [src]..."), span_warning("You begin wrapping the wounds on [user == M ? "your" : "[M]'s"] [limb.name] with [src]..."))
-	if(!do_after(user, (user == M ? self_delay : other_delay), target=M))
+	user.visible_message(span_notice("[user] begins wrapping the wounds on [user == M ? "[user.p_their()]" : "[M]'s"] [limb.name] with [src]..."), span_notice("You begin wrapping the wounds on [user == M ? "your" : "[M]'s"] [limb.name] with [src]..."))
+	if(!do_after(user, (user == M ? self_delay : other_delay), M, (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY)))
 		return
 
-	user.visible_message("<span class='infoplain'><span class='green'>[user] applies [src] to [M]'s [limb.name].</span></span>", "<span class='infoplain'><span class='green'>You bandage the wounds on [user == M ? "your" : "[M]'s"] [limb.name].</span></span>")
+	user.visible_message("<span class='infoplain'><span class='green'>[user] applies [src] to [user == M ? "[user.p_their()]" : "[M]'s"] [limb.name].</span></span>", "<span class='infoplain'><span class='green'>You bandage the wounds on [user == M ? "your" : "[M]'s"] [limb.name].</span></span>")
 	limb.apply_gauze(src)
 
 /obj/item/stack/medical/gauze/twelve

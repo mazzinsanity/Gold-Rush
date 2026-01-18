@@ -126,7 +126,7 @@
 	else
 		user.visible_message(span_notice("[user] begins stitching [victim]'s [limb.name] with [I]..."), span_notice("You begin stitching [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 
-	if(!do_after(user, treatment_delay, target = victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, treatment_delay, target = victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return TRUE
 	var/bleeding_wording = (!limb.can_bleed() ? "holes" : "bleeding")
 	user.visible_message(span_green("[user] stitches up some of the [bleeding_wording] on [victim]."), span_green("You stitch up some of the [bleeding_wording] on [user == victim ? "yourself" : "[victim]"]."))
@@ -155,7 +155,7 @@
 	else
 		user.visible_message(span_danger("[user] begins cauterizing [victim]'s [limb.name] with [I]..."), span_warning("You begin cauterizing [user == victim ? "your" : "[victim]'s"] [limb.name] with [I]..."))
 
-	if(!do_after(user, treatment_delay, target = victim, extra_checks = CALLBACK(src, PROC_REF(still_exists))))
+	if(!do_after(user, treatment_delay, target = victim, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY), extra_checks = CALLBACK(src, PROC_REF(still_exists))))
 		return TRUE
 
 	var/bleeding_wording = (!limb.can_bleed() ? "holes" : "bleeding")

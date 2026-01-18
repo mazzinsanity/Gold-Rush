@@ -35,7 +35,7 @@
 	use_sound = 'mojave/sound/ms13items/stimpak_inject.ogg'
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/attack(mob/living/M, mob/user)
-	if(do_after(user, 0.65 SECONDS))
+	if(do_after(user, 0.65 SECONDS, M, (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|ENFORCE_TARGET_PROXIMITY)))
 		inject(M, user)
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/attack_self(mob/user/)
@@ -43,7 +43,7 @@
 		return
 	if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK, FALSE, FLOOR_OKAY))
 		return
-	if(do_after(user, 0.65 SECONDS))
+	if(do_after(user, 0.65 SECONDS, timed_action_flags = IGNORE_USER_LOC_CHANGE))
 		inject(user)
 		update_icon_state()
 

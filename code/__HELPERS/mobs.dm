@@ -244,6 +244,7 @@ GLOBAL_LIST_EMPTY(species_list)
 			QDELETED(user) || QDELETED(target) \
 			|| (!(timed_action_flags & IGNORE_USER_LOC_CHANGE) && !drifting && user.loc != user_loc) \
 			|| (!(timed_action_flags & IGNORE_TARGET_LOC_CHANGE) && target.loc != target_loc) \
+			|| ((timed_action_flags & ENFORCE_TARGET_PROXIMITY) && get_dist(user.loc, target.loc) > 1) \
 			|| (!(timed_action_flags & IGNORE_HELD_ITEM) && user.get_active_held_item() != holding) \
 			|| (!(timed_action_flags & IGNORE_INCAPACITATED) && HAS_TRAIT(user, TRAIT_INCAPACITATED)) \
 			|| (extra_checks && !extra_checks.Invoke()) \
@@ -340,6 +341,7 @@ GLOBAL_LIST_EMPTY(species_list)
 			&& !QDELETED(target_loc) \
 			&& (QDELETED(target) || target_loc != target.loc) \
 			&& ((user_loc != target_loc || target_loc != user)) \
+			|| ((timed_action_flags & ENFORCE_TARGET_PROXIMITY) && get_dist(user.loc, target.loc) > 1)
 			)
 			. = FALSE
 			break
@@ -416,6 +418,7 @@ GLOBAL_LIST_EMPTY(species_list)
 			if(
 				(QDELETED(target)) \
 				|| (!(timed_action_flags & IGNORE_TARGET_LOC_CHANGE) && originalloc[target] != target.loc) \
+				|| (timed_action_flags & ENFORCE_TARGET_PROXIMITY) && get_dist(user.loc, target.loc) > 1
 				)
 				. = FALSE
 				break

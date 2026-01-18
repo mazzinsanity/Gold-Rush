@@ -583,17 +583,17 @@
 	description = "stimpak"
 	reagent_state = LIQUID
 	color = "#ad1717"
-	metabolization_rate = 1.6
+	metabolization_rate = 2.5 * REAGENTS_METABOLISM // 0.5 per second
 	overdose_threshold = 15
 	/// The value to subtract from the mob's damage, as well as the value to base the ODing off
-	var/heal_Rate = 10
+	var/heal_Rate = 7.5
 	/// Let's do some damage.
 	var/OD_multiplier = 1
 	/// To prevent double dosing of super/regular stimpaks, avoiding OD
 	var/forbidden_double_dose = /datum/reagent/ms13/medicine/stimpak_fluid/super
 	/// Super stimpak moment
 	var/stamina_damage = 0
-// Blatant rip from the coagulant reagent //
+	// Blatant rip from the coagulant reagent //
 	/// The bloodiest wound that the patient has will have its blood_flow reduced by about half this much each second
 	var/clot_rate = 0.5
 	/// While this reagent is in our bloodstream, we reduce all bleeding by this factor
@@ -616,9 +616,9 @@
 	var/obj/item/organ/heart/our_heart = M.getorganslot(ORGAN_SLOT_HEART)
 
 	if(!M.reagents.has_reagent((forbidden_double_dose))) // Stacking healing items? Yeah right.
-		M.adjustBruteLoss(-(heal_Rate), 0)
-		M.adjustFireLoss(-(heal_Rate), 0)
-		M.adjustStaminaLoss((stamina_damage), 0)
+		M.adjustBruteLoss(-(heal_Rate), FALSE)
+		M.adjustFireLoss(-(heal_Rate), FALSE)
+		M.adjustStaminaLoss((stamina_damage), FALSE)
 		if(!M.blood_volume || !M.all_wounds)
 			return
 
@@ -678,9 +678,7 @@
 	name = "super stimpak fluid"
 	reagent_state = LIQUID
 	color = "#c73131"
-	metabolization_rate = 1.6
-	overdose_threshold = 15
-	heal_Rate = 20
+	heal_Rate = 15
 	OD_multiplier = 1.5
 	forbidden_double_dose = /datum/reagent/ms13/medicine/stimpak_fluid
 	stamina_damage = 20
@@ -695,13 +693,15 @@
 	reagent_state = LIQUID
 	color ="#aea447"
 	taste_description = "harsh bitterness"
-	metabolization_rate = 4.75 * REAGENTS_METABOLISM // 0.95 per second
-	overdose_threshold = 40
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM // 0.3 per second
+	overdose_threshold = 20
+	/// The value to subtract from the mob's damage
+	var/heal_Rate = 4.5
 
 /datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/carbon/M)
 	if(!M.reagents.has_reagent(/datum/reagent/ms13/medicine/stimpak_fluid) || !M.reagents.has_reagent(/datum/reagent/ms13/medicine/stimpak_fluid/super))
-		M.adjustFireLoss(-3.75)
-		M.adjustBruteLoss(-3.75)
+		M.adjustFireLoss(-heal_Rate, FALSE)
+		M.adjustBruteLoss(-heal_Rate, FALSE)
 		. = TRUE
 	else
 		M.adjustFireLoss(-0.5)
@@ -709,9 +709,17 @@
 		M.adjustStaminaLoss(1)
 	..()
 
-/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M)
+/datum/reagent/medicine/bitter_drink/overdose_process(mob/living/M, delta_time)
 	M.hallucination = clamp(M.hallucination + (5 * REM), 0, 60)
 	M.dizziness = max(M.dizziness - (6 * REM), 0)
+
+	if(DT_PROB(7.5, delta_time))
+		M.losebreath += rand(2, 4)
+		M.adjustOxyLoss(rand(1, 3))
+		if(DT_PROB(2.5, delta_time))
+			to_chat(M, span_userdanger("Can't catch my breath..."))
+			M.adjustOxyLoss(rand(3, 4))
+			M.Stun(35)
 	..()
 	. = TRUE
 
