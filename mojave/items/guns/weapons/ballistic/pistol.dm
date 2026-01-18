@@ -204,6 +204,9 @@
 	grid_width = 32
 	grid_height = 32
 
+/obj/item/ammo_box/magazine/ms13/m45/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/deagle
 	name = "8 round magazine (.44)"
 	icon_state = "deagle"
@@ -214,6 +217,9 @@
 	multiple_sprites = 2
 	grid_width = 32
 	grid_height = 32
+
+/obj/item/ammo_box/magazine/ms13/deagle/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/m10mm
 	name = "12 round magazine (10mm)"
@@ -227,6 +233,9 @@
 	grid_width = 32
 	grid_height = 32
 
+/obj/item/ammo_box/magazine/ms13/m10mm/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/m9mm
 	name = "13 round magazine (9mm)"
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'
@@ -237,6 +246,9 @@
 	max_ammo = 13
 	grid_width = 32
 	grid_height = 32
+
+/obj/item/ammo_box/magazine/ms13/m9mm/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/m22
 	name = "16 round magazine (.22)"
@@ -249,6 +261,9 @@
 	grid_width = 32
 	grid_height = 32
 
+/obj/item/ammo_box/magazine/ms13/m22/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/m12mm
 	name = "7 round magazine (12.7mm)"
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'
@@ -259,6 +274,9 @@
 	max_ammo = 7
 	grid_width = 32
 	grid_height = 32
+
+/obj/item/ammo_box/magazine/ms13/m12mm/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/ms13/cpistol
 	name = "Chinese pistol internal magazine"
@@ -278,3 +296,6 @@
 	multiple_sprites = AMMO_BOX_PER_BULLET
 	grid_width = 32
 	grid_height = 32
+
+/obj/item/ammo_box/ms13/cpistol/empty
+	start_empty = TRUE

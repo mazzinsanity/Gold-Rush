@@ -405,6 +405,9 @@
 	grid_width = 32
 	grid_height = 64
 
+/obj/item/ammo_box/magazine/ms13/r20/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/smgm10mm
 	name = "24 round magazine (10mm)"
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'
@@ -415,6 +418,9 @@
 	max_ammo = 24
 	grid_width = 32
 	grid_height = 64
+
+/obj/item/ammo_box/magazine/ms13/smgm10mm/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/smgm9mm
 	name = "30 round magazine (9mm)"
@@ -427,6 +433,9 @@
 	grid_width = 32
 	grid_height = 64
 
+/obj/item/ammo_box/magazine/ms13/smgm9mm/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/smgm45
 	name = "50 round drum magazine (.45)"
 	icon_state = "smg45"
@@ -436,6 +445,9 @@
 	max_ammo = 50
 	grid_width = 64
 	grid_height = 64
+
+/obj/item/ammo_box/magazine/ms13/smgm45/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/ar762
 	name = "24 round magazine (7.62mm)"
@@ -448,6 +460,9 @@
 	grid_width = 32
 	grid_height = 64
 
+/obj/item/ammo_box/magazine/ms13/ar762/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/smgm22
 	name = "60 round magazine (.22)"
 	icon_state = "smg22"
@@ -457,6 +472,9 @@
 	max_ammo = 60
 	grid_width = 64
 	grid_height = 64
+
+/obj/item/ammo_box/magazine/ms13/smgm22/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/smg12mm
 	name = "21 round magazine (12.7mm)"
@@ -468,6 +486,9 @@
 	grid_width = 32
 	grid_height = 64
 
+/obj/item/ammo_box/magazine/ms13/smg12mm/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/r308_10
 	name = "10 round magazine (.308)"
 	icon_state = "rangemaster"
@@ -477,3 +498,6 @@
 	max_ammo = 10
 	grid_width = 32
 	grid_height = 64
+
+/obj/item/ammo_box/magazine/ms13/r308_10/empty
+	start_empty = TRUE

@@ -278,6 +278,9 @@
 	grid_height = 32
 	grid_width = 32
 
+/obj/item/ammo_box/magazine/ms13/r10/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/r308
 	name = "5 round magazine (.308)"
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'
@@ -288,6 +291,9 @@
 	max_ammo = 5
 	grid_height = 32
 	grid_width = 32
+
+/obj/item/ammo_box/magazine/ms13/r308/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/ms13/amr
 	name = "6 round magazine (.50)"
@@ -300,6 +306,9 @@
 	grid_height = 64
 	grid_width = 32
 
+/obj/item/ammo_box/magazine/ms13/amr/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/ms13/r308/battlerifle
 	name = "8 round enbloc magazine (.308)"
 	icon_state = "battler"
@@ -307,6 +316,9 @@
 	caliber = "a308"
 	max_ammo = 8
 	multiple_sprites = AMMO_BOX_PER_BULLET
+
+/obj/item/ammo_box/magazine/ms13/r308/battlerifle/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/ms13/chinese_rifle
 	name = "Chinese rifle internal magazine (7.62)"
@@ -354,3 +366,5 @@
 	caliber = "a762"
 	max_ammo = 5
 
+/obj/item/ammo_box/ms13/stripper/r762/empty
+	start_empty = TRUE
