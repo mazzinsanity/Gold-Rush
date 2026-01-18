@@ -16,8 +16,7 @@
 	result = /obj/item/ms13/lockpick/basic
 	time = 6 SECONDS
 	tool_behaviors = list()
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/scrap = 3)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap = 1)
 	category = CAT_UTILITY
 	crafting_interface = CRAFTING_BENCH_GENERAL
 
@@ -26,11 +25,10 @@
 	result = /obj/item/ms13/tools/fishing_rod/basic
 	time = 15 SECONDS
 	tool_behaviors = list(TOOL_KNIFE, TOOL_SAW, TOOL_SCREWDRIVER, TOOL_WRENCH)
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/wood/plank = 3,
-				/obj/item/stack/sheet/ms13/thread = 5,
-				/obj/item/stack/sheet/ms13/scrap_parts = 2,
-				/obj/item/stack/sheet/ms13/scrap = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/wood/plank = 1,
+				/obj/item/stack/sheet/ms13/thread = 2,
+				/obj/item/stack/sheet/ms13/scrap_parts = 1,
+				/obj/item/stack/sheet/ms13/scrap = 1)
 	category = CAT_UTILITY
 	crafting_interface = CRAFTING_BENCH_GENERAL
 
@@ -39,9 +37,8 @@
 	result = /obj/item/restraints/handcuffs
 	time = 8 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH)
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_parts = 3,
-				/obj/item/stack/sheet/ms13/scrap = 3)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_parts = 1,
+				/obj/item/stack/sheet/ms13/scrap = 1)
 	category = CAT_UTILITY
 	crafting_interface = CRAFTING_BENCH_GENERAL
 
@@ -49,8 +46,7 @@
 	name = "ceramic flask"
 	result = /obj/item/reagent_containers/ms13/flask
 	time = 6 SECONDS
-	tool_paths = list()
-	reqs = list(/obj/item/stack/sheet/ms13/ceramic = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/ceramic = 1)
 	category = CAT_UTILITY
 	crafting_interface = CRAFTING_BENCH_GENERAL
 
@@ -58,10 +54,8 @@
 	name = "empty fertilizer bag"
 	result = /obj/item/ms13/fertilizer
 	time = 8 SECONDS
-	tool_paths = list()
-	trait = TRAIT_SNOWCREST_TAILOR
-	reqs = list(/obj/item/stack/sheet/ms13/cloth = 8,
-				/obj/item/stack/sheet/ms13/thread = 5)
+	reqs = list(/obj/item/stack/sheet/ms13/cloth = 2,
+				/obj/item/stack/sheet/ms13/thread = 1)
 	category = CAT_UTILITY
 	crafting_interface = CRAFTING_BENCH_GENERAL | CRAFTING_BENCH_ARMTAILOR
 
@@ -73,8 +67,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_steel
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_steel = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_steel = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -83,8 +77,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_alu
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_alu = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_alu = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -93,8 +87,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_lead
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_lead = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_lead = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -103,8 +97,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_copper
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_copper = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_copper = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -113,8 +107,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_brass
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_brass = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_brass = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -123,8 +117,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_silver
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_silver = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_silver = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -133,78 +127,78 @@
 	result = /obj/item/stack/sheet/ms13/refined_gold
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/scrap_gold = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/scrap_gold = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_steel_beams
 	name = "melt down refined steel"
-	result = /obj/item/stack/sheet/ms13/scrap_steel/four
+	result = /obj/item/stack/sheet/ms13/scrap_steel/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_steel = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_alu
 	name = "melt down refined aluminum"
-	result = /obj/item/stack/sheet/ms13/scrap_alu/four
+	result = /obj/item/stack/sheet/ms13/scrap_alu/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_alu = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_lead
 	name = "melt down refined lead"
-	result = /obj/item/stack/sheet/ms13/scrap_lead/four
+	result = /obj/item/stack/sheet/ms13/scrap_lead/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_lead = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_copper
 	name = "melt down refined copper"
-	result = /obj/item/stack/sheet/ms13/scrap_copper/four
+	result = /obj/item/stack/sheet/ms13/scrap_copper/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_copper = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_brass
 	name = "melt down refined brass"
-	result = /obj/item/stack/sheet/ms13/scrap_brass/four
+	result = /obj/item/stack/sheet/ms13/scrap_brass/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_brass = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_silver
 	name = "melt down refined silver"
-	result = /obj/item/stack/sheet/ms13/scrap_silver/four
+	result = /obj/item/stack/sheet/ms13/scrap_silver/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_silver = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
 /datum/crafting_recipe/melt_gold
 	name = "melt down refined gold"
-	result = /obj/item/stack/sheet/ms13/scrap_gold/four
+	result = /obj/item/stack/sheet/ms13/scrap_gold/two
 	time = 5 SECONDS
 	tool_paths = list()
 	reqs = list(/obj/item/stack/sheet/ms13/refined_gold = 1,
-				/obj/item/stack/sheet/ms13/wood = 2)
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_MELT
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -263,8 +257,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_copper
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_copper = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_copper = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -273,8 +267,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_lead
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_lead = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_lead = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -283,8 +277,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_alu
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_alu = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_alu = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -293,8 +287,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_silver
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_silver = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_silver = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -303,8 +297,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_gold
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_gold = 4,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_gold = 2,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -323,8 +317,8 @@
 	result = /obj/item/stack/sheet/ms13/refined_steel
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_iron = 4,
-				/obj/item/stack/sheet/ms13/nugget/nugget_coal = 2,
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_iron = 1,
+				/obj/item/stack/sheet/ms13/nugget/nugget_coal = 1,
 				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
@@ -334,9 +328,9 @@
 	result = /obj/item/stack/sheet/ms13/refined_brass
 	time = 8 SECONDS
 	tool_paths = list(/obj/item/ms13/hammer)
-	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_copper = 3,
-				/obj/item/stack/sheet/ms13/nugget/nugget_zinc = 2,
-				/obj/item/stack/sheet/ms13/wood = 2)
+	reqs = list(/obj/item/stack/sheet/ms13/nugget/nugget_copper = 1,
+				/obj/item/stack/sheet/ms13/nugget/nugget_zinc = 1,
+				/obj/item/stack/sheet/ms13/wood = 1)
 	category = CAT_SMELTER
 	crafting_interface = CRAFTING_BENCH_SMELTER
 
@@ -347,6 +341,6 @@
 	result = /obj/item/stack/ms13/fertilizer
 	time = 8 SECONDS
 	reqs = list(/obj/item/ms13/fertilizer = 1,
-				/obj/item/food/badrecipe/moldy/ms13 = 8)
+				/obj/item/food/badrecipe/moldy/ms13 = 3)
 	category = CAT_FARMING
 	crafting_interface = CRAFTING_BENCH_CAMPFIRE

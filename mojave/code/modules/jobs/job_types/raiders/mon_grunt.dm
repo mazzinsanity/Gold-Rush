@@ -27,7 +27,7 @@
 	backpack_contents = list(
 			/obj/item/stack/ms13/currency/prewar/twenty=1,\
 			/obj/item/stack/medical/gauze/ms13/three=1,\
-			/obj/item/ammo_box/ms13/c10mm/junk=1)
+			/obj/item/ammo_box/ms13/c10mm=1)
 
 /datum/outfit/job/ms13/raiders/mon_grunt/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -236,12 +236,6 @@
 	grid_height = 32
 	grid_width = 64
 
-/obj/item/ammo_box/ms13/shotgun/junkshot
-	name = "12 gauge junkshot shotgun ammo box"
-	desc = "A worn shotgun ammo box containing makeshift junkshot shells."
-	icon_state = "junkbox"
-	ammo_type = /obj/item/ammo_casing/shotgun/ms13/buckshot/junk
-
 /obj/item/ammo_box/ms13/shotgun/buckshot
 	name = "12 gauge buckshot shotgun ammo box"
 	desc = "A plain shotgun ammo box containing standard buckshot shells."

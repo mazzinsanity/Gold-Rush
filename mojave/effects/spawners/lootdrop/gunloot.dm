@@ -51,12 +51,12 @@
 				)
 	var/loot9 = list(
 				/obj/item/gun/ballistic/revolver/ms13/caravan,
-				/obj/item/ammo_box/ms13/shotgun/junkshot,
+				/obj/item/ammo_box/ms13/shotgun/buckshot,
 				""
 				)
 	var/loot10 = list(
 				/obj/item/gun/ballistic/revolver/ms13/single,
-				/obj/item/ammo_box/ms13/shotgun/junkshot,
+				/obj/item/ammo_box/ms13/shotgun/buckshot,
 				""
 				)
 	var/loot11 = list(

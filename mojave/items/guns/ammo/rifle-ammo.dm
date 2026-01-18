@@ -8,11 +8,6 @@
 	stack_size = 10
 	no_inventory_sprite = TRUE
 
-/obj/item/ammo_casing/ms13/a762/junk
-	name = "junk 7.62 bullet casing"
-	desc = "A makeshift 7.62 bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/a762/junk
-
 /obj/item/ammo_casing/ms13/a762/ap
 	name = "AP 7.62 bullet casing"
 	desc = "An armor piercing 7.62 bullet casing."
@@ -40,10 +35,10 @@
 	grid_width = 64
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/a762/junk
-	name = "junk 7.62 ammo box"
-	desc = "A crude box containing junk quality 7.62 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/a762/junk
+/obj/item/ammo_box/ms13/a762/fmj
+	name = "FMJ 7.62 ammo box"
+	desc = "A box containing FMJ 7.62 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/a762/fmj
 
 /obj/item/ammo_box/ms13/a762/ap
 	name = "armor piercing 7.62 ammo box"
@@ -64,11 +59,6 @@
 	projectile_type = /obj/projectile/bullet/ms13/a308
 	stack_size = 10
 	no_inventory_sprite = TRUE
-
-/obj/item/ammo_casing/ms13/a308/junk
-	name = "junk .308 bullet casing"
-	desc = "A makeshift .308 bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/a308/junk
 
 /obj/item/ammo_casing/ms13/a308/ap
 	name = "AP .308 bullet casing"
@@ -97,10 +87,10 @@
 	grid_width = 64
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/a308/junk
-	name = "junk .308 ammo box"
-	desc = "A crude box containing junk quality .308 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/a308/junk
+/obj/item/ammo_box/ms13/a308/fmj
+	name = "FMJ .308 ammo box"
+	desc = "A box containing FMJ .308 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/a308/fmj
 
 //5.56
 /obj/item/ammo_casing/ms13/a556
@@ -110,11 +100,6 @@
 	icon_state = "556_casing"
 	projectile_type = /obj/projectile/bullet/ms13/a556
 	stack_size = 12
-
-/obj/item/ammo_casing/ms13/a556/junk
-	name = "junk 5.56mm bullet casing"
-	desc = "A makeshift 5.56mm bullet casing."
-	projectile_type = /obj/projectile/bullet/ms13/a556/junk
 
 /obj/item/ammo_casing/ms13/a556/ap
 	name = "AP 5.56mm bullet casing"
@@ -149,10 +134,10 @@
 	grid_width = 32
 	grid_height = 32
 
-/obj/item/ammo_box/ms13/a556/junk
-	name = "junk 5.56 ammo box"
-	desc = "A crude box containing junk quality 5.56 ammo."
-	ammo_type = /obj/item/ammo_casing/ms13/a556/junk
+/obj/item/ammo_box/ms13/a556/fmj
+	name = "FMJ 5.56 ammo box"
+	desc = "A box containing FMJ 5.56 ammo."
+	ammo_type = /obj/item/ammo_casing/ms13/a556/fmj
 
 //50 BMG
 /obj/item/ammo_casing/ms13/a50MG

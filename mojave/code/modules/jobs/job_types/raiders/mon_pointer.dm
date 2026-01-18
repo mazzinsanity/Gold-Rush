@@ -28,7 +28,7 @@
 	backpack_contents = list(
 			/obj/item/stack/ms13/currency/prewar/fourty=1,\
 			/obj/item/stack/medical/gauze/ms13/three=1,\
-			/obj/item/ammo_box/ms13/shotgun/junkshot=1,\
+			/obj/item/ammo_box/ms13/shotgun/buckshot=1,\
 			/obj/item/ammo_box/magazine/ms13/smgm9mm=1,\
 			/obj/item/radio/ms13=1)
 

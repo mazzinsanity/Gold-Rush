@@ -667,11 +667,11 @@
 	species = "root"
 	plantname = "Xander Roots"
 	product = /obj/item/food/grown/ms13/xander
-	lifespan = 75
+	lifespan = 150 //Good for roughly 4 harvests
 	endurance = 50
-	maturation = 48 //16m to mature
+	maturation = 30 //30m to mature
 	production = 12 //4m to produce
-	yield = 4
+	yield = 5
 	growthstages = 3
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
@@ -948,12 +948,12 @@
 	harvest_icon = 1
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	product = /obj/item/food/grown/ms13/ashrose
-	lifespan = 144 //Good for roughly 3 harvests
+	lifespan = 150 //Good for roughly 4 harvests
 	endurance = 25
 	yield = 3 //9 flowers/seed
 	growthstages = 3
 	production = 18 //6m to produce
-	maturation = 84 //28m to mature
+	maturation = 30 //10m to mature
 	instability = 25
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
@@ -1168,7 +1168,7 @@
 	yield = 4 //12 flowers/seed
 	growthstages = 3
 	production = 18 //6m to produce
-	maturation = 96 //32m to mature
+	maturation = 30 //10m to mature
 	instability = 25
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
@@ -1302,11 +1302,11 @@
 	harvest_icon = 1
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	product = /obj/item/food/grown/ms13/brocflower
-	lifespan = 148 //Good for roughly 4 harvests
+	lifespan = 150 //Good for roughly 4 harvests
 	endurance = 30
-	maturation = 84 //28m to mature
-	production = 14 //4m 40s to produce
-	yield = 2 //8 flowers/seed
+	maturation = 30 //10m to mature
+	production = 12 //4m to produce
+	yield = 4
 	growthstages = 3
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
@@ -1339,7 +1339,7 @@
 	plantname = "Cave Fungus Mushrooms"
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
 	product = /obj/item/food/grown/ms13/cavefungus
-	lifespan = 60
+	lifespan = 120
 	endurance = 65
 	yield = 3
 	growthstages = 4

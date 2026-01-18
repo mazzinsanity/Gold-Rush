@@ -18,13 +18,6 @@
 	variance = 25
 	projectile_type = /obj/projectile/bullet/pellet/ms13/buckshot
 
-/obj/item/ammo_casing/shotgun/ms13/buckshot/junk
-	name = "12 gauge junkshot shell"
-	desc = "A makeshift 12 gauge shotgun shell crudely loaded to resemble buckshot."
-	icon_state = "buckshot"
-	variance = 30
-	projectile_type = /obj/projectile/bullet/pellet/ms13/buckshot/junk
-
 /obj/item/ammo_casing/shotgun/ms13/buckshot/triple
 	name = "12 gauge 000 buckshot shell"
 	desc = "A 12 gauge shotgun shell loaded with heavier, more lethal buckshot."

@@ -7,10 +7,6 @@
 	wound_bonus = 15
 	bare_wound_bonus = 10
 
-/obj/projectile/bullet/ms13/c45/junk
-	subtractible_armour_penetration = 0
-	wound_bonus = 10
-
 /obj/projectile/bullet/ms13/c45/ap
 	subtractible_armour_penetration = 20
 
@@ -29,10 +25,6 @@
 	subtractible_armour_penetration = 0
 	wound_bonus = 0
 	bare_wound_bonus = 5
-
-/obj/projectile/bullet/ms13/c22/junk
-	wound_bonus = -10
-	bare_wound_bonus = 0
 
 /obj/projectile/bullet/ms13/c22/ap
 	subtractible_armour_penetration = 15
@@ -53,7 +45,7 @@
 	wound_bonus = 10
 	bare_wound_bonus = 5
 
-/obj/projectile/bullet/ms13/c9mm/junk
+/obj/projectile/bullet/ms13/c9mm/quality
 	subtractible_armour_penetration = 0
 
 /obj/projectile/bullet/ms13/c9mm/ap
@@ -75,7 +67,7 @@
 	wound_bonus = 5
 	bare_wound_bonus = 5
 
-/obj/projectile/bullet/ms13/c10mm/junk
+/obj/projectile/bullet/ms13/c10mm/quality
 	subtractible_armour_penetration = 5
 
 /obj/projectile/bullet/ms13/c10mm/ap
