@@ -235,7 +235,7 @@
 	return TRUE
 
 /datum/wound/burn/flesh/treat(obj/item/I, mob/user)
-	if(istype(I, /obj/item/stack/medical/ointment))
+	if(istype(I, /obj/item/stack/medical/ointment) || istype(I, /obj/item/stack/medical/ms13/healing_powder/burn) || istype(I, /obj/item/stack/medical/ms13/balm))
 		return ointmentmesh(I, user)
 	else if(istype(I, /obj/item/stack/medical/mesh))
 		var/obj/item/stack/medical/mesh/mesh_check = I
@@ -311,7 +311,7 @@
 	//MOJAVE EDIT CHANGE END
 	threshold_penalty = 40
 	status_effect_type = /datum/status_effect/wound/burn/flesh/severe
-	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh)
+	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh, /obj/item/stack/medical/ms13/healing_powder/burn, /obj/item/stack/medical/ms13/balm)
 	//MOJAVE EDIT CHANGE BEGIN
 	infestation_rate = 0.015 //Original TG value is 0.07
 	flesh_damage = 10 //Original TG value is 12.5
@@ -338,7 +338,7 @@
 	threshold_penalty = 65 //Original TG value is 80
 	//MOJAVE EDIT CHANGE END
 	status_effect_type = /datum/status_effect/wound/burn/flesh/critical
-	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh)
+	treatable_by = list(/obj/item/flashlight/pen/paramedic, /obj/item/stack/medical/ointment, /obj/item/stack/medical/mesh, /obj/item/stack/medical/ms13/healing_powder/burn, /obj/item/stack/medical/ms13/balm)
 	//MOJAVE EDIT CHANGE BEGIN
 	infestation_rate = 0.025 //Original TG value is 0.075
 	flesh_damage = 17.5 //Original TG value is 20
