@@ -1,0 +1,208 @@
+name: CI Suite
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  toolchain: stable
+  target: i686-unknown-linux-gnu
+
+jobs:
+  setup_tools:
+    name: Setup Tools
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: Cargo Tools
+        run: |
+          cargo install ripgrep --features pcre2
+
+      - name: Rust-G Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/rust-g
+          key: ${{ runner.os }}-rustg
+
+      - name: Rust-G
+        run: bash tools/ci/install_rust_g.sh
+
+  run_linters:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Run Linters
+    runs-on: ubuntu-22.04
+    needs: setup_tools
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SpacemanDMM Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/SpacemanDMM
+          key: ${{ runner.os }}-spacemandmm
+
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: LibGit2 Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/libgit2
+          key: ${{ runner.os }}-libgit2
+
+      - name: Install Tools
+        run: |
+          bash tools/ci/install_libgit2.sh
+          sudo apt install python3 python3-{pip,venv,dev} libjpeg-dev zlib1g-dev
+          pip3 install -U pip
+          pip install setuptools
+          bash tools/ci/install_node.sh
+          bash tools/ci/install_spaceman_dmm.sh dreamchecker
+          tools/bootstrap/python -c ''
+
+      - name: Run Linters
+        run: |
+          bash tools/ci/check_filedirs.sh fortune13.dme
+          bash tools/ci/check_changelogs.sh
+          find . -name "*.php" -print0 | xargs -0 -n1 php -l
+          find . -name "*.json" -not -path "*/node_modules/*" -print0 | xargs -0 python3 ./tools/json_verifier.py
+          tgui/bin/tgui --lint
+          tgui/bin/tgui --test
+          bash tools/ci/check_grep.sh
+          tools/bootstrap/python tools/validate_dme.py < fortune13.dme
+          tools/bootstrap/python -m dmi.test
+          tools/bootstrap/python -m mapmerge2.dmm_test
+          ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
+
+      - name: Annotate Lints
+        uses: yogstation13/DreamAnnotate@v2
+        if: always()
+        with:
+          outputFile: output-annotations.txt
+
+  compile_all_maps:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Compile Maps
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: BYOND Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/BYOND
+          key: ${{ runner.os }}-byond
+      - name: Compile All Maps
+        run: |
+          bash tools/ci/install_node.sh
+          bash tools/ci/install_byond.sh
+          source $HOME/BYOND/byond/bin/byondsetup
+          python3 tools/ci/template_dm_generator.py
+          tools/build/build dm -DCIBUILDING -DCITESTING -DALL_MAPS
+
+  run_all_tests:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Integration Tests
+    runs-on: ubuntu-22.04
+    needs: setup_tools
+    timeout-minutes: 30
+
+    services:
+      mysql:
+        image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: BYOND Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/BYOND
+          key: ${{ runner.os }}-byond
+
+      - name: Yarn Cache
+        uses: actions/cache@v2
+        with:
+          path: tgui/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn
+
+      - name: Cargo Tools Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo
+
+      - name: Rust-G Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/rust-g
+          key: ${{ runner.os }}-rustg
+
+      - name: Rust-G
+        run: bash tools/ci/install_rust_g.sh
+
+      - name: Setup database
+        run: |
+          sudo systemctl start mysql
+          mysql -u root -proot -e 'CREATE DATABASE tg_ci;'
+          mysql -u root -proot tg_ci < SQL/tgstation_schema.sql
+          mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
+          mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
+
+      - name: Compile and run tests
+        run: |
+          bash tools/ci/install_node.sh
+          bash tools/ci/install_byond.sh
+          source $HOME/BYOND/byond/bin/byondsetup
+          tools/build/build --ci -DCIBUILDING
+          bash tools/ci/run_server.sh
+
+  test_windows:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Windows Build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: Compile
+        run: pwsh tools/ci/build.ps1
+        env:
+          DM_EXE: "C:\\byond\\bin\\dm.exe"
+      - name: Create artifact
+        run: |
+          md deploy
+          bash tools/deploy.sh ./deploy
+      - name: Deploy artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: deploy
+          path: deploy
